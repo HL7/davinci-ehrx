@@ -1,0 +1,40 @@
+{
+	"resourceType": "StructureDefinition",
+	"id": "communication-ehrx",
+	"meta": {
+		"versionId": "5",
+		"lastUpdated": "2018-12-05T10:37:44.167-05:00"
+	},
+	"url": "http://hl7.org/fhir/us/davinci-deqm/STU3/StructureDefinition/communication-ehrx",
+	"name": "communication-ehrx",
+	"status": "draft",
+	"kind": "resource",
+	"abstract": false,
+	"type": "Communication",
+	"baseDefinition": "http://hl7.org/fhir/StructureDefinition/Communication",
+	"derivation": "constraint",
+	"differential": {
+		"element": [
+			{
+				"id": "Communication",
+				"path": "Communication"
+			},
+			{
+				"id": "Communication.subject",
+				"path": "Communication.subject",
+				"min": 1,
+				"type": [
+					{
+						"code": "Reference",
+						"targetProfile": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
+					}
+				]
+			},
+			{
+				"id": "Communication.payload",
+				"path": "Communication.payload",
+				"min": 1
+			}
+		]
+	}
+}
