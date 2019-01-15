@@ -105,6 +105,11 @@
 			"location": "http://hl7.org/fhir/us/core",
 			"name": "uscore",
 			"version": "2.0.0"
+		},
+		{
+			"location": "http://hl7.org/fhir/us/ccda",
+			"name": "ccda",
+			"version": "1.0.0"
 		}
 	]
 }
