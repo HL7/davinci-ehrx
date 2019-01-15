@@ -2,7 +2,7 @@
 	"tool": "jekyll",
 	"source": "implementationguide/davinci-ehrx.xml",
 	"npm-name": "davinci-ehrx-npm",
-	"license": "CC0-1.0", 
+	"license": "CC0-1.0",
 	"paths": {
 		"qa": "generated_output/qa",
 		"temp": "generated_output/temp",
@@ -27,7 +27,7 @@
 		"https://trifolia-on-fhir.lantanagroup.com"
 	],
 	"sct-edition": "http://snomed.info/sct/731000124108",
-	"canonicalBase": "http://hl7.org/fhir/us/davinci-crd/STU3",
+	"canonicalBase": "http://hl7.org/fhir/us",
 	"defaults": {
 		"Location": {
 			"template-base": "ex.html"
