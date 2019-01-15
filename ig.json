@@ -2,7 +2,7 @@
 	"tool": "jekyll",
 	"source": "implementationguide/davinci-ehrx.xml",
 	"npm-name": "davinci-ehrx-npm",
-	"license": "CC0-1.0",
+	"license": "CC0-1.0", 
 	"paths": {
 		"qa": "generated_output/qa",
 		"temp": "generated_output/temp",
