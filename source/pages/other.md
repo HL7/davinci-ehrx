@@ -25,7 +25,7 @@ active: other
 <tbody>
 <tr>
 <td>ImplementationGuide</td>
-<td><a href="CapabilityStatement-252.html">Da Vinci eHealth Record Exchange</a></td>
+<td><a href="CapabilityStatement-davinci-hrex.html">Da Vinci eHealth Record Exchange</a></td>
 </tr>
 </tbody>
 </table>

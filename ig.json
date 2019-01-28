@@ -1,7 +1,7 @@
 {
 	"tool": "jekyll",
-	"source": "implementationguide/252.xml",
-	"npm-name": "252-npm",
+	"source": "implementationguide/davinci-hrex.xml",
+	"npm-name": "davinci-hrex-npm",
 	"license": "CC0-1.0",
 	"paths": {
 		"qa": "generated_output/qa",
