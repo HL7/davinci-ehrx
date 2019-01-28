@@ -8,7 +8,7 @@
 		"temp": "generated_output/temp",
 		"output": "output",
 		"txCache": "generated_output/txCache",
-		"specification": "http://hl7.org/fhir/STU3",
+		"specification": "http://hl7.org/fhir",
 		"pages": [
 			"framework",
 			"source/pages"
