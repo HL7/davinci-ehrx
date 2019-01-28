@@ -1,7 +1,7 @@
 {
 	"tool": "jekyll",
-	"source": "implementationguide/davinci-ehrx.xml",
-	"npm-name": "davinci-ehrx-npm",
+	"source": "implementationguide/252.xml",
+	"npm-name": "252-npm",
 	"license": "CC0-1.0",
 	"paths": {
 		"qa": "generated_output/qa",
@@ -93,23 +93,6 @@
 			"template-base": "ex.html"
 		}
 	},
-	"resources": {
-		"StructureDefinition/communication-ehrx": {
-			"base": "StructureDefinition-communication-ehrx.html",
-			"defns": "StructureDefinition-communication-ehrx-definitions.html"
-		}
-	},
-	"version": "3.0.1",
-	"dependencyList": [
-		{
-			"location": "http://hl7.org/fhir/us/core",
-			"name": "uscore",
-			"version": "2.0.0"
-		},
-		{
-			"location": "http://hl7.org/fhir/us/ccda",
-			"name": "ccda",
-			"version": "1.0.0"
-		}
-	]
+	"resources": {},
+	"dependencyList": []
 }

@@ -4,4 +4,3 @@ layout: default
 active: toc
 ---
 
-[Patient Story ](patient-story.html)
