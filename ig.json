@@ -100,5 +100,5 @@
       "name": "uscore",
       "location": "http://hl7.org/fhir/us/core-r4"
     }
-  ],
+  ]
 }
