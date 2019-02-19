@@ -1,4 +1,4 @@
-{
+{ 
     "tool": "jekyll",
     "source": "implementationguide/davinci-hrex.xml",
     "npm-name": "davinci-hrex-npm",
