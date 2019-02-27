@@ -5,6 +5,8 @@ active: toc
 ---
 
 * Table of Contents
+    * <a href="Introduction.html">Introduction</a>
     * <a href="Dependencies.html">Dependencies</a>
     * <a href="HRex_Profiles.html">HRex Profiles</a>
     * <a href="HRex_Interactions.html">HRex Interactions</a>
+    * <a href="Security.html">Security</a>
