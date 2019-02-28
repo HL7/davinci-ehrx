@@ -1,1 +1,132 @@
-<?xml version="1.0" encoding="UTF-8"?><ImplementationGuide xmlns="http://hl7.org/fhir"><id value="davinci-hrex"/><meta><versionId value="16"/><lastUpdated value="2019-02-26T17:00:32.000-05:00"/></meta><contained><Binary><id value="6509"/><contentType value="text/markdown"/><data value="VGhlIERhIFZpbmNpIFBheWVyIEhlYWx0aCBSZWNvcmQgZXhjaGFuZ2UgKEhSZXgpIGluaXRpYXRpdmUgaXMgc3BlY2lmeWluZyB0aGUgRkhJUiBwcm9maWxlcywgZnVuY3Rpb25zLCBvcGVyYXRpb25zLCBzdWNoIGFzIENEUy1Ib29rcyBhbmQgb3RoZXIgYXNwZWN0cyBvZiBEYSBWaW5jaSBVc2UgQ2FzZXMgdGhhdCBhcmUgY29tbW9uIGFjcm9zcyBtb3JlIHRoYW4gYSBzaW5nbGUgdXNlIGNhc2UuIAoKRGEgVmluY2kgSFJleCBJbXBsZW1lbnRhdGlvbiBHdWlkZSAoSUcpIHdpbGwgbWFrZSB1c2Ugb2YgVVMgQ29yZSBwcm9maWxlcyB0aGF0IGFyZSBiYXNlZCBvbiB0aGUgRkhJUiBSNCBzcGVjaWZpY2F0aW9uIHdoZXJldmVyIHByYWN0aWNhYmxlLiBUaGUgSFJleCBJRyB3aWxsIHVzZSB0aGUgSEw3IEZISVIgUmVsZWFzZSA0L1VTIENvcmUgU1RVMyBzcGVjaWZpY2F0aW9uIGFzIGl0cyBiYXNlLCBidXQgd2lsbCBwcm92aWRlIGFkZGl0aW9uYWwgZ3VpZGFuY2UgYW5kIGRvY3VtZW50YXRpb24gdG8gc3VwcG9ydCBpbXBsZW1lbnRhdGlvbnMgdGhhdCBmb2xsb3cgdGhlIEhMNyBGSElSIFNUVTMvVVMgQ29yZSBTVFUyIGFuZCBITDcgRkhJUiBEU1RVMi9BcmdvbmF1dCBzcGVjaWZpY2F0aW9ucy4gCgpUaGUgSFJleCBwcm9maWxlcyBkb2N1bWVudGVkIGluIHRoaXMgSUcgd2lsbCBiZSB1c2VkIHRvIHRyYW5zbWl0IGRhdGEgYmV0d2VlbiBwYXllciBhbmQgcHJvdmlkZXIgc3lzdGVtcy4gVGhlIG1lY2hhbmlzbXMgdXNlZCBmb3IgdGhpcyBpbnRlcmFjdGlvbiB3aWxsIGJlIGJhc2VkIHVwb24gdGhlIENEUy1Ib29rcyBzcGVjaWZpY2F0aW9uIGFuZCBvbiBvdGhlciBzdGFuZGFyZCBGSElSIG9wZXJhdGlvbnMuIAoKVGhlIEhSZXggSUcgd2lsbCBkZWZpbmUgYW55IG5ldyBob29rcyB0aGF0IGFyZSBjdXJyZW50bHkgb3V0c2lkZSBvZiB0aGUgY29yZSBDRFMtSG9va3Mgc3BlY2lmaWNhdGlvbi4gVGhlc2UgaG9va3MgbWF5IGJlIGRlcHJlY2F0ZWQgaW4gdGhlIGZ1dHVyZSBpZi93aGVuIHRoZSBob29rcyBkZWZpbmVkIGluIHRoaXMgSUcgYXJlIG1pZ3JhdGVkIHRvIHRoZSBjb3JlIENEUy1Ib29rcyBzcGVjaWZpY2F0aW9uLgoKCgo="/></Binary></contained><contained><Binary><id value="8158"/><contentType value="text/markdown"/><data value="IyMgRkhJUiBEU1RVMiAoYWthIEFyZ29uYXV0KQoKIyMgRkhJUiBTVFUzCgojIyBGSElSIFI0"/></Binary></contained><contained><Binary><id value="5767"/><contentType value="text/markdown"/><data value="V2lsbCBkZWZpbmUgY292ZXJhZ2UgYW5kIHByb3ZlbmFuY2UgaGVyZSBpbml0aWFsbHksIHRoZW4gZGVwcmVjYXRlIHdoZW4gcHJlc2VudCBpbiBVUyBDb3JlLiAKIyMgQ292ZXJhZ2UKKiBTdGFydCB3aXRoIGh0dHA6Ly9obDcub3JnL2ZoaXIvdXMvZGF2aW5jaS1kZXFtLzIwMThTZXAvU1RVMy9TdHJ1Y3R1cmVEZWZpbml0aW9uLWNvdmVyYWdlLWRlcW0uaHRtbCwgYnV0IHBvaW50IHRvIFVTIENvcmUgcmVmZXJlbmNlcyBhbmQgbWFrZSBGSElSIFI0IGNvbXBhdGlibGUuIAoKIyMgUHJvdmVuYW5jZQoqIFdpbGwgZG8gZnJvbSBzY3JhdGNoIHBlciB0aGUgTlBSTSBkcmFmdCByZXF1aXJlbWVudHM6CiogaHR0cHM6Ly93d3cuaGVhbHRoaXQuZ292L3NpdGVzL2RlZmF1bHQvZmlsZXMvbnBybS9PTkNDdXJlc05QUk1VU0NESS5wZGYKCiogUmVxdWlyZSBvY2N1cnJlZFt4XQoqIFBvaW50IHRvIFVTIENvcmUgZm9yIHJlZmVyZW5jZXMgZnJvbSB3aG8gYW5kIG9uQmVoYWxmT2YKKiBNYWtlIHNpZ25hdHVyZSBtdXN0LXN1cHBvcnQKCiMjIFByYWN0aXRpb25lcgoqIFN0YXJ0IHdpdGggVVMgQ29yZSwgYnV0IG1ha2UgYSByZXF1aXJlZCBzbGljZSBvbiB0aGUgaWRlbnRpZmllciB0aGF0IG11c3QgYmUgYW4gTlBJLiAKKiBCYXNlIHJlcXVpcmVtZW50cyBvZmYgaHR0cDovL2hsNy5vcmcvZmhpci91cy9kYXZpbmNpLWRlcW0vMjAxOFNlcC9TVFUzL1N0cnVjdHVyZURlZmluaXRpb24tcHJhY3RpdGlvbmVyLWRlcW0uaHRtbAoKIyMgT3JnYW5pemF0aW9uCiogU3RhcnQgd2l0aCBVUyBDb3JlLCBidXQgbWFrZSBhIHJlcXVpcmVkIHNsaWNlIG9uIHRoZSBpZGVudGlmaWVyIHRoYXQgbXVzdCBiZSBhbiBOUEkgb3IgYSBUSU4uIAoqIEJhc2UgcmVxdWlyZW1lbnRzIG9mZiBodHRwOi8vaGw3Lm9yZy9maGlyL3VzL2RhdmluY2ktZGVxbS8yMDE4U2VwL1NUVTMvU3RydWN0dXJlRGVmaW5pdGlvbi1vcmdhbml6YXRpb24tZGVxbS5odG1s"/></Binary></contained><contained><Binary><id value="5449"/><contentType value="text/markdown"/><data value="IyMgUHVzaApQT1NUL1BVVAojIyBQdWxsCkdFVAojIyBSZXF1ZXN0CkdFVApBc3luYyByZXF1ZXN0cyB2aWEgQ29tbXVuaWNhdGlvblJlcXVlc3Qgb3IgbWF5YmUgd29ya2Zsb3cgKGkuZS4gVGFzaykKCiMjIFN1YnNjcmliZQoqIFdpbGwgbm90IGRvIGZvciBNYXkKCiMjIEJ1bGsgRGF0YQoqIFdpbGwgbm90IGRvIGZvciBNYXkKCiMjIENEUyBIb29rcwpQb2ludCB0byBDRFMgSG9va3Mgc3BlYwpodHRwczovL2Nkcy1ob29rcy5obDcub3JnLwpBZGQgaG9va3MgZGVmaW5lZCBpbiBDUkQ6Cmh0dHBzOi8vYnVpbGQuZmhpci5vcmcvaWcvSEw3L2RhdmluY2ktY3JkL2hvb2tzLmh0bWwjY2RzLWhvb2tzCk5vdGUgdGhhdCBpZiBDRFMgaG9va3MgY29yZSBzcGVjIGFkb3B0cyB0aGVzZSwgd2lsbCBkZXByZWNhdGUgaGVyZS4gV2Ugd2lsbCBhdXRvbWF0aWNhbGx5IGFkb3B0IHRoZSBsYXRlc3QgcHVibGlzaGVkIHZlcnNpb24gb2YgQ0RTIEhvb2tzLiAKS2VlcCB0aGUgaW1wbGVtZW50YXRpb24gYW5kIHBheWxvYWQgZm9yIHRoZSBob29rcyBpbiB0aGUgUERleCBndWlkZSAoYW5kIG90aGVyIGd1aWRlcykuIAoKIyMgT3BlcmF0aW9ucwoqIFdpbGwgbm90IGRvIGZvciBNYXkKCiMjIFJhdGlvbmFsIENvbWJpbmF0aW9ucwoqIFdpbGwgbm90IGRvIGZvciBNYXkKCiMjIFZhbGlkYXRpb24KUG9pbnQgdG8gRkhJUiBWYWxpZGF0b3IgKGphciBmaWxlLCBzY2hlbWFzLCBldGMuKQpIb3cgdG8gdmFsaWRhdGUgYWdhaW5zdCBEYSBWaW5jaSBwcm9maWxlcyB1c2luZyBzYWlkIHRvb2xzIG9yIEZISVIgc2VydmVycy4gCg=="/></Binary></contained><contained><Binary><id value="9314"/><contentType value="text/markdown"/><data value="UG9pbnQgdG8gRkhJUiBzcGVjIHNlY3VyaXR5IHBhZ2UsIFNtYXJ0IG9uIEZISVIsIGFuZCBGQVNUIChGSElSIGF0IFNjYWxlIFRhc2sgRm9yY2Up"/></Binary></contained><extension url="https://trifolia-fhir.lantanagroup.com/stu3/StructureDefinition/github-branch"><valueString value="master"/></extension><extension url="https://trifolia-fhir.lantanagroup.com/stu3/StructureDefinition/github-path"><valueString value="HL7/davinci-ehrx/source/resources/implementationguide/davinci-hrex.xml"/></extension><url value="http://hl7.org/fhir/us/davinci-hrex/ImplementationGuide/davinci-hrex"/><version value="0.0.1"/><name value="Da Vinci Health Record Exchange"/><status value="draft"/><description value="This Use Case provides guidance to implementers regarding exchange of a patients eHealth Records. The Use Case is very broad encompassing the following scenarios: &#xA;&#xA;* Exchange of quality measure data to support HEDIS/Stars quality measures,&#xA;* Exchange of clinical information generated by providers during the course of care, and &#xA;* Exchange of clinical information gathered during the claims process by payers. &#xA;&#xA;The exchange of quality measure data can be from Provider to Payer, or Payer to Provider. The exchange of clinical information can be from Provider to Provider, Provider to Payer or Payer to Provider. This Use Case defines a broad set of profiles and interactions that may be utilized to accomplish this wide range of **eHealth Record exchange**. It also includes narrower implementation guidance that demonstrates how to use elements of the framework to accomplish each specific type of information exchange.&#xA;"/><packageId value="davinci-health-record-exchange"/><fhirVersion value="4.0.0"/><dependsOn><extension url="https://trifolia-fhir.lantanagroup.com/r4/StructureDefinition/extension-ig-depends-on-location"><valueString value="http://hl7.org/fhir/us/core"/></extension><extension url="https://trifolia-fhir.lantanagroup.com/r4/StructureDefinition/extension-ig-depends-on-name"><valueString value="USCoreR4"/></extension><uri value="http://hl7.org/fhir/us/core-r4/ImplementationGuide/ig"/><packageId value="hl7.fhir.us.core.r4"/><version value="current"/></dependsOn><definition><resource><reference><reference value="StructureDefinition/hrex-coverage"/><display value="HRex Coverage"/></reference><name value="HRex Coverage"/><exampleBoolean value="false"/></resource><page><extension url="https://trifolia-on-fhir.lantanagroup.com/StructureDefinition/extension-ig-page-auto-generate-toc"><valueBoolean value="true"/></extension><nameUrl value="toc.md"/><title value="Table of Contents"/><generation value="generated"/><page><nameReference><reference value="#6509"/><display value="Page content 6509"/></nameReference><title value="Introduction"/><generation value="markdown"/></page><page><nameReference><reference value="#8158"/><display value="Page content 8158"/></nameReference><title value="Dependencies"/><generation value="markdown"/></page><page><nameReference><reference value="#5767"/><display value="Page content 5767"/></nameReference><title value="HRex Profiles"/><generation value="markdown"/></page><page><nameReference><reference value="#5449"/><display value="Page content 5449"/></nameReference><title value="HRex Interactions"/><generation value="markdown"/></page><page><nameReference><reference value="#9314"/><display value="Page content 9314"/></nameReference><title value="Security"/><generation value="markdown"/></page></page></definition></ImplementationGuide>
+<?xml version="1.0" encoding="UTF-8"?>
+<ImplementationGuide
+    xmlns="http://hl7.org/fhir">
+    <id value="davinci-hrex"/>
+    <meta>
+        <versionId value="18"/>
+        <lastUpdated value="2019-02-28T12:16:13.000-05:00"/>
+    </meta>
+    <contained>
+        <Binary>
+            <id value="6509"/>
+            <contentType value="text/markdown"/>
+            <data value="VGhlIERhIFZpbmNpIFBheWVyIEhlYWx0aCBSZWNvcmQgZXhjaGFuZ2UgKEhSZXgpIGluaXRpYXRpdmUgaXMgc3BlY2lmeWluZyB0aGUgRkhJUiBwcm9maWxlcywgZnVuY3Rpb25zLCBvcGVyYXRpb25zLCBzdWNoIGFzIENEUy1Ib29rcyBhbmQgb3RoZXIgYXNwZWN0cyBvZiBEYSBWaW5jaSBVc2UgQ2FzZXMgdGhhdCBhcmUgY29tbW9uIGFjcm9zcyBtb3JlIHRoYW4gYSBzaW5nbGUgdXNlIGNhc2UuIAoKRGEgVmluY2kgSFJleCBJbXBsZW1lbnRhdGlvbiBHdWlkZSAoSUcpIHdpbGwgbWFrZSB1c2Ugb2YgVVMgQ29yZSBwcm9maWxlcyB0aGF0IGFyZSBiYXNlZCBvbiB0aGUgRkhJUiBSNCBzcGVjaWZpY2F0aW9uIHdoZXJldmVyIHByYWN0aWNhYmxlLiBUaGUgSFJleCBJRyB3aWxsIHVzZSB0aGUgSEw3IEZISVIgUmVsZWFzZSA0L1VTIENvcmUgU1RVMyBzcGVjaWZpY2F0aW9uIGFzIGl0cyBiYXNlLCBidXQgd2lsbCBwcm92aWRlIGFkZGl0aW9uYWwgZ3VpZGFuY2UgYW5kIGRvY3VtZW50YXRpb24gdG8gc3VwcG9ydCBpbXBsZW1lbnRhdGlvbnMgdGhhdCBmb2xsb3cgdGhlIEhMNyBGSElSIFNUVTMvVVMgQ29yZSBTVFUyIGFuZCBITDcgRkhJUiBEU1RVMi9BcmdvbmF1dCBzcGVjaWZpY2F0aW9ucy4gCgpUaGUgSFJleCBwcm9maWxlcyBkb2N1bWVudGVkIGluIHRoaXMgSUcgd2lsbCBiZSB1c2VkIHRvIHRyYW5zbWl0IGRhdGEgYmV0d2VlbiBwYXllciBhbmQgcHJvdmlkZXIgc3lzdGVtcy4gVGhlIG1lY2hhbmlzbXMgdXNlZCBmb3IgdGhpcyBpbnRlcmFjdGlvbiB3aWxsIGJlIGJhc2VkIHVwb24gdGhlIENEUy1Ib29rcyBzcGVjaWZpY2F0aW9uIGFuZCBvbiBvdGhlciBzdGFuZGFyZCBGSElSIG9wZXJhdGlvbnMuIAoKVGhlIEhSZXggSUcgd2lsbCBkZWZpbmUgYW55IG5ldyBob29rcyB0aGF0IGFyZSBjdXJyZW50bHkgb3V0c2lkZSBvZiB0aGUgY29yZSBDRFMtSG9va3Mgc3BlY2lmaWNhdGlvbi4gVGhlc2UgaG9va3MgbWF5IGJlIGRlcHJlY2F0ZWQgaW4gdGhlIGZ1dHVyZSBpZi93aGVuIHRoZSBob29rcyBkZWZpbmVkIGluIHRoaXMgSUcgYXJlIG1pZ3JhdGVkIHRvIHRoZSBjb3JlIENEUy1Ib29rcyBzcGVjaWZpY2F0aW9uLgoKCgo="/>
+        </Binary>
+    </contained>
+    <contained>
+        <Binary>
+            <id value="8158"/>
+            <contentType value="text/markdown"/>
+            <data value="IyMgRkhJUiBEU1RVMiAoYWthIEFyZ29uYXV0KQoKIyMgRkhJUiBTVFUzCgojIyBGSElSIFI0"/>
+        </Binary>
+    </contained>
+    <contained>
+        <Binary>
+            <id value="5767"/>
+            <contentType value="text/markdown"/>
+            <data value="V2lsbCBkZWZpbmUgY292ZXJhZ2UgYW5kIHByb3ZlbmFuY2UgaGVyZSBpbml0aWFsbHksIHRoZW4gZGVwcmVjYXRlIHdoZW4gcHJlc2VudCBpbiBVUyBDb3JlLiAKIyMgQ292ZXJhZ2UKKiBTdGFydCB3aXRoIGh0dHA6Ly9obDcub3JnL2ZoaXIvdXMvZGF2aW5jaS1kZXFtLzIwMThTZXAvU1RVMy9TdHJ1Y3R1cmVEZWZpbml0aW9uLWNvdmVyYWdlLWRlcW0uaHRtbGwsIGJ1dCBwb2ludCB0byBVUyBDb3JlIHJlZmVyZW5jZXMgYW5kIG1ha2UgRkhJUiBSNCBjb21wYXRpYmxlLiAKCiMjIFByb3ZlbmFuY2UKKiBXaWxsIGRvIGZyb20gc2NyYXRjaCBwZXIgdGhlIE5QUk0gZHJhZnQgcmVxdWlyZW1lbnRzOgoqIGh0dHBzOi8vd3d3LmhlYWx0aGl0Lmdvdi9zaXRlcy9kZWZhdWx0L2ZpbGVzL25wcm0vT05DQ3VyZXNOUFJNVVNDREkucGRmCgoqIFJlcXVpcmUgb2NjdXJyZWRbeF0KKiBQb2ludCB0byBVUyBDb3JlIGZvciByZWZlcmVuY2VzIGZyb20gd2hvIGFuZCBvbkJlaGFsZk9mCiogTWFrZSBzaWduYXR1cmUgbXVzdC1zdXBwb3J0CgojIyBQcmFjdGl0aW9uZXIKKiBTdGFydCB3aXRoIFVTIENvcmUsIGJ1dCBtYWtlIGEgcmVxdWlyZWQgc2xpY2Ugb24gdGhlIGlkZW50aWZpZXIgdGhhdCBtdXN0IGJlIGFuIE5QSS4gCiogQmFzZSByZXF1aXJlbWVudHMgb2ZmIGh0dHA6Ly9obDcub3JnL2ZoaXIvdXMvZGF2aW5jaS1kZXFtLzIwMThTZXAvU1RVMy9TdHJ1Y3R1cmVEZWZpbml0aW9uLXByYWN0aXRpb25lci1kZXFtLmh0bWwKCiMjIE9yZ2FuaXphdGlvbgoqIFN0YXJ0IHdpdGggVVMgQ29yZSwgYnV0IG1ha2UgYSByZXF1aXJlZCBzbGljZSBvbiB0aGUgaWRlbnRpZmllciB0aGF0IG11c3QgYmUgYW4gTlBJIG9yIGEgVElOLiAKKiBCYXNlIHJlcXVpcmVtZW50cyBvZmYgaHR0cDovL2hsNy5vcmcvZmhpci91cy9kYXZpbmNpLWRlcW0vMjAxOFNlcC9TVFUzL1N0cnVjdHVyZURlZmluaXRpb24tb3JnYW5pemF0aW9uLWRlcW0uaHRtbA=="/>
+        </Binary>
+    </contained>
+    <contained>
+        <Binary>
+            <id value="5449"/>
+            <contentType value="text/markdown"/>
+            <data value="IyMgUHVzaApQT1NUL1BVVAojIyBQdWxsCkdFVAojIyBSZXF1ZXN0CkdFVApBc3luYyByZXF1ZXN0cyB2aWEgQ29tbXVuaWNhdGlvblJlcXVlc3Qgb3IgbWF5YmUgd29ya2Zsb3cgKGkuZS4gVGFzaykKCiMjIFN1YnNjcmliZQoqIFdpbGwgbm90IGRvIGZvciBNYXkKCiMjIEJ1bGsgRGF0YQoqIFdpbGwgbm90IGRvIGZvciBNYXkKCiMjIENEUyBIb29rcwpQb2ludCB0byBDRFMgSG9va3Mgc3BlYwpodHRwczovL2Nkcy1ob29rcy5obDcub3JnLwpBZGQgaG9va3MgZGVmaW5lZCBpbiBDUkQ6Cmh0dHBzOi8vYnVpbGQuZmhpci5vcmcvaWcvSEw3L2RhdmluY2ktY3JkL2hvb2tzLmh0bWwjY2RzLWhvb2tzCk5vdGUgdGhhdCBpZiBDRFMgaG9va3MgY29yZSBzcGVjIGFkb3B0cyB0aGVzZSwgd2lsbCBkZXByZWNhdGUgaGVyZS4gV2Ugd2lsbCBhdXRvbWF0aWNhbGx5IGFkb3B0IHRoZSBsYXRlc3QgcHVibGlzaGVkIHZlcnNpb24gb2YgQ0RTIEhvb2tzLiAKS2VlcCB0aGUgaW1wbGVtZW50YXRpb24gYW5kIHBheWxvYWQgZm9yIHRoZSBob29rcyBpbiB0aGUgUERleCBndWlkZSAoYW5kIG90aGVyIGd1aWRlcykuIAoKIyMgT3BlcmF0aW9ucwoqIFdpbGwgbm90IGRvIGZvciBNYXkKCiMjIFJhdGlvbmFsIENvbWJpbmF0aW9ucwoqIFdpbGwgbm90IGRvIGZvciBNYXkKCiMjIFZhbGlkYXRpb24KUG9pbnQgdG8gRkhJUiBWYWxpZGF0b3IgKGphciBmaWxlLCBzY2hlbWFzLCBldGMuKQpIb3cgdG8gdmFsaWRhdGUgYWdhaW5zdCBEYSBWaW5jaSBwcm9maWxlcyB1c2luZyBzYWlkIHRvb2xzIG9yIEZISVIgc2VydmVycy4gCg=="/>
+        </Binary>
+    </contained>
+    <contained>
+        <Binary>
+            <id value="9314"/>
+            <contentType value="text/markdown"/>
+            <data value="UG9pbnQgdG8gRkhJUiBzcGVjIHNlY3VyaXR5IHBhZ2UsIFNtYXJ0IG9uIEZISVIsIGFuZCBGQVNUIChGSElSIGF0IFNjYWxlIFRhc2sgRm9yY2Up"/>
+        </Binary>
+    </contained>
+    <extension url="https://trifolia-fhir.lantanagroup.com/stu3/StructureDefinition/github-branch">
+        <valueString value="master"/>
+    </extension>
+    <extension url="https://trifolia-fhir.lantanagroup.com/stu3/StructureDefinition/github-path">
+        <valueString value="HL7/davinci-ehrx/source/resources/implementationguide/davinci-hrex.xml"/>
+    </extension>
+    <extension url="https://trifolia-fhir.lantanagroup.com/r4/StructureDefinition/github-branch">
+        <valueString value="master"/>
+    </extension>
+    <extension url="https://trifolia-fhir.lantanagroup.com/r4/StructureDefinition/github-path">
+        <valueString value="HL7/davinci-ehrx/source/resources/implementationguide/davinci-hrex.xml"/>
+    </extension>
+    <url value="http://hl7.org/fhir/us/davinci-hrex/ImplementationGuide/davinci-hrex"/>
+    <version value="0.0.1"/>
+    <name value="Da Vinci Health Record Exchange"/>
+    <status value="draft"/>
+    <description value="This Use Case provides guidance to implementers regarding exchange of a patients eHealth Records. The Use Case is very broad encompassing the following scenarios: &#xA;&#xA;* Exchange of quality measure data to support HEDIS/Stars quality measures,&#xA;* Exchange of clinical information generated by providers during the course of care, and &#xA;* Exchange of clinical information gathered during the claims process by payers. &#xA;&#xA;The exchange of quality measure data can be from Provider to Payer, or Payer to Provider. The exchange of clinical information can be from Provider to Provider, Provider to Payer or Payer to Provider. This Use Case defines a broad set of profiles and interactions that may be utilized to accomplish this wide range of **eHealth Record exchange**. It also includes narrower implementation guidance that demonstrates how to use elements of the framework to accomplish each specific type of information exchange.&#xA;"/>
+    <packageId value="davinci-health-record-exchange"/>
+    <fhirVersion value="4.0.0"/>
+    <dependsOn>
+        <extension url="https://trifolia-fhir.lantanagroup.com/r4/StructureDefinition/extension-ig-depends-on-location">
+            <valueString value="http://hl7.org/fhir/us/core"/>
+        </extension>
+        <extension url="https://trifolia-fhir.lantanagroup.com/r4/StructureDefinition/extension-ig-depends-on-name">
+            <valueString value="USCoreR4"/>
+        </extension>
+        <uri value="http://hl7.org/fhir/us/core-r4/ImplementationGuide/ig"/>
+        <packageId value="hl7.fhir.us.core.r4"/>
+        <version value="current"/>
+    </dependsOn>
+    <definition>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/hrex-coverage"/>
+                <display value="HRex Coverage"/>
+            </reference>
+            <name value="HRex Coverage"/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <page>
+            <extension url="https://trifolia-on-fhir.lantanagroup.com/StructureDefinition/extension-ig-page-auto-generate-toc">
+                <valueBoolean value="true"/>
+            </extension>
+            <nameUrl value="toc.md"/>
+            <title value="Table of Contents"/>
+            <generation value="generated"/>
+            <page>
+                <nameReference>
+                    <reference value="#6509"/>
+                    <display value="Page content 6509"/>
+                </nameReference>
+                <title value="Introduction"/>
+                <generation value="markdown"/>
+            </page>
+            <page>
+                <nameReference>
+                    <reference value="#8158"/>
+                    <display value="Page content 8158"/>
+                </nameReference>
+                <title value="Dependencies"/>
+                <generation value="markdown"/>
+            </page>
+            <page>
+                <nameReference>
+                    <reference value="#5767"/>
+                    <display value="Page content 5767"/>
+                </nameReference>
+                <title value="HRex Profiles"/>
+                <generation value="markdown"/>
+            </page>
+            <page>
+                <nameReference>
+                    <reference value="#5449"/>
+                    <display value="Page content 5449"/>
+                </nameReference>
+                <title value="HRex Interactions"/>
+                <generation value="markdown"/>
+            </page>
+            <page>
+                <nameReference>
+                    <reference value="#9314"/>
+                    <display value="Page content 9314"/>
+                </nameReference>
+                <title value="Security"/>
+                <generation value="markdown"/>
+            </page>
+        </page>
+    </definition>
+</ImplementationGuide>
