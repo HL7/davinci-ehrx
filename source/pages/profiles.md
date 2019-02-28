@@ -30,6 +30,14 @@ active: profiles
 <td><a href="StructureDefinition-hrex-coverage.html">HRex Coverage</a></td>
 <td></td>
 </tr>
+<tr>
+<td><a href="StructureDefinition-hrex-practitioner.html">HRex Practitioner</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="StructureDefinition-hrex-provenance.html">HRex Provenance</a></td>
+<td></td>
+</tr>
 </tbody>
 </table>
 

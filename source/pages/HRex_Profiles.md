@@ -6,7 +6,7 @@ active: HRex Profiles
 
 Will define coverage and provenance here initially, then deprecate when present in US Core. 
 ## Coverage
-* Start with http://hl7.org/fhir/us/davinci-deqm/2018Sep/STU3/StructureDefinition-coverage-deqm.html, but point to US Core references and make FHIR R4 compatible. 
+* Start with http://hl7.org/fhir/us/davinci-deqm/2018Sep/STU3/StructureDefinition-coverage-deqm.htmll, but point to US Core references and make FHIR R4 compatible. 
 
 ## Provenance
 * Will do from scratch per the NPRM draft requirements:
@@ -19,6 +19,10 @@ Will define coverage and provenance here initially, then deprecate when present 
 ## Practitioner
 * Start with US Core, but make a required slice on the identifier that must be an NPI. 
 * Base requirements off http://hl7.org/fhir/us/davinci-deqm/2018Sep/STU3/StructureDefinition-practitioner-deqm.html
+
+## PractitionerRole
+* Based on US Core, but references HRex Practitioner
+
 
 ## Organization
 * Start with US Core, but make a required slice on the identifier that must be an NPI or a TIN. 

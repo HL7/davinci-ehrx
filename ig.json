@@ -97,6 +97,14 @@
 		"StructureDefinition/hrex-coverage": {
 			"base": "StructureDefinition-hrex-coverage.html",
 			"defns": "StructureDefinition-hrex-coverage-definitions.html"
+		},
+		"StructureDefinition/hrex-provenance": {
+			"base": "StructureDefinition-hrex-provenance.html",
+			"defns": "StructureDefinition-hrex-provenance-definitions.html"
+		},
+		"StructureDefinition/hrex-practitioner": {
+			"base": "StructureDefinition-hrex-practitioner.html",
+			"defns": "StructureDefinition-hrex-practitioner-definitions.html"
 		}
 	},
 	"dependencyList": [
