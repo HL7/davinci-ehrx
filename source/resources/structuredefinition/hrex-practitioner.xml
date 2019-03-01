@@ -59,7 +59,7 @@
 				<strength value="required"/>
 				<valueSetReference>
 					<reference value="http://hl7.org/fhir/ValueSet/v2-2.7-0360"/>
-				</valueSetReference>
+				</valueSetReference> 
 			</binding>
 		</element>
 	</differential>
