@@ -36,16 +36,17 @@
 		<element id="Organization.identifier:npi">
 			<path value="Organization.identifier"/>
 			<sliceName value="npi"/>
-			<min value="1"/>
+			<min value="0"/>
 			<max value="1"/>
 			<patternIdentifier>
 				<system value="http://hl7.org/fhir/sid/us-npi"/>
 			</patternIdentifier>
+			<mustSupport value="true"/>
 			<isModifier value="false"/>
 		</element>
 		<element id="Organization.identifier:npi.type">
 			<path value="Organization.identifier.type"/>
-			<min value="1"/>
+			<min value="0"/>
 			<max value="1"/>
 			<patternCodeableConcept>
 				<coding>
@@ -53,6 +54,7 @@
 					<code value="PRN"/>
 				</coding>
 			</patternCodeableConcept>
+			<mustSupport value="true"/>
 			<isModifier value="false"/>
 		</element>
 		<element id="Organization.identifier:tin">
@@ -63,6 +65,7 @@
 			<patternIdentifier>
 				<system value="urn:oid:2.16.840.1.113883.4.4"/>
 			</patternIdentifier>
+			<mustSupport value="true"/>
 			<isModifier value="false"/>
 		</element>
 		<element id="Organization.identifier:tin.type">
@@ -75,6 +78,7 @@
 					<code value="TAX"/>
 				</coding>
 			</patternCodeableConcept>
+			<mustSupport value="true"/>
 			<isModifier value="false"/>
 		</element>
 	</differential>
