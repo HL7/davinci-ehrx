@@ -53,12 +53,11 @@
         </element>
         <element id="Practitioner.qualification.code">
             <path value="Practitioner.qualification.code"/>
-            <mustSupport value="false"/>
+            <mustSupport value="true"/>
             <isModifier value="false"/>
             <binding>
                 <strength value="required"/>
             </binding>
-            <mustSupport value="true"/>
         </element>
     </differential>
 </StructureDefinition>
