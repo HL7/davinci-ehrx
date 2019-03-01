@@ -58,6 +58,7 @@
             <binding>
                 <strength value="required"/>
             </binding>
+            <mustSupport value="true"/>
         </element>
     </differential>
 </StructureDefinition>
