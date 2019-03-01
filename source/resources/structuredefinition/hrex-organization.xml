@@ -46,7 +46,7 @@
 		</element>
 		<element id="Organization.identifier:npi.type">
 			<path value="Organization.identifier.type"/>
-			<min value="0"/>
+			<min value="1"/>
 			<max value="1"/>
 			<patternCodeableConcept>
 				<coding>
@@ -60,7 +60,7 @@
 		<element id="Organization.identifier:tin">
 			<path value="Organization.identifier"/>
 			<sliceName value="tin"/>
-			<min value="1"/>
+			<min value="0"/>
 			<max value="1"/>
 			<patternIdentifier>
 				<system value="urn:oid:2.16.840.1.113883.4.4"/>
