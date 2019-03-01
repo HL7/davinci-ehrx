@@ -31,7 +31,15 @@ active: profiles
 <td></td>
 </tr>
 <tr>
+<td><a href="StructureDefinition-hrex-organization.html">HRex Organization</a></td>
+<td></td>
+</tr>
+<tr>
 <td><a href="StructureDefinition-hrex-practitioner.html">HRex Practitioner</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="StructureDefinition-hrex-practitionerrole.html">HRex PractitionerRole</a></td>
 <td></td>
 </tr>
 <tr>
