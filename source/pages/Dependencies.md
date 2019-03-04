@@ -4,8 +4,4 @@ layout: default
 active: Dependencies
 ---
 
-## FHIR DSTU2 (aka Argonaut)
-
-## FHIR STU3
-
-## FHIR R4
+This guide will eventually include dependencies on FHIR R4, FHIR STU3, and FHIR DSTU 2 profiles. The current ballot versionis focusing on FHIR R4 content first, and will then back-port those requirements to prior versions of FHIR.  

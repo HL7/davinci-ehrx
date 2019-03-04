@@ -21,7 +21,7 @@ Will define coverage and provenance here initially, then deprecate when present 
 * Base requirements off http://hl7.org/fhir/us/davinci-deqm/2018Sep/STU3/StructureDefinition-practitioner-deqm.html
 
 ## PractitionerRole
-* Based on US Core, but references HRex Practitioner
+* Based on US Core, but references HRex Practitioner and HRex Organization. 
 
 
 ## Organization
