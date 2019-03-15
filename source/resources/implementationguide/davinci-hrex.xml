@@ -225,6 +225,7 @@
             <page>
                 <nameReference>
                     <reference value="#6509"/>
+					<type value="Binary"/>
                     <display value="Page content 6509"/>
                 </nameReference>
                 <title value="Introduction"/>
