@@ -1,6 +1,8 @@
 {
 	"tool": "jekyll",
 	"source": "implementationguide/davinci-hrex.xml",
+	"version": "4.0.0",
+	"fixed-business-version": "4.0.0",
 	"npm-name": "hl7.fhir.us.davinci-hrex",
 	"license": "CC0-1.0",
 	"paths": {
@@ -117,7 +119,7 @@
 	},
 	"dependencyList": [
 		{
-			"location": "http://hl7.org/fhir/us/core-r4",
+			"location": "http://hl7.org/fhir/us/core",
 			"name": "USCoreR4",
 			"version": "current"
 		},
