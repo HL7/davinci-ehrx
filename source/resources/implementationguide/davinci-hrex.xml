@@ -302,51 +302,69 @@
                         <generation value="markdown"/>
                     </page>
                     <page>
+						<!--
                         <nameReference>
                             <reference value="#6412"/>
                             <display value="Page content 6412"/>
                         </nameReference>
+						-->
+                        <nameUrl value="US_Core_(FHIR_STU3).html"/>
                         <title value="US Core (FHIR STU3)"/>
                         <generation value="markdown"/>
                     </page>
                 </page>
                 <page>
+					<!--
                     <nameReference>
                         <reference value="#7637"/>
                         <display value="Page content 7637"/>
                     </nameReference>
+					-->
+                    <nameUrl value="FHIR_DSTU_2 _(aka_Argonaut)_Dependencies.html"/>
                     <title value="FHIR DSTU 2 (aka Argonaut) Dependencies"/>
                     <generation value="markdown"/>
                 </page>
             </page>
             <page>
+				<!--
                 <nameReference>
                     <reference value="#5767"/>
                     <display value="Page content 5767"/>
                 </nameReference>
+				-->
+                <nameUrl value="HRex_Profiles.html"/>
                 <title value="HRex Profiles"/>
                 <generation value="markdown"/>
             </page>
             <page>
+				<!--
                 <nameReference>
                     <reference value="#5449"/>
                     <display value="Page content 5449"/>
                 </nameReference>
+				-->
+                <nameUrl value="HRex Interactions"/>
                 <title value="HRex Interactions"/>
                 <generation value="markdown"/>
                 <page>
+					<!--
                     <nameReference>
                         <reference value="#7199"/>
                         <display value="Page content 7199"/>
                     </nameReference>
+					-->
+                    <nameUrl value="Push_(POST_and_PUT).html"/>
                     <title value="Push (POST and PUT)"/>
                     <generation value="markdown"/>
                 </page>
                 <page>
+					<!--
                     <nameReference>
                         <reference value="#7964"/>
                         <display value="Page content 7964"/>
                     </nameReference>
+					-->
+                    <nameUrl value="Push_(Unsolicited_Communication).html"/>
                     <title value="Push (Unsolicited Communication)"/>
                     <generation value="markdown"/>
                 </page>
