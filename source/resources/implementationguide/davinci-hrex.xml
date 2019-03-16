@@ -320,7 +320,7 @@
                         <display value="Page content 7637"/>
                     </nameReference>
 					-->
-                    <nameUrl value="FHIR_DSTU_2 _(aka_Argonaut)_Dependencies.html"/>
+                    <nameUrl value="FHIR_DSTU_2_(aka_Argonaut)_Dependencies.html"/>
                     <title value="FHIR DSTU 2 (aka Argonaut) Dependencies"/>
                     <generation value="markdown"/>
                 </page>
@@ -343,7 +343,7 @@
                     <display value="Page content 5449"/>
                 </nameReference>
 				-->
-                <nameUrl value="HRex Interactions"/>
+                <nameUrl value="HRex_Interactions.html"/>
                 <title value="HRex Interactions"/>
                 <generation value="markdown"/>
                 <page>
