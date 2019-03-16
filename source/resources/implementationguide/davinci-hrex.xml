@@ -248,41 +248,56 @@
                 <title value="Dependencies"/>
                 <generation value="markdown"/>
                 <page>
+					<!--
                     <nameReference>
                         <reference value="#8517"/>
                         <display value="Page content 8517"/>
                     </nameReference>
+					-->
+                    <nameUrl value="FHIR_R4_Dependencies.html"/>
                     <title value="FHIR R4 Dependencies"/>
                     <generation value="markdown"/>
                     <page>
+						<!--
                         <nameReference>
                             <reference value="#5065"/>
                             <display value="Page content 5065"/>
                         </nameReference>
+						-->
+                        <nameUrl value="C-CDA_on_FHIR_(FHIR_R4.html)"/>
                         <title value="C-CDA on FHIR (FHIR R4)"/>
                         <generation value="markdown"/>
                     </page>
                     <page>
+						<!--
                         <nameReference>
                             <reference value="#8401"/>
                             <display value="Page content 8401"/>
                         </nameReference>
+						-->
+                        <nameUrl value="US_Core_(FHIR_R4).html"/>
                         <title value="US Core (FHIR R4)"/>
                         <generation value="markdown"/>
                     </page>
                 </page>
                 <page>
+					<!--
                     <nameReference>
                         <reference value="#7448"/>
                         <display value="Page content 7448"/>
                     </nameReference>
+					-->
+                    <nameUrl value="FHIR_STU3_Dependencies.html"/>
                     <title value="FHIR STU3 Dependencies"/>
                     <generation value="markdown"/>
                     <page>
+						<!--
                         <nameReference>
                             <reference value="#5887"/>
                             <display value="Page content 5887"/>
                         </nameReference>
+						-->
+                        <nameUrl value="C-CDA_on_FHIR_(FHIR_STU3).html"/>
                         <title value="C-CDA on FHIR (FHIR STU3)"/>
                         <generation value="markdown"/>
                     </page>
