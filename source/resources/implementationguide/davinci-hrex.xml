@@ -369,75 +369,102 @@
                     <generation value="markdown"/>
                 </page>
                 <page>
+					<!--
                     <nameReference>
                         <reference value="#7544"/>
                         <display value="Page content 7544"/>
                     </nameReference>
+					-->
+                    <nameUrl value="Pull_(GET).html"/>
                     <title value="Pull (GET)"/>
                     <generation value="markdown"/>
                 </page>
                 <page>
+					<!--
                     <nameReference>
                         <reference value="#7705"/>
                         <display value="Page content 7705"/>
                     </nameReference>
+					-->
+                    <nameUrl value="Request_(Solicited_Communication).html"/>
                     <title value="Request (Solicited Communication)"/>
                     <generation value="markdown"/>
                 </page>
                 <page>
+					<!--
                     <nameReference>
                         <reference value="#8044"/>
                         <display value="Page content 8044"/>
                     </nameReference>
+					-->
+                    <nameUrl value="Subscribe.html"/>
                     <title value="Subscribe"/>
                     <generation value="markdown"/>
                 </page>
                 <page>
+					<!--
                     <nameReference>
                         <reference value="#5842"/>
                         <display value="Page content 5842"/>
                     </nameReference>
+					-->
+                    <nameUrl value="Bulk_Data.html"/>
                     <title value="Bulk Data"/>
                     <generation value="markdown"/>
                 </page>
                 <page>
+					<!--
                     <nameReference>
                         <reference value="#9157"/>
                         <display value="Page content 9157"/>
                     </nameReference>
+					-->
+                    <nameUrl value="CDS_Hooks.html"/>
                     <title value="CDS Hooks"/>
                     <generation value="markdown"/>
                 </page>
                 <page>
+					<!--
                     <nameReference>
                         <reference value="#8875"/>
                         <display value="Page content 8875"/>
                     </nameReference>
+					-->
+                    <nameUrl value="Operations.html"/>
                     <title value="Operations"/>
                     <generation value="markdown"/>
                 </page>
                 <page>
+					<!--
                     <nameReference>
                         <reference value="#8770"/>
                         <display value="Page content 8770"/>
                     </nameReference>
+					-->
+                    <nameUrl value="Rational_Combinations.html"/>
                     <title value="Rational Combinations"/>
                     <generation value="markdown"/>
                 </page>
                 <page>
+					<!--
                     <nameReference>
                         <reference value="#9029"/>
                         <display value="Page content 9029"/>
                     </nameReference>
+					-->
+                    <nameUrl value="Validation.html"/>
                     <title value="Validation"/>
                     <generation value="markdown"/>
                 </page>
             </page>
             <page>
+				<!--
                 <nameReference>
                     <reference value="#9314"/>
                     <display value="Page content 9314"/>
                 </nameReference>
+					-->
+                <nameUrl value="Security.html"/>
                 <title value="Security"/>
                 <generation value="markdown"/>
             </page>
