@@ -22,16 +22,8 @@ active: toc
         * <a href="Request_(Solicited_Communication).html">Request (Solicited Communication)</a>
         * <a href="Subscribe.html">Subscribe</a>
         * <a href="Bulk_Data.html">Bulk Data</a>
-        * <a href="CDS_Hooks.html">CDS Hooks</a>
-            * <a href="Support_for_R4.html">Support for R4</a>
-            * <a href="Additional_Hooks.html">Additional Hooks</a>
-            * <a href="Configuration.html">Configuration</a>
-            * <a href="Specification.html">Specification</a>
-                * <a href="Systems.html">Systems</a>
-                * <a href="FHIR_Profiles_and_CDS_Hooks.html">FHIR Profiles and CDS Hooks</a>
-                * <a href="CDS_Hooks_Customization.html">CDS Hooks Customization</a>
-                    * <a href="Hooks.html">Hooks</a>
         * <a href="Operations.html">Operations</a>
         * <a href="Rational_Combinations.html">Rational Combinations</a>
         * <a href="Validation.html">Validation</a>
     * <a href="Security_and_Privacy.html">Security and Privacy</a>
+    * <a href="Glossary.html">Glossary</a>

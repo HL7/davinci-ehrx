@@ -3,10 +3,10 @@
     xmlns="http://hl7.org/fhir">
     <id value="hrex-coverage"/>
     <meta>
-        <versionId value="14"/>
-        <lastUpdated value="2019-03-21T16:20:37.000-04:00"/>
+        <versionId value="15"/>
+        <lastUpdated value="2019-03-25T10:26:55.000-04:00"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/davinci-HRex/StructureDefinition/hrex-coverage"/>
+    <url value="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-coverage"/>
     <version value="0.2.0"/>
     <name value="HRexCoverage"/>
     <title value="HRex Coverage Profile"/>
