@@ -7,11 +7,11 @@
         <lastUpdated value="2019-06-06T21:55:20.000-04:00"/>
         <security>
             <system value="https://trifolia-fhir.lantanagroup.com/security"/>
-            <code value="everyone^write"/>
+            <code value="everyone^read"/>
         </security>
         <security>
             <system value="https://trifolia-fhir.lantanagroup.com/security"/>
-            <code value="everyone^read"/>
+            <code value="everyone^write"/>
         </security>
     </meta>
     <text>

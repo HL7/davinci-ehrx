@@ -3,21 +3,22 @@
     xmlns="http://hl7.org/fhir">
     <id value="hrex-provenance"/>
     <meta>
-        <versionId value="18"/>
-        <lastUpdated value="2019-06-06T23:03:43.000-04:00"/>
-        <security>
-            <system value="https://trifolia-fhir.lantanagroup.com/security"/>
-            <code value="everyone^write"/>
-        </security>
+        <versionId value="19"/>
+        <lastUpdated value="2019-06-07T00:24:01.000-04:00"/>
         <security>
             <system value="https://trifolia-fhir.lantanagroup.com/security"/>
             <code value="everyone^read"/>
+        </security>
+        <security>
+            <system value="https://trifolia-fhir.lantanagroup.com/security"/>
+            <code value="everyone^write"/>
         </security>
     </meta>
     <text>
         <status value="additional"/>
         <div
             xmlns="http://www.w3.org/1999/xhtml">The HRex Provenance resource requires  occurance (period or dateTime) and agent to be specified. It also requires implementers to support signature. 
+        
         </div>
     </text>
     <url value="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-provenance"/>

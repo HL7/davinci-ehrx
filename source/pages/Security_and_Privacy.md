@@ -4,4 +4,4 @@ layout: default
 active: Security and Privacy
 ---
 
-Point to FHIR spec security page, Smart on FHIR, and FAST (FHIR at Scale Task Force)
+HRex leverages core FHIR security principles (https://www.hl7.org/fhir/security.html) and SMART on FHIR (http://docs.smarthealthit.org/). 

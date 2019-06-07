@@ -11,7 +11,6 @@ This section describes the following interactions:
 * Request
 * Subscribe
 * Bulk Data
-* CDS Hooks
 * Operations
 * Rational Combinations
 * Validation
