@@ -27,24 +27,24 @@ active: profiles
 </thead>
 <tbody>
 <tr>
-<td><a href="StructureDefinition-hrex-organization.html">HRex Organization</a></td>
-<td></td>
-</tr>
-<tr>
-<td><a href="StructureDefinition-hrex-practitioner.html">HRex Practitioner</a></td>
-<td></td>
-</tr>
-<tr>
-<td><a href="StructureDefinition-hrex-practitionerrole.html">HRex PractitionerRole</a></td>
-<td></td>
-</tr>
-<tr>
-<td><a href="StructureDefinition-hrex-provenance.html">HRex Provenance</a></td>
-<td></td>
-</tr>
-<tr>
 <td><a href="StructureDefinition-hrex-coverage.html">HRexCoverage</a></td>
-<td>The HRex Coverage Profile defines the constraints for representing  the subscriber information to the Payer.  This along with the patient first name, last name, date of birth and gender allows the payer to identify the member in their system for which the MRP was performed</td>
+<td>The HRex Coverage Profile defines the constraints for representing  the subscriber information to the Payer.  This along with the patient first name, last name, date of birth and gender allows the payer to identify the member in their system for which the MRP was performer. </td>
+</tr>
+<tr>
+<td><a href="StructureDefinition-hrex-organization.html">HRexOrganization</a></td>
+<td>Requires support of either an NPI or TIN identifier. </td>
+</tr>
+<tr>
+<td><a href="StructureDefinition-hrex-practitioner.html">HRexPractitioner</a></td>
+<td>HRexPractitioner requires an NPI and that qualification be supported. </td>
+</tr>
+<tr>
+<td><a href="StructureDefinition-hrex-practitionerrole.html">HRexPractitionerRole</a></td>
+<td>Requires HRexPractitioner and HRexPractitionerRole. </td>
+</tr>
+<tr>
+<td><a href="StructureDefinition-hrex-provenance.html">HRexProvenance</a></td>
+<td>The HRex Provenance resource requires  occurance (period or dateTime) and agent to be specified. It also requires implementers to support signature. </td>
 </tr>
 </tbody>
 </table>

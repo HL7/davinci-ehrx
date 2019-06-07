@@ -3,12 +3,28 @@
     xmlns="http://hl7.org/fhir">
     <id value="hrex-practitionerrole"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2019-03-15T01:17:54.000-04:00"/>
+        <versionId value="7"/>
+        <lastUpdated value="2019-06-06T21:53:44.000-04:00"/>
+        <security>
+            <system value="https://trifolia-fhir.lantanagroup.com/security"/>
+            <code value="everyone^read"/>
+        </security>
+        <security>
+            <system value="https://trifolia-fhir.lantanagroup.com/security"/>
+            <code value="everyone^write"/>
+        </security>
     </meta>
+    <text>
+        <status value="additional"/>
+        <div
+            xmlns="http://www.w3.org/1999/xhtml">Requires HRexPractitioner and HRexPractitionerRole. 
+        </div>
+    </text>
     <url value="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-practitionerrole"/>
-    <name value="HRex PractitionerRole"/>
+    <name value="HRexPractitionerRole"/>
+    <title value="HRex PractitionerRole"/>
     <status value="draft"/>
+    <description value="Requires HRexPractitioner and HRexPractitionerRole. "/>
     <fhirVersion value="4.0.0"/>
     <kind value="resource"/>
     <abstract value="false"/>

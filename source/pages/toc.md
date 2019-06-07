@@ -25,5 +25,7 @@ active: toc
         * <a href="Operations.html">Operations</a>
         * <a href="Rational_Combinations.html">Rational Combinations</a>
         * <a href="Validation.html">Validation</a>
+        * <a href="SMART-on-FHIR.html">SMART-on-FHIR</a>
+        * <a href="Dynamic_Registration_for_SMART_Apps.html">Dynamic Registration for SMART Apps</a>
     * <a href="Security_and_Privacy.html">Security and Privacy</a>
     * <a href="Glossary.html">Glossary</a>

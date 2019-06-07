@@ -4,3 +4,4 @@ layout: default
 active: StructureDefinition-hrex-practitionerrole-intro
 ---
 
+Requires HRexPractitioner and HRexPractitionerRole. 
