@@ -4,14 +4,14 @@
     <id value="davinci-hrex"/>
     <meta>
         <versionId value="65"/>
-        <lastUpdated value="2019-06-06T22:43:50.000-04:00"/>
-        <security>
-            <system value="https://trifolia-fhir.lantanagroup.com/security"/>
-            <code value="everyone^read"/>
-        </security>
+        <lastUpdated value="2019-06-06T23:05:50.000-04:00"/>
         <security>
             <system value="https://trifolia-fhir.lantanagroup.com/security"/>
             <code value="everyone^write"/>
+        </security>
+        <security>
+            <system value="https://trifolia-fhir.lantanagroup.com/security"/>
+            <code value="everyone^read"/>
         </security>
     </meta>
     <url value="http://hl7.org/fhir/us/davinci-hrex/ImplementationGuide/davinci-hrex"/>
