@@ -94,6 +94,14 @@
 		}
 	},
 	"resources": {
+		"StructureDefinition/hrex-coverage": {
+			"base": "StructureDefinition-hrex-coverage.html",
+			"defns": "StructureDefinition-hrex-coverage-definitions.html"
+		},
+		"StructureDefinition/hrex-provenance": {
+			"base": "StructureDefinition-hrex-provenance.html",
+			"defns": "StructureDefinition-hrex-provenance-definitions.html"
+		},
 		"StructureDefinition/hrex-practitioner": {
 			"base": "StructureDefinition-hrex-practitioner.html",
 			"defns": "StructureDefinition-hrex-practitioner-definitions.html"
@@ -105,14 +113,6 @@
 		"StructureDefinition/hrex-organization": {
 			"base": "StructureDefinition-hrex-organization.html",
 			"defns": "StructureDefinition-hrex-organization-definitions.html"
-		},
-		"StructureDefinition/hrex-coverage": {
-			"base": "StructureDefinition-hrex-coverage.html",
-			"defns": "StructureDefinition-hrex-coverage-definitions.html"
-		},
-		"StructureDefinition/hrex-provenance": {
-			"base": "StructureDefinition-hrex-provenance.html",
-			"defns": "StructureDefinition-hrex-provenance-definitions.html"
 		}
 	},
 	"version": "4.0.0",
