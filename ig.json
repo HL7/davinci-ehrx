@@ -110,6 +110,14 @@
 			"base": "StructureDefinition-hrex-coverage.html",
 			"defns": "StructureDefinition-hrex-coverage-definitions.html"
 		},
+		"Media/hrex2": {
+			"base": "Media-hrex2.html",
+			"defns": "Media-hrex2-definitions.html"
+		},
+		"Media/hrex1": {
+			"base": "Media-hrex1.html",
+			"defns": "Media-hrex1-definitions.html"
+		},
 		"StructureDefinition/hrex-provenance": {
 			"base": "StructureDefinition-hrex-provenance.html",
 			"defns": "StructureDefinition-hrex-provenance-definitions.html"
@@ -123,12 +131,6 @@
 			"name": "USCoreR4",
 			"version": "current",
 			"package": "hl7.fhir.us.core.r4"
-		},
-		{
-			"location": "http://hl7.org/fhir/us/ccda-r4",
-			"name": "CCDAonFHIRR4",
-			"version": "current",
-			"package": "hl7.fhir.us.ccda.r4"
 		}
 	]
 }

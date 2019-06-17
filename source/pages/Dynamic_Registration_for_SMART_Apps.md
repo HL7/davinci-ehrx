@@ -4,6 +4,8 @@ layout: default
 active: Dynamic Registration for SMART Apps
 ---
 
+[Previous Page](SMART-on-FHIR.html)
+
 Member-authorized access to Payer FHIR APIs for other Payers and Third-Party Applications creates a situation where Payers **MAY** need to cross-register applications with many other payers. This multiplicity of cross-registrations creates a situation where one or more entities providing a verification service for a "Community of Trust" provides significant economies of scale that benefits both organizations registering applications and data holders (such as payers) needing to register those applications.
 
 The FHIR community has recognized the need to solve the challenge of a more streamlined dynamic registration process. A specification has been developed: [Unified Data Access Profiles - Dynamic Client Registration](http://www.udap.org/udap-dynamic-client-registration.html). 
@@ -128,3 +130,6 @@ Content-Type: application/json
 Note: if the Client App receives an error code from the Authorization Server, then the Client App MAY attempt registration again by generating a new software statement specifying a different client certificate. For example, if the Client App has been issued two certificates corresponding to two trust communities, it MAY attempt registration using the second certificate if the registration using the first certificate is denied. The Client App SHOULD NOT attempt registration again with the same certificate if an unapproved_software_statement error is returned.
 
 
+
+
+[Next Page](Security_and_Privacy.html)

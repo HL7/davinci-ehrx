@@ -1,5 +1,5 @@
 ---
-title: Implementation Guide Home Page
+title: Implementation Guide HomePage
 layout: default
 active: home
 ---

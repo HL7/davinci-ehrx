@@ -4,6 +4,8 @@ layout: default
 active: US Core (FHIR STU3)
 ---
 
+[Previous Page](C-CDA_on_FHIR_(FHIR_STU3).html)
+
 
 Since FHIR R4 was only released in January 2019 this IG will also support US Core STU2 profiles that are based on FHIR STU3.
 
@@ -24,3 +26,6 @@ The profiles referenced in this implementation Guide include:
 * [US Core Practitioner Profile](http://hl7.org/fhir/us/core/STU2/StructureDefinition-us-core-practitioner.html)
 * [US Core PractitionerRole Profile](http://hl7.org/fhir/us/core/STU2/StructureDefinition-us-core-practitionerrole.html)
 * [US Core Procedure Profile](http://hl7.org/fhir/us/core/STU2/StructureDefinition-us-core-procedure.html)
+
+
+[Next Page](FHIR_DSTU_2_(aka_Argonaut)_Dependencies.html)

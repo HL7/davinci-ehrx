@@ -4,6 +4,8 @@ layout: default
 active: Push (Unsolicited Communication)
 ---
 
+[Previous Page](Push_(POST_and_PUT).html)
+
 ## Information Exchange Interaction Description
 The Request (Solicited Communication) information exchange interaction is a alternative way to handle a Pull interation for a FHIR APIs. It uses the CommunicationRequest Resource to send a message that communicates an information request.  The CommunicationRequest includes the kind of information requested. It may also information supporting the request and the tasks requested to be performed associated with the information to be returned. The Information Request Recipient processes the message payload, performs the tasks based on their business logic and internal processes, then returns the requested information and the completed task information in a Communication Message that is linked to the original Information Request Message through an identifier established in the request. The Information Request Recipient acts an an Information Sender and returns the requested information to the Information Recipient(s) identified in the original CommunicationRequest. The Information Recipient's business rules for processing the communicated information are outside the scope of this implementation guide.
 
@@ -28,3 +30,5 @@ The Request (Solicited Communication) information exchange interaction is a alte
 
 ## Detailed Specification
 For a more detailed specification of the <a href="https://build.fhir.org/ig/HL7/davinci-ehrx/HRex_Interactions.html">Push (Unsolicited Communication) Interaction</a>, consult the HRex implementation guide.
+
+[Next Page](Pull_(GET).html)

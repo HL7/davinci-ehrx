@@ -4,6 +4,8 @@ layout: default
 active: HRex Interactions
 ---
 
+[Previous Page](HRex_Profiles.html)
+
 This section describes the following interactions:
 
 * Push
@@ -14,3 +16,6 @@ This section describes the following interactions:
 * Operations
 * Rational Combinations
 * Validation
+
+
+[Next Page](Push_(POST_and_PUT).html)

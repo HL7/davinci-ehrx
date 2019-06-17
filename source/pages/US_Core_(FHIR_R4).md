@@ -4,6 +4,8 @@ layout: default
 active: US Core (FHIR R4)
 ---
 
+[Previous Page](C-CDA_on_FHIR_(FHIR_R4).html)
+
 
 ## US Core R4
 
@@ -23,3 +25,6 @@ active: US Core (FHIR R4)
 * [US Core MedicationStatement Profile](http://hl7.org/fhir/us/core/2019Jan/StructureDefinition-us-core-medicationstatement.html)
 * [US Core ObservationResults Profile](http://hl7.org/fhir/us/core/2019Jan/StructureDefinition-us-core-observationresults.html)
 * [US Core Procedure Profile](http://hl7.org/fhir/us/core/2019Jan/StructureDefinition-us-core-procedure.html)
+
+
+[Next Page](FHIR_STU3_Dependencies.html)
