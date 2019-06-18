@@ -7,7 +7,7 @@
         <lastUpdated value="2019-06-18T15:45:21.000-04:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/davinci-hrex/ImplementationGuide/davinci-hrex"/>
-    <version value="0.0.1"/>
+    <version value="0.1.0"/>
     <name value="DaVinciHealthRecordExchangeHRex"/>
     <title value="Da Vinci Health Record Exchange (HRex)"/>
     <status value="draft"/>
