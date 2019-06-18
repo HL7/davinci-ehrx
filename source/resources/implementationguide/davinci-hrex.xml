@@ -3,8 +3,8 @@
     xmlns="http://hl7.org/fhir">
     <id value="davinci-hrex"/>
     <meta>
-        <versionId value="94"/>
-        <lastUpdated value="2019-06-18T11:47:04.000-04:00"/>
+        <versionId value="95"/>
+        <lastUpdated value="2019-06-18T15:45:21.000-04:00"/>
     </meta>
     <url value="http://hl7.org/fhir/us/davinci-hrex/ImplementationGuide/davinci-hrex"/>
     <version value="0.0.1"/>
@@ -182,11 +182,6 @@
             <page>
                 <nameUrl value="Terminology.html"/>
                 <title value="Terminology"/>
-                <generation value="markdown"/>
-            </page>
-            <page>
-                <nameUrl value="Glossary.html"/>
-                <title value="Glossary"/>
                 <generation value="markdown"/>
             </page>
         </page>

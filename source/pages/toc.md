@@ -28,5 +28,4 @@ active: toc
         * <a href="SMART-on-FHIR.html">SMART-on-FHIR</a>
         * <a href="Dynamic_Registration_for_SMART_Apps.html">Dynamic Registration for SMART Apps</a>
     * <a href="Security_and_Privacy.html">Security and Privacy</a>
-    * <a href="Terminology.html">Terminology</a>
-    * <a href="Glossary.html">Glossary</a>
+    * <a href="terminology.html">Terminology</a>
