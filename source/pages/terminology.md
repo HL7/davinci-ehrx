@@ -1,25 +1,11 @@
 ---
 title: Terminology
 layout: default
-active: terminology
+active: Terminology
 ---
-<!-- { :.no_toc } -->
-<!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc'-->
-<!-- * Do not remove this line (it will not be displayed)
-{:toc} -->
-<!-- end TOC -->
 
-<br/>
+[Previous Page](Security_and_Privacy.html)
 
-### Value Sets
+This implementation guide does not define any terminology on it's own. Rather, it leverages the terminology used in US Core. Please refer to the [US Core Terminology page](http://hl7.org/fhir/us/core/terminology.html) for guidance. 
 
-**No value sets are defined for this implementation guide**
-
-
-
-### Code Systems
-
-**No code systems are defined for this implementation guide**
-
-
-
+[Next Page](Glossary.html)

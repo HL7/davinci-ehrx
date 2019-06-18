@@ -8,4 +8,4 @@ active: Security and Privacy
 
 HRex leverages core FHIR security principles (https://www.hl7.org/fhir/security.html) and SMART on FHIR (http://docs.smarthealthit.org/). 
 
-[Next Page](Glossary.html)
+[Next Page](Terminology.html)
