@@ -14,3 +14,4 @@ active: capstatements
 <!-- end TOC -->
 
 **No capability statements are defined for this implementation guide**
+It is expected that implementation guides that use the HRex framework will define their own capability statements. 
