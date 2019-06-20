@@ -130,7 +130,7 @@
 		{
 			"location": "http://hl7.org/fhir/us/core",
 			"name": "USCoreR4",
-			"version": "current",
+			"version": "3.0.0",
 			"package": "hl7.fhir.us.core"
 		}
 	]
