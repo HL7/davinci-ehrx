@@ -22,9 +22,9 @@ active: US Core (FHIR R4)
 * [US Core DocumentReference Profile](http://hl7.org/fhir/us/core/STU3/StructureDefinition-us-core-documentreference.html)
 * [US Core Encounter Profile](http://hl7.org/fhir/us/core/STU3/StructureDefinition-us-core-encounter.html)
 * [US Core Immunization Profile](http://hl7.org/fhir/us/core/STU3/StructureDefinition-us-core-immunization.html)
+* [US Core Laboratory Result Observation Profile](http://hl7.org/fhir/us/core/STU3/StructureDefinition-us-core-observation-lab.html)
 * [US Core Medication Profile](http://hl7.org/fhir/us/core/STU3/StructureDefinition-us-core-medication.html)
 * [US Core MedicationStatement Profile](http://hl7.org/fhir/us/core/STU3/StructureDefinition-us-core-medicationstatement.html)
-* [US Core ObservationResults Profile](http://hl7.org/fhir/us/core/STU3/StructureDefinition-us-core-observationresults.html)
 * [US Core Procedure Profile](http://hl7.org/fhir/us/core/STU3/StructureDefinition-us-core-procedure.html)
 
 
