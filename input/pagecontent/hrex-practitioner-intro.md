@@ -1,0 +1,1 @@
+HRexPractitioner requires an NPI and that qualification be supported. 

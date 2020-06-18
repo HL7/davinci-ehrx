@@ -1,0 +1,27 @@
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="{{site.data.info.assets}}toc.html">Table of Contents</a>
+  </li>
+  <li>
+    <a href="{{site.data.info.assets}}index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Artifacts<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="{{site.data.info.assets}}artifacts.html#profiles">Profiles</a>
+      </li>
+      <li>
+        <a href="{{site.data.info.assets}}artifacts.html">All</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="http://hl7.org/fhir/us/davinci-pcde/downloads.html">Downloads</a>
+  </li>
+  <li>
+    <a href="http://hl7.org/fhir/us/davinci-pcde/history.html">History</a>
+  </li>
+</ul>

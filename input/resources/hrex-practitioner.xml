@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="hrex-practitioner"/>
+  <meta>
+    <versionId value="14"/>
+    <lastUpdated value="2019-06-10T10:31:44.000-04:00"/>
+  </meta>
+  <text>
+    <status value="additional"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">HRexPractitioner requires an NPI and that qualification be supported. 
+        </div>
+  </text>
+  <url value="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-practitioner"/>
+  <name value="HRexPractitioner"/>
+  <title value="HRex Practitioner"/>
+  <status value="draft"/>
+  <description value="HRexPractitioner requires an NPI and that qualification be supported. "/>
+  <kind value="resource"/>
+  <abstract value="false"/>
+  <type value="Practitioner"/>
+  <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Practitioner">
+      <path value="Practitioner"/>
+    </element>
+    <element id="Practitioner.identifier">
+      <path value="Practitioner.identifier"/>
+      <comment value="NPI must be supported as the identifier system in the US, Tax id is allowed, Local id is allowed in addition to an another identifier supplied by a jurisdictional authority such as a practitioner's *Drug Enforcement Administration (DEA)* number."/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Practitioner.identifier:npislice">
+      <path value="Practitioner.identifier"/>
+      <sliceName value="npislice"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Identifier"/>
+      </type>
+      <mustSupport value="true"/>
+      <isModifier value="false"/>
+    </element>
+    <element id="Practitioner.identifier:npislice.system">
+      <path value="Practitioner.identifier.system"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="uri"/>
+      </type>
+      <fixedUri value="http://hl7.org/fhir/sid/us-npi"/>
+      <mustSupport value="true"/>
+      <isModifier value="false"/>
+    </element>
+    <element id="Practitioner.qualification">
+      <path value="Practitioner.qualification"/>
+      <mustSupport value="true"/>
+      <isModifier value="false"/>
+      <binding>
+        <strength value="required"/>
+      </binding>
+    </element>
+    <element id="Practitioner.qualification.code">
+      <path value="Practitioner.qualification.code"/>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+      <binding>
+        <strength value="required"/>
+      </binding>
+    </element>
+  </differential>
+</StructureDefinition>

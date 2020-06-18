@@ -1,0 +1,38 @@
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R4/fhir-single.xsd">
+  <a name="rest"> </a>
+  <h3>RESTful creates &amp; updates</h3>
+  <p>
+    
+  </p>
+
+  <a name="patch"> </a>
+  <h3>Using Patch</h3>
+  <p>
+    
+  </p>
+
+  <a name="document"> </a>
+  <h3>Sharing documents</h3>
+  <p>
+    
+  </p>
+
+  <a name="collection"> </a>
+  <h3>Sharing collections</h3>
+  <p>
+    
+  </p>
+
+  <a name="transaction"> </a>
+  <h3>Excuting transactions</h3>
+  <p>
+    
+  </p>
+
+  <a name="batch"> </a>
+  <h3>Executing batches</h3>
+  <p>
+    
+  </p>
+
+</div>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               url="http://hl7.org/fhir/us/davinci-hrex"
+               ciUrl="http://build.fhir.org/ig/HL7/davinci-ehrx"
+               defaultWorkgroup="fm"
+               defaultVersion="current"
+               xsi:noNamespaceSchemaLocation="../schemas/specification.xsd"
+               ballotUrl="http://hl7.org/fhir/us/davinci-hrex/2019Jun">
+   <version code="current" url="http://build.fhir.org/ig/HL7/davinci-ehrx"/>
+   <version code="0.1.0" url="http://hl7.org/fhir/us/davinci-hrex/2019Jun"/>
+   <artifactPageExtension value="-definitions"/>
+   <artifactPageExtension value="-examples"/>
+   <artifactPageExtension value="-mappings"/>
+   <artifact name="HRex Coverage Profile"
+             key="StructureDefinition-hrex-coverage"
+             id="StructureDefinition/hrex-coverage"/>
+   <artifact name="HRex Organization"
+             key="StructureDefinition-hrex-organization"
+             id="StructureDefinition/hrex-organization"/>
+   <artifact name="HRex Practitioner"
+             key="StructureDefinition-hrex-practitioner"
+             id="StructureDefinition/hrex-practitioner"/>
+   <artifact name="HRex PractitionerRole"
+             key="StructureDefinition-hrex-practitionerrole"
+             id="StructureDefinition/hrex-practitionerrole"/>
+   <artifact name="HRex Provenance"
+             key="StructureDefinition-hrex-provenance"
+             id="StructureDefinition/hrex-provenance"/>
+   <page name="(NA)" key="NA"/>
+   <page name="(many)" key="many"/>
+   <page name="Table of Contents" key="toc"/>
+   <page name="Home" key="index"/>
+   <page name="Introduction" key="Introduction"/>
+   <page name="Approaches to exchanging FHIR data" key="exchanging"/>
+   <page name="Pulling with FHIR search" key="exchanging-search"/>
+   <page name="Pushing with FHIR REST" key="exchanging-rest"/>
+   <page name="Exchange using FHIR subscription" key="exchanging-subscription"/>
+   <page name="Exchange using polling" key="exchanging-polling"/>
+   <page name="Exchange using FHIR operations" key="exchanging-operation"/>
+   <page name="Exchanging using messaging" key="exchanging-messaging"/>
+   <page name="Requesting humans to exchange data" key="exchanging-request"/>
+   <page name="Dependencies" key="Dependencies"/>
+   <page name="FHIR R4 Dependencies" key="FHIR_R4_Dependencies"/>
+   <page name="C-CDA on FHIR (FHIR R4)" key="C-CDA_on_FHIR_R4"/>
+   <page name="US Core (FHIR R4)" key="US_Core_R4"/>
+   <page name="FHIR STU3 Dependencies" key="FHIR_STU3_Dependencies"/>
+   <page name="C-CDA on FHIR (FHIR STU3)" key="C-CDA_on_FHIR_STU3"/>
+   <page name="US Core (FHIR STU3)" key="US_Core_STU3"/>
+   <page name="FHIR DSTU 2 (aka Argonaut) Dependencies"
+         key="FHIR_DSTU_2_Dependencies"/>
+   <page name="HRex Profiles" key="HRex_Profiles"/>
+   <page name="HRex Interactions" key="HRex_Interactions"/>
+   <page name="Push (POST and PUT)" key="Push_POST_and_PUT"/>
+   <page name="Push (Unsolicited Communication)"
+         key="Push_Unsolicited_Communication"/>
+   <page name="Pull (GET)" key="Pull_GET"/>
+   <page name="Request (Solicited Communication)"
+         key="Request_Solicited_Communication"/>
+   <page name="Subscribe" key="Subscribe"/>
+   <page name="Bulk Data" key="Bulk_Data"/>
+   <page name="Rational Combinations" key="Rational_Combinations"/>
+   <page name="Validation" key="Validation"/>
+   <page name="SMART-on-FHIR" key="SMART-on-FHIR"/>
+   <page name="Dynamic Registration for SMART Apps"
+         key="Dynamic_Registration_for_SMART_Apps"/>
+   <page name="Security and Privacy" key="Security_and_Privacy"/>
+   <page name="Artifact List" key="artifacts"/>
+   <page name="(profiles)" key="profiles" deprecated="true"/>
+   <page name="downloads" key="downloads" deprecated="true"/>
+</specification>

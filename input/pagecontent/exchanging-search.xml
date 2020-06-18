@@ -1,0 +1,60 @@
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R4/fhir-single.xsd">
+  <a name="search"> </a>
+  <h3>RESTful search</h3>
+  <p>
+    
+  </p>
+
+  <a name="filter"> </a>
+  <h3>Search using _filter</h3>
+  <p>
+    
+  </p>
+
+  <a name="batch"> </a>
+  <h3>Search using batch</h3>
+  <p>
+    
+  </p>
+
+  <a name="graphql"> </a>
+  <h3>Search using GraphQL</h3>
+  <p>
+    
+  </p>
+
+  <a name="sparql"> </a>
+  <h3>Search using SPARQL</h3>
+  <p>
+    
+  </p>
+  
+  <a name="cql"> </a>
+  <h3>Search using CQL</h3>
+  <p>
+    the
+    Clinical Quality Framework (CQF) IG defines a couple of operations allowing data to be retrieved by executing arbitrary CQL (see the
+    <a href="http://build.fhir.org/ig/HL7/cqf-recommendations/OperationDefinition-cpg-cql.html">cpg-cql</a> and 
+    <a href="http://build.fhir.org/ig/HL7/cqf-recommendations/OperationDefinition-cpg-library-evaluate.html">cpg-libary-evaluate</a> operations.
+  </p>
+
+  <a name="query"> </a>
+  <h3>Search using Query</h3>
+  <p>
+    
+  </p>
+
+  <a name="synch"> </a>
+  <h3>Synchronous search</h3>
+  <p>
+    
+  </p>
+
+  <a name="asynch"> </a>
+  <h3>Asynchronous search</h3>
+  <p>
+    
+  </p>
+
+
+</div>

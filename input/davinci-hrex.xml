@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../input-cache/schemas/R5/fhir-single.xsd">
+	<id value="davinci-hrex"/>
+	<meta>
+		<versionId value="97"/>
+		<lastUpdated value="2019-06-20T04:25:13.000-04:00"/>
+	</meta>
+	<url value="http://hl7.org/fhir/us/davinci-hrex/ImplementationGuide/davinci-hrex"/>
+	<version value="0.1.0"/>
+	<name value="DaVinciHealthRecordExchangeHRex"/>
+	<title value="Da Vinci Health Record Exchange (HRex)"/>
+	<status value="active"/>
+	<experimental value="false"/>
+	<publisher value="HL7 International - Financial Management Work Group"/>
+	<contact>
+		<telecom>
+			<system value="url"/>
+			<value value="http://www.hl7.org/Special/committees/fm"/>
+		</telecom>
+	</contact>
+	<description value="The Da Vinci Payer Health Record exchange (HRex) Framework/library specifies the FHIR elements used in multiple Da Vinci implementation guides. This includes FHIR profiles, functions, operations, and constraints on other specifications such as CDS-Hooks and other aspects of Da Vinci Use Cases that are common across more than a single use case.&#xA;&#xA;Da Vinci HRex Implementation Guide (IG) will make use of US Core profiles that are based on the FHIR R4 specification wherever practical. The HRex IG will use the HL7 FHIR Release 4/US Core STU3 specification as its base but will provide additional guidance and documentation to support implementations that follow the HL7 FHIR STU3/US Core STU2 and HL7 FHIR DSTU2/Argonaut specifications.&#xA;&#xA;The HRex profiles documented in this IG will be used to exchange data between providers systems (e.g. EHRs) and other providers, payers, and third-party applications were appropriate. In addition, exchanges from payer systems to providers, other payers, and third-party applications are supported by the HRex profiles and operations.&#xA;&#xA;HRex may define new extensions, profiles, value sets, constraints/extension to other specification (e.g. specific CDS-Hooks) that are specific Da Vinci requirements. Where appropriate these Da Vinci specific artifacts will be promoted for incorporation into the future versions of existing standards (e.g. R4 US Core profiles) and deprecated in this guide on publication in the updated standard."/>
+	<jurisdiction>
+		<coding>
+			<system value="urn:iso:std:iso:3166"/>
+			<code value="US"/>
+		</coding>
+	</jurisdiction>
+	<packageId value="hl7.fhir.us.davinci-hrex"/>
+	<fhirVersion value="4.0.1"/>
+	<dependsOn>
+		<uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
+		<packageId value="hl7.fhir.us.core"/>
+		<version value="3.1.0"/>
+	</dependsOn>
+	<definition>
+		<!--    <resource>
+      <reference>
+        <reference value="StructureDefinition/hrex-coverage"/>
+        <display value="HRex Coverage"/>
+      </reference>
+      <name value="HRex Coverage"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/hrex-provenance"/>
+        <display value="HRex Provenance"/>
+      </reference>
+      <name value="HRex Provenance"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/hrex-practitioner"/>
+        <display value="HRex Practitioner"/>
+      </reference>
+      <name value="HRex Practitioner"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/hrex-practitionerrole"/>
+        <display value="HRex PractitionerRole"/>
+      </reference>
+      <name value="HRex PractitionerRole"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/hrex-organization"/>
+        <display value="HRex Organization"/>
+      </reference>
+      <name value="HRex Organization"/>
+      <exampleBoolean value="false"/>
+    </resource>-->
+		<page>
+			<nameUrl value="toc.html"/>
+			<title value="Table of Contents"/>
+			<generation value="generated"/>
+			<page>
+				<nameUrl value="index.html"/>
+				<title value="Home"/>
+				<generation value="markdown"/>
+			</page>
+			<page>
+				<nameUrl value="Introduction.html"/>
+				<title value="Introduction"/>
+				<generation value="markdown"/>
+			</page>
+			<page>
+        <nameUrl value="exchanging.html"/>
+        <title value="Approaches to exchanging FHIR data"/>
+        <generation value="html"/>
+        <page>
+          <nameUrl value="exchanging-search.html"/>
+          <title value="Pulling with FHIR search"/>
+          <generation value="html"/>
+        </page>
+        <page>
+          <nameUrl value="exchanging-rest.html"/>
+          <title value="Pushing with FHIR REST"/>
+          <generation value="html"/>
+        </page>
+        <page>
+          <nameUrl value="exchanging-subscription.html"/>
+          <title value="Exchange using FHIR subscription"/>
+          <generation value="html"/>
+        </page>
+        <page>
+          <nameUrl value="exchanging-polling.html"/>
+          <title value="Exchange using polling"/>
+          <generation value="html"/>
+        </page>
+        <page>
+          <nameUrl value="exchanging-operation.html"/>
+          <title value="Exchange using FHIR operations"/>
+          <generation value="html"/>
+        </page>
+        <page>
+          <nameUrl value="exchanging-messaging.html"/>
+          <title value="Exchanging using messaging"/>
+          <generation value="html"/>
+        </page>
+        <page>
+          <nameUrl value="exchanging-request.html"/>
+          <title value="Requesting humans to exchange data"/>
+          <generation value="html"/>
+        </page>
+      </page>
+			<page>
+				<nameUrl value="Dependencies.html"/>
+				<title value="Dependencies"/>
+				<generation value="markdown"/>
+				<page>
+					<nameUrl value="FHIR_R4_Dependencies.html"/>
+					<title value="FHIR R4 Dependencies"/>
+					<generation value="markdown"/>
+					<page>
+						<nameUrl value="C-CDA_on_FHIR_R4.html"/>
+						<title value="C-CDA on FHIR (FHIR R4)"/>
+						<generation value="markdown"/>
+					</page>
+					<page>
+						<nameUrl value="US_Core_R4.html"/>
+						<title value="US Core (FHIR R4)"/>
+						<generation value="markdown"/>
+					</page>
+				</page>
+				<page>
+					<nameUrl value="FHIR_STU3_Dependencies.html"/>
+					<title value="FHIR STU3 Dependencies"/>
+					<generation value="markdown"/>
+					<page>
+						<nameUrl value="C-CDA_on_FHIR_STU3.html"/>
+						<title value="C-CDA on FHIR (FHIR STU3)"/>
+						<generation value="markdown"/>
+					</page>
+					<page>
+						<nameUrl value="US_Core_STU3.html"/>
+						<title value="US Core (FHIR STU3)"/>
+						<generation value="markdown"/>
+					</page>
+				</page>
+				<page>
+					<nameUrl value="FHIR_DSTU_2_Dependencies.html"/>
+					<title value="FHIR DSTU 2 (aka Argonaut) Dependencies"/>
+					<generation value="markdown"/>
+				</page>
+			</page>
+			<page>
+				<nameUrl value="HRex_Profiles.html"/>
+				<title value="HRex Profiles"/>
+				<generation value="markdown"/>
+			</page>
+			<page>
+				<nameUrl value="HRex_Interactions.html"/>
+				<title value="HRex Interactions"/>
+				<generation value="markdown"/>
+				<page>
+					<nameUrl value="Push_POST_and_PUT.html"/>
+					<title value="Push (POST and PUT)"/>
+					<generation value="markdown"/>
+				</page>
+				<page>
+					<nameUrl value="Push_Unsolicited_Communication.html"/>
+					<title value="Push (Unsolicited Communication)"/>
+					<generation value="markdown"/>
+				</page>
+				<page>
+					<nameUrl value="Pull_GET.html"/>
+					<title value="Pull (GET)"/>
+					<generation value="markdown"/>
+				</page>
+				<page>
+					<nameUrl value="Request_Solicited_Communication.html"/>
+					<title value="Request (Solicited Communication)"/>
+					<generation value="markdown"/>
+				</page>
+				<page>
+					<nameUrl value="Subscribe.html"/>
+					<title value="Subscribe"/>
+					<generation value="markdown"/>
+				</page>
+				<page>
+					<nameUrl value="Bulk_Data.html"/>
+					<title value="Bulk Data"/>
+					<generation value="markdown"/>
+				</page>
+				<page>
+					<nameUrl value="Rational_Combinations.html"/>
+					<title value="Rational Combinations"/>
+					<generation value="markdown"/>
+				</page>
+				<page>
+					<nameUrl value="Validation.html"/>
+					<title value="Validation"/>
+					<generation value="markdown"/>
+				</page>
+				<page>
+					<nameUrl value="SMART-on-FHIR.html"/>
+					<title value="SMART-on-FHIR"/>
+					<generation value="markdown"/>
+				</page>
+				<page>
+					<nameUrl value="Dynamic_Registration_for_SMART_Apps.html"/>
+					<title value="Dynamic Registration for SMART Apps"/>
+					<generation value="markdown"/>
+				</page>
+			</page>
+			<page>
+				<nameUrl value="Security_and_Privacy.html"/>
+				<title value="Security and Privacy"/>
+				<generation value="markdown"/>
+			</page>
+			<page>
+				<nameUrl value="artifacts.html"/>
+				<title value="Artifact List"/>
+				<generation value="html"/>
+			</page>
+		</page>
+		<parameter>
+			<code value="copyrightyear"/>
+			<value value="2019+"/>
+		</parameter>
+		<parameter>
+			<code value="releaselabel"/>
+			<value value="CI Build"/>
+		</parameter>
+		<parameter>
+			<code value="find-other-resources"/>
+			<value value="true"/>
+		</parameter>
+	</definition>
+</ImplementationGuide>

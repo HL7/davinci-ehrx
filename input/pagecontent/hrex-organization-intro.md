@@ -1,0 +1,1 @@
+Requires support of either an NPI or TIN identifier. 

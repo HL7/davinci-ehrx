@@ -1,0 +1,169 @@
+@startuml
+skinparam padding 2
+skinparam activityBackgroundColor palegreen
+
+start
+if ([[#pull Consumer\ninitiates?]]) then (yes)
+  (A)
+  note right:Pull
+  if ([[#human Human\nintervention?]]) then (yes)
+    if ([[#formal Formal\nauthorization/detail\nneeded?]]) then (yes)
+      :[[exchanging-request.html#request CommunicationRequest]];
+    else (no)
+      :[[exchanging-request.html#task Task]];
+    endif
+    (B)
+    note
+      continue to decide
+      result retrieval
+    end note
+  else (yes)
+    if ([[#hooks CDS\nHooks?]]) then (yes)
+      :[[https://cds-hooks.hl7.org CDS Hooks]];
+	  (A)
+	  note right:fetch\nadditional
+	  stop
+    else
+      if ([[#resources Return\nresources?]]) then (yes)
+        (C)
+      else (no)
+        if ([[#graphql GraphQL\nsearchable]]) then (yes)
+          :[[exchanging-search.html#graphql GraphQL]];
+          (C)
+          note right:determine underlying\nresource-based\nquery mechanism
+          (E)
+          note right:synch vs.\nasynch
+          detach
+        else (no)
+          if ([[#sparql SPARQL\nsearchable]]) then (yes)
+            :[[exchanging-search.html#sparql SPARQL]];
+            stop
+          else (no)
+            if ([[#cql CQL\nsearchable]]) then (yes)
+              :[[exchanging-search.html#cql CQL]];
+              stop
+			else (no - msg\norop)
+              (D)
+              note right:msg or op?
+              if ([[#message Is\nmessage-like?]]) then (yes)
+                :[[exchanging-messaging.html FHIR\nMessaging]];
+                stop
+              else (no)
+                :[[exchanging-operation.html FHIR\nOperation]];
+                (E)
+                note right:synch vs.\nasynch
+                if ([[#synchronous Is\nsynchronous?]]) then (yes)
+                  :[[exchanging-search.html#synch Synchronous]];
+                  stop
+                else (no)
+                  :[[exchanging-search.html#asynch Asynchronous]];
+                  stop
+                endif
+              endif
+            endif
+          endif
+        endif
+      endif
+    endif
+  endif
+else (no - See\nPush below)
+  (B)
+endif
+(B)
+note right:Push
+  if ([[#configured Configured by\nconsumer?]]) then (yes)
+    if ([[#subscription Subscription\ncapability?]]) then (no)
+      :[[exchanging-polling.html Polling]];
+	  (F)
+	  note right:choose\npolling\nsearch
+      stop
+    else (yes)
+      if ([[#subscription-push Push\nnotifications?]]) then (yes)
+        :[[exchanging-subscription.html#push Subscription\nwith data]];
+        stop
+      else (no)
+        :[[exchanging-subscription.html#pull Subscription\nwith query]];
+        stop
+      endif
+    endif
+  else (no)
+    if ([[#source-persist Data source directs\nconsumer persistence?]]) then (yes - REST\ncreate/update)
+      if ([[#group-store Persist as\na group?]]) then (yes)
+        if ([[#story Focus on\npresentation\n/story-telling?]]) then (yes)
+          :[[exchanging-rest.html#document FHIR\nDocuments]];
+          stop
+        else (no)
+          :[[exchanging-rest.html#collection Collection\nBundle]];
+          stop
+        endif
+      else (no)
+        if ([[#group-transmit Group\ntransmission?]]) then (yes)
+          if ([[#transaction Transactional?]]) then (no)
+            :[[exchanging-rest.html#transaction Transaction\nBundle]];
+            stop
+          else (no)
+            :[[exchanging-rest.html#batch Batch\nBundle]];
+            stop
+          endif
+        else (no)
+		  if ([[#resources Share whole\nresource?]]) then (yes)
+            :[[exchanging-rest.html#rest Individual\ncreate/update]];
+            stop
+          else
+            :[[exchanging-rest.html#patch Patch]];
+            stop
+          endif
+        endif
+      endif
+    else (no - msg\nor op)
+      (D)
+      detach
+    endif
+  endif
+(C)
+note right:resource-based\nquery
+  if ([[#pre-exists Is data\npre-existing?]]) then (yes)
+    (F)
+	note right:data\nsearch
+    if ([[#rest-search REST\nsearchable?]]) then (yes)
+      :[[exchanging-search.html#search REST search]];
+      (E)
+      note right:asynch?
+	  detach
+    else
+      if ([[#search-batch Batch\nsearchable?]]) then (yes)
+        :[[exchanging-search.html#batch Batch search]];
+        (C)
+        note right:determine\nbatch content
+        (E)
+        note right:asynch?
+        detach
+      else (no)
+        if ([[#filter _filter\nsearchable?]]) then (yes)
+          :[[exchanging-search.html#filter _filter]];
+          (E)
+          note right:asynch?
+          detach
+        else
+          if ([[#query query\nsearchable?]]) then (yes)
+            :[[exchanging-search.html#query _query]];
+            (E)
+            note right:asynch?
+            detach
+          else (no)
+            if ([[#cql CQL\nsearchable]]) then (yes)
+              :[[exchanging-search.html#cql CQL]];
+              stop
+            else (no)
+              (D)
+              detach
+            endif
+          endif
+        endif
+      endif
+    endif
+  else (no - msg\noor op)
+    (D)
+  endif
+  
+@enduml
