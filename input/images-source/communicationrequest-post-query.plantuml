@@ -1,0 +1,19 @@
+@startuml
+hide footbox
+participant "Data Consumer" as Consumer
+participant "Data Source" as Source
+opt
+Consumer -> Consumer: [[#cr-post-b1 1.]] POST 'placer order'\nCommunicationRequest [cr1]
+end
+...
+Consumer -> Source: [[#cr-post-b2 2.]] POST 'filler order'\nCommunicationRequest
+...
+opt
+Source-> Source: [[#cr-post-b3 3.]] POST [requested data]
+end
+...
+Source-> Consumer: [[#cr-post-b4 4.]] POST Communication [c1] (referencing [cr1] and [requested data])
+...
+Consumer -> Source: [[#cr-post-b5 5.]] Query to retrieve [requested data] based on reference from [c1]
+Consumer <-- Source: [[#cr-post-b6 6.]] Query response containing [requested data]
+@enduml

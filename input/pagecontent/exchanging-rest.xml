@@ -1,8 +1,15 @@
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R4/fhir-single.xsd">
+  <p>
+    All of these RESTful exchange mechanisms follow the same basic pattern - a resource of some type is transmitted from <i>Data Source</i> to <i>Data Consumer</i> using a simple REST command and the appropriate endpoint.  The <i>Data Consumer</i> either stores the data as requested (and acknowledges that success with an appropriate HTTP code) or it rejects it.  If accepted, a new 'version' of the resource is persisted at the specified endpoint and can potentially be referenced by other resources or subsequently queried or further manipulated.  This basic pattern is shown in the diagram below:
+  </p>
+  <p>
+    {% include rest.svg %}
+  </p>
+
   <a name="rest"> </a>
   <h3>RESTful creates &amp; updates</h3>
   <p>
-    
+    This transmits a single resource from the <i>Data Source</i> and causes it to be stored on the <i>Data Consumer</i>.  A <a href="{{site.data.fhir.path}}http.html#create">create</a> uses the POST HTTP command and an 'update' uses the PUT 
   </p>
 
   <a name="patch"> </a>
@@ -24,7 +31,7 @@
   </p>
 
   <a name="transaction"> </a>
-  <h3>Excuting transactions</h3>
+  <h3>Executing transactions</h3>
   <p>
     
   </p>

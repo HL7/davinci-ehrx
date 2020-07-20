@@ -1,0 +1,22 @@
+@startuml
+hide footbox
+participant "Data Consumer" as Consumer
+participant "Data Source" as Source
+Consumer -> Consumer: [[#cr-task1 1.]] POST 'placer order' CommunicationRequest [cr1]
+Consumer -> Source: [[#cr-task2 2.]] POST Task [t1] with focus [cr1]
+...
+opt
+Source -> Source: [[#cr-task3 3.]] PUT Task [t1]\n update status
+...
+Consumer <-> Source: [[#cr-task4 4.]] Poll/Subscribe to see [t1] status
+end
+...
+Source -> Source: [[#cr-task5 5.]] POST [requested data]
+...
+Source -> Source: [[#cr-task6 6.]] PUT Task [t1]\n link to [requested data]
+...
+Consumer <-> Source: [[#cr-task7 7.]] Poll/Subscribe to see [t1] status
+
+Consumer -> Source: [[#cr-task8 8.]] Query to retrieve [requested data] based on reference from [c1]
+Consumer <-- Source: [[#cr-task9 9.]] Query response containing [requested data]
+@enduml

@@ -1,7 +1,33 @@
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R4/fhir-single.xsd">
   <p>
-    
+    <a href="{{site.data.fhir.path}}messaging.html">Messaging</a> involves transmitting FHIR Bundles of resources from one system to another with a <a href="{{site.data.fhir.path}}messageheader.html">MessageHeader</a> instance that defines the action (if any) the receiving system is expected to take.  The characteristics that determine that messaging is a more appropriate choice than a FHIR <a href="exchanging-operation.html">operation</a> are described <a href="exchanging.html#message">here</a>.  Like operations, they are used only when other mechanisms cannot meet the use-case because messaging support tends to require more negotiation and custom development to support a use-case than more re-useable REST capabilities.  Messaging is most commonly found when back-end infrastructure is already organized in a messaging architecture or when routing is required in order to connect the <i>Data Consumer</i> and the <i>Data Source</i>.
+  </p>
+  <p>
+    As with operations, the payload of a message that solicits data from a <i>Data Source</i> <b>could</b> be a resource such as <a href="{{site.data.fhir.path}}communicationrequest.html">CommunicationRequest</a> or <a href="{{site.data.fhir.path}}task.html">Task</a>.  It could also be any arbitrary resource or set of resources if the intended behavior was to 'match' characteristics of the specified resource(s).  It can also be an instance of <a href="{{site.data.fhir.path}}parameters.html">Parameters</a> allowing passing arbitrary data elements.  (If sending multiple resources, they will all need to be linked either through a direct reference from <code>MessageHeader.focus</code> or through relationships between each other.)  With messaging, it's also possible to not have a payload at all, but instead to have the desired data implicitly defined in the MessageHeader event code.  The response message containing the requested data could be a collection of resources (and resources with a relationship path to those resources), but could also be a bundled <a href="{{site.data.fhir.path}}bundle.html#searchset">searchset</a> <a href="{{site.data.fhir.path}}">Bundle</a> or even a <a href="{{site.data.fhir.path}}parameters.html">Parameters</a> instance containing a single data element or an arbitrary operation-specific collection of data elements.
+  </p>
+  <p>
+    Also, like operations, message pairs to gather data can be very narrow in scope, tuned to ask a very specific question, or they can be very broad allowing a wide variety of parameters or even strings expessing queries in some formal language to be executed.  Narrow definitions mean that each new type of data will require a new set of messages - and custom code written for all applications that support it.  Broad definitions mean that the bar is relatively high to declare support for the message type - as there's no good way in FHIR to declare 'partial' support for a message.
+  </p>
+  <p>
+    Messaging to retrieve data can have two different behavior flows - <a href="#sync">synchronous</a> or <a href="#async">asynchronous</a>.  Unlike operations, the <i>Data Consumer</i> can't influence which behavior occurs (unless the <i>Data Source</i> uses different messaging events for different behavior).  When a message is received, the <i>Data Source</i> determines whether it will respond synchronously or asynchronously.
   </p>
 
+  <a name="sync"> </a>
+  <h3>Synchronous messaging</h3>
+  <p>
+    Synchronous messages are evaluated in 'real time', with the body of the initial 'acknowledgement' response containing the result of performing the message event.  If the message is transmitted using HTTP, the response message will be in the body of the HTTP response.  Typcally this means a response time on the order of milliseconds or seconds, though the specific response time expectations will be driven by the messaging technology and partner agreement.  It is possible that routing can occur for synchronous messaging, but there would be limits to the number of hops achievable while still falling within timing constraints.
+  </p>
+  <p>
+    {% include message-sync.svg %}
+  </p>
+
+  <a name="async"> </a>
+  <h3>Asynchronous messaging</h3>
+  <p>
+    With asynchronous, the <i>Data Consumer</i> transmits the request message to the <i>Data Source</i>, which optionally acknowledges it.  At some later point, the <i>Data Source</i> transmits a message to the <i>Data Consumer</i> containing the requested data.  The response is linked to the request using <code>MessageHeader.response.identifier</code>.  The <i>Data Source</i> could also support a 'status check' message event that allows a synchronous response indicating progress/timeline to response.
+  </p>
+  <p>
+    {% include message-async.svg %}
+  </p>
 
 </div>

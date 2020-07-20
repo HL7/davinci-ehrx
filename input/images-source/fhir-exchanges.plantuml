@@ -17,7 +17,7 @@ if ([[#pull Consumer\ninitiates?]]) then (yes)
       continue to decide
       result retrieval
     end note
-  else (yes)
+  else (no)
     if ([[#hooks CDS\nHooks?]]) then (yes)
       :[[https://cds-hooks.hl7.org CDS Hooks]];
 	  (A)
@@ -32,7 +32,7 @@ if ([[#pull Consumer\ninitiates?]]) then (yes)
           (C)
           note right:determine underlying\nresource-based\nquery mechanism
           (E)
-          note right:synch vs.\nasynch
+          note right:sync vs.\nasync
           detach
         else (no)
           if ([[#sparql SPARQL\nsearchable]]) then (yes)
@@ -51,12 +51,12 @@ if ([[#pull Consumer\ninitiates?]]) then (yes)
               else (no)
                 :[[exchanging-operation.html FHIR\nOperation]];
                 (E)
-                note right:synch vs.\nasynch
+                note right:sync vs.\nasync
                 if ([[#synchronous Is\nsynchronous?]]) then (yes)
-                  :[[exchanging-search.html#synch Synchronous]];
+                  :[[exchanging-search.html#sync Synchronous]];
                   stop
                 else (no)
-                  :[[exchanging-search.html#asynch Asynchronous]];
+                  :[[exchanging-search.html#async Asynchronous]];
                   stop
                 endif
               endif
@@ -128,7 +128,7 @@ note right:resource-based\nquery
     if ([[#rest-search REST\nsearchable?]]) then (yes)
       :[[exchanging-search.html#search REST search]];
       (E)
-      note right:asynch?
+      note right:async?
 	  detach
     else
       if ([[#search-batch Batch\nsearchable?]]) then (yes)
@@ -136,19 +136,19 @@ note right:resource-based\nquery
         (C)
         note right:determine\nbatch content
         (E)
-        note right:asynch?
+        note right:async?
         detach
       else (no)
         if ([[#filter _filter\nsearchable?]]) then (yes)
           :[[exchanging-search.html#filter _filter]];
           (E)
-          note right:asynch?
+          note right:async?
           detach
         else
           if ([[#query query\nsearchable?]]) then (yes)
             :[[exchanging-search.html#query _query]];
             (E)
-            note right:asynch?
+            note right:async?
             detach
           else (no)
             if ([[#cql CQL\nsearchable]]) then (yes)
