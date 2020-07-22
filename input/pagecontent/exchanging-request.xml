@@ -57,7 +57,7 @@
     This approach is a variant on <a href="{{site.data.fhir.path}}workflow-ad-hoc.html#optiona">Option A</a> in the FHIR core workflow communication patterns.
   </p>
   <p>
-    {% include communicationrequest-post-poll.svg %}
+    {% include communicationrequest-post-query.svg %}
   </p>
   <a name="cr-post-b1"> </a>
   <a name="cr-post-b2"> </a>
@@ -87,7 +87,7 @@
   <a name="cr-post-poll"> </a>
   <h4>Direct POST with polling</h4>
   <p>
-    This is the same as the <a href="#cr-post-communication">preceding approach</a>, except that rather than the Communication being posted to the <i>Data Consumer</i>, the Communicaiton is stored on the <i>Data Source</i> and it is retrieved by the <i>Data Consumer</i> using polling or subscription.  The benefit of this change is that the <i>Data Consumer</i> doesn't need to expose any RESTful endpoints at all (though it means that the <i>Data Source</i> needs to expose one more).  The cost of this is the introduction of polling or subscription.
+    This is the same as the <a href="#cr-post-communication">preceding approach</a>, except that rather than the Communication being posted to the <i>Data Consumer</i>, the Communication is stored on the <i>Data Source</i> and it is retrieved by the <i>Data Consumer</i> using polling or subscription.  The benefit of this change is that the <i>Data Consumer</i> doesn't need to expose any RESTful endpoints at all (though it means that the <i>Data Source</i> needs to expose one more).  The cost of this is the introduction of polling or subscription.
   </p>
   <p>
     Other pros and cons are the same as <a href="#cr-post-communication">above</a>.  Similarly, this approach is also a variant on <a href="{{site.data.fhir.path}}workflow-ad-hoc.html#optiona">Option A</a> in the FHIR core workflow communication patterns.
@@ -139,35 +139,69 @@
   </p>
   <a name="cr-task3"> </a>
   <p>
-    <b>Step 3:</b> The <i>Data Source</i> may optionally update the Task to change the status (e.g. from <code>requested</code> to <code>accepted</code> or <code>refused</code> and eventually to <code>in-progress</code> or <code>on-hold</code>.  The <i>Data Source</i> might also update the Task.businessStatus element to convey additional information around progress, such as reasons for delay or expected timeframe for delivery.
+    <b>Step 3:</b> The <i>Data Source</i> reads the CommunicationRequest (that was referenced by the Task) from the <i>Data Consumer</i> to determine what data is needed.
   </p>
   <a name="cr-task4"> </a>
   <p>
-    <b>Step 4:</b> In order for the <i>Data Consumer</i> to receive information about changes to the Task status, it would either need to poll the Task by periodically performing a read on the Task instance or create a Subscription on the <i>Data Source</i> so that it is notified when the Task is updated.  (Note that it will have to use one of these approaches even if not interested in status changes as polling must be used in <a href="#cr-task7">Step 7</a> to see that the Task is complete.
+    <b>Step 4:</b> The <i>Data Source</i> may optionally update the Task to change the status (e.g. from <code>requested</code> to <code>accepted</code> or <code>refused</code> and eventually to <code>in-progress</code> or <code>on-hold</code>.  The <i>Data Source</i> might also update the Task.businessStatus element to convey additional information around progress, such as reasons for delay or expected timeframe for delivery.
   </p>
   <a name="cr-task5"> </a>
   <p>
-    <b>Step 5:</b> As with the Communication-based <a href="#cr-post-b3">delivery approach</a>, the <i>Data Source</i> creates and/or locates the desired records on its system.
+    <b>Step 5:</b> In order for the <i>Data Consumer</i> to receive information about changes to the Task status, it would either need to poll the Task by periodically performing a read on the Task instance or create a Subscription on the <i>Data Source</i> so that it is notified when the Task is updated.  (Note that it will have to use one of these approaches even if not interested in status changes as polling must be used in <a href="#cr-task7">Step 7</a> to see that the Task is complete.
   </p>
   <a name="cr-task6"> </a>
   <p>
-    <b>Step 6:</b> The <i>Data Source</i> updates the Task to reference the resources created and/or identified in step 5 as Task.output values and sets the Task status to <code>completed</code>.  (It's possible that outputs may be added over time through multiple updates before the Task is marked as complete.  If this happens, it's up to the <i>Data Consumer</i> whether to retrieve outputs as they're added or to wait until the Task is complete.)
+    <b>Step 6:</b> As with the Communication-based <a href="#cr-post-b3">delivery approach</a>, the <i>Data Source</i> creates and/or locates the desired records on its system.
   </p>
   <a name="cr-task7"> </a>
   <p>
-    <b>Step 7:</b> The <i>Data Consumer</i> retrieves the completed Task from the <i>Data Source</i> using either polling or a previously created Subscription.
+    <b>Step 7:</b> The <i>Data Source</i> updates the Task to reference the resources created and/or identified in step 5 as Task.output values and sets the Task status to <code>completed</code>.  (It's possible that outputs may be added over time through multiple updates before the Task is marked as complete.  If this happens, it's up to the <i>Data Consumer</i> whether to retrieve outputs as they're added or to wait until the Task is complete.)
   </p>
   <a name="cr-task8"> </a>
+  <p>
+    <b>Step 8:</b> The <i>Data Consumer</i> retrieves the completed Task from the <i>Data Source</i> using either polling or a previously created Subscription.
+  </p>
   <a name="cr-task9"> </a>
   <p>
-    <b>Steps 8 and 9:</b> These work the same as <a href="#cr-post-b5">Step 5 and 6</a> of the Communication-based exchange, except that instead of retrieving resources referenced by a Communication instance, the instances retrieved are pointed to by Task.output.
+    <b>Steps 9:</b> These work the same as <a href="#cr-post-b5">Step 5 and 6</a> of the Communication-based exchange, except that instead of retrieving resources referenced by a Communication instance, the instances retrieved are pointed to by Task.output.
   </p>  
 
   <a name="task"> </a>
   <h3>Requesting exchange using Task</h3>
   <p>
-    In this approach, no CommunicationRequest is used at all - as there's no need for a formal order.  Instead, the Task itself describes the data to be retrieved.  The workflow is identical to that used in <a href="#cr-task">CommunicationRequest plus Task</a>, except that the first step (the creation of the CommunicationRequest) is skipped and the Task transmitted in <a href="#cr-task2">step 2</a> doesn't specify a Task.focus.
+    In this approach, no CommunicationRequest is used at all - as there's no need for a formal order.  Instead, the Task itself describes the data to be retrieved.  The workflow is identical to that used in <a href="#cr-task">CommunicationRequest plus Task</a>, except that the first step (the creation of the CommunicationRequest) and the third step (read of the CommunicationRequest) are skipped and the Task transmitted in the initial step doesn't specify a Task.focus.
   </p>
+  <p>
+    {% include task.svg %}
+  </p>
+  <a name="task1"> </a>
+  <p>
+    <b>Step 1:</b> The Task is posted directly to the <i>Data Source</i> by the <i>Data Consumer</i>.  The Task describes the data to be provided directly.
+  </p>
+  <a name="task2"> </a>
+  <p>
+    <b>Step 2:</b> The <i>Data Source</i> may optionally update the Task to change the status (e.g. from <code>requested</code> to <code>accepted</code> or <code>refused</code> and eventually to <code>in-progress</code> or <code>on-hold</code>.  The <i>Data Source</i> might also update the Task.businessStatus element to convey additional information around progress, such as reasons for delay or expected timeframe for delivery.
+  </p>
+  <a name="task3"> </a>
+  <p>
+    <b>Step 3:</b> In order for the <i>Data Consumer</i> to receive information about changes to the Task status, it would either need to poll the Task by periodically performing a read on the Task instance or create a Subscription on the <i>Data Source</i> so that it is notified when the Task is updated.  (Note that it will have to use one of these approaches even if not interested in status changes as polling must be used in <a href="#cr-task7">Step 7</a> to see that the Task is complete.
+  </p>
+  <a name="task4"> </a>
+  <p>
+    <b>Step 4:</b> The <i>Data Source</i> creates and/or locates the desired records on its system.
+  </p>
+  <a name="task5"> </a>
+  <p>
+    <b>Step 5:</b> The <i>Data Source</i> updates the Task to reference the resources created and/or identified in step 5 as Task.output values and sets the Task status to <code>completed</code>.  (It's possible that outputs may be added over time through multiple updates before the Task is marked as complete.  If this happens, it's up to the <i>Data Consumer</i> whether to retrieve outputs as they're added or to wait until the Task is complete.)
+  </p>
+  <a name="task6"> </a>
+  <p>
+    <b>Step 6:</b> The <i>Data Consumer</i> retrieves the completed Task from the <i>Data Source</i> using either polling or a previously created Subscription.
+  </p>
+  <a name="task7"> </a>
+  <p>
+    <b>Steps 7:</b> These work the same as <a href="#cr-post-b5">Step 5 and 6</a> of the Communication-based exchange, except that instead of retrieving resources referenced by a Communication instance, the instances retrieved are pointed to by Task.output.
+  </p>  
 
 
 </div>

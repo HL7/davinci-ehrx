@@ -107,8 +107,13 @@ note right:Push
           endif
         else (no)
 		  if ([[#resources Share whole\nresource?]]) then (yes)
-            :[[exchanging-rest.html#rest Individual\ncreate/update]];
-            stop
+		    if ([[#rest New record\nfor consumer?]]) then (yes)
+              :[[exchanging-rest.html#create Individual\ncreate]];
+              stop
+			else (no)
+              :[[exchanging-rest.html#update Individual\nupdate]];
+              stop
+			endif
           else
             :[[exchanging-rest.html#patch Patch]];
             stop
@@ -145,15 +150,16 @@ note right:resource-based\nquery
           note right:async?
           detach
         else
-          if ([[#query query\nsearchable?]]) then (yes)
-            :[[exchanging-search.html#query _query]];
+          if ([[#cql CQL\nsearchable]]) then (yes)
+            :[[exchanging-search.html#cql CQL]];
             (E)
             note right:async?
-            detach
           else (no)
-            if ([[#cql CQL\nsearchable]]) then (yes)
-              :[[exchanging-search.html#cql CQL]];
-              stop
+            if ([[#query query\nsearchable?]]) then (yes)
+              :[[exchanging-search.html#query _query]];
+              (E)
+              note right:async?
+              detach
             else (no)
               (D)
               detach

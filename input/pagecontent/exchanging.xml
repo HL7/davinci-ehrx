@@ -99,11 +99,19 @@
       </tr>
       <tr>
         <th>
-          <a href="exchanging-rest.html#transaction">Transaction Bundle</a>
+          <a href="exchanging-rest.html#create">REST create</a>
         </th>
         <td>High</td>
         <td>High</td>
-        <td>The <i>data source</i> creates a 'transaction' <a href="{{site.data.fhir.path}}bundle.html">Bundle</a> requesting the creation and/or updating of various resources and posts it to the RESTful endpoint of the <i>data consumer</i>.</td>
+        <td>The <i>data source</i> POSTs a single resource instance to the RESTful endpoint of the <i>data consumer</i>.</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="exchanging-rest.html#update">REST update</a>
+        </th>
+        <td>High</td>
+        <td>High</td>
+        <td>The <i>data source</i> PUTs a single resource instance to the RESTful endpoint of the <i>data consumer</i>.</td>
       </tr>
       <tr>
         <th>
@@ -115,11 +123,27 @@
       </tr>
       <tr>
         <th>
-          <a href="exchanging-rest.html#rest">REST actions</a>
+          <a href="exchanging-rest.html#transaction">Transaction Bundle</a>
         </th>
         <td>High</td>
         <td>High</td>
-        <td>The <i>data source</i> POSTs or PUTs a single resource instance to the RESTful endpoint of the <i>data consumer</i>.</td>
+        <td>The <i>data source</i> creates a 'transaction' <a href="{{site.data.fhir.path}}bundle.html">Bundle</a> requesting the creation and/or updating of various resources and posts it to the RESTful endpoint of the <i>data consumer</i>.</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://cds-hooks.hl7.org">CDS Hooks</a>
+        </th>
+        <td>High</td>
+        <td>Moderate</td>
+        <td>The <i>data source</i> makes a CDS Hooks request to the <i>data consumer</i> who is acting as a CDS Hooks Service.  The service than returns 0..* cards containing decision support content.</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="exchanging-search.html#cql">CQL search</a>
+        </th>
+        <td>High</td>
+        <td>Low</td>
+        <td>The <i>data consumer</i> invokes an operation specifying CQL to be invoked on the <i>data source</i> that will select and return a set of desired dataand receives back a search Bundle</td>
       </tr>
       <tr>
         <th>
@@ -132,14 +156,6 @@
       </tr>
       <tr>
         <th>
-          <a href="exchanging-request.html#task">Task</a>
-        </th>
-        <td>High</td>
-        <td>Moderate</td>
-        <td>The <i>data consumer</i> creates a Task either on the <i>data source's</i> system or a system monitored by the <i>data source</i> requesting the sharing of data.  The <i>data source</i> then updates the Task with agreement to perform, progress status, and eventually a link to the requested data.  The <i>data consumer</i> monitors the Task by <a href="exchanging-subscription.html">subscription</a> or <a href="exchanging-polling.html">polling</a>.</td>
-      </tr>
-      <tr>
-        <th>
           <a href="exchanging-subscription.html">Subscription</a>
         </th>
         <td>High</td>
@@ -148,19 +164,11 @@
       </tr>
       <tr>
         <th>
-          <a href="https://cds-hooks.hl7.org">CDS Hooks</a>
+          <a href="exchanging-request.html#task">Task</a>
         </th>
         <td>High</td>
         <td>Moderate</td>
-        <td>The <i>data source</i> makes a CDS Hooks request to the <i>data consumer</i> who is acting as a CDS Hooks Service.  The service than returns 0..* cards containing decision support content.</td>
-      </tr>
-      <tr>
-        <th>
-          <a href="exchanging-rest.html#patch">REST patch</a>
-        </th>
-        <td>High</td>
-        <td>Low</td>
-        <td>The <i>data source</i> uses PATCH to revise the information in a single resource instance via the RESTful endpoint of the <i>data consumer</i>.</td>
+        <td>The <i>data consumer</i> creates a Task either on the <i>data source's</i> system or a system monitored by the <i>data source</i> requesting the sharing of data.  The <i>data source</i> then updates the Task with agreement to perform, progress status, and eventually a link to the requested data.  The <i>data consumer</i> monitors the Task by <a href="exchanging-subscription.html">subscription</a> or <a href="exchanging-polling.html">polling</a>.</td>
       </tr>
       <tr>
         <th>
@@ -172,27 +180,19 @@
       </tr>
       <tr>
         <th>
+          <a href="exchanging-rest.html#patch">REST patch</a>
+        </th>
+        <td>High</td>
+        <td>Low</td>
+        <td>The <i>data source</i> uses PATCH to revise the information in a single resource instance via the RESTful endpoint of the <i>data consumer</i>.</td>
+      </tr>
+      <tr>
+        <th>
           <a href="exchanging-search.html#sparql">SPARQL search</a>
         </th>
         <td>High</td>
         <td>Low</td>
         <td>The <i>data consumer</i> uses a local SPARQL engineto manipulate triples accessed by hitting a <i>data source's</i> RDF endpoint</td>
-      </tr>
-      <tr>
-        <th>
-          <a href="exchanging-search.html#cql">CQL search</a>
-        </th>
-        <td>High</td>
-        <td>Low</td>
-        <td>The <i>data consumer</i> invokes an operation specifying CQL to be invoked on the <i>data source</i> that will select and return a set of desired dataand receives back a search Bundle</td>
-      </tr>
-      <tr>
-        <th>
-          <a href="exchanging-request.html#request">CommunicationRequest</a>
-        </th>
-        <td>Moderate</td>
-        <td>Moderate</td>
-        <td>The <i>data consumer</i> creates a formal CommunicationRequest order and uses one of the <a href="{{site.data.fhir.path}}workflow-communications.html">workflow communication patterns</a> to ask the <i>data source </i> to fulfill the order.  The results are then returned using one of the <a href="#configured">push</a> mechanisms.</td>
       </tr>
       <tr>
         <th>
@@ -212,6 +212,22 @@
       </tr>
       <tr>
         <th>
+          <a href="exchanging-request.html#request">CommunicationRequest</a>
+        </th>
+        <td>Moderate</td>
+        <td>Moderate</td>
+        <td>The <i>data consumer</i> creates a formal CommunicationRequest order and uses one of the <a href="{{site.data.fhir.path}}workflow-communications.html">workflow communication patterns</a> to ask the <i>data source </i> to fulfill the order.  The results are then returned using one of the <a href="#configured">push</a> mechanisms.</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="exchanging-search.html#query">Query search</a>
+        </th>
+        <td>Low</td>
+        <td>Low</td>
+        <td>The <i>data consumer</i> invokes a custom query operation on the <i>data source</i> and receives back a search Bundle</td>
+      </tr>
+      <tr>
+        <th>
           <a href="exchanging-operation.html">FHIR Operation</a>
         </th>
         <td>Low</td>
@@ -225,14 +241,6 @@
         <td>Low</td>
         <td>Moderate</td>
         <td>The <i>data consumer</i> sends a FHIR message to the <i>data source</i> requesting information and the data source responds (synchronously or asynchronously) with a message containing the requested data.</td>
-      </tr>
-      <tr>
-        <th>
-          <a href="exchanging-search.html#query">Query search</a>
-        </th>
-        <td>Low</td>
-        <td>Low</td>
-        <td>The <i>data consumer</i> invokes a custom query operation on the <i>data source</i> and receives back a search Bundle</td>
       </tr>
     </tbody>
   </table>
@@ -331,16 +339,16 @@
     The most widely implemented search mechanism in FHIR is the RESTful <a href="{{site.data.fhir.path}}search.html">search</a> mechanism.  It defines mechanisms for retrieving resources along with related resources, filtering what resources are returned, ordering the result set and allowing data to be returned in individual pages.  It is a generic mechanism that is use-case independent.  As such, once a <i>data source</i> is able to respond to a query, it can (if it wishes) provide that data to any <i>data consumer</i>, regardless of the purpose for which the information is needed.
   </p>
   <p>
-    However, the FHIR 'search' mechanism has limitations.  It's not possible to compose complex sets of 'and' and 'or' filters.  Each filter must target a single resource and can only bring back other resources if there is an explicit relationship.  As well, while it is theoretically possible to use deep chaining and nested includes to retrieve a wide variety of data, there are implementation costs that typically mean that most systems only support chaining and includes to a limited extent.  Implementers should consider the likelihood that requested search capabilities will exist in the relevant <i>data source(s)</i> and, if not, how much incremental effort would be required to add them and whether such mechanisms would be performant
+    However, the FHIR 'search' mechanism has limitations.  It's not possible to compose complex sets of 'and' and 'or' filters.  Each filter must target a single resource and can only bring back other resources if there is an explicit relationship.  As well, while it is theoretically possible to use deep chaining and nested includes to retrieve a wide variety of data, there are implementation costs that typically mean that most systems only support chaining and includes to a limited extent.  In fact, there is no guarantee that any specific search parameter or search parameter combination will be supported by a given server.  Implementers should consider the likelihood that requested search capabilities will exist in the relevant <i>data source(s)</i> and, if not, how much incremental effort would be required to add them and whether such mechanisms would be performant.
     
   </p>
   <p>
-    If REST search is appropriate the next question is to whether to support <a href="#synchronous">synchronous or asynchronous search</a>.  Otherwise the next option to evaluate is <a href="#search-batch">batch search</a>.
+    Details on performing exchange using REST search are found <a href="exchanging-search.html#search">here</a>.  If REST search is appropriate the next question is to whether to support <a href="#synchronous">synchronous or asynchronous search</a>.  Otherwise the next option to evaluate is <a href="#search-batch">batch search</a>.
   </p>
   <a name="synchronous"> </a>
   <h4>Is synchronous</h4>
   <p>
-    
+    In synchronous queries, the results are determined and returned within the HTTP timeout period of the initiating GET.  The <i>Data Consumer</i> will typically block and wait for a response before continuing on with its action.  While it is possible to have very long timeout periods (100 seconds plus), typically the intention with synchronous responses is to return in tens of milliseconds to a few seconds at most to ensure appropriate system performance and user experience.  In cases where a search may take longer than this, the FHIR <a href="async.html">asynchronous</a> search mechanism can be used to allow a query to be initiated and subsequently monitored until a response is available - even if this takes minutes, hours, or potentially even days.  This may be necessary if the search is extremely complex or is slow for other reasons (e.g. if it involves accessing data sources with high latency or limited availability).
   </p>
   <p>
     Details on invoking and processing RESTful requests in a synchronous manner is described <a href="exchanging-search.html#sync">here</a>.  Information about processing requests asynchronously is <a href="exchanging-search.html#async">here</a>.
@@ -348,39 +356,45 @@
   <a name="search-batch"> </a>
   <h4>Batch searchable?</h4>
   <p>
-    
+    In some cases, an individual RESTful query is inappropriate because resouces need to be retrieved from multiple resource endpoints and the search criteria for each endpoint must be different, so that a generic search against the base endpoint would be inappropriate.  In other cases, even when hitting the same endpoint, different subsets of resources need to be retrieved using distinct combinations of search parameters.  While <a href="#filter">_filter</a> could potentially be used to specify various bracketed clauses to express all of the constraints in a single filter, it may be easier (and more widely supported) to simply submit several independent queries.  These <b>can</b> be done as independent calls, however, it can e more efficient to submit all of them at once.  This can be done using a <a href="{{site.data.fhir.path}}rest.html#transaction">batch</a> <a href="{{site.data.fhir.path}}bundle.html">Bundle</a> to invoke multiple queries simultaneously, and return a corresponding batch-response Bundle containing the results of each search.  Note that if performing all queries simultaneously, the search parameters of the queries must be independent.  It's not possible to base the parameters of one search on the results of a previous search.  If this sort of dependency is needed, the searches will have to be invoked independently, with the second search launched only after the results of the first are back.
   </p>
   <p>
-    If batch searching is appropriate, details on the process can be found <a href="exchanging-search.html#batch">here</a>.  If not, the next architectural approach to consider is using <a href="#filter">_filter</a>.
+    If batch searching is appropriate, details on the process can be found <a href="exchanging-search.html#batch">here</a>.  Again, a decision is necessary about whether the Batch search should be <a href="#synchronous">synchronous or asynchronous search</a>.  If batch not appropriate, the next architectural approach to consider is using <a href="#filter">_filter</a>.
   </p>
   <a name="filter"> </a>
   <h4>_filter searchable?</h4>
   <p>
-    
+    The <a href="{{site.data.fhir.path}}search_filter.html">_filter</a> search mechanism provides additional capabilities beyond what can be expressed using basic <a href="#rest-search">REST search</a>.  Specifically, it provides full nested logical expression capabilities (and/or/not/parenthesis) and allows arbitrary filtering of chained parameters (e.g. Observations for patients where the legal name starts with 'Bob').  It also supports a slightly broader set of comparison operations (e.g. "ends with").  _filter can be used together with base REST search capabilities, meaning that <a href="{{site.data.fhir.path}}search.html#include">_include</a>, <a href="{{site.data.fhir.path}}search.html#revinclude">_revinclude</a>, <a href="{{site.data.fhir.path}}search.html#sort">_sort</a>, etc.  This mechanism is treated as 'separate' from basic REST search because support for _filter tends to be less than other REST search parameters.  Unlike other REST search parameters (for which support is defined on a per parameter basis), if _filter is supported, the expectation is that the full _filter expression language is available and supported.
   </p>
   <p>
-    If _filter searching is appropriate, details on the process can be found <a href="exchanging-search.html#filter">here</a>.  If not, the next archictectural approach to consider is using <a href="#query">query</a>.
-  </p>
-  <a name="query"> </a>
-  <h4>query searchable?</h4>
-  <p>
-    
-  </p>
-  <p>
-    If a query operation will meet the need, details on the process can be found <a href="exchanging-search.html#query">here</a>.  If not, the next option to evaluate is <a href="#cql">CQL</a>.
+    If _filter searching is appropriate, details on the process can be found <a href="exchanging-search.html#filter">here</a>.  Like any other search mechanisms, implementers must also determine whether to invoke the request as <a href="#synchronous">synchronous or asynchronous</a>.  If _filter is not a good fit, the next archictectural approach to consider is using <a href="#cql">CQL</a>.
   </p>
   <a name="cql"> </a>
   <h4>CQL searchable?</h4>
   <p>
-    
+    <a href="https://cql.hl7.org">CQL</a> stands for Clinical Quality Language.  It is a high-level language that supports manipulation of healthcare data.  CQL is a turing-complete language that allows filtering and generation of data structures.  It is not tightly bound to FHIR, though it does rely on FHIR data types.  It includes the ability to execute sub-queries, define modules, import external libraries, call sub-functions, etc.  As such, CQL can perform any sort of filtering imaginable, though its ability to do so.  However, supporting CQL is a complex undertaking, beyond the capability of most servers.  Also, depending on the complexity of the logic, the volume of data and the number of sub-queries involved, it might not meet performance requirements.
   </p>
   <p>
-    If CQL is appropriate, discussion on its use can be found <a href="exchanging-search.html#cql">here</a>.  Otherwise, the next option to explore is <a href="#message">messaging</a>.
+    At present, the only way to invoke a CQL search is by using operations.  This can be done either by passing the CQL directly (the <a href="http://hl7.org/fhir/uv/cpg/2019Sep/OperationDefinition-cpg-cql.html">cpg-cql</a> operation) or by referencing a library that contains the relevant CQL (the <a href="http://hl7.org/fhir/uv/cpg/2019Sep//OperationDefinition-cpg-library-evaluate.html">cpg-libary-evaluate</a>).  The latter is more useful when the CQL is complex.
+  </p>
+  <p>
+    If CQL is appropriate, discussion on its use can be found <a href="exchanging-search.html#cql">here</a>.  The CQL operations can be invoked using either a <a href="#synchronous">synchronous or asynchronous</a> approach.  Otherwise, the next option to explore is <a href="#query">query</a>.
+  </p>
+  <a name="query"> </a>
+  <h4>query searchable?</h4>
+  <p>
+    The <a href="{{site.data.fhir.path}}search.html#query">_query</a> search is an alternate way of invoking a custom operation.  That operation inherits the general RESTful search capabilities in terms of paging and returning a search Bundle and thus can piggy-back on top of generic <a href="#search-rest">RESTful search</a> infrastructure.  However, the parameters used by the search are defined by a custom <a href="{{site.data.fhir.path}}operationdefinition.html">OperationDefinition</a>.  This approach isn't as wide open as using the <a href="exchanging-operation.html">generic operation</a> approach to data retrieval because all parameters must be expressible as URL parameters and the operation cannot be one that <a href="{{site.data.fhir.path}}operationdefinition-definitions.html#OperationDefinition.affectsState">affects state</a>.
+  </p>
+  <p>
+    However, beyond those constraints, the search can do anything the author can impagine so long as the result is a search-set.  The downside of using 'query' is that the query operations are 'custom'.  They will only be supported by implementers that add custom code to enable that specific query.  Changes to the query definition need to be coordinated to with implementers and new requirements are likely to result in the need for a distinct 'query' - which again will require negotiation with and custom coding by other implementers.  As a result, this approach offers limited re-use and scalability.
+  </p>
+  <p>
+    If a query operation will meet the need, details on the process can be found <a href="exchanging-search.html#query">here</a>.  If not, the next option to evaluate is <a href="#message">messaging</a>.
   </p>
   <a name="message"> </a>
   <h4>Is message-like?</h4>
   <p>
-    
+    The 'bottom' of most parts of the decision tree is a choice between <a href="exchanging-operation.html">operations</a> and <a href="exchanging-messaging.html">messaging</a>.  Both approaches rely on custom 
   </p>
   <p>
     If the business case is more suitable to using messaging, details on the messaging approach can be found <a href="exchanging-messaging.html">here</a>.  Otherwise, details on operations can be found <a href="exchanging-operation.html">here</a>, though with operations there's also a need to determine whether support will be <a href="#synchronous">synchronous or asynchronous</a>.
@@ -463,7 +477,17 @@
     
   </p>
   <p>
-    If group transmission is needed, the next question is whether <a href="#transaction">transactional behavior</a> is required.  If there's no need for group transmission, then simple REST creates or updates will be used, which is described <a href="exchanging-rest.html#rest">here.</a>
+    If group transmission is needed, the next question is whether <a href="#transaction">transactional behavior</a> is required.  If there's no need for group transmission, then the next decision is whether to use simple <a href="#rest">REST creates or updates</a>
+  </p>
+  <a name="rest"> </a>
+  <h4>New record for consumer?</h4>
+  <p>
+    When doing simple REST actions (on their own or as part of a <a href="exchanging-rest.html#batch">batch</a> or <a href="exchanging-rest.html#transaction">transaction</a>, the <i>data source</i> needs to figure out whether the appropriate action is a <a href="{{site.data.fhir.path}}http.html#create">create</a> or <a href="{{site.data.fhir.path}}http.html#update">update</a>.  That's driven by whether the data to be shared already exists as a record on the target system.  In some cases, the <i>data source</i> will know this automatically (e.g. because the information in question is brand new and there's no chance the <i>data consumer</i> could have a copy; or because the <i>data source</i> is the <i>data consumer</i>'s only source of information and the <i>data source</i> has not previously sent the record in question. In other situations, the <i>data source</i> may need to query the <i>data consumer</i> to see if the record is already present (and if so, what its identifier is).
+  </p>
+  <p>
+    If the record already exists (but there's still new information to share), the <i>data source</i> will use <code>PUT</code> to update the existing record.  Details on 'update' are found <a href="exchanging-rest.html#update">here.</a>  Update can <b>also</b> be used even if the record doesn't already exist, but the <i>data source</i> needs to determine the resource id used by the <i>data consumer</i> (and the <i>data consumer</i> is set up to allow this to occur.
+  </p>
+  <p>  If the record doesn't already exist and the <i>data source</i> doesn't need to assign the resource identiier, the <i>data source</i> will use <code>POST</code> to create the record.  Details on 'create' are found <a href="exchanging-rest.html#create">here.</a>
   </p>
   <a name="transaction"> </a>
   <h4>Transactional?</h4>
