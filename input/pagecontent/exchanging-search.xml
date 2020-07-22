@@ -34,8 +34,8 @@
   <p>
     the
     Clinical Quality Framework (CQF) IG defines a couple of operations allowing data to be retrieved by executing arbitrary CQL (see the
-    <a href="http://build.fhir.org/ig/HL7/cqf-recommendations/OperationDefinition-cpg-cql.html">cpg-cql</a> and 
-    <a href="http://build.fhir.org/ig/HL7/cqf-recommendations/OperationDefinition-cpg-library-evaluate.html">cpg-libary-evaluate</a> operations.
+    <a href="http://hl7.org/fhir/uv/cpg/2019Sep/OperationDefinition-cpg-cql.html">cpg-cql</a> and 
+    <a href="http://hl7.org/fhir/uv/cpg/2019Sep//OperationDefinition-cpg-library-evaluate.html">cpg-libary-evaluate</a> operations.
   </p>
 
   <a name="query"> </a>

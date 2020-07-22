@@ -14,6 +14,6 @@ end
 ...
 Source -> Consumer: [[#cr-post-b4 4.]] POST Communication [c1] (based on [cr2] and [requested data])
 ...
-Consumer -> Source: [[#cr-post-b5 5.]] Query to retrieve [requested data] based on reference from [c1]
-Consumer <-- Source: [[#cr-post-b6 6.]] Query response containing [requested data]
+Consumer -> Source: [[#cr-post-b5 5a.]] Query to retrieve [requested data] based on reference from [c1]
+Consumer <-- Source: [[#cr-post-b5 5b.]] Query response containing [requested data]
 @enduml

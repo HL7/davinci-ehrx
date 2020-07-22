@@ -9,7 +9,7 @@
   <a name="rest"> </a>
   <h3>RESTful creates &amp; updates</h3>
   <p>
-    This transmits a single resource from the <i>Data Source</i> and causes it to be stored on the <i>Data Consumer</i>.  A <a href="{{site.data.fhir.path}}http.html#create">create</a> uses the POST HTTP command and an 'update' uses the PUT 
+    This transmits a single resource from the <i>Data Source</i> and causes it to be stored on the <i>Data Consumer</i>.  A <a href="{{site.data.fhir.path}}http.html#create">create</a> uses the POST HTTP command and an <a href="{{site.data.fhir.path}}http.html#update">update</a> uses the PUT HTTP command.  If successful, the requested record will be persisted at the RESTful endpoint with a reliable id, potentially allowing it to be queried or referenced in subsequent exchanges.  Note that updates must generally be preceded by a read or query to ensure that the <i>Data Source</i> is aware of 
   </p>
 
   <a name="patch"> </a>
