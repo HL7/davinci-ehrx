@@ -1,24 +1,29 @@
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R4/fhir-single.xsd">
   <p>
-    This page covers the mechanisms for requesting data when there's a potential for humans to be involved in the process of finding, organizing, filtering and/or reviewing the data shared prior to exchange.  Guidance on whether these 'request' mechanisms are appropriate is found <a href="exchanging.html#human">here</a> and guidance for choosing between the <a href="#request">CommunicationRequest</a> and <a href="#task">Task</a> approaches can be found <a href="exchanging.html#formal">here</a>.
+    This page covers the mechanisms for requesting data when there is a potential for humans to be involved in the process of finding, organizing, filtering, and/or reviewing the data shared prior to exchange.  Guidance on whether these 'request' mechanisms are appropriate is found <a href="exchanging.html#human">here</a> and guidance for choosing between the <a href="#request">CommunicationRequest</a> and <a href="#task">Task</a> approaches can be found <a href="exchanging.html#formal">here</a>.
   </p>
   <p>
-    Note: This page focuses on the use of standard RESTful mechanisms to drive fulfillment of a CommunicationRequest or Task.  It is also possible to use <a href="exchanging-operation.html#async">asynchronous custom operations</a> or <a href="exchanging-messaging.html#async">asynchronous messaging</a>.  Either of these mechanisms would need to be invoked in asynchronous mode.  Both of these approaches require more negotation/custom development than a pure REST solution, though they may align better with traditional application architectures and in some environments may be simpler overall.  Guidance on choosing between messaging and operations can be found <a href="exchanging.html#message">here</a>.
+    Note: This page focuses on the use of standard RESTful mechanisms to drive fulfillment of a CommunicationRequest or Task.  It is also possible to use <a href="exchanging-operation.html#async">asynchronous custom operations</a> or <a href="exchanging-messaging.html#async">asynchronous messaging</a>.  Either of these mechanisms would need to be invoked in asynchronous mode.  Both approaches require more negotiation/custom development than a pure REST solution, though they may align better with traditional application architectures and in some environments may be simpler overall.  Guidance on choosing between messaging and operations can be found <a href="exchanging.html#message">here</a>.
   </p>
   <a name="request"> </a>
   <h3>Requesting exchange using CommunicationRequest</h3>
   <p>
-    The basics of this mechanism are that a formal CommunicationRequest - generally with a <code>focus</code> of 'order' - is created that defines the data to be shared and who it is to be shared with.  For the purposes of this documentation, the focus is on the system requesting the data and receiving the data being the same (the <i>Data Consumer</i>), however it's possible - and in fact common - for this mechanism to be used when the data is to flow to a different party.  I.e. party A (the requester) authorizes the <i>Data Source</i> to transmit a specified set of data to a third party <i>Data Consumer</i>.
+    The basics of this mechanism are that a formal CommunicationRequest - generally with a <code>focus</code> of 'order' - is created that defines the data to be shared and who it is to be shared with.  For the purposes of this documentation, the focus is on the system requesting the data and receiving the data being the same (the <i>data consumer</i>), however it is possible - and in fact common - for this mechanism to be used when the data is to flow to a different party.  I.e. party A (the requester) authorizes the <i>data source</i> to transmit a specified set of data to a third-party <i>data consumer</i>.
   </p>
   <p>
-    In FHIR, a <a href="{{site.data.fhir.path}}request.html">request</a> resources represent plans, proposals or orders (authorizations) for actions to occur.  However, they don't, by themselves, directly solicit action.  Some sort of process must occur that triggers a solicitation for the 'request' to be fulfilled.  There are numerous mechanisms in FHIR for seeking such fulfillment - all described in the FHIR core specification section on <a href="{{site.data.fhir.path}}workflow-communications.html">workflow communication patterns</a>.  The following diagrams and descriptions summarize the key steps in each flow and some of the considerations associated with each of the options.
+    In FHIR, a <a href="{{site.data.fhir.path}}request.html">request</a> resources represent plans, proposals or orders (authorizations) for actions to occur.  However, they do not, by themselves, directly solicit action.  Some sort of process must occur that triggers a solicitation for the 'request' to be fulfilled.  There are numerous mechanisms in FHIR for seeking such fulfillment - all described in the FHIR core specification section on <a href="{{site.data.fhir.path}}workflow-communications.html">workflow communication patterns</a>.  The following diagrams and descriptions summarize the key steps in each flow and some of the considerations associated with each of the options.
   </p>
   
   <a name="cr-double-post"> </a>
   <h4>Direct POST, both ways</h4>
   <p>
-    In this approach, the CommunicationRequest soliciting data is posted directly to the <i>Data Source</i>'s system and the resulting data is POSTed directly back to the <i>Data Consumer's</i> system.  While lighter-weight than some of the alternatives below, it requires that records be created on the RESTful endpoints of both <i>Data Source</i> and <i>Data Consumer</i> that might not actually be desired and doesn't give the <i>Data Consumer</i> much choice as to what happens to the data when received - it must either be stored as a record on the respective endpoint or it must be thrown away.  (This also means that the <i>Data Consumer</i> must actually have an endpoint for the desired data to be stored on.)  This mechanism provides no mechanism to track status of work in progress.  A refusal is represented by a Communication instance indicating that no Communication happened.
+    In this approach, the CommunicationRequest soliciting data is posted directly to the <i>data source</i>'s system and the resulting data is POSTed directly back to the <i>data consumer</i>'s system.  While lighter-weight than some of the alternatives below, it requires that records be created on the RESTful endpoints of both <i>data source</i> and <i>data consumer</i> that might not actually be desired and does not give the <i>data consumer</i> much choice as to what happens to the data when received - it must either be stored as a record on the respective endpoint or it must be thrown away.  (This also means that the <i>data consumer</i> must have an endpoint for the desired data to be stored on.)  This mechanism provides no mechanism to track status of work in progress.  A refusal is represented by a Communication instance indicating that no Communication happened.
   </p>
+  <blockquote class="stu-note">
+    <p>
+      Balloter feedback requested: Given the downsides associated with this approach to exchange, should it be listed as one of the options in this document?
+    </p>
+  </blockquote>
   <p>
     This approach corresponds to <a href="{{site.data.fhir.path}}workflow-ad-hoc.html#optiona">Option A</a> in the FHIR core workflow communication patterns.
   </p>
@@ -27,31 +32,36 @@
   </p>
   <a name="cr-post-a1"> </a>
   <p>
-    <b>Step 1:</b> When creating an order, the authoritative copy of it *should* be kept on the system responsible for creating it, as that's the system that has authority to make decisions about status changes, etc.  The CommunicationRequest sent to the <i>Data Source</i> should be a copy with intent of 'filler-order' that references the original <i>Data Consumer</i>-maintained original 'placer-order'.
+    <b>Step 1:</b> When creating an order, the authoritative copy of it *should* be kept on the system responsible for creating it, as that is the system that has authority to make decisions about status changes, etc.  The CommunicationRequest sent to the <i>data source</i> should be a copy with intent of 'filler-order' that references the original <i>data consumer</i>-maintained original 'placer-order'.
   </p>
   <a name="cr-post-a2"> </a>
   <p>
-    <b>Step 2:</b> A copy of the CommunicationRequest (or possibly the only electronic record of the order) is created on the <i>Data Source</i>'s system with a 'tag' indicating that the recipient is being asked to fulfill the order.  This tag is essential to differentiate a CommunicationRequest to be acted upon from one provided as a 'for your information'.
+    <b>Step 2:</b> A copy of the CommunicationRequest (or possibly the only electronic record of the order) is created on the <i>data source</i>'s system with a 'tag' indicating that the recipient is being asked to fulfill the order.  This tag is essential to differentiate a CommunicationRequest to be acted upon from one provided as a 'for your information'.
   </p>
   <a name="cr-post-a3"> </a>
   <p>
-    <b>Step 3:</b> In this option, the data is POSTed directly back to the <i>Data Consumer</i>.  This may not be appropriate in all cases as it may not make sense for the <i>Data Consumer</i> to expose a RESTful endpoint and it may not want to persist the full set of data sent.
+    <b>Step 3:</b> In this option, the data is POSTed directly back to the <i>data consumer</i>.  This may not be appropriate in all cases as it may not make sense for the <i>data consumer</i> to expose a RESTful endpoint and it may not want to persist the full set of data sent.
   </p>
   <a name="cr-post-a4"> </a>
   <p>
-    <b>Step 4:</b> While the data has been delivered, nothing indicates to <i>Data Consumer</i> that the request is complete.  As well, it's possible there is no data available or that the request has been refused.  Posting the Communication resource allows closing this loop.  However, closing the loop by formally creating a Communication instance as part of the patient record isn't necessarily always appropriate.  (Such resources will rarely be created for data shared by by the <i>Data Consumer</i> directly querying the <i>Data Source</i>'s system.
+    <b>Step 4:</b> While the data has been delivered, nothing indicates to <i>data consumer</i> that the request is complete.  As well, it is possible there is no data available or that the request has been refused.  Posting the Communication resource allows closing this loop.  However, closing the loop by formally creating a Communication instance as part of the patient record  necessarily always appropriate.  (Such resources will rarely be created for data shared by the <i>data consumer</i> directly querying the <i>data source</i>'s system.
   </p>
   
   <a name="cr-post-communication"> </a>
   <h4>Direct POST with Communication</h4>
   <p>
-    In this approach the CommunicationRequest soliciting data is posted directly to the <i>Data Source</i>'s system, however the data is stored on the <i>Data Source</i>'s system rather than being directly POSTed back to the <i>Data Consumer</i>.  The <i>Data Consumer</i> is triggered to query the relevant data via a POST of a <i>Communication</i> instance that references the relevant data.
+    In this approach the CommunicationRequest soliciting data is posted directly to the <i>data source</i>'s system, however the data is stored on the <i>data source</i>'s system rather than being directly POSTed back to the <i>data consumer</i>.  The <i>data consumer</i> is triggered to query the relevant data via a POST of a <i>Communication</i> instance that references the relevant data.
   </p>
   <p>
-    The benefit of this approach is that there is no formal 'create' of the data on the <i>Data Consumer's</i> system.  The <i>Data Consumer</i> doesn't need to expose endpoints for each type of record it might receive and there's no expectation that the whole resources be stored.  When the <i>Data Consumer</i> queries the data, it's free to do with it as it wishes.  However, the price of this approach is the additional complexity of the POSTing of the Communication being mandatory and needing to query for referenced the data once the Communication is received.
+    The benefit of this approach is that there is no formal 'create' of the data on the <i>data consumer</i>'s system.  The <i>data consumer</i> does not need to expose endpoints for each type of record it might receive and there is no expectation that the whole resources be stored.  When the <i>data consumer</i> queries the data, it is free to do with it as it wishes.  However, the price of this approach is the additional complexity of the POSTing of the Communication being mandatory and needing to query for referenced the data once the Communication is received.
   </p>
+  <blockquote class="stu-note">
+    <p>
+      Balloter feedback requested: Given the downsides associated with this approach to exchange, should it be listed as one of the options in this document?
+    </p>
+  </blockquote>
   <p>
-    As with <a href="#cr-double-post">CommunicationRequest POST both-ways</a> approach, the <i>Data Consumer</i> is left with a Communication instance and the <i>Data Soruce</i> is left with a CommunicationRequest resource - neither of which are likely of interest as part of the patient record once the transaction is complete.  As well, there is still no support for tracking status information between the initiation of the request and completion.
+    As with <a href="#cr-double-post">CommunicationRequest POST both-ways</a> approach, the <i>data consumer</i> is left with a Communication instance and the <i>data source</i> is left with a CommunicationRequest resource - neither of which are likely of interest as part of the patient record once the transaction is complete.  As well, there is still no support for tracking status information between the initiation of the request and completion.
   </p>
   <p>
     This approach is a variant on <a href="{{site.data.fhir.path}}workflow-ad-hoc.html#optiona">Option A</a> in the FHIR core workflow communication patterns.
@@ -62,39 +72,44 @@
   <a name="cr-post-b1"> </a>
   <a name="cr-post-b2"> </a>
   <p>
-    <b>Step 1, 2:</b> Steps 1 and 2 are the same as for <a href="#cr-post-a1">step 1</a> and <a href="#cr-post-a2">step 2</a> above.  The CommunicationRequest is created and communicated from <i>Data Consumer</i> to <i>Data source</i>
+    <b>Step 1, 2:</b> Steps 1 and 2 are the same as for <a href="#cr-post-a1">step 1</a> and <a href="#cr-post-a2">step 2</a> above.  The CommunicationRequest is created and communicated from <i>data consumer</i> to <i>data source</i>
   </p>
   <a name="cr-post-b3"> </a>
   <p>
-    <b>Step 3:</b> In this option, instead of being directly POSTed directly back to the <i>Data Consumer</i>, the requested data record(s) are instead stored on the <i>Data Source</i>'s system.  This step is marked as 'optional' because in some cases the requested data might already exist on the source system and there will be no need to create it.  As for <a href="#cr-post-a3">step 3</a> above, multiple resource instances may need to exist to satisfy the communication request.  It's possible that some may need to be created, while others may be pre-existing.  In principle, any resources created due to the CommunicationRequest could potentially be available for subsequent query by other systems.  Also, it's also possible that the created records might exist on a system other than the <i>Data Source</i>.
+    <b>Step 3:</b> In this option, instead of being directly POSTed directly back to the <i>data consumer</i>, the requested data record(s) are instead stored on the <i>data source</i>'s system.  This step is marked as 'optional' because in some cases the requested data might already exist on the source system and there will be no need to create it.  As for <a href="#cr-post-a3">step 3</a> above, multiple resource instances may need to exist to satisfy the communication request.  It is possible that some may need to be created, while others may be pre-existing.  In principle, any resources created due to the CommunicationRequest could potentially be available for subsequent query by other systems.  Also, it is also possible that the created records might exist on a system other than the <i>data source</i>.
   </p>
   <a name="cr-post-b4"> </a>
   <p>
-    <b>Step 4:</b> In this approach, the creation of the Communication resource is mandatory rather than optional.  Merely having the relevant records existing on the <i>Data Source</i> system isn't sufficient to satisfy the original CommunicationRequest because the <i>Data Consumer</i> would have no way of knowing which records are pertinent to the their request.  Posting the Communication resource allows closing this loop.  However, closing the loop by formally creating a Communication instance as part of the patient record isn't necessarily always appropriate.  (Such resources will rarely be created for data shared by by the <i>Data Consumer</i> directly querying the <i>Data Source</i>'s system.
+    <b>Step 4:</b> In this approach, the creation of the Communication resource is mandatory rather than optional.  Merely having the relevant records existing on the <i>data source</i> system  sufficient to satisfy the original CommunicationRequest because the <i>data consumer</i> would have no way of knowing which records are pertinent to their request.  Posting the Communication resource allows closing this loop.  However, closing the loop by formally creating a Communication instance as part of the patient record  necessarily always appropriate.  (Such resources will rarely be created for data shared by the <i>data consumer</i> directly querying the <i>data source</i>'s system.
   </p>
   <p>
-    In this step, a Communication is created on the <i>Data Consumer</i> system pointing back to the data present on the <i>Data Source</i>, allowing that data to be subsequently queried.
+    In this step, a Communication is created on the <i>data consumer</i> system pointing back to the data present on the <i>data source</i>, allowing that data to be subsequently queried.
   </p>
   <a name="cr-post-b5"> </a>
   <p>
-    <b>Step 5:</b> Once the <i>Data Source</i> has the Communication and knows what data is deemed to satisfy the request, it can then directly query that information - either as individual reads, as a query by resource id(s) or by a batch of queries or reads.
+    <b>Step 5:</b> Once the <i>data source</i> has the Communication and knows what data is deemed to satisfy the request, it can then directly query that information - either as individual reads, as a query by resource id(s) or by a batch of queries or reads.
   </p>
 
   <a name="cr-post-poll"> </a>
   <h4>Direct POST with polling</h4>
   <p>
-    This is the same as the <a href="#cr-post-communication">preceding approach</a>, except that rather than the Communication being posted to the <i>Data Consumer</i>, the Communication is stored on the <i>Data Source</i> and it is retrieved by the <i>Data Consumer</i> using <a href="exchanging-polling.html">polling</a> or <a href="exchanging-subscription.html">subscription</a>.  The benefit of this change is that the <i>Data Consumer</i> doesn't need to expose any RESTful endpoints at all (though it means that the <i>Data Source</i> needs to expose one more).  The cost of this is the introduction of polling or subscription.
+    This is the same as the <a href="#cr-post-communication">preceding approach</a>, except that rather than the Communication being posted to the <i>data consumer</i>, the Communication is stored on the <i>data source</i> and it is retrieved by the <i>data consumer</i> using <a href="exchanging-polling.html">polling</a> or <a href="exchanging-subscription.html">subscription</a>.  The benefit of this change is that the <i>data consumer</i> does not need to expose any RESTful endpoints at all (though it means that the <i>data source</i> needs to expose one more).  The cost of this is the introduction of polling or subscription.
   </p>
   <p>
     Other pros and cons are the same as <a href="#cr-post-communication">above</a>.  Similarly, this approach is also a variant on <a href="{{site.data.fhir.path}}workflow-ad-hoc.html#optiona">Option A</a> in the FHIR core workflow communication patterns.
   </p>
+  <blockquote class="stu-note">
+    <p>
+      Balloter feedback requested: Given the downsides associated with this approach to exchange, should it be listed as one of the options in this document?
+    </p>
+  </blockquote>
   <p>
     {% include communicationrequest-post-poll.svg %}
   </p>
   <a name="cr-post-c1"> </a>
   <a name="cr-post-c2"> </a>
   <p>
-    <b>Step 1, 2:</b> Steps 1 and 2 are the same as for <a href="#cr-post-a1">step 1</a> and <a href="#cr-post-a2">step 2</a> for the previous two approaches.  The CommunicationRequest is created and communicated from <i>Data Consumer</i> to <i>Data source</i>
+    <b>Step 1, 2:</b> Steps 1 and 2 are the same as for <a href="#cr-post-a1">step 1</a> and <a href="#cr-post-a2">step 2</a> for the previous two approaches.  The CommunicationRequest is created and communicated from <i>data consumer</i> to <i>data source</i>
   </p>
   <a name="cr-post-c3"> </a>
   <p>
@@ -102,15 +117,15 @@
   </p>
   <a name="cr-post-c4"> </a>
   <p>
-    <b>Step 4:</b> Unlike of what's done in the <a href="#cr-post-b4">previous approach</a>, the Communication is created on the <i>Data Source</i> rather than the <i>Data Consumer</i>.
+    <b>Step 4:</b> Unlike of what's done in the <a href="#cr-post-b4">previous approach</a>, the Communication is created on the <i>data source</i> rather than the <i>data consumer</i>.
   </p>
   <a name="cr-post-c5"> </a>
   <p>
-    <b>Step 5:</b> Because of the change to step 4, the <i>Data Consumer</i> must either <a href="exchanging-polling.html">poll</a> or <a href="exchanging-subscription.html">subscribe</a> in order to learn about the creation of the Communication resource.  This step <b>could</b> also return the data referenced by the Communication if the polling is done using a query with _include on the <code>Communication.payload.contentReference</code> or the Subscription process is set up to provide that information.  (Note that there is no standard search parameter to support such an _include at this time.)
+    <b>Step 5:</b> Because of the change to step 4, the <i>data consumer</i> must either <a href="exchanging-polling.html">poll</a> or <a href="exchanging-subscription.html">subscribe</a> in order to learn about the creation of the Communication resource.  This step <b>could</b> also return the data referenced by the Communication if the polling is done using a query with _include on the <code>Communication.payload.contentReference</code> or the Subscription process is set up to provide that information.  (Note that there is currently no standard search parameter to support such an _include.)
   </p>
   <a name="cr-post-c6"> </a>
   <p>
-    <b>Step 6:</b> Step 6 is the same as <a href="#cr-post-b5">step 5</a> from the preceding approach where the records referenced by the Communication are retrieved by the <i>Data Consumer</i> from the <i>Data Source</i>.  However, in this approach the step optional because the referenced resources could potentially be returned in Step 5 using _includes.
+    <b>Step 6:</b> Step 6 is the same as <a href="#cr-post-b5">step 5</a> from the preceding approach where the records referenced by the Communication are retrieved by the <i>data consumer</i> from the <i>data source</i>.  However, in this approach the step optional because the referenced resources could potentially be returned in Step 5 using _includes.
   </p>
   
   <a name="cr-task"> </a>
@@ -119,42 +134,42 @@
     This approach uses Task to seek fulfillment of the CommunicationRequest.  It eliminates the need for Communication to link together the data returned.  It also allows explicit monitoring of the state (e.g. acceptance/refusal, progress) prior to completion.  Note that this flow is similar to the Task-only flow described <a href="#task">below</a>, with the primary difference being that it uses a formal CommunicationRequest 'order' to define the data requested rather than just using the Task itself.
   </p>
   <p>
-    This approach aligns with <a href="{{site.data.fhir.path}}workflow-management.html#optiong">Option G</a> in the FHIR core workflow communication patterns, where the Task is posted directly to the filler's system (<i>Data Source</i>).  Alternate workflows using Task where the Task lives on the placer's system (<i>Data Consumer</i>) - <a href="{{site.data.fhir.path}}workflow-management.html#optionf">Option F</a> or on an intermediary system <a href="{{site.data.fhir.path}}workflow-management.html#optionH">Option H</a>, however those require either <a href="exchanging-polling.html">polling</a> or <a href="exchanging-subscription.html">subscription</a> by the the <i>Data Source</i>.  In general these alternatives would only make sense if the request for information wasn't directed to a particular <i>Data Source</i> (which would be unusual) or if the <i>Data Consumer</i> did not have authority to post a Task directly to the <i>Data Source</i>'s system.
+    This approach aligns with <a href="{{site.data.fhir.path}}workflow-management.html#optiong">Option G</a> in the FHIR core workflow communication patterns, where the Task is posted directly to the filler's system (<i>data source</i>).  Alternate workflows using Task where the Task lives on the placer's system (<i>data consumer</i>) - <a href="{{site.data.fhir.path}}workflow-management.html#optionf">Option F</a> or on an intermediary system <a href="{{site.data.fhir.path}}workflow-management.html#optionH">Option H</a>, however those require either <a href="exchanging-polling.html">polling</a> or <a href="exchanging-subscription.html">subscription</a> by the <i>data source</i>.  In general these alternatives would only make sense if the request for information wasn't directed to a specific <i>data source</i> (which would be unusual) or if the <i>data consumer</i> did not have authority to post a Task directly to the <i>data source</i>'s system.
   </p>
   <p>
     {% include communicationrequest-task.svg %}
   </p>
   <a name="cr-task1"> </a>
   <p>
-    <b>Step 1:</b> The authoritative CommunicationRequest is created on the <i>Data Consumer</i>'s system.  (It's possible later on after receiving the Task that the <i>Data Source</i> might create a 'filler' CommunicationRequest, but there would be no need to exchange it and it would have no impact on the workflow.)
+    <b>Step 1:</b> The authoritative CommunicationRequest is created on the <i>data consumer</i>'s system.  (It is possible later, after receiving the Task, that the <i>data source</i> might create a 'filler' CommunicationRequest, but there would be no need to exchange it and it would have no impact on the workflow.)
   </p>
   <a name="cr-task2"> </a>
   <p>
-    <b>Step 2:</b> The Task is posted directly to the <i>Data Source</i> by the <i>Data Consumer</i>, initiating fulfillment of the CommunicationRequest.  The CommunicationRequest is the 'focus' of the Task.
+    <b>Step 2:</b> The Task is posted directly to the <i>data source</i> by the <i>data consumer</i>, initiating fulfillment of the CommunicationRequest.  The CommunicationRequest is the 'focus' of the Task.
   </p>
   <a name="cr-task3"> </a>
   <p>
-    <b>Step 3:</b> The <i>Data Source</i> reads the CommunicationRequest (that was referenced by the Task) from the <i>Data Consumer</i> to determine what data is needed.
+    <b>Step 3:</b> The <i>data source</i> reads the CommunicationRequest (that was referenced by the Task) from the <i>data consumer</i> to determine what data is needed.
   </p>
   <a name="cr-task4"> </a>
   <p>
-    <b>Step 4:</b> The <i>Data Source</i> may optionally update the Task to change the status (e.g. from <code>requested</code> to <code>accepted</code> or <code>refused</code> and eventually to <code>in-progress</code> or <code>on-hold</code>.  The <i>Data Source</i> might also update the Task.businessStatus element to convey additional information around progress, such as reasons for delay or expected timeframe for delivery.
+    <b>Step 4:</b> The <i>data source</i> may optionally update the Task to change the status (e.g. from <code>requested</code> to <code>accepted</code> or <code>refused</code> and eventually to <code>in-progress</code> or <code>on-hold</code>.  The <i>data source</i> might also update the Task.businessStatus element to convey additional information around progress, such as reasons for delay or expected timeframe for delivery.
   </p>
   <a name="cr-task5"> </a>
   <p>
-    <b>Step 5:</b> In order for the <i>Data Consumer</i> to receive information about changes to the Task status, it would either need to <a href="exchanging-polling.html">poll</a> the Task by periodically performing a read on the Task instance or create a <a href="exchanging-subscription.html">Subscription</a> on the <i>Data Source</i> so that it is notified when the Task is updated.  (Note that it will have to use one of these approaches even if not interested in status changes as polling must be used in <a href="#cr-task7">Step 7</a> to see that the Task is complete.
+    <b>Step 5:</b> In order for the <i>data consumer</i> to receive information about changes to the Task status, it would either need to <a href="exchanging-polling.html">poll</a> the Task by periodically performing a read on the Task instance or create a <a href="exchanging-subscription.html">Subscription</a> on the <i>data source</i> so that it is notified when the Task is updated.  (Note that it will have to use one of these approaches even if not interested in status changes as polling must be used in <a href="#cr-task7">Step 7</a> to see that the Task is complete.
   </p>
   <a name="cr-task6"> </a>
   <p>
-    <b>Step 6:</b> As with the Communication-based <a href="#cr-post-b3">delivery approach</a>, the <i>Data Source</i> creates and/or locates the desired records on its system.
+    <b>Step 6:</b> As with the Communication-based <a href="#cr-post-b3">delivery approach</a>, the <i>data source</i> creates and/or locates the desired records on its system.
   </p>
   <a name="cr-task7"> </a>
   <p>
-    <b>Step 7:</b> The <i>Data Source</i> updates the Task to reference the resources created and/or identified in step 5 as Task.output values and sets the Task status to <code>completed</code>.  (It's possible that outputs may be added over time through multiple updates before the Task is marked as complete.  If this happens, it's up to the <i>Data Consumer</i> whether to retrieve outputs as they're added or to wait until the Task is complete.)
+    <b>Step 7:</b> The <i>data source</i> updates the Task to reference the resources created and/or identified in step 5 as Task.output values and sets the Task status to <code>completed</code>.  (It is possible that outputs may be added over time through multiple updates before the Task is marked as complete.  If this happens, it is up to the <i>data consumer</i> whether to retrieve outputs as they are added or to wait until the Task is complete.)
   </p>
   <a name="cr-task8"> </a>
   <p>
-    <b>Step 8:</b> The <i>Data Consumer</i> retrieves the completed Task from the <i>Data Source</i> using either <a href="exchanging-polling.html">polling</a> or a previously created <a href="exchanging-subscription.html">Subscription</a>.  Note that this can be combined with Step 9 below if the polling or subscription mechanism makes use of _include to retrieve the <code>Task.output</code> references at the same time as the Task is returned.  (Note that there is no standard search parameter to support such an _include at this time.)
+    <b>Step 8:</b> The <i>data consumer</i> retrieves the completed Task from the <i>data source</i> using either <a href="exchanging-polling.html">polling</a> or a previously created <a href="exchanging-subscription.html">Subscription</a>.  Note that this can be combined with Step 9 below if the polling or subscription mechanism makes use of _include to retrieve the <code>Task.output</code> references at the same time as the Task is returned.  (Note that there is currently no standard search parameter to support such an _include.)
   </p>
   <a name="cr-task9"> </a>
   <p>
@@ -164,38 +179,38 @@
   <a name="task"> </a>
   <h3>Requesting exchange using Task</h3>
   <p>
-    In this approach, no CommunicationRequest is used at all - as there's no need for a formal order.  Instead, the Task itself describes the data to be retrieved.  The workflow is identical to that used in <a href="#cr-task">CommunicationRequest plus Task</a>, except that the first step (the creation of the CommunicationRequest) and the third step (read of the CommunicationRequest) are skipped and the Task transmitted in the initial step doesn't specify a Task.focus.
+    In this approach, no CommunicationRequest is used at all - as there is no need for a formal order.  Instead, the Task itself describes the data to be retrieved.  The workflow is identical to that used in <a href="#cr-task">CommunicationRequest plus Task</a>, except that the first step (the creation of the CommunicationRequest) and the third step (read of the CommunicationRequest) are skipped and the Task transmitted in the initial step does not specify a Task.focus.
   </p>
   <p>
     {% include task.svg %}
   </p>
   <a name="task1"> </a>
   <p>
-    <b>Step 1:</b> The Task is posted directly to the <i>Data Source</i> by the <i>Data Consumer</i>.  The Task describes the data to be provided directly.
+    <b>Step 1:</b> The Task is posted directly to the <i>data source</i> by the <i>data consumer</i>.  The Task describes the data to be provided directly.
   </p>
   <a name="task2"> </a>
   <p>
-    <b>Step 2:</b> The <i>Data Source</i> may optionally update the Task to change the status (e.g. from <code>requested</code> to <code>accepted</code> or <code>refused</code> and eventually to <code>in-progress</code> or <code>on-hold</code>.  The <i>Data Source</i> might also update the Task.businessStatus element to convey additional information around progress, such as reasons for delay or expected timeframe for delivery.
+    <b>Step 2:</b> The <i>data source</i> may optionally update the Task to change the status (e.g. from <code>requested</code> to <code>accepted</code> or <code>refused</code> and eventually to <code>in-progress</code> or <code>on-hold</code>.  The <i>data source</i> might also update the Task.businessStatus element to convey additional information around progress, such as reasons for delay or expected timeframe for delivery.
   </p>
   <a name="task3"> </a>
   <p>
-    <b>Step 3:</b> In order for the <i>Data Consumer</i> to receive information about changes to the Task status, it would either need to poll the Task by periodically performing a read on the Task instance or create a Subscription on the <i>Data Source</i> so that it is notified when the Task is updated.  (Note that it will have to use one of these approaches even if not interested in status changes as polling must be used in <a href="#cr-task7">Step 7</a> to see that the Task is complete.
+    <b>Step 3:</b> In order for the <i>data consumer</i> to receive information about changes to the Task status, it would either need to poll the Task by periodically performing a read on the Task instance or create a Subscription on the <i>data source</i> so that it is notified when the Task is updated.  (Note that it will have to use one of these approaches even if not interested in status changes as polling must be used in <a href="#cr-task7">Step 7</a> to see that the Task is complete.
   </p>
   <a name="task4"> </a>
   <p>
-    <b>Step 4:</b> The <i>Data Source</i> creates and/or locates the desired records on its system.
+    <b>Step 4:</b> The <i>data source</i> creates and/or locates the desired records on its system.
   </p>
   <a name="task5"> </a>
   <p>
-    <b>Step 5:</b> The <i>Data Source</i> updates the Task to reference the resources created and/or identified in step 5 as Task.output values and sets the Task status to <code>completed</code>.  (It's possible that outputs may be added over time through multiple updates before the Task is marked as complete.  If this happens, it's up to the <i>Data Consumer</i> whether to retrieve outputs as they're added or to wait until the Task is complete.)
+    <b>Step 5:</b> The <i>data source</i> updates the Task to reference the resources created and/or identified in step 5 as Task.output values and sets the Task status to <code>completed</code>.  (It is possible that outputs may be added over time through multiple updates before the Task is marked as complete.  If this happens, it is up to the <i>data consumer</i> whether to retrieve outputs as they are added or to wait until the Task is complete.)
   </p>
   <a name="task6"> </a>
   <p>
-    <b>Step 6:</b> The <i>Data Consumer</i> retrieves the completed Task from the <i>Data Source</i> using either polling or a previously created Subscription.  Note that this can be combined with Step 7 below if the polling or subscription mechanism makes use of _include to retrieve the <code>Task.output</code> references at the same time as the Task is returned.  (Note that there is no standard search parameter to support such an _include at this time.)
+    <b>Step 6:</b> The <i>data consumer</i> retrieves the completed Task from the <i>data source</i> using either polling or a previously created Subscription.  Note that this can be combined with Step 7 below if the polling or subscription mechanism makes use of _include to retrieve the <code>Task.output</code> references at the same time as the Task is returned.  (Note that there is currently no standard search parameter to support such an _include.)
   </p>
   <a name="task7"> </a>
   <p>
-    <b>Steps 7:</b> The <i>Data Consumer</i> then retrieves the resources referenced by <code>Task.output</code>.  This step can be omitted if the outputs are retrieved as part of the polling/subscription in Step 6.
+    <b>Steps 7:</b> The <i>data consumer</i> then retrieves the resources referenced by <code>Task.output</code>.  This step can be omitted if the outputs are retrieved as part of the polling/subscription in Step 6.
   </p>  
 
 

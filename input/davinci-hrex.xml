@@ -146,7 +146,7 @@
 						<generation value="markdown"/>
 					</page>
 				</page>
-				<page>
+<!--				<page>
 					<nameUrl value="FHIR_STU3_Dependencies.html"/>
 					<title value="FHIR STU3 Dependencies"/>
 					<generation value="markdown"/>
@@ -165,14 +165,14 @@
 					<nameUrl value="FHIR_DSTU_2_Dependencies.html"/>
 					<title value="FHIR DSTU 2 (aka Argonaut) Dependencies"/>
 					<generation value="markdown"/>
-				</page>
+				</page>-->
 			</page>
-			<page>
+<!--			<page>
 				<nameUrl value="HRex_Profiles.html"/>
 				<title value="HRex Profiles"/>
 				<generation value="markdown"/>
-			</page>
-			<page>
+			</page>-->
+<!--			<page>
 				<nameUrl value="HRex_Interactions.html"/>
 				<title value="HRex Interactions"/>
 				<generation value="markdown"/>
@@ -220,13 +220,13 @@
 					<nameUrl value="SMART-on-FHIR.html"/>
 					<title value="SMART-on-FHIR"/>
 					<generation value="markdown"/>
-				</page>
+				</page>-->
 				<page>
 					<nameUrl value="Dynamic_Registration_for_SMART_Apps.html"/>
 					<title value="Dynamic Registration for SMART Apps"/>
 					<generation value="markdown"/>
 				</page>
-			</page>
+<!--			</page>-->
 			<page>
 				<nameUrl value="Security_and_Privacy.html"/>
 				<title value="Security and Privacy"/>

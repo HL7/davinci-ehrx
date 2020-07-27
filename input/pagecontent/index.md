@@ -1,3 +1,8 @@
+  <blockquote class="stu-note">
+    <p>
+      Based on balloter feedback, this IG has been completely re-written.  The refactoring has been sufficiently large that it is not practical/useful to enumerate a list of changes.
+    </p>
+  </blockquote>
 
 ### Description
 
@@ -9,3 +14,6 @@ The HRex profiles documented in this IG will be used to exchange data between pr
 
 HRex may define new extensions, profiles, value sets, constraints/extension to other specification (e.g. specific CDS-Hooks) that are specific Da Vinci requirements. Where appropriate these Da Vinci specific artifacts will be promoted for incorporation into the future versions of existing standards (e.g. R4 US Core profiles) and deprecated in this guide on publication in the updated standard.
 
+
+
+<!-- Consider SMART on FHIR, CDS Hooks, other technologies? -->

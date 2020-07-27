@@ -43,24 +43,6 @@
    <page name="FHIR R4 Dependencies" key="FHIR_R4_Dependencies"/>
    <page name="C-CDA on FHIR (FHIR R4)" key="C-CDA_on_FHIR_R4"/>
    <page name="US Core (FHIR R4)" key="US_Core_R4"/>
-   <page name="FHIR STU3 Dependencies" key="FHIR_STU3_Dependencies"/>
-   <page name="C-CDA on FHIR (FHIR STU3)" key="C-CDA_on_FHIR_STU3"/>
-   <page name="US Core (FHIR STU3)" key="US_Core_STU3"/>
-   <page name="FHIR DSTU 2 (aka Argonaut) Dependencies"
-         key="FHIR_DSTU_2_Dependencies"/>
-   <page name="HRex Profiles" key="HRex_Profiles"/>
-   <page name="HRex Interactions" key="HRex_Interactions"/>
-   <page name="Push (POST and PUT)" key="Push_POST_and_PUT"/>
-   <page name="Push (Unsolicited Communication)"
-         key="Push_Unsolicited_Communication"/>
-   <page name="Pull (GET)" key="Pull_GET"/>
-   <page name="Request (Solicited Communication)"
-         key="Request_Solicited_Communication"/>
-   <page name="Subscribe" key="Subscribe"/>
-   <page name="Bulk Data" key="Bulk_Data"/>
-   <page name="Rational Combinations" key="Rational_Combinations"/>
-   <page name="Validation" key="Validation"/>
-   <page name="SMART-on-FHIR" key="SMART-on-FHIR"/>
    <page name="Dynamic Registration for SMART Apps"
          key="Dynamic_Registration_for_SMART_Apps"/>
    <page name="Security and Privacy" key="Security_and_Privacy"/>
