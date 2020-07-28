@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<OperationDefinition xmlns="http://hl7.org/fhir">
+  <id value="member-match"/>
+  <url value="http://hl7.org/fhir/us/davinci-hrex/OperationDefinition/member-match"/>
+  <version value="0.0.0"/>
+  <name value="MemberMatch"/>
+  <title value="Da Vinci Find Member using Patient and Coverage Resources"/>
+  <status value="draft"/>
+  <kind value="operation"/>
+  <date value="2020-07-23"/>
+  <publisher value="Da Vinci Project"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/Healthedata1/DaVinci"/>
+    </telecom>
+  </contact>
+  <description value="The **$member-match** operation allows one Health Plan to retrieve a unique identifier for a Member from another Health Plan using a member's demographic and coverage information.  The intended to use is to support sharing of prior coverage information with a new Health Plan when an enrolling member switches plans. &#xA; &#xA; To request prior coverage information from another plan a new Health Plan **SHALL** submit the $member-match operation on the Patient FHIR endpoint for the old Health Plan with following resources compiled into a Parameter Resource: &#xA; * `MemberPatient` (US Core Patient containing Member demographics) &#xA;  * `OldCoverage` (details of prior health plan coverage provided by the member, typically from their Health Plan coverage card) &#xA;  * `NewCoverage` (details of new or prospective health plan coverage, provided by the health plan based upon the member&#39;s enrolment) &#xA; &#xA; In response, the old Health Plan **SHALL** return the following data if records for Member are found: &#xA; * The unique member identifier added to the `Patient.identifier` in the Patient resource submitted by the new health plan. &#xA;  * The new health plan coverage resource. &#xA; &#xA; (Only one Patient and one Coverage record are to be returned.)"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+    </coding>
+  </jurisdiction>
+  <code value="member-match"/>
+  <resource value="Patient"/>
+  <system value="false"/>
+  <type value="true"/>
+  <instance value="false"/>
+  <parameter>
+    <name value="MemberPatient"/>
+    <use value="in"/>
+    <min value="1"/>
+    <max value="1"/>
+    <documentation value="Parameter submitted by the New Plan **SHALL** contain US Core Patient containing Member demographics."/>
+    <type value="Resource"/>
+  </parameter>
+  <parameter>
+    <name value="OldCoverage"/>
+    <use value="in"/>
+    <min value="1"/>
+    <max value="1"/>
+    <documentation value="Parameter submitted by the New Plan **SHALL** contain Coverage details of prior health plan coverage provided by the member, typically from their Health Plan coverage card."/>
+    <type value="Resource"/>
+  </parameter>
+  <parameter>
+    <name value="NewCoverage"/>
+    <use value="in"/>
+    <min value="1"/>
+    <max value="1"/>
+    <documentation value="Parameter submitted by the New Plan **SHALL** contain Coverage details of new or prospective health plan coverage provided by the new health plan based upon the member&#39;s enrollment."/>
+    <type value="Resource"/>
+  </parameter>
+  <parameter>
+    <name value="MemberPatient"/>
+    <use value="out"/>
+    <min value="1"/>
+    <max value="1"/>
+    <documentation value="Parameter returned by the Old Plan resource **SHALL** contain the MemberPatient resource received from New Plan with the ADDITION of an identifier of type &quot;UMB&quot; representing the Unique identifier identifying the member at the Old Health Plan."/>
+    <type value="Resource"/>
+  </parameter>
+  <parameter>
+    <name value="NewCoverage"/>
+    <use value="out"/>
+    <min value="1"/>
+    <max value="1"/>
+    <documentation value="Parameter returned by the Old Plan resource **SHALL** contain the NewCoverage record received from the New Plan."/>
+    <type value="Resource"/>
+  </parameter>
+</OperationDefinition>

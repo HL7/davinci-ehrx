@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R4/fhir-single.xsd">
+  <p>
+    The following content is intended to apply to all Da Vinci IGs.  IGs derived from HRex should all reference this section, though they may qualify and supplement the content here as appropriate for the specific technologies they are using, and the threat environment and privacy considerations involved in their specific use case.
+  </p>
+
+	<h3>Statutes, Regulations, and Guiding Principles</h3>
+		<ol>
+			<li>All implementations of any Da Vinci FHIR Implementation Guides (IG) <b>SHALL</b> meet all current relevant Federal and State statutes and regulations regarding security and privacy.</li>
+			<li>All IGs <b>SHALL</b> utilize technical standards required by current regulations published by CMS, ONC and HIPAA (OCR) unless an exception has been granted.</li>
+			<li>All IGs and implementations <b>SHOULD</b> follow the current <a href="https://confluence.hl7.org/display/DVP/Da+Vinci+Guiding+Principles">Da Vinci Guiding Principles</a>.</li>
+			<li>All IGs and implementations <b>SHALL</b> support patient/member consent and/or treatment of sensitive information consistent with Federal and State statutes and regulations.</li>
+			<li>All IGs and implementations <b>SHOULD</b> support the consent and data sharing policies of trading partners involved in the exchange that are more protective so long as policies are consistent with or more restrictive than Federal and State statutes and regulations.</li>
+		</ol>
+	<h3>FHIR Security and Implementation Guidance</h3>
+		<p>
+			All FHIR Implementation Guides <b>SHOULD</b> follow the FHIR Security guidance and FHIR Implementer’s Safety guidance as defined in the  relevant FHIR  specification (e.g. Release 4.1.0) where applicable and not superseded by this Section or specific IG requirements.</p>
+		<ol>
+			<li>The FHIR Security specification provides guidance related to communication security, authentication, authorization/access control, audit, digital signatures, attachments, labels, narrative, and input validation. The FHIR security specification is available <a href="{{site.data.fhir.path}}security.html">here</a>.</li>
+			<li>The FHIR Implementer’s Safety specification is a check list to help implementers be sure that they have considered all the parts of FHIR that impact on their system design regarding safety. The FHIR safety check list is available <a href="{{site.data.fhir.path}}safety.html">here</a>.</li>
+		</ol>
+	<h3>Security/Privacy Related Technologies Including Explicit Consent and Security Labels</h3>
+	<ol>
+		<li>As of May 2020, ONC has elected to not require either Data Labeling or Consent Directives as part of the <a href="https://www.federalregister.gov/documents/2020/05/01/2020-07419/21st-century-cures-act-interoperability-information-blocking-and-the-onc-health-it-certification">Final Rule for the 21st Century Cures Act</a>.</li>
+		<li>At present there is no explicit regulatory requirement for the use of these technologies in Da Vinci specifications.</li>
+		<li>Organizations which plan to take advantage of these additional capabilities are responsible for negotiating support for these mechanisms between trading partners. The FHIR implementation guide defining the recommended standard is the <a href="http://hl7.org/fhir/uv/security-label-ds4p">FHIR Data Segmentation for Privacy IG</a>.</li>
+	</ol>
+	<h3>Exchange Security</h3>
+	<ol>
+		<li>When exchanging PHI between entities, the exchange <b>SHOULD</b>  use the current version and <b>SHALL</b> use either current or the immediately prior release of <a href="https://tools.ietf.org/html/rfc8446">Transport Level Security (TLS)</a> as specified by the current release of <a href="https://csrc.nist.gov/publications/detail/sp/800-52/rev-2/final">NIST guidelines (SP 800-52)</a>.</li>
+		<li>When the identity of the requesting or receiving party is important, implementations <b>SHOULD</b> use one or more of the following as defined in the specific Da Vinci IG:
+		<ol style="list-style-type: lower-alpha;">
+			<li>the <a href="http://docs.smarthealthit.org">SMART on FHIR Framework</a> ,</li>
+			<li>mutually authenticated TLS ,</li>
+			<li>the ONC FHIR At Scale Taskforce (FAST) security tiger team recommended solutions, or </li>
+			<li>the OAuth Server to Server Authentication as defined in the <a href="https://build.fhir.org/ig/HL7/us-bulk-data">Bulk Data exchange IG</a>.</li>
+		</ol></li>
+	</ol>
+		<p>Note: There is ongoing work to enhance the capabilities of the above specifications to ensure a more secure exchange that recognizes issues related to fine grain scopes.</p>
+
+	<h3>Additionally Protected Information</h3>
+		<p>Additionally protected information may include items defined by Federal (e.g. 42 CFR Part 2), State (e.g. many states protect Substance Abuse, HIV diagnosis/treatment records, release of information on minors – note this is not an exhaustive list) statutes and regulations.  In addition, organizations may provide for additional protection for specific types of information that are deemed sensitive to the individual (e.g. elective abortion).  The following guidelines apply unless otherwise dictated by statute or regulation:</p>
+		<ol>
+				<li>Release of additionally protected information by documented patient request <b>SHALL</b> always be supported.</li>
+				<li>Release of the information without explicit request of the patient/member <b>SHALL</b> be based on organization policy consistent with Federal and State regulations. Examples are legal request for information and “break glass” to treat a patient that is unable to provide consent.</li>
+				<li>The above two statements assume that the additionally protected information is readily identifiable as additionally protected information or has been identified as such by the data creator and communicated to the organization that may be requested to supply the information.</li>
+		</ol>
+	<h3>Security Contexts for Da Vinci IGs</h3>
+		<p>Da Vinci IGs span several security contexts related to the exchange of information between requester and supplier of data. These security contexts include:</p>
+		<h4>Exchange without PHI</h4>
+		
+		<ol>
+			<li>Access to openly available data (e.g. Payer’s provider directory)
+			<ol style="list-style-type: lower-alpha;">
+				<li>No identity, access, authentication, or audit requirements</li>
+				<li>Access restrictions are only imposed to protect the site or manage the ability of the site to handle valid requests (e.g. protection against Denial of Service attacks)</li>
+			</ol></li>
+			<li>Access to Sensitive Business Information (e.g. open schedule slots for a provider, blinded and aggregated patient data)
+			<ol style="list-style-type: lower-alpha;">
+				<li>Identity, access, authentication, and/or audit requirements are up to the Information Supplier</li>
+				<li>Requirements should be consistent with current best practice for such information (if access includes exchange of PHI see the following section)</li>
+			</ol></li>
+			<li>Exchange of a token or internal key
+			<ol style="list-style-type: lower-alpha;">
+				<li>Secure exchange between trusted entities</li>
+				<li> Access rights are inherent in the token</li>
+				<li>Internal key does not necessarily imply access rights</li>
+				<li>Requirements should be consistent with current best practice for such information (if access includes exchange of any unencrypted PHI see the following section)</li>
+			</ol></li>
+		</ol>
+		<h4>Exchange of PHI for TPO (as defined by HIPAA)</h4>
+		<p>This include exchange between covered entities, by a covered entity with a third party (e.g. for Quality Reporting),  or a covered entity and the member/patient.
+		<br/><br/>
+		In all cases, the Information Supplier (in accordance with HIPAA security and privacy rules):
+		</p>
+		<ol>
+			<li>SHALL log all IDs, access rights, requests, and exchanges.</li>
+			<li>SHALL verify rights to have access to the member’s/patient’s record.</li>
+		</ol>
+		<table border="1" width="80%" style="margin-left:auto; margin-right:auto">
+		  <tr>
+		    <td><b>Requesting Information</b></td>
+		    <td><b>Information Supplier</b></td>
+		    <td><b>Covered by HIPAA under</b></td>
+		    <td><b>Declaration of Purpose of Use</b></td>
+		  </tr>
+		  <tr>
+		    <td>Patient/Member</td>
+		    <td>Covered Entity</td>
+		    <td>Right of Access</td>
+		    <td>N/A</td>
+		  </tr>
+		  <tr>
+		    <td>Provider</td>
+		    <td>Provider</td>
+		    <td>TPO</td>
+		    <td>(need process)</td>
+		  </tr>
+		  <tr>
+			<td>Provider</td>
+		    <td>Payer</td>
+		    <td>TPO</td>
+		    <td>(need process)</td>
+		  </tr>
+		  <tr>
+		    <td>Payer</td>
+		    <td>Payer</td>
+		    <td>TPO</td>
+		    <td>(need process)</td>
+		  </tr>
+		  <tr>
+		    <td>Other (e.g. CMS/NCQA)</td>
+		    <td>Provider/Payer</td>
+		    <td>PO</td>
+		    <td>(need process)</td>
+		  </tr>
+		</table>
+		<p style="font-size:75%">Note: (need process) – there is no current mechanism (outside of CommunicationRequest) to declare a purpose of use when accessing data using RESTful mechanisms (e.g. GET) – the standards for the need to be addressed within HL7.</p>
+		
+		<h4>Exchange via Business Associates (BA) – for a Covered Entity</h4>
+<!--		<ol start="3">-->
+		<ol>
+			<li>Both Covered Entity and BA are defined and scoped by HIPAA</li>
+			<li>Requires a HIPAA compliant Business Associate Agreement (BAA)</li>
+			<li>BA inherits all the requirements and responsibilities of the Covered Entity</li>
+		</ol>
+</div>

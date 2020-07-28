@@ -9,7 +9,7 @@
     <text>
         <status value="additional"/>
         <div
-            xmlns="http://www.w3.org/1999/xhtml">The HRex Coverage Profile defines the constraints for representing  the subscriber information to the Payer.  This along with the patient first name, last name, date of birth and gender allows the payer to identify the member in their system for which the MRP was performer. 
+            xmlns="http://www.w3.org/1999/xhtml">The HRex Coverage Profile defines the constraints for representing the subscriber information to the Payer.  This along with the patient first name, last name, date of birth and gender allows the payer to identify the member in their system. 
         </div>
     </text>
     <url value="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-coverage"/>

@@ -1,3 +1,7 @@
+<!--
+  - This section of the HRex guide is written in XHTML because of the expectation that the content will eventually be migrated for
+  - inclusion in the FHIR core specification - and the FHIR core specification doesn't support markdown-authored content.
+  -->
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R4/fhir-single.xsd">
   <p>
     FHIR offers numerous architectural for sharing data between systems.  Each of these approaches have pros and cons and are intended to be used in different circumstances.  This page provides an overview of each of the approaches, describes in general terms the general preference between the approaches based on their respective pros and cons, and provides a decision tree to guide choices about which approach best suits a specific circumstance.
@@ -308,7 +312,7 @@ shared in FHIR</li>
       </tr>
     </tbody>
   </table>
-  <blockquote class="stu-note">
+  <blockquote class="note-to-balloters">
     <p>
       The project has committed to defining example scenarios showing the execution of each of these exchange mechanisms.  However, work on rendering ExampleScenario instances is not yet fully developed in the IG publisher and there was insufficient time to complete this work prior to second ballot.  The example scenarios and associated example instances are expected to be included in the final publication of this IG.
     </p>
@@ -330,7 +334,7 @@ shared in FHIR</li>
   </div>
   <a name="criteria"> </a>
   <a name="connect"> </a>
-  <h4>Direct connection?</h4>
+  <h4>Direct/proxied connection?</h4>
   <p>
     The first question is whether the <i>data consumer</i> and <i>data source</i> can talk to each other directly.  In some interoperability environments the two systems may not have any means of knowing the network address of the other and all communication must happen through an intermediary.  In some cases, the communication can happen via a network proxy where a request is automatically forwarded to a secondary location (potentially determined by the content of the request).  In some environments, there may even be multiple levels of proxying, though this can limit the ability of the system to perform in a <a href="#synchronous">synchronous</a> manner.  From the perspective of this decision tree, proxied connections are still treated as a 'direct' connection.  Both direct and proxied communications proceed through the tree to the next decision point of whether the <a href="#pull">consumer initiates</a>.
   </p>
@@ -817,13 +821,16 @@ shared in FHIR</li>
       In addition to mere awareness of each other's existence, the <i>data source</i> and <i>data consumer</i> need to have a sufficient trust relationship to share data.  Specifically, both the systems and their relevant end users must have the necessary permissions to perform whatever actions the exchange workflow demands on each other's systems.  Frequently, this will be predicated on the existence of legal agreements between the respective organizations - especially if the information to be exchanged is sensitive.
     </li>
     <li>
-      The necessary security steps to authenticate the systems to each other, authenticate any users involved, authorize both users and systems, and protect the data while in transit will all need to be in place.  In some cases, <a href="{{site.data.fhir.path}}consent.html">Consent</a> may also need to exist.  Authorization rules may vary by patient, by type of data and by tags or information within the record.  Discussion about general expectations around security, privacy and consent for this IG and other Da Vinci IGs can be found <a href="security.html">here</a>.  Note that not all data needs to be secured.  Some data may not be sensitive and there may not be significant risk if it is accessed or even modified in transit.
+      The necessary security steps to authenticate the systems to each other, authenticate any users involved, authorize both users and systems, and protect the data while in transit will all need to be in place.  In some cases, <a href="{{site.data.fhir.path}}consent.html">Consent</a> may also need to exist.  Authorization rules may vary by patient, by type of data and by tags or information within the record.  Discussion about general expectations around security, privacy and consent for this IG and other Da Vinci IGs can be found <a href="security.html">here</a>.  Note that not all data needs to be secured.  Some data may not be sensitive and there may not be significant risk if it is accessed or even modified in transit.  See the <a href="security.html">Security and Privacy</a> guidance for additional rules and expectations.
     </li>
     <li>
       In at most situations, there needs to be agreement between the <i>data consumer</i> and <i>data source</i> about how a specific type of exchange should happen.  Even if the relevant party provides permission for an exchange to happen a specific way, if they aren't <b>expecting</b> that mechanism to be used, the workflow may not be in place to ensure the request or data gets exposed or processed in the right way.  Typically, these agreements will come in the form of mutually adopted FHIR implementation guides.  However, site-specific agreements are also possible, especially for new or experimental functionality.
     </li>
     <li>
       The <i>data source</i> needs to have the needed data in a way that will allow the selected mechanism to retrieve it.  In the healthcare system, this is not guaranteed.  Interoperability solutions should always consider the possibility of data being unavailable and have fallback processes in place.
+    </li>
+    <li>
+      For full utility, when data is shared between systems, <a href="{{site.data.fhir.path}}provenance.html">Provenance</a> information documenting how data was created and modified and where it came from.  This information can be important to understanding the context and trustworthiness of the information and also allowing reconciliation of received information with data received via other pathways.  Regardless of the exchange approach selected, consideration should be given to whether Provenance data should be exchanged as well and, if so, how that will happen.
     </li>
   </ul>
   <p>

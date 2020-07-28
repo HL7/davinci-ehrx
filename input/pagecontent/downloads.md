@@ -1,16 +1,16 @@
-**Validator Pack and Definitions:**
+### Links
 
-The following file contains all the value sets, profiles, extensions, list of pages and urls in the IG, etc defined as part of the this Implementation Guides.:
+This implementation guide is web-based and is intended to be browsed online.  However, for the convenience of implementers, both this implementation guide, various sub-packages of it and some of the source specifications are available for download.  The following links allow you to download various parts of this implementation guide and other referenced implementation guides for local use.
 
-- [Validator Pack](validator.pack)
+Content from this IG:
+* This [full IG](full-ig.zip)
+* The resource definitions as [JSON](definitions.json.zip) and [XML](definitions.xml.zip) from this IG for programmatic use
+* All examples as [JSON](examples.json.zip) and [XML](examples.xml.zip) from this IG for programmatic use
+* The [validator package](package.tgz) for use with the [FHIR validator](tools.html)
 
-In addition there are format specific definitions files.
-- [XML](definitions.xml.zip)
-- [JSON](definitions.json.zip)
-- [TTL](definitions.ttl.zip)
+Key content from the FHIR core specification:
+* The full [FHIR R4 core]({{site.data.fhir.path}}fhir-spec.zip) specifications
+* [JSON]({{site.data.fhir.path}}fhir.schema.json.zip) and [XML]({{site.data.fhir.path}}fhir-all-xsd.zip) schemas for validation
 
-**Examples:** all the examples that are used in this Implementation Guide available for download:
-
-- [XML](examples.xml.zip)
-- [JSON](examples.json.zip)
-- [TTl](examples.ttl.zip)
+Content from US Core:
+* The [validator package]({{site.data.fhir.uscore}}/package.tgz) for use with the [FHIR validator](tools.html)

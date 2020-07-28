@@ -19,7 +19,7 @@
   <p>
     In this approach, the CommunicationRequest soliciting data is posted directly to the <i>data source</i>'s system and the resulting data is POSTed directly back to the <i>data consumer</i>'s system.  While lighter-weight than some of the alternatives below, it requires that records be created on the RESTful endpoints of both <i>data source</i> and <i>data consumer</i> that might not actually be desired and does not give the <i>data consumer</i> much choice as to what happens to the data when received - it must either be stored as a record on the respective endpoint or it must be thrown away.  (This also means that the <i>data consumer</i> must have an endpoint for the desired data to be stored on.)  This mechanism provides no mechanism to track status of work in progress.  A refusal is represented by a Communication instance indicating that no Communication happened.
   </p>
-  <blockquote class="stu-note">
+  <blockquote class="note-to-balloters">
     <p>
       Balloter feedback requested: Given the downsides associated with this approach to exchange, should it be listed as one of the options in this document?
     </p>
@@ -55,7 +55,7 @@
   <p>
     The benefit of this approach is that there is no formal 'create' of the data on the <i>data consumer</i>'s system.  The <i>data consumer</i> does not need to expose endpoints for each type of record it might receive and there is no expectation that the whole resources be stored.  When the <i>data consumer</i> queries the data, it is free to do with it as it wishes.  However, the price of this approach is the additional complexity of the POSTing of the Communication being mandatory and needing to query for referenced the data once the Communication is received.
   </p>
-  <blockquote class="stu-note">
+  <blockquote class="note-to-balloters">
     <p>
       Balloter feedback requested: Given the downsides associated with this approach to exchange, should it be listed as one of the options in this document?
     </p>
@@ -98,7 +98,7 @@
   <p>
     Other pros and cons are the same as <a href="#cr-post-communication">above</a>.  Similarly, this approach is also a variant on <a href="{{site.data.fhir.path}}workflow-ad-hoc.html#optiona">Option A</a> in the FHIR core workflow communication patterns.
   </p>
-  <blockquote class="stu-note">
+  <blockquote class="note-to-balloters">
     <p>
       Balloter feedback requested: Given the downsides associated with this approach to exchange, should it be listed as one of the options in this document?
     </p>

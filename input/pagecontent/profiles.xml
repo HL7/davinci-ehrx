@@ -1,0 +1,41 @@
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R4/fhir-single.xsd">
+  <p>
+    Da Vinci IGs make use of a variety of FHIR profiles, extensions, operations, and other artifacts.  These are drawn from the core specification, US Core, defined within other Da Vinci IGs and defined in other IGs.  This page provides a summary of all profiles and extensions currently in use in at least one IG.  Because Da Vinci has so many IGs and they are changing relatively frequently, this IG will not always be completely up to date.  However, the team will do their best to keep it so.  (If you find an issue, please use the <a href="http://hl7.org/fhir-issues">Propose a Change</a> link below.)
+  </p>
+  <h3>Artifact Usage Table</h3>
+  <p>
+    The table below is organized as follows:
+  </p>
+  <ul>
+    <li><b>Resource:</b> - indicates the resource the profile or extension is associated with.  'General' is used for artifacts that are not resource specific.</li>
+    <li><b>Type:</b> - is either Extension, Profile, or Operation</li>
+    <li><b>Defined:</b> - is the IG in which the artifact is published.  (See <a href="#legend">IG list</a> for a list of all IGs, including links)</li>
+    <li><b>Artifact:</b> - the name (and a link) for the artifact</li>
+    <li><b>Used:</b> - a list of the Da Vinci IG(s) that use this artifact</li>
+    <li><b>Notes:</b> - any information about artifact relationships, migration, deprecation, etc.</li>
+  </ul>
+  <table>
+    <thead>
+      <tr>
+        <th>Resource</th>
+        <th>Type</th>
+        <th>Defined</th>
+        <th>Artifact</th>
+        <th>Used</th>
+        <th>Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <a name="legend"> </a>
+  <h3>IG List</h3>
+  <ul>
+    <li>USCORE - <a href="{{site.data.fhir.uscore}}">US Core 3.1 (FHIR R4)</a></li>
+  </ul>
+
+</div>

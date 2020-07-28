@@ -26,12 +26,21 @@
    <artifact name="HRex Provenance"
              key="StructureDefinition-hrex-provenance"
              id="StructureDefinition/hrex-provenance"/>
+   <artifact name="Da Vinci Find Member using Patient and Coverage Resources"
+             key="OperationDefinition-member-match"
+             id="OperationDefinition/member-match"/>
+   <artifact name="DaVinci Member Match Request Parameters Profile"
+             key="StructureDefinition-member-match-parameters-in"
+             id="StructureDefinition/member-match-parameters-in"/>
+   <artifact name="DaVinci Member Match Response Parameters Profile"
+             key="StructureDefinition-member-match-parameters-out"
+             id="StructureDefinition/member-match-parameters-out"/>
    <page name="(NA)" key="NA"/>
    <page name="(many)" key="many"/>
    <page name="Table of Contents" key="toc"/>
    <page name="Home" key="index"/>
-   <page name="Introduction" key="Introduction"/>
-   <page name="Approaches to exchanging FHIR data" key="exchanging"/>
+   <page name="FHIR Introduction" key="fhir"/>
+   <page name="Approaches to Exchanging FHIR Data" key="exchanging"/>
    <page name="Pulling with FHIR search" key="exchanging-search"/>
    <page name="Pushing with FHIR REST" key="exchanging-rest"/>
    <page name="Exchange using FHIR subscription" key="exchanging-subscription"/>
@@ -39,14 +48,11 @@
    <page name="Exchange using FHIR operations" key="exchanging-operation"/>
    <page name="Exchanging using messaging" key="exchanging-messaging"/>
    <page name="Requesting humans to exchange data" key="exchanging-request"/>
-   <page name="Dependencies" key="Dependencies"/>
-   <page name="FHIR R4 Dependencies" key="FHIR_R4_Dependencies"/>
-   <page name="C-CDA on FHIR (FHIR R4)" key="C-CDA_on_FHIR_R4"/>
-   <page name="US Core (FHIR R4)" key="US_Core_R4"/>
-   <page name="Dynamic Registration for SMART Apps"
-         key="Dynamic_Registration_for_SMART_Apps"/>
-   <page name="Security and Privacy" key="Security_and_Privacy"/>
+   <page name="Conformance Expectations" key="conformance"/>
+   <page name="Security and Privacy" key="security"/>
+   <page name="Dynamic Registration for SMART Apps" key="smart-app-reg"/>
+   <page name="Profile overview" key="profiles"/>
+   <page name="Downloads" key="downloads"/>
+   <page name="Tooling and Support" key="tools"/>
    <page name="Artifact List" key="artifacts"/>
-   <page name="(profiles)" key="profiles" deprecated="true"/>
-   <page name="downloads" key="downloads" deprecated="true"/>
 </specification>
