@@ -1,71 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<StructureDefinition
-    xmlns="http://hl7.org/fhir">
-    <id value="hrex-provenance"/>
-    <meta>
-        <versionId value="20"/>
-        <lastUpdated value="2019-06-10T10:31:44.000-04:00"/>
-    </meta>
-    <text>
-        <status value="additional"/>
-        <div
-            xmlns="http://www.w3.org/1999/xhtml">The HRex Provenance resource requires  occurance (period or dateTime) and agent to be specified. It also requires implementers to support signature. 
-        
-        </div>
-    </text>
-    <url value="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-provenance"/>
-    <name value="HRexProvenance"/>
-    <title value="HRex Provenance"/>
-    <status value="draft"/>
-    <description value="The HRex Provenance resource requires  occurance (period or dateTime) and agent to be specified. It also requires implementers to support signature. "/>
-    <fhirVersion value="4.0.0"/>
-    <kind value="resource"/>
-    <abstract value="false"/>
-    <type value="Provenance"/>
-    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Provenance"/>
-    <derivation value="constraint"/>
-    <differential>
-        <element id="Provenance">
-            <path value="Provenance"/>
-        </element>
-        <element id="Provenance.occurred[x]">
-            <path value="Provenance.occurred[x]"/>
-            <min value="1"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Provenance.agent">
-            <path value="Provenance.agent"/>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Provenance.agent.who">
-            <path value="Provenance.agent.who"/>
-            <type>
-                <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
-                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole"/>
-                <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
-                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
-                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-device"/>
-                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
-            </type>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Provenance.agent.onBehalfOf">
-            <path value="Provenance.agent.onBehalfOf"/>
-            <type>
-                <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
-                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole"/>
-                <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
-                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
-                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-device"/>
-                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
-            </type>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Provenance.signature">
-            <path value="Provenance.signature"/>
-            <mustSupport value="true"/>
-        </element>
-    </differential>
+<StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R4/fhir-single.xsd">
+	<id value="hrex-provenance"/>
+	<meta>
+		<versionId value="20"/>
+		<lastUpdated value="2019-06-10T10:31:44.000-04:00"/>
+	</meta>
+	<url value="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-provenance"/>
+	<name value="HRexProvenance"/>
+	<title value="HRex Provenance"/>
+	<status value="draft"/>
+	<description value="The HRex Provenance resource requires occurred[x] (period or dateTime) and agent to be specified. It also requires implementers to support signature"/>
+	<fhirVersion value="4.0.0"/>
+	<kind value="resource"/>
+	<abstract value="false"/>
+	<type value="Provenance"/>
+	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/Provenance"/>
+	<derivation value="constraint"/>
+	<differential>
+		<element id="Provenance">
+			<path value="Provenance"/>
+		</element>
+		<element id="Provenance.target">
+			<path value="Provenance.target"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Provenance.target.reference">
+			<path value="Provenance.target.reference"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Provenance.target.reference.value">
+			<path value="Provenance.target.reference.value"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Provenance.occurred[x]">
+			<path value="Provenance.occurred[x]"/>
+			<min value="0"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Provenance.agent">
+			<path value="Provenance.agent"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Provenance.agent.type">
+			<path value="Provenance.agent.type"/>
+			<mustSupport value="true"/>
+			<binding>
+				<strength value="extensible"/>
+				<valueSet value="http://hl7.org/fhir/us/core/ValueSet/us-core-provenance-participant-type"/>
+			</binding>
+		</element>
+		<element id="Provenance.agent.who">
+			<path value="Provenance.agent.who"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
+				<targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole"/>
+				<targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
+				<targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+				<targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-device"/>
+				<targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Provenance.agent.onBehalfOf">
+			<path value="Provenance.agent.onBehalfOf"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
+				<targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole"/>
+				<targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
+				<targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+				<targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-device"/>
+				<targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Provenance.signature">
+			<path value="Provenance.signature"/>
+			<mustSupport value="true"/>
+		</element>
+	</differential>
 </StructureDefinition>
