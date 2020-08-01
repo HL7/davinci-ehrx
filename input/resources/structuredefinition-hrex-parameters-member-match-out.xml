@@ -1,85 +1,85 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
-    <id value="hrex-parameters-member-match-out" />
-    <url value="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-parameters-member-match-out" />
-    <version value="0.0.0" />
-    <name value="HRexMemberMatchResponseParameters" />
-    <title value="HRex Member Match Response Parameters Profile" />
-    <status value="active" />
-    <date value="2020-07-27" />
-    <publisher value="Da Vinci Project"/>
-    <contact>
-      <telecom>
-        <system value="url"/>
-        <value value="https://github.com/Healthedata1/DaVinci"/>
-      </telecom>
-    </contact>
-    <description value="The Parameters profile for Da Vinci Find Member using Patient and Coverage Resources Response.  The old Health Plan **SHALL** return the following data if records for Member are found: &#xA; * The unique member identifier added to the Patient.identifier in the Patient resource submitted by the new health plan. &#xA;  * The new health plan coverage resource. &#xA; &#xA; (Only one Patient and one Coverage record are to be returned.)" />
-    <jurisdiction>
-      <coding>
-        <system value="urn:iso:std:iso:3166"/>
-        <code value="US"/>
-      </coding>
-    </jurisdiction>
-    <kind value="resource" />
-    <abstract value="false" />
-    <type value="Parameters" />
-    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Parameters" />
-    <derivation value="constraint" />
-    <differential>
-        <element id="Parameters.parameter">
-            <path value="Parameters.parameter" />
-            <slicing>
-                <discriminator>
-                    <type value="value" />
-                    <path value="name" />
-                </discriminator>
-                <rules value="closed" />
-            </slicing>
-            <min value="2" />
-            <max value="2" />
-            <mustSupport value="true" />
-        </element>
-        <element id="Parameters.parameter:memberPatient">
-            <path value="Parameters.parameter" />
-            <sliceName value="memberPatient" />
-            <min value="1" />
-            <max value="1" />
-            <mustSupport value="true" />
-        </element>
-        <element id="Parameters.parameter:memberPatient.name">
-            <path value="Parameters.parameter.name" />
-            <fixedString value="MemberPatient" />
-            <mustSupport value="true" />
-        </element>
-        <element id="Parameters.parameter:memberPatient.resource">
-            <path value="Parameters.parameter.resource" />
-            <min value="1" />
-            <type>
-                <code value="Resource" />
-                <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient" />
-            </type>
-            <mustSupport value="true" />
-        </element>
-          <element id="Parameters.parameter:newCoverage">
-            <path value="Parameters.parameter" />
-            <sliceName value="newCoverage" />
-            <min value="1" />
-            <max value="1" />
-            <mustSupport value="true" />
-        </element>
-        <element id="Parameters.parameter:newCoverage.name">
-            <path value="Parameters.parameter.name" />
-            <fixedString value="NewCoverage" />
-            <mustSupport value="true" />
-        </element>
-        <element id="Parameters.parameter:newCoverage.resource">
-            <path value="Parameters.parameter.resource" />
-            <min value="1" />
-            <type>
-                <code value="Resource" />
-                <profile value="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-coverage" />
-            </type>
-            <mustSupport value="true" />
-        </element>
-    </differential>
+  <id value="hrex-parameters-member-match-out"/>
+  <url value="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-parameters-member-match-out"/>
+  <version value="0.0.0"/>
+  <name value="HRexMemberMatchResponseParameters"/>
+  <title value="HRex Member Match Response Parameters Profile"/>
+  <status value="active"/>
+  <date value="2020-07-27"/>
+  <publisher value="Da Vinci Project"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/Healthedata1/DaVinci"/>
+    </telecom>
+  </contact>
+  <description value="The Parameters profile for Da Vinci Find Member using Patient and Coverage Resources Response.  The old Health Plan **SHALL** return the following data if records for Member are found: &#xA; * The unique member identifier added to the Patient.identifier in the Patient resource submitted by the new health plan. &#xA;  * The new health plan coverage resource. &#xA; &#xA; (Only one Patient and one Coverage record are to be returned.)"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+    </coding>
+  </jurisdiction>
+  <kind value="resource"/>
+  <abstract value="false"/>
+  <type value="Parameters"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Parameters"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Parameters.parameter">
+      <path value="Parameters.parameter"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="name"/>
+        </discriminator>
+        <rules value="closed"/>
+      </slicing>
+      <min value="2"/>
+      <max value="2"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Parameters.parameter:memberPatient">
+      <path value="Parameters.parameter"/>
+      <sliceName value="memberPatient"/>
+      <min value="1"/>
+      <max value="1"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Parameters.parameter:memberPatient.name">
+      <path value="Parameters.parameter.name"/>
+      <fixedString value="MemberPatient"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Parameters.parameter:memberPatient.resource">
+      <path value="Parameters.parameter.resource"/>
+      <min value="1"/>
+      <type>
+        <code value="Resource"/>
+        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Parameters.parameter:newCoverage">
+      <path value="Parameters.parameter"/>
+      <sliceName value="newCoverage"/>
+      <min value="1"/>
+      <max value="1"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Parameters.parameter:newCoverage.name">
+      <path value="Parameters.parameter.name"/>
+      <fixedString value="NewCoverage"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Parameters.parameter:newCoverage.resource">
+      <path value="Parameters.parameter.resource"/>
+      <min value="1"/>
+      <type>
+        <code value="Resource"/>
+        <profile value="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-coverage"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+  </differential>
 </StructureDefinition>

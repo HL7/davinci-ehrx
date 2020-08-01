@@ -17,10 +17,10 @@
                 }
               ]
             },
-            "system": "http://example.com/old-payer",
+            "system": "http://example.org/old-payer/identifiers/member",
             "value": "55678",
             "assigner": {
-              "display": "New Payer"
+              "display": "Old Payer"
             }
           },
           {
@@ -36,7 +36,7 @@
               ],
               "text": "Member Number"
             },
-            "system": "https://example.com/old-payer/diamond-health-ppo/uniquemember",
+            "system": "https://example.org/old-payer/diamond-health-ppo/uniquemember",
             "value": "dhu-10102"
           }
         ],
@@ -67,14 +67,14 @@
             "name": "New Health Plan",
             "endpoint": [
               {
-                "reference": "http://example.com/new-payer"
+                "reference": "http://example.org/new-payer/fhir"
               }
             ]
           }
         ],
         "identifier": [
           {
-            "system": "http://example.com/new-payer",
+            "system": "http://example.org/new-payer/identifiers/coverage",
             "value": "234567"
           }
         ],

@@ -1,7 +1,7 @@
 <Task xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R4/fhir-single.xsd">
   <id value="query-initial"/>
   <basedOn>
-    <reference value="http://example.com/new-payer/CommunicationRequest/57"/>
+    <reference value="http://example.org/new-payer/CommunicationRequest/57"/>
   </basedOn>
   <status value="requested"/>
   <intent value="order"/>
@@ -12,20 +12,20 @@
     </coding>
   </code>
   <for>
-    <reference value="http://hl7.org/fhir/R4/Patient/pat1"/>
+    <reference value="http://example.org/new-payer/fhir/Patient/pat1"/>
   </for>
   <authoredOn value="2020-07-30T20:07:15-06:00"/>
   <requester>
     <reference value="Organization/payer"/>
   </requester>
   <owner>
-    <reference value="http://hl7.org/fhir/R4/Organization/hl7pay"/>
+    <reference value="http://example.org/new-payer/fhir/Organization/hl7pay"/>
   </owner>
   <reasonCode>
     <text value="Support prior authorization decision-making"/>
   </reasonCode>
   <reasonReference>
-    <reference value="http://example.com/new-payer/Claim/123"/>
+    <reference value="http://example.org/new-payer/fhir/Claim/123"/>
   </reasonReference>
   <input>
     <type>

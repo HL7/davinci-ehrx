@@ -17,7 +17,7 @@
                 }
               ]
             },
-            "system": "http://example.com/old-payer",
+            "system": "http://example.org/old-payer/identifiers/member",
             "value": "55678",
             "assigner": {
               "display": "Old Payer"
@@ -43,10 +43,6 @@
       "resource": {
         "resourceType": "Coverage",
         "id": "9876B1",
-        "text": {
-          "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">A human-readable rendering of the coverage</div>"
-        },
         "contained": [
           {
             "resourceType": "Organization",
@@ -55,14 +51,14 @@
             "name": "Old Health Plan",
             "endpoint": [
               {
-                "reference": "http://example.com/old-payer"
+                "reference": "http://example.org/old-payer/fhir"
               }
             ]
           }
         ],
         "identifier": [
           {
-            "system": "http://example.com/old-payer",
+            "system": "http://example.org/old-payer",
             "value": "DH10001235"
           }
         ],
@@ -140,14 +136,14 @@
             "name": "New Health Plan",
             "endpoint": [
               {
-                "reference": "http://example.com/new-payer"
+                "reference": "http://example.org/new-payer/fhir"
               }
             ]
           }
         ],
         "identifier": [
           {
-            "system": "http://example.com/new-payer",
+            "system": "http://example.org/new-payer/identifiers/coverage",
             "value": "234567"
           }
         ],

@@ -15,7 +15,7 @@
   <concept>
     <code value="data-query"/>
     <display value="data query input"/>
-    <definition value="Indicates the parameters of a FHIR RESTful search to be executed whose results are requested"/>
+    <definition value="Indicates the parameters of a FHIR RESTful search to be executed whose results are requested.  The content will be the query URL following the 'base'.  E.g. `Observation?...`"/>
   </concept>
   <concept>
     <code value="data-code"/>

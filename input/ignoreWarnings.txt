@@ -11,6 +11,7 @@ INFORMATION: Parameters/member-match-in: Parameters: Validate resource against p
 INFORMATION: Parameters/member-match-out: Parameters: Validate resource against profile http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-parameters-member-match-out
 INFORMATION: Practitioner/p1: Practitioner: Validate resource against profile http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-practitioner
 INFORMATION: PractitionerRole/pr1: PractitionerRole: Validate resource against profile http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-practitionerrole
+INFORMATION: Provenance/task-create: Provenance: Validate resource against profile http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-provenance
 INFORMATION: Task/query-initial: Task: Validate resource against profile http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-task-data-request
 INFORMATION: CodeSystem/hrex-temp: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
 INFORMATION: OperationDefinition/member-match: OperationDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/OperationDefinition

@@ -9,20 +9,20 @@
       "name": "New Health Plan",
       "endpoint": [
         {
-          "reference": "http://example.com/new-payer"
+          "reference": "http://example.org/new-payer/fhir"
         }
       ]
     }
   ],
   "identifier": [
     {
-      "system": "http://example.com/new-payer",
+      "system": "http://example.org/new-payer/identifiers/coverage",
       "value": "234567"
     }
   ],
   "status": "active",
   "beneficiary": {
-    "reference": "http://hl7.org/fhir/Patient/pat1"
+    "reference": "http://example.org/new-payer/fhir/Patient/pat1"
   },
   "period": {
     "start": "2020-04-01",

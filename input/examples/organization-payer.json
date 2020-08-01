@@ -5,7 +5,7 @@
   "name": "New Health Plan",
   "endpoint": [
     {
-      "reference": "http://example.com/new-payer"
+      "reference": "http://example.org/new-payer/identifiers/org"
     }
   ]
 }
