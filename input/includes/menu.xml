@@ -52,7 +52,7 @@
         <a href="artifacts.html">HRex Artifacts</a>
       </li>
       <li>
-        <a href="{{site.data.fhir.uscore}}artifacts.html">US Core 3.1 (FHIR R4) Artifacts</a>
+        <a href="{{site.data.fhir.ver.uscore}}artifacts.html">US Core 3.1 (FHIR R4) Artifacts</a>
       </li>
     </ul>
   </li>

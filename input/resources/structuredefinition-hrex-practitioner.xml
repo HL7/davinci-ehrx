@@ -24,15 +24,16 @@
 			<requirements value="This element is mustSupport because qualifications can have ramifications for approving payments and billing"/>
 			<mustSupport value="true"/>
 		</element>
-		<element id="Practitioner.qualification.text">
-			<path value="Practitioner.qualification.text"/>
-			<requirements value="There is no consistency for how qualifications are currently captured, so can't agree on a standardized value set.  But we can at least expose a human-readble string.  In future releases, we may be able to move towards common terminology."/>
+		<element id="Practitioner.qualification.code">
+			<path value="Practitioner.qualification.code"/>
+			<requirements value="There is no expectation that a coded value will be present.  However, if a system has codes, it should send them in case a downstream recipient might recognize them."/>
 			<min value="1"/>
 			<mustSupport value="true"/>
 		</element>
-		<element id="Practitioner.qualification.code">
-			<path value="Practitioner.qualification.code"/>
-			<requirements value="There is no expectation that codes will be present.  However, if a system has codes, it should send them in case a downstream recipient might recognize them."/>
+		<element id="Practitioner.qualification.code.text">
+			<path value="Practitioner.qualification.code.text"/>
+			<requirements value="There is no consistency for how qualifications are currently captured, so can't agree on a standardized value set.  But we can at least expose a human-readble string.  In future releases, we may be able to move towards common terminology."/>
+			<min value="1"/>
 			<mustSupport value="true"/>
 		</element>
 	</differential>

@@ -33,6 +33,70 @@
 		<version value="3.1.0"/>
 	</dependsOn>
 	<definition>
+    <resource>
+      <reference>
+        <reference value="Coverage/coverage1"/>
+      </reference>
+      <name value="HRex Coverage example"/>
+      <description value="An example showing the use of the HRex Coverage profile"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-coverage"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Organization/payer"/>
+      </reference>
+      <name value="HRex Organization example"/>
+      <description value="An example showing the use of the HRex Organization profile to represent a payer organization"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-organization"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Parameters/member-match-in"/>
+      </reference>
+      <name value="$member-match example request"/>
+      <description value="A Parameters instance showing what the input to the $member-match operation would look like"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-parameters-member-match-in"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Parameters/member-match-out"/>
+      </reference>
+      <name value="$member-match example response"/>
+      <description value="A Parameters instance showing what the result of a $member-match operation would look like"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-parameters-member-match-out"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Practitioner/p1"/>
+      </reference>
+      <name value="HRex Practitioner example"/>
+      <description value="An example showing the the use of the HRex Practitioner profile"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-practitioner"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="PractitionerRole/pr1"/>
+      </reference>
+      <name value="HRex PractitionerRole example"/>
+      <description value="An example showing the the use of the HRex PractitionerRole profile"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-practitionerrole"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Provenance/task-create"/>
+      </reference>
+      <name value="HRex Provenance example"/>
+      <description value="An example showing the the use of the HRex Provenance profile"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-provenance"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Task/query-initial"/>
+      </reference>
+      <name value="HRex Task Data Request - initial query example"/>
+      <description value="An example showing the initial view of a 'query' data request"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-task-data-request"/>
+    </resource>
 		<page>
 			<nameUrl value="toc.html"/>
 			<title value="Table of Contents"/>

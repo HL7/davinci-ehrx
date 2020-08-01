@@ -1,9 +1,9 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
-    <id value="member-match-parameters-in" />
-    <url value="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/member-match-parameters-in" />
+    <id value="hrex-parameters-member-match-in" />
+    <url value="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-parameters-member-match-in" />
     <version value="0.0.0" />
-    <name value="MemberMatchRequestParameters" />
-    <title value="DaVinci Member Match Request Parameters Profile" />
+    <name value="HRexMemberMatchRequestParameters" />
+    <title value="HRex Member Match Request Parameters Profile" />
     <status value="active" />
     <date value="2020-07-27" />
     <publisher value="Da Vinci Project"/>

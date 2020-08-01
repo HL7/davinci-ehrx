@@ -1,3 +1,24 @@
 == Suppressed Messages ==
 
-# Some reason
+# This identifies is 'extra' and isn't expected to match any slice
+INFORMATION: Practitioner/p1: Practitioner.identifier[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-practitioner
+
+# These have been confirmed to be the correct profiles to be validated against
+INFORMATION: ImplementationGuide/hl7.fhir.us.davinci-hrex: ImplementationGuide: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide
+INFORMATION: Coverage/coverage1: Coverage: Validate resource against profile http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-coverage
+INFORMATION: Organization/payer: Organization: Validate resource against profile http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-organization
+INFORMATION: Parameters/member-match-in: Parameters: Validate resource against profile http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-parameters-member-match-in
+INFORMATION: Parameters/member-match-out: Parameters: Validate resource against profile http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-parameters-member-match-out
+INFORMATION: Practitioner/p1: Practitioner: Validate resource against profile http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-practitioner
+INFORMATION: PractitionerRole/pr1: PractitionerRole: Validate resource against profile http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-practitionerrole
+INFORMATION: Task/query-initial: Task: Validate resource against profile http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-task-data-request
+INFORMATION: CodeSystem/hrex-temp: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
+INFORMATION: OperationDefinition/member-match: OperationDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/OperationDefinition
+INFORMATION: StructureDefinition/hrex-coverage: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+INFORMATION: StructureDefinition/hrex-organization: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+INFORMATION: StructureDefinition/hrex-parameters-member-match-in: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+INFORMATION: StructureDefinition/hrex-parameters-member-match-out: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+INFORMATION: StructureDefinition/hrex-practitioner: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+INFORMATION: StructureDefinition/hrex-practitionerrole: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+INFORMATION: StructureDefinition/hrex-provenance: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+INFORMATION: StructureDefinition/hrex-task-data-request: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition

@@ -36,10 +36,11 @@
 			<path value="Coverage"/>
 			<definition value="This is the Coverage profile which is used to provide insurance information for scheduling an appointment and or registering a patient."/>
 			<mustSupport value="false"/>
-			<isModifier value="false"/>
 		</element>
 		<element id="Coverage.identifier">
 			<path value="Coverage.identifier"/>
+			<short value="Also known as Member identifier"/>
+			<comment value="This must be filled in when known"/>
 			<mustSupport value="true"/>
 		</element>
 		<element id="Coverage.type">
@@ -50,7 +51,7 @@
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
-				<targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
+				<targetProfile value="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-organization"/>
 				<targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
 			</type>
 		</element>
@@ -64,20 +65,18 @@
 		<element id="Coverage.subscriberId">
 			<path value="Coverage.subscriberId"/>
 			<short value="Subscriber ID"/>
-			<requirements value="The subscriber Id is a number that is needed by the payor to associate the attestation with the meber in their system."/>
+			<requirements value="The subscriber Id is a number that is needed by the payor to associate the attestation with the member in their system."/>
 			<max value="1"/>
 			<mustSupport value="true"/>
-			<isModifier value="false"/>
 		</element>
 		<element id="Coverage.beneficiary">
 			<path value="Coverage.beneficiary"/>
-			<requirements value="While not required, this would usually be the US Core Patient Resource for which the MRP was performed."/>
+			<requirements value="This would usually be the US Core Patient Resource for which the service was performed."/>
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
 			</type>
 			<mustSupport value="true"/>
-			<isModifier value="false"/>
 		</element>
 		<element id="Coverage.period">
 			<path value="Coverage.period"/>
@@ -86,9 +85,7 @@
 			<path value="Coverage.payor"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
-				<targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
-				<targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
+				<targetProfile value="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-organization"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>

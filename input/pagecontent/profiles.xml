@@ -1,24 +1,39 @@
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R4/fhir-single.xsd">
   <p>
-    Da Vinci IGs make use of a variety of FHIR profiles, extensions, operations, and other artifacts.  These are drawn from the core specification, US Core, defined within other Da Vinci IGs and defined in other IGs.  This page provides a summary of all profiles and extensions currently in use in at least one IG.  Because Da Vinci has so many IGs and they are changing relatively frequently, this IG will not always be completely up to date.  However, the team will do their best to keep it so.  (If you find an issue, please use the <a href="http://hl7.org/fhir-issues">Propose a Change</a> link below.)
+    Da Vinci IGs make use of a variety of FHIR profiles, extensions, operations, and other artifacts.  These are drawn from the core specification, US Core, defined within other Da Vinci IGs and defined in other IGs.  This page provides a summary of key artifacts currently in use in at least one IG.  Because Da Vinci has so many IGs and they are changing relatively frequently, this IG will not always be completely up to date.  However, the team will do their best to keep it so.  (If you find an issue, please use the <a href="http://hl7.org/fhir-issues">Propose a Change</a> link below.)
   </p>
-  <h3>Artifact Usage Table</h3>
   <p>
-    The table below is organized as follows:
+    Some of the artifacts that are currently defined in this HRex IG are candidates for incorporation into the underlying US Core IG - either by updating the underlying US Core profile or introducing new profiles to US Core.  If that occurs, the HRex profiles will be removed in a future release.  Specific plans for migration (and associated Jira tracker item if you want to follow the discussion) are captured in notes on the artifacts below.
   </p>
+  <p>
+    Note: At present, this table does not contain Da Vinci terminology artifacts.  In the long term, we expect all Da Vinci code systems to be replaced by external terminologies (LOINC, SNOMED, terminology.hl7.org, etc.).  At present, no requirement for sharing Da Vinci value sets has been identified.
+  </p>
+  <p>
+    Each of the following tables make use of 5 columns:
+  </p>  
   <ul>
     <li><b>Resource:</b> - indicates the resource the profile or extension is associated with.  'General' is used for artifacts that are not resource specific.</li>
-    <li><b>Type:</b> - is either Extension, Profile, or Operation</li>
-    <li><b>Defined:</b> - is the IG in which the artifact is published.  (See <a href="#legend">IG list</a> for a list of all IGs, including links)</li>
-    <li><b>Artifact:</b> - the name (and a link) for the artifact</li>
+    <li><b>Defined:</b> - is the IG in which the artifact is published and maintained.  (See <a href="#legend">IG list</a> for a list of all IGs, including links)</li>
+    <li><b>Artifact:</b> - the name (and a link) for the artifact.  Hover to see the canonical URL</li>
     <li><b>Used:</b> - a list of the Da Vinci IG(s) that use this artifact</li>
     <li><b>Notes:</b> - any information about artifact relationships, migration, deprecation, etc.</li>
   </ul>
+  
+  <blockquote class="note-to-balloters">
+    <p>
+      This table is not complete.  It does not include IGs other than US Core, HRex and CRD.  It will be update closer to publication when it is expected there will be more Da Vinci IGs that are in a 'final' state.  The values shown are intended to give balloters a sense of how the tables will work.
+    </p>
+  </blockquote>
+  
+  <a name="profiles"> </a>
+  <h3>Profiles</h3>
+  <p>
+    Note: This table does not list profiles on the <a href="{{site.data.fhir.path}}">Parameters</a> resource used to define inputs and outputs to operations.  Information on usage for these is instead tracked in the <a href="#operations">Operations table</a> below.
+  </p>
   <table>
     <thead>
       <tr>
         <th>Resource</th>
-        <th>Type</th>
         <th>Defined</th>
         <th>Artifact</th>
         <th>Used</th>
@@ -27,15 +42,133 @@
     </thead>
     <tbody>
       <tr>
-        <td></td>
+        <td>
+          <a href="{{site.data.fhir.path}}coverage.html">Coverage</a>
+        </td>
+        <td>Profile</td>
+        <td>
+          <b>HRex</b>
+        </td>
+        <td>
+          <a href="StructureDefinition-hrex-coverage.html">HRex Coverage</a>
+        </td>
+        <td>
+          HRex
+        </td>
+        <td/>
       </tr>
+      <tr>
+        <td>
+          <a href="{{site.data.fhir.path}}organization.html">Organization</a>
+        </td>
+        <td>Profile</td>
+        <td>
+          <b>HRex</b>
+        </td>
+        <td>
+          <a href="StructureDefinition-hrex-organization.html">hrex-organization</a>
+        </td>
+        <td>
+          HRex
+        </td>
+        <td/>
+      </tr>
+<!--      <tr>
+        <td>
+          <a href="{{site.data.fhir.path}}.html">?</a>
+        </td>
+        <td>Profile</td>
+        <td>
+          <b>HRex</b>
+        </td>
+        <td>
+          <a href="StructureDefinition-hrex-?">HRex-?</a>
+        </td>
+        <td>
+          HRex
+        </td>
+        <td/>
+      </tr>
+      <tr>
+        <td>
+          <a href="{{site.data.fhir.path}}?.html">?</a>
+        </td>
+        <td>Profile</td>
+        <td>
+          <b>HRex</b>
+        </td>
+        <td>
+          <a href="StructureDefinition-hrex-?">HRex-?</a>
+        </td>
+        <td>
+          HRex
+        </td>
+        <td/>
+      </tr>
+      <tr>
+        <td>
+          <a href="{{site.data.fhir.path}}?.html">?</a>
+        </td>
+        <td>Profile</td>
+        <td>
+          <b>HRex</b>
+        </td>
+        <td>
+          <a href="StructureDefinition-hrex-?">HRex-?</a>
+        </td>
+        <td>
+          HRex
+        </td>
+        <td/>
+      </tr>
+      <tr>
+        <td>
+          <a href="{{site.data.fhir.path}}?.html">?</a>
+        </td>
+        <td>Profile</td>
+        <td>
+          <b>HRex</b>
+        </td>
+        <td>
+          <a href="StructureDefinition-hrex-?">HRex-?</a>
+        </td>
+        <td>
+          HRex
+        </td>
+        <td/>
+      </tr>
+      <tr>
+        <td>
+          <a href="{{site.data.fhir.path}}?.html">?</a>
+        </td>
+        <td>Profile</td>
+        <td>
+          <b>HRex</b>
+        </td>
+        <td>
+          <a href="StructureDefinition-hrex-?">HRex-?</a>
+        </td>
+        <td>
+          HRex
+        </td>
+        <td/>
+      </tr>-->
     </tbody>
   </table>
-  
+
+  <a name="extensions"> </a>
+  <h3>Extensions</h3>
+
+  <a name="search"> </a>
+  <h3>Search Parameters</h3>
+
+  <a name="operations"> </a>
+  <h3>Operations</h3>
+
   <a name="legend"> </a>
   <h3>IG List</h3>
   <ul>
-    <li>USCORE - <a href="{{site.data.fhir.uscore}}">US Core 3.1 (FHIR R4)</a></li>
+    <li>USCORE - <a href="{{site.data.fhir.ver.uscore}}">US Core 3.1 (FHIR R4)</a></li>
   </ul>
 
 </div>

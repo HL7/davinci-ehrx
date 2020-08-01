@@ -1,0 +1,11 @@
+{
+  "resourceType": "Organization",
+  "id": "payer",
+  "active": true,
+  "name": "New Health Plan",
+  "endpoint": [
+    {
+      "reference": "http://example.com/new-payer"
+    }
+  ]
+}

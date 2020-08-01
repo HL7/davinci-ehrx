@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R4/fhir-single.xsd">
+	<id value="hrex-task-data-request"/>
+	<url value="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-task-data-request"/>
+	<name value="HRexTaskDataRequest"/>
+	<title value="HRex Task Data Request"/>
+	<status value="active"/>
+	<experimental value="false"/>
+	<description value="This Task profile is used to solicit information from a system when direct query is not possible and human intervention might be required"/>
+	<fhirVersion value="4.0.0"/>
+	<kind value="resource"/>
+	<abstract value="false"/>
+	<type value="Task"/>
+	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/Task"/>
+	<derivation value="constraint"/>
+	<differential>
+		<element id="Task">
+			<path value="Task"/>
+			<definition value="This Task profile allows asking for data to be delivered, possible with human intermediation"/>
+			<constraint>
+        <key value="tdr-1"/>
+        <severity value="error"/>
+        <human value="Must have exactly one input that is data-query or data-code"/>
+        <expression value="input.type.where(coding.where(system='http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp' and (code='data-code' or code='data-query')).exists()).count()=1"/>
+      </constraint>
+    </element>
+		<element id="Task.basedOn">
+			<path value="Task.basedOn"/>
+			<short value="Also known as Member identifier"/>
+			<requirements value="Indicates the order (ServiceRequest, CommunicationRequest, etc.) that authorizes the data request"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Task.status">
+			<path value="Task.status"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Task.businessStatus">
+			<path value="Task.businessStatus"/>
+			<short value="E.g. 'waiting on internal review'"/>
+			<comment value="Conveys the internal business progress of the request and provides more nuance than the overall status.  There is no expectation this will be coded, but negotiation of agreed codes can be used between partners"/>
+			<requirements value="Indicates progress in retrieving the data"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Task.businessStatus.text">
+			<path value="Task.businessStatus.text"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Task.intent">
+			<path value="Task.intent"/>
+			<fixedCode value="order"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Task.code">
+			<path value="Task.code"/>
+			<patternCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp"/>
+          <code value="data-request"/>
+        </coding>
+			</patternCodeableConcept>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Task.for">
+			<path value="Task.for"/>
+			<short value="Member being queried"/>
+			<comment value="Queries must always be in the scope of a single member"/>
+			<min value="1"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
+				<targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Task.authoredOn">
+			<path value="Task.authoredOn"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Task.requester">
+			<path value="Task.requester"/>
+			<short value="Who is asking for data"/>
+			<min value="1"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
+				<targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Task.owner">
+			<path value="Task.owner"/>
+			<short value="Who is being asked for data"/>
+			<min value="1"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
+				<targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Task.reasonCode">
+			<path value="Task.reasonCode"/>
+			<comment value="Only text is expected, though codes can be used for partners with agreed value sets"/>
+			<requirements value="Indicates why the information request is occurring"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Task.reasonCode.text">
+			<path value="Task.reasonCode.text"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Task.reasonReference">
+			<path value="Task.reasonReference"/>
+			<comment value="Likely targets would be HRex Coverage, PCDE Claim (for prior authorization) or a bare Claim resource for referencing an actual Claim."/>
+			<requirements value="Indicates why the information request is occurring"/>
+			<type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Claim"/>
+        <targetProfile value="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-coverage"/>
+      </type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Task.input">
+      <path value="Task.input"/>
+      <slicing>
+        <discriminator>
+          <type value="pattern"/>
+          <path value="type"/>
+        </discriminator>
+        <rules value="open"/>
+      </slicing>
+      <min value="1"/>
+      <mustSupport value="true"/>
+    </element>
+		<element id="Task.input:query">
+      <path value="Task.input"/>
+      <sliceName value="query"/>
+      <short value="Requested query"/>
+      <definition value="Indicates the specific FHIR RESTful query to be executed"/>
+      <comment value="This will contain the text that should go after the '?' when executing the query."/>
+      <max value="1"/>
+    </element>
+		<element id="Task.input:query.type">
+      <path value="Task.input.type"/>
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp"/>
+          <code value="data-query"/>
+        </coding>
+      </patternCodeableConcept>
+    </element>
+		<element id="Task.input:query.value[x]">
+      <path value="Task.input.value[x]"/>
+      <short value="query value"/>
+      <type>
+        <code value="string"/>      
+      </type>
+    </element>
+		<element id="Task.input:code">
+      <path value="Task.input"/>
+      <sliceName value="code"/>
+      <short value="Requested data code"/>
+      <definition value="A code indicating the type of data/document to be returned"/>
+      <comment value="This might be a document code or other code describing the requested information.  If no appropriate standard code exists, local codes may be used between partners, or a human-readable textual description of the desired data can be provided.  Downstream profiles may tighten expectations for this element."/>
+      <max value="1"/>
+    </element>
+		<element id="Task.input:code.type">
+      <path value="Task.input.type"/>
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp"/>
+          <code value="data-code"/>
+        </coding>
+      </patternCodeableConcept>
+    </element>
+		<element id="Task.input:query.value[x]">
+      <path value="Task.input.value[x]"/>
+      <short value="query value"/>
+      <type>
+        <code value="CodeableConcept"/>      
+      </type>
+    </element>
+	</differential>
+</StructureDefinition>
