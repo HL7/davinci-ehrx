@@ -15,7 +15,7 @@ The scope of Da Vinci is US payor-provider data exchange.  It covers data sharin
 
 ### Dependencies
 
-At present, HRex is based on [FHIR R4]({{site.data.fhir.path}}).  In addition, HRex is dependent on the [US Core 3.1 (FHIR R4)]({{site.data.fhir.ver.uscore}}) implementation guide.  Wherever possible, Da Vinci tries to leverage US Core profiles, but in some situations, the payor community requires additional constraints or needs to profile resources that are not yet supported by US Core.  It is possible that certain HRex profiles and/or descriptive content may migrate to a future release of US Core, and in some cases, to the base FHIR standard.  In some cases, Da Vinci IGs will also declare conformance with the [QI Core](http://hl7.org/fhir/us/qicore), which supplements US Core with additional profiles and constraints for use in quality measurements.  This IG does not derive from QI core, but profiles should generally be compliant with it.
+At present, HRex is based on [FHIR R4]({{site.data.fhir.path}}).  In addition, HRex is dependent on the [US Core 3.1 (FHIR R4)]({{site.data.fhir.ver.uscore}}) implementation guide.  Wherever possible, Da Vinci tries to leverage US Core profiles, but in some situations, the payor community requires additional constraints or needs to profile resources that are not yet supported by US Core.  It is possible that certain HRex profiles and/or descriptive content may migrate to a future release of US Core, and in some cases, to the base FHIR standard.  In certain instances, Da Vinci IGs will also declare conformance with the [QI Core](http://hl7.org/fhir/us/qicore), which supplements US Core with additional profiles and constraints for use in quality measurements.  This IG is not derived from QI core, but HRex profiles should be generally compliant with the QI Core specification.
 
 In addition, some Da Vinci specifications will make use of content from the following FHIR-related specifications and implementation guides:
 * [Bulk Data](https://hl7.org/fhir/uv/bulkdata)
@@ -30,18 +30,19 @@ In addition, some Da Vinci specifications will make use of content from the foll
 
 The main menu in this IG is categorized into several primary topics with several sub-topics:
 
-* **Background** content includes supporting information that provides supporting information relevant for implementers of this IG or Da Vinci guides in general.  These sections may be referenced from other Da Vinci IGs, but do not contain any rules that impact IG conformance.  I.e. nothing in these sections will ever become 'normative' or define functionality that implementer systems must or must not do.  These sections *will* provide context to implementers that will help them understand other parts of the IG and make better and more efficient decisions with respect to FHIR implementation.
-** [Da Vinci Overview](http://hl7.org/about/davinci) provides an overview of the Da Vinci project and provides guidance on how to get involved in the project and where to find the use-case specific IGs
-** [FHIR Introduction](fhir.html) highlights the key sections of the FHIR core specification that Da Vinci implementers should be familiar with
-** [Approaches to Exchanging FHIR Data](exchanging.html) provides a detailed overview of all the mechanisms that FHIR supports for exchanging information.  Implementers do not need to read this, but Da Vinci use case IGs will refer to 
+* **Background** provides supporting information relevant for implementers of this IG or Da Vinci guides in general.  These sections may be referenced from other Da Vinci IGs, but do not contain any rules that impact IG conformance.  (Nothing in these sections will ever become 'normative' or define functionality that implementer systems must or must not do.)  These sections *will* provide context to implementers to help them understand other parts of the IG and make better and more efficient decisions with respect to FHIR implementation.
+  * [Da Vinci Overview](http://hl7.org/about/davinci) provides an overview of the Da Vinci project and provides guidance on how to get involved in the project and where to find the use-case specific IGs.
+  * [FHIR Introduction](fhir.html) highlights the key sections of the FHIR core specification that Da Vinci implementers should be familiar with.
+  * [Approaches to Exchanging FHIR Data](exchanging.html) provides a detailed overview of all the mechanisms that FHIR supports for exchanging information.  Implementers do not need to read this, but Da Vinci use case IGs will refer to.
 * **Specification** content includes pages that define artifacts or include formal conformance rules that apply to this IG and that may be included by reference in other Da Vinci IGs.
-** [Conformance Expectations](conformance.html) describes conformance language used within the spec and expectations around mustSupport and missing data
-** [Security and Privacy](security.html) provides general expectations to ensure security and privacy of Da Vinci exchanges
-** [Dynamic Registration for SMART Apps](smart-app-reg.html) documents requirements for cross-registration of SMART on FHIR apps
-** [Profile Overview](profiles.html) gives an overview of the profiles defined in this IG and, where relevant, guidance on the use of US Core profiles
-** [Member resolution](OperationDefinition-member-match.html) describes the process to resolve a member as known by a different payer
-* **Artifacts** includes links to artifacts (profiles, operations, etc.) defined both in this specification as well as in the imported US Core implementation guide
-* **Support** includes links to the FHIR core specification and the US Core spec, as well as download links for this IG and guidance on tools and support for Da Vinci implementers
+  * [Conformance Expectations](conformance.html) describes conformance language used within the spec and expectations around mustSupport and missing data
+  * [Security and Privacy](security.html) provides general expectations to ensure security and privacy of Da Vinci exchanges
+  * [Dynamic Registration for SMART Apps](smart-app-reg.html) documents requirements for cross-registration of SMART on FHIR apps
+  * [Profile Overview](profiles.html) gives an overview of the profiles defined in this IG and, where relevant, guidance on the use of US Core profiles
+  * [Search Parameter Overview](profiles.html) gives an overview of the search parameters defined in this IG and a discussion of how those, along with US Core search parameters should be used
+  * [Member Match](OperationDefinition-member-match.html) describes the process to resolve a member as known by a different payer
+* **Artifacts** includes links to artifacts (profiles, operations, etc.) defined both in this specification as well as in the imported US Core implementation guide.
+* **Support** includes links to the FHIR core specification and the US Core spec, as well as download links for this IG and guidance on tools and support for Da Vinci implementers.
 
 The main menu at the top of all IG pages will allow you to jump to any of the main pages in the IG.  The breadcrumbs bar (right below the menu bar) will let you navigate 'up' to ancestor pages of whatever page you are looking at.  The [Table of Contents (TOC)](toc.html) will show you all pages in the IG and the [Artifacts list](artifacts.html) will list all of the artifacts (profiles, extensions, operations, value sets, etc.) defined in this specification.  As well, this IG makes heavy use of hyperlinks which will allow navigation to relevant sections of this specification and parent specifications.  
 
@@ -51,7 +52,7 @@ This IG was developed under the auspices of the [Clinical Interoperability Counc
 
 * **Laura Heermann Langford** - Intermountain Healthcare
 * **Russell Leftwich** - InterSystems
-* **Lindsey Hoggle**
+* **Lindsey Hoggle** - IRIS Health Solutions, LLC
 
 Da Vinci project coordination is managed by:
 
@@ -63,10 +64,10 @@ Da Vinci project coordination is managed by:
 
 Initial development of this IG was performed by **Lisa Nelson** - Max MD, with assistance from **Rick Geimer** - Lantana Consulting
 
-IG refactoring and updates for the current release was performed by **Lloyd McKenzie** - Gevity Consulting, with assistance from **Russ Buchanan** and **Malia Moore**, also of Gevity.
+IG refactoring and updates for the current release was performed by **Lloyd McKenzie** - Gevity Consulting, with assistance from **Russ Buchanan**, **Theresia Edgar** and **Malia Moore**, also of Gevity.
 
 **Mark Scrimshire** - Newwave and the **Mitre* team provided invaluable assistance with connectathons and reference implementations.
 
 Special thanks go to the numerous Da Vinci members who have participated on conference calls and reviews over the last two years and those who participated in the previous ballot of this IG, as well as those who are participating in this one!
 
-If you are interested in participating in the HRex project, information about our calls, minutes of past discussions and other information can be found [here](https://confluence.hl7.org/pages/viewpage.action?pageId=40741996) on our HL7 Confluence page.
+If you are interested in participating in the HRex project: information about our calls, minutes of past discussions, and other information can be found [here](https://confluence.hl7.org/pages/viewpage.action?pageId=40741996) on our HL7 Confluence page.

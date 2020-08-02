@@ -1,12 +1,12 @@
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R4/fhir-single.xsd">
   <p>
-    This page covers the workflows involved with the various 'search' mechanisms defined for use in FHIR.  While the specific URL syntax varies for each of the different query options and, occasionally, the syntax of the response changes.  However, the basics of the workflow is the same regardless of the search mechanism.  There are two options: synchronous and asynchronous.
+    This page covers the workflows involved with the various 'search' mechanisms defined for use in FHIR.  While the specific URL syntax varies for each of the different query options and, occasionally, the syntax of the response changes, the basics of the workflow is the same regardless of the search mechanism.  There are two options: synchronous and asynchronous.
   </p>
-  
+
   <a name="sync"> </a>
   <h3>Synchronous search flow</h3>
   <p>
-    The synchronous is similar to that in basic <a href="exchanging-rest.html">FHIR REST</a> operations.  The main difference with search is the introduction of <a href="{{site.data.fhir.path}}http.html#paging">paging</a>, such that large result sets can be retrieved in reasonable-sized chunks.
+    The synchronous search flow is similar to that in basic <a href="exchanging-rest.html">FHIR REST</a> operations.  The main difference with search is the introduction of <a href="{{site.data.fhir.path}}http.html#paging">paging</a> to allow large result sets to be retrieved in reasonable-sized chunks.
   </p>
   <p>
     {% include search-sync.svg %}
@@ -17,7 +17,7 @@
   </p>
   <a name="sync-2"> </a>
   <p>
-    2. The search response comes back in the body of the HTTP response.  For most search mechanisms, this will be a search-set <a href="{{site.data.fhir.path}}bundle.html">Bundle</a> containing the results of the search.  If no results are found, the result set will be empty, and the HTTP response will still be 200.  If the payload is  a search-set, the <code>Bundle.total</code> will beset to 0.  If there was a problem with the format of the search, with permissions or some other error, an appropriate HTTP code will be raised and optionally an <a href="{{site.data.fhir.path}}operationoutcome.html">OperationOutcome</a> will be provided.  The search response will also typically include links that allow navigation of the result set.  For search-set Bundles, these will be the 'next', 'previous', 'first' and 'last' URLs conveyed in <code>Bundle.link</code>.  (Note that only relevant links will be provided and not all servers will support all link types - next and previous are commonly supported; first and last, less so.)
+    2. The search response comes back in the body of the HTTP response.  For most search mechanisms, this will be a search-set <a href="{{site.data.fhir.path}}bundle.html">Bundle</a> containing the results of the search.  If no results are found, the result set will be empty, and the HTTP response will still be 200.  If the payload is  a search-set, the <code>Bundle.total</code> will be set to 0.  If there was a problem with the format of the search, with permissions or some other error, an appropriate HTTP code will be raised and optionally an <a href="{{site.data.fhir.path}}operationoutcome.html">OperationOutcome</a> will be provided.  The search response will also typically include links that allow navigation of the result set.  For search-set Bundles, these will be the 'next', 'previous', 'first' and 'last' URLs conveyed in <code>Bundle.link</code>.  (Note that only relevant links will be provided and not all servers will support all link types - next and previous are commonly supported; first and last, less so.)
   </p>
   <a name="sync-3"> </a>
   <p>
@@ -51,7 +51,7 @@
   <p>
     In addition to the <a href="{{site.data.fhir.path}}async.html">instructions</a> on asynchronous exchange in the base spec, asynchronous search is described in more detail in the <a href="https://hl7.org/fhir/uv/bulkdata/">Bulk Data</a> implementation guide.  Implementers considering asynchronous communication should be familiar with this guide, as the capabilities it requires are much more likely to be widely implemented.
   </p>
-  
+
   <a name="details"> </a>
   <h3>Approach details</h3>
   <p>
@@ -91,8 +91,8 @@
   <a name="cql"> </a>
   <h4>Search using CQL</h4>
   <p>
-    There is not a formal mechanism for using CQL to perform search defined in the core FHIR specification.  However, the draft version of the <a href="http://build.fhir.org/ig/HL7/cqf-recommendations">Clinical Quality Framework (CQF) IG</a> defines a couple of operations allowing data to be retrieved by executing arbitrary CQL.  There are two options.  The <a href="http://build.fhir.org/ig/HL7/cqf-recommendations/OperationDefinition-cpg-cql.html">cpg-cql</a> operation executes CQL passed directly as an argument.  The <a href="http://build.fhir.org/ig/HL7/cqf-recommendations/OperationDefinition-cpg-library-evaluate.html">cpg-library-evaluate</a> operation executes CQL specified in a referenced library.  
-    
+    There is not a formal mechanism for using CQL to perform search defined in the core FHIR specification.  However, the draft version of the <a href="http://build.fhir.org/ig/HL7/cqf-recommendations">Clinical Quality Framework (CQF) IG</a> defines a couple of operations allowing data to be retrieved by executing arbitrary CQL.  There are two options.  The <a href="http://build.fhir.org/ig/HL7/cqf-recommendations/OperationDefinition-cpg-cql.html">cpg-cql</a> operation executes CQL passed directly as an argument.  The <a href="http://build.fhir.org/ig/HL7/cqf-recommendations/OperationDefinition-cpg-library-evaluate.html">cpg-library-evaluate</a> operation executes CQL specified in a referenced library.
+
 The cpg-cql operation is invoked at the base URL (<code>[base]/$cql</code>.  It can potentially be invoked using GET if it does not use the <code>parameters</code> parameter but can also use POST.  The cpg-library-evaluate operation is invoked with the URL <code>[base]/Library/[id]/$evaluate</code> can be invoked using GET provided that the <code>parameters</code> parameter is not used.  It can also be invoked with POST (with parameters past using a <a href="{{site.data.fhir.path}}parameters.html">Parameters</a> instance).  Neither supports paging as the results aren't expected to come back in a search-set <a href="{{site.data.fhir.path}}bundle.html">Bundle</a>.  Asynchronous execution is possible as for any FHIR <a href="exchanging-operation.html#async">operation</a>.
   </p>
 
@@ -101,7 +101,7 @@ The cpg-cql operation is invoked at the base URL (<code>[base]/$cql</code>.  It 
   <p>
     There is no FHIR-specific mechanism for invoking a SPARQL query.  The W3C defines a <a href="https://www.w3.org/TR/sparql11-protocol/#query-operation">few</a> ways to invoke a SPARQL query using a RESTful interface.  These mechanisms correspond to the standard GET/POST query flows used for FHIR-defined queries.  Other invocation mechanisms are also possible, including the potential use of a FHIR operation.  (No standard operation has yet been defined.)  Because FHIR search-set <a href="{{site.data.fhir.path}}bundle.html">Bundles</a> are not involved, there is no query continuation mechanism.  It is possible that the FHIR async mechanism could be used when invoking SPARQL, but if so, this would be a custom behavior outside the scope of FHIR - as SPARQL invocation itself is outside the scope of FHIR.
   </p>
-  
+
   <a name="query"> </a>
   <h4>Search using _query</h4>
   <p>

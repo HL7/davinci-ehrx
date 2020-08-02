@@ -163,17 +163,17 @@
         </page>
         <page>
           <nameUrl value="exchanging-subscription.html"/>
-          <title value="Exchange using FHIR subscription"/>
+          <title value="Exchanging using FHIR subscription"/>
           <generation value="html"/>
         </page>
         <page>
           <nameUrl value="exchanging-polling.html"/>
-          <title value="Exchange using polling"/>
+          <title value="Exchanging using polling"/>
           <generation value="html"/>
         </page>
         <page>
           <nameUrl value="exchanging-operation.html"/>
-          <title value="Exchange using FHIR operations"/>
+          <title value="Exchanging using FHIR operations"/>
           <generation value="html"/>
         </page>
         <page>

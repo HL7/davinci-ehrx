@@ -33,11 +33,11 @@
   </p>
   <a name="async-1"> </a>
   <p>
-    <b>Step 1:</b> The invocation of the RESTful action asynchronously is identical to synchronous invocation, with the exception that the <code>Prefer</code> header is set to "respond-async".  (Note that the server is not obligated to respect the client's stated preference - it could still respond synchronously.).  The response includes a location-header that identifies where to monitor for the progress of the asynchronous request.
+    <b>Step 1:</b> The invocation of the RESTful action asynchronously is identical to synchronous invocation, with the exception that the <code>Prefer</code> header is set to "respond-async".  (Note that the server is not obligated to respect the client's stated preference - it could still respond synchronously.)  The response includes a location-header that identifies where to monitor for the progress of the asynchronous request.
   </p>
   <a name="async-2"> </a>
   <p>
-    <b>Step 2:</b> The <i>data source</i> <a href="exchanging-polling.html">polls</a> the location specified in step 1 to see if the operation is complete.  So long as it is not, it gets back a 202 Accepted HTTP response, possibly with a message indicating the degree of progress.  (Note: At any point, the <i>data source</i> could also <a href="{{site.data.fhir.path}}async.html#3.1.6.3">cancel</a> the action, though cancellation of a state-changing action is not guaranteed)
+    <b>Step 2:</b> The <i>data source</i> <a href="exchanging-polling.html">polls</a> the location specified in step 1 to see if the operation is complete.  So long as it is not, it gets back a 202 Accepted HTTP response, possibly with a message indicating the degree of progress.  (Note: At any point, the <i>data source</i> could also <a href="{{site.data.fhir.path}}async.html#3.1.6.3">cancel</a> the action, though cancellation of a state-changing action is not guaranteed).
   </p>
   <a name="async-3"> </a>
   <p>
@@ -53,7 +53,7 @@
   <p>
     The following sections describe the different RESTful actions and indicate which pattern (or patterns) they follow.
   </p>
-  
+
   <a name="read"> </a>
   <h4>RESTful read</h4>
   <p>
@@ -63,7 +63,7 @@
   <a name="vread"> </a>
   <h4>Version-specific read (vread)</h4>
   <p>
-    <a href="{{site.data.fhir.path}}http.html#vread">vread</a> also follows the <a href="#pull">pull</a> pattern and uses a GET of the form <code>[base]/[resourceType]/[id]/_history/[version]</code>.  If successful, the <i>data consumer</i> will receive the specified version of the resource with the specified id from the <i>data source</i>.  Asynchronous is not expected to be relevant.    
+    <a href="{{site.data.fhir.path}}http.html#vread">vread</a> also follows the <a href="#pull">pull</a> pattern and uses a GET of the form <code>[base]/[resourceType]/[id]/_history/[version]</code>.  If successful, the <i>data consumer</i> will receive the specified version of the resource with the specified id from the <i>data source</i>.  Asynchronous is not expected to be relevant.
   </p>
 
   <a name="create"> </a>
@@ -107,7 +107,7 @@
   <a name="transaction"> </a>
   <h4>Executing transactions</h4>
   <p>
-    Processing a <a href="{{site.data.fhir.path}}http.html#transaction">transaction</a> is much the same as processing a <a href="#batch">batch</a>.  The main differences are that the input must be a 'transaction' <a href="{{site.data.fhir.path}}bundle.html">Bundle</a> and the response will be a 'transaction-response'.  The behavior is the same - the primary difference is giving guidance to the server on what sort of processing to perform, and the fact that a transaction response cannot contain failure entries.    
+    Processing a <a href="{{site.data.fhir.path}}http.html#transaction">transaction</a> is much the same as processing a <a href="#batch">batch</a>.  The main differences are that the input must be a 'transaction' <a href="{{site.data.fhir.path}}bundle.html">Bundle</a> and the response will be a 'transaction-response'.  The behavior is the same - the primary difference is giving guidance to the server on what sort of processing to perform, and the fact that a transaction response cannot contain failure entries.
   </p>
 
   <a name="document"> </a>

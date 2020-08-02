@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R4/fhir-single.xsd">
   <p>
-    The following content is intended to apply to all Da Vinci IGs.  IGs derived from HRex should all reference this section, though they may qualify and supplement the content here as appropriate for the specific technologies they are using, and the threat environment and privacy considerations involved in their specific use case.
+    The following content is intended to apply to all Da Vinci IGs.  IGs derived from HRex <b>SHOULD</b> all reference this section, though they may qualify and supplement the content here as appropriate for the specific technologies they are using, and the threat environment and privacy considerations involved in their specific use case.
   </p>
 
 	<h3>Statutes, Regulations, and Guiding Principles</h3>
@@ -48,7 +48,7 @@
 	<h3>Security Contexts for Da Vinci IGs</h3>
 		<p>Da Vinci IGs span several security contexts related to the exchange of information between requester and supplier of data. These security contexts include:</p>
 		<h4>Exchange without PHI</h4>
-		
+
 		<ol>
 			<li>Access to openly available data (e.g. Payer’s provider directory)
 			<ol style="list-style-type: lower-alpha;">
@@ -116,7 +116,7 @@
 		  </tr>
 		</table>
 		<p style="font-size:75%">Note: (need process) – there is no current mechanism (outside of CommunicationRequest) to declare a purpose of use when accessing data using RESTful mechanisms (e.g. GET) – the standards for the need to be addressed within HL7.</p>
-		
+
 		<h4>Exchange via Business Associates (BA) – for a Covered Entity</h4>
 <!--		<ol start="3">-->
 		<ol>
