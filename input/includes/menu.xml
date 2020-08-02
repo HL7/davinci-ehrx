@@ -39,6 +39,9 @@
         <a href="profiles.html">Profile overview</a>
       </li>
       <li>
+        <a href="searchparameters.html">Search Parameters overview</a>
+      </li>
+      <li>
         <a href="OperationDefinition-member-match.html">Member resolution</a>
       </li>
     </ul>
