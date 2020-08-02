@@ -23,6 +23,11 @@
     <definition value="A code for a document or otherwise describing the characteristics of the information requested"/>
   </concept>
   <concept>
+    <code value="data-value"/>
+    <display value="data values output"/>
+    <definition value="The result of a data request"/>
+  </concept>
+  <concept>
     <code value="UMB"/>
     <display value="Member Number"/>
     <definition value="A payer's unique member identifier"/>

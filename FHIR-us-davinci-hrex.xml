@@ -35,6 +35,24 @@
    <artifact name="HRex Task Data Request - initial query example"
              key="Task-query-initial"
              id="Task/query-initial"/>
+   <artifact name="Coverage identifier"
+             key="SearchParameter-hrex-coverage-identifier"
+             id="SearchParameter/hrex-coverage-identifier"/>
+   <artifact name="Coverage patient"
+             key="SearchParameter-hrex-coverage-patient"
+             id="SearchParameter/hrex-coverage-patient"/>
+   <artifact name="Coverage payor"
+             key="SearchParameter-hrex-coverage-payor"
+             id="SearchParameter/hrex-coverage-payor"/>
+   <artifact name="Coverage subscriber"
+             key="SearchParameter-hrex-coverage-subscriber"
+             id="SearchParameter/hrex-coverage-subscriber"/>
+   <artifact name="Coverage subscriberId"
+             key="SearchParameter-hrex-coverage-subscriberId"
+             id="SearchParameter/hrex-coverage-subscriberId"/>
+   <artifact name="Provenance target"
+             key="SearchParameter-hrex-provenance-target"
+             id="SearchParameter/hrex-provenance-target"/>
    <artifact name="HRex Temporary Codes"
              key="CodeSystem-hrex-temp"
              id="CodeSystem/hrex-temp"/>
@@ -82,6 +100,7 @@
    <page name="Security and Privacy" key="security"/>
    <page name="Dynamic Registration for SMART Apps" key="smart-app-reg"/>
    <page name="Profile overview" key="profiles"/>
+   <page name="Search Parameters overview" key="searchparameters"/>
    <page name="Downloads" key="downloads"/>
    <page name="Tooling and Support" key="tools"/>
    <page name="Artifact List" key="artifacts"/>

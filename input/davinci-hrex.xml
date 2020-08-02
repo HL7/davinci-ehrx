@@ -97,6 +97,42 @@
       <description value="An example showing the initial view of a 'query' data request"/>
       <exampleCanonical value="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-task-data-request"/>
     </resource>
+    <resource>
+      <reference>
+        <reference value="SearchParameter/hrex-coverage-identifier"/>
+      </reference>
+      <name value="Coverage identifier"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="SearchParameter/hrex-coverage-patient"/>
+      </reference>
+      <name value="Coverage patient"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="SearchParameter/hrex-coverage-payor"/>
+      </reference>
+      <name value="Coverage payor"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="SearchParameter/hrex-coverage-subscriber"/>
+      </reference>
+      <name value="Coverage subscriber"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="SearchParameter/hrex-coverage-subscriberId"/>
+      </reference>
+      <name value="Coverage subscriberId"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="SearchParameter/hrex-provenance-target"/>
+      </reference>
+      <name value="Provenance target"/>
+    </resource>    
 		<page>
 			<nameUrl value="toc.html"/>
 			<title value="Table of Contents"/>
@@ -170,6 +206,11 @@
         <nameUrl value="profiles.html"/>
         <title value="Profile overview"/>
         <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="searchparameters.html"/>
+        <title value="Search Parameters overview"/>
+        <generation value="markdown"/>
       </page>
       <page>
         <nameUrl value="downloads.html"/>

@@ -1,30 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R4/fhir-single.xsd">
 	<id value="hrex-coverage"/>
-	<meta>
-		<versionId value="17"/>
-		<lastUpdated value="2019-06-10T10:31:44.000-04:00"/>
-	</meta>
-	<text>
-		<status value="additional"/>
-		<div xmlns="http://www.w3.org/1999/xhtml">The HRex Coverage Profile defines the constraints for representing the subscriber information to the Payer.  This along with the patient first name, last name, date of birth and gender allows the payer to identify the member in their system. 
-        </div>
-	</text>
 	<url value="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-coverage"/>
-	<version value="0.2.0"/>
 	<name value="HRexCoverage"/>
 	<title value="HRex Coverage Profile"/>
 	<status value="active"/>
 	<experimental value="false"/>
-	<date value="2018-06-19T00:00:00+00:00"/>
-	<publisher value="HL7 International"/>
-	<contact>
-		<telecom>
-			<system value="url"/>
-			<value value="http://www.hl7.org/Special/committees/cqi/index.cfm"/>
-		</telecom>
-	</contact>
-	<description value="The HRex Coverage Profile defines the constraints for representing  the subscriber information to the Payer.  This along with the patient first name, last name, date of birth and gender allows the payer to identify the member in their system for which the MRP was performer. "/>
+	<description value="The HRex Coverage Profile defines the constraints for representing a member's healthcare insurance information to the Payer.  This, sometimes together with the Patient referenced as beneficiary a payer to identify the member in their system."/>
 	<fhirVersion value="4.0.0"/>
 	<kind value="resource"/>
 	<abstract value="false"/>

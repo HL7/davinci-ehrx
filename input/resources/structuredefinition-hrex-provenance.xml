@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R4/fhir-single.xsd">
 	<id value="hrex-provenance"/>
-	<meta>
-		<versionId value="20"/>
-		<lastUpdated value="2019-06-10T10:31:44.000-04:00"/>
-	</meta>
 	<url value="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-provenance"/>
 	<name value="HRexProvenance"/>
 	<title value="HRex Provenance"/>
 	<status value="draft"/>
-	<description value="The HRex Provenance resource requires occurred[x] (period or dateTime) and agent to be specified. It also requires implementers to support signature"/>
+	<description value="Additional constraints on US Core Provenance to ensure it meets payer needs, including indicating when the event occurred and retaining signatures if present"/>
 	<fhirVersion value="4.0.0"/>
 	<kind value="resource"/>
 	<abstract value="false"/>

@@ -1,5 +1,9 @@
 == Suppressed Messages ==
 
+# NOTE: Remaining unsuppressed messages are validator issues, described here:
+# https://github.com/hapifhir/org.hl7.fhir.core/issues/288
+# https://github.com/hapifhir/org.hl7.fhir.core/issues/289
+
 # This identifies is 'extra' and isn't expected to match any slice
 INFORMATION: Practitioner/p1: Practitioner.identifier[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-practitioner
 
@@ -15,6 +19,12 @@ INFORMATION: Provenance/task-create: Provenance: Validate resource against profi
 INFORMATION: Task/query-initial: Task: Validate resource against profile http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-task-data-request
 INFORMATION: CodeSystem/hrex-temp: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
 INFORMATION: OperationDefinition/member-match: OperationDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/OperationDefinition
+INFORMATION: SearchParameter/hrex-coverage-identifier: SearchParameter: Validate resource against profile http://hl7.org/fhir/StructureDefinition/SearchParameter
+INFORMATION: SearchParameter/hrex-coverage-patient: SearchParameter: Validate resource against profile http://hl7.org/fhir/StructureDefinition/SearchParameter
+INFORMATION: SearchParameter/hrex-coverage-payor: SearchParameter: Validate resource against profile http://hl7.org/fhir/StructureDefinition/SearchParameter
+INFORMATION: SearchParameter/hrex-coverage-subscriber: SearchParameter: Validate resource against profile http://hl7.org/fhir/StructureDefinition/SearchParameter
+INFORMATION: SearchParameter/hrex-coverage-subscriberId: SearchParameter: Validate resource against profile http://hl7.org/fhir/StructureDefinition/SearchParameter
+INFORMATION: SearchParameter/hrex-provenance-target: SearchParameter: Validate resource against profile http://hl7.org/fhir/StructureDefinition/SearchParameter
 INFORMATION: StructureDefinition/hrex-coverage: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 INFORMATION: StructureDefinition/hrex-organization: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 INFORMATION: StructureDefinition/hrex-parameters-member-match-in: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition

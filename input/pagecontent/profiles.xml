@@ -30,7 +30,519 @@
   <p>
     Note: This table does not list profiles on the <a href="{{site.data.fhir.path}}">Parameters</a> resource used to define inputs and outputs to operations.  Information on usage for these is instead tracked in the <a href="#operations">Operations table</a> below.
   </p>
-  <table>
+  <table class="grid">
+    <thead>
+      <tr>
+        <th>Resource</th>
+        <th>Defined</th>
+        <th>Artifact</th>
+        <th>Used</th>
+        <th>Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <a href="{{site.data.fhir.path}}allergyintolerance.html">AllergyIntolerance</a>
+        </td>
+        <td>
+          <b>USCORE</b>
+        </td>
+        <td>
+        <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-allergyintolerance.html">US  Core AllergyIntolerance Profile</a>
+        </td>
+        <td>
+          HRex<sup><a href="#any">*</a></sup>
+        </td>
+        <td/>
+      </tr>
+      <tr>
+        <td>
+          <a href="{{site.data.fhir.path}}careplan.html">CarePlan</a>
+        </td>
+        <td>
+          <b>USCORE</b>
+        </td>
+        <td>
+        <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-careplan.html">US Core CarePlan Profile</a>
+        </td>
+        <td>
+          HRex<sup><a href="#any">*</a></sup>
+        </td>
+        <td/>
+      </tr>
+      <tr>
+        <td>
+          <a href="{{site.data.fhir.path}}careteam.html">CareTeam</a>
+        </td>
+        <td>
+          <b>USCORE</b>
+        </td>
+        <td>
+          <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-careteam.html">US Core CareTeam Profile</a>
+        </td>
+        <td>
+          HRex<sup><a href="#any">*</a></sup>
+        </td>
+        <td/>
+      </tr>
+      <tr>
+        <td>
+          <a href="{{site.data.fhir.path}}condition.html">Condition</a>
+        </td>
+        <td>
+          <b>USCORE</b>
+        </td>
+        <td>
+          <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-condition.html">US Core Condition Profile</a>
+        </td>
+        <td>
+          HRex<sup><a href="#any">*</a></sup>
+        </td>
+        <td/>
+      </tr>
+      <tr>
+        <td>
+          <a href="{{site.data.fhir.path}}coverage.html">Coverage</a>
+        </td>
+        <td>
+          <b>HRex</b>
+        </td>
+        <td>
+          <a href="StructureDefinition-hrex-coverage.html">HRex Coverage</a>
+        </td>
+        <td>
+          HRex
+        </td>
+        <td>This is a candidate for US-core migration, though Coverage isn't currently tied to patient data sharing requirements</td>
+      </tr>
+      <tr>
+        <td>
+          <a href="{{site.data.fhir.path}}device.html">Device</a>
+        </td>
+        <td>
+          <b>USCORE</b>
+        </td>
+        <td>
+          <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-implantable-device.html">US Core Implantable Device Profile</a>
+        </td>
+        <td>
+          HRex<sup><a href="#any">*</a></sup>
+        </td>
+        <td/>
+      </tr>
+      <tr>
+        <td rowspan="2">
+          <a href="{{site.data.fhir.path}}diagnosticreport.html">DiagnosticReport</a>
+        </td>
+        <td rowspan="2">
+          <b>USCORE</b>
+        </td>
+        <td>
+          <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-diagnosticreport-lab.html">US Core DiagnosticReport Profile for Laboratory Results Reporting</a>
+        </td>
+        <td>
+          HRex
+        </td>
+        <td/>
+      </tr>
+      <tr>
+        <td>
+          <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-diagnosticreport-note.html">US Core DiagnosticReport Profile for Report and Note exchange</a>
+        </td>
+        <td>
+          HRex<sup><a href="#any">*</a></sup>
+        </td>
+        <td/>
+      </tr>
+      <tr>
+        <td>
+          <a href="{{site.data.fhir.path}}documentreference.html">DocumentReference</a>
+        </td>
+        <td>
+          <b>USCORE</b>
+        </td>
+        <td>
+          <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-documentreference.html">US Core DocumentReference Profile</a>
+        </td>
+        <td>
+          HRex<sup><a href="#any">*</a></sup>
+        </td>
+        <td/>
+      </tr>
+      <tr>
+        <td>
+          <a href="{{site.data.fhir.path}}encounter.html">Encounter</a>
+        </td>
+        <td>
+          <b>USCORE</b>
+        </td>
+        <td>
+          <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-encounter.html">US Core Encounter Profile</a>
+        </td>
+        <td>
+          HRex<sup><a href="#any">*</a></sup>
+        </td>
+        <td/>
+      </tr>
+      <tr>
+        <td>
+          <a href="{{site.data.fhir.path}}goal.html">Goal</a>
+        </td>        
+        <td>
+          <b>USCORE</b>
+        </td>
+        <td>
+          <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-goal.html">US Core Goal Profile</a>
+        </td>
+        <td>
+          HRex<sup><a href="#any">*</a></sup>
+        </td>
+        <td/>
+      </tr>
+      <tr>
+        <td>
+          <a href="{{site.data.fhir.path}}immunization.html">Immunization</a>
+        </td>
+        <td>
+          <b>USCORE</b>
+        </td>
+        <td>
+          <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-immunization.html">US Core Immunization Profile</a>
+        </td>
+        <td>
+          HRex<sup><a href="#any">*</a></sup>
+        </td>
+        <td/>
+      </tr>
+      <tr>
+        <td>
+          <a href="{{site.data.fhir.path}}location.html">Location</a>
+        </td>
+        <td>
+          <b>USCORE</b>
+        </td>
+        <td>
+          <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-location.html">US Core Location Profile</a>
+        </td>
+        <td>
+          HRex<sup><a href="#any">*</a></sup>
+        </td>
+        <td/>
+      </tr>
+      <tr>
+        <td>
+          <a href="{{site.data.fhir.path}}medication.html">Medication</a>
+        </td>
+        <td>
+          <b>USCORE</b>
+        </td>
+        <td>
+        <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-medication.html">US Core Medication Profile</a>
+        </td>
+        <td>
+          HRex<sup><a href="#any">*</a></sup>
+        </td>
+        <td/>
+      </tr>
+      <tr>
+        <td>
+          <a href="{{site.data.fhir.path}}medicationrequest.html">MedicationRequest</a>
+        </td>
+        <td>
+          <b>USCORE</b>
+        </td>
+        <td>
+        <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-medicationrequest.html">US Core MedicationRequest Profile</a>
+        </td>
+        <td>
+          HRex<sup><a href="#any">*</a></sup>
+        </td>
+        <td/>
+      </tr>
+      <tr>
+        <td rowspan="5">
+          <a href="{{site.data.fhir.path}}observation.html">Observation</a>
+        </td>
+        <td rowspan="5">
+          <b>USCORE</b>
+        </td>
+        <td>
+          <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-observation-lab.html">US Core Laboratory Result Observation Profile</a>
+        </td>
+        <td>
+          HRex<sup><a href="#any">*</a></sup>
+        </td>
+        <td/>
+      </tr>
+      <tr>
+        <td>
+          <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-pediatric-bmi-for-age.html">US Core Pediatric BMI for Age Observation Profile</a>
+        </td>
+        <td>
+          HRex<sup><a href="#any">*</a></sup>
+        </td>
+        <td/>
+      </tr>
+      <tr>
+        <td>
+          <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-pediatric-weight-for-height.html">US Core Pediatric Weight for Height Observation Profile</a>
+        </td>
+        <td>
+          HRex<sup><a href="#any">*</a></sup>
+        </td>
+        <td/>
+      </tr>
+      <tr>
+        <td>
+          <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-pulse-oximetry.html">US Core Pulse Oximetry Profile</a>
+        </td>
+        <td>
+          HRex<sup><a href="#any">*</a></sup>
+        </td>
+        <td/>
+      </tr>
+      <tr>
+        <td>
+          <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-smokingstatus.html">US Core Smoking Status Observation Profile</a>
+        </td>
+        <td>
+          HRex<sup><a href="#any">*</a></sup>
+        </td>
+        <td/>
+      </tr>
+      <tr>
+        <td rowspan="2">
+          <a href="{{site.data.fhir.path}}organization.html">Organization</a>
+        </td>
+        <td>
+          <b>HRex</b>
+        </td>
+        <td>
+          <a href="StructureDefinition-hrex-organization.html">HRex Organization</a>
+        </td>
+        <td>
+          HRex
+        </td>
+        <td>The requirement for tax id may migrate to US Core, but the CCN identifier likely won't</td>
+      </tr>
+      <tr>
+        <td>
+          <b>USCORE</b>
+        </td>
+        <td>
+        <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-organization.html">US Core Organization Profile</a>
+        </td>
+        <td>
+          HRex
+        </td>
+        <td>This is the base for the corresponding HRex profile</td>
+      </tr>
+      <tr>
+        <td>
+          <a href="{{site.data.fhir.path}}patient.html">Patient</a>
+        </td>
+        <td>
+          <b>USCORE</b>
+        </td>
+        <td>
+        <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-patient.html">US Core Patient Profile</a>
+        </td>
+        <td>
+          HRex
+        </td>
+        <td/>
+      </tr>
+      <tr>
+        <td rowspan="2">
+          <a href="{{site.data.fhir.path}}practitioner.html">Practitioner</a>
+        </td>
+        <td>
+          <b>HRex</b>
+        </td>
+        <td>
+          <a href="StructureDefinition-hrex-practitioner.html">HRex Practitioner</a>
+        </td>
+        <td>
+          HRex
+        </td>
+        <td>This will likely remain HRex-specific as neither the additional identifier types, nor the requirement to support qualification are needed in US Core's scope</td>
+      </tr>
+      <tr>
+        <td>
+          <b>USCORE</b>
+        </td>
+        <td>
+          <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-practitioner.html">US Core Practitioner Profile</a>
+        </td>
+        <td>
+          HRex
+        </td>
+        <td>Basis for equivalent HRex profile</td>
+      </tr>
+      <tr>
+        <td rowspan="2">
+          <a href="{{site.data.fhir.path}}practitionerrole.html">PractitionerRole</a>
+        </td>
+        <td>
+          <b>HRex</b>
+        </td>
+        <td>
+          <a href="StructureDefinition-hrex-practitionerrole.html">HRex Practitioner Role</a>
+        </td>
+        <td>
+          HRex
+        </td>
+        <td>
+          As a binding between two non-migrated profiles, this will also remain HRex-specific
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <b>USCORE</b>
+        </td>
+        <td>
+        <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-practitionerrole.html">US Core PractitionerRole Profile</a>
+        </td>
+        <td>
+          HRex
+        </td>
+        <td>Basis for equivalent HRex profile</td>
+      </tr>
+      <tr>
+        <td>
+          <a href="{{site.data.fhir.path}}procedure.html">Procedure</a>
+        </td>
+        <td>
+          <b>USCORE</b>
+        </td>
+        <td>
+          <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-procedure.html">US Core Procedure Profile</a>
+        </td>
+        <td>
+          HRex<sup><a href="#any">*</a></sup>
+        </td>
+        <td/>
+      </tr>
+      <tr>
+        <td rowspan="2">
+          <a href="{{site.data.fhir.path}}provenance.html">Provenance</a>
+        </td>
+        <td>
+          <b>HRex</b>
+        </td>
+        <td>
+          <a href="StructureDefinition-hrex-provenance.html">HRex Provenance</a>
+        </td>
+        <td>
+          HRex
+        </td>
+        <td>The changes included in this profile are likely appropriate to migrate to US Core in the future</td>
+      </tr>
+      <tr>
+        <td>
+          <b>USCORE</b>
+        </td>
+        <td>
+          <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-provenance.html">US Core Provenance Profile</a>
+        </td>
+        <td>
+          HRex
+        </td>
+        <td>(Basis for corresponding HRex profile)</td>
+      </tr>
+      <tr>
+        <td>
+          <a href="{{site.data.fhir.path}}task.html">Task</a>
+        </td>
+        <td>
+          <b>HRex</b>
+        </td>
+        <td>
+          <a href="StructureDefinition-hrex-task-data-request.html">HRex Data Request Task</a>
+        </td>
+        <td>
+          HRex
+        </td>
+        <td>This is a good candidate for migration to the core specification as part of workflow</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>
+    <a name="any"> </a>
+    <sup>*</sup>: HRex includes the definition of a Task profile that can return data - any US Core profile could be used to return such information, though the IG doesn't mention this profile specifically.
+  </p>
+
+  <a name="extensions"> </a>
+  <h3>Extensions</h3>
+  <table class="grid">
+    <thead>
+      <tr>
+        <th>Resource</th>
+        <th>Defined</th>
+        <th>Artifact</th>
+        <th>Used</th>
+        <th>Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <a href="{{site.data.fhir.path}}datatypes.html#contactpoint">ContactPoint data type</a>
+        </td>
+        <td>
+          <b>USCORE</b>
+        </td>
+        <td>
+          <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-direct.html">US Core Direct email Extension</a>
+        </td>
+        <td>
+          N/A
+        </td>
+        <td/>
+      </tr>
+      <tr>
+        <td rowspan="3">
+          <a href="{{site.data.fhir.path}}patient.html">Patient</a>
+        </td>
+        <td rowspan="3">
+          <b>USCORE</b>
+        </td>
+        <td>
+          <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-birthsex.html">US Core Birth Sex Extension</a>
+        </td>
+        <td>
+          N/A
+        </td>
+        <td/>
+      </tr>
+      <tr>
+        <td>
+          <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-ethnicity.html">US Core Ethnicity Extension</a>
+        </td>
+        <td>
+          N/A
+        </td>
+        <td/>
+      </tr>
+      <tr>
+        <td>
+          <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-race.html">US Core Race Extension</a>
+        </td>
+        <td>
+          N/A
+        </td>
+        <td/>
+      </tr>
+    </tbody>
+  </table>
+
+  <a name="search"> </a>
+  <p>
+    This table does not expose search parameters that are defined solely for the purpose of asserting conformance criteria but that do not add any additional search capabilities beyond those provided in the base definition of the search parameter.
+  </p>
+  <h3>Search Parameters</h3>
+  <table class="grid">
     <thead>
       <tr>
         <th>Resource</th>
@@ -45,12 +557,26 @@
         <td>
           <a href="{{site.data.fhir.path}}coverage.html">Coverage</a>
         </td>
-        <td>Profile</td>
         <td>
           <b>HRex</b>
         </td>
         <td>
-          <a href="StructureDefinition-hrex-coverage.html">HRex Coverage</a>
+          <a href="SearchParameter-hrex-coverage-subscriberId.html">HRex Claim subscriberId</a>
+        </td>
+        <td>
+          HRex
+        </td>
+        <td>This has been propsoed for introduction to the core specification</td>
+      </tr>
+      <tr>
+        <td rowspan="2">
+          <a href="{{site.data.fhir.path}}patient.html">Patient</a>
+        </td>
+        <td rowspan="2">
+          <b>USCORE</b>
+        </td>
+        <td>
+          <a href="{{site.data.fhir.ver.uscore}}/SearchParameter-us-core-ethnicity.html">US Core Ethnicity</a>
         </td>
         <td>
           HRex
@@ -59,115 +585,66 @@
       </tr>
       <tr>
         <td>
-          <a href="{{site.data.fhir.path}}organization.html">Organization</a>
-        </td>
-        <td>Profile</td>
-        <td>
-          <b>HRex</b>
-        </td>
-        <td>
-          <a href="StructureDefinition-hrex-organization.html">hrex-organization</a>
+          <a href="{{site.data.fhir.ver.uscore}}/SearchParameter-us-core-race.html">US Core Race</a>
         </td>
         <td>
           HRex
         </td>
         <td/>
       </tr>
-<!--      <tr>
-        <td>
-          <a href="{{site.data.fhir.path}}.html">?</a>
-        </td>
-        <td>Profile</td>
-        <td>
-          <b>HRex</b>
-        </td>
-        <td>
-          <a href="StructureDefinition-hrex-?">HRex-?</a>
-        </td>
-        <td>
-          HRex
-        </td>
-        <td/>
-      </tr>
-      <tr>
-        <td>
-          <a href="{{site.data.fhir.path}}?.html">?</a>
-        </td>
-        <td>Profile</td>
-        <td>
-          <b>HRex</b>
-        </td>
-        <td>
-          <a href="StructureDefinition-hrex-?">HRex-?</a>
-        </td>
-        <td>
-          HRex
-        </td>
-        <td/>
-      </tr>
-      <tr>
-        <td>
-          <a href="{{site.data.fhir.path}}?.html">?</a>
-        </td>
-        <td>Profile</td>
-        <td>
-          <b>HRex</b>
-        </td>
-        <td>
-          <a href="StructureDefinition-hrex-?">HRex-?</a>
-        </td>
-        <td>
-          HRex
-        </td>
-        <td/>
-      </tr>
-      <tr>
-        <td>
-          <a href="{{site.data.fhir.path}}?.html">?</a>
-        </td>
-        <td>Profile</td>
-        <td>
-          <b>HRex</b>
-        </td>
-        <td>
-          <a href="StructureDefinition-hrex-?">HRex-?</a>
-        </td>
-        <td>
-          HRex
-        </td>
-        <td/>
-      </tr>
-      <tr>
-        <td>
-          <a href="{{site.data.fhir.path}}?.html">?</a>
-        </td>
-        <td>Profile</td>
-        <td>
-          <b>HRex</b>
-        </td>
-        <td>
-          <a href="StructureDefinition-hrex-?">HRex-?</a>
-        </td>
-        <td>
-          HRex
-        </td>
-        <td/>
-      </tr>-->
     </tbody>
   </table>
 
-  <a name="extensions"> </a>
-  <h3>Extensions</h3>
-
-  <a name="search"> </a>
-  <h3>Search Parameters</h3>
-
   <a name="operations"> </a>
   <h3>Operations</h3>
+  <table class="grid">
+    <thead>
+      <tr>
+        <th>Resource</th>
+        <th>Defined</th>
+        <th>Artifact</th>
+        <th>Used</th>
+        <th>Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <a href="{{site.data.fhir.path}}coverage.html">Coverage</a>
+        </td>
+        <td>
+          <b>HRex</b>
+        </td>
+        <td>
+          <a href="OperationDefinition-member-match.html">Member Match</a>
+        </td>
+        <td>
+          HRex
+        </td>
+        <td/>
+      </tr>
+      <tr>
+        <td>
+          <a href="{{site.data.fhir.path}}DocumentReference">DocumentReference</a>
+        </td>
+        <td>
+          <b>USCORE</b>
+        </td>
+        <td>
+          <a href="{{site.data.fhir.ver.uscore}}OperationDefinition-docref.html">US Core Fetch DocumentReferences</a>
+        </td>
+        <td>
+          N/A
+        </td>
+        <td/>
+      </tr>
+    </tbody>
+  </table>
 
   <a name="legend"> </a>
   <h3>IG List</h3>
   <ul>
+    <li>HRex - <a href="index.html">Da Vinci Health Record Exchange</a></li>
     <li>USCORE - <a href="{{site.data.fhir.ver.uscore}}">US Core 3.1 (FHIR R4)</a></li>
   </ul>
 

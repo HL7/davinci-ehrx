@@ -2,15 +2,11 @@
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
     <id value="hrex-practitionerrole"/>
-    <meta>
-        <versionId value="8"/>
-        <lastUpdated value="2019-06-10T10:31:44.000-04:00"/>
-    </meta>
     <url value="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-practitionerrole"/>
     <name value="HRexPractitionerRole"/>
     <title value="HRex PractitionerRole"/>
     <status value="draft"/>
-    <description value="Requires HRexPractitioner and HRexOrganization. "/>
+    <description value="Constraints on the US Core PractitionerRole requiring the use of Da Vinci Organization and Practitioner"/>
     <fhirVersion value="4.0.0"/>
     <kind value="resource"/>
     <abstract value="false"/>
