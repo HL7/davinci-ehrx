@@ -1,0 +1,63 @@
+<Task xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R4/fhir-single.xsd">
+  <id value="document-complete"/>
+  <status value="completed"/>
+  <intent value="order"/>
+  <code>
+    <coding>
+      <system value="http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp"/>
+      <code value="data-request"/>
+    </coding>
+  </code>
+  <for>
+    <reference value="http://example.org/new-payer/fhir/Patient/pat1"/>
+  </for>
+  <authoredOn value="2020-07-30T20:07:15-06:00"/>
+  <requester>
+    <reference value="Organization/full"/>
+  </requester>
+  <owner>
+    <reference value="http://example.org/new-payer/fhir/Organization/hl7pay"/>
+  </owner>
+  <reasonCode>
+    <text value="Support prior authorization decision-making"/>
+  </reasonCode>
+  <reasonReference>
+    <reference value="http://example.org/new-payer/fhir/Claim/123"/>
+  </reasonReference>
+  <input>
+    <type>
+      <coding>
+        <system value="http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp"/>
+        <code value="data-code"/>
+      </coding>
+    </type>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="34108-1"/>
+      </coding>
+    </valueCodeableConcept>
+  </input>
+  <output>
+    <type>
+      <coding>
+        <system value="http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp"/>
+        <code value="data-value"/>
+      </coding>
+    </type>
+    <valueReference>
+      <reference value="http://example.org/new-payer/fhir/DocumentReference/727A23K5133"/>
+    </valueReference>
+  </output>
+  <output>
+    <type>
+      <coding>
+        <system value="http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp"/>
+        <code value="data-value"/>
+      </coding>
+    </type>
+    <valueReference>
+      <reference value="http://example.org/new-payer/fhir/DocumentReference/287Q73J237"/>
+    </valueReference>
+  </output>
+</Task>

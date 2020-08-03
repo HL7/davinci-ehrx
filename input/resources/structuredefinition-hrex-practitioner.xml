@@ -19,6 +19,14 @@
       <path value="Practitioner.identifier"/>
 			<comment value="It is preferred to use an NPI and if an NPI is available, it SHALL be provided.  However CCN (or even other identifier schemes) can be used if an NPI is not available"/>      
     </element>
+		<element id="Practitioner.identifier.system">
+      <path value="Practitioner.identifier.system"/>
+      <mustSupport value="true"/>
+    </element>
+		<element id="Practitioner.identifier.value">
+      <path value="Practitioner.identifier.value"/>
+      <mustSupport value="true"/>
+    </element>
 		<element id="Practitioner.identifier:ccn">
 			<path value="Practitioner.identifier"/>
 			<sliceName value="ccn"/>
@@ -28,6 +36,12 @@
 			</patternIdentifier>
 			<mustSupport value="true"/>
 		</element>
+		<element id="Practitioner.telecom.system">
+      <path value="Practitioner.telecom.system"/>
+    </element>
+		<element id="Practitioner.telecom.value">
+      <path value="Practitioner.telecom.value"/>
+    </element>
 		<element id="Practitioner.qualification">
 			<path value="Practitioner.qualification"/>
 			<requirements value="This element is mustSupport because qualifications can have ramifications for approving payments and billing"/>

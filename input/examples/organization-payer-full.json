@@ -1,0 +1,58 @@
+{
+  "resourceType": "Organization",
+  "id": "full",
+  "identifier": [
+    {
+      "system": "http://example.org/identifiers/somesystem",
+      "value": "11223344"
+    },
+    {
+      "system": "urn:oid:2.16.840.1.113883.4.7",
+      "value": "11223344"
+    },
+    {
+      "system": "urn:oid:2.16.840.1.113883.4.4",
+      "value": "55566667"
+    },
+    {
+      "system": "http://hl7.org/fhir/sid/us-npi",
+      "value": "0123456789"
+    },
+    {
+      "system": "http://todo/medicare-certification-number",
+      "value": "918273645"
+    }
+  ],
+  "active": true,
+  "name": "New Health Plan",
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "1-800-123-4567"
+    },
+    {
+      "system": "phone",
+      "value": "1-234-567-8901"
+    },
+    {
+      "system": "email",
+      "value": "info@newhealthplan.org"
+    }
+  ],
+  "address": [
+    {
+      "line": [
+        "#1A 123 Some street, Some town, Canada"
+      ]
+    },
+    {
+      "line": [
+        "1003 Healthcare Drive"
+      ],
+      "city": "Amherst",
+      "state": "MA",
+      "postalCode": "01002",
+      "country": "USA"
+    }
+  ]
+}

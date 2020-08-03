@@ -1,0 +1,28 @@
+<Practitioner xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R4/fhir-single.xsd">
+	<id value="full"/>
+	<identifier>
+		<system value="http://example.org/some-code-system"/>
+		<value value="9941339108"/>
+	</identifier>
+	<identifier>
+		<system value="http://hl7.org/fhir/sid/us-npi"/>
+		<value value="9941339108"/>
+	</identifier>
+	<identifier>
+		<system value="http://todo/medicare-certification-number"/>
+		<value value="25456"/>
+	</identifier>
+	<name>
+		<family value="Bone"/>
+	</name>
+	<qualification>
+    <code>
+      <text value="Cardiologist"/>
+    </code>
+  </qualification>
+	<qualification>
+    <code>
+      <text value="Surgeon"/>
+    </code>
+  </qualification>
+</Practitioner>

@@ -211,7 +211,15 @@
   <a name="task7"> </a>
   <p>
     <b>Steps 7:</b> The <i>data consumer</i> then retrieves the resources referenced by <code>Task.output</code>.  This step can be omitted if the outputs are retrieved as part of the polling/subscription in Step 6.
-  </p>  
+  </p>
+  <br/>
+  <p>This IG defines a specific [profile](StructureDefinition-task-data-request.html) for use in HRex using this mode of human-mediated information request.  It also includes a number of examples, showing different phases of the workflow for a Task soliciting execution of a specific query:</p>
+  <ul>
+    <li>[Initial request](Task-query-initial.html)</li>  
+    <li>[Interim status-check](Task-query-status.html)</li>  
+    <li>[Completed Task](Task-query-completed.html)</li>  
+  </ul>
+  <p>There's also an an example showing a completed Task that was soliciting documents of a particular type [here](Task-document-complete.html).</p>
 
 
 </div>

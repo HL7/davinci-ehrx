@@ -1,0 +1,14 @@
+{
+  "resourceType": "Coverage",
+  "id": "min",
+  "status": "active",
+  "subscriberId": "97531",
+  "beneficiary": {
+    "reference": "http://example.org/new-payer/fhir/Patient/pat1"
+  },
+  "payor": [
+    {
+      "reference": "Organization/min"
+    }
+  ]
+}

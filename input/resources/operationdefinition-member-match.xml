@@ -2,26 +2,11 @@
 <OperationDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R4/fhir-single.xsd">
 	<id value="member-match"/>
 	<url value="http://hl7.org/fhir/us/davinci-hrex/OperationDefinition/member-match"/>
-	<version value="0.0.0"/>
 	<name value="MemberMatch"/>
 	<title value="Da Vinci Find Member using Patient and Coverage Resources"/>
 	<status value="draft"/>
 	<kind value="operation"/>
-	<date value="2020-07-23"/>
-	<publisher value="Da Vinci Project"/>
-	<contact>
-		<telecom>
-			<system value="url"/>
-			<value value="https://github.com/Healthedata1/DaVinci"/>
-		</telecom>
-	</contact>
 	<description value="The **$member-match** operation allows one Health Plan to retrieve a unique identifier for a Member from another Health Plan using a member's demographic and coverage information.  Use of this identifier can then be used to perform subsequent queries and operations."/>
-	<jurisdiction>
-		<coding>
-			<system value="urn:iso:std:iso:3166"/>
-			<code value="US"/>
-		</coding>
-	</jurisdiction>
 	<code value="member-match"/>
 	<resource value="Patient"/>
 	<system value="false"/>

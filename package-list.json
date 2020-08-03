@@ -20,6 +20,16 @@
       "status": "ballot",
       "fhir-version": "4.0.0",
       "current": false 
+    },
+    {
+      "version": "0.2.0",
+      "desc": "Sept 2020 Ballot for Da Vinci HRex",
+      "date": "2020-08-14",
+      "sequence": "STU1",
+      "path": "http://hl7.org/fhir/us/davinci-hrex/2020Sep",
+      "status": "ballot",
+      "fhir-version": "4.0.0",
+      "current": false 
     }
   ]
 }

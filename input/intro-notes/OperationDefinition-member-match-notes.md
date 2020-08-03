@@ -17,7 +17,5 @@ The specification is:
 
 An important objective of this specification is to ensure that a Health Plan operating a $member-match operation has sufficient data provided to enable a match operation to be performed.  Therefore the specification requires a Health Plan to provide demographic information (name, date of birth, gender) and identification details that would be present on a member's Health Plan insurance card with a request.
 
-#### $member-match Parameter Example
-Example request: $member-match Parameter resource submitted by the new health plan. Note the Patient identifier type set to "MB".
-$member-match accepts a POST with the Parameters json bundle in the body.
-
+#### Examples
+An example request (as POSTed when invoking the operation) can be found [here](Parameters-member-match-in.html) and an example response (as received in the HTTP response body after the operation processes) can be found [here](Parameters-member-match-out.html).

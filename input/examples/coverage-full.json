@@ -1,0 +1,24 @@
+{
+  "resourceType": "Coverage",
+  "id": "full",
+  "identifier": [
+    {
+      "system": "http://example.org/someOrg/identifiers/whatever",
+      "value": "1039399818"
+    },
+    {
+      "system": "http://example.org/new-payer/identifiers/coverage",
+      "value": "234567"
+    }
+  ],
+  "status": "active",
+  "subscriberId": "97531",
+  "beneficiary": {
+    "reference": "http://example.org/new-payer/fhir/Patient/pat1"
+  },
+  "payor": [
+    {
+      "reference": "Organization/full"
+    }
+  ]
+}

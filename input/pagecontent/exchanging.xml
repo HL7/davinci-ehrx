@@ -21,6 +21,8 @@
   <p>
     NOTE: This document focuses on exchanging information using FHIR but, in theory, the principles described here would apply equally well to equivalent exchange mechanisms using other standards.  For example, FHIR messaging would be like HL7 v2 and FHIR documents would be like HL7 CDA.  If using other standards, the set of architectural approaches to exchange are likely to be more limited than those available for FHIR.
   </p>
+  
+  <a name="organization"> </a>
   <h3>Organization of this section</h3>
   <p>
     This section is broken into several components:
@@ -34,25 +36,25 @@ shared in FHIR</li>
     <li>Following this page are several sub-pages linked to by both the overview and decision-tree that provide details on each of the exchange options and the workflows involved in using them.  The different exchange options are grouped into pages which have similar or identical workflows:
       <ul>
         <li>
-          <a href="exchanging-search.html">Pulling with FHIR search</a>
+          <a href="exchanging-search.html">Exchanging with FHIR search</a>
         </li>
         <li>
-          <a href="exchanging-rest.html">Pushing with FHIR REST</a>
+          <a href="exchanging-rest.html">Exchanging with FHIR REST</a>
         </li>
         <li>
-          <a href="exchanging-subscription.html">Exchanging using FHIR subscription</a>
+          <a href="exchanging-subscription.html">Exchanging with FHIR subscription</a>
         </li>
         <li>
-          <a href="exchanging-polling.html">Exchanging using polling</a>
+          <a href="exchanging-polling.html">Exchanging with polling</a>
         </li>
         <li>
-          <a href="exchanging-operation.html">Exchanging using FHIR operations</a>
+          <a href="exchanging-operation.html">Exchanging with FHIR operations</a>
         </li>
         <li>
-          <a href="exchanging-messaging.html">Exchanging using messaging</a>
+          <a href="exchanging-messaging.html">Exchanging with messaging</a>
         </li>
         <li>
-          <a href="exchanging-request.html">Requesting humans to exchange data</a>
+          <a href="exchanging-request.html">Exchanging with human intervention</a>
         </li>
       </ul>
     </li>
@@ -65,7 +67,7 @@ shared in FHIR</li>
   <ol>
     <li>
       Re-use indicates the amount of reusability is likely to be achieved from implementing a specific interoperability solution, where:
-      <ol type="i">
+      <ol style="list-style-type: lower-roman">
         <li>
           'High' indicates that the approach is likely to be applicable to a broad set of use-cases with minimal/no redevelopment and little/no negotiation required to establish a functional interopreable interface.
         </li>
@@ -82,7 +84,7 @@ shared in FHIR</li>
     </li>
     <li>
       Adoption indicates whether or not systems that have implemented FHIR for data exhange are likely to support the approach, where:
-      <ol type="i">
+      <ol style="list-style-type: lower-roman">
         <li>
           'High' indicates that many/most systems that support data exchange will support the approach.
         </li>
@@ -262,7 +264,7 @@ shared in FHIR</li>
         <td>High</td>
         <td>Moderate</td>
         <td>The <i>data consumer</i> configures a subscription on the <i>data source</i> describing the type of data of interest and the events that should cause notification.  When the described event type(s) are triggered on the <i>data source</i> system, the <i>data source</i> pushes a notification to the <i>data consumer</i> either containing the desired data or prompting for the <i>data consumer</i> to query for the desired data.</td>
-        <td/>
+        <td>A payer has submitted a rquest to a provider for data in support of a claim.  The payer creates a subscription on the provider's EHR that will notify the payer when the submitted Task has been updated - either with new status information or a link to the requested data.</td>
       </tr>
       <tr>
         <th>
@@ -407,7 +409,7 @@ shared in FHIR</li>
   <p>
     <a style="color:gray" href="#tree">Return to diagram</a>
   </p>
-  <a name="human"/>
+  <a name="human"> </a>
   <h4>Human intervention?</h4>
   <p>
     When a <i>data consumer</i> asks for information from a <i>data source</i>, the next question is whether the request is purely at a system-to-system level where the request will be exclusively processed by software or whether there is the potential for humans to be involved in the preparation of the response.  Human involvement means that the request must arrive in a form that can be persisted until a human can look at it and with sufficient contextual and descriptive information for a human to understand what is needed.  Human involvement in responding to a request for data might occur for many reasons:
@@ -799,7 +801,7 @@ shared in FHIR</li>
     A collection is quite flexible.  It can store any arbitrary set of resources with no required organization and no semantic other than "this is a bunch of stuff someone decided to store together".  It might be used to store a collection of examples, test cases, implementation guide source or any other set of resources that needs to be persisted as a group.
   </p>
   <p>
-    FHIR document are different.  The contents of the Bundle must adhere to a <a href="{{site.data.fhir.path}}documents.html">specific set of rules</a>, both in terms of how they're constructed and how they should be handled when received.  One of the main differences is that a FHIR document provides specific information about how the information should be presented to a human, including in what order.  This is important when there is a need to "tell a story" - i.e. where a human reader needs to consume information in a specific way in order to have a consistent (and complete) understanding of what the collection of information represents.  This is commonly found in artifacts such as pathology reports and discharge summaries.  While it is possible to jump right to the 'recommendations' part of the document, those recommendations will not necessarily make much sense unless the reader had first gone through the stuff that comes before.
+    FHIR document are different.  The contents of the Bundle must adhere to a <a href="{{site.data.fhir.path}}documents.html">specific set of rules</a>, both in terms of how they're constructed and how they should be handled when received.  One of the main differences is that a FHIR document provides specific information about how the information should be presented to a human, including in what order.  This is important when there is a need to "tell a story" - i.e. where a human reader needs to consume information in a specific way in order to have a consistent (and complete) understanding of what the collection of information represents.  This is commonly found in artifacts such as pathology reports and discharge summaries.  While it is possible to jump right to the 'recommendations' part of the document, those recommendations will not necessarily make much sense unless the reader had first gone through the content that comes before.
   </p>
   <p>
     If there is a need to control presentation or provide storytelling, then the exchange will be using FHIR documents, the process for which is described <a href="exchanging-rest.html#document">here</a>.  Otherwise, the exchange will use 'collection' bundles and the process for that is described <a href="exchanging-rest.html#collection">here</a>.

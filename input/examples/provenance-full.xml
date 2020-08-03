@@ -1,0 +1,52 @@
+<Provenance xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R4/fhir-single.xsd">
+  <id value="full"/>
+  <target>
+    <reference value="Coverage/full"/>
+  </target>
+  <occurredDateTime value="2020-07-28"/>
+  <recorded value="2020-07-30T20:07:15-06:00"/>
+  <agent>
+    <type>
+      <coding>
+        <system value="http://hl7.org/fhir/us/core/CodeSystem/us-core-provenance-participant-type"/>
+        <code value="transmitter"/>
+      </coding>
+    </type>
+    <who>
+      <reference value="Organization/full"/>
+    </who>
+  </agent>
+  <agent>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/provenance-participant-type"/>
+        <code value="author"/>
+      </coding>
+    </type>
+    <who>
+      <reference value="PractitionerRole/full"/>
+    </who>
+  </agent>
+  <signature>
+    <type>
+      <system value="urn:iso-astm:E1762-95:2013"/>
+      <code value="1.2.840.10065.1.12.1.1"/>
+    </type>
+    <when value="2020-07-30T20:07:16.3831-06:00"/>
+    <who>
+      <reference value="http://example.org/new-payer/Organization/57"/>
+    </who>
+    <data value="12345678"/>
+  </signature>
+  <signature>
+    <type>
+      <system value="urn:iso-astm:E1762-95:2013"/>
+      <code value="1.2.840.10065.1.12.1.5"/>
+    </type>
+    <when value="2020-07-30T20:07:16.3847-06:00"/>
+    <who>
+      <reference value="http://example.org/new-payer/Organization/57"/>
+    </who>
+    <data value="98765432"/>
+  </signature>
+</Provenance>

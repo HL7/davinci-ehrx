@@ -1,0 +1,13 @@
+{
+  "resourceType": "Organization",
+  "id": "min",
+  "identifier": [
+    {
+      "system": "http://hl7.org/fhir/sid/us-npi",
+      "value": "0123456789"
+    }
+  ],
+  "active": true,
+  "name": "New Health Plan"
+  ]
+}

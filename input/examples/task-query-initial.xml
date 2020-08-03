@@ -16,7 +16,7 @@
   </for>
   <authoredOn value="2020-07-30T20:07:15-06:00"/>
   <requester>
-    <reference value="Organization/payer"/>
+    <reference value="Organization/full"/>
   </requester>
   <owner>
     <reference value="http://example.org/new-payer/fhir/Organization/hl7pay"/>
@@ -34,6 +34,6 @@
         <code value="data-query"/>
       </coding>
     </type>
-    <valueString value="Condition?patient=Patient/pat1&amp;clinical-status=active&amp;code=http%3A%2F%2Fsnomed.info%2Fsct|73211009"/>
+    <valueString value="Condition?patient=Patient/pat1&amp;clinical-status=active&amp;code=http%3A%2F%2Fsnomed.info%2Fsct%7C73211009"/>
   </input>
 </Task>

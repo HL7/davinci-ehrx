@@ -52,6 +52,7 @@
 		</element>
 		<element id="Task.code">
 			<path value="Task.code"/>
+			<min value="1"/>
 			<patternCodeableConcept>
         <coding>
           <system value="http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp"/>

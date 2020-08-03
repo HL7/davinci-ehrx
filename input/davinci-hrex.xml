@@ -35,18 +35,34 @@
 	<definition>
     <resource>
       <reference>
-        <reference value="Coverage/coverage1"/>
+        <reference value="Coverage/full"/>
       </reference>
-      <name value="HRex Coverage example"/>
-      <description value="An example showing the use of the HRex Coverage profile"/>
+      <name value="HRex Coverage full example"/>
+      <description value="An example showing a fully-populated HRex Coverage instance"/>
       <exampleCanonical value="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-coverage"/>
     </resource>
     <resource>
       <reference>
-        <reference value="Organization/payer"/>
+        <reference value="Coverage/min"/>
       </reference>
-      <name value="HRex Organization example"/>
-      <description value="An example showing the use of the HRex Organization profile to represent a payer organization"/>
+      <name value="HRex Coverage minimal example"/>
+      <description value="An example showing a minimally-populated HRex Coverage instance"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-coverage"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Organization/full"/>
+      </reference>
+      <name value="HRex Organization full example"/>
+      <description value="An example showing a fully populated HRex Organization provider instance"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-organization"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Organization/min"/>
+      </reference>
+      <name value="HRex Organization minimal example"/>
+      <description value="An example showing a minimally populated HRex Organization provider instance"/>
       <exampleCanonical value="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-organization"/>
     </resource>
     <resource>
@@ -67,27 +83,59 @@
     </resource>
     <resource>
       <reference>
-        <reference value="Practitioner/p1"/>
+        <reference value="Practitioner/full"/>
       </reference>
-      <name value="HRex Practitioner example"/>
-      <description value="An example showing the the use of the HRex Practitioner profile"/>
+      <name value="HRex Practitioner full example"/>
+      <description value="An example showing a fully populated HRex Practitioner instance"/>
       <exampleCanonical value="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-practitioner"/>
     </resource>
     <resource>
       <reference>
-        <reference value="PractitionerRole/pr1"/>
+        <reference value="Practitioner/min"/>
       </reference>
-      <name value="HRex PractitionerRole example"/>
-      <description value="An example showing the the use of the HRex PractitionerRole profile"/>
+      <name value="HRex Practitioner minimal example"/>
+      <description value="An example showing a minimally populated HRex Practitioner instance"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-practitioner"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="PractitionerRole/full"/>
+      </reference>
+      <name value="HRex PractitionerRole full example"/>
+      <description value="An example showing a fully populated HRex PractitionerRole instance"/>
       <exampleCanonical value="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-practitionerrole"/>
     </resource>
     <resource>
       <reference>
-        <reference value="Provenance/task-create"/>
+        <reference value="PractitionerRole/min"/>
       </reference>
-      <name value="HRex Provenance example"/>
-      <description value="An example showing the the use of the HRex Provenance profile"/>
+      <name value="HRex PractitionerRole min example"/>
+      <description value="An example showing a minimally populated HRex PractitionerRole instance"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-practitionerrole"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Provenance/full"/>
+      </reference>
+      <name value="HRex Provenance full example"/>
+      <description value="An example showing a fully populated HRex Provenance instance"/>
       <exampleCanonical value="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-provenance"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Provenance/min"/>
+      </reference>
+      <name value="HRex Provenance min example"/>
+      <description value="An example showing a minimally populated HRex Provenance instance"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-provenance"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Task/min"/>
+      </reference>
+      <name value="HRex Task minimal example"/>
+      <description value="An example showing the a minimally populated HRex Task Data Request instance"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-task-data-request"/>
     </resource>
     <resource>
       <reference>
@@ -95,6 +143,30 @@
       </reference>
       <name value="HRex Task Data Request - initial query example"/>
       <description value="An example showing the initial view of a 'query' data request"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-task-data-request"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Task/query-status"/>
+      </reference>
+      <name value="HRex Task Data Request - status query example"/>
+      <description value="An example showing a 'query' data request task after it's been accepted and is showing a 'progress' status"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-task-data-request"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Task/query-complete"/>
+      </reference>
+      <name value="HRex Task Data Request - completed query example"/>
+      <description value="An example showing a 'query' data request task once it has results - as a contained searchset Bundle"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-task-data-request"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Task/document-complete"/>
+      </reference>
+      <name value="HRex Task Data Request - completed document example"/>
+      <description value="An example showing a 'code' data request task once it has results - as references to the relevant documents"/>
       <exampleCanonical value="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-task-data-request"/>
     </resource>
     <resource>
@@ -153,37 +225,37 @@
         <generation value="html"/>
         <page>
           <nameUrl value="exchanging-search.html"/>
-          <title value="Pulling with FHIR search"/>
+          <title value="Exchanging with FHIR search"/>
           <generation value="html"/>
         </page>
         <page>
           <nameUrl value="exchanging-rest.html"/>
-          <title value="Pushing with FHIR REST"/>
+          <title value="Exchanging with FHIR REST"/>
           <generation value="html"/>
         </page>
         <page>
           <nameUrl value="exchanging-subscription.html"/>
-          <title value="Exchanging using FHIR subscription"/>
+          <title value="Exchanging with FHIR subscription"/>
           <generation value="html"/>
         </page>
         <page>
           <nameUrl value="exchanging-polling.html"/>
-          <title value="Exchanging using polling"/>
+          <title value="Exchanging with polling"/>
           <generation value="html"/>
         </page>
         <page>
           <nameUrl value="exchanging-operation.html"/>
-          <title value="Exchanging using FHIR operations"/>
+          <title value="Exchanging with FHIR operations"/>
           <generation value="html"/>
         </page>
         <page>
           <nameUrl value="exchanging-messaging.html"/>
-          <title value="Exchanging using messaging"/>
+          <title value="Exchanging with messaging"/>
           <generation value="html"/>
         </page>
         <page>
           <nameUrl value="exchanging-request.html"/>
-          <title value="Requesting humans to exchange data"/>
+          <title value="Exchanging with human intervention"/>
           <generation value="html"/>
         </page>
       </page>

@@ -1,0 +1,30 @@
+<Task xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R4/fhir-single.xsd">
+  <id value="min"/>
+  <status value="requested"/>
+  <intent value="order"/>
+  <code>
+    <coding>
+      <system value="http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp"/>
+      <code value="data-request"/>
+    </coding>
+  </code>
+  <for>
+    <reference value="http://example.org/new-payer/fhir/Patient/pat1"/>
+  </for>
+  <authoredOn value="2020-07-30T20:07:15-06:00"/>
+  <requester>
+    <reference value="Organization/full"/>
+  </requester>
+  <owner>
+    <reference value="http://example.org/new-payer/fhir/Organization/hl7pay"/>
+  </owner>
+  <input>
+    <type>
+      <coding>
+        <system value="http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp"/>
+        <code value="data-query"/>
+      </coding>
+    </type>
+    <valueString value="Condition?patient=Patient/pat1&amp;clinical-status=active&amp;code=http%3A%2F%2Fsnomed.info%2Fsct%7C73211009"/>
+  </input>
+</Task>
