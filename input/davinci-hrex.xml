@@ -38,7 +38,7 @@
         <reference value="Coverage/full"/>
       </reference>
       <name value="HRex Coverage full example"/>
-      <description value="An example showing a fully-populated HRex Coverage instance"/>
+      <description value="An example showing a fully populated HRex Coverage instance"/>
       <exampleCanonical value="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-coverage"/>
     </resource>
     <resource>
@@ -46,7 +46,7 @@
         <reference value="Coverage/min"/>
       </reference>
       <name value="HRex Coverage minimal example"/>
-      <description value="An example showing a minimally-populated HRex Coverage instance"/>
+      <description value="An example showing a minimally populated HRex Coverage instance"/>
       <exampleCanonical value="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-coverage"/>
     </resource>
     <resource>
@@ -134,7 +134,7 @@
         <reference value="Task/min"/>
       </reference>
       <name value="HRex Task minimal example"/>
-      <description value="An example showing the a minimally populated HRex Task Data Request instance"/>
+      <description value="An example showing a minimally populated HRex Task Data Request instance"/>
       <exampleCanonical value="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-task-data-request"/>
     </resource>
     <resource>
@@ -150,7 +150,7 @@
         <reference value="Task/query-status"/>
       </reference>
       <name value="HRex Task Data Request - status query example"/>
-      <description value="An example showing a 'query' data request task after it's been accepted and is showing a 'progress' status"/>
+      <description value="An example showing a 'query' data request task after it has been accepted and is showing a 'progress' status"/>
       <exampleCanonical value="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-task-data-request"/>
     </resource>
     <resource>

@@ -1,9 +1,14 @@
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R4/fhir-single.xsd">
+  <blockquote class="note-to-balloters">
+    <p>
+      This page is not complete.  It does not include IGs other than US Core and HRexIt will be update closer to publication when it is expected there will be more Da Vinci IGs that are in a 'final' state.  The values shown are intended to give balloters a sense of how the tables will work.
+    </p>
+  </blockquote>
   <p>
-    Da Vinci IGs make use of a variety of FHIR profiles, extensions, operations, and other artifacts.  These are drawn from the core specification, US Core, defined within other Da Vinci IGs and defined in other IGs.  This page provides a summary of key artifacts currently in use in at least one IG.  Because Da Vinci has so many IGs and they are changing relatively frequently, this IG will not always be completely up to date.  However, the team will do their best to keep it so.  (If you find an issue, please use the <a href="http://hl7.org/fhir-issues">Propose a Change</a> link below.)
+    Da Vinci IGs make use of a variety of FHIR profiles, extensions, operations, and other artifacts.  These are drawn from the core specification, US Core, defined within other Da Vinci IGs and defined in other (non-Da Vinci) IGs.  This page provides a summary of key artifacts currently in use in at least one Da Vinci IG.  Because Da Vinci has so many IGs and they are changing relatively frequently, this summary page will not always be completely up to date.  However, the team will do their best to keep it so.  (If you find an issue, please use the <a href="http://hl7.org/fhir-issues">Propose a Change</a> link below to get it fixed.)
   </p>
   <p>
-    Some of the artifacts that are currently defined in this HRex IG are candidates for incorporation into the underlying US Core IG - either by updating the underlying US Core profile or introducing new profiles to US Core.  If that occurs, the HRex profiles will be removed in a future release.  Specific plans for migration (and associated Jira tracker item if you want to follow the discussion) are captured in notes on the artifacts below.
+    Some of the artifacts that are currently defined in this HRex IG are candidates for incorporation into the underlying US Core IG - either by updating the underlying US Core profile or introducing new profiles to US Core.  If that occurs, the HRex profiles will be removed in a future release.  Specific plans for migration are captured in comments in the artifacts below.
   </p>
   <p>
     Note: At present, this table does not contain Da Vinci terminology artifacts.  In the long term, we expect all Da Vinci code systems to be replaced by external terminologies (LOINC, SNOMED, terminology.hl7.org, etc.).  At present, no requirement for sharing Da Vinci value sets has been identified.
@@ -12,19 +17,20 @@
     Each of the following tables make use of 5 columns:
   </p>  
   <ul>
-    <li><b>Resource:</b> - indicates the resource the profile or extension is associated with.  'General' is used for artifacts that are not resource specific.</li>
-    <li><b>Defined:</b> - is the IG in which the artifact is published and maintained.  (See <a href="#legend">IG list</a> for a list of all IGs, including links)</li>
-    <li><b>Artifact:</b> - the name (and a link) for the artifact.  Hover to see the canonical URL</li>
-    <li><b>Used:</b> - a list of the Da Vinci IG(s) that use this artifact</li>
-    <li><b>Notes:</b> - any information about artifact relationships, migration, deprecation, etc.</li>
+    <li><b>Resource:</b> indicates the resource or data type the artifact is associated with.  'General' is used for artifacts that are not resource specific.</li>
+    <li><b>Defined:</b> is the IG in which the artifact is published and maintained.  (See below for a list of all IGs, including links.)</li>
+    <li><b>Artifact:</b> the name (and a link) for the artifact.  Hover to see the canonical URL.</li>
+    <li><b>Used:</b> a list of the Da Vinci IG(s) that use this artifact.</li>
+    <li><b>Notes:</b> any information about artifact relationships, migration, deprecation, etc.</li>
   </ul>
-  
-  <blockquote class="note-to-balloters">
-    <p>
-      This table is not complete.  It does not include IGs other than US Core, HRex and CRD.  It will be update closer to publication when it is expected there will be more Da Vinci IGs that are in a 'final' state.  The values shown are intended to give balloters a sense of how the tables will work.
-    </p>
-  </blockquote>
-  
+  <p>
+    The list of IGs whose artifacts are covered (and the short-form codes used to refer to them) are as follows:
+  </p>
+  <ul>
+    <li>HRex - <a href="index.html">Da Vinci Health Record Exchange</a></li>
+    <li>USCORE - <a href="{{site.data.fhir.ver.uscore}}">US Core 3.1 (FHIR R4)</a></li>
+  </ul>
+
   <a name="profiles"> </a>
   <h3>Profiles</h3>
   <p>
@@ -52,7 +58,7 @@
         <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-allergyintolerance.html">US  Core AllergyIntolerance Profile</a>
         </td>
         <td>
-          HRex<sup><a href="#any">*</a></sup>
+          HRex<a href="#any"><sup>†</sup></a>
         </td>
         <td/>
       </tr>
@@ -67,7 +73,7 @@
         <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-careplan.html">US Core CarePlan Profile</a>
         </td>
         <td>
-          HRex<sup><a href="#any">*</a></sup>
+          HRex<a href="#any"><sup>†</sup></a>
         </td>
         <td/>
       </tr>
@@ -82,7 +88,7 @@
           <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-careteam.html">US Core CareTeam Profile</a>
         </td>
         <td>
-          HRex<sup><a href="#any">*</a></sup>
+          HRex<a href="#any"><sup>†</sup></a>
         </td>
         <td/>
       </tr>
@@ -97,7 +103,7 @@
           <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-condition.html">US Core Condition Profile</a>
         </td>
         <td>
-          HRex<sup><a href="#any">*</a></sup>
+          HRex<a href="#any"><sup>†</sup></a>
         </td>
         <td/>
       </tr>
@@ -114,7 +120,7 @@
         <td>
           HRex
         </td>
-        <td>This is a candidate for US-core migration, though Coverage isn't currently tied to patient data sharing requirements</td>
+        <td>This is a candidate for US-core migration, though Coverage is not currently tied to patient data sharing requirements</td>
       </tr>
       <tr>
         <td>
@@ -127,7 +133,7 @@
           <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-implantable-device.html">US Core Implantable Device Profile</a>
         </td>
         <td>
-          HRex<sup><a href="#any">*</a></sup>
+          HRex<a href="#any"><sup>†</sup></a>
         </td>
         <td/>
       </tr>
@@ -151,7 +157,7 @@
           <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-diagnosticreport-note.html">US Core DiagnosticReport Profile for Report and Note exchange</a>
         </td>
         <td>
-          HRex<sup><a href="#any">*</a></sup>
+          HRex<a href="#any"><sup>†</sup></a>
         </td>
         <td/>
       </tr>
@@ -166,7 +172,7 @@
           <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-documentreference.html">US Core DocumentReference Profile</a>
         </td>
         <td>
-          HRex<sup><a href="#any">*</a></sup>
+          HRex<a href="#any"><sup>†</sup></a>
         </td>
         <td/>
       </tr>
@@ -181,7 +187,7 @@
           <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-encounter.html">US Core Encounter Profile</a>
         </td>
         <td>
-          HRex<sup><a href="#any">*</a></sup>
+          HRex<a href="#any"><sup>†</sup></a>
         </td>
         <td/>
       </tr>
@@ -196,7 +202,7 @@
           <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-goal.html">US Core Goal Profile</a>
         </td>
         <td>
-          HRex<sup><a href="#any">*</a></sup>
+          HRex<a href="#any"><sup>†</sup></a>
         </td>
         <td/>
       </tr>
@@ -211,7 +217,7 @@
           <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-immunization.html">US Core Immunization Profile</a>
         </td>
         <td>
-          HRex<sup><a href="#any">*</a></sup>
+          HRex<a href="#any"><sup>†</sup></a>
         </td>
         <td/>
       </tr>
@@ -226,7 +232,7 @@
           <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-location.html">US Core Location Profile</a>
         </td>
         <td>
-          HRex<sup><a href="#any">*</a></sup>
+          HRex<a href="#any"><sup>†</sup></a>
         </td>
         <td/>
       </tr>
@@ -241,7 +247,7 @@
         <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-medication.html">US Core Medication Profile</a>
         </td>
         <td>
-          HRex<sup><a href="#any">*</a></sup>
+          HRex<a href="#any"><sup>†</sup></a>
         </td>
         <td/>
       </tr>
@@ -256,7 +262,7 @@
         <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-medicationrequest.html">US Core MedicationRequest Profile</a>
         </td>
         <td>
-          HRex<sup><a href="#any">*</a></sup>
+          HRex<a href="#any"><sup>†</sup></a>
         </td>
         <td/>
       </tr>
@@ -271,7 +277,7 @@
           <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-observation-lab.html">US Core Laboratory Result Observation Profile</a>
         </td>
         <td>
-          HRex<sup><a href="#any">*</a></sup>
+          HRex<a href="#any"><sup>†</sup></a>
         </td>
         <td/>
       </tr>
@@ -280,7 +286,7 @@
           <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-pediatric-bmi-for-age.html">US Core Pediatric BMI for Age Observation Profile</a>
         </td>
         <td>
-          HRex<sup><a href="#any">*</a></sup>
+          HRex<a href="#any"><sup>†</sup></a>
         </td>
         <td/>
       </tr>
@@ -289,7 +295,7 @@
           <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-pediatric-weight-for-height.html">US Core Pediatric Weight for Height Observation Profile</a>
         </td>
         <td>
-          HRex<sup><a href="#any">*</a></sup>
+          HRex<a href="#any"><sup>†</sup></a>
         </td>
         <td/>
       </tr>
@@ -298,7 +304,7 @@
           <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-pulse-oximetry.html">US Core Pulse Oximetry Profile</a>
         </td>
         <td>
-          HRex<sup><a href="#any">*</a></sup>
+          HRex<a href="#any"><sup>†</sup></a>
         </td>
         <td/>
       </tr>
@@ -307,7 +313,7 @@
           <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-smokingstatus.html">US Core Smoking Status Observation Profile</a>
         </td>
         <td>
-          HRex<sup><a href="#any">*</a></sup>
+          HRex<a href="#any"><sup>†</sup></a>
         </td>
         <td/>
       </tr>
@@ -324,7 +330,7 @@
         <td>
           HRex
         </td>
-        <td>The requirement for tax id may migrate to US Core, but the CCN identifier likely won't</td>
+        <td>The requirement for tax id may migrate to US Core, but the CCN identifier likely will not</td>
       </tr>
       <tr>
         <td>
@@ -420,7 +426,7 @@
           <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-procedure.html">US Core Procedure Profile</a>
         </td>
         <td>
-          HRex<sup><a href="#any">*</a></sup>
+          HRex<a href="#any"><sup>†</sup></a>
         </td>
         <td/>
       </tr>
@@ -470,7 +476,7 @@
   </table>
   <p>
     <a name="any"> </a>
-    <sup>*</sup>: HRex includes the definition of a Task profile that can return data - any US Core profile could be used to return such information, though the IG doesn't mention this profile specifically.
+    <sup>†</sup> HRex includes the definition of a Task profile that can return data - any US Core profile could be used to return such information, though the IG does not mention this profile specifically.
   </p>
 
   <a name="extensions"> </a>
@@ -566,7 +572,7 @@
         <td>
           HRex
         </td>
-        <td>This has been propsoed for introduction to the core specification</td>
+        <td>This has been proposed for introduction to the core specification</td>
       </tr>
       <tr>
         <td rowspan="2">
@@ -640,12 +646,5 @@
       </tr>
     </tbody>
   </table>
-
-  <a name="legend"> </a>
-  <h3>IG List</h3>
-  <ul>
-    <li>HRex - <a href="index.html">Da Vinci Health Record Exchange</a></li>
-    <li>USCORE - <a href="{{site.data.fhir.ver.uscore}}">US Core 3.1 (FHIR R4)</a></li>
-  </ul>
 
 </div>
