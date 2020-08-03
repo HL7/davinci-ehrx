@@ -129,7 +129,7 @@
    <page name="Dynamic Registration for SMART Apps" key="smart-app-reg"/>
    <page name="Profile overview" key="profiles"/>
    <page name="Search Parameters overview" key="searchparameters"/>
+   <page name="Artifact List" key="artifacts"/>
    <page name="Downloads" key="downloads"/>
    <page name="Tooling and Support" key="tools"/>
-   <page name="Artifact List" key="artifacts"/>
 </specification>

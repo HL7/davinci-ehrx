@@ -1,4 +1,4 @@
-To access information about a particular member on a payer's system, the requesting system needs to know the unique identifier of that member on the payer's system.  However, in many cases, neither the client system nor the patient will .  The $member-match operation supports identifying the target payer's member and coverage information for a particular member so the client can use that informtaion for subsequent queries and operations.
+To access information about a member on a payer's system, the requesting system needs to know the unique identifier of that member on the payer's system.  However, in many cases, neither the client system nor the patient will have this information.  The $member-match operation supports identifying the target payer's member and coverage information for a specified member so the client can use that information for subsequent queries and operations.
 
 The operation works by passing in three sets of information:
 

@@ -6,7 +6,7 @@
 		<lastUpdated value="2019-06-20T04:25:13.000-04:00"/>
 	</meta>
 	<url value="http://hl7.org/fhir/us/davinci-hrex/ImplementationGuide/davinci-hrex"/>
-	<version value="0.1.0"/>
+	<version value="0.2.0"/>
 	<name value="DaVinciHealthRecordExchangeHRex"/>
 	<title value="Da Vinci Health Record Exchange (HRex)"/>
 	<status value="active"/>
@@ -205,21 +205,16 @@
       </reference>
       <name value="Provenance target"/>
     </resource>    
-		<page>
-			<nameUrl value="toc.html"/>
-			<title value="Table of Contents"/>
-			<generation value="generated"/>
-			<page>
-				<nameUrl value="index.html"/>
-				<title value="Home"/>
-				<generation value="markdown"/>
-			</page>
-			<page>
-				<nameUrl value="fhir.html"/>
-				<title value="FHIR Introduction"/>
-				<generation value="markdown"/>
-			</page>
-			<page>
+    <page>
+      <nameUrl value="index.html"/>
+      <title value="Home"/>
+      <generation value="markdown"/>
+      <page>
+        <nameUrl value="fhir.html"/>
+        <title value="FHIR Introduction"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
         <nameUrl value="exchanging.html"/>
         <title value="Approaches to Exchanging FHIR Data"/>
         <generation value="html"/>
@@ -285,6 +280,11 @@
         <generation value="markdown"/>
       </page>
       <page>
+        <nameUrl value="artifacts.html"/>
+        <title value="Artifact List"/>
+        <generation value="html"/>
+      </page>
+      <page>
         <nameUrl value="downloads.html"/>
         <title value="Downloads"/>
         <generation value="markdown"/>
@@ -294,19 +294,14 @@
         <title value="Tooling and Support"/>
         <generation value="markdown"/>
       </page>
-			<page>
-				<nameUrl value="artifacts.html"/>
-				<title value="Artifact List"/>
-				<generation value="html"/>
-			</page>
-		</page>
+    </page>
 		<parameter>
 			<code value="copyrightyear"/>
 			<value value="2019+"/>
 		</parameter>
 		<parameter>
 			<code value="releaselabel"/>
-			<value value="CI Build"/>
+			<value value="STU R1 - 2nd ballot"/>
 		</parameter>
 		<parameter>
 			<code value="find-other-resources"/>
