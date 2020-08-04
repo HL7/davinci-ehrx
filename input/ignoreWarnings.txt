@@ -1,8 +1,5 @@
 == Suppressed Messages ==
 
-# NOTE: Remaining unsuppressed messages are validator/UTG issues, described here:
-# https://github.com/hapifhir/org.hl7.fhir.core/issues/288
-# https://github.com/hapifhir/org.hl7.fhir.core/issues/289
 # The NUCC codes are all valid (according to tx.fhir.org), but the validator is colliding with UTG content as discussed here: 
 #   https://chat.fhir.org/#narrow/stream/179252-IG-creation/topic/http.3A.2F.2Fnucc.2Eorg.2Fprovider-taxonomy
 
@@ -18,7 +15,15 @@ INFORMATION: Coverage/min: Coverage: Validate resource against profile http://hl
 INFORMATION: Organization/full: Organization: Validate resource against profile http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-organization
 INFORMATION: Organization/min: Organization: Validate resource against profile http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-organization
 INFORMATION: Parameters/member-match-in: Parameters: Validate resource against profile http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-parameters-member-match-in
+INFORMATION: Parameters/member-match-in: Parameters.parameter[0].resource.ofType(Patient): Validate resource against profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient
+INFORMATION: Parameters/member-match-in: Parameters.parameter[1].resource.ofType(Coverage): Validate resource against profile http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-coverage
+INFORMATION: Parameters/member-match-in: Parameters.parameter[1].resource.ofType(Coverage).contained.ofType(Organization): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization
+INFORMATION: Parameters/member-match-in: Parameters.parameter[2].resource.ofType(Coverage): Validate resource against profile http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-coverage
+INFORMATION: Parameters/member-match-in: Parameters.parameter[2].resource.ofType(Coverage).contained.ofType(Organization): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization
 INFORMATION: Parameters/member-match-out: Parameters: Validate resource against profile http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-parameters-member-match-out
+INFORMATION: Parameters/member-match-out: Parameters.parameter[0].resource.ofType(Patient): Validate resource against profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient
+INFORMATION: Parameters/member-match-out: Parameters.parameter[1].resource.ofType(Coverage): Validate resource against profile http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-coverage
+INFORMATION: Parameters/member-match-out: Parameters.parameter[1].resource.ofType(Coverage).contained.ofType(Organization): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization
 INFORMATION: Practitioner/full: Practitioner: Validate resource against profile http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-practitioner
 INFORMATION: Practitioner/min: Practitioner: Validate resource against profile http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-practitioner
 INFORMATION: PractitionerRole/full: PractitionerRole: Validate resource against profile http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-practitionerrole
