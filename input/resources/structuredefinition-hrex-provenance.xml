@@ -3,7 +3,7 @@
 	<id value="hrex-provenance"/>
 	<url value="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-provenance"/>
 	<name value="HRexProvenance"/>
-	<title value="HRex Provenance"/>
+	<title value="HRex Provenance Profile"/>
 	<status value="draft"/>
 	<description value="Additional constraints on US Core Provenance to ensure it meets payer needs, including indicating when the event occurred and retaining signatures if present"/>
 	<fhirVersion value="4.0.0"/>

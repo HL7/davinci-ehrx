@@ -4,7 +4,7 @@
     <id value="hrex-practitionerrole"/>
     <url value="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-practitionerrole"/>
     <name value="HRexPractitionerRole"/>
-    <title value="HRex PractitionerRole"/>
+    <title value="HRex PractitionerRole Profile"/>
     <status value="draft"/>
     <description value="Constraints on the US Core PractitionerRole requiring the use of Da Vinci Organization and Practitioner"/>
     <fhirVersion value="4.0.0"/>

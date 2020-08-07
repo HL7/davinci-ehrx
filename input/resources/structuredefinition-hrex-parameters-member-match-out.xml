@@ -4,7 +4,7 @@
   <name value="HRexMemberMatchResponseParameters"/>
   <title value="HRex Parameters - Member Match Response Profile"/>
   <status value="active"/>
-  <description value="The Parameters profile for Da Vinci Find Member using Patient and Coverage Resources Response.  The old Health Plan **SHALL** return the following data if records for Member are found: &#xA; * The unique member identifier added to the Patient.identifier in the Patient resource submitted by the new health plan. &#xA;  * The new health plan coverage resource. &#xA; &#xA; (Only one Patient and one Coverage record are to be returned.)"/>
+  <description value="The Parameters profile for Da Vinci Find Member using Patient and Coverage Resources Response.  The old health plan **SHALL** return the following data if records for member are found: &#xA; * The unique member identifier added to the Patient.identifier in the Patient resource submitted by the new health plan. &#xA;  * The new health plan coverage resource. &#xA; &#xA; (Only one Patient and one Coverage record are to be returned.)"/>
   <kind value="resource"/>
   <abstract value="false"/>
   <type value="Parameters"/>

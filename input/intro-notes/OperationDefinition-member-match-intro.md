@@ -2,7 +2,7 @@ To access information about a member on a payer's system, the requesting system 
 
 The operation works by passing in three sets of information:
 
-* The requesting payer's demographic information on the Member (as a Patient resource)
+* The requesting payer's demographic information on the member (as a Patient resource)
 * The requesting payer's Coverage information (as justification/support for the matching request)
 * The target payer's Coverage information (as gleaned from the member's card)
 

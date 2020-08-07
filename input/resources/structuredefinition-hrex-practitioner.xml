@@ -3,7 +3,7 @@
 	<id value="hrex-practitioner"/>
 	<url value="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-practitioner"/>
 	<name value="HRexPractitioner"/>
-	<title value="HRex Practitioner"/>
+	<title value="HRex Practitioner Profile"/>
 	<status value="draft"/>
 	<description value="Constraints on the US Core Practitioner profiles requiring support for qualification and requiring support for an additional identifier type"/>
 	<kind value="resource"/>

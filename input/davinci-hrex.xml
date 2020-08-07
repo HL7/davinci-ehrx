@@ -173,37 +173,37 @@
       <reference>
         <reference value="SearchParameter/hrex-coverage-identifier"/>
       </reference>
-      <name value="Coverage identifier"/>
+      <name value="Coverage identifier Search Parameter"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/hrex-coverage-patient"/>
       </reference>
-      <name value="Coverage patient"/>
+      <name value="Coverage patient Search Parameter"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/hrex-coverage-payor"/>
       </reference>
-      <name value="Coverage payor"/>
+      <name value="Coverage payor Search Parameter"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/hrex-coverage-subscriber"/>
       </reference>
-      <name value="Coverage subscriber"/>
+      <name value="Coverage subscriber Search Parameter"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/hrex-coverage-subscriberId"/>
       </reference>
-      <name value="Coverage subscriberId"/>
+      <name value="Coverage subscriberId Search Parameter"/>
     </resource>
     <resource>
       <reference>
         <reference value="SearchParameter/hrex-provenance-target"/>
       </reference>
-      <name value="Provenance target"/>
+      <name value="Provenance target Search Parameter"/>
     </resource>    
     <page>
       <nameUrl value="index.html"/>

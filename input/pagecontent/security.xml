@@ -8,7 +8,7 @@
 	<h3>Statutes, Regulations, and Guiding Principles</h3>
   <ol>
     <li>All implementations of any Da Vinci FHIR Implementation Guides (IG) <b>SHALL</b> meet all current relevant Federal and State statutes and regulations regarding security and privacy.</li>
-    <li>All IGs <b>SHALL</b> utilize technical standards required by current regulations published by CMS, ONC and HIPAA (OCR) unless an exception has been granted.</li>
+    <li>All IGs <b>SHALL</b> use applicable technical standards required by current regulations published by CMS and ONC (allowing for voluntary use through the <a href="https://www.healthit.gov/isa/standards-version-advancement-process#:~:text=ONC%20has%20established%20the%20voluntary,of%20Certification%20requirement%20(%C2%A7%20170.405)">SVAP</a>) unless an exception has been granted.</li>
     <li>All IGs and implementations <b>SHOULD</b> follow the current <a href="https://confluence.hl7.org/display/DVP/Da+Vinci+Guiding+Principles">Da Vinci Guiding Principles</a>.</li>
     <li>All IGs and implementations <b>SHALL</b> support patient/member consent and/or treatment of sensitive information consistent with Federal and State statutes and regulations.</li>
     <li>All IGs and implementations <b>SHOULD</b> support the consent and data sharing policies of trading partners involved in the exchange that are more protective so long as policies are consistent with or more restrictive than Federal and State statutes and regulations.</li>
@@ -20,7 +20,7 @@
     All FHIR Implementation Guides <b>SHOULD</b> follow the FHIR Security guidance and FHIR Implementer’s Safety guidance as defined in the  relevant FHIR  specification (e.g. Release 4.1.0) where applicable and not superseded by this Section or specific IG requirements.</p>
   <ol>
     <li>The FHIR Security specification provides guidance related to communication security, authentication, authorization/access control, audit, digital signatures, attachments, labels, narrative, and input validation. The FHIR security specification is available <a href="{{site.data.fhir.path}}security.html">here</a>.</li>
-    <li>The FHIR Implementer’s Safety specification is a check list to help implementers be sure that they have considered all the parts of FHIR that impact on their system design regarding safety. The FHIR safety check list is available <a href="{{site.data.fhir.path}}safety.html">here</a>.</li>
+    <li>The FHIR Implementer’s Safety specification is a check list to help implementers be sure that they have considered all the parts of FHIR that impact their system design regarding safety. The FHIR safety check list is available <a href="{{site.data.fhir.path}}safety.html">here</a>.</li>
   </ol>
 
   <a name="labels"> </a>
@@ -28,6 +28,7 @@
 	<ol>
 		<li>As of May 2020, ONC has elected to not require either Data Labeling or Consent Directives as part of the <a href="https://www.federalregister.gov/documents/2020/05/01/2020-07419/21st-century-cures-act-interoperability-information-blocking-and-the-onc-health-it-certification">Final Rule for the 21st Century Cures Act</a>.</li>
 		<li>At present there is no explicit regulatory requirement for the use of these technologies in Da Vinci specifications.</li>
+		<li>However, to meet the statutes, regulations, and guiding principles above, consent directives and security labels <b>MAY</b> be considered and used.</li>
 		<li>Organizations which plan to take advantage of these additional capabilities are responsible for negotiating support for these mechanisms between trading partners. The FHIR implementation guide defining the recommended standard is the <a href="http://hl7.org/fhir/uv/security-label-ds4p">FHIR Data Segmentation for Privacy IG</a>.</li>
 	</ol>
 	
@@ -47,11 +48,10 @@
 
   <a name="protected"> </a>
 	<h3>Additionally Protected Information</h3>
-  <p>Additionally protected information may include items defined by Federal (e.g. 42 CFR Part 2), State (e.g. many states protect Substance Abuse, HIV diagnosis/treatment records, release of information on minors – note this is not an exhaustive list) statutes and regulations.  In addition, organizations may provide for additional protection for specific types of information that are deemed sensitive to the individual (e.g. elective abortion).  The following guidelines apply unless otherwise dictated by statute or regulation:</p>
+  <p>Additionally protected information may include items defined by Federal (e.g. 42 CFR Part 2), State (e.g. many states protect substance abuse disorder, HIV diagnosis/treatment records, release of information on minors – note this is not an exhaustive list) statutes and regulations.  In addition, organizations may provide for additional protection for specific types of information that are deemed sensitive to the individual (e.g. elective abortion).  The following guidelines apply unless otherwise dictated by statute or regulation:</p>
   <ol>
-    <li>Release of additionally protected information by documented patient request <b>SHALL</b> always be supported.</li>
+    <li>Where permitted by law and in accordance with legal requirements, release of additionally protected information <b>SHALL</b> always be supported.</li>
     <li>Release of the information without explicit request of the patient/member <b>SHALL</b> be based on organization policy consistent with Federal and State regulations. Examples are legal request for information and “break glass” to treat a patient that is unable to provide consent.</li>
-    <li>The above two statements assume that the additionally protected information is readily identifiable as additionally protected information or has been identified as such by the data creator and communicated to the organization that may be requested to supply the information.</li>
   </ol>
 
   <a name="contexts"> </a>
@@ -86,20 +86,27 @@
 
   <a name="tpo"> </a>
   <h4>Exchange of PHI for TPO (as defined by HIPAA)</h4>
-  <p>This include exchange between covered entities, by a covered entity with a third party (e.g. for Quality Reporting),  or a covered entity and the member/patient.</p>
+  <p>This includes exchange of PHI between:</p>
+  <ul>
+    <li>two covered entities,</li>
+    <li>a covered entity with a third party (e.g. for quality reporting), or</li>
+    <li>a covered entity and the member/patient.</li>
+  </ul>
   <br/>
   <p>In all cases, the Information Supplier (in accordance with HIPAA security and privacy rules):</p>
   <ol>
     <li>SHALL log all IDs, access rights, requests, and exchanges.</li>
-    <li>SHALL verify rights to have access to the member’s/patient’s record.</li>
+    <li>SHALL verify rights of the requestor to have access to the member’s/patient’s record.</li>
   </ol>
   <table border="1" width="80%" style="margin-left:auto; margin-right:auto">
-    <tr>
-      <td><b>Requesting Information</b></td>
-      <td><b>Information Supplier</b></td>
-      <td><b>Covered by HIPAA under</b></td>
-      <td><b>Declaration of Purpose of Use</b></td>
-    </tr>
+    <thead>
+      <tr>
+        <th><b>Requesting Information</b></th>
+        <th><b>Information Supplier</b></th>
+        <th><b>Covered by HIPAA under</b> (see regulations for details)</th>
+        <th><b>Automated Declaration of Purpose of Use on Request</b></th>
+      </tr>
+    </thead>
     <tr>
       <td>Patient/Member</td>
       <td>Covered Entity</td>
@@ -113,21 +120,21 @@
       <td>(need process)</td>
     </tr>
     <tr>
-    <td>Provider</td>
+      <td>Provider</td>
       <td>Payer</td>
       <td>TPO</td>
       <td>(need process)</td>
     </tr>
     <tr>
       <td>Payer</td>
-      <td>Payer</td>
-      <td>TPO</td>
+      <td>Payer/Provider</td>
+      <td>PO including Coordination of Care</td>
       <td>(need process)</td>
     </tr>
     <tr>
       <td>Other (e.g. CMS/NCQA)</td>
       <td>Provider/Payer</td>
-      <td>PO</td>
+      <td>PO (member authorization where required)</td>
       <td>(need process)</td>
     </tr>
   </table>
@@ -138,6 +145,6 @@
   <ol>
     <li>Both Covered Entity and BA are defined and scoped by HIPAA</li>
     <li>Requires a HIPAA compliant Business Associate Agreement (BAA)</li>
-    <li>BA inherits all the requirements and responsibilities of the Covered Entity</li>
+    <li>BA inherits all the requirements and responsibilities of the covered entity that are not reserved by the covered entity (e.g. disclosure reporting)</li>
   </ol>
 </div>

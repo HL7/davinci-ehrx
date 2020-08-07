@@ -6,7 +6,7 @@
 	<title value="HRex Coverage Profile"/>
 	<status value="active"/>
 	<experimental value="false"/>
-	<description value="The HRex Coverage Profile defines the constraints for representing a member's healthcare insurance information to the Payer.  This, sometimes together with the Patient referenced as beneficiary a payer to identify the member in their system."/>
+	<description value="The HRex Coverage Profile defines the constraints for representing a member's healthcare insurance information to the Payer.  Coverage instances complying with this profile, sometimes together with the Patient which this profile references via `beneficiary`, allows a payer to identify a member in their system."/>
 	<fhirVersion value="4.0.0"/>
 	<kind value="resource"/>
 	<abstract value="false"/>

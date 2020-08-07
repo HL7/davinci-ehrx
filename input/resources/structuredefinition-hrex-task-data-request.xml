@@ -3,7 +3,7 @@
 	<id value="hrex-task-data-request"/>
 	<url value="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-task-data-request"/>
 	<name value="HRexTaskDataRequest"/>
-	<title value="HRex Task Data Request"/>
+	<title value="HRex Task Data Request Profile"/>
 	<status value="active"/>
 	<experimental value="false"/>
 	<description value="This Task profile is used to solicit information from a system when direct query is not possible and human intervention might be required"/>
@@ -16,7 +16,7 @@
 	<differential>
 		<element id="Task">
 			<path value="Task"/>
-			<definition value="This Task profile allows asking for data to be delivered, possible with human intermediation"/>
+			<definition value="This Task profile is used to solicit information from a system when direct query is not possible and human intervention might be required"/>
 			<constraint>
         <key value="tdr-1"/>
         <severity value="error"/>

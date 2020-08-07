@@ -3,7 +3,7 @@
 	<id value="hrex-organization"/>
 	<url value="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-organization"/>
 	<name value="HRexOrganization"/>
-	<title value="HRex Organization"/>
+	<title value="HRex Organization Profile"/>
 	<status value="draft"/>
 	<description value="Additional Da Vinci constraints on organization - to represent either provider organizations or payers"/>
 	<fhirVersion value="4.0.0"/>

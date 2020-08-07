@@ -3,10 +3,10 @@
 	<id value="member-match"/>
 	<url value="http://hl7.org/fhir/us/davinci-hrex/OperationDefinition/member-match"/>
 	<name value="MemberMatch"/>
-	<title value="Da Vinci Find Member using Patient and Coverage Resources"/>
+	<title value="HRex Member Match Operation"/>
 	<status value="draft"/>
 	<kind value="operation"/>
-	<description value="The **$member-match** operation allows one Health Plan to retrieve a unique identifier for a Member from another Health Plan using a member's demographic and coverage information.  Use of this identifier can then be used to perform subsequent queries and operations."/>
+	<description value="The **$member-match** operation allows one health plan to retrieve a unique identifier for a member from another health plan using a member's demographic and coverage information.  This identifier can then be used to perform subsequent queries and operations."/>
 	<code value="member-match"/>
 	<resource value="Patient"/>
 	<system value="false"/>
@@ -19,7 +19,7 @@
 		<use value="in"/>
 		<min value="1"/>
 		<max value="1"/>
-		<documentation value="Parameter submitted by the New Plan **SHALL** contain US Core Patient containing Member demographics."/>
+		<documentation value="Parameter submitted by the new plan **SHALL** contain US Core Patient containing member demographics."/>
 		<type value="Resource"/>
 		<referencedFrom>
       <source value="OldCoverage"/>
@@ -35,7 +35,7 @@
 		<use value="in"/>
 		<min value="1"/>
 		<max value="1"/>
-		<documentation value="Parameter submitted by the New Plan **SHALL** contain Coverage details of prior health plan coverage provided by the member, typically from their Health Plan coverage card."/>
+		<documentation value="Parameter submitted by the new plan **SHALL** contain Coverage details of prior health plan coverage provided by the member, typically from their health plan coverage card."/>
 		<type value="Resource"/>
 	</parameter>
 	<parameter>
@@ -43,7 +43,7 @@
 		<use value="in"/>
 		<min value="1"/>
 		<max value="1"/>
-		<documentation value="Parameter submitted by the New Plan **SHALL** contain Coverage details of new or prospective health plan coverage provided by the new health plan based upon the member&#39;s enrollment."/>
+		<documentation value="Parameter submitted by the new plan **SHALL** contain Coverage details of new or prospective health plan coverage provided by the new health plan based upon the member&#39;s enrollment."/>
 		<type value="Resource"/>
 	</parameter>
 	<parameter>
@@ -51,7 +51,7 @@
 		<use value="out"/>
 		<min value="1"/>
 		<max value="1"/>
-		<documentation value="Parameter returned by the Old Plan resource **SHALL** contain the MemberPatient resource received from New Plan with the ADDITION of an identifier of type &quot;UMB&quot; representing the Unique identifier identifying the member at the Old Health Plan."/>
+		<documentation value="Parameter returned by the old plan resource **SHALL** contain the MemberPatient resource received from new plan with the ADDITION of an identifier of type &quot;UMB&quot; representing the unique identifier identifying the member of the old health plan."/>
 		<type value="Resource"/>
 		<referencedFrom>
       <source value="NewCoverage"/>
@@ -63,7 +63,7 @@
 		<use value="out"/>
 		<min value="1"/>
 		<max value="1"/>
-		<documentation value="Parameter returned by the Old Plan resource **SHALL** contain the NewCoverage record received from the New Plan."/>
+		<documentation value="Parameter returned by the old plan resource **SHALL** contain the NewCoverage record received from the new plan."/>
 		<type value="Resource"/>
 	</parameter>
 </OperationDefinition>
