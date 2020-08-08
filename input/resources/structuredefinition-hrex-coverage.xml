@@ -16,7 +16,7 @@
 	<differential>
 		<element id="Coverage">
 			<path value="Coverage"/>
-			<definition value="This is the Coverage profile which is used to provide insurance information for scheduling an appointment and or registering a patient."/>
+			<definition value="This is the Coverage profile which is used to provide insurance information for scheduling an appointment and/or registering a patient."/>
 			<mustSupport value="false"/>
 		</element>
 		<element id="Coverage.identifier">
