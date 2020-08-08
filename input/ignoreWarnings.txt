@@ -55,3 +55,4 @@ INFORMATION: StructureDefinition/hrex-practitioner: StructureDefinition: Validat
 INFORMATION: StructureDefinition/hrex-practitionerrole: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 INFORMATION: StructureDefinition/hrex-provenance: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 INFORMATION: StructureDefinition/hrex-task-data-request: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+INFORMATION: ValueSet/hrex-task-status: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet

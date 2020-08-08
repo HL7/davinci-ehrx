@@ -1,7 +1,7 @@
 
 The response from a failed $member-match is a "422 Unprocessable Entity Status Code".
 
-After a successful $member-match the new health plan **SHALL** then use the UMB provided by the old health plan in the Patient.identifer field in any subsequent transactions related to payer-to-payer exchange.
+After a successful $member-match the new health plan **SHALL** then use the UMB provided by the old health plan in the `Patient.identifier` field in any subsequent transactions related to payer-to-payer exchange.
 
 For example, in the Da Vinci PDex IG, the new health plan will subsequently use the UMB identifier to request the member’s health records. This can be done by querying the US Core FHIR profile endpoints which will be constrained to the identified member. Alternatively, the new health plan can perform a $everything operation to the Patient/{ID}/$everything operation endpoint to receive a bundle of the member’s health records.
 
@@ -19,3 +19,4 @@ An important objective of this specification is to ensure that a health plan ope
 
 #### Examples
 An example request (as POSTed when invoking the operation) can be found [here](Parameters-member-match-in.html) and an example response (as received in the HTTP response body after the operation processes) can be found [here](Parameters-member-match-out.html).
+

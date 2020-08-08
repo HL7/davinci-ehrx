@@ -23,6 +23,18 @@
         <human value="Must have exactly one input that is data-query or data-code"/>
         <expression value="input.type.where(coding.where(system='http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp' and (code='data-code' or code='data-query')).exists()).count()=1"/>
       </constraint>
+      <constraint>
+        <key value="tdr-2"/>
+        <severity value="error"/>
+        <human value="Task statusReason SHALL be populated if status is 'rejected' or 'failed'"/>
+        <expression value="(status = 'rejected' or status = 'failed') implies statusReason.exists()"/>
+      </constraint>
+      <constraint>
+        <key value="tdr-3"/>
+        <severity value="error"/>
+        <human value="Task output SHALL be populated if status is 'completed'"/>
+        <expression value="(status = 'completed') implies output.exists()"/>
+      </constraint>
     </element>
 		<element id="Task.basedOn">
 			<path value="Task.basedOn"/>
@@ -34,6 +46,16 @@
 			<path value="Task.status"/>
 			<mustSupport value="true"/>
 		</element>
+		<element id="Task.statusReason">
+			<path value="Task.statusReason"/>
+			<requirements value="Indicates why task failed or was rejected."/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Task.statusReason.text">
+			<path value="Task.statusReason.text"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
 		<element id="Task.businessStatus">
 			<path value="Task.businessStatus"/>
 			<short value="E.g. 'waiting on internal review'"/>
@@ -43,6 +65,7 @@
 		</element>
 		<element id="Task.businessStatus.text">
 			<path value="Task.businessStatus.text"/>
+			<min value="1"/>
 			<mustSupport value="true"/>
 		</element>
 		<element id="Task.intent">
