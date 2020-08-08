@@ -35,5 +35,5 @@ In general, the most important role to capture is "author".  If they are the onl
 * `onBehalfOf` **SHOULD NOT** be populated if RelatedPerson is acting on behalf of the Patient.  (Because that's the assumption and there's already a link to the Patient on that resource)
 * `onBehalfOf` **SHOULD NOT** be populated with an Organization if the agent is Practitioner - use PractitionerRole instead (even if it's a contained PractitionerRole)
 * `onBehalfOf` **SHOULD NOT** be populated with an Organization if the agent is PractitionerRole unless PractitionerRole is pointing to an organization and the onBehalfOf is different (i.e. Dr. Smith for Clinic A did something on behalf of clinic B)
-* It will be unusual for `onBehalfOf` to be populated if the agent is Patient or RelatedPerson
+* It is unusual for `onBehalfOf` to be populated if the agent is Patient or RelatedPerson
 * `onBehalfOf` **SHOULD NOT** be populated with an Organization if it is the same as Device.owner
