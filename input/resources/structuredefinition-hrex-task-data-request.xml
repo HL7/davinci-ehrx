@@ -45,6 +45,10 @@
 		<element id="Task.status">
 			<path value="Task.status"/>
 			<mustSupport value="true"/>
+			<binding>
+        <strength value="required"/>
+        <valueSet value="http://hl7.org/fhir/us/davinci-hrex/ValueSet/hrex-task-status"/>
+      </binding>
 		</element>
 		<element id="Task.statusReason">
 			<path value="Task.statusReason"/>
