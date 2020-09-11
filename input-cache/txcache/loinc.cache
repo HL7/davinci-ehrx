@@ -19,3 +19,14 @@ v: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "47039-3",
+  "display" : "Inpatient Admission history and physical note"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Hospital Admission history and physical note",
+  "severity" : "warning",
+  "error" : "The display \"Inpatient Admission history and physical note\" is not a valid display for the code {http://loinc.org}47039-3 - should be one of [\"Hospital Admission history and physical note\",\"Hosp Admit H&P note\"] (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------

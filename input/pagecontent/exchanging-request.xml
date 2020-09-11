@@ -220,6 +220,6 @@
     <li><a href="Task-query-complete.html">Completed Task</a></li>  
   </ul>
   <p>There's also an an example showing a completed Task that was soliciting documents of a particular type <a href="Task-document-complete.html">here</a>.</p>
-
+  <p>If receiving notifications using subscription, the content would look like <a href="Bundle-subscription-notification-with-data.html">this</a> for a query, or like <a href="Bundle-subscription-notification-with-document.html">this</a> for a document request in environments where the data can be directly pushed securely.  Alternatively, the information would be polled or retrieved in response to a subscription id notification with a response like <a href="Bundle-task-poll-response.html">this</a>.</p>
 
 </div>

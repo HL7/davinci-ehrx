@@ -1,0 +1,176 @@
+<Bundle xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R4/fhir-single.xsd">
+  <id value="subscription-notification-with-document"/>
+  <type value="history"/>
+  <timestamp value="2020-05-29T11:44:13.1882432-05:00"/>
+  <entry>
+    <fullUrl value="urn:uuid:f830abeb-7ff3-4494-bfd6-0d9a88d3319c"/>
+    <resource>
+      <Parameters>
+        <id value="f830abeb-7ff3-4494-bfd6-0d9a88d3319c"/>
+        <parameter>
+          <name value="subscription-url"/>
+          <valueUri value="https://example.org/fhir/r4/Subscription/task"/>
+        </parameter>
+        <parameter>
+          <name value="status"/>
+          <valueCode value="active"/>
+        </parameter>
+        <parameter>
+          <name value="type"/>
+          <valueCode value="event-notification"/>
+        </parameter>
+        <parameter>
+          <name value="subscription-event-count"/>
+          <valueUnsignedInt value="2"/>
+        </parameter>
+        <parameter>
+          <name value="bundle-event-count"/>
+          <valueUnsignedInt value="1"/>
+        </parameter>
+        <parameter>
+          <name value="subscription-topic-url"/>
+          <valueUri value="http://hl7.org/SubscriptionTopic/task"/>
+        </parameter>
+      </Parameters>
+    </resource>
+    <request>
+      <method value="GET"/>
+      <url value="https://example.org/fhir/r4/Subscription/task/$status"/>
+    </request>
+    <response>
+      <status value="200"/>
+    </response>
+  </entry>
+  <entry>
+    <fullUrl value="https://example.org/fhir/r4/Task/c94fb961-310c-41f1-a54f-fc5f2dba49ee"/>
+    <resource>
+      <Task>
+        <id value="c94fb961-310c-41f1-a54f-fc5f2dba49ee"/>
+        <status value="completed"/>
+        <intent value="order"/>
+        <code>
+          <coding>
+            <system value="http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp"/>
+            <code value="data-request"/>
+          </coding>
+        </code>
+        <for>
+          <reference value="http://example.org/ehr/fhir/Patient/pat1"/>
+        </for>
+        <authoredOn value="2020-07-30T20:07:15-06:00"/>
+        <requester>
+          <reference value="Organization/full"/>
+        </requester>
+        <owner>
+          <reference value="http://example.org/ehr/fhir/Organization/ehr"/>
+        </owner>
+        <reasonCode>
+          <text value="Support prior authorization decision-making"/>
+        </reasonCode>
+        <reasonReference>
+          <reference value="http://example.org/new-payer/fhir/Claim/123"/>
+        </reasonReference>
+        <input>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp"/>
+              <code value="data-code"/>
+            </coding>
+          </type>
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://loinc.org"/>
+              <code value="34108-1"/>
+            </coding>
+          </valueCodeableConcept>
+        </input>
+        <output>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp"/>
+              <code value="data-value"/>
+            </coding>
+          </type>
+          <valueReference>
+            <reference value="http://example.org/ehr/fhir/DocumentReference/727A23K5133"/>
+          </valueReference>
+        </output>
+        <output>
+          <type>
+            <coding>
+              <system value="http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp"/>
+              <code value="data-value"/>
+            </coding>
+          </type>
+          <valueReference>
+            <reference value="http://example.org/ehr/fhir/DocumentReference/287Q73J237"/>
+          </valueReference>
+        </output>
+      </Task>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="Task"/>
+    </request>
+    <response>
+      <status value="200"/>
+    </response>
+  </entry>
+  <entry>
+    <fullUrl value="https://example.org/fhir/r4/DocumentReference/287Q73J237"/>
+    <resource>
+      <DocumentReference>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <a href="http://localhost:9556/svc/fhir/Binary/1e404af3-077f-4bee-b7a6-a9be97e1ce32">Document: urn:oid:129.6.58.92.88336</a> undefined, created 24/12/2005
+          </div>
+        </text>
+        <status value="current"/>
+        <type>
+          <coding>
+            <system value="http://ihe.net/connectathon/classCodes"/>
+            <code value="History and Physical"/>
+            <display value="History and Physical"/>
+          </coding>
+        </type>
+        <category>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="47039-3"/>
+            <display value="Inpatient Admission history and physical note"/>
+          </coding>
+        </category>
+        <subject>
+          <reference value="http://example.org/ehr/fhir/Patient/pat1"/>
+        </subject>
+        <date value="2013-07-01T23:11:33+10:00"/>
+        <author>
+          <reference value="Practitioner/a4"/>
+        </author>
+        <description value="Physical"/>
+        <content>
+          <attachment>
+            <contentType value="text/plain"/>
+            <language value="en-US"/>
+            <url value="http://localhost:9556/svc/fhir/Binary/1e404af3-077f-4bee-b7a6-a9be97e1ce32"/>
+            <title value="Physical"/>
+            <creation value="2005-12-24"/>
+          </attachment>
+          <format>
+            <system value="urn:oid:1.3.6.1.4.1.19376.1.2.3"/>
+            <code value="urn:ihe:pcc:handp:2008"/>
+          </format>
+        </content>
+      </DocumentReference>
+    </resource>
+    <request>
+      <!-- Discussion needed about what the appropriate method is for content that was just referenced, not changed -->
+      <method value="GET"/>
+      <url value="DocumentReference"/>
+    </request>
+    <response>
+      <status value="200"/>
+    </response>
+  </entry>
+</Bundle>
