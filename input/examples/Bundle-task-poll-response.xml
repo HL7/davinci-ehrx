@@ -58,17 +58,6 @@
             </coding>
           </type>
           <valueReference>
-            <reference value="http://example.org/ehr/fhir/DocumentReference/727A23K5133"/>
-          </valueReference>
-        </output>
-        <output>
-          <type>
-            <coding>
-              <system value="http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp"/>
-              <code value="data-value"/>
-            </coding>
-          </type>
-          <valueReference>
             <reference value="http://example.org/ehr/fhir/DocumentReference/287Q73J237"/>
           </valueReference>
         </output>
