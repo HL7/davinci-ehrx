@@ -21,7 +21,7 @@
   <p>
     NOTE: This document focuses on exchanging information using FHIR but, in theory, the principles described here would apply equally well to equivalent exchange mechanisms using other standards.  For example, FHIR messaging would be like HL7 v2 and FHIR documents would be like HL7 CDA.  If using other standards, the set of architectural approaches to exchange are likely to be more limited than those available for FHIR.
   </p>
-  
+
   <a name="organization"> </a>
   <h3>Organization of this section</h3>
   <p>
@@ -106,7 +106,7 @@ shared in FHIR</li>
   <p>
     The size of the list of approaches (and the size of the decision tree diagram following) may seem overwhelming.  Remember that there is no need to support all these approaches or even most of them.  All of them are appropriate for use for <b>some</b> use cases.  However, systems (and implementation guides) only need to worry about the approaches relevant for their own needs.  Hopefully, this document will provide the necessary overview and guidance to allow the selection of the approach(es) that will best fit your implementation needs.
   </p>
-  
+
   <a name="approach-summary"> </a>
   <table class="grid">
     <thead>
@@ -389,12 +389,12 @@ shared in FHIR</li>
     <a style="color:gray" href="#tree">Return to diagram</a>
   </p>
   <a name="pull"> </a>
-  <h4>Consumer initiates? (B)</h4>
+  <h4>Consumer initiates?</h4>
   <p>
     The first consideration is whether the desired data should be 'pulled' or 'pushed'.  In the <i>data consumer</i>-initiating 'pull' scenario, the event that initiates the exchange of data occurs in the <i>data consumer</i> system.  This might be a user clicking a button, or some sort of internal event that triggers a need for data.  The <i>data consumer</i> system is then responsible for determining what data to retrieve and when it should be returned as well as for initiating the flow by communicating with the <i>data source</i>.
   </p>
   <p>
-    In the <i>data source</i>-initiating (or 'pull') exchange, the event that determines the need for data to flow occurs in the system that owns the data.  This might be driven by human action, the creation or change of the data to be shared, or some other system event that makes it necessary to make the <i>data consumer</i> aware of a specific set of data.
+    In the <i>data source</i>-initiating (or 'push') exchange, the event that determines the need for data to flow occurs in the system that owns the data.  This might be driven by human action, the creation or change of the data to be shared, or some other system event that makes it necessary to make the <i>data consumer</i> aware of a specific set of data.
   </p>
   <p>
     Notes:
