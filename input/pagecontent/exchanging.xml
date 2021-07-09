@@ -79,7 +79,7 @@ shared in FHIR</li>
         </li>
       </ol>
       <p>
-        Negotiation will be required to define what data will be sent and how it will be requested.
+        Negotiation will be required to define what data will be sent and how it will be requested.  Note: 'negotiation' means that technical discussion and agreement will be required but does not necessarily imply a need for contractual agreement.
       </p>
     </li>
     <li>
