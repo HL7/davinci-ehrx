@@ -38,7 +38,7 @@
     </element>
 		<element id="Task.basedOn">
 			<path value="Task.basedOn"/>
-			<short value="Also known as Member identifier"/>
+			<short value="Authorization for data request"/>
 			<requirements value="Indicates the order (ServiceRequest, CommunicationRequest, etc.) that authorizes the data request"/>
 			<mustSupport value="true"/>
 		</element>
@@ -183,7 +183,7 @@
       <path value="Task.input.value[x]"/>
       <short value="query value"/>
       <type>
-        <code value="string"/>      
+        <code value="string"/>
       </type>
       <mustSupport value="true"/>
     </element>
@@ -210,7 +210,7 @@
       <path value="Task.input.value[x]"/>
       <short value="query value"/>
       <type>
-        <code value="CodeableConcept"/>      
+        <code value="CodeableConcept"/>
       </type>
       <mustSupport value="true"/>
     </element>
@@ -247,7 +247,7 @@
       <short value="data reference"/>
       <comment value="The referenced data might be contained within the Task (if it doesn't have/shouldn't have independent persistence), but can also refer to data stored elsewhere - either on the owner's system or some other system.  Note that all returned data SHOULD comply with appropriate US-Core and/or Da Vinci profiles."/>
       <type>
-        <code value="Reference"/>      
+        <code value="Reference"/>
       </type>
       <mustSupport value="true"/>
     </element>
