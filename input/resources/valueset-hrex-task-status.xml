@@ -27,6 +27,9 @@
       <concept>
         <code value="completed"/>
       </concept>
+      <concept>
+        <code value="on-hold"/>
+      </concept>
     </include>
   </compose>
 </ValueSet>
