@@ -42,7 +42,7 @@
 	</telecom>
 	<telecom>
     <system value="email"/>
-    <value value="ronald.bone@newpayor.com"/>
+    <value value="ronald.bone@newpayer.com"/>
 	</telecom>
 	<telecom>
     <system value="pager"/>

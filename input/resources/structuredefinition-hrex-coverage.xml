@@ -47,7 +47,7 @@
 		<element id="Coverage.subscriberId">
 			<path value="Coverage.subscriberId"/>
 			<short value="Subscriber ID"/>
-			<requirements value="The subscriber Id is a number that is needed by the payor to associate the attestation with the member in their system."/>
+			<requirements value="The subscriber Id is a number that is needed by the payer to associate the attestation with the member in their system."/>
 			<max value="1"/>
 			<mustSupport value="true"/>
 		</element>

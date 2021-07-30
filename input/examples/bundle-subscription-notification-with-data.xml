@@ -53,7 +53,7 @@
             <total value="1"/>
             <link>
               <relation value="self"/>
-              <url value="http://example.org/new-payor/fhir/Condition?patient=Patient/pat1&amp;clinical-status=active&amp;code:below=http%3A%2F%2Fsnomed.info%2Fsct%7C73211009"/>
+              <url value="http://example.org/new-payer/fhir/Condition?patient=Patient/pat1&amp;clinical-status=active&amp;code:below=http%3A%2F%2Fsnomed.info%2Fsct%7C73211009"/>
             </link>
             <entry>
               <fullUrl value="http://local.fhir.org:960/r4/Condition/example"/>
