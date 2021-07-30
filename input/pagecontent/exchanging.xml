@@ -3,6 +3,11 @@
   - inclusion in the FHIR core specification - and the FHIR core specification doesn't support markdown-authored content.
   -->
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R4/fhir-single.xsd">
+  <blockquote class="stu-note">
+    <p>
+      This content will be moving into the FHIR core specification as part of R5.
+    </p>
+  </blockquote>
   <p>
     FHIR offers numerous architectural approaches for sharing data between systems.  Each approach has pros and cons.  The most appropriate approach depends on the circumstances under which data is exchanged.  This page provides an overview of each approach, with pros, cons and a decision tree to help guide choices about which approach best suits a specific set of circumstances.
   </p>
