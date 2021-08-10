@@ -73,7 +73,7 @@ shared in FHIR</li>
   <ul>
     <li>What approach(es) fall within the reasonable technical capabilities and development capacity of the systems that will be participating?</li>
     <li>What legacy solutions already exist and how easy will it be to migrate those solutions to the specified approach?</li>
-    <li>Are there regulations that mandate or prohibit particular approaches?</li>
+    <li>Are there regulations, business policies, or privacy and/or security concerns that mandate or prohibit particular approaches?</li>
     <li>What impact does the proposed solution have on performance/response time?</li>
     <li>Will the exchange mechanism allow appropriate constraint on data retrieved (whether enforced by data source, data consumer or both)?</li>
     <li>etc.</li>
