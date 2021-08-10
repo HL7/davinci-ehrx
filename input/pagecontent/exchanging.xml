@@ -62,7 +62,7 @@ shared in FHIR</li>
           <a href="exchanging-messaging.html">Exchanging with messaging</a>
         </li>
         <li>
-          <a href="exchanging-request.html">Exchanging with human intervention</a>
+          <a href="exchanging-request.html">Exchanges allowing human intervention</a>
         </li>
       </ul>
     </li>
@@ -426,13 +426,13 @@ shared in FHIR</li>
       <i>Data source</i>-initiated data flows may include expectation for behavior on the part of the receiver, while <i>data consumer</i>-initiated flows generally don’t impose any such expectations - the consumer decides what to do with the data they have asked for.</li>
     <li>Some <i>data consumers</i> may be reluctant/unable to initiate data transfer for legal/policy reasons. I.e. It is deemed acceptable to be pushed data, but not to pull it.  Typically, this stems from right of access/permissions concerns where only the <i>data source</i> is deemed to have authority as to what information should be shared and when.</li>
   </ul>
-  <p>If the <i>data consumer</i> will initiate, the next choice is whether <a href="#human">human intervention is required</a>.  If the trigger for exchange will be driven by the <i>data source</i>, the next decision is whether the need to share the data is <a href="#configured">configurable by the <i>data consumer</i>
+  <p>If the <i>data consumer</i> will initiate, the next choice is whether <a href="#human">human intervention might be required</a>.  If the trigger for exchange will be driven by the <i>data source</i>, the next decision is whether the need to share the data is <a href="#configured">configurable by the <i>data consumer</i>
     </a>.</p>
   <p>
     <a style="color:gray" href="#tree">Return to diagram</a>
   </p>
   <a name="human"> </a>
-  <h4>Human intervention?</h4>
+  <h4>Allows Human intervention?</h4>
   <p>
     When a <i>data consumer</i> asks for information from a <i>data source</i>, the next question is whether the request is purely at a system-to-system level where the request will be exclusively processed by software or whether there is the potential for humans to be involved in the preparation of the response.  Human involvement means that the request must arrive in a form that can be persisted until a human can look at it and with sufficient contextual and descriptive information for a human to understand what is needed.  Human involvement in responding to a request for data might occur for many reasons:
   </p>
@@ -501,6 +501,9 @@ shared in FHIR</li>
   </p>
   <p>
     Task is used to explicitly ask for an action to be performed.  Sometimes it is used together with a Request resource, however it can also be used on its own to ask for execution of a simple action - such as requesting someone fill out a form or return a specified piece of information.  Because Task can be used to ask for an action to be performed and can, itself, track acceptance or rejection of the request, progress status of the request and eventually be updated to point to the 'output' of the request, it saves on overhead compared with using CommunicationRequest which (for any of the afore-mentioned functions) would need to be paired with Task.  As such, Task is generally preferred when there is not a need for a formal authorization and when the capabilities of Task to describe the data requested are as sufficient as those available on CommunicationRequest.  Even when authorization is needed, Task may still be relevant as the authorization may span multiple exchanges covering a broad set of data, while Task allows initiation of a single transfer of very specific information.
+  </p>
+  <p>
+    Note that even if CommunicationRequest is necessary for formal authorization, Task will quite likely still be involved in the workflow of actually seeking the CommunicationRequest to be fulfilled, as some form of <a href="{{site.data.fhir.path}}workflow-communications.html">workflow initiation mechanism</a>, and Task is involved in many of these.
   </p>
   <p>
     Details on using Task can be found <a href="exchanging-request.html#task">here</a>.  Details on using CommunicationRequest can be found <a href="exchanging-request.html#request">here</a>.  Note that, regardless of whether Task or CommunicationRequest are selected, the asynchronous response providing the requested data (or some of the requested data or an outright refusal to deliver the requested data) will be handled as a <a href="#configured">Data source-initiated (Push)</a> event and the architectural approach for that delivery will also need to be selected.  (Generally, the mechanism will be one of the <a href="#configured">Configured by consumer</a> options as the <i>data consumer</i> is the system that truly initiated the transfer and therefore should decide what happens to the data.  However, if an operation or message is used to transmit the Task or CommunicationRequest, then the response would come back as a <a href="exchanging-messaging.html">message</a> or an <a href="exchanging-operation.html">operation response</a>.
