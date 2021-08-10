@@ -67,6 +67,15 @@ shared in FHIR</li>
       </ul>
     </li>
   </ul>
+  <a name="general"> </a>
+  <h3>General Considerations</h3>
+  <p>The guidance provided here focuses on specific architectural trade-offs between different FHIR exchange approaches and provides guidance on what approaches are best used in particular circumstances, all other things being equal.  However, the reality is that it is rare for "all other things" to be equal.  Designers will need to take into account other factors, including:</p>
+  <ul>
+    <li>What approach(es) fall within the reasonable technical capabilities and development capacity of the systems that will be participating</li>
+    <li>What legacy solutions already exist and how easy will it be to migrate those solutions to the specified approach</li>
+    <li>Are there regulations that mandate or prohibit particular approaches</li>
+    <li>etc.</li>
+  </ul>
   <a name="approaches"> </a>
   <h3>Overview of approaches</h3>
   <p>
