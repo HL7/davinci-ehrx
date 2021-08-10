@@ -706,6 +706,7 @@ shared in FHIR</li>
     <li>The resource id of the relevant record(s) can be transmitted, but not the actual resource(s)</li>
     <li>No data at all is exchanged beyond a notification that "new data meets the subscription criteria"</li>
   </ol>
+  <p>(In all cases the notification indicates the subscription topic the notification is for and how many new events have occurred since the last notification and other metadata such as whether there have been errors.)</p>
   <p>
     The first approach is most efficient because no subsequent action is required by the <i>data consumer</i> to retrieve the data.  It is received directly.  However, this approach comes with a few challenges:
   </p>
