@@ -311,7 +311,7 @@ shared in FHIR</li>
         <td>High</td>
         <td>Low</td>
         <td>The <i>data consumer</i> uses a local SPARQL engine to manipulate triples accessed by hitting a <i>data source's</i> RDF endpoint</td>
-        <td>A payer has a knowledge repository that, together with various ontologies, allows the payer to reason about patients who would likely benefit from (and have better outcomes/long-term costs) if they were on a new treatment.  The payer uses SPARQL to access the EHR's clinical data to identify such patients and make recommendations to the patient's capitated care provider.</td>
+        <td>A payer has a knowledge repository that, together with various ontologies, allows the payer to reason about patients who would likely benefit from (and have better outcomes/long-term costs) if they were on a new treatment.  The payer uses SPARQL to access the EHR's clinical data to identify such patients and make recommendations to the patient's capitated care provider (Note: This is an example of how this data exchange mechanism could theoretically be used. It is not intended to define how any particular IG will define data access.).</td>
       </tr>
       <tr>
         <th>
