@@ -698,7 +698,7 @@ shared in FHIR</li>
   <ul>
     <li>Because the actual (and potentially sensitive data) is shared at a time when no specific user is asking for it, <i>data source</i> must determine the 'permission' of the <i>data consumer</i> to access the data without a user token and outside the bounds of the usual query mechanism.</li>
     <li>The <i>data consumer</i> gets the 'default' set of information (typically the bare resource without any related resource) with no ability to refine the data shared.</li>
-    <li>The channel used to convey the subscription response must be a secure one - at least if the data being transported is sensitive or could be problematic if seen or manipulated by an intermediary en route.</li>
+    <li>The channel used to convey the subscription response would typically need to be a secure one, unless the architects of the exchange have concluded that exposing the data to manipulation or disclosure by an intermediary would not result in negative consequences.</li>
     <li>The <i>data consumer</i> must be capable of receiving and processing the data at an arbitrary time - even when the application is busy doing other things.  This requires a greater degree of application sophistication.</li>
   </ul>
   <p>
