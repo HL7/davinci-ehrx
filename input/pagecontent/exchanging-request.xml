@@ -44,7 +44,7 @@
   </p>
   <a name="cr-post-a4"> </a>
   <p>
-    <b>Step 4:</b> While the data has been delivered, nothing indicates to <i>data consumer</i> that the request is complete.  As well, it is possible there is no data available or that the request has been refused.  Posting the Communication resource allows closing this loop.  However, closing the loop by formally creating a Communication instance as part of the patient record  necessarily always appropriate.  (Such resources will rarely be created for data shared by the <i>data consumer</i> directly querying the <i>data source</i>'s system.
+    <b>Step 4:</b> While the data has been delivered, nothing indicates to <i>data consumer</i> that the request is complete.  As well, it is possible there is no data available or that the request has been refused.  Posting the Communication resource allows closing this loop.  However, closing the loop by formally creating a Communication instance as part of the patient record is not necessarily always appropriate.  (Such resources will rarely be created for data shared by the <i>data consumer</i> directly querying the <i>data source</i>'s system.
   </p>
 
   <a name="cr-post-communication"> </a>
