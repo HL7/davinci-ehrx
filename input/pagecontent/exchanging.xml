@@ -83,7 +83,7 @@ shared in FHIR</li>
           'Medium' indicates that the approach has a reasonable chance of utility for at least some other use-cases, though additional development and/or negotiation or configuration may be required.
         </li>
         <li>
-          'Low' indicates that the solution is one-off and support for additional use-cases using the same mechanism is almost certain to require additional development.
+          'Low' indicates that the solution is generally use-case specific and support for additional use-cases using the same mechanism is almost certain to require additional development.
         </li>
       </ol>
       <p>
