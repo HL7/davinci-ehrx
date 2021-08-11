@@ -27,6 +27,12 @@
     The guidance provided in this section is focused on the choice of technical exchange mechanism.  It does not cover higher level design decisions, such as what sorts of exchanges should occur, what parties they should occur between, what points in the workflow the exchange should happen in, etc.  These decisions should be made prior to trying to apply the guidance here.
   </p>
   <p>
+  This section focuses on the technical alternatives that enable exchange between data sources and data consumers.  All such exchanges, and the decisions about the mechanisms used, will also need to take into account the creation of and adherence to regulations, contracts, business arrangements and other conventions and ensure that the information shared is 'appropriate' to the use-case.  Implementers and designers may want to consult legal counsel as part of their design process.
+  </p>
+  <p>
+  This section also does not address expectations around security or authentication (except where specific exchange mechanisms have specific tradeoffs around what security or authentication mechanisms are possible).  Designs will need to ensure that appropriate security mechanisms are in place for whatever data is shared.  (Refer to the [security checklist] for additional considerations in this space.)
+  </p>
+  <p>
     NOTE: This document focuses on exchanging information using FHIR but, in theory, the principles described here would apply equally well to equivalent exchange mechanisms using other standards.  For example, FHIR messaging would be like HL7 v2 and FHIR documents would be like HL7 CDA.  If using other standards, the set of architectural approaches to exchange are likely to be more limited than those available for FHIR.
   </p>
 
@@ -706,6 +712,9 @@ shared in FHIR</li>
   </p>
   <p>
     The final approach is the least work for the <i>data source</i> initially - it does not even have to identify the impacted records, only that something has happened.  However, it is more work subsequently as the <i>data consumer</i> must use appropriate query parameters to find the relevant data - it cannot search by id.  Other benefits are like the second approach.
+  </p>
+  <p>
+  Data consumers should limit the request for information to that required to address the specific, stated purpose of the data exchange or prearranged, agreed- upon purposes. For instance, trading partners will use data use agreements (DUAs), business associate agreements (BAAs) and/or contracts per the Da Vinci Guiding Principles.
   </p>
   <p>
     Details on how to use subscriptions with push notifications are <a href="exchanging-subscription.html#push">here</a>.  Subscriptions where the initial notification must be followed by a query (whether the notification was a resource id or nothing at all) are described <a href="exchanging-subscription.html#pull">here</a>.
