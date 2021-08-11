@@ -1,20 +1,36 @@
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R4/fhir-single.xsd">
   <p>
-    Custom FHIR <a href="{{site.data.fhir.path}}operations.html">operations</a> allow a pre-defined set of data to be passed into a function call and a pre-defined set of data to be passed back.  They can be used to specify filters not possible with any of the 'standard' FHIR search languages or to generate data that does not already exist.
+    Custom FHIR <a href="{{site.data.fhir.path}}operations.html">operations</a> allow a pre-defined set of data to be passed into a function call and a pre-defined set of data to be passed back.  They can be used to exchange information in two ways:
+  </p>
+  <ul>
+    <li><a href="#retrieval">Retrieval operations</a> can be used to solicit information from a <i>data source</i></li>
+    <li><a href="#process">Process operations</a> allow data to be passed to a <i>data consumer</i> for 'processing'</li>
+  </ul>
+  <p>
+    Either type of operation can be invoked in either <a href="#sync">synchronous</a> or <a href="#async">asynchronous</a> mode.
+  </p>
+  <a name="retrieval"> </a>
+  <h3>Retrieval Operations</h3>
+  <p>
+    Retrieval operations allow a <i>data consumer</i> to request information from a <i>data source</i>.  They can be used to specify filters not possible with any of the 'standard' FHIR search languages and can also generate data that does not already exist.  
   </p>
   <p>
   The arguments to an operation that solicits data from a <i>data source</i> <b>could</b> be a resource such as <a href="{{site.data.fhir.path}}communicationrequest.html">CommunicationRequest</a> or <a href="{{site.data.fhir.path}}task.html">Task</a>.  It could also be any arbitrary resource or set of resources if the intended behavior were to 'match' characteristics of the specified resource(s).  However, more typically, data retrieval operations will just take a series of parameters that determine the data to be found or generated.  The results of such an operation would commonly be a <a href="{{site.data.fhir.path}}bundle.html#searchset">search-set</a> <a href="{{site.data.fhir.path}}">Bundle</a>, however it could be any resource or even a <a href="{{site.data.fhir.path}}parameters.html">Parameters</a> instance containing a single data element or an arbitrary operation-specific collection of data elements.
   </p>
   <p>
-    Operations to that provide information from a <i>data source</i> to a <i>data consumer</i> will typically have <code>OperationDefinition.affectsState</code> set to false.  However, operations that generate new data and cause that data to be persisted in the <i>data source</i> would be considered to affect state and set the flag to true.  Such operations must be invoked using POST, as must any operations that take parameters of resources or complex types that are not expressible on a URL.  Non-state-affecting searches that can be expressed via the URL can use GET.
+    Operations to that provide information from a <i>data source</i> to a <i>data consumer</i> will typically have <code>OperationDefinition.affectsState</code> set to 'false'.  However, operations that generate new data and cause that data to be persisted in the <i>data source</i> would be considered to affect state and set the flag to true.  Such operations must be invoked using POST, as must any operations that take parameters of resources or complex types that are not expressible on a URL.  Non-state-affecting searches that can be expressed via the URL can use GET.
   </p>
   <p>
     Operations to gather data can be very narrow in scope, tuned to ask a very specific question, or they can be very broad allowing a wide variety of parameters or even strings expressing queries in some formal language to be executed.  Narrow definitions mean that each new type of data will require a new query - and custom code written for all applications that support it.  Broad definitions mean that the bar is relatively high to declare support for the operation - as there is no good way in FHIR to declare 'partial' support for an operation.
   </p>
+  <a name="process"> </a>
+  <h3>Process Operations</h3>
   <p>
-    There are two modes an operation can be invoked using - <a href="#sync">synchronous</a> or <a href="#async">asynchronous</a>.
+    Process operations involve a <i>data source</i> invoking an operation on a <i>data consumer</i> passing a set of information for the consumer to 'process'.  I.e. consume the information, forward the information or otherwise do useful things with it.  The specific expectations are defined as part of the description of the operation.  The payload of the operation might be a single resource, a Bundle of resources or a Parameters instance with a collection of named parameters which might be resources, individual data elements or a mixture of them.  Such operations will generally have the <code>OperationDefinition.affectsState</code> set to 'true' as processing the same information more than once could potentially result in duplicate storage or delivery of data.  However, in some cases, repeated invocation might not be problematic and affectsState could be 'false'.
   </p>
-  
+  <p>
+    Because the server processing the operation will need to understand *how* to process the data, these types of operations will tend to be specific rather than generic.  Also, because there's no expectation for a response to the operation other than an HTTP 200 indicating successful receipt of the data (or alternatively an error code potentially accompanied by an OperationOutcome), these operations will typically be <a href="#sync">synchronous</a>.
+  </p>
   <a name="sync"> </a>
   <h3>Synchronous operations</h3>
   <p>

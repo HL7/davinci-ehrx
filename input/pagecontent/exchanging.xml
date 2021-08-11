@@ -29,7 +29,6 @@
   <p>
     NOTE: This document focuses on exchanging information using FHIR but, in theory, the principles described here would apply equally well to equivalent exchange mechanisms using other standards.  For example, FHIR messaging would be like HL7 v2 and FHIR documents would be like HL7 CDA.  If using other standards, the set of architectural approaches to exchange are likely to be more limited than those available for FHIR.
   </p>
-
   <a name="organization"> </a>
   <h3>Organization of this section</h3>
   <p>
@@ -362,21 +361,39 @@ shared in FHIR</li>
       </tr>
       <tr>
         <th>
-          <a href="exchanging-operation.html">FHIR Operation</a>
+          <a href="exchanging-operation.html#retrieval">FHIR Retrieval Operation</a>
         </th>
         <td>Low</td>
         <td>Moderate</td>
         <td>The <i>data consumer</i> invokes a custom operation on the <i>data source</i> requesting information by parameters on the URL and/or in the body and the response to the operation (synchronous or asynchronous) contains the requested data.</td>
+        <td>A payer wishes to receive a summary of average inpatient stay durations for a particular type of service.  It invokes the operation and the EHR calculates the current average for the past year and returns the result.</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="exchanging-operation.html#process">FHIR 'Process' Operation</a>
+        </th>
+        <td>Low</td>
+        <td>Moderate</td>
+        <td>The <i>data source</i> invokes a custom operation on the <i>data consumer</i> passing information it wishes to convey in the body of the operation or as references, asking the consumer to 'process' the information.  Processing may or may not result in some or all of the information being stored or otherwise consumed and acted upon.</td>
         <td>An EHR wishes to submit a prior authorization via FHIR, but regulations require that the payer receive the information over X12.  The EHR invokes an operation on an intermediary that passes relevant prior authorization resources to an intermediary that takes care of the X12 conversion</td>
       </tr>
       <tr>
         <th>
-          <a href="exchanging-messaging.html">FHIR Messaging</a>
+          <a href="exchanging-messaging.html#query">FHIR Messaging Queries</a>
         </th>
         <td>Low</td>
         <td>Moderate</td>
         <td>The <i>data consumer</i> sends a FHIR message to the <i>data source</i> requesting information and the data source responds (synchronously or asynchronously) with a message containing the requested data.</td>
         <td>A payer is interacting with an EHR financial system that uses a v2 interface.  Data is converted from v2 into a FHIR message to ensure the data flows to the payer in a familiar form.</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="exchanging-messaging.html#notify">FHIR Messaging Notifications</a>
+        </th>
+        <td>Low</td>
+        <td>Moderate</td>
+        <td>The <i>data source</i> sends a FHIR message to the <i>data consumer</i> providing information related to some sort of event that has occurred.</td>
+        <td>An EHR notifies a payer that a patient has been admitted and provides additional information, such as patient condition, etc.</td>
       </tr>
     </tbody>
   </table>
@@ -399,17 +416,6 @@ shared in FHIR</li>
     <b>FHIR exchange decision tree</b>
   </div>
   <a name="criteria"> </a>
-  <a name="connect"> </a>
-  <h4>Direct connection?</h4>
-  <p>
-    The first question is whether the <i>data consumer</i> and <i>data source</i> can talk to each other directly.  In some interoperability environments the two systems may not have any means of knowing the network address of the other and all communication must happen through an intermediary.  In some cases, the communication can happen via a network proxy where a request is automatically forwarded to a secondary location (potentially determined by the content of the request).  In some environments, there may even be multiple levels of proxying, though this can limit the ability of the system to perform in a <a href="#synchronous">synchronous</a> manner.  From the perspective of this decision tree, proxied connections are still treated as a 'direct' connection.  Both direct and proxied communications proceed through the tree to the next decision point of whether the <a href="#pull">consumer initiates</a>.
-  </p>
-  <p>
-    However, in other environments, information exchanges are 'routed'.  The initiator of a communication specifies a logical identifier of the desired target system and passes the communication into a network of intermediaries which then route the communication so that it eventually reaches the appropriate network address.  In this routed form of exchange, the only option for exchange is <a href="exchanging-messaging.html">messaging</a>.
-  </p>
-  <p>
-    <a style="color:gray" href="#tree">Return to diagram</a>
-  </p>
   <a name="pull"> </a>
   <h4>Consumer initiates?</h4>
   <p>
@@ -426,8 +432,22 @@ shared in FHIR</li>
       <i>Data source</i>-initiated data flows may include expectation for behavior on the part of the receiver, while <i>data consumer</i>-initiated flows generally don’t impose any such expectations - the consumer decides what to do with the data they have asked for.</li>
     <li>Some <i>data consumers</i> may be reluctant/unable to initiate data transfer for legal/policy reasons. I.e. It is deemed acceptable to be pushed data, but not to pull it.  Typically, this stems from right of access/permissions concerns where only the <i>data source</i> is deemed to have authority as to what information should be shared and when.</li>
   </ul>
-  <p>If the <i>data consumer</i> will initiate, the next choice is whether <a href="#human">human intervention might be required</a>.  If the trigger for exchange will be driven by the <i>data source</i>, the next decision is whether the need to share the data is <a href="#configured">configurable by the <i>data consumer</i>
+  <p>If the <i>data consumer</i> will initiate, the next choice is whether there is a <a href="#connect-pull">direct connection</a> between source and consumer.  If the trigger for exchange will be driven by the <i>data source</i>, the next decision is whether the need to share the data is <a href="#configured">configurable by the <i>data consumer</i>
     </a>.</p>
+  <p>
+    <a style="color:gray" href="#tree">Return to diagram</a>
+  </p>
+  <a name="connect-pull"> </a>
+  <h4>Direct connection? (pull)</h4>
+  <p>
+    The next question is whether the <i>data consumer</i> and <i>data source</i> can talk to each other directly.  In some interoperability environments the two systems may not have any means of knowing the network address of the other and all communication must happen through an intermediary.  In some cases, the communication can happen via a network proxy where a request is automatically forwarded to a secondary location (potentially determined by the content of the request).  In some environments, there may even be multiple levels of proxying, though this can limit the ability of the system to perform in a <a href="#synchronous">synchronous</a> manner.  From the perspective of this decision tree, proxied connections are still treated as a 'direct' connection.  Both direct and proxied communications proceed through the tree to the next decision point of whether <a href="#human">human intervention might be required</a>.
+  </p>
+  <p>
+    However, in other environments, information exchanges are 'routed'.  The initiator of a communication specifies a logical identifier of the desired target system and passes the communication into a network of intermediaries which then route the communication so that it eventually reaches the appropriate network address.  In this routed form of exchange, the only option for exchange is <a href="exchanging-messaging.html#query">query-based messaging</a>.
+  </p>
+  <p>
+    NOTE: There is work underway as part of the U.S. FAST initiative to define an additional layer on top of FHIR RESTful interfaces that will support indirect delivery over RESTful interfaces.  More about the project can be found <a href="https://confluence.hl7.org/display/FHIRI/FHIR+at+Scale+%28FAST%29%3A+Exchange+with+or+without+Intermediaries">here</a>.  This may reduce the need for message-based approaches in the future.
+  </p>
   <p>
     <a style="color:gray" href="#tree">Return to diagram</a>
   </p>
@@ -451,7 +471,18 @@ shared in FHIR</li>
   <p>
     Interfaces that allow for human intervention are intrinsically asynchronous, though in some cases the asynchronous response may come quickly.  In general, automated interfaces are preferred to those allowing for human intervention.  First, if human intervention is required, that has a significant cost due to the expense of human time.  Second, human-intervention mechanisms involve more technical overhead (more layers, more data structures) which creates higher implementation and testing costs.  Finally, the lack of support for synchronous access means the solution is not a good fit for certain use-cases, which may force multiple parallel access mechanisms (one for synchronous with no human intervention and one asynchronous with no human intervention).
   </p>
-  <p>If the exchange will potentially require human intervention, the next decision is whether or not <a href="#formal">formal authorization is required</a>.  If the exchange will be fully automated, the next decision is whether the data being sought is <a href="#pre-exists">pre-existing</a>.</p>
+  <p>If the exchange will potentially require human intervention, the next decision is whether or not <a href="#formal">formal authorization is required</a>.  If the exchange will be fully automated, the next decision is whether <a href="#hooks">CDS Hooks is a candidate</a>.</p>
+  <p>
+    <a style="color:gray" href="#tree">Return to diagram</a>
+  </p>
+  <a name="hooks"> </a>
+  <h4>CDS Hooks? (E)</h4>
+  <p>
+    The <a href="https://cds-hooks.hl7.org">CDS Hooks</a> specification should be used if the driver for the exchange is a user action within the <i>data consumer</i> where the user is visually interacting with that system and the desired results will be clinical decision support guidance from the <i>data source</i> about that current action.  The specific requests and responses are not expressed as FHIR, but the data describing the current action and additional contextual information generally will be.  CDS Hooks also allows the <i>data source</i> to access contextual information from the <i>data consumer</i> to provide information necessary for the decision support logic.  This internal data retrieval by the decision support engine would use <a href="#rest-search">RESTful search</a> or possibly one of the search alternatives beneath it.
+  </p>
+  <p>
+    If hooks are to be used, the <a href="https://cds-hooks.hl7.org">CDS Hooks spec</a> provides details on the flow.  The hook service (<i>data source</i>) may take on the role of <i>data consumer</i> and use <a href="#pre-exists">automated</a> means of retrieving data to support the decision support it provides. If CDS Hooks is not a good fit, the next question to consider is whether the data to be retrieved is <a href="#pre-exists">pre-existing</a>.
+  </p>
   <p>
     <a style="color:gray" href="#tree">Return to diagram</a>
   </p>
@@ -497,13 +528,13 @@ shared in FHIR</li>
     There are two main mechanisms in FHIR for requesting data from a human being (or potentially from a human being): <a href="{{site.data.fhir.path}}communicationrequest.html">CommunicationRequest</a> and <a href="{{site.data.fhir.path}}task.html">Task</a>.
   </p>
   <p>
-    CommunicationRequest is used to represent proposals, plans and formal authorizations (orders) for data to flow.  A CommunicationRequest would be appropriate for use when there is a need for a formal order, along the same lines as a prescription, lab order, referral, etc.  CommunicationRequest, like other <a href="{{site.data.fhir.path}}request.html">Request</a> resources cannot ask for action on its own.  Instead, it must leverage one of the FHIR <a href="{{site.data.fhir.path}}workflow-communications.html">workflow communication patterns</a> to seek fulfillment of the specified request.
+    CommunicationRequest is used to represent proposals, plans and formal authorizations (orders) for data to be exchanged.  A CommunicationRequest would be appropriate for use when there is a need for a formal order, along the same lines as a prescription, lab order, referral, etc., but in this case indicating that certain information must flow to a <i>data consumer</i>.  CommunicationRequest, like other <a href="{{site.data.fhir.path}}request.html">Request</a> resources cannot ask for action on its own.  Instead, it must leverage one of the FHIR <a href="{{site.data.fhir.path}}workflow-communications.html">workflow communication patterns</a> to seek fulfillment of the specified request
   </p>
   <p>
     Task is used to explicitly ask for an action to be performed.  Sometimes it is used together with a Request resource, however it can also be used on its own to ask for execution of a simple action - such as requesting someone fill out a form or return a specified piece of information.  Because Task can be used to ask for an action to be performed and can, itself, track acceptance or rejection of the request, progress status of the request and eventually be updated to point to the 'output' of the request, it saves on overhead compared with using CommunicationRequest which (for any of the afore-mentioned functions) would need to be paired with Task.  As such, Task is generally preferred when there is not a need for a formal authorization and when the capabilities of Task to describe the data requested are as sufficient as those available on CommunicationRequest.  Even when authorization is needed, Task may still be relevant as the authorization may span multiple exchanges covering a broad set of data, while Task allows initiation of a single transfer of very specific information.
   </p>
   <p>
-    Note that even if CommunicationRequest is necessary for formal authorization, Task will quite likely still be involved in the workflow of actually seeking the CommunicationRequest to be fulfilled, as some form of <a href="{{site.data.fhir.path}}workflow-communications.html">workflow initiation mechanism</a>, and Task is involved in many of these.
+    Note that an authorization (e.g. CommunicationRequest) by itself is not sufficient for information to flow, and in some cases, a single authorization may be associated with numerous folows over an extended period of time.  The trigger for actual exchange will some form of <a href="{{site.data.fhir.path}}workflow-communications.html">workflow initiation mechanism</a>.  Frequently, that will be Task, meaning that CommunicationRequest may end up being used in conjuction with Task.
   </p>
   <p>
     Details on using Task can be found <a href="exchanging-request.html#task">here</a>.  Details on using CommunicationRequest can be found <a href="exchanging-request.html#request">here</a>.  Note that, regardless of whether Task or CommunicationRequest are selected, the asynchronous response providing the requested data (or some of the requested data or an outright refusal to deliver the requested data) will be handled as a <a href="#configured">Data source-initiated (Push)</a> event and the architectural approach for that delivery will also need to be selected.  (Generally, the mechanism will be one of the <a href="#configured">Configured by consumer</a> options as the <i>data consumer</i> is the system that truly initiated the transfer and therefore should decide what happens to the data.  However, if an operation or message is used to transmit the Task or CommunicationRequest, then the response would come back as a <a href="exchanging-messaging.html">message</a> or an <a href="exchanging-operation.html">operation response</a>.
@@ -621,17 +652,8 @@ shared in FHIR</li>
   <p>
     <a style="color:gray" href="#tree">Return to diagram</a>
   </p>
-  <a name="hooks"> </a>
-  <h4>CDS Hooks? (E)</h4>
-  <p>
-    The <a href="https://cds-hooks.hl7.org">CDS Hooks</a> specification should be used if the driver for the exchange is a user action within the <i>data consumer</i> where the user is visually interacting with that system and the desired results will be clinical decision support guidance from the <i>data source</i> about that current action.  The specific requests and responses are not expressed as FHIR, but the data describing the current action and additional contextual information generally will be.  CDS Hooks also allows the <i>data source</i> to access contextual information from the <i>data consumer</i> to provide information necessary for the decision support logic.  This internal data retrieval by the decision support engine would use <a href="#rest-search">RESTful search</a> or possibly one of the search alternatives beneath it.
-  </p>
-  <p>
-    If hooks are to be used, the <a href="https://cds-hooks.hl7.org">CDS Hooks spec</a> provides details on the flow.  The hook service (<i>data source</i>) may take on the role of <i>data consumer</i> and use <a href="#pre-exists">automated</a> means of retrieving data to support the decision support it provides. If CDS Hooks is not a good fit, the next option to consider is <a href="#graphql">GraphQL</a>.
-  </p>
-  <p>
-    <a style="color:gray" href="#tree">Return to diagram</a>
-  </p>
+
+
   <a name="graphql"> </a>
   <h4>GraphQL searchable?</h4>
   <p>
@@ -665,11 +687,20 @@ shared in FHIR</li>
     Another consideration is that all the consumer-configured data sharing approaches give the <i>data consumer</i> full control over what happens to the data once received (i.e. what, if anything, gets persisted and where).  However, most of the sharing mechanisms that do not provide consumer control leave the decision of what data is persisted by the <i>data consumer</i> up to the <i>data source</i>.
   </p>
   <p>
-    If the pushed data will be configured by the <i>data consumer</i>, the next question is whether <a href="#subscription">subscription</a> is viable.  If the <i>data consumer</i> will not be involved in determining what data gets pushed, the next question is whether the <i>data source</i> will <a href="#source-persist">control persistence</a>.
+    If the pushed data will be configured by the <i>data consumer</i>, the next question is whether <a href="#subscription">subscription</a> is viable.  If the <i>data consumer</i> will not be involved in determining what data gets pushed, the next question is whether there is a <a href="#connect-push">direct connection</a> between <i>data source</i> and <i>data consumer</i>.
   </p>
   <p>
     <a style="color:gray" href="#tree">Return to diagram</a>
   </p>
+  <a name="connect-push"> </a>
+  <h4>Direct connection? (push)</h4>
+  <p>
+    This consideration is similar to the one for <a href="#connect-pull">pull</a> interactions - can the <i>data consumer</i> and <i>data source</i> talk to each other directly.  The decsion points are the same, however, the outcome of the choices is sligtly different.  If direct or proxied communications are possible, the next consideration is whether the <i>data source</i> will <a href="#source-persist">direct persistence</a>.  If communications must be routed, the only option for exchange is <a href="exchanging-messaging.html#notify">notification-based messaging</a>.
+  </p>
+  <p>
+    <a style="color:gray" href="#tree">Return to diagram</a>
+  </p>
+
   <a name="subscription"> </a>
   <h4>Subscription capability?</h4>
   <p>
@@ -859,7 +890,14 @@ shared in FHIR</li>
     If the principle reason for using messaging is to gain access to the routing behavior (because the <i>data consumer</i> and <i>data source</i> cannot talk to each other directly), it is possible to define custom messages that emulate the behaviors of the other exchange mechanisms, wrapped in the messaging infrastructure to allow routed delivery.  I.e. If messaging is selected only for routing purposes, it may be relevant to loop through the tree again to determine an interoperability approach that should be wrapped by the messaging exchange mechanism.
   </p>
   <p>
-    If the business case is more suitable to using messaging, details on the messaging approach can be found <a href="exchanging-messaging.html">here</a>.  Otherwise, details on operations can be found <a href="exchanging-operation.html">here</a>, though with operations there is also a need to determine whether support will be <a href="#synchronous">synchronous or asynchronous</a>.
+    There are separate pages that describe <a href="exchanging-operation.html">operations</a> and <a href="exchanging-messaging.html">messaging</a>, however there are also sections within those that are related specifically to the use of operations and messaging in 'pull' vs. 'push' situations:
+  </p>
+  <ul>
+    <li>Pull operations or 'retrieval' operations are described <a href="exchanging-operation.html#retrieval">here</a>, while query-type messaging is described <a href="exchanging-messaging.html#query">here</a></li>
+    <li>Push operations or 'processing' operations are described <a href="exchanging-operation.html#process">here</a>, while notification-type messaging is described <a href="exchanging-messaging.html#notify">here</a></li>
+  </ul>
+  <p>
+    Note: With both messaging and operations there is also a need to determine whether support will be <a href="#synchronous">synchronous or asynchronous</a>.
   </p>
   <p>
     <a style="color:gray" href="#tree">Return to diagram</a>

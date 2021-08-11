@@ -1,0 +1,32 @@
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "34108-1"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Outpatient Note",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "34108-1"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Outpatient Note",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "47039-3",
+  "display" : "Inpatient Admission history and physical note"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Hospital Admission history and physical note",
+  "severity" : "warning",
+  "error" : "The display \"Inpatient Admission history and physical note\" is not a valid display for the code {http://loinc.org}47039-3 - should be one of [Hospital Admission history and physical note, Hosp Admit H&P note, 临床文档型, 临床文档, 文档, 文书, 医疗文书, 临床医疗文书 发现是一个原子型临床观察指标，并不是作为印象的概括陈述。体格检查、病史、系统检查及其他此类观察指标的属性均为发现。它们的标尺对于编码型发现可能是名义型，而对于叙述型文本之中所报告的发现，则可能是叙述型。, 发现物, 所见, 结果, 结论 文档本体, 临床文档本体, 文档本体, 文书本体, 医疗文书本体, 临床医疗文书本体 时刻, 随机, 随意, 瞬间 未加明确说明的角色 病院, 院 笔记, 按语, 注释, 说明, 票据, 单据, 证明书, Documentazione dell''ontologia Erogazione prescrizione di ricovero: accettazione, Osservazione Punto nel tempo (episodio) Ruolo non specificato] (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------

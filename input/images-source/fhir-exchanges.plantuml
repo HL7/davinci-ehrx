@@ -4,7 +4,7 @@ skinparam activityBackgroundColor palegreen
 
 start
 if ([[#pull Consumer\ninitiates?]]) then (yes (pull))
-  if ([[#connectpull Direct\nconnection?\n(pull)]]) then (yes)
+  if ([[#connect-pull Direct\nconnection?\n(pull)]]) then (yes)
     if ([[#human Human\nintervention?]]) then (no)
       (A)
       note left:Automated
@@ -135,7 +135,7 @@ if ([[#configured Configured by\nconsumer?]]) then (yes)
     endif
   endif
 else (no)
-  if ([[#connectpull Direct\nconnection?\n(push)]]) then (yes)
+  if ([[#connect-push Direct\nconnection?\n(push)]]) then (yes)
     if ([[#source-persist Data source directs\nconsumer persistence?]]) then (yes)
       if ([[#group-store Persist as\na group?]]) then (no)
         if ([[#group-transmit Group\ntransmission?]]) then (no)
@@ -181,8 +181,8 @@ endif
 if () then
   (H)
   note left:Msg or op pull?
-  if ([[#messagepull Is\nmessage-like?]]) then (no)
-    :[[exchanging-operation.html#idempotent FHIR\nIdempotent\nOperation]];
+  if ([[#message Is\nmessage-like?]]) then (no)
+    :[[exchanging-operation.html#retrieval FHIR\nRetrieval\nOperation]];
     (I)
     note left:Async?
     if ([[#synchronous Synchronous?]]) then (yes)
@@ -195,14 +195,14 @@ if () then
   else (yes)
     (J)
     note left:Messaging Query
-    :[[exchanging-messaging.html#pull FHIR\nMessaging]];
+    :[[exchanging-messaging.html#query FHIR\nMessaging]];
     stop
   endif
 else
   (K)
   note left:Msg or op push?
-  if ([[#messagepush Is\nmessage-like?]]) then (no)
-    :[[exchanging-operation.html#full FHIR POST\nOperation]];
+  if ([[#message Is\nmessage-like?]]) then (no)
+    :[[exchanging-operation.html#process FHIR 'process'\nOperation]];
     note right:async?
     detach
   else (yes)
