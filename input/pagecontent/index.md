@@ -66,7 +66,7 @@ Initial development of this IG was performed by **Lisa Nelson** - Max MD, with a
 
 IG refactoring and updates for the current release was performed by **Lloyd McKenzie** - Gevity Consulting, with assistance from **Russ Buchanan**, **Theresia Edgar** and **Malia Moore**, also of Gevity.
 
-**Mark Scrimshire** - Newwave and the **Mitre** team provided invaluable assistance with connectathons and reference implementations.
+**Mark Scrimshire** - Newwave and the **MITRE** team provided invaluable assistance with connectathons and reference implementations.
 
 Special thanks go to the numerous Da Vinci members who have participated on conference calls and reviews over the last two years and those who participated in the previous ballot of this IG, as well as those who are participating in this one!
 
