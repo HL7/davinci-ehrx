@@ -93,7 +93,7 @@
     <li>a covered entity and the member/patient.</li>
   </ul>
   <br/>
-  <p>In all cases, the Information Supplier (in accordance with HIPAA security and privacy rules):</p>
+  <p>In all cases, the Information Supplier systems (in accordance with HIPAA security and privacy rules):</p>
   <ol>
     <li>SHALL log all IDs, access rights, requests, and exchanges.</li>
     <li>SHALL verify rights of the requestor to have access to the member’s/patient’s record.</li>
