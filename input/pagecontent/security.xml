@@ -40,7 +40,7 @@
 		<ol style="list-style-type: lower-alpha;">
 			<li>the <a href="http://docs.smarthealthit.org">SMART on FHIR Framework</a> ,</li>
 			<li>mutually authenticated TLS ,</li>
-			<li>the ONC FHIR At Scale Taskforce (FAST) security tiger team recommended solutions, or </li>
+			<li>the ONC FHIR At Scale Taskforce (FAST) security tiger team recommended solutions, once approved by an accredited standards development organization, or </li>
 			<li>the OAuth Server to Server Authentication as defined in the <a href="https://build.fhir.org/ig/HL7/us-bulk-data">Bulk Data exchange IG</a>.</li>
 		</ol></li>
 	</ol>
