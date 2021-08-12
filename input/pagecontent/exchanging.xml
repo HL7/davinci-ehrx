@@ -92,12 +92,12 @@ shared in FHIR</li>
           'Medium' indicates that the approach has a reasonable chance of utility for at least some other use-cases, though additional development and/or negotiation or configuration may be required.
         </li>
         <li>
-          'Low' indicates that the solution is generally use-case specific and support for additional use-cases using the same mechanism is almost certain to require additional development.
+          'Low' indicates that the solution is generally use-case specific and support for additional use-cases using the same mechanism is almost certain to require additional development.		   
+        Negotiation will be required to define what data will be sent and how it will be requested.  Note: 'negotiation' means that technical discussion and agreement will be required but does not necessarily imply a need for contractual agreement.
+      
         </li>
       </ol>
-      <p>
-        Negotiation will be required to define what data will be sent and how it will be requested.  Note: 'negotiation' means that technical discussion and agreement will be required but does not necessarily imply a need for contractual agreement.
-      </p>
+     
     </li>
     <li>
       Adoption indicates whether or not systems that have implemented FHIR for data exhange are likely to support the approach, where:
