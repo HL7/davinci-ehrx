@@ -15,7 +15,7 @@
   </ol>
 
   <a name="guidance"> </a>
-	<h3>FHIR Security and Implementation Guidance</h3>
+	<h3>FHIR Clinical Safety, Security and Implementation Guidance</h3>
   <p>
     All FHIR Implementation Guides <b>SHOULD</b> follow the FHIR Security guidance and FHIR Implementer’s Safety guidance as defined in the  relevant FHIR  specification (e.g. Release 4.1.0) where applicable and not superseded by this Section or specific IG requirements.</p>
   <ol>
