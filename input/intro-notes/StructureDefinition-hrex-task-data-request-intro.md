@@ -7,5 +7,7 @@ The Task supports two approaches to data sharing:
 
 The content resulting from the request might be conveyed by reference or contained within the Task - and can be any sort of FHIR resource at all (and, using DocumentReference or Binary, can include non-FHIR content as well).
 
+When a task is complete but yields no information (empty search results), an empty search-set Bundle will be returned. However, if searching is performed by document code, the result will be a 'failed' status with a statusReason.text indicating that no matching documents existed.
+
 Other Da Vinci IGs may further refine this profile to further refine the request mechanism and/or to constrain the location or permitted content of the returned data.
 
