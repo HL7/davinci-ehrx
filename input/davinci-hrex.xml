@@ -279,7 +279,12 @@
         <nameUrl value="security.html"/>
         <title value="Security and Privacy"/>
         <generation value="html"/>
+		 <page>
+		<nameUrl value="davinci-guiding-principles.html"/>
+        <title value="Da Vinci Guiding Principles"/>
+        <generation value="html"/>
       </page>
+	  </page>
       <page>
         <nameUrl value="smart-app-reg.html"/>
         <title value="Dynamic Registration for SMART Apps"/>

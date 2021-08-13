@@ -49,6 +49,7 @@
 <page key="exchanging" name="Approaches to Exchanging FHIR Data"/>
 <page key="artifacts" name="Artifact List"/>
 <page key="conformance" name="Conformance Expectations"/>
+<page key="davinci-guiding-principles" name="Da Vinci Guiding Principles"/>
 <page key="downloads" name="Downloads"/>
 <page key="smart-app-reg" name="Dynamic Registration for SMART Apps"/>
 <page key="exchanging-rest" name="Exchanging with FHIR REST"/>
