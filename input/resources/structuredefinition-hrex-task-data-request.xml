@@ -88,6 +88,12 @@
 			</patternCodeableConcept>
 			<mustSupport value="true"/>
 		</element>
+		<element id="Task.focus">
+            <path value="Task.focus"/>
+            <short value="What task is acting on"/>
+            <min value="0"/>
+            <max value="0"/>
+		</element>
 		<element id="Task.for">
 			<path value="Task.for"/>
 			<short value="Member being queried"/>
