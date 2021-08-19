@@ -52,11 +52,11 @@
 <page key="davinci-guiding-principles" name="Da Vinci Guiding Principles"/>
 <page key="downloads" name="Downloads"/>
 <page key="smart-app-reg" name="Dynamic Registration for SMART Apps"/>
+<page key="exchanging-request" name="Exchanges allowing human intervention"/>
 <page key="exchanging-rest" name="Exchanging with FHIR REST"/>
 <page key="exchanging-operation" name="Exchanging with FHIR operations"/>
 <page key="exchanging-search" name="Exchanging with FHIR search"/>
 <page key="exchanging-subscription" name="Exchanging with FHIR subscription"/>
-<page key="exchanging-request" name="Exchanging with human intervention"/>
 <page key="exchanging-messaging" name="Exchanging with messaging"/>
 <page key="exchanging-polling" name="Exchanging with polling"/>
 <page key="fhir" name="FHIR Introduction"/>
