@@ -8,8 +8,10 @@
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
 <artifact id="Bundle/subscription-notification-with-document" key="Bundle-subscription-notification-with-document" name=""/>
-<artifact id="Parameters/member-match-in" key="Parameters-member-match-in" name="$member-match example request"/>
-<artifact id="Parameters/member-match-out" key="Parameters-member-match-out" name="$member-match example response"/>
+<artifact id="Parameters/member-match-in" key="Parameters-member-match-in" name="$member-match payer example request"/>
+<artifact id="Parameters/member-match-out" key="Parameters-member-match-out" name="$member-match payer example response"/>
+<artifact id="Parameters/member-match-in-provider" key="Parameters-member-match-in-provider" name="$member-match provider example request"/>
+<artifact id="Parameters/member-match-out-provider" key="Parameters-member-match-out-provider" name="$member-match provider example response"/>
 <artifact id="SearchParameter/hrex-coverage-identifier" key="SearchParameter-hrex-coverage-identifier" name="Coverage identifier Search Parameter"/>
 <artifact id="SearchParameter/hrex-coverage-patient" key="SearchParameter-hrex-coverage-patient" name="Coverage patient Search Parameter"/>
 <artifact id="SearchParameter/hrex-coverage-payor" key="SearchParameter-hrex-coverage-payor" name="Coverage payor Search Parameter"/>

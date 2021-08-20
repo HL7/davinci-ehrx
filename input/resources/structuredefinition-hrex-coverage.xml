@@ -65,6 +65,7 @@
 		</element>
 		<element id="Coverage.payor">
 			<path value="Coverage.payor"/>
+			<comment value="... When sending payer, it may either be a reference to a record stored on a mutually accessible registry, or the Reference.display and Reference.identifier elements can be used to convey the payer's name and identifer."/>
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-organization"/>

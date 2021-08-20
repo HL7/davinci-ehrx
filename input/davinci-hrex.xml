@@ -83,18 +83,18 @@
     </resource>
     <resource>
       <reference>
-        <reference value="Parameters/member-match-in-practitioner"/>
+        <reference value="Parameters/member-match-in-provider"/>
       </reference>
-      <name value="$member-match practitioner example request"/>
-      <description value="A Parameters instance showing what the input to the $member-match operation would look like when initiated by a practitioner system"/>
+      <name value="$member-match provider example request"/>
+      <description value="A Parameters instance showing what the input to the $member-match operation would look like when initiated by a provider system"/>
       <exampleCanonical value="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-parameters-member-match-in"/>
     </resource>
     <resource>
       <reference>
-        <reference value="Parameters/member-match-out-practitioner"/>
+        <reference value="Parameters/member-match-out-provider"/>
       </reference>
-      <name value="$member-match practitioner example response"/>
-      <description value="A Parameters instance showing what the result of a $member-match operation would look like when initiated by a practitioner system"/>
+      <name value="$member-match provider example response"/>
+      <description value="A Parameters instance showing what the result of a $member-match operation would look like when initiated by a provider system"/>
       <exampleCanonical value="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-parameters-member-match-out"/>
     </resource>
     <resource>

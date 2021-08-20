@@ -43,25 +43,6 @@
       "resource": {
         "resourceType": "Coverage",
         "id": "9876B1",
-        "contained": [
-          {
-            "resourceType": "Organization",
-            "id": "payer",
-            "identifier": [
-              {
-                "system": "http://hl7.org/fhir/sid/us-npi",
-                "value": "9876543210"
-              }
-            ],
-            "active": true,
-            "name": "Old Health Plan",
-            "endpoint": [
-              {
-                "reference": "http://example.org/old-payer/fhir"
-              }
-            ]
-          }
-        ],
         "identifier": [
           {
             "system": "http://example.org/old-payer",
@@ -78,7 +59,11 @@
         },
         "payor": [
           {
-            "reference": "#payer"
+            "identifier": {
+              "system": "http://hl7.org/fhir/sid/us-npi",
+              "value": "9876543210"
+            },
+            "display": "Old Health Plan"
           }
         ],
         "class": [
@@ -134,25 +119,6 @@
       "resource": {
         "resourceType": "Coverage",
         "id": "AA87654",
-        "contained": [
-          {
-            "resourceType": "Organization",
-            "id": "payer",
-            "identifier": [
-              {
-                "system": "http://hl7.org/fhir/sid/us-npi",
-                "value": "0123456789"
-              }
-            ],
-            "active": true,
-            "name": "New Health Plan",
-            "endpoint": [
-              {
-                "reference": "http://example.org/new-payer/fhir"
-              }
-            ]
-          }
-        ],
         "identifier": [
           {
             "system": "http://example.org/new-payer/identifiers/coverage",
@@ -165,7 +131,11 @@
         },
         "payor": [
           {
-            "reference": "#payer"
+            "identifier": {
+              "system": "http://hl7.org/fhir/sid/us-npi",
+              "value": "0123456789"
+            },
+            "display": "New Health Plan"
           }
         ]
       }
