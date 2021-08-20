@@ -48,7 +48,7 @@
     <element id="Parameters.parameter:newCoverage">
       <path value="Parameters.parameter"/>
       <sliceName value="newCoverage"/>
-      <min value="1"/>
+      <min value="0"/>
       <max value="1"/>
       <mustSupport value="true"/>
     </element>
