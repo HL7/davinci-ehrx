@@ -1,7 +1,7 @@
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R4/fhir-single.xsd">
   <blockquote class="note-to-balloters">
     <p>
-      This page is not complete.  It does not include IGs other than US Core and HRexIt will be update closer to publication when it is expected there will be more Da Vinci IGs that are in a 'final' state.  The values shown are intended to give balloters a sense of how the tables will work.
+      This page is not complete.  It does not include IGs other than US Core and HRex. It will be update closer to publication when it is expected there will be more Da Vinci IGs that are in a 'final' state.  The values shown are intended to give balloters a sense of how the tables will work.
     </p>
   </blockquote>
   <p>
@@ -62,8 +62,101 @@
         </td>
         <td/>
       </tr>
-      <tr>
+	     <tr>
         <td>
+          <a href="{{site.data.fhir.path}}appointment.html">Appointment</a>
+        </td>
+        <td>
+          <b>CRD</b>
+        </td>
+        <td>
+        <a href="https://hl7.org/fhir/us/davinci-crd/STU1/StructureDefinition-profile-appointment.html">Appointment</a>
+        </td>
+        <td>
+          CRD
+        </td>
+        <td/>
+      </tr>
+	     <tr>
+        <td rowspan="7">
+          <a href="{{site.data.fhir.path}}bundle.html">Bundle</a>
+        </td>
+        <td rowspan="4">
+          <b>PAS</b>
+        </td>
+        <td>
+        <a href="https://hl7.org/fhir/us/davinci-pas/STU1/StructureDefinition-profile-pas-inquiry-request-bundle.html">PAS Inquiry Request Bundle</a>
+        </td>
+        <td>
+          PAS
+        </td>
+        <td/>
+      </tr>
+	   <tr>
+        <td>
+        <a href="https://hl7.org/fhir/us/davinci-pas/STU1/StructureDefinition-profile-pas-inquiry-response-bundle.html">PAS Inquiry Response Bundle</a>
+        </td>
+        <td>
+          PAS
+        </td>
+        <td/>
+      </tr>
+	    <tr>
+        <td>
+        <a href="https://hl7.org/fhir/us/davinci-pas/STU1/StructureDefinition-profile-pas-request-bundle.html">PAS Request Bundle</a>
+        </td>
+        <td>
+          PAS
+        </td>
+        <td/>
+      </tr>
+	  	    <tr>
+        <td>
+        <a href="https://hl7.org/fhir/us/davinci-pas/STU1/StructureDefinition-profile-pas-response-bundle.html">PAS Response Bundle</a>
+        </td>
+        <td>
+          PAS
+        </td>
+        <td/>
+      </tr>
+	  <tr>
+        <td>
+          <b>DEQM</b>
+        </td>
+        <td>
+        <a href="https://hl7.org/fhir/us/davinci-deqm/STU3/StructureDefinition-gaps-bundle-deqm.html">DEQM Gaps In Care Bundle Profile</a>
+        </td>
+        <td>
+          DEQM
+        </td>
+        <td/>
+      </tr>
+	    <tr>
+        <td>
+          <b>Alerts</b>
+        </td>
+        <td>
+        <a href="https://hl7.org/fhir/us/davinci-alerts/STU1/StructureDefinition-notifications-bundle.html">Da Vinci Notifications Bundle Profile</a>
+        </td>
+        <td>
+          Alerts
+        </td>
+        <td/>
+      </tr>
+	   <tr>
+        <td>
+          <b>PCDE</b>
+        </td>
+        <td>
+        <a href="https://hl7.org/fhir/us/davinci-pcde/STU1/StructureDefinition-profile-pcde-bundle.html">PCDE Coverage Transition Bundle Profile</a>
+        </td>
+        <td>
+          PCDE
+        </td>
+        <td/>
+      </tr>
+      <tr>
+        <td rowspan="2">
           <a href="{{site.data.fhir.path}}careplan.html">CarePlan</a>
         </td>
         <td>
@@ -76,6 +169,18 @@
           HRex<a href="#any"><sup>†</sup></a>
         </td>
         <td/>
+      </tr>
+	      <tr>
+        <td>
+          <b>PCDE</b>
+        </td>
+        <td>
+        <a href="https://hl7.org/fhir/us/davinci-pcde/STU1/StructureDefinition-profile-careplan.html">PCDE Coverage Transition CarePlan Profile</a>
+        </td>
+        <td>
+          PCDE
+        </td>
+        <td>This is based on US Core CarePlan profile.</td>
       </tr>
       <tr>
         <td>
@@ -92,8 +197,128 @@
         </td>
         <td/>
       </tr>
-      <tr>
+	   <tr>
+        <td rowspan="5">
+          <a href="{{site.data.fhir.path}}claim.html">Claim</a>
+        </td>
+        <td rowspan="5">
+          <b>PAS</b>
+        </td>
         <td>
+          <a href="https://hl7.org/fhir/us/davinci-pas/STU1/StructureDefinition-profile-claim.html">PAS Claim</a>
+        </td>
+        <td>
+          PAS, PCDE
+        </td> 
+		<td/>
+      </tr>
+	   <tr>
+        <td>
+          <a href="https://hl7.org/fhir/us/davinci-pas/STU1/StructureDefinition-profile-claim-inquiry.html">PAS Claim Inquiry</a>
+        </td>
+        <td>
+          PAS
+        </td> 
+		<td/>
+      </tr>
+	  <tr>
+        <td>
+          <a href="https://hl7.org/fhir/us/davinci-pas/STU1/StructureDefinition-profile-claiminquiryresponse.html">PAS Claim Inquiry Response</a>
+        </td>
+        <td>
+          PAS
+        </td> 
+		<td/>
+      </tr>
+	  <tr>
+        <td>
+          <a href="https://hl7.org/fhir/us/davinci-pas/STU1/StructureDefinition-profile-claimresponse.html">PAS Claim Response</a>
+        </td>
+        <td>
+          PAS, PCDE
+        </td> 
+		<td/>
+      </tr>
+	  <tr>
+        <td>
+          <a href="https://hl7.org/fhir/us/davinci-pas/STU1/StructureDefinition-profile-claim-update.html">PAS Claim Update</a>
+        </td>
+        <td>
+          PAS
+        </td> 
+		<td>This is based on PAS Claim profile.</td>
+      </tr>
+	   <tr>
+        <td>
+          <a href="{{site.data.fhir.path}}claimresponse.html">ClaimResponse</a>
+        </td>
+        <td>
+          <b>CRD</b>
+        </td>
+        <td>
+          <a href="https://hl7.org/fhir/us/davinci-crd/STU1/StructureDefinition-profile-claimresponse.html">ClaimResponse</a>
+        </td>
+        <td>
+          CRD
+        </td>
+        <td/>
+      </tr>
+	  	  <tr>
+        <td rowspan="2">
+          <a href="{{site.data.fhir.path}}communicationrequest.html">CommunicationRequest</a>
+        </td>
+        <td>
+          <b>PAS</b>
+        </td>
+        <td>
+          <a href="https://hl7.org/fhir/us/davinci-pas/STU1/StructureDefinition-profile-communicationrequest.html">PAS CommunicationRequest</a>
+        </td>
+        <td>
+          PAS
+        </td>
+        <td/>
+      </tr>
+	   <tr>
+        <td>
+          <b>CRD</b>
+        </td>
+        <td>
+          <a href="https://hl7.org/fhir/us/davinci-crd/STU1/StructureDefinition-profile-communicationrequest.html">CommunicationRequest</a>
+        </td>
+        <td>
+          CRD
+        </td>
+        <td/>
+      </tr>
+	    <tr>
+        <td rowspan="2">
+          <a href="{{site.data.fhir.path}}composition.html">Composition</a>
+        </td>
+        <td>
+          <b>DEQM</b>
+        </td>
+        <td>
+          <a href="https://hl7.org/fhir/us/davinci-deqm/STU3/StructureDefinition-gaps-composition-deqm.html">DEQM Gaps In Care Composition Profile</a>
+        </td>
+        <td>
+          DEQM
+        </td>
+        <td/>
+      </tr>
+	   <tr>
+        <td>
+          <b>PCDE</b>
+        </td>
+        <td>
+          <a href="https://hl7.org/fhir/us/davinci-pcde/STU1/StructureDefinition-profile-composition.html">PCDE Coverage Transition Composition Profile</a>
+        </td>
+        <td>
+          PCDE
+        </td>
+        <td/>
+      </tr>
+      <tr>
+        <td rowspan="2">
           <a href="{{site.data.fhir.path}}condition.html">Condition</a>
         </td>
         <td>
@@ -103,12 +328,24 @@
           <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-condition.html">US Core Condition Profile</a>
         </td>
         <td>
-          HRex<a href="#any"><sup>†</sup></a>
+          HRex<a href="#any"><sup>†</sup></a>, CRD, PCDE
         </td>
         <td/>
       </tr>
-      <tr>
+	  <tr>
         <td>
+          <b>Alerts</b>
+        </td>
+        <td>
+          <a href="https://hl7.org/fhir/us/davinci-alerts/STU1/StructureDefinition-adt-notification-condition.html">Da Vinci Admit/Transfer/Discharge Notification Condition Profile</a>
+        </td>
+        <td>
+          Alerts
+        </td>
+        <td>This is based on US Core Condition profile.</td>
+      </tr>
+      <tr>
+        <td rowspan="7">
           <a href="{{site.data.fhir.path}}coverage.html">Coverage</a>
         </td>
         <td>
@@ -118,12 +355,96 @@
           <a href="StructureDefinition-hrex-coverage.html">HRex Coverage</a>
         </td>
         <td>
-          HRex
+          HRex, PDex, PCDE
         </td>
         <td>This is a candidate for US-core migration, though Coverage is not currently tied to patient data sharing requirements</td>
-      </tr>
+      </tr> 
       <tr>
         <td>
+          <b>PAS</b>
+        </td>
+        <td>
+          <a href="https://hl7.org/fhir/us/davinci-pas/STU1/StructureDefinition-profile-coverage.html">PAS Coverage</a>
+        </td>
+        <td>
+          PAS
+        </td>
+        <td/>
+      </tr>	 
+  <tr>
+        <td rowspan="2">
+          <b>CRD</b>
+        </td>
+        <td>
+          <a href="https://hl7.org/fhir/us/davinci-crd/STU1/StructureDefinition-profile-coverage.html">Coverage</a>
+        </td>
+        <td>
+          CRD
+        </td>
+        <td/>
+      </tr>	
+ <tr>
+        <td>
+          <a href="https://hl7.org/fhir/us/davinci-crd/STU1/StructureDefinition-profile-coverage-deident.html">CoverageDeident</a>
+        </td>
+        <td>
+          CRD
+        </td>
+        <td/>
+      </tr>	
+ <tr>
+        <td>
+          <b>DEQM</b>
+        </td>
+        <td>
+          <a href="http://hl7.org/fhir/us/davinci-deqm/STU3/StructureDefinition-coverage-deqm.html">DEQM Coverage Profile</a>
+        </td>
+        <td>
+          DEQM
+        </td>
+        <td>This is based on QI-Core Coverage profile.</td>
+      </tr>	
+	   <tr>
+        <td>
+          <b>Alerts</b>
+        </td>
+        <td>
+          <a href="https://hl7.org/fhir/us/davinci-alerts/STU1/StructureDefinition-adt-notification-coverage.html">Da Vinci Admit/Transfer/Discharge Notification Coverage Profile</a>
+        </td>
+        <td>
+          Alerts
+        </td>
+       <td>This is based on HRex Coverage profile.</td>
+      </tr>	
+	  <tr>
+        <td>
+          <b>ATR</b>
+        </td>
+        <td>
+          <a href="https://hl7.org/fhir/us/davinci-atr/STU1/StructureDefinition-atr-coverage.html">Davinci ATR Coverage</a>
+        </td>
+        <td>
+          ATR
+        </td>
+        <td/>
+      </tr>	
+  <tr>
+        <td>
+          <a href="{{site.data.fhir.path}}detectedissue.html">DetectedIssue</a>
+        </td>
+        <td>
+          <b>DEQM</b>
+        </td>
+        <td>
+          <a href="https://hl7.org/fhir/us/davinci-deqm/STU3/StructureDefinition-gaps-detectedissue-deqm.html">DEQM Gaps In Care Detected Issue Profile</a>
+        </td>
+        <td>
+          DEQM
+        </td>
+        <td/>
+      </tr>	  
+      <tr>
+        <td rowspan="4">
           <a href="{{site.data.fhir.path}}device.html">Device</a>
         </td>
         <td>
@@ -137,6 +458,69 @@
         </td>
         <td/>
       </tr>
+	   <tr>
+        <td>
+          <b>CRD</b>
+        </td>
+        <td>
+          <a href="https://hl7.org/fhir/us/davinci-crd/STU1/StructureDefinition-profile-device.html">Device</a>
+        </td>
+        <td>
+          CRD
+        </td>
+        <td/>
+      </tr>	
+	     <tr>
+        <td>
+          <b>PDex</b>
+        </td>
+        <td>
+          <a href="http://hl7.org/fhir/us/davinci-PDex/STU1/StructureDefinition-PDex-device.html">PDex Device</a>
+        </td>
+        <td>
+          PDex
+        </td>
+        <td/>
+      </tr>	
+	   <tr>
+        <td>
+          <b>Quality Measure</b>
+        </td>
+        <td>
+          <a href="http://hl7.org/fhir/us/cqfmeasures/STU2/StructureDefinition-device-softwaresystem-cqfm.html">CQFM Device</a>
+        </td>
+        <td>
+          DEQM
+        </td>
+        <td/>
+      </tr>
+	  <tr>
+        <td rowspan="2">
+          <a href="{{site.data.fhir.path}}devicerequest.html">DeviceRequest</a>
+        </td>
+        <td>
+          <b>PAS</b>
+        </td>
+        <td>
+          <a href="https://hl7.org/fhir/us/davinci-pas/STU1/StructureDefinition-profile-devicerequest.html">PAS Device Request</a>
+        </td>
+        <td>
+         PAS
+        </td>
+        <td/>
+      </tr>
+	   <tr>
+        <td>
+          <b>CRD</b>
+        </td>
+        <td>
+          <a href="https://hl7.org/fhir/us/davinci-crd/STU1/StructureDefinition-profile-devicerequest.html">DeviceRequest</a>
+        </td>
+        <td>
+          CRD
+        </td>
+        <td/>
+      </tr>	
       <tr>
         <td rowspan="2">
           <a href="{{site.data.fhir.path}}diagnosticreport.html">DiagnosticReport</a>
@@ -148,7 +532,7 @@
           <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-diagnosticreport-lab.html">US Core DiagnosticReport Profile for Laboratory Results Reporting</a>
         </td>
         <td>
-          HRex
+          HRex, PCDE
         </td>
         <td/>
       </tr>
@@ -157,7 +541,7 @@
           <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-diagnosticreport-note.html">US Core DiagnosticReport Profile for Report and Note exchange</a>
         </td>
         <td>
-          HRex<a href="#any"><sup>†</sup></a>
+          HRex<a href="#any"><sup>†</sup></a>, PCDE
         </td>
         <td/>
       </tr>
@@ -172,12 +556,12 @@
           <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-documentreference.html">US Core DocumentReference Profile</a>
         </td>
         <td>
-          HRex<a href="#any"><sup>†</sup></a>
+          HRex<a href="#any"><sup>†</sup></a>, PCDE
         </td>
         <td/>
       </tr>
       <tr>
-        <td>
+        <td rowspan="4">
           <a href="{{site.data.fhir.path}}encounter.html">Encounter</a>
         </td>
         <td>
@@ -188,6 +572,57 @@
         </td>
         <td>
           HRex<a href="#any"><sup>†</sup></a>
+        </td>
+        <td/>
+      </tr>
+	  <tr>
+        <td>
+          <b>PAS</b>
+        </td>
+        <td>
+          <a href="https://hl7.org/fhir/us/davinci-pas/STU1/StructureDefinition-profile-encounter.html">PAS Encounter</a>
+        </td>
+        <td>
+          PAS
+        </td>
+       <td>This is based on US Core Encounter profile.</td>
+      </tr>
+	   <tr>
+        <td>
+          <b>CRD</b>
+        </td>
+        <td>
+          <a href="https://hl7.org/fhir/us/davinci-crd/STU1/StructureDefinition-profile-encounter.html">Encounter</a>
+        </td>
+        <td>
+          CRD
+        </td>
+        <td>This is based on US Core Encounter profile.</td>
+      </tr>
+	    <tr>
+        <td>
+          <b>Alerts</b>
+        </td>
+        <td>
+          <a href="https://hl7.org/fhir/us/davinci-alerts/STU1/StructureDefinition-adt-notification-encounter.html">Da Vinci Admit/Transfer/Discharge Notification Encounter Profile</a>
+        </td>
+        <td>
+          Alerts
+        </td>
+        <td>This is based on US Core Encounter profile.</td>
+      </tr>
+	   <tr>
+        <td>
+          <a href="{{site.data.fhir.path}}endpoint.html">Endpoint</a>
+        </td>        
+        <td>
+          <b>PDex Plan Net</b>
+        </td>
+        <td>
+          <a href="https://hl7.org/fhir/us/davinci-PDex-plan-net/STU1/StructureDefinition-plannet-Endpoint.html">Plan-Net Endpoint</a>
+        </td>
+        <td>
+          PDex Plan Net
         </td>
         <td/>
       </tr>
@@ -206,6 +641,48 @@
         </td>
         <td/>
       </tr>
+	      <tr>
+        <td rowspan="2">
+          <a href="{{site.data.fhir.path}}group.html">Group</a>
+        </td>        
+        <td>
+          <b>DEQM</b>
+        </td>
+        <td>
+          <a href="https://hl7.org/fhir/us/davinci-deqm/STU3/StructureDefinition-gaps-group-deqm.html">DEQM Gaps In Care Group Profile</a>
+        </td>
+        <td>
+          DEQM
+        </td>
+        <td/>
+      </tr>
+	        <tr>      
+        <td>
+          <b>ATR</b>
+        </td>
+        <td>
+          <a href="https://hl7.org/fhir/us/davinci-atr/STU1/StructureDefinition-atr-group.html">Davinci ATR Group</a>
+        </td>
+        <td>
+          ATR
+        </td>
+        <td/>
+      </tr>
+	   <tr>
+        <td>
+          <a href="{{site.data.fhir.path}}healthcareservice.html">HealthcareService</a>
+        </td>        
+        <td>
+          <b>PDex Plan Net</b>
+        </td>
+        <td>
+          <a href="https://hl7.org/fhir/us/davinci-PDex-plan-net/STU1/StructureDefinition-plannet-HealthcareService.html">Plan-Net HealthcareService</a>
+        </td>
+        <td>
+          PDex Plan Net
+        </td>
+        <td/>
+      </tr>
       <tr>
         <td>
           <a href="{{site.data.fhir.path}}immunization.html">Immunization</a>
@@ -221,8 +698,38 @@
         </td>
         <td/>
       </tr>
-      <tr>
+	  <tr>
         <td>
+          <a href="{{site.data.fhir.path}}insuranceplan.html">InsurancePlan</a>
+        </td>        
+        <td>
+          <b>PDex Plan Net</b>
+        </td>
+        <td>
+          <a href="https://hl7.org/fhir/us/davinci-PDex-plan-net/STU1/StructureDefinition-plannet-InsurancePlan.html">Plan-Net InsurancePlan</a>
+        </td>
+        <td>
+          PDex Plan Net
+        </td>
+        <td/>
+      </tr>
+	   <tr>
+        <td>
+          <a href="{{site.data.fhir.path}}list.html">List</a>
+        </td>        
+        <td>
+          <b>PDex Drug Formulary</b>
+        </td>
+        <td>
+          <a href="https://hl7.org/fhir/us/davinci-drug-formulary/STU1.0.1/StructureDefinition-usdf-CoveragePlan.html">Formulary Coverage Plan</a>
+        </td>
+        <td>
+          PDex Drug Formulary
+        </td>
+        <td/>
+      </tr>
+      <tr>
+        <td rowspan="4">
           <a href="{{site.data.fhir.path}}location.html">Location</a>
         </td>
         <td>
@@ -232,7 +739,76 @@
           <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-location.html">US Core Location Profile</a>
         </td>
         <td>
-          HRex<a href="#any"><sup>†</sup></a>
+          HRex<a href="#any"><sup>†</sup></a>, PDex, Alerts
+        </td>
+        <td/>
+      </tr>
+	   <tr>
+        <td>
+          <b>CRD</b>
+        </td>
+        <td>
+          <a href="https://hl7.org/fhir/us/davinci-crd/STU1/StructureDefinition-profile-location.html">Location</a>
+        </td>
+        <td>
+          CRD
+        </td>
+        <td>This is based on US Core Location profile.</td>
+      </tr>
+	   <tr>
+        <td>
+          <b>ATR</b>
+        </td>
+        <td>
+          <a href="https://hl7.org/fhir/us/davinci-atr/STU1/StructureDefinition-atr-location.html">Davinci ATR Location</a>
+        </td>
+        <td>
+          ATR
+        </td>
+        <td>This is based on US Core Location profile.</td>
+      </tr>
+	    <tr>       
+        <td>
+          <b>PDex Plan Net</b>
+        </td>
+        <td>
+          <a href="https://hl7.org/fhir/us/davinci-PDex-plan-net/STU1/StructureDefinition-plannet-Location.html">Plan-Net Location</a>
+        </td>
+        <td>
+          PDex Plan Net
+        </td>
+         <td>This is based on US Core Location profile.</td>
+      </tr>
+	   <tr>
+        <td rowspan="3">
+          <a href="{{site.data.fhir.path}}measurereport.html">MeasureReport</a>
+        </td>
+        <td rowspan="3">
+          <b>DEQM</b>
+        </td>
+        <td>
+        <a href="http://hl7.org/fhir/us/davinci-deqm/STU3/StructureDefinition-datax-measurereport-deqm.html">DEQM Data Exchange MeasureReport Profile</a>
+        </td>
+        <td>
+          DEQM
+        </td>
+        <td/>
+      </tr>
+	    <tr>
+        <td>
+        <a href="http://hl7.org/fhir/us/davinci-deqm/STU3/StructureDefinition-indv-measurereport-deqm.html">DEQM Individual MeasureReport Profile</a>
+        </td>
+        <td>
+          DEQM
+        </td>
+        <td/>
+      </tr>
+	    <tr>
+        <td>
+        <a href="http://hl7.org/fhir/us/davinci-deqm/STU3/StructureDefinition-summary-measurereport-deqm.html">DEQM Summary MeasureReport Profile</a>
+        </td>
+        <td>
+          DEQM
         </td>
         <td/>
       </tr>
@@ -251,8 +827,53 @@
         </td>
         <td/>
       </tr>
-      <tr>
+	      <tr>
         <td>
+          <a href="{{site.data.fhir.path}}medicationadministration.html">MedicationAdministration</a>
+        </td>
+        <td>
+          <b>DEQM</b>
+        </td>
+        <td>
+        <a href="http://hl7.org/fhir/us/davinci-deqm/STU3/StructureDefinition-medicationadministration-deqm.html">DEQM MedicationAdministration Profile</a>
+        </td>
+        <td>
+          DEQM
+        </td>
+        <td>This is based on QI-Core MedicationAdministration profile.</td>
+      </tr>
+	   <tr>
+        <td>
+          <a href="{{site.data.fhir.path}}medicationdispense.html">MedicationDispense</a>
+        </td>
+        <td>
+          <b>PDex</b>
+        </td>
+        <td>
+        <a href="http://hl7.org/fhir/us/davinci-PDex/STU1/StructureDefinition-PDex-medicationdispense.html">PDex MedicationDispense</a>
+        </td>
+        <td>
+          PDex
+        </td>
+        <td/>
+      </tr>
+	   <tr>
+        <td>
+          <a href="{{site.data.fhir.path}}medicationknowledge.html">MedicationKnowledge</a>
+        </td>        
+        <td>
+          <b>PDex Drug Formulary</b>
+        </td>
+        <td>
+          <a href="https://hl7.org/fhir/us/davinci-drug-formulary/STU1.0.1/StructureDefinition-usdf-FormularyDrug.html">Formulary Drug</a>
+        </td>
+        <td>
+          PDex Drug Formulary
+        </td>
+        <td/>
+      </tr>
+      <tr>
+        <td rowspan="3">
           <a href="{{site.data.fhir.path}}medicationrequest.html">MedicationRequest</a>
         </td>
         <td>
@@ -262,7 +883,88 @@
         <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-medicationrequest.html">US Core MedicationRequest Profile</a>
         </td>
         <td>
-          HRex<a href="#any"><sup>†</sup></a>
+          HRex<a href="#any"><sup>†</sup></a>, PDex
+        </td>
+        <td/>
+      </tr>
+	     <tr>
+        <td>
+          <b>PAS</b>
+        </td>
+        <td>
+        <a href="https://hl7.org/fhir/us/davinci-pas/STU1/StructureDefinition-profile-medicationrequest.html">PAS Medication Request</a>
+        </td>
+        <td>
+          PAS
+        </td>
+        <td>This is based on US Core MedicationRequest profile.</td>
+      </tr>
+	  <tr>
+        <td>
+          <b>CRD</b>
+        </td>
+        <td>
+        <a href="https://hl7.org/fhir/us/davinci-crd/STU1/StructureDefinition-profile-medicationrequest.html">MedicationRequest</a>
+        </td>
+        <td>
+          CRD
+        </td>
+        <td/>
+      </tr>
+	   <tr>
+        <td rowspan="4">
+          <a href="{{site.data.fhir.path}}messageheader.html">MessageHeader</a>
+        </td>
+        <td rowspan="4">
+          <b>Alerts</b>
+        </td>
+        <td>
+          <a href="https://hl7.org/fhir/us/davinci-alerts/STU1/StructureDefinition-notifications-messageheader.html">Da Vinci Notifications MessageHeader Profile</a>
+        </td>
+        <td>
+          Alerts
+        </td>
+        <td/>
+      </tr>
+	   <tr>
+        <td>
+          <a href="https://hl7.org/fhir/us/davinci-alerts/STU1/StructureDefinition-admit-notification-messageheader.html">Da Vinci Admit Notification MessageHeader Profile</a>
+        </td>
+        <td>
+          Alerts
+        </td>
+        <td/>
+      </tr>
+	     <tr>
+        <td>
+          <a href="https://hl7.org/fhir/us/davinci-alerts/STU1/StructureDefinition-discharge-notification-messageheader.html">Da Vinci Discharge Notification MessageHeader Profile</a>
+        </td>
+        <td>
+          Alerts
+        </td>
+        <td/>
+      </tr>
+	  <tr>
+        <td>
+          <a href="https://hl7.org/fhir/us/davinci-alerts/STU1/StructureDefinition-transfer-notification-messageheader.html">Da Vinci Transfer Notification MessageHeader Profile</a>
+        </td>
+        <td>
+          Alerts
+        </td>
+        <td/>
+      </tr>
+	   <tr>
+        <td>
+          <a href="{{site.data.fhir.path}}nutritionorder.html">NutritionOrder</a>
+        </td>
+        <td>
+          <b>CRD</b>
+        </td>
+        <td>
+          <a href="https://hl7.org/fhir/us/davinci-crd/STU1/StructureDefinition-profile-nutritionorder.html">NutritionOrder</a>
+        </td>
+        <td>
+          CRD
         </td>
         <td/>
       </tr>
@@ -277,7 +979,7 @@
           <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-observation-lab.html">US Core Laboratory Result Observation Profile</a>
         </td>
         <td>
-          HRex<a href="#any"><sup>†</sup></a>
+          HRex<a href="#any"><sup>†</sup></a>, CRD
         </td>
         <td/>
       </tr>
@@ -318,7 +1020,7 @@
         <td/>
       </tr>
       <tr>
-        <td rowspan="2">
+        <td rowspan="9">
           <a href="{{site.data.fhir.path}}organization.html">Organization</a>
         </td>
         <td>
@@ -330,7 +1032,7 @@
         <td>
           HRex
         </td>
-        <td>The requirement for tax id may migrate to US Core, but the CCN identifier likely will not</td>
+        <td>This is based on US Core Organization profile. The requirement for tax id may migrate to US Core, but the CCN identifier likely will not.</td>
       </tr>
       <tr>
         <td>
@@ -340,12 +1042,105 @@
         <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-organization.html">US Core Organization Profile</a>
         </td>
         <td>
-          HRex
+          HRex, PAS, CRD, PDex, Alerts, PCDE
         </td>
-        <td>This is the base for the corresponding HRex profile</td>
+        <td/>
+      </tr>
+	     <tr>
+        <td rowspan="2">
+          <b>PAS</b>
+        </td>
+        <td>
+        <a href="https://hl7.org/fhir/us/davinci-pas/STU1/StructureDefinition-profile-insurer.html">PAS Insurer Organization</a>
+        </td>
+        <td>
+          PAS
+        </td>
+        <td>This is based on US Core Organization profile.</td>
+      </tr>
+	   <tr>
+        <td>
+        <a href="https://hl7.org/fhir/us/davinci-pas/STU1/StructureDefinition-profile-requestor.html">PAS Requestor Organization</a>
+        </td>
+        <td>
+          PAS
+        </td>
+        <td>This is based on US Core Organization profile.</td>
+      </tr>
+	   <tr>
+        <td>
+          <b>CRD</b>
+        </td>
+        <td>
+        <a href="https://hl7.org/fhir/us/davinci-crd/STU1/StructureDefinition-profile-organization.html">Organization</a>
+        </td>
+        <td>
+          CRD
+        </td>
+        <td>This is based on US Core Organization profile.</td>
+      </tr>
+	  <tr>
+        <td>
+          <b>DEQM</b>
+        </td>
+        <td>
+        <a href="http://hl7.org/fhir/us/davinci-deqm/STU3/StructureDefinition-organization-deqm.html">DEQM Organization Profile</a>
+        </td>
+        <td>
+          DEQM
+        </td>
+        <td>This is based on QI-Core Organization profile.</td>
+      </tr>
+	  	  <tr>
+        <td>
+          <b>ATR</b>
+        </td>
+        <td>
+        <a href="https://hl7.org/fhir/us/davinci-atr/STU1/StructureDefinition-atr-organization.html">Davinci ATR Organization</a>
+        </td>
+        <td>
+          ATR
+        </td>
+        <td>This is based on US Core Organization profile.</td>
+      </tr>
+	   <tr>       
+        <td rowspan="2">
+          <b>PDex Plan Net</b>
+        </td>
+        <td>
+          <a href="https://hl7.org/fhir/us/davinci-PDex-plan-net/STU1/StructureDefinition-plannet-Network.html">Plan-Net Network</a>
+        </td>
+        <td>
+          PDex Plan Net
+        </td>
+         <td>This is based on US Core Organization profile.</td>
+      </tr>
+	   <tr>       
+        <td>
+          <a href="https://hl7.org/fhir/us/davinci-PDex-plan-net/STU1/StructureDefinition-plannet-Organization.html">Plan-Net Organization</a>
+        </td>
+        <td>
+          PDex Plan Net
+        </td>
+         <td>This is based on US Core Organization profile.</td>
+      </tr>
+	    <tr>
+        <td>
+          <a href="{{site.data.fhir.path}}organizationaffiliation.html">OrganizationAffiliation</a>
+        </td>
+        <td>
+          <b>PDex Plan Net</b>
+        </td>
+        <td>
+        <a href="https://hl7.org/fhir/us/davinci-PDex-plan-net/STU1/StructureDefinition-plannet-OrganizationAffiliation.html">Plan-Net OrganizationAffiliation</a>
+        </td>
+        <td>
+          PDex Plan Net
+        </td>
+        <td/>
       </tr>
       <tr>
-        <td>
+        <td rowspan="7">
           <a href="{{site.data.fhir.path}}patient.html">Patient</a>
         </td>
         <td>
@@ -355,12 +1150,78 @@
         <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-patient.html">US Core Patient Profile</a>
         </td>
         <td>
-          HRex
+          HRex, CRD, PDex, Alerts, PCDE
         </td>
         <td/>
       </tr>
-      <tr>
+	  <tr>
+        <td>
+          <b>QI-CORE</b>
+        </td>
+        <td>
+        <a href="http://hl7.org/fhir/us/qicore/STU4/StructureDefinition-qicore-patient.html">QI-Core Patient Profile</a>
+        </td>
+        <td>
+          DEQM
+        </td>
+        <td/>
+      </tr>
+	    <tr>
         <td rowspan="2">
+          <b>PAS</b>
+        </td>
+        <td>
+        <a href="https://hl7.org/fhir/us/davinci-pas/STU1/StructureDefinition-profile-beneficiary.html">PAS Beneficiary Patient</a>
+        </td>
+        <td>
+          PAS
+        </td>
+        <td>This is based on US Core Patient profile.</td>
+      </tr>
+	   <tr>
+        <td>
+        <a href="https://hl7.org/fhir/us/davinci-pas/STU1/StructureDefinition-profile-subscriber.html">PAS Subscriber Patient</a>
+        </td>
+        <td>
+          PAS
+        </td>
+        <td>This is based on US Core Patient profile.</td>
+      </tr>
+	   <tr>
+        <td rowspan="2">
+          <b>CRD</b>
+        </td>
+        <td>
+        <a href="https://hl7.org/fhir/us/davinci-crd/STU1/StructureDefinition-profile-patient.html">Patient</a>
+        </td>
+        <td>
+          CRD
+        </td>
+        <td>This is based on US Core Patient profile.</td>
+      </tr>
+	  <tr>
+        <td>
+        <a href="https://hl7.org/fhir/us/davinci-crd/STU1/StructureDefinition-profile-patient-deident.html">CRD Deidentified Patient</a>
+        </td>
+        <td>
+          CRD
+        </td>
+        <td/>
+      </tr>
+	    <tr>
+        <td>
+          <b>ATR</b>
+        </td>
+        <td>
+        <a href="https://hl7.org/fhir/us/davinci-atr/STU1/StructureDefinition-atr-patient.html">Davinci ATR Patient</a>
+        </td>
+        <td>
+          ATR
+        </td>
+        <td>This is based on US Core Patient profile.</td>
+      </tr>
+      <tr>
+        <td rowspan="7">
           <a href="{{site.data.fhir.path}}practitioner.html">Practitioner</a>
         </td>
         <td>
@@ -372,7 +1233,7 @@
         <td>
           HRex
         </td>
-        <td>This will likely remain HRex-specific as neither the additional identifier types, nor the requirement to support qualification are needed in US Core's scope</td>
+        <td>This profile is based on US Core Practitioner profile. This will likely remain HRex-specific as neither the additional identifier types, nor the requirement to support qualification are needed in US Core's scope</td>
       </tr>
       <tr>
         <td>
@@ -382,12 +1243,72 @@
           <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-practitioner.html">US Core Practitioner Profile</a>
         </td>
         <td>
-          HRex
+          HRex, CRD, PDex, Alerts, PCDE
         </td>
-        <td>Basis for equivalent HRex profile</td>
+        <td/>
+      </tr>
+	   <tr>
+        <td>
+          <b>PAS</b>
+        </td>
+        <td>
+          <a href="https://hl7.org/fhir/us/davinci-pas/STU1/StructureDefinition-profile-practitioner.html">PAS Practitioner</a>
+        </td>
+        <td>
+          PAS
+        </td>
+        <td>This is based on US Core Practitioner profile.</td>
+      </tr>
+	  <tr>
+        <td>
+          <b>CRD</b>
+        </td>
+        <td>
+          <a href="https://hl7.org/fhir/us/davinci-crd/STU1/StructureDefinition-profile-practitioner.html">Practitioner</a>
+        </td>
+        <td>
+          CRD
+        </td>
+        <td>This is based on US Core Practitioner profile.</td>
+      </tr>
+	   <tr>
+        <td>
+          <b>DEQM</b>
+        </td>
+        <td>
+          <a href="https://hl7.org/fhir/us/davinci-deqm/STU3/StructureDefinition-practitioner-deqm.html">DEQM Practitioner Profile</a>
+        </td>
+        <td>
+          DEQM
+        </td>
+        <td>This is based on QI-Core Practitioner profile.</td>
+      </tr>
+	   <tr>
+        <td>
+          <b>ATR</b>
+        </td>
+        <td>
+        <a href="https://hl7.org/fhir/us/davinci-atr/STU1/StructureDefinition-atr-practitioner.html">Davinci ATR Practitioner</a>
+        </td>
+        <td>
+          ATR
+        </td>
+        <td>This is based on US Core Practitioner profile.</td>
+      </tr>
+	  <tr>
+        <td>
+          <b>PDex Plan Net</b>
+        </td>
+        <td>
+        <a href="https://hl7.org/fhir/us/davinci-PDex-plan-net/STU1/StructureDefinition-plannet-Practitioner.html">Plan-Net Practitioner</a>
+        </td>
+        <td>
+          PDex Plan Net
+        </td>
+        <td>This is based on US Core Practitioner profile.</td>
       </tr>
       <tr>
-        <td rowspan="2">
+        <td rowspan="4">
           <a href="{{site.data.fhir.path}}practitionerrole.html">PractitionerRole</a>
         </td>
         <td>
@@ -400,7 +1321,7 @@
           HRex
         </td>
         <td>
-          As a binding between two non-migrated profiles, this will also remain HRex-specific
+          This profile is based on US Core PractitionerRole profile. As a binding between two non-migrated profiles, this will also remain HRex-specific
         </td>
       </tr>
       <tr>
@@ -411,9 +1332,33 @@
         <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-practitionerrole.html">US Core PractitionerRole Profile</a>
         </td>
         <td>
-          HRex
+          CRD, PDex, Alerts, PCDE
         </td>
-        <td>Basis for equivalent HRex profile</td>
+        <td/>
+      </tr>
+	   <tr>
+        <td>
+          <b>ATR</b>
+        </td>
+        <td>
+        <a href="https://hl7.org/fhir/us/davinci-atr/STU1/StructureDefinition-atr-practitionerrole.html">Davinci ATR PractitionerRole</a>
+        </td>
+        <td>
+          ATR
+        </td>
+        <td>This is based on US Core PractitionerRole profile.</td>
+      </tr>
+	  	  <tr>
+        <td>
+          <b>PDex Plan Net</b>
+        </td>
+        <td>
+        <a href="https://hl7.org/fhir/us/davinci-PDex-plan-net/STU1/StructureDefinition-plannet-PractitionerRole.html">Plan-Net PractitionerRole</a>
+        </td>
+        <td>
+          PDex Plan Net
+        </td>
+        <td/>
       </tr>
       <tr>
         <td>
@@ -431,7 +1376,7 @@
         <td/>
       </tr>
       <tr>
-        <td rowspan="2">
+        <td rowspan="3">
           <a href="{{site.data.fhir.path}}provenance.html">Provenance</a>
         </td>
         <td>
@@ -443,7 +1388,7 @@
         <td>
           HRex
         </td>
-        <td>The changes included in this profile are likely appropriate to migrate to US Core in the future</td>
+        <td>This is based on US Core Provenance profile. The changes included in this profile are likely appropriate to migrate to US Core in the future</td>
       </tr>
       <tr>
         <td>
@@ -455,10 +1400,94 @@
         <td>
           HRex
         </td>
-        <td>(Basis for corresponding HRex profile)</td>
+        <td/>
+      </tr>
+	  <tr>
+        <td>
+          <b>PDex</b>
+        </td>
+        <td>
+          <a href="http://hl7.org/fhir/us/davinci-PDex/STU1/StructureDefinition-PDex-provenance.html">Provenance</a>
+        </td>
+        <td>
+          PDex
+        </td>
+         <td>This is based on US Core Provenance profile.</td>
+      </tr>
+	   <tr>
+        <td>
+          <a href="{{site.data.fhir.path}}questionnaire.html">Questionnaire</a>
+        </td>
+        <td>
+          <b>DTR</b>
+        </td>
+        <td>
+          <a href="https://hl7.org/fhir/us/davinci-dtr/STU1/StructureDefinition-dtr-questionnaire-r4.html">DTRQuestionnaire</a>
+        </td>
+        <td>
+          DTR
+        </td>
+         <td>This is based on CQF-Questionnaire profile.</td>
+      </tr>
+	   <tr>
+        <td>
+          <a href="{{site.data.fhir.path}}questionnaireresponse.html">QuestionnaireResponse</a>
+        </td>
+        <td>
+          <b>DTR</b>
+        </td>
+        <td>
+          <a href="https://hl7.org/fhir/us/davinci-dtr/STU1/StructureDefinition-dtr-questionnaireresponse-r4.html">DTRQuestionnaireResponse</a>
+        </td>
+        <td>
+          DTR
+        </td>
+        <td/>
+      </tr>
+	   <tr>
+        <td>
+          <a href="{{site.data.fhir.path}}relatedperson.html">RelatedPerson</a>
+        </td>
+        <td>
+          <b>ATR</b>
+        </td>
+        <td>
+          <a href="https://hl7.org/fhir/us/davinci-atr/STU1/StructureDefinition-atr-relatedperson.html">Davinci ATR RelatedPerson</a>
+        </td>
+        <td>
+          ATR
+        </td>
+        <td/>
+      </tr>
+	  <tr>
+        <td rowspan="2">
+          <a href="{{site.data.fhir.path}}servicerequest.html">ServiceRequest</a>
+        </td>
+        <td>
+          <b>PAS</b>
+        </td>
+        <td>
+          <a href="https://hl7.org/fhir/us/davinci-pas/STU1/StructureDefinition-profile-servicerequest.html">PAS Service Request</a>
+        </td>
+        <td>
+          PAS
+        </td>
+        <td/>
+      </tr>
+	  <tr>
+        <td>
+          <b>CRD</b>
+        </td>
+        <td>
+          <a href="https://hl7.org/fhir/us/davinci-crd/STU1/StructureDefinition-profile-servicerequest.html">ServiceRequest</a>
+        </td>
+        <td>
+          CRD
+        </td>
+        <td/>
       </tr>
       <tr>
-        <td>
+        <td rowspan="5">
           <a href="{{site.data.fhir.path}}task.html">Task</a>
         </td>
         <td>
@@ -471,6 +1500,51 @@
           HRex
         </td>
         <td>This is a good candidate for migration to the core specification as part of workflow</td>
+      </tr>
+	   <tr>
+        <td>
+          <b>CRD</b>
+        </td>
+        <td>
+          <a href="https://hl7.org/fhir/us/davinci-crd/STU1/StructureDefinition-profile-taskquestionnaire.html">TaskQuestionnaire</a>
+        </td>
+        <td>
+          CRD
+        </td>
+        <td/>
+      </tr>
+	  <tr>
+        <td rowspan="2">
+          <b>PCDE</b>
+        </td>
+        <td>
+          <a href="https://hl7.org/fhir/us/davinci-pcde/STU1/StructureDefinition-pcde-task-request.html">PCDE Coverage Transition Task - Request Profile</a>
+        </td>
+        <td>
+          PCDE
+        </td>
+        <td>This is based on HRex Data Request Task profile.</td>
+      </tr>
+	    <tr>
+        <td>
+          <a href="https://hl7.org/fhir/us/davinci-pcde/STU1/StructureDefinition-pcde-task-search.html">PCDE Coverage Transition Task - Search Profile</a>
+        </td>
+        <td>
+          PCDE
+        </td>
+        <td>This is based on HRex Data Request Task profile.</td>
+      </tr>
+	   <tr>
+        <td>
+          <b>DTR</b>
+        </td>
+        <td>
+          <a href="https://hl7.org/fhir/us/davinci-dtr/STU1/StructureDefinition-dtr-task-r4.html">DTRTask</a>
+        </td>
+        <td>
+          DTR
+        </td>
+        <td/>
       </tr>
     </tbody>
   </table>

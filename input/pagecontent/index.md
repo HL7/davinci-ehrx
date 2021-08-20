@@ -33,7 +33,7 @@ The main menu in this IG is categorized into several primary topics with several
 * **Background** provides supporting information relevant for implementers of this IG or Da Vinci guides in general.  These sections may be referenced from other Da Vinci IGs, but do not contain any rules that impact IG conformance.  (Nothing in these sections will ever become 'normative' or define functionality that implementer systems must or must not do.)  These sections *will* provide context to implementers to help them understand other parts of the IG and make better and more efficient decisions with respect to FHIR implementation.
   * [Da Vinci Overview](http://hl7.org/about/davinci) provides an overview of the Da Vinci project and provides guidance on how to get involved in the project and where to find the use-case specific IGs.
   * [FHIR Introduction](fhir.html) highlights the key sections of the FHIR core specification that Da Vinci implementers should be familiar with.
-  * [Approaches to Exchanging FHIR Data](exchanging.html) provides a detailed overview of all the mechanisms that FHIR supports for exchanging information.  Implementers do not need to read this, but Da Vinci use case IGs will refer to.
+  * [Approaches to Exchanging FHIR Data](exchanging.html) provides a detailed overview of all the mechanisms that FHIR supports for exchanging information.  Implementers do not need to read this, but Da Vinci use case IGs may refer to this information.
 * **Specification** content includes pages that define artifacts or include formal conformance rules that apply to this IG and that may be included by reference in other Da Vinci IGs.
   * [Conformance Expectations](conformance.html) describes conformance language used within the spec and expectations around mustSupport and missing data
   * [Security and Privacy](security.html) provides general expectations to ensure security and privacy of Da Vinci exchanges
@@ -66,7 +66,7 @@ Initial development of this IG was performed by **Lisa Nelson** - Max MD, with a
 
 IG refactoring and updates for the current release was performed by **Lloyd McKenzie** - Gevity Consulting, with assistance from **Russ Buchanan**, **Theresia Edgar** and **Malia Moore**, also of Gevity.
 
-**Mark Scrimshire** - Newwave and the **Mitre** team provided invaluable assistance with connectathons and reference implementations.
+**Mark Scrimshire** - Newwave and the **MITRE** team provided invaluable assistance with connectathons and reference implementations.
 
 Special thanks go to the numerous Da Vinci members who have participated on conference calls and reviews over the last two years and those who participated in the previous ballot of this IG, as well as those who are participating in this one!
 
