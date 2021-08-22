@@ -27,6 +27,9 @@
     </a>
     <ul class="dropdown-menu">
       <li>
+        <a href="davinci-guiding-principles.html">Guiding Principles</a>
+      </li>
+      <li>
         <a href="conformance.html">Conformance Expectations</a>
       </li>
       <li>

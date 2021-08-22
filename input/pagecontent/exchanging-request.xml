@@ -47,87 +47,6 @@
     <b>Step 4:</b> While the data has been delivered, nothing indicates to <i>data consumer</i> that the request is complete.  As well, it is possible there is no data available or that the request has been refused.  Posting the Communication resource allows closing this loop.  However, closing the loop by formally creating a Communication instance as part of the patient record is not necessarily always appropriate.  (Such resources will rarely be created for data shared by the <i>data consumer</i> directly querying the <i>data source</i>'s system.
   </p>
 
-  <a name="cr-post-communication"> </a>
-  <h4>Direct POST with Communication</h4>
-  <p>
-    In this approach the CommunicationRequest soliciting data is posted directly to the <i>data source</i>'s system, however the data is stored on the <i>data source</i>'s system rather than being directly POSTed back to the <i>data consumer</i>.  The <i>data consumer</i> is triggered to query the relevant data via a POST of a <i>Communication</i> instance that references the relevant data.
-  </p>
-  <p>
-    The benefit of this approach is that there is no formal 'create' of the data on the <i>data consumer</i>'s system.  The <i>data consumer</i> does not need to expose endpoints for each type of record it might receive and there is no expectation that the whole resources be stored.  When the <i>data consumer</i> queries the data, it is free to do with it as it wishes.  However, the price of this approach is the additional complexity of the POSTing of the Communication being mandatory and needing to query for referenced the data once the Communication is received.
-  </p>
-  <blockquote class="note-to-balloters">
-    <p>
-      Balloter feedback requested: Given the downsides associated with this approach to exchange, should it be listed as one of the options in this document?
-    </p>
-  </blockquote>
-  <p>
-    As with <a href="#cr-double-post">CommunicationRequest POST both-ways</a> approach, the <i>data consumer</i> is left with a Communication instance and the <i>data source</i> is left with a CommunicationRequest resource - neither of which are likely of interest as part of the patient record once the transaction is complete.  As well, there is still no support for tracking status information between the initiation of the request and completion.
-  </p>
-  <p>
-    This approach is a variant on <a href="{{site.data.fhir.path}}workflow-ad-hoc.html#optiona">Option A</a> in the FHIR core workflow communication patterns.
-  </p>
-  <p>
-    {% include communicationrequest-post-query.svg %}
-  </p>
-  <a name="cr-post-b1"> </a>
-  <a name="cr-post-b2"> </a>
-  <p>
-    <b>Step 1, 2:</b> Steps 1 and 2 are the same as for <a href="#cr-post-a1">step 1</a> and <a href="#cr-post-a2">step 2</a> above.  The CommunicationRequest is created and communicated from <i>data consumer</i> to <i>data source</i>
-  </p>
-  <a name="cr-post-b3"> </a>
-  <p>
-    <b>Step 3:</b> In this option, instead of being directly POSTed directly back to the <i>data consumer</i>, the requested data record(s) are instead stored on the <i>data source</i>'s system.  This step is marked as 'optional' because in some cases the requested data might already exist on the source system and there will be no need to create it.  As for <a href="#cr-post-a3">step 3</a> above, multiple resource instances may need to exist to satisfy the communication request.  It is possible that some may need to be created, while others may be pre-existing.  In principle, any resources created due to the CommunicationRequest could potentially be available for subsequent query by other systems.  Also, it is also possible that the created records might exist on a system other than the <i>data source</i>.
-  </p>
-  <a name="cr-post-b4"> </a>
-  <p>
-    <b>Step 4:</b> In this approach, the creation of the Communication resource is mandatory rather than optional.  Merely having the relevant records existing on the <i>data source</i> system is not sufficient to satisfy the original CommunicationRequest because the <i>data consumer</i> would have no way of knowing which records are pertinent to their request.  Posting the Communication resource allows closing this loop.  However, closing the loop by formally creating a Communication instance as part of the patient record is not necessarily always appropriate.  (Such resources will rarely be created for data shared by the <i>data consumer</i> directly querying the <i>data source</i>'s system.)
-  </p>
-  <p>
-    In this step, a Communication is created on the <i>data consumer</i> system pointing back to the data present on the <i>data source</i>, allowing that data to be subsequently queried.
-  </p>
-  <a name="cr-post-b5"> </a>
-  <p>
-    <b>Step 5:</b> Once the <i>data consumer</i> has the Communication and knows what data is deemed to satisfy the request, it can then directly query that information - either as individual reads, as a query by resource id(s) or by a batch of queries or reads.
-  </p>
-
-  <a name="cr-post-poll"> </a>
-  <h4>Direct POST with polling</h4>
-  <p>
-    This is the same as the <a href="#cr-post-communication">preceding approach</a>, except that rather than the Communication being posted to the <i>data consumer</i>, the Communication is stored on the <i>data source</i> and it is retrieved by the <i>data consumer</i> using <a href="exchanging-polling.html">polling</a> or <a href="exchanging-subscription.html">subscription</a>.  The benefit of this change is that the <i>data consumer</i> does not need to expose any RESTful endpoints at all (though it means that the <i>data source</i> needs to expose one more).  The cost of this is the introduction of polling or subscription.
-  </p>
-  <p>
-    Other pros and cons are the same as <a href="#cr-post-communication">above</a>.  Similarly, this approach is also a variant on <a href="{{site.data.fhir.path}}workflow-ad-hoc.html#optiona">Option A</a> in the FHIR core workflow communication patterns.
-  </p>
-  <blockquote class="note-to-balloters">
-    <p>
-      Balloter feedback requested: Given the downsides associated with this approach to exchange, should it be listed as one of the options in this document?
-    </p>
-  </blockquote>
-  <p>
-    {% include communicationrequest-post-poll.svg %}
-  </p>
-  <a name="cr-post-c1"> </a>
-  <a name="cr-post-c2"> </a>
-  <p>
-    <b>Step 1, 2:</b> Steps 1 and 2 are the same as for <a href="#cr-post-a1">step 1</a> and <a href="#cr-post-a2">step 2</a> for the previous two approaches.  The CommunicationRequest is created and communicated from <i>data consumer</i> to <i>data source</i>
-  </p>
-  <a name="cr-post-c3"> </a>
-  <p>
-    <b>Step 3:</b> This is the same as step 3 of the <a href="#cr-post-b3">previous approach</a>.  The necessary records are either created or identified on the <i>data source</i>.
-  </p>
-  <a name="cr-post-c4"> </a>
-  <p>
-    <b>Step 4:</b> Unlike of what's done in the <a href="#cr-post-b4">previous approach</a>, the Communication is created on the <i>data source</i> rather than the <i>data consumer</i>.
-  </p>
-  <a name="cr-post-c5"> </a>
-  <p>
-    <b>Step 5:</b> Because of the change to step 4, the <i>data consumer</i> must either <a href="exchanging-polling.html">poll</a> or <a href="exchanging-subscription.html">subscribe</a> in order to learn about the creation of the Communication resource.  This step <b>could</b> also return the data referenced by the Communication if the polling is done using a query with _include on the <code>Communication.payload.contentReference</code> or the Subscription process is set up to provide that information.  (Note that there is currently no standard search parameter to support such an _include.)
-  </p>
-  <a name="cr-post-c6"> </a>
-  <p>
-    <b>Step 6:</b> Step 6 is the same as <a href="#cr-post-b5">step 5</a> from the preceding approach where the records referenced by the Communication are retrieved by the <i>data consumer</i> from the <i>data source</i>.  However, in this approach the step optional because the referenced resources could potentially be returned in Step 5 using _includes.
-  </p>
-
   <a name="cr-task"> </a>
   <h4>CommunicationRequest plus Task</h4>
   <p>
@@ -213,7 +132,7 @@
     <b>Steps 7:</b> The <i>data consumer</i> then retrieves the resources referenced by <code>Task.output</code>.  This step can be omitted if the outputs are retrieved as part of the polling/subscription in Step 6.
   </p>
   <br/>
-  <p>This IG defines a specific <a href="StructureDefinition-hrex-task-data-request.html">profile</a> for use in HRex using this mode of human-mediated information request.  It also includes a number of examples, showing different phases of the workflow for a Task soliciting execution of a specific query:</p>
+  <p>This IG defines a specific <a href="StructureDefinition-hrex-task-data-request.html">profile</a> for use in HRex using this mode of human-mediated information request.  It also includes a number of examples, showing different phases of the workflow for a Task soliciting execution of a specific query.  Unlike the rest of this section, these examples are Da-Vinci specific and will be retained when this content migrates to FHIR R5.</p>
   <ul>
     <li><a href="Task-query-initial.html">Initial request</a></li>
     <li><a href="Task-query-status.html">Interim status-check</a></li>
