@@ -1,11 +1,13 @@
 
 The response from a failed $member-match is a "422 Unprocessable Entity Status Code".
 
-After a successful $member-match the new health plan **SHALL** then use the UMB provided by the old health plan in the `Patient.identifier` field in any subsequent transactions related to payer-to-payer exchange.
+After a successful $member-match the requesting system **SHALL** then use the UMB provided by the target payer in the `Patient.identifier` field in any subsequent transactions with the same system.  If the requesting system was a payer with coverage for the member, the receiving system SHOULD create a linkage between their own member information and the Coverage provided by the requesting system.  This linkage can be used to support subsequent queries by establishing a known 'reason' for accessing a member's information.
 
-For example, in the Da Vinci PDex IG, the new health plan will subsequently use the UMB identifier to request the member’s health records. This can be done by querying the US Core FHIR profile endpoints which will be constrained to the identified member. Alternatively, the new health plan can perform a $everything operation to the Patient/{ID}/$everything operation endpoint to receive a bundle of the member’s health records.
+For example, in the Da Vinci PDex IG, the requesting system will subsequently use the UMB identifier to request the member’s health records. This can be done by querying the US Core FHIR profile endpoints which will be constrained to the identified member. Alternatively, the requesting can perform a $everything operation to the Patient/{ID}/$everything operation endpoint to receive a bundle of the member’s health records.
 
-For PCDE, the new health plan will subsequently use the UMB identifier to send a Task message and request the PCDE coverage transition bundle.
+For PCDE, the requesting system will subsequently use the UMB identifier to send a Task message and request the PCDE coverage transition bundle.
+
+Similarly provider systems that initiate a member match can use the UMB in subsequent queries to access payer-held clinical and other information.
 
 #### Interpretation of parameter names
 Because the original member match was defined in the Da Vinci PDex implementation guide, which was subsequently referenced by regulation, there are some challenges around making breaking changes to the interface.  For this reason, this HRex operation retains the original parameter names of 'OldCoverage' and 'NewCoverage'.  However, in practice, this operation will be used in situations when those labels don't necessarily make sense.  Therefore, treat these parameters as though they were named as follows:
