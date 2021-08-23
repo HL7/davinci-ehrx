@@ -31,7 +31,15 @@ The specification is:
 
 An important objective of this specification is to ensure that a health plan operating a $member-match operation has sufficient data provided to enable a match operation to be performed.  Therefore, the specification requires a health plan to provide demographic information (name, date of birth, gender) and identification details that would be present on a member's health plan insurance card with a request.
 
-If a match is successful, for backward compatibility reasons, the server SHALL echo back the 'NewCoverage'.  However, client systems should not rely on this element being in the operation response.  It may be dropped in a future release.  Clients should match requests with responses either by maintining a session id between request and response when invoking the operation synchronously or by tracking which request is associated with which polling content location if using [asynchronous]({{site.data.fhir.path}}async.html) invocation.
+If a match is successful, for backward compatibility reasons, the server SHALL echo back the 'NewCoverage'.  The MemberPatient **SHALL** include the UMB for the member and **SHOULD NOT** contain any other changes.
+<div class="stu-note">
+<ul>
+<li>Client systems should not rely on the 'NewCoverage' element being echoed back in the operation response.  It may be dropped in a future release.  Clients should match requests with responses either by maintining a session id between request and response when invoking the operation synchronously or by tracking which request is associated with which polling content location if using [asynchronous]({{site.data.fhir.path}}async.html) invocation.</li>
+<li>In a future release of this operation, the MemberPatient might be dropped from the operation output and replaced with a simple parameter that only includes the identifier rather than wrapping it in a resource.</li>
+</ul>
+
+
+</div>
 
 #### Examples
 An example request (as POSTed when invoking the operation) can be found [here](Parameters-member-match-in.html) and an example response (as received in the HTTP response body after the operation processes) can be found [here](Parameters-member-match-out.html).

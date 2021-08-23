@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R4/fhir-single.xsd">
+	<id value="hrex-patient-member"/>
+	<url value="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-patient-member"/>
+	<name value="HRexPatientMember"/>
+	<title value="HRex Patient Member Profile"/>
+	<status value="draft"/>
+	<description value="Additional Da Vinci constraints on patient with a mandatory payer identifier"/>
+	<fhirVersion value="4.0.0"/>
+	<kind value="resource"/>
+	<abstract value="false"/>
+	<type value="Patient"/>
+	<baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+	<derivation value="constraint"/>
+	<differential>
+		<element id="Patient">
+			<path value="Patient"/>
+			<mustSupport value="false"/>
+			<isModifier value="false"/>
+		</element>
+		<element id="Patient.identifier">
+      <path value="Patient.identifier"/>
+      <slicing>
+        <discriminator>
+          <type value="pattern"/>
+          <path value="$this"/>
+        </discriminator>
+        <rules value="open"/>
+      </slicing>
+    </element>
+		<element id="Patient.identifier:umb">
+			<path value="Patient.identifier"/>
+			<sliceName value="umb"/>
+			<short value="Unique Member Identifier"/>
+			<comment value="This is the unique member identifier of the server on which a 'match' is sought"/>
+			<min value="1"/>
+			<max value="1"/>
+			<patternIdentifier>
+        <type>
+          <coding>
+            <system value="http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp"/>
+            <code value="UMB"/>
+          </coding>
+        </type>
+			</patternIdentifier>
+			<mustSupport value="true"/>
+		</element>
+	</differential>
+</StructureDefinition>
