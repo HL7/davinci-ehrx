@@ -195,6 +195,14 @@
     </resource>
     <resource>
       <reference>
+        <reference value="Bundle/subscription-notification-with-document"/>
+      </reference>
+      <name value="HRex Task Subscription Notification - completed document example"/>
+      <description value="An example showing the subscription notification for a 'document' data request task that includes data"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="Bundle/task-poll-response"/>
       </reference>
       <name value="HRex Task polling response"/>
@@ -344,5 +352,9 @@
 			<code value="find-other-resources"/>
 			<value value="true"/>
 		</parameter>
+    <parameter>
+      <code value="path-expansion-params"/>
+      <value value="terminology-settings.json"/>
+    </parameter>
 	</definition>
 </ImplementationGuide>

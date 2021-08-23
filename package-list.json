@@ -31,5 +31,6 @@
       "fhirversion": "4.0.0",
       "current": false 
     }
-  ]
+  ],
+  "category": "Financial"
 }

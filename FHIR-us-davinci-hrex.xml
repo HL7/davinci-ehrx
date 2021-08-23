@@ -7,7 +7,6 @@
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
-<artifact id="Bundle/subscription-notification-with-document" key="Bundle-subscription-notification-with-document" name=""/>
 <artifact id="Parameters/member-match-in" key="Parameters-member-match-in" name="$member-match payer example request"/>
 <artifact id="Parameters/member-match-out" key="Parameters-member-match-out" name="$member-match payer example response"/>
 <artifact id="Parameters/member-match-in-provider" key="Parameters-member-match-in-provider" name="$member-match provider example request"/>
@@ -26,6 +25,7 @@
 <artifact id="Organization/min" key="Organization-min" name="HRex Organization minimal example"/>
 <artifact id="StructureDefinition/hrex-parameters-member-match-in" key="StructureDefinition-hrex-parameters-member-match-in" name="HRex Parameters - Member Match Request Profile"/>
 <artifact id="StructureDefinition/hrex-parameters-member-match-out" key="StructureDefinition-hrex-parameters-member-match-out" name="HRex Parameters - Member Match Response Profile"/>
+<artifact id="StructureDefinition/hrex-patient-member" key="StructureDefinition-hrex-patient-member" name="HRex Patient Member Profile"/>
 <artifact id="StructureDefinition/hrex-practitioner" key="StructureDefinition-hrex-practitioner" name="HRex Practitioner Profile"/>
 <artifact id="Practitioner/full" key="Practitioner-full" name="HRex Practitioner full example"/>
 <artifact id="Practitioner/min" key="Practitioner-min" name="HRex Practitioner minimal example"/>
@@ -41,6 +41,7 @@
 <artifact id="Task/query-status" key="Task-query-status" name="HRex Task Data Request - status query example"/>
 <artifact id="StructureDefinition/hrex-task-data-request" key="StructureDefinition-hrex-task-data-request" name="HRex Task Data Request Profile"/>
 <artifact id="ValueSet/hrex-task-status" key="ValueSet-hrex-task-status" name="HRex Task Status ValueSet"/>
+<artifact id="Bundle/subscription-notification-with-document" key="Bundle-subscription-notification-with-document" name="HRex Task Subscription Notification - completed document example"/>
 <artifact id="Bundle/subscription-notification-with-data" key="Bundle-subscription-notification-with-data" name="HRex Task Subscription Notification - completed query example"/>
 <artifact id="Task/min" key="Task-min" name="HRex Task minimal example"/>
 <artifact id="Bundle/task-poll-response" key="Bundle-task-poll-response" name="HRex Task polling response"/>

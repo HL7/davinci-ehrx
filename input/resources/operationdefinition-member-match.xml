@@ -44,7 +44,7 @@
 		<use value="in"/>
 		<min value="0"/>
 		<max value="1"/>
-		<documentation value="Parameter that identifies the coverage information of the member as they are known by the requesting payer.  This information allows the matching payer to link their member coverage information to that of the requesting payer to ease subsequent exchanges, including evaluating authorization to share information in subsequent queries.  This parameter is optional as this operation may be invoked by non-payer systems.  However, it is considered 'mustSupport'.  If the client invoking the operation is a payer, they SHALL include their coverage information for the member when invoking the operation.  "/>
+		<documentation value="Parameter that identifies the coverage information of the member as they are known by the requesting payer.  This information allows the matching payer to link their member coverage information to that of the requesting payer to ease subsequent exchanges, including evaluating authorization to share information in subsequent queries.  This parameter is optional as this operation may be invoked by non-payer systems.  However, it is considered 'mustSupport'.  If the client invoking the operation is a payer, they SHALL include their coverage information for the member when invoking the operation."/>
 		<type value="Resource"/>
 	</parameter>
 	<parameter>

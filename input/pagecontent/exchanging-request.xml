@@ -80,7 +80,7 @@
   </p>
   <a name="cr-task6"> </a>
   <p>
-    <b>Step 6:</b> As with the Communication-based <a href="#cr-post-b3">delivery approach</a>, the <i>data source</i> creates and/or locates the desired records on its system.
+    <b>Step 6:</b> In this option, instead of being directly POSTed directly back to the <i>data consumer</i>, the requested data record(s) are instead stored on the <i>data source</i>'s system.  This step is marked as 'optional' because in some cases the requested data might already exist on the source system and there will be no need to create it.  As for <a href="#cr-post-a3">step 3</a> above, multiple resource instances may need to exist to satisfy the communication request.  It is possible that some may need to be created, while others may be pre-existing.  In principle, any resources created due to the CommunicationRequest could potentially be available for subsequent query by other systems.  Also, it is also possible that the created records might exist on a system other than the <i>data source</i>.
   </p>
   <a name="cr-task7"> </a>
   <p>
@@ -92,7 +92,7 @@
   </p>
   <a name="cr-task9"> </a>
   <p>
-    <b>Steps 9:</b> These work the same as <a href="#cr-post-b5">Step 5 and 6</a> of the Communication-based exchange, except that instead of retrieving resources referenced by a Communication instance, the instances retrieved are pointed to by Task.output.  This step can be omitted if the outputs are retrieved as part of the polling/subscription in Step 8.
+    <b>Steps 9:</b> Once the <i>data consumer</i> has the Task and knows what data is deemed to satisfy the request (based on references in Task.output), it can then directly query that information - either as individual reads, as a query by resource id(s) or by a batch of queries or reads.  This step can be omitted if the outputs are retrieved as part of the polling/subscription in Step 8.
   </p>
   <p>
     NOTE: Both this approach and the following one can make use of both Task and a Request.  In this first approach, the Task has a 'focus' of the CommunicationRequest.  It describes the information to be retrieved and the Task is saying "please fulfill the order".  In the Task-based approach that follows, the Task describes what information is to be retrieved.  It *may* refer to a Request that is being fulfilled in whole or in part by the Task and which provides an authorization for the information to be retrieved.
