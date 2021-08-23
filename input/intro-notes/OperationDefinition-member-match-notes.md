@@ -9,6 +9,8 @@ For PCDE, the requesting system will subsequently use the UMB identifier to send
 
 Similarly provider systems that initiate a member match can use the UMB in subsequent queries to access payer-held clinical and other information.
 
+NOTE: For privacy reasons, the 'NewCoverage' **SHOULD NOT** include any data elements not marked as mustSupport in the Coverage profile.
+
 #### Interpretation of parameter names
 Because the original member match was defined in the Da Vinci PDex implementation guide, which was subsequently referenced by regulation, there are some challenges around making breaking changes to the interface.  For this reason, this HRex operation retains the original parameter names of 'OldCoverage' and 'NewCoverage'.  However, in practice, this operation will be used in situations when those labels don't necessarily make sense.  Therefore, treat these parameters as though they were named as follows:
 
