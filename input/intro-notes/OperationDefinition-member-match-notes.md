@@ -17,6 +17,9 @@ Because the original member match was defined in the Da Vinci PDex implementatio
 
 Implementers should plan for the possibilities that these paramter names will be changed in the future.
 
+#### Resolving parameter references
+The input parameters include a Coverage resource with a reference to a Patient resource.  That reference **SHALL** be a 'local' reference (i.e. starting with "Patient/" rather than "http"), **SHALL** be resolved to the paraemter with the name "MemberPatient" and **SHALL** refer to the same id.
+
 #### Member matching Logic
 This specification does not define the member matching logic that is used by a Payer that processes a $member-match operation.
 
