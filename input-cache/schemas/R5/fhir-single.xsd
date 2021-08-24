@@ -47,7 +47,7 @@
   POSSIBILITY OF SUCH DAMAGE.
   
 
-  Generated on Sun, Aug 22, 2021 15:51+0000 for FHIR v4.6.0 
+  Generated on Mon, Aug 23, 2021 21:51+0000 for FHIR v4.6.0 
 -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" targetNamespace="http://hl7.org/fhir" elementFormDefault="qualified" version="4.6.0">
   <!-- Note: When using this schema with some tools, it may also be necessary to declare xmlns:xml="http://www.w3.org/XML/1998/namespace", however this causes performance issues with other tools and thus is not in the base schemas. -->
@@ -19288,30 +19288,30 @@ UDILabelName | UserFriendlyName | PatientReportedName | ManufactureDeviceName | 
               <xs:documentation xml:lang="en">The jurisdiction to which the deviceIdentifier applies.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="marketStatus" type="DeviceDefinition.MarketStatus" minOccurs="1" maxOccurs="1">
+          <xs:element name="marketDistribution" type="DeviceDefinition.MarketDistribution" minOccurs="1" maxOccurs="1">
             <xs:annotation>
               <xs:documentation xml:lang="en">The organization that assigns the identifier algorithm.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="marketPeriod" minOccurs="0" maxOccurs="1" type="Period">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">Begin and end dates for the commercial distribution of the device.</xs:documentation>
            </xs:annotation>
           </xs:element>
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
-  <xs:complexType name="DeviceDefinition.MarketStatus">
+  <xs:complexType name="DeviceDefinition.MarketDistribution">
     <xs:annotation>
       <xs:documentation xml:lang="en">The characteristics, operational status and capabilities of a medical-related component of a medical device.</xs:documentation>
     </xs:annotation>
     <xs:complexContent>
       <xs:extension base="BackboneElement">
         <xs:sequence>
+          <xs:element name="marketPeriod" minOccurs="0" maxOccurs="1" type="Period">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Begin and end dates for the commercial distribution of the device.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
           <xs:element name="subJurisdiction" minOccurs="0" maxOccurs="1" type="uri">
             <xs:annotation>
-              <xs:documentation xml:lang="en">National state or territory to which the marketStatus recers, typically where the device is commercialized.</xs:documentation>
+              <xs:documentation xml:lang="en">National state or territory to which the marketDistribution recers, typically where the device is commercialized.</xs:documentation>
            </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -19469,6 +19469,32 @@ UDILabelName | UserFriendlyName | PatientReportedName | ManufactureDeviceName | 
           <xs:element name="jurisdiction" minOccurs="1" maxOccurs="1" type="uri">
             <xs:annotation>
               <xs:documentation xml:lang="en">The jurisdiction to which the deviceIdentifier applies.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="marketDistribution" type="DeviceDefinition.MarketDistribution1" minOccurs="1" maxOccurs="1">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">The organization that assigns the identifier algorithm.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="DeviceDefinition.MarketDistribution1">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">The characteristics, operational status and capabilities of a medical-related component of a medical device.</xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="BackboneElement">
+        <xs:sequence>
+          <xs:element name="marketPeriod" minOccurs="0" maxOccurs="1" type="Period">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Begin and end dates for the commercial distribution of the device.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="subJurisdiction" minOccurs="0" maxOccurs="1" type="uri">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">National state or territory to which the marketDistribution refers, typically where the device is commercialized.</xs:documentation>
            </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -44256,6 +44282,11 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
            </xs:annotation>
           </xs:element>
           <xs:element name="method" minOccurs="0" maxOccurs="1" type="CodeableConcept">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">A coded value specifying the technique that is used to perform the procedure.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="device" minOccurs="0" maxOccurs="1" type="CodeableReference">
             <xs:annotation>
               <xs:documentation xml:lang="en">A coded value specifying the technique that is used to perform the procedure.</xs:documentation>
            </xs:annotation>

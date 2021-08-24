@@ -135,13 +135,7 @@
     <b>Steps 7:</b> The <i>data consumer</i> then retrieves the resources referenced by <code>Task.output</code>.  This step can be omitted if the outputs are retrieved as part of the polling/subscription in Step 6.
   </p>
   <br/>
-  <p>This IG defines a specific <a href="StructureDefinition-hrex-task-data-request.html">profile</a> for use in HRex using this mode of human-mediated information request.  It also includes a number of examples, showing different phases of the workflow for a Task soliciting execution of a specific query.  Unlike the rest of this section, these examples are Da-Vinci specific and will be retained when this content migrates to FHIR R5.</p>
-  <ul>
-    <li><a href="Task-query-initial.html">Initial request</a></li>
-    <li><a href="Task-query-status.html">Interim status-check</a></li>
-    <li><a href="Task-query-complete.html">Completed Task</a></li>
-  </ul>
-  <p>There's also an an example showing a completed Task that was soliciting documents of a particular type <a href="Task-document-complete.html">here</a>.</p>
-  <p>If receiving notifications using subscription, the content would look like <a href="Bundle-subscription-notification-with-data.html">this</a> for a query, or like <a href="Bundle-subscription-notification-with-document.html">this</a> for a document request in environments where the data can be directly pushed securely.  Alternatively, the information would be polled or retrieved in response to a subscription id notification with a response like <a href="Bundle-task-poll-response.html">this</a>.</p>
-
+  <p>
+    Additional Da Vinci-specific guidance on using Tasks for information retrieval can be found <a href="task.html">here</a>
+  </p>
 </div>

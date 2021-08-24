@@ -68,5 +68,6 @@
 <page key="searchparameters" name="Search Parameters overview"/>
 <page key="security" name="Security and Privacy"/>
 <page key="toc" name="Table of Contents"/>
+<page key="task" name="Task-based queries"/>
 <page key="tools" name="Tooling and Support"/>
 </specification>
