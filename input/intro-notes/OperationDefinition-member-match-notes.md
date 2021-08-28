@@ -23,7 +23,7 @@ Implementers should plan for the possibilities that these paramter names will be
 The input parameters include a Coverage resource with a reference to a Patient resource.  That reference **SHALL** be a 'local' reference (i.e. starting with "Patient/" rather than "http"), **SHALL** be resolved to the paraemter with the name "MemberPatient" and **SHALL** refer to the same id.
 
 #### Member matching Logic
-This specification does not define the member matching logic that is used by a Payer that processes a $member-match operation.
+This specification does not define the member matching logic that is used by a Payer that processes a $member-match operation.  However, because matching member identity is a key step in the release of potentially sensitive patient information, the algorithms used should be robust.  Servers **SHALL** monitor for and take measures to prevent brute force attacks where the same or similar set of demographics are repeatedly searched with differing card information in an attempt to achieve a match when the card information is unknown.
 
 The specification is:
 
