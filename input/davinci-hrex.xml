@@ -32,6 +32,11 @@
 		<packageId value="hl7.fhir.us.core"/>
 		<version value="3.1.0"/>
 	</dependsOn>
+	<dependsOn id="udap">
+		<uri value="http://hl7.org/fhir/us/udap-security/ImplementationGuide/hl7.fhir.us.udap-security"/>
+		<packageId value="hl7.fhir.us.udap-security"/>
+		<version value="0.1.0"/>
+	</dependsOn>
 	<definition>
     <resource>
       <reference>
@@ -312,6 +317,11 @@
       <page>
         <nameUrl value="task.html"/>
         <title value="Task-based queries"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="consent-oauth.html"/>
+        <title value="Authorization with Consent"/>
         <generation value="markdown"/>
       </page>
       <page>

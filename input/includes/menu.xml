@@ -39,6 +39,9 @@
         <a href="task.html">Task-based queries</a>
       </li>
       <li>
+        <a href="consent-oauth.html">Authorization with Consent</a>
+      </li>
+      <li>
         <a href="smart-app-reg.html">Dynamic Registration for SMART Apps</a>
       </li>
       <li>

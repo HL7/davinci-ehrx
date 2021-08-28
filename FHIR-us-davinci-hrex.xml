@@ -51,6 +51,7 @@
 <page key="many" name="(many)"/>
 <page key="exchanging" name="Approaches to Exchanging FHIR Data"/>
 <page key="artifacts" name="Artifact List"/>
+<page key="consent-oauth" name="Authorization with Consent"/>
 <page key="conformance" name="Conformance Expectations"/>
 <page key="davinci-guiding-principles" name="Da Vinci Guiding Principles"/>
 <page key="downloads" name="Downloads"/>
