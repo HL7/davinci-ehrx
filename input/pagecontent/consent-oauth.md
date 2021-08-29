@@ -4,7 +4,7 @@ This page is considered 'draft' and has not undergone ballot or received wide co
 
 ### Overview
 
-There are several exchanges envisioned by Da Vinci projects where a patient's consent to the exchange of data is necessary to enable the flow of data.  This consent may be received by the data consumer in many ways, including signed paper, recorded directive by phone, electronic, etc.  The intended workflow is to establish authorization between data source and data consumer once, then have the data consumer query the source as needed for the period for which authorization has been granted.  At present, this requirement is expected to primarily exist in payer-to-payer exchanges, but in the future it may also encompass some exchanges between payers and providers or even between provider implementations.
+There are several exchanges envisioned by Da Vinci projects where a patient's consent to the exchange of data is necessary to enable the flow of data.  This consent may be received by the data consumer in many ways, including signed paper, recorded directive by phone, electronic, etc.  The intended workflow is to establish authorization between data source and data consumer once, then have the data consumer query the source as needed for the period for which authorization has been granted.  At present, this requirement is expected to primarily exist in payer-to-payer exchanges, but in the future, it may also encompass some exchanges between payers and providers or even between provider implementations.
 
 This implementation guide leverages the [HL7 UDAP B2B]({{site.data.fhir.udap}}b2b.html) specification, which in turn is based on the [UDAP JWT-based Client Authentication specification](https://www.udap.org/udap-jwt-client-auth.html).  Because the latter is not version-controlled or officially published as a standard, a snapshot of the 2018-08-14 version on which this specification is based can be found [here](UDAP-JW-Client-Auth_2018-08-14.pdf).
 
@@ -18,21 +18,21 @@ The HL7 UDAP specification does not define a mechanism for the determination of 
 
 While not explicitly described in the HL7 UDAP B2B specification, clients SHALL specify the <code>grant_type</code> parameter with a value of "client_credentials".  The scope parameter is not required and **SHALL** be interpreted as "patient/*.rs" if absent as defined by [SMART App Launch framework](http://hl7.org/fhir/smart-app-launch/2021May/scopes-and-launch-context.html).  Systems need not support other scopes and **SHALL** reject scopes they do not recognize.
 
-The JWT appearing in the <code>client_asssertion</code> includes a mandatory <code>sub</code> element containing the client id as registered with the data source's authentication server.  Because the client will already have been identified as part of the mutual TLS verification process, the client id **MAY** be specified as "unregistered", in which case, the identity **SHALL** be determined based on the mutual TLS-confirmed client identity.  
+The JWT appearing in the <code>client_assertion</code> includes a mandatory <code>sub</code> element containing the client id as registered with the data source's authentication server.  Because the client will already have been identified as part of the mutual TLS verification process, the client id **MAY** be specified as "unregistered", in which case, the identity **SHALL** be determined based on the mutual TLS-confirmed client identity.  
 
-When signing the JWT in the <code>client_assertion</code> portion of the OAuth request, the x.509 certificate used in the signature **MAY** (and in most cases will) be the same used in the mututal TLS process.
+When signing the JWT in the <code>client_assertion</code> portion of the OAuth request, the x.509 certificate used in the signature **MAY** (and in most cases will) be the same used in the mutual TLS process.
 
 The draft of the HL7 UDAP B2B specification mandates that <code>purpose_of_use</code> be specified as part of the B2B authorization extension.  This requirement may be omitted in the final published version of the HL7 UDAP specification.  For now, implementations may satisfy the requirement by specifying all high-level purposes of use that may be relevant for the period for which access is sought.  E.g. 
 
 <code>"purpose_of_use": ["HMARKT","HOPERAT","HPAYMT","HRESCH","PATRQT","TREAT"]</code>
 
-would cover all possible purposes of use - marketing, operations, payment, research, patient request and treatment.  Finer-grained Da Vinci implementation guides may provide additional guidances about what purpose-of-use codes must or may be present or supported.
+would cover all possible purposes of use - marketing, operations, payment, research, patient request and treatment.  Finer-grained Da Vinci implementation guides may provide additional guidance about what purpose-of-use codes must or may be present or supported.
 
 ### Consent
 
 Implementations **SHALL** populate the <code>consent_reference</code> with a URL that refers to either a FHIR Consent or a DocumentReference that conveys the patient-signed consent.  The content referenced **SHALL** be sufficient to permit audit confirmation that the consent was indeed granted by the member or an authorized agent.
 
-The HL7 UDAP B2B specification mandates that the <code>consent_reference</code> be resolvable to either a DocumentReference or Consent resource.  This IG further constrains this expectation to be a Consent resource adhering to the [HRex Consent profile](StructureDefinition-hrex-consent.html).  This means that the server on which the Consent is stored **SHALL** support a [read]({{site.data.fhir.path}}http.html#read)operation.
+The HL7 UDAP B2B specification mandates that the <code>consent_reference</code> be resolvable to either a DocumentReference or Consent resource.  This IG further constrains this expectation to be a Consent resource adhering to the [HRex Consent profile](StructureDefinition-hrex-consent.html).  This means that the server on which the Consent is stored **SHALL** support a [read]({{site.data.fhir.path}}http.html#read) operation.
 
 A key aspect of this Consent is the indication of the time-period over which the Consent is valid.  Data consumers **SHALL NOT** request initial access or a refresh token unless the Consent referenced covers the maximum time period (1 hour) for which authorization might be granted.  If the Consent is updated in any way (e.g. revoked), the Data source **SHALL** dispose of any token granted and no longer use it.  Data sources **SHOULD* retrieve the Consent to verify this requirement has been met prior to granting each authorization or renewal.  If the Consent referenced is invalid according to the profile or otherwise unacceptable, the Data Source **SHOULD** include an [OperationOutcome]({{site.data.fhir.path}}operationoutcome.html) that describes any issues found as the HTTP Body accompanying the appropriate HTTP error code.
 
