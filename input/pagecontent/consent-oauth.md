@@ -10,6 +10,15 @@ This implementation guide leverages the [HL7 UDAP B2B]({{site.data.fhir.udap}}b2
 
 The implementation guide conveys key information about the consent provided and to establish a token that can be used to authorize subsequent queries.  UDAP allows credential based and authorization code-based authorization processes.  Systems compliant with this IG **SHALL** support UDAP B2B credential-based access.  All such exchanges **SHALL** be conducted under mutually authenticated TLS.
 
+### Workflow
+
+The following diagram shows how this authentication process will fit into the overall exchange process.  
+
+  {% include query-workflow.svg %}
+  
+The diagram shows this process being invoked twice, for the scenario where both parties have a need to access information from the other (e.g. when payers have simultaneous coverage in force for the same patient).  In the simple scenario where only one system requires access, only the first authentication process would occur.
+
+
 ### OAuth Server
 
 The HL7 UDAP specification does not define a mechanism for the determination of the OAuth server location.  We expect that omission to be addressed in a future release.  In the meantime, where the OAuth server location is not known by prior arrangement or registry discovery, clients **MAY** dynamically determine the OAuth server for a particular FHIR endpoint by using the mechanisms established by the [SMART App Launch framework](http://hl7.org/fhir/smart-app-launch) - either the CapabilityStatement-based approach of release 1 or the proposed '.well-known' approach of release 2.
