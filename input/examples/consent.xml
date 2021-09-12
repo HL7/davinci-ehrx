@@ -1,0 +1,64 @@
+<Consent xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R4/fhir-single.xsd">
+  <id value="consent"/>
+  <status value="active"/>
+  <scope>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/consentscope"/>
+      <code value="patient-privacy"/>
+    </coding>
+  </scope>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+      <code value="IDSCL"/>
+    </coding>
+  </category>
+  <patient>
+    <identifier>
+      <type>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+          <code value="MB"/>
+        </coding>
+      </type>
+      <system value="http://example.org/target-payer/identifiers/member"/>
+      <value value="55678"/>
+      <assigner>
+        <display value="Old Payer"/>
+      </assigner>
+    </identifier>
+  </patient>
+  <sourceReference>
+    <reference value="http://example.org/DocumentReference/someconsent.pdf"/>
+  </sourceReference>
+  <policy>
+    <uri value="http://hl7.org/fhir/us/davinci-hrex/consent-oauth#regular"/>
+  </policy>
+  <provision>
+    <type value="permit"/>
+    <period>
+      <start value="2022-01-01"/>
+      <end value="2022-01-31"/>
+    </period>
+    <actor>
+      <role>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType"/>
+          <code value="IRCP"/>
+        </coding>
+      </role>
+      <reference>
+        <identifier>
+          <system value="http://example.org/old-payer"/>
+          <value value="DH10001235"/>
+        </identifier>
+      </reference>
+    </actor>
+    <action>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/consentaction"/>
+        <code value="disclose"/>
+      </coding>
+    </action>
+  </provision>
+</Consent>

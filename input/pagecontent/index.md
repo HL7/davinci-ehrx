@@ -6,7 +6,7 @@
 
 ### Description
 
-The [Da Vinci](https://confluence.hl7.org/display/DVP) Health Record Exchange (HRex) implementation guide (IG) is a foundational guide for all other Da Vinci guides.  It defines FHIR profiles, operations and guidance that are relevant to more than one, and sometimes all, Da Vinci use-case IGs.  In the future, it may define additional types of artifacts such as extensions or value sets.  All HRex artifacts are intended to be use-case independent, though they are specifically tied to the HRex scope.  They may be referenced in RESTful exchanges, passed in CDS Hooks, or manipulated by SMART apps.
+The [Da Vinci](https://confluence.hl7.org/display/DVP) Health Record Exchange (HRex) implementation guide (IG) is a foundational guide for all other Da Vinci guides.  It defines FHIR profiles, operations and guidance that are relevant to more than one, and sometimes all, Da Vinci use-case IGs.  In the future, it may define additional types of artifacts such as extensions or value sets.  All HRex artifacts are intended to be use-case independent, though they are specifically tied to the HRex scope.  They may be referenced in RESTful exchanges, passed in CDS Hooks, or manipulated by SMART apps.  Because the artifacts defiend here are use-case independent, this IG does not include a use-case or patient stories section.  Use-cases may instead be found in the various Da Vinci guides that leverage the artifacts defined here for specific business purposes.
 
 As a supporting IG, HRex is expected to continue to evolve as additional shared content needs are identified as part of the Da Vinci work.  Da Vinci use case IGs will derive from this IG and reference specific pages and sections that are relevant to their use-case and mandate the use of the profiles and artifacts defined here, or that are inherited from US Core.  Da Vinci IGs may also refine or further constrain content defined here when the use case requirements are tighter than the general 'shared' requirement.
 
@@ -16,6 +16,8 @@ The scope of Da Vinci is US payer and provider data exchange with each other and
 ### Dependencies
 
 At present, HRex is based on [FHIR R4]({{site.data.fhir.path}}).  In addition, HRex is dependent on the [US Core 3.1 (FHIR R4)]({{site.data.fhir.ver.uscore}}) implementation guide.  Wherever possible, Da Vinci tries to leverage US Core profiles, but in some situations, the payer community requires additional constraints or needs to profile resources that are not yet supported by US Core.  It is possible that certain HRex profiles and/or descriptive content may migrate to a future release of US Core, and in some cases, to the base FHIR standard.  In certain instances, Da Vinci IGs will also declare conformance with the [QI Core](http://hl7.org/fhir/us/qicore), which supplements US Core with additional profiles and constraints for use in quality measurements.  This IG is not derived from QI core, but HRex profiles should be generally compliant with the QI Core specification.
+
+HRex also has a dependency on the [HL7 UDAP]({{site.data.fhir.ver.udap}}) implementation guide, which covers how to [establish access permissions based on patient consent](consent-oauth.html).
 
 In addition, some Da Vinci specifications will make use of content from the following FHIR-related specifications and implementation guides:
 * [Bulk Data](https://hl7.org/fhir/uv/bulkdata)

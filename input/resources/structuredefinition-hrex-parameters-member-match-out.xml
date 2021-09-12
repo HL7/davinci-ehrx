@@ -20,7 +20,7 @@
         </discriminator>
         <rules value="closed"/>
       </slicing>
-      <min value="2"/>
+      <min value="1"/>
       <max value="2"/>
       <mustSupport value="true"/>
     </element>
@@ -41,14 +41,14 @@
       <min value="1"/>
       <type>
         <code value="Resource"/>
-        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+        <profile value="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-patient-member"/>
       </type>
       <mustSupport value="true"/>
     </element>
     <element id="Parameters.parameter:newCoverage">
       <path value="Parameters.parameter"/>
       <sliceName value="newCoverage"/>
-      <min value="1"/>
+      <min value="0"/>
       <max value="1"/>
       <mustSupport value="true"/>
     </element>

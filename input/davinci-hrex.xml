@@ -32,7 +32,20 @@
 		<packageId value="hl7.fhir.us.core"/>
 		<version value="3.1.0"/>
 	</dependsOn>
+	<dependsOn id="udap">
+		<uri value="http://hl7.org/fhir/us/udap-security/ImplementationGuide/hl7.fhir.us.udap-security"/>
+		<packageId value="hl7.fhir.us.udap-security"/>
+		<version value="0.1.0"/>
+	</dependsOn>
 	<definition>
+    <resource>
+      <reference>
+        <reference value="Consent/consent"/>
+      </reference>
+      <name value="HRex Consent example"/>
+      <description value="An example showing a 'regular' consent for a member"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-consent"/>
+    </resource>
     <resource>
       <reference>
         <reference value="Coverage/full"/>
@@ -69,16 +82,32 @@
       <reference>
         <reference value="Parameters/member-match-in"/>
       </reference>
-      <name value="$member-match example request"/>
-      <description value="A Parameters instance showing what the input to the $member-match operation would look like"/>
+      <name value="$member-match payer example request"/>
+      <description value="A Parameters instance showing what the input to the $member-match operation would look like when initiated by a payer system"/>
       <exampleCanonical value="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-parameters-member-match-in"/>
     </resource>
     <resource>
       <reference>
         <reference value="Parameters/member-match-out"/>
       </reference>
-      <name value="$member-match example response"/>
-      <description value="A Parameters instance showing what the result of a $member-match operation would look like"/>
+      <name value="$member-match payer example response"/>
+      <description value="A Parameters instance showing what the result of a $member-match operation would look like when initiated by a payer system"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-parameters-member-match-out"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Parameters/member-match-in-provider"/>
+      </reference>
+      <name value="$member-match provider example request"/>
+      <description value="A Parameters instance showing what the input to the $member-match operation would look like when initiated by a provider system"/>
+      <exampleCanonical value="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-parameters-member-match-in"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Parameters/member-match-out-provider"/>
+      </reference>
+      <name value="$member-match provider example response"/>
+      <description value="A Parameters instance showing what the result of a $member-match operation would look like when initiated by a provider system"/>
       <exampleCanonical value="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-parameters-member-match-out"/>
     </resource>
     <resource>
@@ -175,6 +204,14 @@
       </reference>
       <name value="HRex Task Subscription Notification - completed query example"/>
       <description value="An example showing the subscription notification for a 'query' data request task that includes data"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/subscription-notification-with-document"/>
+      </reference>
+      <name value="HRex Task Subscription Notification - completed document example"/>
+      <description value="An example showing the subscription notification for a 'document' data request task that includes data"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -276,15 +313,25 @@
         <generation value="html"/>
       </page>
       <page>
-        <nameUrl value="security.html"/>
-        <title value="Security and Privacy"/>
-        <generation value="html"/>
-		 <page>
-		<nameUrl value="davinci-guiding-principles.html"/>
+        <nameUrl value="davinci-guiding-principles.html"/>
         <title value="Da Vinci Guiding Principles"/>
         <generation value="html"/>
       </page>
-	  </page>
+      <page>
+        <nameUrl value="security.html"/>
+        <title value="Security and Privacy"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="task.html"/>
+        <title value="Task-based queries"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="consent-oauth.html"/>
+        <title value="Authorization with Consent"/>
+        <generation value="markdown"/>
+      </page>
       <page>
         <nameUrl value="smart-app-reg.html"/>
         <title value="Dynamic Registration for SMART Apps"/>
@@ -328,5 +375,9 @@
 			<code value="find-other-resources"/>
 			<value value="true"/>
 		</parameter>
+    <parameter>
+      <code value="path-expansion-params"/>
+      <value value="terminology-settings.json"/>
+    </parameter>
 	</definition>
 </ImplementationGuide>

@@ -27,10 +27,19 @@
     </a>
     <ul class="dropdown-menu">
       <li>
+        <a href="davinci-guiding-principles.html">Guiding Principles</a>
+      </li>
+      <li>
         <a href="conformance.html">Conformance Expectations</a>
       </li>
       <li>
         <a href="security.html">Security and Privacy</a>
+      </li>
+      <li>
+        <a href="task.html">Task-based queries</a>
+      </li>
+      <li>
+        <a href="consent-oauth.html">Authorization with Consent</a>
       </li>
       <li>
         <a href="smart-app-reg.html">Dynamic Registration for SMART Apps</a>

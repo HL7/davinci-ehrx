@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R4/fhir-single.xsd">
+  <id value="hrex-consent-policy"/>
+  <url value="http://hl7.org/fhir/us/davinci-hrex/ValueSet/hrex-consent-policy"/>
+  <name value="HRexConsentPolicy"/>
+  <title value="HRex Consent Policy ValueSet"/>
+  <status value="draft"/>
+  <description value="The set of policy URIs for use in HRex data disclosureconsent assertions"/>
+  <compose>
+    <include>
+      <system value="urn:ietf:rfc:3986"/>
+      <concept>
+        <code value="http://hl7.org/fhir/us/davinci-hrex/consent-oauth#regular"/>
+      </concept>
+      <concept>
+        <code value="http://hl7.org/fhir/us/davinci-hrex/consent-oauth#sensitive"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>
