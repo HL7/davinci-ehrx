@@ -100,7 +100,7 @@
 	<element id="Coverage.class:group">
       <path value="Coverage.class"/> 
 	  <sliceName value="group"/>
-	  <min value="1"/>
+	  <min value="0"/>
       <max value="1"/>
       <mustSupport value="true"/>
     </element> 
