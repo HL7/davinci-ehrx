@@ -78,12 +78,9 @@
 		</element>
 		<element id="Coverage.payor">
 			<path value="Coverage.payor"/>
-<<<<<<< HEAD
 			<min value="1"/>
 			<max value="1"/>
-=======
 			<comment value="... When sending payer, it may either be a reference to a record stored on a mutually accessible registry, or the Reference.display and Reference.identifier elements can be used to convey the payer's name and identifer."/>
->>>>>>> 3b86ec48ec1d541276344c71eb2fac7b8eb455a4
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-organization"/>
