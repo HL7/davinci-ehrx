@@ -96,7 +96,6 @@
         </discriminator>
         <rules value="open"/>
       </slicing>
-      <mustSupport value="true"/>
     </element> 
 	<element id="Coverage.class:group">
       <path value="Coverage.class"/> 
