@@ -8,7 +8,7 @@ There are several exchanges envisioned by Da Vinci projects where a patient's co
 
 This implementation guide leverages the [HL7 UDAP B2B]({{site.data.fhir.udap}}b2b.html) specification, which in turn is based on the [UDAP JWT-based Client Authentication specification](https://www.udap.org/udap-jwt-client-auth.html).  Because the latter is not version-controlled or officially published as a standard, a snapshot of the 2018-08-14 version on which this specification is based can be found [here](UDAP-JW-Client-Auth_2018-08-14.pdf).
 
-The implementation guide conveys key information about the consent provided and to establish a token that can be used to authorize subsequent queries.  UDAP allows credential based and authorization code-based authorization processes.  Systems compliant with this IG **SHALL** support UDAP B2B credential-based access.  All such exchanges **SHALL** be conducted under mutually authenticated TLS.
+The implementation guide conveys key information about the consent provided and to establish a token that can be used to authorize subsequent queries.  UDAP allows credential based and authorization code-based authorization processes.  Systems compliant with this IG **SHALL** support UDAP B2B credential-based access.  All such exchanges **SHALL** be conducted under mutually authenticated TLS as defined in [rfc2246](https://www.ietf.org/rfc/rfc2246.html#appendix-F.1.1).
 
 ### Workflow
 
