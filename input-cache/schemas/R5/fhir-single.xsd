@@ -47,7 +47,11 @@
   POSSIBILITY OF SUCH DAMAGE.
   
 
+<<<<<<< HEAD
+  Generated on Sun, Sep 12, 2021 17:21+0000 for FHIR v4.6.0 
+=======
   Generated on Wed, Sep 1, 2021 19:41+0000 for FHIR v4.6.0 
+>>>>>>> 3b86ec48ec1d541276344c71eb2fac7b8eb455a4
 -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" targetNamespace="http://hl7.org/fhir" elementFormDefault="qualified" version="4.6.0">
   <!-- Note: When using this schema with some tools, it may also be necessary to declare xmlns:xml="http://www.w3.org/XML/1998/namespace", however this causes performance issues with other tools and thus is not in the base schemas. -->
@@ -7461,9 +7465,9 @@ into another (possibly the same) biological entity.</xs:documentation>
               <xs:documentation xml:lang="en">Description of of processing.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="procedure" minOccurs="0" maxOccurs="1" type="CodeableConcept">
+          <xs:element name="procedure" minOccurs="0" maxOccurs="1" type="CodeableReference">
             <xs:annotation>
-              <xs:documentation xml:lang="en">Procesing code.</xs:documentation>
+              <xs:documentation xml:lang="en">The reference or code of the processing activity.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="additive" minOccurs="0" maxOccurs="1" type="Reference">
@@ -7493,6 +7497,11 @@ into another (possibly the same) biological entity.</xs:documentation>
           <xs:element name="description" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">Description of manipulation.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="procedure" minOccurs="0" maxOccurs="1" type="CodeableReference">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">The reference or code of the manipulation activity.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:choice minOccurs="0" maxOccurs="1" >
@@ -19019,11 +19028,6 @@ UDILabelName | UserFriendlyName | PatientReportedName | ManufactureDeviceName | 
           <xs:documentation xml:lang="en">Entered in Error</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
-      <xs:enumeration value="unknown">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Unknown</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
     </xs:restriction>
   </xs:simpleType>
   <xs:complexType name="FHIRDeviceStatus">
@@ -19283,7 +19287,11 @@ UDILabelName | UserFriendlyName | PatientReportedName | ManufactureDeviceName | 
               <xs:documentation xml:lang="en">The jurisdiction to which the deviceIdentifier applies.</xs:documentation>
            </xs:annotation>
           </xs:element>
+<<<<<<< HEAD
+          <xs:element name="marketDistribution" type="DeviceDefinition.MarketDistribution" minOccurs="0" maxOccurs="unbounded">
+=======
           <xs:element name="marketDistribution" type="DeviceDefinition.MarketDistribution" minOccurs="1" maxOccurs="1">
+>>>>>>> 3b86ec48ec1d541276344c71eb2fac7b8eb455a4
             <xs:annotation>
               <xs:documentation xml:lang="en">The organization that assigns the identifier algorithm.</xs:documentation>
            </xs:annotation>
@@ -19478,12 +19486,21 @@ UDILabelName | UserFriendlyName | PatientReportedName | ManufactureDeviceName | 
       <xs:extension base="BackboneElement">
         <xs:sequence>
           <xs:element name="marketPeriod" minOccurs="0" maxOccurs="1" type="Period">
+<<<<<<< HEAD
             <xs:annotation>
               <xs:documentation xml:lang="en">Begin and end dates for the commercial distribution of the device.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="subJurisdiction" minOccurs="0" maxOccurs="1" type="uri">
             <xs:annotation>
+=======
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Begin and end dates for the commercial distribution of the device.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="subJurisdiction" minOccurs="0" maxOccurs="1" type="uri">
+            <xs:annotation>
+>>>>>>> 3b86ec48ec1d541276344c71eb2fac7b8eb455a4
               <xs:documentation xml:lang="en">National state or territory to which the marketDistribution refers, typically where the device is commercialized.</xs:documentation>
            </xs:annotation>
           </xs:element>
@@ -19650,7 +19667,11 @@ UDILabelName | UserFriendlyName | PatientReportedName | ManufactureDeviceName | 
               <xs:documentation xml:lang="en">Whether the last corrective action known for this device was a recall.</xs:documentation>
            </xs:annotation>
           </xs:element>
+<<<<<<< HEAD
+          <xs:element name="scope" minOccurs="0" maxOccurs="1" type="DeviceCorrectiveActionScope">
+=======
           <xs:element name="scope" minOccurs="1" maxOccurs="1" type="DeviceCorrectiveActionScope">
+>>>>>>> 3b86ec48ec1d541276344c71eb2fac7b8eb455a4
             <xs:annotation>
               <xs:documentation xml:lang="en">The scope of the corrective action - whether the action targeted all units of a given device model, or only a specific set of batches identified by lot numbers, or individually identified devices identified by the serial name.</xs:documentation>
            </xs:annotation>
@@ -35168,11 +35189,6 @@ The MedicationUsage resource was previously called MedicationStatement.</xs:docu
               <xs:documentation xml:lang="en">Allows the product to be classified by various systems.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="characteristic" minOccurs="0" maxOccurs="unbounded" type="CodeableConcept">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">Allows the key product features to be recorded, such as &quot;sugar free&quot;, &quot;modified release&quot;, &quot;parallel import&quot;.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
           <xs:element name="marketingStatus" minOccurs="0" maxOccurs="unbounded" type="MarketingStatus">
             <xs:annotation>
               <xs:documentation xml:lang="en">Marketing status of the medicinal product, in contrast to marketing authorization.</xs:documentation>
@@ -35226,6 +35242,11 @@ The MedicationUsage resource was previously called MedicationStatement.</xs:docu
           <xs:element name="operation" type="MedicinalProductDefinition.Operation" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
               <xs:documentation xml:lang="en">A manufacturing or administrative process or step associated with (or performed on) the medicinal product.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="characteristic" type="MedicinalProductDefinition.Characteristic" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Allows the key product features to be recorded, such as &quot;sugar free&quot;, &quot;modified release&quot;, &quot;parallel import&quot;.</xs:documentation>
            </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -35384,6 +35405,32 @@ The MedicationUsage resource was previously called MedicationStatement.</xs:docu
               <xs:documentation xml:lang="en">Specifies whether this particular business or manufacturing process is considered proprietary or confidential.</xs:documentation>
            </xs:annotation>
           </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="MedicinalProductDefinition.Characteristic">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">Detailed definition of a medicinal product, typically for uses other than direct patient care (e.g. regulatory use, drug catalogs).</xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="BackboneElement">
+        <xs:sequence>
+          <xs:element name="type" minOccurs="1" maxOccurs="1" type="CodeableConcept">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">A code expressing the type of characteristic.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:choice minOccurs="0" maxOccurs="1" >
+            <xs:annotation>
+              <xs:documentation xml:lang="en">A value for the characteristic.</xs:documentation>
+            </xs:annotation>
+            <xs:element name="valueCodeableConcept" type="CodeableConcept"/>
+            <xs:element name="valueQuantity" type="Quantity"/>
+            <xs:element name="valueDate" type="date"/>
+            <xs:element name="valueBoolean" type="boolean"/>
+            <xs:element name="valueAttachment" type="Attachment"/>
+          </xs:choice>
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>

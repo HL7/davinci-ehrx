@@ -17,17 +17,33 @@
 		<element id="Coverage">
 			<path value="Coverage"/>
 			<definition value="This is the Coverage profile which is used to provide insurance information for scheduling an appointment and/or registering a patient."/>
+			 <constraint>
+        <key value="hrex-cov-1"/>
+        <severity value="error"/>
+        <human value="Coverage.identifier or Coverage.subscriberId SHALL be present"/>
+        <expression value="identifier.exists() or subscriberId.exists()"/>
+        <xpath value="f:identifier or f:subscriberId"/>
+      </constraint>
 			<mustSupport value="false"/>
 		</element>
 		<element id="Coverage.identifier">
 			<path value="Coverage.identifier"/>
+			<min value="0"/>
+      <max value="1"/>
 			<short value="Also known as Member identifier"/>
 			<comment value="This must be filled in when known"/>
-			<mustSupport value="true"/>
+			 <mustSupport value="true"/>
 		</element>
-		<element id="Coverage.type">
-			<path value="Coverage.type"/>
-		</element>
+		 <element id="Coverage.identifier.value">
+      <path value="Coverage.identifier.value"/>
+      <short value="The value that is unique within the system."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
 		<element id="Coverage.policyHolder">
 			<path value="Coverage.policyHolder"/>
 			<type>
@@ -56,15 +72,14 @@
 			<requirements value="This would usually be the US Core Patient Resource for which the service was performed."/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+				<targetProfile value="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-patient-demographics"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
-		<element id="Coverage.period">
-			<path value="Coverage.period"/>
-		</element>
 		<element id="Coverage.payor">
 			<path value="Coverage.payor"/>
+			<min value="1"/>
+			<max value="1"/>
 			<comment value="... When sending payer, it may either be a reference to a record stored on a mutually accessible registry, or the Reference.display and Reference.identifier elements can be used to convey the payer's name and identifer."/>
 			<type>
 				<code value="Reference"/>
@@ -72,5 +87,43 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
+		<element id="Coverage.class">
+      <path value="Coverage.class"/> 
+	  <slicing>
+        <discriminator>
+          <type value="pattern"/>
+          <path value="type"/>
+        </discriminator>
+        <rules value="open"/>
+      </slicing>
+    </element> 
+	<element id="Coverage.class:group">
+      <path value="Coverage.class"/> 
+	  <sliceName value="group"/>
+	  <min value="0"/>
+      <max value="1"/>
+      <mustSupport value="true"/>
+    </element> 
+	<element id="Coverage.class:group.type">
+      <path value="Coverage.class.type"/>   
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/coverage-class"/>
+          <code value="group"/>
+        </coding>
+      </patternCodeableConcept>
+      <mustSupport value="true"/>
+    </element> 
+    <element id="Coverage.class:group.value">
+      <path value="Coverage.class.value"/>     
+      <min value="1"/> 
+      <max value="1"/> 
+	   <mustSupport value="true"/>
+    </element> 
 	</differential>
 </StructureDefinition>

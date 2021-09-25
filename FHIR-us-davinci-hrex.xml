@@ -28,6 +28,7 @@
 <artifact id="Organization/min" key="Organization-min" name="HRex Organization minimal example"/>
 <artifact id="StructureDefinition/hrex-parameters-member-match-in" key="StructureDefinition-hrex-parameters-member-match-in" name="HRex Parameters - Member Match Request Profile"/>
 <artifact id="StructureDefinition/hrex-parameters-member-match-out" key="StructureDefinition-hrex-parameters-member-match-out" name="HRex Parameters - Member Match Response Profile"/>
+<artifact id="StructureDefinition/hrex-patient-demographics" key="StructureDefinition-hrex-patient-demographics" name="HRex Patient Demographics"/>
 <artifact id="StructureDefinition/hrex-patient-member" key="StructureDefinition-hrex-patient-member" name="HRex Patient Member Profile"/>
 <artifact id="StructureDefinition/hrex-practitioner" key="StructureDefinition-hrex-practitioner" name="HRex Practitioner Profile"/>
 <artifact id="Practitioner/full" key="Practitioner-full" name="HRex Practitioner full example"/>
