@@ -4,7 +4,7 @@
   <name value="HRexMemberMatchRequestParameters"/>
   <title value="HRex Parameters - Member Match Request Profile"/>
   <status value="active"/>
-  <description value="The Parameters profile for Da Vinci Find Member using Patient and Coverage Resources Request. The resource must contain: &#xA; * MemberPatient - US Core Patient containing member demographics &#xA;  * OldCoverage - details of prior health plan coverage provided by the member, typically from their health plan coverage card &#xA;  * NewCoverage - details of new or prospective health plan coverage, provided by the health plan based upon the member&#39;s enrolment"/>
+  <description value="The Parameters profile for Da Vinci Find Member using Patient and Coverage Resources Request. The resource must contain: &#xA; * MemberPatient - US Core Patient containing member demographics &#xA;  * CoverageToMatch - details of prior health plan coverage provided by the member, typically from their health plan coverage card &#xA;  * CoverageToLink - details of new or prospective health plan coverage, provided by the health plan based upon the member&#39;s enrolment"/>
   <kind value="resource"/>
   <abstract value="false"/>
   <type value="Parameters"/>
@@ -45,19 +45,19 @@
       </type>
       <mustSupport value="true"/>
     </element>
-    <element id="Parameters.parameter:oldCoverage">
+    <element id="Parameters.parameter:CoverageToMatch">
       <path value="Parameters.parameter"/>
-      <sliceName value="oldCoverage"/>
+      <sliceName value="CoverageToMatch"/>
       <min value="1"/>
       <max value="1"/>
       <mustSupport value="true"/>
     </element>
-    <element id="Parameters.parameter:oldCoverage.name">
+    <element id="Parameters.parameter:CoverageToMatch.name">
       <path value="Parameters.parameter.name"/>
-      <fixedString value="OldCoverage"/>
+      <fixedString value="CoverageToMatch"/>
       <mustSupport value="true"/>
     </element>
-    <element id="Parameters.parameter:oldCoverage.resource">
+    <element id="Parameters.parameter:CoverageToMatch.resource">
       <path value="Parameters.parameter.resource"/>
       <min value="1"/>
       <type>
@@ -66,19 +66,19 @@
       </type>
       <mustSupport value="true"/>
     </element>
-    <element id="Parameters.parameter:newCoverage">
+    <element id="Parameters.parameter:CoverageToLink">
       <path value="Parameters.parameter"/>
-      <sliceName value="newCoverage"/>
+      <sliceName value="CoverageToLink"/>
       <min value="0"/>
       <max value="1"/>
       <mustSupport value="true"/>
     </element>
-    <element id="Parameters.parameter:newCoverage.name">
+    <element id="Parameters.parameter:CoverageToLink.name">
       <path value="Parameters.parameter.name"/>
-      <fixedString value="NewCoverage"/>
+      <fixedString value="CoverageToLink"/>
       <mustSupport value="true"/>
     </element>
-    <element id="Parameters.parameter:newCoverage.resource">
+    <element id="Parameters.parameter:CoverageToLink.resource">
       <path value="Parameters.parameter.resource"/>
       <min value="1"/>
       <type>

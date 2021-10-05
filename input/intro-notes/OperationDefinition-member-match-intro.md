@@ -7,8 +7,7 @@ The operation works by passing in three sets of information:
 * The target payer's Coverage information (as gleaned from the member's card)
 
 The response returns:
-* The target payer's demographic information on the member - including their unique member identifier (UMB) sent as one of the `Patient.identifier` repetitions
-* The target payer's Coverage information (as officially known to the payer)
+* The target payer's identifier information on the member - their unique member identifier (UMB) sent as one of the `Patient.identifier` repetitions
 
 An identifier is used rather than a member id as most payers do not (yet) expose RESTful ids for their member or coverage records.  This identifier can be used in subsequent interactions with the target payer system.
 

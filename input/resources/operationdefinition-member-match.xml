@@ -23,16 +23,16 @@
 		<documentation value="Parameter submitted by the new plan **SHALL** contain US Core Patient containing member demographics."/>
 		<type value="Resource"/>
 		<referencedFrom>
-      <source value="OldCoverage"/>
+      <source value="CoverageToMatch"/>
       <sourceId value="beneficiary"/>
     </referencedFrom>
 		<referencedFrom>
-      <source value="NewCoverage"/>
+      <source value="CoverageToLink"/>
       <sourceId value="beneficiary"/>
     </referencedFrom>
 	</parameter>
 	<parameter>
-		<name value="OldCoverage"/>
+		<name value="CoverageToMatch"/>
 		<use value="in"/>
 		<min value="1"/>
 		<max value="1"/>
@@ -40,7 +40,7 @@
 		<type value="Resource"/>
 	</parameter>
 	<parameter>
-		<name value="NewCoverage"/>
+		<name value="CoverageToLink"/>
 		<use value="in"/>
 		<min value="0"/>
 		<max value="1"/>
@@ -48,19 +48,11 @@
 		<type value="Resource"/>
 	</parameter>
 	<parameter>
-		<name value="MemberPatient"/>
+		<name value="MemberIdentifier"/>
 		<use value="out"/>
 		<min value="1"/>
 		<max value="1"/>
-		<documentation value="This is the member information for the patient as known by the server that is the target of the operation."/>
-		<type value="Resource"/>
-	</parameter>
-	<parameter>
-		<name value="NewCoverage"/>
-		<use value="out"/>
-		<min value="0"/>
-		<max value="1"/>
-		<documentation value="This is a copy of the NewCoverage information provided on invocation of the operation.  It SHALL be present if NewCoverage was specified as an input parameter and the operation was successful."/>
-		<type value="Resource"/>
+		<documentation value="This is the member identifier information for the patient as known by the server that is the target of the operation."/>
+		<type value="Identifier"/>
 	</parameter>
 </OperationDefinition>

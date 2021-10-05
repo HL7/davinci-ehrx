@@ -1,2 +1,2 @@
-This sample shows the two response parameter values received from the [$member-match](OperationDefinition-member-match.html) operation.  It looks similar to the [request example](Parameters-member-match-in.html).  However, there is no 'new' Coverage, the Patient has an additional identifier - representing the result of the match, and the coverage and patient demographic information *can* be a bit different - reflecting the information as known by the old payer, rather than echoing what was sent in the request.
+This sample shows the member identifier response parameter value received from the [$member-match](OperationDefinition-member-match.html) operation.
 

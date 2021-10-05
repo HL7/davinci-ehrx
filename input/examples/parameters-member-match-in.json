@@ -39,7 +39,7 @@
       }
     },
     {
-      "name": "OldCoverage",
+      "name": "CoverageToMatch",
       "resource": {
         "resourceType": "Coverage",
         "id": "9876B1",
@@ -115,7 +115,7 @@
       }
     },
     {
-      "name": "NewCoverage",
+      "name": "CoverageToLink",
       "resource": {
         "resourceType": "Coverage",
         "id": "AA87654",
