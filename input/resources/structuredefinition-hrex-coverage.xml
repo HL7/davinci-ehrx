@@ -76,6 +76,13 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
+			<element id="Coverage.dependent">
+			<path value="Coverage.dependent"/>
+			<type>
+				<code value="string"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
 		<element id="Coverage.payor">
 			<path value="Coverage.payor"/>
 			<min value="1"/>

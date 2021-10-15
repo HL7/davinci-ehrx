@@ -18,8 +18,42 @@
     <element id="Patient">
       <path value="Patient"/>
       <definition value="HRex Patient Demographics Profile"/>
+	  <constraint>
+        <key value="hrex-pat-1"/>
+        <severity value="error"/>
+        <human value="Patient.gender or Patient.birthSex SHALL be present"/>
+        <expression value="gender.exists() or birthSex.exists()"/>
+        <xpath value="f:gender or f:birthSex"/>
+      </constraint>
       <mustSupport value="false"/>
     </element>
+	<element id="Patient.identifier">
+      <path value="Patient.identifier"/>
+      <slicing>
+        <discriminator>
+          <type value="pattern"/>
+          <path value="$this"/>
+        </discriminator>
+        <rules value="open"/>
+      </slicing>
+    </element>
+		<element id="Patient.identifier:umb">
+			<path value="Patient.identifier"/>
+			<sliceName value="umb"/>
+			<short value="Unique Member Identifier. This is required to be present for the 'new' coverage and be absent for the 'old' coverage."/>
+			<comment value="This is the unique member identifier of the server on which a 'match' is sought"/>
+			<min value="0"/>
+			<max value="1"/>
+			<patternIdentifier>
+        <type>
+          <coding>
+            <system value="http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp"/>
+            <code value="UMB"/>
+          </coding>
+        </type>
+			</patternIdentifier>
+			<mustSupport value="true"/>
+		</element>
     <element id="Patient.name">
       <path value="Patient.name"/>
       <min value="1"/>
@@ -49,7 +83,7 @@
     </element>
     <element id="Patient.gender">
       <path value="Patient.gender"/>
-      <min value="1"/>
+      <min value="0"/>
       <max value="1"/>
       <type>
         <code value="code"/>
@@ -58,6 +92,21 @@
       <binding>
         <strength value="required"/>
         <valueSet value="http://hl7.org/fhir/ValueSet/administrative-gender"/>
+      </binding>    
+    </element>
+	<element id="Patient.extension:birthSex">
+      <path value="Patient.extension"/>
+	  <sliceName value="birthSex"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+		<profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex"/>
+      </type>
+      <mustSupport value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://hl7.org/fhir/us/core/ValueSet/birthsex"/>
       </binding>    
     </element>
     <element id="Patient.birthDate">
