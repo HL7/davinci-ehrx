@@ -11,3 +11,5 @@ The response returns:
 
 An identifier is used rather than a member id as most payers do not (yet) expose RESTful ids for their member or coverage records.  This identifier can be used in subsequent interactions with the target payer system.
 
+Servers SHALL monitor for and take measures to prevent brute force attacks where the same or similar set of demographics are repeatedly searched with differing card information in an attempt to achieve a match when the card information is unknown.  For example, monitoring for an unusual number of match failures from a particular client certificate (regardless of IP address).
+
