@@ -17,6 +17,8 @@
   <p>
     Not all the options listed here were defined in early versions of FHIR and it is likely that new exchange alternatives will continue to be identified by the FHIR community over time.  As these approaches become more broadly used, more standardized and experience accumulates within the community this documentation will continue to be updated.  Feedback on the advice offered here is welcome - simply use the <a href="http://hl7.org/fhir-issues">Propose a Change</a> button at the bottom of any FHIR specification page.
   </p>
+  <a name="about"> </a>
+  <h3>About this section</h3>
   <p>
     This page focuses on data access mechanisms that are either defined within the core FHIR specification or are otherwise implementable using the interfaces defined by the FHIR specification without requiring any additional standardization.  Additional access mechanisms may be defined in other FHIR implementation guides or within other specifications.  There is, for example, a community effort outside the HL7 standardization process to allow a relational query interface to access FHIR information (see <a href="https://github.com/FHIR/sql-on-fhir">SQL-on-FHIR</a>).
   </p>
