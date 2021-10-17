@@ -74,11 +74,11 @@
     <reference value="http://example.org/new-payer/fhir/Patient/pat1"/>
   </for>
   <authoredOn value="2020-07-30T20:07:15-06:00"/>
-  <requester>
-    <reference value="Organization/full"/>
+   <requester>
+    <reference value="http://example.org/new-payer/fhir/Organization/hl7pay"/>
   </requester>
   <owner>
-    <reference value="http://example.org/new-payer/fhir/Organization/hl7pay"/>
+    <reference value="http://example.org/provider/fhir/Organization/hl7prov"/>
   </owner>
   <reasonCode>
     <text value="Support prior authorization decision-making"/>
