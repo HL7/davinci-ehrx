@@ -3,4 +3,4 @@ This example includes all the mandatory and mustSupport elements from the [HRex 
 Notes:
 
 * It would be uncommon to have multiple identifiers for a single coverage, but it is possible.  
-* The payor is handled as an external reference.  It could point to a contained resource if the data is maintained as part of the Coverage instance or just have a 'display' element in situations where all that is known is the payor name.
+* The payer is handled as an external reference.  It could point to a contained resource if the data is maintained as part of the Coverage instance or just have a 'display' element in situations where all that is known is the payer name.

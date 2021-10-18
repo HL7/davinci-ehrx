@@ -230,7 +230,7 @@
       <reference>
         <reference value="SearchParameter/hrex-coverage-payor"/>
       </reference>
-      <name value="Coverage payor Search Parameter"/>
+      <name value="Coverage payer Search Parameter"/>
     </resource>
     <resource>
       <reference>
