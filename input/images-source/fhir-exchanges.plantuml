@@ -168,12 +168,12 @@ else (no)
           stop
         endif        
       endif
-    else (no - See\nmsg notify)
-      (L)
+    else (no - See\nmsg or op push)
+      (K)
       detach
     endif
-else (no - See\nmsg or op push)
-  (K)
+else (no - See\nmsg notify)
+  (L)
   detach
 endif
 
