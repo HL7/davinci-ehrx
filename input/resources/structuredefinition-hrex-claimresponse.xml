@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="hrex-claimresponse"/>
+   <url value="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-claimresponse"/>
+  <name value="HRexClaimResponse"/>
+  <title value="HRex Prior authorization"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <description value="This profile specifies constraints on ClaimResponse resource to reflect the contents of a pro-active prior authorization returned via a card"/>
+  <fhirVersion value="4.0.1"/>
+  <kind value="resource"/>
+  <abstract value="false"/>
+  <type value="ClaimResponse"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/ClaimResponse"/>
+  <derivation value="constraint"/>
+   <differential>
+    <element id="ClaimResponse">
+      <path value="ClaimResponse"/>
+      <short value="Prior authorization"/>
+      <mustSupport value="false"/>
+    </element>
+	<element id="ClaimResponse.identifier">
+      <path value="ClaimResponse.identifier"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="ClaimResponse.status">
+      <path value="ClaimResponse.status"/>
+	  <fixedCode value="active"/>
+      <type>
+        <code value="code"/>
+      </type>
+    </element>
+	<element id="ClaimResponse.patient">
+      <path value="ClaimResponse.patient"/>
+	  <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+	 <element id="ClaimResponse.created">
+      <path value="ClaimResponse.created"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="ClaimResponse.insurer">
+      <path value="ClaimResponse.insurer"/>
+	  <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+    <element id="ClaimResponse.outcome">
+      <path value="ClaimResponse.outcome"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="ClaimResponse.preAuthRef">
+      <path value="ClaimResponse.preAuthRef"/>
+      <short value="PA Number/Identifier"/>   
+    </element>
+    <element id="ClaimResponse.preAuthPeriod">
+      <path value="ClaimResponse.preAuthPeriod"/>
+	   <short value="Certification Effective Date and Certification End Date"/> 
+      <mustSupport value="true"/>
+    </element>
+	<element id="ClaimResponse.addItem">
+      <path value="ClaimResponse.addItem"/>
+      <mustSupport value="true"/>
+    </element>
+	 <element id="ClaimResponse.addItem.extension">
+      <path value="ClaimResponse.addItem.extension"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <ordered value="false"/>
+        <rules value="open"/>
+      </slicing>
+    </element>
+	<element id="ClaimResponse.addItem.extension:itemTraceNumber">
+      <path value="ClaimResponse.addItem.extension"/>
+      <sliceName value="itemTraceNumber"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/extension-itemTraceNumber"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+	 <element id="ClaimResponse.addItem.extension:preAuthIssueDate">
+      <path value="ClaimResponse.addItem.extension"/>
+      <sliceName value="preAuthIssueDate"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/extension-itemPreAuthIssueDate"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+	 <element id="ClaimResponse.addItem.extension:authorizedDate">
+      <path value="ClaimResponse.addItem.extension"/>
+      <sliceName value="authorizedDate"/>
+      <min value="0"/>
+      <max value="1"/>  
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/extension-itemAuthorizedDate"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+	<element id="ClaimResponse.addItem.extension:authorizedProvider">
+      <path value="ClaimResponse.addItem.extension"/>
+      <sliceName value="authorizedProvider"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/extension-itemAuthorizedProvider"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+  </differential>
+</StructureDefinition>
