@@ -82,6 +82,9 @@
       <li>
         <a href="tools.html">Tooling and Support</a>
       </li>
+	  <li>
+        <a href="https://chat.fhir.org">chat.fhir.org</a>
+      </li>
     </ul>
   </li>
 </ul>
