@@ -19,16 +19,23 @@
       <short value="Prior authorization"/>
       <mustSupport value="false"/>
     </element>
-	<element id="ClaimResponse.identifier">
-      <path value="ClaimResponse.identifier"/>
-      <mustSupport value="true"/>
-    </element>
     <element id="ClaimResponse.status">
       <path value="ClaimResponse.status"/>
 	  <fixedCode value="active"/>
       <type>
         <code value="code"/>
       </type>
+    </element>
+	 <element id="ClaimResponse.type">
+      <path value="ClaimResponse.type"/>
+      <mustSupport value="true"/>
+    </element>
+	 <element id="ClaimResponse.use">
+      <path value="ClaimResponse.use"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <mustSupport value="true"/>
     </element>
 	<element id="ClaimResponse.patient">
       <path value="ClaimResponse.patient"/>
@@ -56,7 +63,10 @@
     </element>
     <element id="ClaimResponse.preAuthRef">
       <path value="ClaimResponse.preAuthRef"/>
-      <short value="PA Number/Identifier"/>   
+      <short value="PA Number/Identifier"/>  
+        <min value="1"/>
+      <max value="1"/>	
+      <mustSupport value="true"/>	  
     </element>
     <element id="ClaimResponse.preAuthPeriod">
       <path value="ClaimResponse.preAuthPeriod"/>
@@ -65,6 +75,33 @@
     </element>
 	<element id="ClaimResponse.addItem">
       <path value="ClaimResponse.addItem"/>
+      <mustSupport value="true"/>
+    </element>
+	<element id="ClaimResponse.addItem.productOrService">
+      <path value="ClaimResponse.addItem.productOrService"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="ClaimResponse.addItem.modifier">
+      <path value="ClaimResponse.addItem.modifier"/>
+      <mustSupport value="true"/>
+    </element>
+	<element id="ClaimResponse.addItem.serviced[x]">
+      <path value="ClaimResponse.addItem.serviced[x]"/>
+      <mustSupport value="true"/>
+    </element>
+	<element id="ClaimResponse.addItem.location[x]">
+      <path value="ClaimResponse.addItem.location[x]"/>
+	   <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+	 <element id="ClaimResponse.addItem.quantity">
+      <path value="ClaimResponse.addItem.quantity"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="ClaimResponse.addItem.unitPrice">
+      <path value="ClaimResponse.addItem.unitPrice"/>
       <mustSupport value="true"/>
     </element>
 	 <element id="ClaimResponse.addItem.extension">
