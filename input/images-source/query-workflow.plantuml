@@ -2,11 +2,11 @@
 autonumber
 group #lightblue Step 1: Verify Exchange, establish mutual TLS, and verify trust.
   Payer2 -> PayerDirectory : Query
-  PayerDirectory -> Payer2 : Return endpoint, mutual TLS public cert,
+  PayerDirectory -> Payer2 : Return endpoint, mutual TLS public cert, and return trustframework
   Payer2 -> Payer2 : Verify Cert
   Payer2 -> Payer1 : Server-Server OAuth -- Establish Mutual TLS
   Payer1 -> PayerDirectory : Query mutual TLS Public Cert
-  PayerDirectory ->> Payer1 : Return mTLS public cert
+  PayerDirectory ->> Payer1 : Return mTLS public cert and return trustframework
   Payer1 -> Payer1 : Verify Cert
 end
 
