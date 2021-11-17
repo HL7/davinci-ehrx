@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../input-cache/schemas/R5/fhir-single.xsd">
+<ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../input-cache/schemas/R4/fhir-single.xsd">
 	<id value="davinci-hrex"/>
 	<meta>
 		<versionId value="97"/>
 		<lastUpdated value="2019-06-20T04:25:13.000-04:00"/>
 	</meta>
+	<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use"/> 
+  </extension> 
+   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="2"/> 
+  </extension> 
 	<url value="http://hl7.org/fhir/us/davinci-hrex/ImplementationGuide/davinci-hrex"/>
 	<version value="0.2.0"/>
 	<name value="DaVinciHealthRecordExchangeHRex"/>
@@ -251,10 +257,16 @@
       <name value="Provenance target Search Parameter"/>
     </resource>    
     <page>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+          <valueCode value="informative"/>
+        </extension>
       <nameUrl value="index.html"/>
       <title value="Home"/>
       <generation value="markdown"/>
       <page>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+          <valueCode value="informative"/>
+        </extension>
         <nameUrl value="fhir.html"/>
         <title value="FHIR Introduction"/>
         <generation value="markdown"/>
@@ -345,11 +357,17 @@
         <generation value="html"/>
       </page>
       <page>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+          <valueCode value="informative"/>
+        </extension>
         <nameUrl value="downloads.html"/>
         <title value="Downloads"/>
         <generation value="markdown"/>
       </page>
       <page>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+          <valueCode value="informative"/>
+        </extension>
         <nameUrl value="tools.html"/>
         <title value="Tooling and Support"/>
         <generation value="markdown"/>

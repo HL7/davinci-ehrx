@@ -1,5 +1,5 @@
-<StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="hrex-parameters-member-match-out"/>
+<StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R4/fhir-single.xsd">  
+<id value="hrex-parameters-member-match-out"/>
   <url value="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-parameters-member-match-out"/>
   <name value="HRexMemberMatchResponseParameters"/>
   <title value="HRex Parameters - Member Match Response Profile"/>
@@ -39,7 +39,6 @@
     <element id="Parameters.parameter:MemberIdentifier.valueIdentifier">
       <path value="Parameters.parameter.value[x]"/>
       <min value="1"/>
-	   <valueIdentifier value="true"/>
       <type>
         <code value="Identifier"/>
       </type>
@@ -47,13 +46,13 @@
     </element>
 	<element id="Parameters.parameter:MemberIdentifier.valueIdentifier.type">
       <path value="Parameters.parameter.value[x].type"/>
+      <min value="1"/> 	  
       <patternCodeableConcept>
         <coding>
           <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
           <code value="MB"/>
         </coding>
-      </patternCodeableConcept> 
-<min value="1"/> 	  
+      </patternCodeableConcept>       
       <mustSupport value="true"/>	  
     </element>
 	 <element id="Parameters.parameter:MemberIdentifier.valueIdentifier.value">

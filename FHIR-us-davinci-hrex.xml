@@ -7,13 +7,16 @@
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
+<artifact id="StructureDefinition/extension-itemAuthorizedDate" key="StructureDefinition-extension-itemAuthorizedDate" name=""/>
+<artifact id="StructureDefinition/extension-itemAuthorizedProvider" key="StructureDefinition-extension-itemAuthorizedProvider" name=""/>
+<artifact id="StructureDefinition/extension-itemPreAuthIssueDate" key="StructureDefinition-extension-itemPreAuthIssueDate" name=""/>
+<artifact id="StructureDefinition/extension-itemTraceNumber" key="StructureDefinition-extension-itemTraceNumber" name=""/>
+<artifact id="Parameters/member-match-out" key="Parameters-member-match-out" name="$member-match example response"/>
 <artifact id="Parameters/member-match-in" key="Parameters-member-match-in" name="$member-match payer example request"/>
-<artifact id="Parameters/member-match-out" key="Parameters-member-match-out" name="$member-match payer example response"/>
 <artifact id="Parameters/member-match-in-provider" key="Parameters-member-match-in-provider" name="$member-match provider example request"/>
-<artifact id="Parameters/member-match-out-provider" key="Parameters-member-match-out-provider" name="$member-match provider example response"/>
 <artifact id="SearchParameter/hrex-coverage-identifier" key="SearchParameter-hrex-coverage-identifier" name="Coverage identifier Search Parameter"/>
 <artifact id="SearchParameter/hrex-coverage-patient" key="SearchParameter-hrex-coverage-patient" name="Coverage patient Search Parameter"/>
-<artifact id="SearchParameter/hrex-coverage-payor" key="SearchParameter-hrex-coverage-payor" name="Coverage payor Search Parameter"/>
+<artifact id="SearchParameter/hrex-coverage-payor" key="SearchParameter-hrex-coverage-payor" name="Coverage payer Search Parameter"/>
 <artifact id="SearchParameter/hrex-coverage-subscriber" key="SearchParameter-hrex-coverage-subscriber" name="Coverage subscriber Search Parameter"/>
 <artifact id="SearchParameter/hrex-coverage-subscriberId" key="SearchParameter-hrex-coverage-subscriberId" name="Coverage subscriberId Search Parameter"/>
 <artifact id="ValueSet/hrex-consent-policy" key="ValueSet-hrex-consent-policy" name="HRex Consent Policy ValueSet"/>
@@ -36,6 +39,7 @@
 <artifact id="StructureDefinition/hrex-practitionerrole" key="StructureDefinition-hrex-practitionerrole" name="HRex PractitionerRole Profile"/>
 <artifact id="PractitionerRole/full" key="PractitionerRole-full" name="HRex PractitionerRole full example"/>
 <artifact id="PractitionerRole/min" key="PractitionerRole-min" name="HRex PractitionerRole min example"/>
+<artifact id="StructureDefinition/hrex-claimresponse" key="StructureDefinition-hrex-claimresponse" name="HRex Prior authorization"/>
 <artifact id="StructureDefinition/hrex-provenance" key="StructureDefinition-hrex-provenance" name="HRex Provenance Profile"/>
 <artifact id="Provenance/full" key="Provenance-full" name="HRex Provenance full example"/>
 <artifact id="Provenance/min" key="Provenance-min" name="HRex Provenance min example"/>
