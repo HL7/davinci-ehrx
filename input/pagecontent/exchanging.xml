@@ -51,7 +51,7 @@ shared in FHIR</li>
     <li>It is followed by a <a href="#tree">decision-tree</a> that provides guidance on how to choose among them</li>
     <li>Beneath that are detailed descriptions of the <a href="#criteria">decision criteria</a>, expanding on the decision points in the diagram</li>
     <li>Finally, there are some <a href="#considerations">additional considerations</a> beyond simply choosing an architectural approach to exchange</li>
-    <li>Following this page are several sub-pages linked to by both the overview and decision-tree that provide details on each of the exchange options and the workflows involved in using them.  The different exchange options are grouped into pages which have similar or identical workflows:
+    <li>Following this page are several sub-pages linked to by both the overview and decision-tree that provide details on each of the exchange options and the workflows involved in using them.  The different exchange options are grouped into pages which have similar or identical workflows (Note: Some exchange options are prefixed with FHIR because there also non-FHIR approaches to using those mechanisms, but the guidance in the following page and decision tree are FHIR-specific.):
       <ul>
         <li>
           <a href="exchanging-search.html">Exchanging with FHIR search</a>
