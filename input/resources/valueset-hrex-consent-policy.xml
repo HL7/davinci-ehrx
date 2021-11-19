@@ -16,10 +16,10 @@
     <include>
       <system value="urn:ietf:rfc:3986"/>
       <concept>
-        <code value="http://hl7.org/fhir/us/davinci-hrex/consent-oauth#regular"/>
+        <code value="http://hl7.org/fhir/us/davinci-hrex/consent-oauth.html#regular"/>
       </concept>
       <concept>
-        <code value="http://hl7.org/fhir/us/davinci-hrex/consent-oauth#sensitive"/>
+        <code value="http://hl7.org/fhir/us/davinci-hrex/consent-oauth.html#sensitive"/>
       </concept>
     </include>
   </compose>

@@ -3,10 +3,6 @@
   "id": "full",
   "identifier": [
     {
-      "system": "http://example.org/someOrg/identifiers/whatever",
-      "value": "1039399818"
-    },
-    {
       "system": "http://example.org/new-payer/identifiers/coverage",
       "value": "234567"
     }

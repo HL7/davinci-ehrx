@@ -32,7 +32,7 @@
     <reference value="http://example.org/DocumentReference/someconsent.pdf"/>
   </sourceReference>
   <policy>
-    <uri value="http://hl7.org/fhir/us/davinci-hrex/consent-oauth#regular"/>
+    <uri value="http://hl7.org/fhir/us/davinci-hrex/consent-oauth.html#regular"/>
   </policy>
   <provision>
     <type value="permit"/>

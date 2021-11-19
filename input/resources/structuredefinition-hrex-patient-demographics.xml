@@ -33,6 +33,21 @@
       </constraint>
       <mustSupport value="false"/>
     </element>
+    <element id="Patient.extension:birthSex">
+      <path value="Patient.extension"/>
+	  <sliceName value="birthSex"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Extension"/>
+		<profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex"/>
+      </type>
+      <mustSupport value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://hl7.org/fhir/us/core/ValueSet/birthsex"/>
+      </binding>    
+    </element>
 	<element id="Patient.identifier">
       <path value="Patient.identifier"/>
       <slicing>
@@ -98,21 +113,6 @@
       <binding>
         <strength value="required"/>
         <valueSet value="http://hl7.org/fhir/ValueSet/administrative-gender"/>
-      </binding>    
-    </element>
-	<element id="Patient.extension:birthSex">
-      <path value="Patient.extension"/>
-	  <sliceName value="birthSex"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="Extension"/>
-		<profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex"/>
-      </type>
-      <mustSupport value="true"/>
-      <binding>
-        <strength value="required"/>
-        <valueSet value="http://hl7.org/fhir/us/core/ValueSet/birthsex"/>
       </binding>    
     </element>
     <element id="Patient.birthDate">

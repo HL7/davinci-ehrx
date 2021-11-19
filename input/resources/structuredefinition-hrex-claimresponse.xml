@@ -83,34 +83,7 @@
       <path value="ClaimResponse.addItem"/>
       <mustSupport value="true"/>
     </element>
-	<element id="ClaimResponse.addItem.productOrService">
-      <path value="ClaimResponse.addItem.productOrService"/>
-      <mustSupport value="true"/>
-    </element>
-    <element id="ClaimResponse.addItem.modifier">
-      <path value="ClaimResponse.addItem.modifier"/>
-      <mustSupport value="true"/>
-    </element>
-	<element id="ClaimResponse.addItem.serviced[x]">
-      <path value="ClaimResponse.addItem.serviced[x]"/>
-      <mustSupport value="true"/>
-    </element>
-	<element id="ClaimResponse.addItem.location[x]">
-      <path value="ClaimResponse.addItem.location[x]"/>
-	   <type>
-        <code value="CodeableConcept"/>
-      </type>
-      <mustSupport value="true"/>
-    </element>
-	 <element id="ClaimResponse.addItem.quantity">
-      <path value="ClaimResponse.addItem.quantity"/>
-      <mustSupport value="true"/>
-    </element>
-    <element id="ClaimResponse.addItem.unitPrice">
-      <path value="ClaimResponse.addItem.unitPrice"/>
-      <mustSupport value="true"/>
-    </element>
-	 <element id="ClaimResponse.addItem.extension">
+     <element id="ClaimResponse.addItem.extension">
       <path value="ClaimResponse.addItem.extension"/>
       <slicing>
         <discriminator>
@@ -161,6 +134,33 @@
         <code value="Extension"/>
         <profile value="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/extension-itemAuthorizedProvider"/>
       </type>
+      <mustSupport value="true"/>
+    </element>
+	<element id="ClaimResponse.addItem.productOrService">
+      <path value="ClaimResponse.addItem.productOrService"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="ClaimResponse.addItem.modifier">
+      <path value="ClaimResponse.addItem.modifier"/>
+      <mustSupport value="true"/>
+    </element>
+	<element id="ClaimResponse.addItem.serviced[x]">
+      <path value="ClaimResponse.addItem.serviced[x]"/>
+      <mustSupport value="true"/>
+    </element>
+	<element id="ClaimResponse.addItem.location[x]">
+      <path value="ClaimResponse.addItem.location[x]"/>
+	   <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+	 <element id="ClaimResponse.addItem.quantity">
+      <path value="ClaimResponse.addItem.quantity"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="ClaimResponse.addItem.unitPrice">
+      <path value="ClaimResponse.addItem.unitPrice"/>
       <mustSupport value="true"/>
     </element>
   </differential>

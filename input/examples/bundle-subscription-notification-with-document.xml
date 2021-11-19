@@ -117,17 +117,17 @@
         </text>
         <status value="current"/>
         <type>
-          <coding>
-            <system value="http://ihe.net/connectathon/classCodes"/>
-            <code value="History and Physical"/>
-            <display value="History and Physical"/>
+           <coding>
+             <system value="http://loinc.org"/>
+            <code value="34117-2"/>
+            <display value="History and physical note"/>
           </coding>
         </type>
         <category>
           <coding>
             <system value="http://loinc.org"/>
             <code value="47039-3"/>
-            <display value="Inpatient Admission history and physical note"/>
+            <display value="Hospital Admission history and physical note"/>
           </coding>
         </category>
         <subject>
@@ -135,7 +135,7 @@
         </subject>
         <date value="2013-07-01T23:11:33+10:00"/>
         <author>
-          <reference value="Practitioner/a4"/>
+          <reference value="http://example.org/ehr/fhir/Practitioner/pract1"/>
         </author>
         <description value="Physical"/>
         <content>
