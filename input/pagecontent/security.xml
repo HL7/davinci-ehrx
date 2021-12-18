@@ -44,6 +44,16 @@
 			<li>the OAuth Server to Server Authentication as defined in the <a href="https://build.fhir.org/ig/HL7/us-bulk-data">Bulk Data exchange IG</a>.</li>
 		</ol></li>
 	</ol>
+
+  <p>
+    When mutual TLS is used, it **SHALL** be done in accordance with [RFC8705](https://datatracker.ietf.org/doc/html/rfc8705).  There are certain constraints on this RFC that apply across all Da Vinci IGs: 
+  </p>	
+  <ul>
+    <li>The authorization mechanism SHALL be PKI-Mutual TLS (i.e. not self-signed certificates)</li>
+    <li>Signing options will use URIs, not DNS, IP, email, etc.</li>
+    <li>If mutual TLS is used with OAuth, the OAuth tokens SHALL be bound to the client system's certificate (and are therefore not shareable)</li>
+  </ul>
+	
   <p>Note: There is ongoing work to enhance the capabilities of the above specifications to ensure a more secure exchange that recognizes issues related to fine grain scopes.</p>
 
   <a name="protected"> </a>
