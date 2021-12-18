@@ -9,7 +9,7 @@
 		<value value="9941339108"/>
 	</identifier>
 	<identifier>
-		<system value="http://todo/medicare-certification-number"/>
+		<system value="http://terminology.hl7.org/NamingSystem/CMSCertificationNumber"/>
 		<value value="25456"/>
 	</identifier>
 	<name>

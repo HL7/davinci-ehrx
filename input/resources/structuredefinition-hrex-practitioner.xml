@@ -32,7 +32,7 @@
 			<sliceName value="ccn"/>
 			<max value="1"/>
 			<patternIdentifier>
-				<system value="http://todo/medicare-certification-number"/>
+				<system value="http://terminology.hl7.org/NamingSystem/CMSCertificationNumber"/>
 			</patternIdentifier>
 			<mustSupport value="true"/>
 		</element>

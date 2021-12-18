@@ -19,7 +19,7 @@
       "value": "0123456789"
     },
     {
-      "system": "http://todo/medicare-certification-number",
+      "system": "http://terminology.hl7.org/NamingSystem/CMSCertificationNumber",
       "value": "918273645"
     }
   ],
