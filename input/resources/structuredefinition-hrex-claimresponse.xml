@@ -2,12 +2,12 @@
 <StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R4/fhir-single.xsd">
   <id value="hrex-claimresponse"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-    <valueCode value="draft"/> 
-  </extension> 
-   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
-    <valueInteger value="0"/> 
-  </extension> 
-   <url value="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-claimresponse"/>
+    <valueCode value="draft"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="0"/>
+  </extension>
+  <url value="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-claimresponse"/>
   <name value="HRexClaimResponse"/>
   <title value="HRex Prior authorization"/>
   <status value="draft"/>
@@ -19,7 +19,7 @@
   <type value="ClaimResponse"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/ClaimResponse"/>
   <derivation value="constraint"/>
-   <differential>
+  <differential>
     <element id="ClaimResponse">
       <path value="ClaimResponse"/>
       <short value="Prior authorization"/>
@@ -27,37 +27,37 @@
     </element>
     <element id="ClaimResponse.status">
       <path value="ClaimResponse.status"/>
-       <type>
+      <type>
         <code value="code"/>
       </type>
-	  <fixedCode value="active"/>
+      <fixedCode value="active"/>
     </element>
-	 <element id="ClaimResponse.type">
+    <element id="ClaimResponse.type">
       <path value="ClaimResponse.type"/>
       <mustSupport value="true"/>
     </element>
-	 <element id="ClaimResponse.use">
+    <element id="ClaimResponse.use">
       <path value="ClaimResponse.use"/>
       <type>
         <code value="code"/>
       </type>
       <mustSupport value="true"/>
     </element>
-	<element id="ClaimResponse.patient">
+    <element id="ClaimResponse.patient">
       <path value="ClaimResponse.patient"/>
-	  <type>
+      <type>
         <code value="Reference"/>
         <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
       </type>
       <mustSupport value="true"/>
     </element>
-	 <element id="ClaimResponse.created">
+    <element id="ClaimResponse.created">
       <path value="ClaimResponse.created"/>
       <mustSupport value="true"/>
     </element>
     <element id="ClaimResponse.insurer">
       <path value="ClaimResponse.insurer"/>
-	  <type>
+      <type>
         <code value="Reference"/>
         <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
       </type>
@@ -69,21 +69,21 @@
     </element>
     <element id="ClaimResponse.preAuthRef">
       <path value="ClaimResponse.preAuthRef"/>
-      <short value="PA Number/Identifier"/>  
-        <min value="1"/>
-      <max value="1"/>	
-      <mustSupport value="true"/>	  
+      <short value="PA Number/Identifier"/>
+      <min value="1"/>
+      <max value="1"/>
+      <mustSupport value="true"/>
     </element>
     <element id="ClaimResponse.preAuthPeriod">
       <path value="ClaimResponse.preAuthPeriod"/>
-	   <short value="Certification Effective Date and Certification End Date"/> 
+      <short value="Certification Effective Date and Certification End Date"/>
       <mustSupport value="true"/>
     </element>
-	<element id="ClaimResponse.addItem">
+    <element id="ClaimResponse.addItem">
       <path value="ClaimResponse.addItem"/>
       <mustSupport value="true"/>
     </element>
-     <element id="ClaimResponse.addItem.extension">
+    <element id="ClaimResponse.addItem.extension">
       <path value="ClaimResponse.addItem.extension"/>
       <slicing>
         <discriminator>
@@ -94,7 +94,7 @@
         <rules value="open"/>
       </slicing>
     </element>
-	<element id="ClaimResponse.addItem.extension:itemTraceNumber">
+    <element id="ClaimResponse.addItem.extension:itemTraceNumber">
       <path value="ClaimResponse.addItem.extension"/>
       <sliceName value="itemTraceNumber"/>
       <type>
@@ -103,7 +103,7 @@
       </type>
       <mustSupport value="true"/>
     </element>
-	 <element id="ClaimResponse.addItem.extension:preAuthIssueDate">
+    <element id="ClaimResponse.addItem.extension:preAuthIssueDate">
       <path value="ClaimResponse.addItem.extension"/>
       <sliceName value="preAuthIssueDate"/>
       <min value="0"/>
@@ -114,18 +114,18 @@
       </type>
       <mustSupport value="true"/>
     </element>
-	 <element id="ClaimResponse.addItem.extension:authorizedDate">
+    <element id="ClaimResponse.addItem.extension:authorizedDate">
       <path value="ClaimResponse.addItem.extension"/>
       <sliceName value="authorizedDate"/>
       <min value="0"/>
-      <max value="1"/>  
+      <max value="1"/>
       <type>
         <code value="Extension"/>
         <profile value="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/extension-itemAuthorizedDate"/>
       </type>
       <mustSupport value="true"/>
     </element>
-	<element id="ClaimResponse.addItem.extension:authorizedProvider">
+    <element id="ClaimResponse.addItem.extension:authorizedProvider">
       <path value="ClaimResponse.addItem.extension"/>
       <sliceName value="authorizedProvider"/>
       <min value="0"/>
@@ -136,7 +136,7 @@
       </type>
       <mustSupport value="true"/>
     </element>
-	<element id="ClaimResponse.addItem.productOrService">
+    <element id="ClaimResponse.addItem.productOrService">
       <path value="ClaimResponse.addItem.productOrService"/>
       <mustSupport value="true"/>
     </element>
@@ -144,18 +144,18 @@
       <path value="ClaimResponse.addItem.modifier"/>
       <mustSupport value="true"/>
     </element>
-	<element id="ClaimResponse.addItem.serviced[x]">
+    <element id="ClaimResponse.addItem.serviced[x]">
       <path value="ClaimResponse.addItem.serviced[x]"/>
       <mustSupport value="true"/>
     </element>
-	<element id="ClaimResponse.addItem.location[x]">
+    <element id="ClaimResponse.addItem.location[x]">
       <path value="ClaimResponse.addItem.location[x]"/>
-	   <type>
+      <type>
         <code value="CodeableConcept"/>
       </type>
       <mustSupport value="true"/>
     </element>
-	 <element id="ClaimResponse.addItem.quantity">
+    <element id="ClaimResponse.addItem.quantity">
       <path value="ClaimResponse.addItem.quantity"/>
       <mustSupport value="true"/>
     </element>

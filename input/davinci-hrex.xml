@@ -46,14 +46,6 @@
 	<definition>
     <resource>
       <reference>
-        <reference value="Consent/consent"/>
-      </reference>
-      <name value="HRex Consent example"/>
-      <description value="An example showing a 'regular' consent for a member"/>
-      <exampleCanonical value="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-consent"/>
-    </resource>
-    <resource>
-      <reference>
         <reference value="Coverage/full"/>
       </reference>
       <name value="HRex Coverage full example"/>
@@ -329,11 +321,6 @@
       <page>
         <nameUrl value="task.html"/>
         <title value="Task-based queries"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <nameUrl value="consent-oauth.html"/>
-        <title value="Authorization with Consent"/>
         <generation value="markdown"/>
       </page>
       <page>

@@ -20,8 +20,8 @@
         </discriminator>
         <rules value="closed"/>
       </slicing>
-      <min value="2"/>
-      <max value="3"/>
+      <min value="3"/>
+      <max value="4"/>
       <mustSupport value="true"/>
     </element>
     <element id="Parameters.parameter:memberPatient">
@@ -84,6 +84,27 @@
       <type>
         <code value="Resource"/>
         <profile value="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-coverage"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Parameters.parameter:Consent">
+      <path value="Parameters.parameter"/>
+      <sliceName value="Consent"/>
+      <min value="1"/>
+      <max value="1"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Parameters.parameter:Consent.name">
+      <path value="Parameters.parameter.name"/>
+      <fixedString value="Consent"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Parameters.parameter:Consent.resource">
+      <path value="Parameters.parameter.resource"/>
+      <min value="1"/>
+      <type>
+        <code value="Resource"/>
+        <profile value="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-consent"/>
       </type>
       <mustSupport value="true"/>
     </element>

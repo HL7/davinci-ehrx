@@ -17,8 +17,6 @@ The scope of Da Vinci is US payer and provider data exchange with each other and
 
 At present, HRex is based on [FHIR R4]({{site.data.fhir.path}}).  In addition, HRex is dependent on the [US Core 3.1 (FHIR R4)]({{site.data.fhir.ver.uscore}}) implementation guide.  Wherever possible, Da Vinci tries to leverage US Core profiles, but in some situations, the payer community requires additional constraints or needs to profile resources that are not yet supported by US Core.  It is possible that certain HRex profiles and/or descriptive content may migrate to a future release of US Core, and in some cases, to the base FHIR standard.  In certain instances, Da Vinci IGs will also declare conformance with the [QI Core](http://hl7.org/fhir/us/qicore), which supplements US Core with additional profiles and constraints for use in quality measurements.  This IG is not derived from QI core, but HRex profiles should be generally compliant with the QI Core specification.
 
-HRex also has a dependency on the [HL7 UDAP]({{site.data.fhir.ver.udap}}) implementation guide, which covers how to [establish access permissions based on patient consent](consent-oauth.html).
-
 In addition, some Da Vinci specifications will make use of content from the following FHIR-related specifications and implementation guides:
 * [Bulk Data](https://hl7.org/fhir/uv/bulkdata)
 * [C-CDA on FHIR](http://www.hl7.org/fhir/us/ccda)

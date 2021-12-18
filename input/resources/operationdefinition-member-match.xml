@@ -32,6 +32,14 @@
     </referencedFrom>
 	</parameter>
 	<parameter>
+		<name value="Consent"/>
+		<use value="in"/>
+		<min value="1"/>
+		<max value="1"/>
+		<documentation value="Consent held by the system seeking the match that grants permission to access the patient information information on the system for whom a patient is sought."/>
+		<type value="Resource"/>
+	</parameter>
+	<parameter>
 		<name value="CoverageToMatch"/>
 		<use value="in"/>
 		<min value="1"/>

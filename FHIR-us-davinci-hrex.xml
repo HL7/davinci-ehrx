@@ -7,13 +7,11 @@
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
-<artifact id="StructureDefinition/extension-itemAuthorizedDate" key="StructureDefinition-extension-itemAuthorizedDate" name=""/>
-<artifact id="StructureDefinition/extension-itemAuthorizedProvider" key="StructureDefinition-extension-itemAuthorizedProvider" name=""/>
-<artifact id="StructureDefinition/extension-itemPreAuthIssueDate" key="StructureDefinition-extension-itemPreAuthIssueDate" name=""/>
-<artifact id="StructureDefinition/extension-itemTraceNumber" key="StructureDefinition-extension-itemTraceNumber" name=""/>
 <artifact id="Parameters/member-match-out" key="Parameters-member-match-out" name="$member-match example response"/>
 <artifact id="Parameters/member-match-in" key="Parameters-member-match-in" name="$member-match payer example request"/>
 <artifact id="Parameters/member-match-in-provider" key="Parameters-member-match-in-provider" name="$member-match provider example request"/>
+<artifact id="StructureDefinition/extension-itemAuthorizedDate" key="StructureDefinition-extension-itemAuthorizedDate" name="Authorized Date"/>
+<artifact id="StructureDefinition/extension-itemAuthorizedProvider" key="StructureDefinition-extension-itemAuthorizedProvider" name="Authorized Provider"/>
 <artifact id="SearchParameter/hrex-coverage-identifier" key="SearchParameter-hrex-coverage-identifier" name="Coverage identifier Search Parameter"/>
 <artifact id="SearchParameter/hrex-coverage-patient" key="SearchParameter-hrex-coverage-patient" name="Coverage patient Search Parameter"/>
 <artifact id="SearchParameter/hrex-coverage-payor" key="SearchParameter-hrex-coverage-payor" name="Coverage payer Search Parameter"/>
@@ -21,7 +19,6 @@
 <artifact id="SearchParameter/hrex-coverage-subscriberId" key="SearchParameter-hrex-coverage-subscriberId" name="Coverage subscriberId Search Parameter"/>
 <artifact id="ValueSet/hrex-consent-policy" key="ValueSet-hrex-consent-policy" name="HRex Consent Policy ValueSet"/>
 <artifact id="StructureDefinition/hrex-consent" key="StructureDefinition-hrex-consent" name="HRex Consent Profile"/>
-<artifact id="Consent/consent" key="Consent-consent" name="HRex Consent example"/>
 <artifact id="StructureDefinition/hrex-coverage" key="StructureDefinition-hrex-coverage" name="HRex Coverage Profile"/>
 <artifact id="Coverage/full" key="Coverage-full" name="HRex Coverage full example"/>
 <artifact id="Coverage/min" key="Coverage-min" name="HRex Coverage minimal example"/>
@@ -54,12 +51,13 @@
 <artifact id="Task/min" key="Task-min" name="HRex Task minimal example"/>
 <artifact id="Bundle/task-poll-response" key="Bundle-task-poll-response" name="HRex Task polling response"/>
 <artifact id="CodeSystem/hrex-temp" key="CodeSystem-hrex-temp" name="HRex Temporary Code System"/>
+<artifact id="StructureDefinition/extension-itemTraceNumber" key="StructureDefinition-extension-itemTraceNumber" name="Item Trace Number"/>
+<artifact id="StructureDefinition/extension-itemPreAuthIssueDate" key="StructureDefinition-extension-itemPreAuthIssueDate" name="Pre Authorized Issue Date"/>
 <artifact id="SearchParameter/hrex-provenance-target" key="SearchParameter-hrex-provenance-target" name="Provenance target Search Parameter"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="exchanging" name="Approaches to Exchanging FHIR Data"/>
 <page key="artifacts" name="Artifact List"/>
-<page key="consent-oauth" name="Authorization with Consent"/>
 <page key="conformance" name="Conformance Expectations"/>
 <page key="davinci-guiding-principles" name="Da Vinci Guiding Principles"/>
 <page key="downloads" name="Downloads"/>
