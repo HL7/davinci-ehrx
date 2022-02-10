@@ -12,7 +12,7 @@
     <valueInteger value="2"/> 
   </extension> 
 	<url value="http://hl7.org/fhir/us/davinci-hrex/ImplementationGuide/davinci-hrex"/>
-	<version value="0.2.0"/>
+	<version value="1.0.0"/>
 	<name value="DaVinciHealthRecordExchangeHRex"/>
 	<title value="Da Vinci Health Record Exchange (HRex)"/>
 	<status value="active"/>
@@ -36,7 +36,7 @@
 	<dependsOn id="uscore">
 		<uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
 		<packageId value="hl7.fhir.us.core"/>
-		<version value="4.0.0"/>
+		<version value="3.1.1"/>
 	</dependsOn>
 	<dependsOn id="udap">
 		<uri value="http://hl7.org/fhir/us/udap-security/ImplementationGuide/hl7.fhir.us.udap-security"/>
@@ -366,7 +366,7 @@
 		</parameter>
 		<parameter>
 			<code value="releaselabel"/>
-			<value value="STU R1 - 2nd ballot"/>
+			<value value="STU R1"/>
 		</parameter>
 		<parameter>
 			<code value="find-other-resources"/>

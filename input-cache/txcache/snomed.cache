@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "359642000"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "Diabetes mellitus type 2 in nonobese",
+  "code" : "359642000",
+  "system" : "http://snomed.info/sct"
+}
+-------------------------------------------------------------------------------------
