@@ -29,7 +29,6 @@
 <artifact id="StructureDefinition/hrex-parameters-member-match-in" key="StructureDefinition-hrex-parameters-member-match-in" name="HRex Parameters - Member Match Request Profile"/>
 <artifact id="StructureDefinition/hrex-parameters-member-match-out" key="StructureDefinition-hrex-parameters-member-match-out" name="HRex Parameters - Member Match Response Profile"/>
 <artifact id="StructureDefinition/hrex-patient-demographics" key="StructureDefinition-hrex-patient-demographics" name="HRex Patient Demographics"/>
-<artifact id="StructureDefinition/hrex-patient-member" key="StructureDefinition-hrex-patient-member" name="HRex Patient Member Profile"/>
 <artifact id="StructureDefinition/hrex-practitioner" key="StructureDefinition-hrex-practitioner" name="HRex Practitioner Profile"/>
 <artifact id="Practitioner/full" key="Practitioner-full" name="HRex Practitioner full example"/>
 <artifact id="Practitioner/min" key="Practitioner-min" name="HRex Practitioner minimal example"/>
@@ -54,6 +53,7 @@
 <artifact id="StructureDefinition/extension-itemTraceNumber" key="StructureDefinition-extension-itemTraceNumber" name="Item Trace Number"/>
 <artifact id="StructureDefinition/extension-itemPreAuthIssueDate" key="StructureDefinition-extension-itemPreAuthIssueDate" name="Pre Authorized Issue Date"/>
 <artifact id="SearchParameter/hrex-provenance-target" key="SearchParameter-hrex-provenance-target" name="Provenance target Search Parameter"/>
+<artifact id="ClaimResponse/UnsolicitedReferralAuthorizationResponseExample" key="ClaimResponse-UnsolicitedReferralAuthorizationResponseExample" name="Unsolicited Prior Authorization example"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="exchanging" name="Approaches to Exchanging FHIR Data"/>

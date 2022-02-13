@@ -24,7 +24,7 @@
       </coding>
     </type>
     <who>
-      <reference value="PractitionerRole/full"/>
+      <reference value="Practitioner/full"/>
     </who>
   </agent>
   <signature>

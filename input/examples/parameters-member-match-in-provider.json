@@ -59,7 +59,7 @@
         },
         "payor": [
           {
-            "identifier":{
+            "identifier": {
               "system": "http://hl7.org/fhir/sid/us-npi",
               "value": "9876543210"
             },
@@ -140,6 +140,11 @@
         "patient": {
           "reference": "Patient/1"
         },
+        "performer": [
+          {
+            "reference": "Patient/1"
+          }
+        ],
         "sourceReference": {
           "reference": "http://example.org/DocumentReference/someconsent.pdf"
         },

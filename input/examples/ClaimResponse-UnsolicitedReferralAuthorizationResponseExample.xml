@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClaimResponse xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R4/fhir-single.xsd">
+	<id value="UnsolicitedReferralAuthorizationResponseExample"/>
+	<identifier>
+		<system value="http://example.org/PATIENT_EVENT_TRACE_NUMBER"/>
+		<value value="111099"/>
+		<assigner>
+			<identifier>
+				<system value="http://example.org/USER_ASSIGNED"/>
+				<value value="9012345678"/>
+			</identifier>
+		</assigner>
+	</identifier>
+	<status value="active"/>
+	<type>
+		<coding>
+			<system value="http://terminology.hl7.org/CodeSystem/claim-type"/>
+			<code value="professional"/>
+		</coding>
+	</type>
+	<use value="preauthorization"/>
+	<patient>
+		<reference value="http://example.org/new-payer/fhir/Patient/pat1"/>
+	</patient>
+	<created value="2005-05-02T11:02:00+05:00"/>
+	<insurer>
+		<reference value="Organization/full"/>
+	</insurer>
+	<requestor>
+		<reference value="http://example.org/someProvider/fhir/Organization/good-health-clinic"/>
+	</requestor>
+	<outcome value="complete"/>
+	<preAuthRef value="A1B2C3D4"/>
+	<addItem>
+		<extension url="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/extension-itemAuthorizedDate">
+			<valuePeriod>
+				<start value="2005-05-02"/>
+				<end value="2005-06-02"/>
+			</valuePeriod>
+		</extension>
+		<extension url="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/extension-itemPreAuthIssueDate">
+			<valueDate value="2005-05-02"/>
+		</extension>
+		<extension url="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/extension-itemAuthorizedProvider">
+      <valueReference>
+        <reference value="Practitioner/full"/>
+      </valueReference>
+		</extension>
+		<extension url="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/extension-itemTraceNumber">
+      <valueIdentifier>
+        <system value="http://example.org/new-payer/fhir/NamingSystem/auth-numbers"/>
+        <value value="A1B2C3D4"/>
+      </valueIdentifier>
+		</extension>
+		<itemSequence value="1"/>
+    <productOrService>
+      <coding>
+        <system value="http://codesystem.x12.org/005010/1365"/>
+        <code value="3"/>
+        <display value="Consultation"/>
+      </coding>
+    </productOrService>
+    <locationCodeableConcept>
+      <coding>
+        <system value="https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set"/>
+        <code value="11"/>
+      </coding>
+    </locationCodeableConcept>
+		<adjudication>
+			<extension url="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/extension-reviewAction">
+				<extension url="number">
+					<valueString value="AUTH0001"/>
+				</extension>
+				<extension url="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/extension-reviewActionCode">
+					<valueCodeableConcept>
+						<coding>
+							<system value="http://codesystem.x12.org/005010/306"/>
+							<code value="A1"/>
+							<display value="Certified in total"/>
+						</coding>
+					</valueCodeableConcept>
+				</extension>
+			</extension>
+			<category>
+				<coding>
+					<system value="http://terminology.hl7.org/CodeSystem/adjudication"/>
+					<code value="submitted"/>
+				</coding>
+			</category>
+		</adjudication>
+	</addItem>
+</ClaimResponse>

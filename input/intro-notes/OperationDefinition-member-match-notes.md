@@ -3,12 +3,6 @@ The response from a failed $member-match is a "422 Unprocessable Entity Status C
 
 After a successful $member-match the requesting system **SHALL** then use the UMB provided by the target payer in the `Patient.identifier` field in any subsequent transactions with the same system.  If the requesting system was a payer with coverage for the member, the receiving system SHOULD create a linkage between their own member information and the Coverage provided by the requesting system.  This linkage can be used to support subsequent queries by establishing a known 'reason' for accessing a member's information.
 
-For example, in the Da Vinci PDex IG, the requesting system will subsequently use the UMB identifier to request the member’s health records. This can be done by querying the US Core FHIR profile endpoints which will be constrained to the identified member. Alternatively, the requesting can perform a $everything operation to the Patient/{ID}/$everything operation endpoint to receive a bundle of the member’s health records.
-
-For PCDE, the requesting system will subsequently use the UMB identifier to send a Task message and request the PCDE coverage transition bundle.
-
-Similarly provider systems that initiate a member match can use the UMB in subsequent queries to access payer-held clinical and other information.
-
 NOTE: For privacy reasons, the 'CoverageToLink' **SHOULD NOT** include any data elements not marked as mustSupport in the Coverage profile.
 
 
