@@ -12,6 +12,16 @@
       "current": true
     },
     {
+      "version": "1.0.0",
+      "desc": "Initial Da Vinci HRex STU release",
+      "date": "2022-03-22",
+      "sequence": "STU1",
+      "path": "http://hl7.org/fhir/us/davinci-hrex/STU1",
+      "status": "trial-use",
+      "fhirversion": "4.0.1",
+      "current": true 
+    },
+    {
       "version": "0.2.0",
       "desc": "Sept 2020 Ballot for Da Vinci HRex",
       "date": "2020-08-14",

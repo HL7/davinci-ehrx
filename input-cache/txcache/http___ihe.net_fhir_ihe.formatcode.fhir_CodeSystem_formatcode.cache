@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://ihe.net/fhir/ihe.formatcode.fhir/CodeSystem/formatcode",
+  "code" : "urn:ihe:pcc:apr:handp:2008"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "PCC APR HANDP",
+  "code" : "urn:ihe:pcc:apr:handp:2008",
+  "system" : "http://ihe.net/fhir/ihe.formatcode.fhir/CodeSystem/formatcode"
+}
+-------------------------------------------------------------------------------------

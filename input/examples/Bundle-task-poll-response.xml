@@ -110,7 +110,7 @@
             <creation value="2005-12-24"/>
           </attachment>
           <format>
-            <system value="http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem"/>
+            <system value="http://ihe.net/fhir/ihe.formatcode.fhir/CodeSystem/formatcode"/>
             <code value="urn:ihe:pcc:apr:handp:2008"/>
           </format>
         </content>
