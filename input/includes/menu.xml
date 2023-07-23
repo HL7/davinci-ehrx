@@ -1,0 +1,87 @@
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">IG Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Background<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="http://hl7.org/about/davinci">Da Vinci Overview</a>
+      </li>
+      <li>
+        <a href="fhir.html">FHIR Introduction</a>
+      </li>
+      <li>
+        <a href="exchanging.html">Approaches to Exchanging FHIR Data</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Specification<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="davinci-guiding-principles.html">Guiding Principles</a>
+      </li>
+      <li>
+        <a href="conformance.html">Conformance Expectations</a>
+      </li>
+      <li>
+        <a href="security.html">Security and Privacy</a>
+      </li>
+      <li>
+        <a href="task.html">Task-based queries</a>
+      </li>
+      <li>
+        <a href="smart-app-reg.html">Dynamic Registration for SMART Apps</a>
+      </li>
+      <li>
+        <a href="profiles.html">Profile overview</a>
+      </li>
+      <li>
+        <a href="searchparameters.html">Search Parameters overview</a>
+      </li>
+      <li>
+        <a href="OperationDefinition-member-match.html">Member resolution</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Artifacts<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html">HRex Artifacts</a>
+      </li>
+      <li>
+        <a href="{{site.data.fhir.ver.uscore}}/artifacts.html">US Core 3.1 (FHIR R4) Artifacts</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="{{site.data.fhir.path}}">FHIR R4 specification</a>
+      </li>
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+      <li>
+        <a href="tools.html">Tooling and Support</a>
+      </li>
+	  <li>
+        <a href="https://chat.fhir.org">chat.fhir.org</a>
+      </li>
+    </ul>
+  </li>
+</ul>

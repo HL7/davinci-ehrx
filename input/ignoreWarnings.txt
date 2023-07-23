@@ -1,0 +1,34 @@
+== Suppressed Messages ==
+# These two errors should go away once the IG is published and the content is actually available at the canonical URL
+ERROR: Parameters/member-match-in-provider: Parameters.parameter[2].resource.ofType(Consent).policy[0].uri: URL value 'http://hl7.org/fhir/us/davinci-hrex/StructureDefinition-hrex-consent.html#regular' does not resolve
+ERROR: Parameters/member-match-in: Parameters.parameter[3].resource.ofType(Consent).policy[0].uri: URL value 'http://hl7.org/fhir/us/davinci-hrex/StructureDefinition-hrex-consent.html#regular' does not resolve
+
+# This is an error in the core resource that we inherit
+ERROR: StructureDefinition/hrex-consent: StructureDefinition.snapshot.element[9].example[0].value.ofType(Identifier): if identifier.system is ''urn:ietf:rfc:3986'', then the identifier.value must be a full URI (e.g. start with a scheme)
+
+# The NUCC codes are all valid (according to tx.fhir.org), but the validator is colliding with UTG content as discussed here: 
+#   https://chat.fhir.org/#narrow/stream/179252-IG-creation/topic/http.3A.2F.2Fnucc.2Eorg.2Fprovider-taxonomy
+
+# These identifiers are 'extra' and aren't expected to match any slice
+INFORMATION: Organization/full: Organization.identifier[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-organization
+INFORMATION: Practitioner/full: Practitioner.identifier[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-practitioner
+INFORMATION: Practitioner/min: Practitioner.identifier[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-practitioner
+
+# These coverage classes aren't part of the profile
+INFORMATION: Parameters/member-match-in-provider: Parameters.parameter[1].resource.ofType(Coverage).class[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-coverage
+INFORMATION: Parameters/member-match-in-provider: Parameters.parameter[1].resource.ofType(Coverage).class[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-coverage
+INFORMATION: Parameters/member-match-in-provider: Parameters.parameter[1].resource.ofType(Coverage).class[3]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-coverage
+INFORMATION: Parameters/member-match-in: Parameters.parameter[1].resource.ofType(Coverage).class[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-coverage
+INFORMATION: Parameters/member-match-in: Parameters.parameter[1].resource.ofType(Coverage).class[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-coverage
+INFORMATION: Parameters/member-match-in: Parameters.parameter[1].resource.ofType(Coverage).class[3]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-coverage
+
+# These are tested by the parameters input examples
+INFORMATION: StructureDefinition.where(url = 'http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-consent'): The Implementation Guide contains no explicitly linked examples for this profile
+INFORMATION: StructureDefinition.where(url = 'http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-patient-demographics'): The Implementation Guide contains no explicitly linked examples for this profile
+
+# HRex needs an anonymous patient - US Realm approved: https://jira.hl7.org/browse/FHIR-33538
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-patient-demographics').baseDefinition: US FHIR Usage rules require that all profiles on Patient derive from the core US profile
+
+# These code systems are not currently supported by the Tx server - and the X12 ones likely won't ever be
+Code System URI 'https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set' is unknown so the code cannot be validated
+Code System URI 'http://codesystem.x12.org/005010/1365' is unknown so the code cannot be validated

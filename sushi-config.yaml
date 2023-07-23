@@ -1,0 +1,98 @@
+# ╭─────────────────────────────────ImplementationGuide-fish.json──────────────────────────────────╮
+# │  The properties below are used to create the ImplementationGuide resource. For a list of       │
+# │  supported properties, see:                                                                    │
+# │  https://fshschool.org/docs/sushi/configuration/#full-configuration                            │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+id: davinci-hrex
+canonical: http://hl7.org/fhir/us/davinci-hrex
+version: 1.0.0
+name: DaVinciHealthRecordExchangeHRex
+title: Da Vinci Health Record Exchange (HRex)
+status: active
+experimental: false
+publisher:
+  name: HL7 International - Clinical Interoperability Council
+contact:
+    telecom:
+      - system: url
+        value: http://www.hl7.org/Special/committees/cic
+description: The Da Vinci Payer Health Record exchange (HRex) Framework/library specifies the FHIR elements used in multiple Da Vinci implementation guides. This includes FHIR profiles, functions, operations, and constraints on other specifications such as CDS-Hooks and other aspects of Da Vinci Use Cases that are common across more than a single use case.\n\nDa Vinci HRex Implementation Guide (IG) will make use of US Core profiles that are based on the FHIR R4 specification wherever practical. The HRex IG will use the HL7 FHIR Release 4/US Core STU3 specification as its base but will provide additional guidance and documentation to support implementations that follow the HL7 FHIR STU3/US Core STU2 and HL7 FHIR DSTU2/Argonaut specifications.\n\nThe HRex profiles documented in this IG will be used to exchange data between providers systems (e.g. EHRs) and other providers, payers, and third-party applications where appropriate. In addition, exchanges from payer systems to providers, other payers, and third-party applications are supported by the HRex profiles and operations.\n\nHRex may define new extensions, profiles, value sets, constraints/extension to other specification (e.g. specific CDS-Hooks) that are specific Da Vinci requirements. Where appropriate these Da Vinci specific artifacts will be promoted for incorporation into the future versions of existing standards (e.g. R4 US Core profiles) and deprecated in this guide on publication in the updated standard.
+jurisdiction: urn:iso:std:iso:3166#US
+packageId: hl7.fhir.us.davinci-hrex
+license: CC0-1.0
+fhirVersion: 4.0.1
+parameters:
+  apply-publisher: true
+  apply-contact: true
+  show-inherited-invariants: false
+copyrightYear: 2019+
+releaseLabel: STU R1
+extension:
+  - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+    valueCode: "trial-use"
+  - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm
+    valueInteger: "2"
+# ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
+# │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+dependencies:
+  hl7.fhir.us.core:
+    version: 3.1.1
+    uri: http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core
+    id: uscore
+  hl7.fhir.us.udap-security:
+    version: 0.1.0
+    uri: http://hl7.org/fhir/us/udap-security/ImplementationGuide/hl7.fhir.us.udap-security
+    id: udap
+  hl7.terminology.r4:
+    version: 5.0.0
+    uri: http://terminology.hl7.org/ImplementationGuide/hl7.terminology
+    id: hl7tx
+pages:
+  index.md:
+    title: Home
+  fhir.md:
+    title: FHIR Introduction
+  exchanging.html:
+    title: Approaches to Exchanging FHIR Data
+    exchanging-search.html:
+      title: Exchanging with FHIR search
+    exchanging-rest.html:
+      title: Exchanging with FHIR REST
+    exchanging-subscription.html:
+      title: Exchanging with FHIR subscription
+    exchanging-polling.html:
+      title: Exchanging with polling
+    exchanging-operation.html:
+      title: Exchanging with FHIR operations
+    exchanging-messaging.html:
+      title: Exchanging with messaging
+    exchanging-request.html:
+      title: Exchanges allowing human intervention
+  conformance.html:
+    title: Conformance Expectations
+  davinci-guiding-principles.html:
+    title: Da Vinci Guiding Principles
+  security.html:
+    title: Security and Privacy
+  task.md:
+    title: Task-based queries
+  smart-app-reg.md:
+    title: Dynamic Registration for SMART Apps
+  profiles.html:
+    title: Profile overview
+  searchparameters.md:
+    title: Search Parameters overview
+  artifacts.html:
+    title: Artifact List
+  downloads.md:
+    title: Downloads
+    extension:
+      - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+        valueCode: "informative"
+  tools.md:
+    title: Tooling and Support
+    extension:
+      - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+        valueCode: "informative"
+

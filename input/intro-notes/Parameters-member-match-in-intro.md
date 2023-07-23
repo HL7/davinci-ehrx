@@ -1,0 +1,2 @@
+This sample shows the three parameter values passed into the [$member-match](OperationDefinition-member-match.html) operation.  At minimum, the Patient must have an identifier, name, and gender.  The identifier will be the member number as known by the requesting organization.  Both the old and new coverage identify the Patient as the beneficiary via a local reference.  In both coverages, the organization information is conveyed as a 'contained' resource - indicating that it is maintained as part of the coverage.
+

@@ -1,0 +1,1 @@
+Consent allows sharing the fact that a patient has authorized the sharing of data between two participants.  Sharing the existence of consent is often a pre-requisite to being able to share information.  This profile is leveraged by the [$member-match](OperationDefinition-member-match.html) operation, but can also be used by Da Vinci implementation guides in other ways.

@@ -1,0 +1,43 @@
+@startuml
+autonumber
+group #lightblue Step 1: Verify Exchange, establish mutual TLS, and verify trust.
+  Payer2 -> PayerDirectory : Query
+  PayerDirectory -> Payer2 : Return endpoint, mutual TLS public cert, and return trustframework
+  Payer2 -> Payer2 : Verify Cert
+  Payer2 -> Payer1 : Server-Server OAuth -- Establish Mutual TLS
+  Payer1 -> PayerDirectory : Query mutual TLS Public Cert
+  PayerDirectory ->> Payer1 : Return mTLS public cert and return trustframework
+  Payer1 -> Payer1 : Verify Cert
+end
+
+group #lightblue Step 2: Establish common member
+  Payer2 -> Payer1 : Send bundle to $member-match operation
+  Payer1 -> Payer1 : Verify member
+  Payer1 -> Payer2 : Return Member ID
+end
+
+group #lightgreen HRex consent process: Exchange consent (all / non-sensitive), API URL and refresh token
+  Payer2 -> Payer1 : Use UDAP to request access using member ID and provide Consent reference
+  note right
+    $MemberAccess operation
+  endnote
+  Payer1 -> Payer2 : Return access and refresh token
+  Payer1 -> Payer2 : Use UDAP to request access using member ID from $MemberMatch and provide reference to previously shared consent
+  note right
+    if concurrent coverage
+  endnote
+  Payer2 -> Payer1 : Return access and refresh token
+end
+
+group #lightblue Exchange Information (e.g. PDex USCDI) via API
+  Payer2 -> Payer1 : Get access token using refresh token, if necessary
+  Payer2 -> Payer1 : Use access token to access API
+  Payer1 -> Payer2 : Return $everything or incremental data as appropriate
+  Payer1 -> Payer2 : Get access token using refresh token, if necessary
+  note right
+    If concurrent coverage
+  endnote
+  Payer1 -> Payer2 : use access token to access API
+  Payer2 -> Payer1 : Return $everything or incremental data as appropriate
+end
+@enduml
