@@ -1,2 +1,0 @@
-
-If there is a need to request multiple types of information, each request must be handled by a separate Task, so that status about the success or failure of each request can be clearly distinguished and so that the results can be clearly matched to each data request.
