@@ -19,7 +19,7 @@ Description: """The Parameters profile for Da Vinci Find Member using Patient an
   * name = "MemberPatient" (exactly)
   * name MS
   * resource 1.. MS
-  * resource only USCorePatientProfile
+  * resource only HRexPatientDemographics
 * parameter[CoverageToMatch]
   * name = "CoverageToMatch" (exactly)
   * name MS
