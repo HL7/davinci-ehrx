@@ -15,12 +15,14 @@ Description: "The HRex Coverage Profile defines the constraints for representing
   * value only string
     * ^short = "The value that is unique within the system."
 * policyHolder only Reference(USCorePatientProfile or HRexOrganization or RelatedPerson)
+  * ^comment = "When the Coverage pertains to Children and Family Services, `policyHolder` should reference Organization (or another suitable entity) representing them. It acts as the holder of the policy and is responsible for the management and oversight of the coverage."
 * subscriber only Reference(USCorePatientProfile)
 * subscriberId ..1 MS
   * ^short = "Subscriber ID"
   * ^requirements = "The subscriber Id is a number that is needed by the payer to associate the attestation with the member in their system."
 * beneficiary only Reference(HRexPatientDemographics)
 * beneficiary MS
+  * ^comment = "When the Coverage pertains to Children and Family Services, `beneficiary` should reference individual members under the policy (such as children or family members) that are entitled to claim benefits."
   * ^requirements = "This would usually be the US Core Patient Resource for which the service was performed."
 * dependent only string
 * dependent MS
