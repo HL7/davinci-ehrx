@@ -74,7 +74,7 @@ Usage: #example
     * category = $v3-ActCode#IDSCL
     * patient.reference = "Patient/1"
     * performer.reference = "Patient/1"
-    * sourceReference.reference = "http://example.org/DocumentReference/someconsent.pdf"
+    * sourceReference.reference = "http://example.org/DocumentReference/someconsent"
     * policy.uri = "http://hl7.org/fhir/us/davinci-hrex/StructureDefinition-hrex-consent.html#regular"
     * provision
       * type = #permit
