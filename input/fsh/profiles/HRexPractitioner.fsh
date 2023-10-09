@@ -8,8 +8,6 @@ Description: "Constraints on the US Core Practitioner profiles requiring support
   * system MS
   * value MS
 * identifier ^comment = "It is preferred to use an NPI and if an NPI is available, it SHALL be provided.  However CCN (or even other identifier schemes) can be used if an NPI is not available"
-* identifier contains ccn 0..1
-* identifier[ccn] ^patternIdentifier.system = "http://terminology.hl7.org/NamingSystem/CMSCertificationNumber"
 * qualification MS
   * ^requirements = "This element is mustSupport because qualifications can have ramifications for approving payments and billing"
   * code 1.. MS
