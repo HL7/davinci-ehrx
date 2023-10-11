@@ -7,7 +7,7 @@ Usage: #definition
 * title = "HRex Member Match Operation"
 * status = #draft
 * kind = #operation
-* description = "The **$member-match** operation allows one health plan to retrieve a unique identifier for a member from another health plan using a member's demographic and coverage information.  This identifier can then be used to perform subsequent queries and operations. Members implementing a deterministic match will require a match on member id or subscriber id at a minimum.  (I.e. A pure demographic match will not be supported by such implementations.)"
+* description = "The **$member-match** operation that can be invoked by either a payer or an EHR or other system, allows one health plan to retrieve a unique identifier for a member from another health plan using a member's demographic and coverage information.  This identifier can then be used to perform subsequent queries and operations. Members implementing a deterministic match will require a match on member id or subscriber id at a minimum (i.e. A pure demographic match will not be supported by such implementations.)."
 * affectsState = true
 * code = #member-match
 * resource = #Patient
