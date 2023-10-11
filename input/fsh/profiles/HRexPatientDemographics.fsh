@@ -7,7 +7,7 @@ Description: "Defines constraints on the patient resource for the minimal set of
 * ^extension[$fmm].valueInteger = 0
 * ^experimental = false
 * obeys hrex-pat-1
-* . ^definition = "HRex Patient Demographics Profile"
+* . ^definition = "HRex Patient Demographics Profile is tailored to support the majority of use cases requiring either gender or birthSex extension. For particular use cases that does not require either elements, creating a new profile derived from the base Patient resource is recommended (ensuring it’s adjusted to specific needs and constraints)."
   * ^mustSupport = false
 * extension contains $us-core-birthsex named us-core-birthSex 0..1 MS
 * identifier ^slicing.discriminator.type = #pattern
