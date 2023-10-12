@@ -1,9 +1,4 @@
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R4/fhir-single.xsd">
-  <blockquote class="note-to-balloters">
-    <p>
-      This page is not complete.  It does not include IGs other than US Core and HRex. It will be update closer to publication when it is expected there will be more Da Vinci IGs that are in a 'final' state.  The values shown are intended to give balloters a sense of how the tables will work.
-    </p>
-  </blockquote>
   <p>
     Da Vinci IGs make use of a variety of FHIR profiles, extensions, operations, and other artifacts.  These are drawn from the core specification, US Core, defined within other Da Vinci IGs and defined in other (non-Da Vinci) IGs.  This page provides a summary of key artifacts currently in use in at least one Da Vinci IG.  Because Da Vinci has so many IGs and they are changing relatively frequently, this summary page will not always be completely up to date.  However, the team will do their best to keep it so.  (If you find an issue, please use the <a href="http://hl7.org/fhir-issues">Propose a Change</a> link below to get it fixed.)
   </p>

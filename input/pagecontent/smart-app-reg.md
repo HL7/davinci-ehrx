@@ -1,10 +1,3 @@
-  <blockquote class="note-to-balloters">
-    <p>
-      Feedback requested: This page proposes an initial set of guidance for dynamic registration.  What additional constraints, if any, are necessary to ensure good interoperability in this space?
-    </p>
-  </blockquote>
-
-
 Member-authorized access to Payer FHIR APIs for other Payers and Third-Party Applications creates a situation where Payers **MAY** need to cross-register applications with many other payers. This multiplicity of cross-registrations creates a situation where one or more entities providing a verification service for a "Community of Trust" provides significant economies of scale that benefits both organizations registering applications and data holders (such as payers) needing to register those applications.
 
 The FHIR community has recognized the need to solve the challenge of a more streamlined dynamic registration process. A specification has been developed: [Unified Data Access Profiles - Dynamic Client Registration](http://www.udap.org/udap-dynamic-client-registration.html).
