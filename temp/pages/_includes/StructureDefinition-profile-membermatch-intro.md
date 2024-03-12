@@ -1,0 +1,1 @@
+Downstream IGs may tighten conformence expectations on Consent based on their use-cases. 
