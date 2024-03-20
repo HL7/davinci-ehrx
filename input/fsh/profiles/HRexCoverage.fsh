@@ -38,3 +38,9 @@ Description: "The HRex Coverage Profile defines the constraints for representing
   * type only CodeableConcept
   * type = $coverage-class#group
   * value 1..1 MS
+
+Invariant: hrex-cov-1
+Description: "Coverage.identifier or Coverage.subscriberId SHALL be present"
+Severity: #error
+Expression: "identifier.exists() or subscriberId.exists()"
+XPath: "f:identifier or f:subscriberId"

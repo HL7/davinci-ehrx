@@ -5,7 +5,7 @@ Title: "HRex Consent Profile"
 Description: "The HRex Consent Profile defines the constraints for representingÂ a member's to the sharing of their healthcare information to other organizations."
 * ^extension[$standard-status].valueCode = #draft
 * ^extension[$fmm].valueInteger = 0
-* ^status = #active
+* ^status = #draft
 * ^experimental = false
 * . ^definition = "This Consent profile conveys high-level computable information about a member's consent for information sharing, along with information that allows a party depending on the consent to follow up with the consent holder to access the 'original' consent, be it in paper form, audio recording or electronic for audit purposes."
 * status = #active (exactly)
@@ -15,7 +15,7 @@ Description: "The HRex Consent Profile defines the constraints for representingÂ
 * category ^slicing.discriminator.type = #pattern
   * ^slicing.discriminator.path = "$this"
   * ^slicing.rules = #open
-* category contains disclosure 0..* MS
+* category contains disclosure 1..1 MS
 * category[disclosure] = $v3-ActCode#IDSCL
 * patient 1.. MS
 * patient only Reference(USCorePatientProfile)

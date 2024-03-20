@@ -23,7 +23,7 @@ Usage: #example
 Instance: e3b9e31e-6252-40a5-9b7b-dfa6ca44f875
 InstanceOf: Task
 Usage: #inline
-//* contained = results
+* contained[0] = results
 * basedOn = Reference(http://example.org/new-payer/CommunicationRequest/57)
 * status = #completed
 * intent = #order

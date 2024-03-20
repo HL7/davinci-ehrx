@@ -1,0 +1,115 @@
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "inactive" : false,
+    "include" : [{
+      "system" : "urn:ietf:rfc:3986",
+      "concept" : [{
+        "code" : "http://hl7.org/fhir/us/davinci-hrex/StructureDefinition-hrex-consent.html#regular"
+      },
+      {
+        "code" : "http://hl7.org/fhir/us/davinci-hrex/StructureDefinition-hrex-consent.html#sensitive"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "status" : "active",
+  "expansion" : {
+    "identifier" : "urn:uuid:036144d1-7f6f-4e5e-a82d-bd87685d2156",
+    "timestamp" : "2024-03-18T13:29:28.902Z",
+    "total" : 2,
+    "offset" : 0,
+    "parameter" : [{
+      "name" : "excludeNested",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "offset",
+      "valueInteger" : 0
+    },
+    {
+      "name" : "count",
+      "valueInteger" : 1000
+    },
+    {
+      "name" : "used-codesystem",
+      "valueUri" : "urn:ietf:rfc:3986|n/a"
+    },
+    {
+      "name" : "version",
+      "valueUri" : "urn:ietf:rfc:3986|n/a"
+    }],
+    "contains" : [{
+      "system" : "urn:ietf:rfc:3986",
+      "code" : "http://hl7.org/fhir/us/davinci-hrex/StructureDefinition-hrex-consent.html#regular"
+    },
+    {
+      "system" : "urn:ietf:rfc:3986",
+      "code" : "http://hl7.org/fhir/us/davinci-hrex/StructureDefinition-hrex-consent.html#sensitive"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "inactive" : true,
+    "include" : [{
+      "system" : "urn:ietf:rfc:3986",
+      "concept" : [{
+        "code" : "http://hl7.org/fhir/us/davinci-hrex/StructureDefinition-hrex-consent.html#regular"
+      },
+      {
+        "code" : "http://hl7.org/fhir/us/davinci-hrex/StructureDefinition-hrex-consent.html#sensitive"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "status" : "active",
+  "expansion" : {
+    "identifier" : "urn:uuid:0ba9a0a1-2bcf-4846-a859-ccfc05f7cd3f",
+    "timestamp" : "2024-03-18T13:31:05.636Z",
+    "total" : 2,
+    "offset" : 0,
+    "parameter" : [{
+      "name" : "excludeNested",
+      "valueBoolean" : false
+    },
+    {
+      "name" : "offset",
+      "valueInteger" : 0
+    },
+    {
+      "name" : "count",
+      "valueInteger" : 1000
+    },
+    {
+      "name" : "used-codesystem",
+      "valueUri" : "urn:ietf:rfc:3986|n/a"
+    },
+    {
+      "name" : "version",
+      "valueUri" : "urn:ietf:rfc:3986|n/a"
+    }],
+    "contains" : [{
+      "system" : "urn:ietf:rfc:3986",
+      "code" : "http://hl7.org/fhir/us/davinci-hrex/StructureDefinition-hrex-consent.html#regular"
+    },
+    {
+      "system" : "urn:ietf:rfc:3986",
+      "code" : "http://hl7.org/fhir/us/davinci-hrex/StructureDefinition-hrex-consent.html#sensitive"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------

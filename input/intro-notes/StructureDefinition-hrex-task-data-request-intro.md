@@ -1,4 +1,4 @@
-Several Da Vinci guides have a requirement to asynchronously request data that may involve a human collecting, organizing, and/or reviewing data, as described in [Requesting exchange using Task](exchanging-request.html#task).  This profile shows how Da Vinci uses Task to perform that process, including defining 'standard' codes for the Task and its associated inputs and outputs.
+Several Da Vinci guides have a requirement to asynchronously request data that may involve a human collecting, organizing, and/or reviewing data, as described in [Requesting exchange using Task](http://build.fhir.org/exchanging-request.html#task).  This profile shows how Da Vinci uses Task to perform that process, including defining 'standard' codes for the Task and its associated inputs and outputs.
 
 The Task supports two approaches to data sharing:
 

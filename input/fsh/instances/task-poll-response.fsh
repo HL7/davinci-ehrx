@@ -13,7 +13,7 @@ Usage: #example
   * resource = c94fb961-310c-41f1-a54f-fc5f2dba49ee
   * search.mode = #match
 * entry[+]
-  * fullUrl = "https://example.org/fhir/r4/DocumentReference/287Q73J237"
+  * fullUrl = "https://example.org/fhir/r4/DocumentReference/c94fb961-310c-41f1-a54f-gd5325dgds7"
   * resource = c94fb961-310c-41f1-a54f-gd5325dgds7
   * search.mode = #include
 

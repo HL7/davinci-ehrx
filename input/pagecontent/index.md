@@ -40,6 +40,20 @@ The main menu in this IG is categorized into several primary topics with several
 
 The main menu at the top of all IG pages will allow you to jump to any of the main pages in the IG.  The breadcrumbs bar (right below the menu bar) will let you navigate 'up' to ancestor pages of whatever page you are looking at.  The [Table of Contents (TOC)](toc.html) will show you all pages in the IG and the [Artifacts list](artifacts.html) will list all of the artifacts (profiles, extensions, operations, value sets, etc.) defined in this specification.  As well, this IG makes heavy use of hyperlinks which will allow navigation to relevant sections of this specification and parent specifications.  
 
+### Dependencies
+This guide is based on the [FHIR R4]({{site.data.fhir.path}}) specification.  In addition, this guide also relies on a number of parent implementation guides:
+
+{% include dependency-table-short.xhtml %}
+
+This implementation guide defines additional constraints and usage expectations above and beyond the information found in these base specifications.
+
+### Intellectual Property Considerations
+This implementation guide and the underlying FHIR specification are licensed as public domain under the [FHIR license](http://hl7.org/fhir/R4/license.html#license). The license page also describes rules for the use of the FHIR name and logo.
+
+{% include ip-statements.xhtml %}
+
+
+
 ### Credits
 
 This IG was developed under the auspices of the [Clinical Interoperability Council (CIC)](http://www.hl7.org/Special/committees/cic) work group.  Current work group co-chairs are:

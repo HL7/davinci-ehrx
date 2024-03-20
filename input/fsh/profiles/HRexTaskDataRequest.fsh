@@ -3,7 +3,7 @@ Parent: Task
 Id: hrex-task-data-request
 Title: "HRex Task Data Request Profile"
 Description: "This Task profile is used to solicit information from a system when direct query is not possible and human intervention might be required"
-* ^status = #draft
+* ^status = #active
 * ^experimental = false
 * obeys tdr-1 and tdr-2 and tdr-3
 * . ^definition = "This Task profile is used to solicit information from a system when direct query is not possible and human intervention might be required"
@@ -81,3 +81,18 @@ Description: "This Task profile is used to solicit information from a system whe
   * value[x] MS
     * ^short = "data reference"
     * ^comment = "The referenced data might be contained within the Task (if it doesn't have/shouldn't have independent persistence), but can also refer to data stored elsewhere - either on the owner's system or some other system.  Note that all returned data SHOULD comply with appropriate US-Core and/or Da Vinci profiles."
+
+Invariant: tdr-1
+Description: "Must have exactly one input that is data-query or data-code"
+Severity: #error
+Expression: "input.type.where(coding.where(system='http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp' and (code='data-code' or code='data-query')).exists()).count()=1"
+
+Invariant: tdr-2
+Description: "Task statusReason SHALL be populated if status is 'rejected' or 'failed'"
+Severity: #error
+Expression: "(status = 'rejected' or status = 'failed') implies statusReason.exists()"
+
+Invariant: tdr-3
+Description: "Task output SHALL be populated if status is 'completed'"
+Severity: #error
+Expression: "(status = 'completed') implies output.exists()"

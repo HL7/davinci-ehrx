@@ -3,7 +3,7 @@ Parent: USCorePractitionerProfile
 Id: hrex-practitioner
 Title: "HRex Practitioner Profile"
 Description: "Constraints on the US Core Practitioner profiles requiring support for qualification and requiring support for an additional identifier type"
-* ^status = #draft
+* ^status = #active
 * identifier
   * system MS
   * value MS

@@ -3,7 +3,7 @@ Parent: USCoreOrganizationProfile
 Id: hrex-organization
 Title: "HRex Organization Profile"
 Description: "Additional Da Vinci constraints on organization - to represent either provider organizations or payers"
-* ^status = #draft
+* ^status = #active
 * . ^mustSupport = false
   * ^isModifier = false
 * identifier 1..

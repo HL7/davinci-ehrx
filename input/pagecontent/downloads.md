@@ -14,3 +14,6 @@ Key content from the FHIR core specification:
 
 Content from US Core:
 * The [validator package]({{site.data.fhir.ver.uscore}}/package.tgz) for use with the [FHIR validator](tools.html)
+
+
+{% include cross-version-analysis-inline.xhtml %}

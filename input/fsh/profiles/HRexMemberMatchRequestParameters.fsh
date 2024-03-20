@@ -3,7 +3,7 @@ Parent: Parameters
 Id: hrex-parameters-member-match-in
 Title: "HRex Parameters - Member Match Request Profile"
 Description: """The Parameters profile for Da Vinci Find Member using Patient and Coverage Resources Request. The resource must contain: 
- * MemberPatient - US Core Patient containing member demographics 
+ * MemberPatient - HRex Patient containing member demographics 
   * CoverageToMatch - details of prior health plan coverage provided by the member, typically from their health plan coverage card 
   * CoverageToLink - details of new or prospective health plan coverage, provided by the health plan based upon the member's enrolment"""
 * parameter ..4 MS

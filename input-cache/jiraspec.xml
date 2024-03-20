@@ -40,7 +40,6 @@
 <artifact id="StructureDefinition/hrex-provenance" key="StructureDefinition-hrex-provenance" name="HRex Provenance Profile"/>
 <artifact id="Provenance/full" key="Provenance-full" name="HRex Provenance full example"/>
 <artifact id="Provenance/min" key="Provenance-min" name="HRex Provenance min example"/>
-<artifact id="StructureDefinition/hrex-reference" key="StructureDefinition-hrex-reference" name="HRex Reference Profile"/>
 <artifact id="Task/document-complete" key="Task-document-complete" name="HRex Task Data Request - completed document example"/>
 <artifact id="Task/query-complete" key="Task-query-complete" name="HRex Task Data Request - completed query example"/>
 <artifact id="Task/query-initial" key="Task-query-initial" name="HRex Task Data Request - initial query example"/>
@@ -64,13 +63,13 @@
 <page key="davinci-guiding-principles" name="Da Vinci Guiding Principles"/>
 <page key="downloads" name="Downloads"/>
 <page key="smart-app-reg" name="Dynamic Registration for SMART Apps"/>
-<page deprecated="true" key="exchanging-request" name="Exchanges allowing human intervention"/>
-<page deprecated="true" key="exchanging-rest" name="Exchanging with FHIR REST"/>
-<page deprecated="true" key="exchanging-operation" name="Exchanging with FHIR operations"/>
-<page deprecated="true" key="exchanging-search" name="Exchanging with FHIR search"/>
-<page deprecated="true" key="exchanging-subscription" name="Exchanging with FHIR subscription"/>
-<page deprecated="true" key="exchanging-messaging" name="Exchanging with messaging"/>
-<page deprecated="true" key="exchanging-polling" name="Exchanging with polling"/>
+<page key="exchanging-request" name="Exchanges allowing human intervention"/>
+<page key="exchanging-rest" name="Exchanging with FHIR REST"/>
+<page key="exchanging-operation" name="Exchanging with FHIR operations"/>
+<page key="exchanging-search" name="Exchanging with FHIR search"/>
+<page key="exchanging-subscription" name="Exchanging with FHIR subscription"/>
+<page key="exchanging-messaging" name="Exchanging with messaging"/>
+<page key="exchanging-polling" name="Exchanging with polling"/>
 <page key="fhir" name="FHIR Introduction"/>
 <page key="index" name="Home"/>
 <page key="profiles" name="Profile overview"/>

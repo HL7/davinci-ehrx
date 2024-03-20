@@ -21,7 +21,7 @@ Usage: #example
   * response.status = "200"
 * entry[+]
   * fullUrl = "https://example.org/fhir/r4/DocumentReference/287Q73J237"
-  * resource = Inline-Instance-for-subscription-notification-with-document
+  * resource = 287Q73J237
   * request
     * method = #GET
     * url = "DocumentReference"
@@ -68,7 +68,7 @@ Usage: #inline
   * type = $hrex-temp#data-value
   * valueReference = Reference(http://example.org/ehr/fhir/DocumentReference/287Q73J237)
 
-Instance: Inline-Instance-for-subscription-notification-with-document
+Instance: 287Q73J237
 InstanceOf: DocumentReference
 Usage: #inline
 * status = #current

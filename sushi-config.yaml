@@ -11,7 +11,7 @@ title: Da Vinci Health Record Exchange (HRex)
 status: active
 experimental: false
 publisher:
-  name: HL7 International - Clinical Interoperability Council
+  name: HL7 International / Clinical Interoperability Council
 contact:
     telecom:
       - system: url
@@ -22,9 +22,11 @@ packageId: hl7.fhir.us.davinci-hrex
 license: CC0-1.0
 fhirVersion: 4.0.1
 parameters:
+  path-expansion-params: "../../input/terminology-settings.json"
   apply-publisher: true
   apply-contact: true
-  show-inherited-invariants: false
+  globals-in-artifacts: true
+  auto-oid-root: 2.16.840.1.113883.4.642.40.19
 copyrightYear: 2019+
 releaseLabel: STU R1
 extension:
@@ -32,6 +34,8 @@ extension:
     valueCode: "trial-use"
   - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm
     valueInteger: "2"
+  - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-wg
+    valueCode: cic
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
@@ -48,6 +52,10 @@ dependencies:
     version: 5.0.0
     uri: http://terminology.hl7.org/ImplementationGuide/hl7.terminology
     id: hl7tx
+  hl7.fhir.uv.extensions:
+    version: 5.1.0
+    uri: http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions
+    id: ext
 pages:
   index.md:
     title: Home
@@ -55,20 +63,20 @@ pages:
     title: FHIR Introduction
   exchanging.html:
     title: Approaches to Exchanging FHIR Data
-    exchanging-search.html:
-      title: Exchanging with FHIR search
-    exchanging-rest.html:
-      title: Exchanging with FHIR REST
-    exchanging-subscription.html:
-      title: Exchanging with FHIR subscription
-    exchanging-polling.html:
-      title: Exchanging with polling
-    exchanging-operation.html:
-      title: Exchanging with FHIR operations
-    exchanging-messaging.html:
-      title: Exchanging with messaging
-    exchanging-request.html:
-      title: Exchanges allowing human intervention
+#    exchanging-search.html:
+#      title: Exchanging with FHIR search
+#    exchanging-rest.html:
+#      title: Exchanging with FHIR REST
+#    exchanging-subscription.html:
+#      title: Exchanging with FHIR subscription
+#    exchanging-polling.html:
+#      title: Exchanging with polling
+#    exchanging-operation.html:
+#      title: Exchanging with FHIR operations
+#    exchanging-messaging.html:
+#      title: Exchanging with messaging
+#    exchanging-request.html:
+#      title: Exchanges allowing human intervention
   conformance.html:
     title: Conformance Expectations
   davinci-guiding-principles.html:

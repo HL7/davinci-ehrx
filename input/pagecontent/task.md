@@ -1,4 +1,4 @@
-Da Vinci makes use of the [Task mechanism](exchanging-request.html#task) to asyncronously solicit information from a target system in few implementation guides.  This
+Da Vinci makes use of the [Task mechanism](http://build.fhir.org/exchanging-request.html#task) to asyncronously solicit information from a target system in few implementation guides.  This
 implementation guide defines a specific <a href="StructureDefinition-hrex-task-data-request.html">profile</a> for use in HRex-based IGs that use this information.
 
 The following are examples of Tasks, showing different phases of the workflow for a Task soliciting execution of a specific query.
