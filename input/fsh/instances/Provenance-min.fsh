@@ -9,3 +9,4 @@ Usage: #example
 * agent
   * type = $provenance-participant-type#author
   * who = Reference(Practitioner/min)
+  * onBehalfOf = Reference(Organization/full)

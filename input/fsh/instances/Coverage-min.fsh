@@ -6,5 +6,6 @@ Usage: #example
 * id = "min"
 * status = #active
 * subscriberId = "97531"
+* relationship = $dar#unknown
 * beneficiary = Reference(http://example.org/new-payer/fhir/Patient/pat1)
 * payor = Reference(Organization/min)

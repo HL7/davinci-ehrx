@@ -6,8 +6,12 @@ Usage: #example
 * id = "full"
 * practitioner = Reference(Practitioner/full)
 * organization = Reference(Organization/full)
-* code[0] = $provider-taxonomy#111N00000X
-* code[+] = $provider-taxonomy#122300000X
+* code[0]
+  * coding[0] = $provider-taxonomy#111N00000X
+  * coding[+] = $sct#3842006
+* code[+]
+  * coding[0] = $provider-taxonomy#122300000X
+  * coding[+] = $sct#106289002
 * specialty[0] = $provider-taxonomy#103TE1100X
 * specialty[+] = $provider-taxonomy#103TF0000X
 * location[0] = Reference(http://example.org/some-clinic/Location/1874)

@@ -9,13 +9,13 @@ Usage: #example
   * value = "11223344"
 * identifier[+]
   * system = "urn:oid:2.16.840.1.113883.4.7"
-  * value = "11223344"
+  * value = "11D1234567"
 * identifier[+]
   * system = "urn:oid:2.16.840.1.113883.4.4"
   * value = "55566667"
 * identifier[+]
   * system = "http://hl7.org/fhir/sid/us-npi"
-  * value = "0123456789"
+  * value = "1234567893"
 * identifier[+]
   * system = "http://terminology.hl7.org/NamingSystem/CMSCertificationNumber"
   * value = "918273645"

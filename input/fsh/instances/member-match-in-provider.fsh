@@ -22,9 +22,11 @@ Usage: #example
   * resourceType = "Coverage"
   * id = "9876B1"
   * identifier
+    * type = $v2-0203#MB
     * system = "http://example.org/old-payer"
     * value = "DH10001235"
   * status = #draft
+  * relationship = $dar#unknown
   * beneficiary.reference = "Patient/1"
   * period
     * start = "2011-05-23"
@@ -34,11 +36,8 @@ Usage: #example
       * system = "http://hl7.org/fhir/sid/us-npi"
       * value = "9876543210"
     * display = "Old Health Plan"
-  * class[group]
-    * value = "CB135"
-  * class[+]
-    * type = $coverage-class#plan
-    * value = "B37FC"
+  * class[group].value = "CB135"
+  * class[plan].value = "B37FC"
   * class[+]
     * type = $coverage-class#subplan
     * value = "P7"

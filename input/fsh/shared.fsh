@@ -13,3 +13,11 @@ RuleSet: parameterComplex(name, use, min, max, documentation)
 * max = {max}
 * documentation = {documentation}
 
+RuleSet: map(sourceCode, sourceDisplay, equivalence, targetCode, targetDisplay)
+* element[+]
+  * code = {sourceCode}
+  * display = "{sourceDisplay}"
+  * target
+    * code = {targetCode}
+    * display = "{targetDisplay}"
+    * equivalence = {equivalence}

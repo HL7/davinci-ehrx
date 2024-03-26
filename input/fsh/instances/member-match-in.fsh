@@ -22,9 +22,11 @@ Usage: #example
   * resourceType = "Coverage"
   * id = "9876B1"
   * identifier
+    * type = $v2-0203#MB
     * system = "http://example.org/old-payer"
     * value = "DH10001235"
   * status = #draft
+  * relationship = $dar#unknown
   * beneficiary.reference = "Patient/1"
   * period
     * start = "2011-05-23"
@@ -50,9 +52,11 @@ Usage: #example
   * resourceType = "Coverage"
   * id = "AA87654"
   * identifier
+    * type = $v2-0203#MB
     * system = "http://example.org/new-payer/identifiers/coverage"
     * value = "234567"
   * status = #active
+  * relationship = $dar#unknown
   * beneficiary.reference = "https://hl7.org/fhir/us/core/Patient/example"
   * payor
     * identifier

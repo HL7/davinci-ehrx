@@ -21,6 +21,7 @@
 <artifact id="ValueSet/hrex-consent-policy" key="ValueSet-hrex-consent-policy" name="HRex Consent Policy ValueSet"/>
 <artifact id="StructureDefinition/hrex-consent" key="StructureDefinition-hrex-consent" name="HRex Consent Profile"/>
 <artifact id="StructureDefinition/hrex-coverage" key="StructureDefinition-hrex-coverage" name="HRex Coverage Profile"/>
+<artifact id="ValueSet/hrex-coverage-relationship" key="ValueSet-hrex-coverage-relationship" name="HRex Coverage Relationship ValueSet"/>
 <artifact id="Coverage/full" key="Coverage-full" name="HRex Coverage full example"/>
 <artifact id="Coverage/min" key="Coverage-min" name="HRex Coverage minimal example"/>
 <artifact id="OperationDefinition/member-match" key="OperationDefinition-member-match" name="HRex Member Match Operation"/>
@@ -53,6 +54,7 @@
 <artifact id="Bundle/task-poll-response" key="Bundle-task-poll-response" name="HRex Task polling response"/>
 <artifact id="CodeSystem/hrex-temp" key="CodeSystem-hrex-temp" name="HRex Temporary Code System"/>
 <artifact id="StructureDefinition/extension-itemTraceNumber" key="StructureDefinition-extension-itemTraceNumber" name="Item Trace Number"/>
+<artifact id="ConceptMap/NUCC-CareTeamMemberFunction" key="ConceptMap-NUCC-CareTeamMemberFunction" name="NUCC to SNOMED Care Team Member Function Map"/>
 <artifact id="StructureDefinition/extension-itemPreAuthIssueDate" key="StructureDefinition-extension-itemPreAuthIssueDate" name="Pre Authorized Issue Date"/>
 <artifact id="SearchParameter/hrex-provenance-target" key="SearchParameter-hrex-provenance-target" name="Provenance target Search Parameter"/>
 <artifact id="ClaimResponse/UnsolicitedReferralAuthorizationResponseExample" key="ClaimResponse-UnsolicitedReferralAuthorizationResponseExample" name="Unsolicited Prior Authorization example"/>

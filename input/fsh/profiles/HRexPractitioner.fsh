@@ -1,8 +1,9 @@
 Profile: HRexPractitioner
-Parent: USCorePractitionerProfile
+Parent: USCorePractitionerProfile|6.1.0
 Id: hrex-practitioner
 Title: "HRex Practitioner Profile"
 Description: "Constraints on the US Core Practitioner profiles requiring support for qualification and requiring support for an additional identifier type"
+* ^extension[$compliesWithProfile].valueCanonical = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner|3.1.1"
 * ^status = #active
 * identifier
   * system MS

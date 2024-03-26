@@ -23,7 +23,8 @@
   </p>
   <ul>
     <li>HRex - <a href="index.html">Da Vinci Health Record Exchange</a></li>
-    <li>USCORE - <a href="{{site.data.fhir.ver.uscore}}">US Core 3.1 (FHIR R4)</a></li>
+    <li>USCORE 3 - <a href="{{site.data.fhir.ver.uscore3}}">US Core 3.1 (FHIR R4)</a></li>
+    <li>USCORE 6 - <a href="{{site.data.fhir.ver.uscore3}}">US Core 6.1 (FHIR R4)</a></li>
   </ul>
 
   <a name="profiles"> </a>
@@ -47,10 +48,10 @@
           <a href="{{site.data.fhir.path}}allergyintolerance.html">AllergyIntolerance</a>
         </td>
         <td>
-          <b>USCORE</b>
+          <b>USCORE 3</b>
         </td>
         <td>
-        <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-allergyintolerance.html">US  Core AllergyIntolerance Profile</a>
+        <a href="{{site.data.fhir.ver.uscore3}}/StructureDefinition-us-core-allergyintolerance.html">US  Core AllergyIntolerance Profile</a>
         </td>
         <td>
           HRex<a href="#any"><sup>†</sup></a>
@@ -155,10 +156,10 @@
           <a href="{{site.data.fhir.path}}careplan.html">CarePlan</a>
         </td>
         <td>
-          <b>USCORE</b>
+          <b>USCORE 3</b>
         </td>
         <td>
-        <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-careplan.html">US Core CarePlan Profile</a>
+        <a href="{{site.data.fhir.ver.uscore3}}/StructureDefinition-us-core-careplan.html">US Core CarePlan Profile</a>
         </td>
         <td>
           HRex<a href="#any"><sup>†</sup></a>
@@ -182,10 +183,10 @@
           <a href="{{site.data.fhir.path}}careteam.html">CareTeam</a>
         </td>
         <td>
-          <b>USCORE</b>
+          <b>USCORE 3</b>
         </td>
         <td>
-          <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-careteam.html">US Core CareTeam Profile</a>
+          <a href="{{site.data.fhir.ver.uscore3}}/StructureDefinition-us-core-careteam.html">US Core CareTeam Profile</a>
         </td>
         <td>
           HRex<a href="#any"><sup>†</sup></a>
@@ -317,10 +318,10 @@
           <a href="{{site.data.fhir.path}}condition.html">Condition</a>
         </td>
         <td>
-          <b>USCORE</b>
+          <b>USCORE 3</b>
         </td>
         <td>
-          <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-condition.html">US Core Condition Profile</a>
+          <a href="{{site.data.fhir.ver.uscore3}}/StructureDefinition-us-core-condition-problems-health-concerns.html">US Core Condition Problems and Health Concerns Profile</a>
         </td>
         <td>
           HRex<a href="#any"><sup>†</sup></a>, CRD, PCDE
@@ -443,10 +444,10 @@
           <a href="{{site.data.fhir.path}}device.html">Device</a>
         </td>
         <td>
-          <b>USCORE</b>
+          <b>USCORE 3</b>
         </td>
         <td>
-          <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-implantable-device.html">US Core Implantable Device Profile</a>
+          <a href="{{site.data.fhir.ver.uscore3}}/StructureDefinition-us-core-implantable-device.html">US Core Implantable Device Profile</a>
         </td>
         <td>
           HRex<a href="#any"><sup>†</sup></a>
@@ -521,10 +522,10 @@
           <a href="{{site.data.fhir.path}}diagnosticreport.html">DiagnosticReport</a>
         </td>
         <td rowspan="2">
-          <b>USCORE</b>
+          <b>USCORE 3</b>
         </td>
         <td>
-          <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-diagnosticreport-lab.html">US Core DiagnosticReport Profile for Laboratory Results Reporting</a>
+          <a href="{{site.data.fhir.ver.uscore3}}/StructureDefinition-us-core-diagnosticreport-lab.html">US Core DiagnosticReport Profile for Laboratory Results Reporting</a>
         </td>
         <td>
           HRex, PCDE
@@ -533,7 +534,7 @@
       </tr>
       <tr>
         <td>
-          <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-diagnosticreport-note.html">US Core DiagnosticReport Profile for Report and Note exchange</a>
+          <a href="{{site.data.fhir.ver.uscore3}}/StructureDefinition-us-core-diagnosticreport-note.html">US Core DiagnosticReport Profile for Report and Note exchange</a>
         </td>
         <td>
           HRex<a href="#any"><sup>†</sup></a>, PCDE
@@ -545,10 +546,10 @@
           <a href="{{site.data.fhir.path}}documentreference.html">DocumentReference</a>
         </td>
         <td>
-          <b>USCORE</b>
+          <b>USCORE 3</b>
         </td>
         <td>
-          <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-documentreference.html">US Core DocumentReference Profile</a>
+          <a href="{{site.data.fhir.ver.uscore3}}/StructureDefinition-us-core-documentreference.html">US Core DocumentReference Profile</a>
         </td>
         <td>
           HRex<a href="#any"><sup>†</sup></a>, PCDE
@@ -560,10 +561,10 @@
           <a href="{{site.data.fhir.path}}encounter.html">Encounter</a>
         </td>
         <td>
-          <b>USCORE</b>
+          <b>USCORE 3</b>
         </td>
         <td>
-          <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-encounter.html">US Core Encounter Profile</a>
+          <a href="{{site.data.fhir.ver.uscore3}}/StructureDefinition-us-core-encounter.html">US Core Encounter Profile</a>
         </td>
         <td>
           HRex<a href="#any"><sup>†</sup></a>
@@ -626,10 +627,10 @@
           <a href="{{site.data.fhir.path}}goal.html">Goal</a>
         </td>        
         <td>
-          <b>USCORE</b>
+          <b>USCORE 3</b>
         </td>
         <td>
-          <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-goal.html">US Core Goal Profile</a>
+          <a href="{{site.data.fhir.ver.uscore3}}/StructureDefinition-us-core-goal.html">US Core Goal Profile</a>
         </td>
         <td>
           HRex<a href="#any"><sup>†</sup></a>
@@ -683,10 +684,10 @@
           <a href="{{site.data.fhir.path}}immunization.html">Immunization</a>
         </td>
         <td>
-          <b>USCORE</b>
+          <b>USCORE 3</b>
         </td>
         <td>
-          <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-immunization.html">US Core Immunization Profile</a>
+          <a href="{{site.data.fhir.ver.uscore3}}/StructureDefinition-us-core-immunization.html">US Core Immunization Profile</a>
         </td>
         <td>
           HRex<a href="#any"><sup>†</sup></a>
@@ -728,10 +729,10 @@
           <a href="{{site.data.fhir.path}}location.html">Location</a>
         </td>
         <td>
-          <b>USCORE</b>
+          <b>USCORE 3</b>
         </td>
         <td>
-          <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-location.html">US Core Location Profile</a>
+          <a href="{{site.data.fhir.ver.uscore3}}/StructureDefinition-us-core-location.html">US Core Location Profile</a>
         </td>
         <td>
           HRex<a href="#any"><sup>†</sup></a>, PDex, Alerts
@@ -812,10 +813,10 @@
           <a href="{{site.data.fhir.path}}medication.html">Medication</a>
         </td>
         <td>
-          <b>USCORE</b>
+          <b>USCORE 3</b>
         </td>
         <td>
-        <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-medication.html">US Core Medication Profile</a>
+        <a href="{{site.data.fhir.ver.uscore3}}/StructureDefinition-us-core-medication.html">US Core Medication Profile</a>
         </td>
         <td>
           HRex<a href="#any"><sup>†</sup></a>
@@ -872,10 +873,10 @@
           <a href="{{site.data.fhir.path}}medicationrequest.html">MedicationRequest</a>
         </td>
         <td>
-          <b>USCORE</b>
+          <b>USCORE 3</b>
         </td>
         <td>
-        <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-medicationrequest.html">US Core MedicationRequest Profile</a>
+        <a href="{{site.data.fhir.ver.uscore3}}/StructureDefinition-us-core-medicationrequest.html">US Core MedicationRequest Profile</a>
         </td>
         <td>
           HRex<a href="#any"><sup>†</sup></a>, PDex
@@ -968,10 +969,10 @@
           <a href="{{site.data.fhir.path}}observation.html">Observation</a>
         </td>
         <td rowspan="5">
-          <b>USCORE</b>
+          <b>USCORE 3</b>
         </td>
         <td>
-          <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-observation-lab.html">US Core Laboratory Result Observation Profile</a>
+          <a href="{{site.data.fhir.ver.uscore3}}/StructureDefinition-us-core-observation-lab.html">US Core Laboratory Result Observation Profile</a>
         </td>
         <td>
           HRex<a href="#any"><sup>†</sup></a>, CRD
@@ -980,7 +981,7 @@
       </tr>
       <tr>
         <td>
-          <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-pediatric-bmi-for-age.html">US Core Pediatric BMI for Age Observation Profile</a>
+          <a href="{{site.data.fhir.ver.uscore3}}/StructureDefinition-pediatric-bmi-for-age.html">US Core Pediatric BMI for Age Observation Profile</a>
         </td>
         <td>
           HRex<a href="#any"><sup>†</sup></a>
@@ -989,7 +990,7 @@
       </tr>
       <tr>
         <td>
-          <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-pediatric-weight-for-height.html">US Core Pediatric Weight for Height Observation Profile</a>
+          <a href="{{site.data.fhir.ver.uscore3}}/StructureDefinition-pediatric-weight-for-height.html">US Core Pediatric Weight for Height Observation Profile</a>
         </td>
         <td>
           HRex<a href="#any"><sup>†</sup></a>
@@ -998,7 +999,7 @@
       </tr>
       <tr>
         <td>
-          <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-pulse-oximetry.html">US Core Pulse Oximetry Profile</a>
+          <a href="{{site.data.fhir.ver.uscore3}}/StructureDefinition-us-core-pulse-oximetry.html">US Core Pulse Oximetry Profile</a>
         </td>
         <td>
           HRex<a href="#any"><sup>†</sup></a>
@@ -1007,7 +1008,7 @@
       </tr>
       <tr>
         <td>
-          <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-smokingstatus.html">US Core Smoking Status Observation Profile</a>
+          <a href="{{site.data.fhir.ver.uscore3}}/StructureDefinition-us-core-smokingstatus.html">US Core Smoking Status Observation Profile</a>
         </td>
         <td>
           HRex<a href="#any"><sup>†</sup></a>
@@ -1031,10 +1032,10 @@
       </tr>
       <tr>
         <td>
-          <b>USCORE</b>
+          <b>USCORE 3</b>
         </td>
         <td>
-        <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-organization.html">US Core Organization Profile</a>
+        <a href="{{site.data.fhir.ver.uscore3}}/StructureDefinition-us-core-organization.html">US Core Organization Profile</a>
         </td>
         <td>
           HRex, PAS, CRD, PDex, Alerts, PCDE
@@ -1139,10 +1140,10 @@
           <a href="{{site.data.fhir.path}}patient.html">Patient</a>
         </td>
         <td>
-          <b>USCORE</b>
+          <b>USCORE 3</b>
         </td>
         <td>
-        <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-patient.html">US Core Patient Profile</a>
+        <a href="{{site.data.fhir.ver.uscore3}}/StructureDefinition-us-core-patient.html">US Core Patient Profile</a>
         </td>
         <td>
           HRex, CRD, PDex, Alerts, PCDE
@@ -1232,10 +1233,10 @@
       </tr>
       <tr>
         <td>
-          <b>USCORE</b>
+          <b>USCORE 3</b>
         </td>
         <td>
-          <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-practitioner.html">US Core Practitioner Profile</a>
+          <a href="{{site.data.fhir.ver.uscore3}}/StructureDefinition-us-core-practitioner.html">US Core Practitioner Profile</a>
         </td>
         <td>
           HRex, CRD, PDex, Alerts, PCDE
@@ -1321,10 +1322,10 @@
       </tr>
       <tr>
         <td>
-          <b>USCORE</b>
+          <b>USCORE 3</b>
         </td>
         <td>
-        <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-practitionerrole.html">US Core PractitionerRole Profile</a>
+        <a href="{{site.data.fhir.ver.uscore3}}/StructureDefinition-us-core-practitionerrole.html">US Core PractitionerRole Profile</a>
         </td>
         <td>
           CRD, PDex, Alerts, PCDE
@@ -1360,10 +1361,10 @@
           <a href="{{site.data.fhir.path}}procedure.html">Procedure</a>
         </td>
         <td>
-          <b>USCORE</b>
+          <b>USCORE 3</b>
         </td>
         <td>
-          <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-procedure.html">US Core Procedure Profile</a>
+          <a href="{{site.data.fhir.ver.uscore3}}/StructureDefinition-us-core-procedure.html">US Core Procedure Profile</a>
         </td>
         <td>
           HRex<a href="#any"><sup>†</sup></a>
@@ -1387,10 +1388,10 @@
       </tr>
       <tr>
         <td>
-          <b>USCORE</b>
+          <b>USCORE 3</b>
         </td>
         <td>
-          <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-provenance.html">US Core Provenance Profile</a>
+          <a href="{{site.data.fhir.ver.uscore3}}/StructureDefinition-us-core-provenance.html">US Core Provenance Profile</a>
         </td>
         <td>
           HRex
@@ -1566,10 +1567,10 @@
           <a href="{{site.data.fhir.path}}datatypes.html#contactpoint">ContactPoint data type</a>
         </td>
         <td>
-          <b>USCORE</b>
+          <b>USCORE 3</b>
         </td>
         <td>
-          <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-direct.html">US Core Direct email Extension</a>
+          <a href="{{site.data.fhir.ver.uscore3}}/StructureDefinition-us-core-direct.html">US Core Direct email Extension</a>
         </td>
         <td>
           N/A
@@ -1581,19 +1582,10 @@
           <a href="{{site.data.fhir.path}}patient.html">Patient</a>
         </td>
         <td rowspan="3">
-          <b>USCORE</b>
+          <b>USCORE 3</b>
         </td>
         <td>
-          <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-birthsex.html">US Core Birth Sex Extension</a>
-        </td>
-        <td>
-          N/A
-        </td>
-        <td/>
-      </tr>
-      <tr>
-        <td>
-          <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-ethnicity.html">US Core Ethnicity Extension</a>
+          <a href="{{site.data.fhir.ver.uscore3}}/StructureDefinition-us-core-birthsex.html">US Core Birth Sex Extension</a>
         </td>
         <td>
           N/A
@@ -1602,7 +1594,16 @@
       </tr>
       <tr>
         <td>
-          <a href="{{site.data.fhir.ver.uscore}}/StructureDefinition-us-core-race.html">US Core Race Extension</a>
+          <a href="{{site.data.fhir.ver.uscore3}}/StructureDefinition-us-core-ethnicity.html">US Core Ethnicity Extension</a>
+        </td>
+        <td>
+          N/A
+        </td>
+        <td/>
+      </tr>
+      <tr>
+        <td>
+          <a href="{{site.data.fhir.ver.uscore3}}/StructureDefinition-us-core-race.html">US Core Race Extension</a>
         </td>
         <td>
           N/A
@@ -1648,10 +1649,10 @@
           <a href="{{site.data.fhir.path}}patient.html">Patient</a>
         </td>
         <td rowspan="2">
-          <b>USCORE</b>
+          <b>USCORE 3</b>
         </td>
         <td>
-          <a href="{{site.data.fhir.ver.uscore}}/SearchParameter-us-core-ethnicity.html">US Core Ethnicity</a>
+          <a href="{{site.data.fhir.ver.uscore3}}/SearchParameter-us-core-ethnicity.html">US Core Ethnicity</a>
         </td>
         <td>
           HRex
@@ -1660,7 +1661,7 @@
       </tr>
       <tr>
         <td>
-          <a href="{{site.data.fhir.ver.uscore}}/SearchParameter-us-core-race.html">US Core Race</a>
+          <a href="{{site.data.fhir.ver.uscore3}}/SearchParameter-us-core-race.html">US Core Race</a>
         </td>
         <td>
           HRex
@@ -1703,10 +1704,10 @@
           <a href="{{site.data.fhir.path}}DocumentReference">DocumentReference</a>
         </td>
         <td>
-          <b>USCORE</b>
+          <b>USCORE 3</b>
         </td>
         <td>
-          <a href="{{site.data.fhir.ver.uscore}}OperationDefinition-docref.html">US Core Fetch DocumentReferences</a>
+          <a href="{{site.data.fhir.ver.uscore3}}OperationDefinition-docref.html">US Core Fetch DocumentReferences</a>
         </td>
         <td>
           N/A

@@ -15,6 +15,18 @@ Error in constraint 'provenance-1' with expression '(($this.agent.who.resolve() 
 # The NUCC codes are all valid (according to tx.fhir.org), but the validator is colliding with UTG content as discussed here: 
 #   https://chat.fhir.org/#narrow/stream/179252-IG-creation/topic/http.3A.2F.2Fnucc.2Eorg.2Fprovider-taxonomy
 
+# This is an inter-version conversion issue
+The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version 1.0 is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)
+
+# This is a configuration issue with the terminology server
+Target Code System http://snomed.info/sct doesn't have all content (content = not-present), so the target codes cannot be checked
+
+# The patterns are only locking down the system, which is the discriminator for the slices, so this is fine.
+INFORMATION: StructureDefinition/hrex-organization: StructureDefinition.snapshot.element[10].pattern.ofType(Identifier): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
+INFORMATION: StructureDefinition/hrex-organization: StructureDefinition.snapshot.element[11].pattern.ofType(Identifier): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
+INFORMATION: StructureDefinition/hrex-organization: StructureDefinition.snapshot.element[12].pattern.ofType(Identifier): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
+INFORMATION: StructureDefinition/hrex-practitioner: StructureDefinition.snapshot.element[10].pattern.ofType(Identifier): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
+
 # These identifiers are 'extra' and aren't expected to match any slice
 INFORMATION: Organization/full: Organization.identifier[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-organization|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: Organization/full: Organization.identifier[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-organization|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)

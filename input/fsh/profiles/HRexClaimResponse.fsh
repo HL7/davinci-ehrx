@@ -14,10 +14,10 @@ Description: "This profile specifies constraints on ClaimResponse resource to re
 * type MS
 * use only code
 * use MS
-* patient only Reference(USCorePatientProfile)
+* patient only Reference(USCorePatientProfile|6.1.0)
 * patient MS
 * created MS
-* insurer only Reference(USCoreOrganizationProfile)
+* insurer only Reference(HRexOrganization)
 * insurer MS
 * outcome MS
 * preAuthRef 1..1 MS

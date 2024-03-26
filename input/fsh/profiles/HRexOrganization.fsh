@@ -1,8 +1,9 @@
 Profile: HRexOrganization
-Parent: USCoreOrganizationProfile
+Parent: USCoreOrganizationProfile|6.1.0
 Id: hrex-organization
 Title: "HRex Organization Profile"
 Description: "Additional Da Vinci constraints on organization - to represent either provider organizations or payers"
+* ^extension[$compliesWithProfile].valueCanonical = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization|3.1.1"
 * ^status = #active
 * . ^mustSupport = false
   * ^isModifier = false

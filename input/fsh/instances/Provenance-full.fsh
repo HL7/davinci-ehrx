@@ -14,6 +14,7 @@ Usage: #example
 * agent[+]
   * type = $provenance-participant-type#author
   * who = Reference(Practitioner/full)
+  * onBehalfOf = Reference(Organization/full)
 * signature[0]
   * type = urn:iso-astm:E1762-95:2013#1.2.840.10065.1.12.1.1
   * when = "2020-07-30T20:07:16.3831-06:00"
