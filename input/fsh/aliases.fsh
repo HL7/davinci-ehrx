@@ -28,5 +28,5 @@ Alias: $birthsex = http://hl7.org/fhir/us/core/ValueSet/birthsex
 Alias: $standard-status = http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
 Alias: $fmm = http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm
 Alias: $cs-expectation = http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation
-Alias: $additional-binding = http://hl7.org/fhir/5.0/StructureDefinition/extension-ElementDefinition.binding.additional
+Alias: $additional-binding = http://hl7.org/fhir/tools/StructureDefinition/additional-binding
 Alias: $compliesWithProfile = http://hl7.org/fhir/StructureDefinition/structuredefinition-compliesWithProfile

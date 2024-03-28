@@ -7,16 +7,20 @@ Description: "Constraints on the US Core PractitionerRole requiring the use of D
 * ^status = #active
 * code
   * ^comment = "...  A concept map for converting between the US Core 3.1.1 and 6.1.0 value sets can be found [here](ConceptMap-NUCC-CareTeamMemberFunction.html)"
-* obeys hrex-pr-1
-//  * extension[$additional-binding]
-//    * extension[purpose].value = #extensible
-//    * extension[valueSet].value = http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role|3.1.0
+  * insert AdditionalBinding(#extensible, "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role|3.1")
+//* obeys hrex-pr-1
+  * ^binding.extension.url = $additional-binding
+  * ^binding.extension.extension[0].url = "purpose"
+  * ^binding.extension.extension[=].valueCode = #extensible
+  * ^binding.extension.extension[+].url = "valueSet"
+  * ^binding.extension.extension[=].valueCanonical = "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role|3.1.0"
 * practitioner 1..
 * practitioner only Reference(HRexPractitioner)
 * organization 1..
 * organization only Reference(HRexOrganization)
 
-Invariant: hrex-pr-1
-Description: "If present, practitioner role should also be from US Core 3.1.1 value set"
-Severity: #warning
-Expression: "code.exists() implies code.memberOf('http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role|3.1.0')"
+//Invariant: hrex-pr-1
+//Description: "If present, practitioner role should also be from US Core 3.1.1 value set"
+//Severity: #warning
+//Expression: "code.exists() implies code.memberOf('http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role|3.1.0')"
+

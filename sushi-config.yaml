@@ -51,6 +51,12 @@ dependencies:
     id: uscore6
     reason: |
       Needed for systems supporting USCDI 3
+#  hl7.fhir.uv.tools:
+#    version: 0.2.0-snapshot
+#    uri: http://hl7.org/fhir/tools/ImplementationGuide/hl7.fhir.uv.tools
+#    id: tools
+#    reason: |
+#      Allows use of additional binding capabilities
   hl7.fhir.extensions.r5:
     version: 4.0.1
     id: r4ext

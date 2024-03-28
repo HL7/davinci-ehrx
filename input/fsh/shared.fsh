@@ -21,3 +21,13 @@ RuleSet: map(sourceCode, sourceDisplay, equivalence, targetCode, targetDisplay)
     * code = {targetCode}
     * display = "{targetDisplay}"
     * equivalence = {equivalence}
+
+RuleSet: nomap(sourceCode, sourceDisplay)
+* element[+]
+  * code = {sourceCode}
+  * display = "{sourceDisplay}"
+  * target.equivalence = #unmatched
+
+RuleSet: AdditionalBinding(purpose, canonical)
+* ^binding.extension[$additional-binding][+].extension[purpose].valueCode = {purpose}
+* ^binding.extension[$additional-binding][=].extension[valueSet].valueCanonical = {canonical}
