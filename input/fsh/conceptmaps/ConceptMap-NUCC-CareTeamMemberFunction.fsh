@@ -126,7 +126,8 @@ Usage: #definition
   * insert map(#225700000X, [[Massage Therapist]], #equivalent, #1172950003, [[Massage therapist (occupation)]])
   * insert nomap(#225800000X, [[Recreation Therapist]])
   * insert map(#225A00000X, [[Music Therapist]], #equivalent, #309412003, [[Music therapist (occupation)]])
-  * insert nomap(#225B00000X, [[Pulmonary Function Technologist]]) - google tells me there are differences
+  * insert nomap(#225B00000X, [[Pulmonary Function Technologist]])
+  // - google tells me there are differences
   * insert map(#225C00000X, [[Rehabilitation Counselor]], #equivalent, #309366007, [[Rehabilitation psychiatrist (occupation)]])
   * insert map(#225X00000X, [[Occupational Therapist]], #equivalent, #80546007, [[Occupational therapist (occupation)]])
   * insert nomap(#226000000X, [[Recreational Therapist Assistant]])
