@@ -321,7 +321,7 @@
           <b>USCORE 3</b>
         </td>
         <td>
-          <a href="{{site.data.fhir.ver.uscore3}}/StructureDefinition-us-core-condition-problems-health-concerns.html">US Core Condition Problems and Health Concerns Profile</a>
+          <a href="{{site.data.fhir.ver.uscore3}}/StructureDefinition-us-core-condition.html">US Core Condition Profile</a>
         </td>
         <td>
           HRex<a href="#any"><sup>†</sup></a>, CRD, PCDE

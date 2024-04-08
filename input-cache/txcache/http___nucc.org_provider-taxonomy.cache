@@ -638,7 +638,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -662,7 +661,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -686,7 +684,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -710,7 +707,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -734,7 +730,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -758,7 +753,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -782,7 +776,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -806,7 +799,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -830,7 +822,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -854,7 +845,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -878,7 +868,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -902,7 +891,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -926,7 +914,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -950,7 +937,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -974,7 +960,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -998,7 +983,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1022,7 +1006,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1046,7 +1029,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1070,7 +1052,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1094,7 +1075,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1118,7 +1098,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1142,7 +1121,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1166,7 +1144,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1190,7 +1167,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1214,7 +1190,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1238,7 +1213,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1262,7 +1236,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1286,7 +1259,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1310,7 +1282,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1334,7 +1305,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1358,7 +1328,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1382,7 +1351,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1406,7 +1374,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1430,7 +1397,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1454,7 +1420,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1478,7 +1443,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1502,7 +1466,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1526,7 +1489,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1550,7 +1512,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1574,7 +1535,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1598,7 +1558,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1622,7 +1581,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1646,7 +1604,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1670,7 +1627,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1694,7 +1650,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1718,7 +1673,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1742,7 +1696,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1766,7 +1719,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1790,7 +1742,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1814,7 +1765,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1838,7 +1788,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1862,7 +1811,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1886,7 +1834,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1910,7 +1857,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1934,7 +1880,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1958,7 +1903,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1982,7 +1926,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2006,7 +1949,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2030,7 +1972,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2054,7 +1995,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2078,7 +2018,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2102,7 +2041,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2126,7 +2064,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2150,7 +2087,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2174,7 +2110,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2198,7 +2133,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2222,7 +2156,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2246,7 +2179,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2270,7 +2202,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2294,7 +2225,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2318,7 +2248,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2342,7 +2271,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2366,7 +2294,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2390,7 +2317,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2414,7 +2340,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2438,7 +2363,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2462,7 +2386,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2486,7 +2409,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2510,7 +2432,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2534,7 +2455,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2558,7 +2478,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2582,7 +2501,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2606,7 +2524,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2630,7 +2547,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2654,7 +2570,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2678,7 +2593,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2702,7 +2616,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2726,7 +2639,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2750,7 +2662,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2774,7 +2685,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2798,7 +2708,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2822,7 +2731,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2846,7 +2754,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2870,7 +2777,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2894,7 +2800,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2918,7 +2823,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2942,7 +2846,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2966,7 +2869,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2990,7 +2892,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -3014,7 +2915,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -3038,7 +2938,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -3062,7 +2961,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -3086,7 +2984,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -3110,7 +3007,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -3134,7 +3030,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -3158,7 +3053,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -3182,7 +3076,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -3206,7 +3099,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -3230,7 +3122,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -3254,7 +3145,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -3278,7 +3168,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -3302,7 +3191,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -3326,7 +3214,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -3350,7 +3237,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -3374,7 +3260,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -3398,7 +3283,6 @@ v: {
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -3419,6 +3303,2861 @@ v: {
 v: {
   "display" : "Student in an Organized Health Care Education/Training Program",
   "code" : "390200000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "102X00000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Poetry Therapist",
+  "code" : "102X00000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "103K00000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Behavioral Analyst",
+  "code" : "103K00000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "106S00000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Behavior Technician",
+  "code" : "106S00000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "125K00000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Advanced Practice Dental Therapist",
+  "code" : "125K00000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "132700000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Dietary Manager",
+  "code" : "132700000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "136A00000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Registered Dietetic Technician",
+  "code" : "136A00000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "146D00000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Personal Emergency Response Attendant",
+  "code" : "146D00000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "171000000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Military Health Care Provider",
+  "code" : "171000000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "171W00000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Contractor",
+  "code" : "171W00000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "172A00000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Driver",
+  "code" : "172A00000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "172M00000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Mechanotherapist",
+  "code" : "172M00000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "172P00000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Naprapath",
+  "code" : "172P00000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "173C00000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Reflexologist",
+  "code" : "173C00000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "174200000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Meals Provider",
+  "code" : "174200000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "174M00000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Veterinarian",
+  "code" : "174M00000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "174V00000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Clinical Ethicist",
+  "code" : "174V00000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "175T00000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Peer Specialist",
+  "code" : "175T00000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "176P00000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Funeral Director",
+  "code" : "176P00000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "177F00000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Lodging Provider",
+  "code" : "177F00000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "193200000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Multi-Specialty Group",
+  "code" : "193200000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "193400000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Single Specialty Group",
+  "code" : "193400000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "202K00000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Phlebology Physician",
+  "code" : "202K00000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "204C00000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Sports Medicine (Neuromusculoskeletal Medicine) Physician",
+  "code" : "204C00000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "204D00000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Neuromusculoskeletal Medicine & OMM Physician",
+  "code" : "204D00000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "204E00000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Oral & Maxillofacial Surgery (D.M.D.)",
+  "code" : "204E00000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "204R00000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Electrodiagnostic Medicine Physician",
+  "code" : "204R00000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "222Q00000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Developmental Therapist",
+  "code" : "222Q00000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "224900000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Mastectomy Fitter",
+  "code" : "224900000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "225500000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Respiratory/Developmental/Rehabilitative Specialist/Technologist",
+  "code" : "225500000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "225800000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Recreation Therapist",
+  "code" : "225800000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "225B00000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Pulmonary Function Technologist",
+  "code" : "225B00000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "226000000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Recreational Therapist Assistant",
+  "code" : "226000000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "226300000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Kinesiotherapist",
+  "code" : "226300000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "229N00000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Anaplastologist",
+  "code" : "229N00000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "235500000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Speech/Language/Hearing Specialist/Technologist",
+  "code" : "235500000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "237700000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Hearing Instrument Specialist",
+  "code" : "237700000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "246Y00000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Health Information Specialist/Technologist",
+  "code" : "246Y00000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "246Z00000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Other Specialist/Technologist",
+  "code" : "246Z00000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "247000000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Health Information Technician",
+  "code" : "247000000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "251300000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Local Education Agency (LEA)",
+  "code" : "251300000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "251C00000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Developmentally Disabled Services Day Training Agency",
+  "code" : "251C00000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "251G00000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Community Based Hospice Care Agency",
+  "code" : "251G00000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "251J00000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Nursing Care Agency",
+  "code" : "251J00000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "251T00000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "PACE Provider Organization",
+  "code" : "251T00000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "251V00000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Voluntary or Charitable Agency",
+  "code" : "251V00000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "251X00000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Supports Brokerage Agency",
+  "code" : "251X00000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "252Y00000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Early Intervention Provider Agency",
+  "code" : "252Y00000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "253J00000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Foster Care Agency",
+  "code" : "253J00000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "261Q00000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Clinic/Center",
+  "code" : "261Q00000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "273100000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Epilepsy Hospital Unit",
+  "code" : "273100000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "273R00000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Psychiatric Hospital Unit",
+  "code" : "273R00000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "273Y00000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Rehabilitation Hospital Unit",
+  "code" : "273Y00000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "275N00000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Medicare Defined Swing Bed Hospital Unit",
+  "code" : "275N00000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "276400000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Substance Use Disorder Rehabilitation Hospital Unit",
+  "code" : "276400000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "281P00000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Chronic Disease Hospital",
+  "code" : "281P00000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "282E00000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Long Term Care Hospital",
+  "code" : "282E00000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "282J00000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Religious Nonmedical Health Care Institution",
+  "code" : "282J00000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "282N00000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "General Acute Care Hospital",
+  "code" : "282N00000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "283Q00000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Psychiatric Hospital",
+  "code" : "283Q00000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "283X00000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Rehabilitation Hospital",
+  "code" : "283X00000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "284300000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Special Hospital",
+  "code" : "284300000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "286500000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Military Hospital",
+  "code" : "286500000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "287300000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Deactivated - Christian Science Sanitorium",
+  "code" : "287300000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "291900000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Military Clinical Medical Laboratory",
+  "code" : "291900000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "291U00000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Clinical Medical Laboratory",
+  "code" : "291U00000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "292200000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Dental Laboratory",
+  "code" : "292200000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "293D00000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Physiological Laboratory",
+  "code" : "293D00000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "302F00000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Exclusive Provider Organization",
+  "code" : "302F00000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "302R00000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Health Maintenance Organization",
+  "code" : "302R00000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "305R00000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Preferred Provider Organization",
+  "code" : "305R00000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "305S00000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Point of Service",
+  "code" : "305S00000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "310400000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Assisted Living Facility",
+  "code" : "310400000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "310500000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Mental Illness Intermediate Care Facility",
+  "code" : "310500000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "311500000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Alzheimer Center (Dementia Center)",
+  "code" : "311500000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "311Z00000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Custodial Care Facility",
+  "code" : "311Z00000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "313M00000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Nursing Facility/Intermediate Care Facility",
+  "code" : "313M00000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "314000000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Skilled Nursing Facility",
+  "code" : "314000000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "315D00000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Inpatient Hospice",
+  "code" : "315D00000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "315P00000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Intellectual Disabilities Intermediate Care Facility",
+  "code" : "315P00000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "317400000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Deactivated - Christian Science Facility",
+  "code" : "317400000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "320600000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Intellectual and/or Developmental Disabilities Residential Treatment Facility",
+  "code" : "320600000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "320700000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Physical Disabilities Residential Treatment Facility",
+  "code" : "320700000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "320800000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Mental Illness Community Based Residential Treatment Facility",
+  "code" : "320800000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "320900000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Intellectual and/or Developmental Disabilities Community Based Residential Treatment Facility",
+  "code" : "320900000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "322D00000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Emotionally Disturbed Childrens' Residential Treatment Facility",
+  "code" : "322D00000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "323P00000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Psychiatric Residential Treatment Facility",
+  "code" : "323P00000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "324500000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Substance Abuse Rehabilitation Facility",
+  "code" : "324500000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "331L00000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Blood Bank",
+  "code" : "331L00000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "332000000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Military/U.S. Coast Guard Pharmacy",
+  "code" : "332000000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "332100000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Department of Veterans Affairs (VA) Pharmacy",
+  "code" : "332100000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "332800000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Indian Health Service/Tribal/Urban Indian Health (I/T/U) Pharmacy",
+  "code" : "332800000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "332900000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Non-Pharmacy Dispensing Site",
+  "code" : "332900000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "332B00000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Durable Medical Equipment & Medical Supplies",
+  "code" : "332B00000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "332G00000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Eye Bank",
+  "code" : "332G00000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "332H00000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Eyewear Supplier",
+  "code" : "332H00000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "332U00000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Home Delivered Meals",
+  "code" : "332U00000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "333300000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Emergency Response System Companies",
+  "code" : "333300000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "333600000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Pharmacy",
+  "code" : "333600000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "335G00000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Medical Foods Supplier",
+  "code" : "335G00000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "335U00000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Organ Procurement Organization",
+  "code" : "335U00000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "335V00000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Portable X-ray and/or Other Portable Diagnostic Imaging Supplier",
+  "code" : "335V00000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "341600000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Ambulance",
+  "code" : "341600000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "341800000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Military/U.S. Coast Guard Transport,",
+  "code" : "341800000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "343800000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Secured Medical Transport (VAN)",
+  "code" : "343800000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "343900000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Non-emergency Medical Transport (VAN)",
+  "code" : "343900000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "344600000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Taxi",
+  "code" : "344600000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "344800000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Air Carrier",
+  "code" : "344800000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "347B00000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Bus",
+  "code" : "347B00000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "347C00000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Private Vehicle",
+  "code" : "347C00000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "347D00000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Train",
+  "code" : "347D00000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "347E00000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Transportation Broker",
+  "code" : "347E00000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "372500000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Chore Provider",
+  "code" : "372500000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "372600000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Adult Companion",
+  "code" : "372600000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "373H00000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Day Training/Habilitation Specialist",
+  "code" : "373H00000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "374700000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Technician",
+  "code" : "374700000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "376G00000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Nursing Home Administrator",
+  "code" : "376G00000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "376J00000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Homemaker",
+  "code" : "376J00000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "385H00000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Respite Care",
+  "code" : "385H00000X",
+  "system" : "http://nucc.org/provider-taxonomy",
+  "version" : "22.1",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://nucc.org/provider-taxonomy",
+  "code" : "405300000X"
+}, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role", "version": "3.1.1", "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "Prevention Professional",
+  "code" : "405300000X",
   "system" : "http://nucc.org/provider-taxonomy",
   "version" : "22.1",
   "server" : "http://tx.fhir.org/r4",

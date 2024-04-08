@@ -22,6 +22,16 @@ RuleSet: map(sourceCode, sourceDisplay, equivalence, targetCode, targetDisplay)
     * display = "{targetDisplay}"
     * equivalence = {equivalence}
 
+RuleSet: mapeq(sourceCode, sourceDisplay, targetCode, targetDisplay)
+* insert map({sourceCode}, [[{sourceDisplay}]], #equivalent, {targetCode}, [[{targetDisplay}]])
+
+RuleSet: mapnarrow(sourceCode, sourceDisplay, targetCode, targetDisplay, comment)
+* insert map({sourceCode}, [[{sourceDisplay}]], #narrower, {targetCode}, [[{targetDisplay}]])
+* element[=].target.comment = "{comment}"
+
+RuleSet: mapwide(sourceCode, sourceDisplay, targetCode, targetDisplay)
+* insert map({sourceCode}, [[{sourceDisplay}]], #wider, {targetCode}, [[{targetDisplay}]])
+
 RuleSet: nomap(sourceCode, sourceDisplay)
 * element[+]
   * code = {sourceCode}

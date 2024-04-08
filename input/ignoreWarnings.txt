@@ -9,6 +9,9 @@ ERROR: StructureDefinition/hrex-consent: StructureDefinition.snapshot.element[9]
 # This invalid constraint is inherited from US Core
 Error in constraint 'provenance-1' with expression '(($this.agent.who.resolve() is Practitioner) or ($this.agent.who.resolve() is Device)) implies exists()': Error evaluating FHIRPath expression: The name 'agent' is not valid for any of the possible types: [http://hl7.org/fhir/StructureDefinition/Reference] (@char 9)
 
+# Nothing that can be done about this
+Target Code System http://snomed.info/sct is only supported on the terminology server, so the target codes are not validated for performance reasons
+
 # This will be done in a future release
 %Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now%
 
