@@ -1,5 +1,35 @@
 == Suppressed Messages ==
 
+# This appears to be a narrative generation error
+ERROR: D:\Git\_IGs\davinci-ehrx\output\Parameters-member-match-in-provider.html#/html/body/div/div/div/div/div/div/table/tr/td/p/a at Line 269, column 1052: The link '#hcPatient_1' for "See on this page: Patient/1" cannot be resolved (valid targets: [Coverage_9876B1, project-nav, publish-box, policies, segment-post-footer, hl7-search, hl7-search-lnk, family-logo, top, example-parameters-member-match-provider-example-request, root, hc1, stripe, segment-footer, segment-content, 9876B1, hc9876B1, Patient_1, project-logo, segment-header, bottom, hl7-logo, family-nav, ig-status, 1, Consent_null, hl7-nav, segment-navbar, segment-breadcrumb, parameters])
+ERROR: D:\Git\_IGs\davinci-ehrx\output\Parameters-member-match-in.html#/html/body/div/div/div/div/div/div/table/tr/td/p/a at Line 279, column 1052: The link '#hcPatient_1' for "See on this page: Patient/1" cannot be resolved (valid targets: [Coverage_9876B1, project-nav, publish-box, policies, segment-post-footer, hl7-search, hl7-search-lnk, hcAA87654, family-logo, top, example-parameters-member-match-payer-example-request, root, hc1, stripe, segment-footer, AA87654, segment-content, 9876B1, hc9876B1, Patient_1, project-logo, segment-header, bottom, hl7-logo, family-nav, ig-status, 1, Consent_null, Coverage_AA87654, hl7-nav, segment-navbar, segment-breadcrumb, parameters])
+
+# These errors should go away once the publisher properly supports implementationguide-resource-uri
+ERROR: D:\Git\_IGs\davinci-ehrx\output\Parameters-member-match-in-provider.html#/html/body/div/div/div/div/div/div/table/tr/td/table/tr/td/a at Line 269, column 3823: The link 'http://hl7.org/fhir/us/davinci-hrex/StructureDefinition-hrex-consent.html#regular' for "http://hl7.org/fhir/us/davinci-hrex/StructureDefinition-hrex-consent.html#regular" cannot be resolved
+ERROR: D:\Git\_IGs\davinci-ehrx\output\Parameters-member-match-in.html#/html/body/div/div/div/div/div/div/table/tr/td/table/tr/td/a at Line 279, column 4195: The link 'http://hl7.org/fhir/us/davinci-hrex/StructureDefinition-hrex-consent.html#regular' for "http://hl7.org/fhir/us/davinci-hrex/StructureDefinition-hrex-consent.html#regular" cannot be resolved
+ERROR: ImplementationGuide/hl7.fhir.us.davinci-hrex: ImplementationGuide.extension[3].extension[0].value.ofType(url): URL value 'http://hl7.org/fhir/us/davinci-hrex/StructureDefinition-hrex-consent.html#regular' does not resolve
+ERROR: ImplementationGuide/hl7.fhir.us.davinci-hrex: ImplementationGuide.extension[4].extension[0].value.ofType(url): URL value 'http://hl7.org/fhir/us/davinci-hrex/StructureDefinition-hrex-consent.html#sensitive' does not resolve
+ERROR: Parameters/member-match-in: Parameters.parameter[2].resource/*Consent/null*/.policy[0].uri: URL value 'http://hl7.org/fhir/us/davinci-hrex/StructureDefinition-hrex-consent.html#regular' does not resolve
+ERROR: Parameters/member-match-in-provider: Parameters.parameter[2].resource/*Consent/null*/.policy[0].uri: URL value 'http://hl7.org/fhir/us/davinci-hrex/StructureDefinition-hrex-consent.html#regular' does not resolve
+
+# These require a new release of the 'tools' IG
+ERROR: ImplementationGuide/hl7.fhir.us.davinci-hrex: ImplementationGuide.extension[3].url: URL value 'http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-uri' does not resolve
+ERROR: ImplementationGuide/hl7.fhir.us.davinci-hrex: ImplementationGuide.extension[4].url: URL value 'http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-uri' does not resolve
+ERROR: ImplementationGuide/hl7.fhir.us.davinci-hrex: ImplementationGuide.definition.extension[6].extension[0].value.ofType(string): The value provided ('auto-oid-root') was not found in the value set 'ig-parameters Codes ValueSet' (http://hl7.org/fhir/tools/ValueSet/ig-parameters|0.1.0), and a code is required from this value set  (error message = The System URI could not be determined for the code 'auto-oid-root' in the ValueSet 'http://hl7.org/fhir/tools/ValueSet/ig-parameters|0.1.0'; The provided code '#auto-oid-root' was not found in the value set 'http://hl7.org/fhir/tools/ValueSet/ig-parameters|0.1.0')
+ERROR: ImplementationGuide/hl7.fhir.us.davinci-hrex: ImplementationGuide.definition.extension[35].extension[0].value.ofType(code): The value provided ('auto-oid-root') was not found in the value set 'ig-parameters Codes ValueSet' (http://hl7.org/fhir/tools/ValueSet/ig-parameters|0.1.0), and a code is required from this value set  (error message = The System URI could not be determined for the code 'auto-oid-root' in the ValueSet 'http://hl7.org/fhir/tools/ValueSet/ig-parameters|0.1.0'; The provided code '#auto-oid-root' was not found in the value set 'http://hl7.org/fhir/tools/ValueSet/ig-parameters|0.1.0')
+
+# These do resolve.  Not sure why they're erroring.
+ERROR: Parameters/member-match-in: Parameters.parameter[2].resource/*Consent/null*/.patient: Unable to resolve resource with reference 'http://hl7.org/fhir/us/core/STU6.1/Patient/example'
+ERROR: Parameters/member-match-in: Parameters.parameter[2].resource/*Consent/null*/.performer[0]: Unable to resolve resource with reference 'http://hl7.org/fhir/us/core/STU6.1/Patient/example'
+ERROR: Parameters/member-match-in: Parameters.parameter[3].resource/*Coverage/AA87654*/.beneficiary: Unable to resolve resource with reference 'https://hl7.org/fhir/us/core/STU6.1/Patient/example'
+ERROR: Parameters/member-match-in-provider: Parameters.parameter[2].resource/*Consent/null*/.patient: Unable to resolve resource with reference 'http://hl7.org/fhir/us/core/STU6.1/Patient/example'
+ERROR: Parameters/member-match-in-provider: Parameters.parameter[2].resource/*Consent/null*/.performer[0]: Unable to resolve resource with reference 'http://hl7.org/fhir/us/core/STU6.1/Patient/example'
+
+# What's the proper syntax for the version-specific URL for these guides?
+ERROR: ImplementationGuide/hl7.fhir.us.davinci-hrex: ImplementationGuide.dependsOn[1].uri: Canonical URL 'http://hl7.org/fhir/us/core/STU3.1.1/ImplementationGuide/hl7.fhir.us.core' does not resolve
+ERROR: ImplementationGuide/hl7.fhir.us.davinci-hrex: ImplementationGuide.dependsOn[2].uri: Canonical URL 'http://hl7.org/fhir/us/core/STU6.1/ImplementationGuide/hl7.fhir.us.core' does not resolve
+
+
 # This URL *does* exist, so not sure why this error is happening
 URL value 'http://hl7.org/fhir/us/davinci-hrex/StructureDefinition-hrex-consent.html#regular' does not resolve
 

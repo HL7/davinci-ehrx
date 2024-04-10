@@ -13,8 +13,8 @@ Description: "The HRex Coverage Profile defines the constraints for representing
   * ^slicing.discriminator.type = #value
   * ^slicing.discriminator.path = "type"
   * ^slicing.rules = #open
-* identifier contains memberId 0..1 MS
-* identifier[memberId]
+* identifier contains memberid 0..1 MS
+* identifier[memberid]
   * ^short = "Member ID"
   * ^condition = us-core-15
   * type = $v2-0203#MB

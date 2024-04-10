@@ -36,6 +36,22 @@ extension:
     valueInteger: "2"
   - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-wg
     valueCode: cic
+  - url: http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-uri
+    extension:
+      - url: uri
+        valueUrl: http://hl7.org/fhir/us/davinci-hrex/StructureDefinition-hrex-consent.html#regular
+      - url: target
+        valueUrl: StructureDefinition-hrex-consent.html#regular
+      - url: use
+        valueString: "Defines a standard URI for a consent policy"
+  - url: http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-uri
+    extension:
+      - url: uri
+        valueUrl: http://hl7.org/fhir/us/davinci-hrex/StructureDefinition-hrex-consent.html#sensitive
+      - url: target
+        valueUrl: StructureDefinition-hrex-consent.html#sensitive
+      - url: use
+        valueString: "Defines a standard URI for a consent policy"
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
