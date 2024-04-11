@@ -58,13 +58,13 @@ extension:
 dependencies:
   hl7.fhir.us.core.3.1.1:
     version: 3.1.1
-    uri: http://hl7.org/fhir/us/core/STU3.1.1/ImplementationGuide/hl7.fhir.us.core
+    uri: http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core
     id: uscore3
     reason: |
       Needed for systems supporting USCDI 1
   hl7.fhir.us.core:
     version: 6.1.0
-    uri: http://hl7.org/fhir/us/core/STU6.1/ImplementationGuide/hl7.fhir.us.core
+    uri: http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core
     id: uscore6
     reason: |
       Needed for systems supporting USCDI 3
