@@ -8,7 +8,7 @@ Description: "Constraints on the US Core Practitioner profiles requiring support
 * identifier
   * system MS
   * value MS
-* identifier ^comment = "It is preferred to use an NPI and if an NPI is available, it SHALL be provided.  However CCN (or even other identifier schemes) can be used if an NPI is not available"
+* identifier ^comment = "It is preferred to use an NPI and if an NPI is available, it SHALL be provided.  However other identifier schemes can be used if an NPI is not available"
 * qualification MS
   * ^requirements = "This element is mustSupport because qualifications can have ramifications for approving payments and billing"
   * code 1.. MS
