@@ -37,6 +37,7 @@ The main menu in this IG is categorized into several primary topics with several
   * [Profile Overview](profiles.html) gives an overview of the profiles defined in this IG and, where relevant, guidance on the use of US Core profiles
   * [Search Parameter Overview](profiles.html) gives an overview of the search parameters defined in this IG and a discussion of how those, along with US Core search parameters should be used
   * [Member Match](OperationDefinition-member-match.html) describes the process to resolve a member as known by a different payer
+  * [IG Practices](goodpractice.html) describes best practices for Da Vinci IGs to adhere to.  While primarily of interest to IG authors, reviewers may find reading this page helpful when reviewing IGs or understanding the design choices made.
 * **Artifacts** includes links to artifacts (profiles, operations, etc.) defined both in this specification as well as in the imported US Core implementation guide.  This index also includes a list of all of the examples - there are at least two examples for every profile, sometimes more to demonstrate the range of possible content supported.  (Examples relevant to a given profile are also linked to from the profile page.)
 * **Support** includes links to the FHIR core specification and the US Core spec, as well as download links for this IG and guidance on tools and support for Da Vinci implementers.
 

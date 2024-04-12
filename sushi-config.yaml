@@ -128,6 +128,8 @@ pages:
     title: Task-based queries
   smart-app-reg.md:
     title: Dynamic Registration for SMART Apps
+  goodpractice.md:
+    title: IG Practices
   profiles.html:
     title: Profile overview
   searchparameters.md:
