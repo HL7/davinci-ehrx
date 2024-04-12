@@ -35,14 +35,15 @@
   <a name="exchange"> </a>
 	<h3>Exchange Security</h3>
 	<ol>
-		<li>When exchanging Protected Health Information (PHI) between entities, the exchange <b>SHOULD</b>  use the current version and <b>SHALL</b> use either current or the immediately prior release of <a href="https://tools.ietf.org/html/rfc8446">Transport Level Security (TLS)</a> as specified by the current release of <a href="https://csrc.nist.gov/publications/detail/sp/800-52/rev-2/final">National Institute of Standards and Technology (NIST) guidelines (SP 800-52)</a>.</li>
+		<li>When exchanging Protected Health Information (PHI) between entities, the exchange <b>SHOULD</b>  use the current version and <b>SHALL</b> use either current or the immediately prior release of <a href="https://tools.ietf.org/html/rfc8446">Transport Level Security (TLS)</a> as specified by the current release of <a href="https://csrc.nist.gov/publications/detail/sp/800-52/rev-2/final">National Institute of Standards and Technology (NIST) guidelines (SP 800-52)</a>.  TLS is to be implemented as per <a href="https://datatracker.ietf.org/doc/html/rfc8705">RFC8705</a>.</li>
 		<li>When the identity of the requesting or receiving party is important, implementations <b>SHOULD</b> use one or more of the following as defined in the specific Da Vinci IG:
 		<ol style="list-style-type: lower-alpha;">
-			<li>the <a href="http://docs.smarthealthit.org">SMART on FHIR Framework</a> ,</li>
-			<li>mutually authenticated TLS ,</li>
-			<li>the ONC FHIR At Scale Taskforce (FAST) security tiger team recommended solutions, once approved by an accredited standards development organization, or </li>
+			<li>the <a href="http://docs.smarthealthit.org">SMART on FHIR Framework</a>,</li>
+			<li>mutually authenticated TLS,</li>
+			<li>the <a href="https://hl7.org/fhir/us/udap-security">FAST HL7 UDAP Security for Scalable Registration, Authentication, and Authorization IG</a>, or </li>
 			<li>the OAuth Server to Server Authentication as defined in the <a href="https://build.fhir.org/ig/HL7/us-bulk-data">Bulk Data exchange IG</a>.</li>
 		</ol></li>
+		<li>When using OAuth (either through SMART or UDAP), OAuth tokens issued <b>SHALL</b> be tied to the client system's certificate.</li>
 	</ol>
 
   <p>
