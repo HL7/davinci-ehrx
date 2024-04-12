@@ -5,7 +5,7 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: davinci-hrex
 canonical: http://hl7.org/fhir/us/davinci-hrex
-version: 1.0.0
+version: 1.1.0-preview
 name: DaVinciHealthRecordExchangeHRex
 title: Da Vinci Health Record Exchange (HRex)
 status: active
