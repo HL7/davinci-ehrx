@@ -2,6 +2,8 @@ To access information about a member on a payer's system, the requesting system 
 
 In addition, the $member-match operation allows establishing consent from the patient (or other responsible party) that enables information to flow between the initiating system and the responding system.
 
+This operation might be used by EHRs, other payers, or any other type of system that needs to interact with a payer and who needs to resolve the identity of the member in question on the target payer's system.
+
 The operation works by passing in up to four parameters:
 
 * The requesting system's demographic information on the member (as a Patient resource)
