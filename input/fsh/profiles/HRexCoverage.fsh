@@ -30,7 +30,6 @@ Description: "The HRex Coverage Profile defines the constraints for representing
 * policyHolder only Reference(USCorePatientProfile|6.1.0 or HRexOrganization or RelatedPerson)
   * ^comment = "When the Coverage pertains to organizations such as Children and Family Services, `policyHolder` should reference Organization (or another suitable entity) representing them. It acts as the holder of the policy and is responsible for the management and oversight of the coverage."
 // Added policyholder
-* subscriber only Reference(USCorePatientProfile|6.1.0)
 * subscriberId MS
   * ^short = "Subscriber ID"
   * ^comment = "The identifier assigned by the Payer on the subscriber's ID card"
