@@ -27,7 +27,7 @@ Description: "The HRex Consent Profile defines the constraints for representingÂ
 * policy ^slicing.discriminator.type = #value
   * ^slicing.discriminator.path = "uri"
   * ^slicing.rules = #open
-* policy contains hrex 1..* MS
+* policy contains hrex 1..1 MS
 * policy[hrex].uri 1.. MS
 * policy[hrex].uri from HRexConsentPolicy (required)
 * provision 1.. MS
