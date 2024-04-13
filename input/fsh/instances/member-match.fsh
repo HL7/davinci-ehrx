@@ -25,7 +25,7 @@ Usage: #definition
     * source = "CoverageToLink"
     * sourceId = "beneficiary"
 * parameter[+]
-  * insert parameter(#Consent, #in, 1, "1", #Resource, "Consent held by the system seeking the match that grants permission to access the patient information information on the system for whom a patient is sought.")
+  * insert parameter(#Consent, #in, 0, "1", #Resource, "Consent held by the system seeking the match that grants permission to access the patient information information on the system for whom a patient is sought.  Downstream IGs may tighten this to 'required' if necessary.")
 * parameter[+]
   * insert parameter(#CoverageToMatch, #in, 1, "1", #Resource, "Parameter that identifies the coverage to be matched by the receiving payer.  It contains the coverage details of health plan coverage provided by the member\, typically from their health plan coverage card.")
 * parameter[+]
