@@ -7,3 +7,4 @@ Usage: #example
   * system = "http://example.org/target-payer/identifiers/member"
   * value = "55678"
   * assigner.display = "Old Payer"
+* parameter[MemberId].valueReference = Reference(http://example.org/new-payer/fhir/Patient/pat1)

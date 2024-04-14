@@ -25,6 +25,7 @@
 <artifact id="ValueSet/hrex-coverage-relationship" key="ValueSet-hrex-coverage-relationship" name="HRex Coverage Relationship ValueSet"/>
 <artifact id="Coverage/full" key="Coverage-full" name="HRex Coverage full example"/>
 <artifact id="Coverage/min" key="Coverage-min" name="HRex Coverage minimal example"/>
+<artifact id="StructureDefinition/hrex-reference-id" key="StructureDefinition-hrex-reference-id" name="HRex Identifier Reference Profile"/>
 <artifact id="OperationDefinition/member-match" key="OperationDefinition-member-match" name="HRex Member Match Operation"/>
 <artifact id="StructureDefinition/hrex-organization" key="StructureDefinition-hrex-organization" name="HRex Organization Profile"/>
 <artifact id="Organization/full" key="Organization-full" name="HRex Organization full example"/>
@@ -42,7 +43,7 @@
 <artifact id="StructureDefinition/hrex-provenance" key="StructureDefinition-hrex-provenance" name="HRex Provenance Profile"/>
 <artifact id="Provenance/full" key="Provenance-full" name="HRex Provenance full example"/>
 <artifact id="Provenance/min" key="Provenance-min" name="HRex Provenance min example"/>
-<artifact id="StructureDefinition/hrex-reference" key="StructureDefinition-hrex-reference" name="HRex Reference Profile"/>
+<artifact id="StructureDefinition/hrex-reference-rest" key="StructureDefinition-hrex-reference-rest" name="HRex REST Reference Profile"/>
 <artifact id="Task/document-complete" key="Task-document-complete" name="HRex Task Data Request - completed document example"/>
 <artifact id="Task/query-complete" key="Task-query-complete" name="HRex Task Data Request - completed query example"/>
 <artifact id="Task/query-initial" key="Task-query-initial" name="HRex Task Data Request - initial query example"/>
@@ -76,6 +77,7 @@
 <page deprecated="true" key="exchanging-polling" name="Exchanging with polling"/>
 <page key="fhir" name="FHIR Introduction"/>
 <page key="index" name="Home"/>
+<page key="goodpractice" name="IG Practices"/>
 <page key="profiles" name="Profile overview"/>
 <page key="searchparameters" name="Search Parameters overview"/>
 <page key="security" name="Security and Privacy"/>

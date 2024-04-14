@@ -19,16 +19,15 @@ ERROR: ImplementationGuide/hl7.fhir.us.davinci-hrex: ImplementationGuide.definit
 ERROR: ImplementationGuide/hl7.fhir.us.davinci-hrex: ImplementationGuide.definition.extension[35].extension[0].value.ofType(code): The value provided ('auto-oid-root') was not found in the value set 'ig-parameters Codes ValueSet' (http://hl7.org/fhir/tools/ValueSet/ig-parameters|0.1.0), and a code is required from this value set  (error message = The System URI could not be determined for the code 'auto-oid-root' in the ValueSet 'http://hl7.org/fhir/tools/ValueSet/ig-parameters|0.1.0'; The provided code '#auto-oid-root' was not found in the value set 'http://hl7.org/fhir/tools/ValueSet/ig-parameters|0.1.0')
 
 # These do resolve.  Not sure why they're erroring.
-ERROR: Parameters/member-match-in: Parameters.parameter[2].resource/*Consent/null*/.patient: Unable to resolve resource with reference 'http://hl7.org/fhir/us/core/STU6.1/Patient/example'
-ERROR: Parameters/member-match-in: Parameters.parameter[2].resource/*Consent/null*/.performer[0]: Unable to resolve resource with reference 'http://hl7.org/fhir/us/core/STU6.1/Patient/example'
-ERROR: Parameters/member-match-in: Parameters.parameter[3].resource/*Coverage/AA87654*/.beneficiary: Unable to resolve resource with reference 'https://hl7.org/fhir/us/core/STU6.1/Patient/example'
+ERROR: Parameters/member-match-in: Parameters.parameter[2].resource/*Coverage/AA87654*/.beneficiary: Unable to resolve resource with reference 'https://hl7.org/fhir/us/core/STU6.1/Patient/example'
+ERROR: Parameters/member-match-in: Parameters.parameter[3].resource/*Consent/null*/.patient: Unable to resolve resource with reference 'http://hl7.org/fhir/us/core/STU6.1/Patient/example'
+ERROR: Parameters/member-match-in: Parameters.parameter[3].resource/*Consent/null*/.performer[0]: Unable to resolve resource with reference 'http://hl7.org/fhir/us/core/STU6.1/Patient/example'
 ERROR: Parameters/member-match-in-provider: Parameters.parameter[2].resource/*Consent/null*/.patient: Unable to resolve resource with reference 'http://hl7.org/fhir/us/core/STU6.1/Patient/example'
 ERROR: Parameters/member-match-in-provider: Parameters.parameter[2].resource/*Consent/null*/.performer[0]: Unable to resolve resource with reference 'http://hl7.org/fhir/us/core/STU6.1/Patient/example'
 
-# What's the proper syntax for the version-specific URL for these guides?
-ERROR: ImplementationGuide/hl7.fhir.us.davinci-hrex: ImplementationGuide.dependsOn[1].uri: Canonical URL 'http://hl7.org/fhir/us/core/STU3.1.1/ImplementationGuide/hl7.fhir.us.core' does not resolve
-ERROR: ImplementationGuide/hl7.fhir.us.davinci-hrex: ImplementationGuide.dependsOn[2].uri: Canonical URL 'http://hl7.org/fhir/us/core/STU6.1/ImplementationGuide/hl7.fhir.us.core' does not resolve
 
+# There is no location in the IG where it makes sense to use this profile.  It's created for downstream IGs.  The definition is sufficiently simple that there's no possibility of errors in the construction.
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-reference-id'): The Implementation Guide contains no examples for this data type profile
 
 # This URL *does* exist, so not sure why this error is happening
 URL value 'http://hl7.org/fhir/us/davinci-hrex/StructureDefinition-hrex-consent.html#regular' does not resolve
@@ -51,9 +50,6 @@ Target Code System http://snomed.info/sct is only supported on the terminology s
 # This is an inter-version conversion issue
 The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version 1.0 is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)
 
-# This is a configuration issue with the terminology server
-Target Code System http://snomed.info/sct doesn't have all content (content = not-present), so the target codes cannot be checked
-
 # The patterns are only locking down the system, which is the discriminator for the slices, so this is fine.
 INFORMATION: StructureDefinition/hrex-organization: StructureDefinition.snapshot.element[10].pattern.ofType(Identifier): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 INFORMATION: StructureDefinition/hrex-organization: StructureDefinition.snapshot.element[11].pattern.ofType(Identifier): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
@@ -68,12 +64,8 @@ INFORMATION: Practitioner/full: Practitioner.identifier[2]: This element does no
 INFORMATION: Practitioner/min: Practitioner.identifier[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-practitioner|1.1.0-preview (this may not be a problem, but you should check that it's not intended to match a slice)
 
 # These additional coverage classes are not (currently) part of the profile and are not expected to match slices
-INFORMATION: Parameters/member-match-in: Parameters.parameter[1].resource/*Coverage/9876B1*/.class[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-coverage|1.1.0-preview (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: Parameters/member-match-in: Parameters.parameter[1].resource/*Coverage/9876B1*/.class[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-coverage|1.1.0-preview (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: Parameters/member-match-in: Parameters.parameter[1].resource/*Coverage/9876B1*/.class[3]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-coverage|1.1.0-preview (this may not be a problem, but you should check that it's not intended to match a slice)
-INFORMATION: Parameters/member-match-in-provider: Parameters.parameter[1].resource/*Coverage/9876B1*/.class[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-coverage|1.1.0-preview (this may not be a problem, but you should check that it's not intended to match a slice)
-INFORMATION: Parameters/member-match-in-provider: Parameters.parameter[1].resource/*Coverage/9876B1*/.class[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-coverage|1.1.0-preview (this may not be a problem, but you should check that it's not intended to match a slice)
-INFORMATION: Parameters/member-match-in-provider: Parameters.parameter[1].resource/*Coverage/9876B1*/.class[3]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-coverage|1.1.0-preview (this may not be a problem, but you should check that it's not intended to match a slice)
 
 # These code systems should not be draft in THO.  The terminology work group is trying to fix these
 Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/consentaction|0.1.0
@@ -86,21 +78,10 @@ Reference to draft CodeSystem http://hl7.org/fhir/task-status|4.0.1
 WARNING: Parameters/member-match-in: Parameters.parameter[0].resource/*Patient/1*/: Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
 WARNING: Parameters/member-match-in: Parameters.parameter[1].resource/*Coverage/9876B1*/: Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
 WARNING: Parameters/member-match-in: Parameters.parameter[2].resource/*Coverage/AA87654*/: Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
-WARNING: Parameters/member-match-in: Parameters.parameter[2].resource/*Consent/null*/: Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
 WARNING: Parameters/member-match-in: Parameters.parameter[3].resource/*Consent/null*/: Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
-WARNING: Parameters/member-match-in: Parameters.parameter[3].resource/*Coverage/AA87654*/: Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
 WARNING: Parameters/member-match-in-provider: Parameters.parameter[0].resource/*Patient/1*/: Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
 WARNING: Parameters/member-match-in-provider: Parameters.parameter[1].resource/*Coverage/9876B1*/: Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
 WARNING: Parameters/member-match-in-provider: Parameters.parameter[2].resource/*Consent/null*/: Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
-
-
-# These coverage classes aren't part of the profile
-INFORMATION: Parameters/member-match-in-provider: Parameters.parameter[1].resource.ofType(Coverage).class[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-coverage
-INFORMATION: Parameters/member-match-in-provider: Parameters.parameter[1].resource.ofType(Coverage).class[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-coverage
-INFORMATION: Parameters/member-match-in-provider: Parameters.parameter[1].resource.ofType(Coverage).class[3]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-coverage
-INFORMATION: Parameters/member-match-in: Parameters.parameter[1].resource.ofType(Coverage).class[1]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-coverage
-INFORMATION: Parameters/member-match-in: Parameters.parameter[1].resource.ofType(Coverage).class[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-coverage
-INFORMATION: Parameters/member-match-in: Parameters.parameter[1].resource.ofType(Coverage).class[3]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-coverage
 
 # These are tested by the parameters input examples
 INFORMATION: StructureDefinition.where(url = 'http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-consent'): The Implementation Guide contains no explicitly linked examples for this profile
