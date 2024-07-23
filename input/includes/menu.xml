@@ -53,6 +53,9 @@
       <li>
         <a href="OperationDefinition-member-match.html">Member resolution</a>
       </li>
+      <li>
+        <a href="endpoint-discovery.html">HRex Payer Endpoint Discovery Strategy</a>
+      </li>
     </ul>
   </li>
   <li class="dropdown">
