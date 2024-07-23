@@ -4,12 +4,13 @@ Id: hrex-parameters-member-match-out
 Title: "HRex Parameters - Member Match Response Profile"
 Description: """The Parameters profile for Da Vinci Find Member using Identifier datatype Response.  The old health plan **SHALL** return the following data if records for member are found: 
  * The unique member identifier (denoted through identifier parameter) submitted by the new health plan."""
-* parameter ..2 MS
+* parameter ..3 MS
   * ^slicing.discriminator.type = #value
   * ^slicing.discriminator.path = "name"
   * ^slicing.rules = #closed
 * parameter contains MemberIdentifier 1..1 MS
 * parameter contains MemberId 0..1
+* parameter contains Reference 0..1
 * parameter[MemberIdentifier]
   * name = "MemberIdentifier" (exactly)
   * name MS
@@ -24,3 +25,6 @@ Description: """The Parameters profile for Da Vinci Find Member using Identifier
   * valueReference 1.. MS
   * valueReference only Reference(HRexPatientDemographics)
     * ^type.profile = "http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-reference-rest"
+* parameter[Reference]
+  * name = "Reference" (exactly)
+  * ^short = "RESTful reference"
