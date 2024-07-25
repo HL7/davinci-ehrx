@@ -134,6 +134,8 @@ pages:
     title: Profile overview
   searchparameters.md:
     title: Search Parameters overview
+  endpoint-discovery.md:
+    title: Endpoint Discovery Strategy
   artifacts.html:
     title: Artifact List
   downloads.md:
