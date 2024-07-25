@@ -17,7 +17,7 @@ Description: "Defines constraints on the patient resource for the minimal set of
 * identifier contains umb 0..1 MS
 * identifier[umb] ^short = "Unique Member Identifier. This is required to be present for the 'new' coverage and be absent for the 'old' coverage."
   * ^comment = "This is the unique member identifier of the server on which a 'match' is sought"
-  * ^patternIdentifier.type = $v2-0203#MB
+  * ^patternIdentifier.type = $v2-0203#UMB
 //  * ^patternIdentifier.type = $hrex-temp#UMB
 * name 1..* MS
 * name only HumanName

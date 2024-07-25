@@ -59,6 +59,7 @@
 <artifact id="ConceptMap/NUCC-CareTeamMemberFunction" key="ConceptMap-NUCC-CareTeamMemberFunction" name="NUCC to SNOMED Care Team Member Function Map"/>
 <artifact id="StructureDefinition/extension-itemPreAuthIssueDate" key="StructureDefinition-extension-itemPreAuthIssueDate" name="Pre Authorized Issue Date"/>
 <artifact id="SearchParameter/hrex-provenance-target" key="SearchParameter-hrex-provenance-target" name="Provenance target Search Parameter"/>
+<artifact id="ConceptMap/CareTeamMember-NUCCFunction" key="ConceptMap-CareTeamMember-NUCCFunction" name="SNOMED Care Team Member Function to NUCC Map"/>
 <artifact id="ClaimResponse/UnsolicitedReferralAuthorizationResponseExample" key="ClaimResponse-UnsolicitedReferralAuthorizationResponseExample" name="Unsolicited Prior Authorization example"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
@@ -68,6 +69,7 @@
 <page key="davinci-guiding-principles" name="Da Vinci Guiding Principles"/>
 <page key="downloads" name="Downloads"/>
 <page key="smart-app-reg" name="Dynamic Registration for SMART Apps"/>
+<page key="endpoint-discovery" name="Endpoint Discovery Strategy"/>
 <page deprecated="true" key="exchanging-request" name="Exchanges allowing human intervention"/>
 <page deprecated="true" key="exchanging-rest" name="Exchanging with FHIR REST"/>
 <page deprecated="true" key="exchanging-operation" name="Exchanging with FHIR operations"/>

@@ -17,7 +17,7 @@ Description: """The Parameters profile for Da Vinci Find Member using Identifier
   * valueIdentifier 1.. MS
   * valueIdentifier only Identifier
     * type 1.. MS
-    * type = $v2-0203#MB
+    * type = $v2-0203#UMB
     * value 1.. MS
 * parameter[MemberId]
   * name = "MemberId" (exactly)

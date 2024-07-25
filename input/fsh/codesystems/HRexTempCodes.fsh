@@ -10,4 +10,4 @@ Description: "Codes temporarily defined as part of the HRex implementation guide
 * #data-query "data query input" "Indicates the parameters of a FHIR RESTful search to be executed whose results are requested.  The content will be the query URL following the 'base'.  E.g. `Observation?...`"
 * #data-code "data code input" "A code for a document or otherwise describing the characteristics of the information requested"
 * #data-value "data values output" "The result of a data request"
-//* #UMB "Member Number" "A payer's unique member identifier"
+* #UMB "Unique Product-independent Payer Person Identifier" "A unique identifier assigned to an individual that is consistent regardless of the individual irrespective of their role (subscriber, dependent, etc.) or which product(s) they have with that payer."
