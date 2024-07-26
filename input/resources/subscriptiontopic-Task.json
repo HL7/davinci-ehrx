@@ -1,0 +1,52 @@
+{
+    "resourceType": "SubscriptionTopic",
+    "id": "Task",
+    "meta": {
+        "versionId": "1"
+    },
+    "url": "http://hl7.org/fhir/us/davinci-hrex/SubscriptionTopic/Task",
+    "name": "HRexTaskTopic",
+    "title": "HRex Task Subscription Topic",
+    "description": "The HRex Task Update Subscription Topic allows for monitoring for newly created tasks as well as updates to assigned or requested tasks. For example, when the status changes from \u201cin-progress\u201d to \"completed\".",
+    "status": "active",
+    "resourceTrigger": [
+        {
+            "description": "A HRex Task Data Request Profile is created or updated",
+            "resource": "http://hl7.org/fhir/StructureDefinition/Task",
+            "supportedInteraction": [
+                "create",
+                "update"
+            ],
+            "queryCriteria": {
+                "previous": "status:not=draft&intent=order",
+                "current": "status:not=draft&intent=order",
+                "resultForCreate": "test-passes",
+                "resultForDelete": "test-fails",
+                "requireBoth": true
+            }
+        }
+    ],
+    "canFilterBy": [
+        {
+            "description": "Matching based on the `Task.code` code to filter by the specific type of Task (e.g.,data request tasks).",
+            "resource": "Task",
+            "filterParameter": "code"
+        },
+        {
+            "description": "Matching based on the Task's Owner or Requester.",
+            "resource": "Task",
+            "filterParameter": "owner",
+            "modifier": [
+                "identifier"
+            ]
+        },
+        {
+            "description": "Matching based on the Task's Requester.",
+            "resource": "Task",
+            "filterParameter": "requester",
+            "modifier": [
+                "identifier"
+            ]
+        }
+    ]
+}

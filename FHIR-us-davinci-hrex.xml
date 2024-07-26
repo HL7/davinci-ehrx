@@ -52,6 +52,7 @@
 <artifact id="ValueSet/hrex-task-status" key="ValueSet-hrex-task-status" name="HRex Task Status ValueSet"/>
 <artifact id="Bundle/subscription-notification-with-document" key="Bundle-subscription-notification-with-document" name="HRex Task Subscription Notification - completed document example"/>
 <artifact id="Bundle/subscription-notification-with-data" key="Bundle-subscription-notification-with-data" name="HRex Task Subscription Notification - completed query example"/>
+<artifact id="SubscriptionTopic/Task" key="SubscriptionTopic-Task" name="HRex Task Subscription Topic"/>
 <artifact id="Task/min" key="Task-min" name="HRex Task minimal example"/>
 <artifact id="Bundle/task-poll-response" key="Bundle-task-poll-response" name="HRex Task polling response"/>
 <artifact id="CodeSystem/hrex-temp" key="CodeSystem-hrex-temp" name="HRex Temporary Code System"/>
@@ -59,6 +60,7 @@
 <artifact id="ConceptMap/NUCC-CareTeamMemberFunction" key="ConceptMap-NUCC-CareTeamMemberFunction" name="NUCC to SNOMED Care Team Member Function Map"/>
 <artifact id="StructureDefinition/extension-itemPreAuthIssueDate" key="StructureDefinition-extension-itemPreAuthIssueDate" name="Pre Authorized Issue Date"/>
 <artifact id="SearchParameter/hrex-provenance-target" key="SearchParameter-hrex-provenance-target" name="Provenance target Search Parameter"/>
+<artifact id="ConceptMap/CareTeamMember-NUCCFunction" key="ConceptMap-CareTeamMember-NUCCFunction" name="SNOMED Care Team Member Function to NUCC Map"/>
 <artifact id="ClaimResponse/UnsolicitedReferralAuthorizationResponseExample" key="ClaimResponse-UnsolicitedReferralAuthorizationResponseExample" name="Unsolicited Prior Authorization example"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
@@ -68,6 +70,7 @@
 <page key="davinci-guiding-principles" name="Da Vinci Guiding Principles"/>
 <page key="downloads" name="Downloads"/>
 <page key="smart-app-reg" name="Dynamic Registration for SMART Apps"/>
+<page key="endpoint-discovery" name="Endpoint Discovery Strategy"/>
 <page deprecated="true" key="exchanging-request" name="Exchanges allowing human intervention"/>
 <page deprecated="true" key="exchanging-rest" name="Exchanging with FHIR REST"/>
 <page deprecated="true" key="exchanging-operation" name="Exchanging with FHIR operations"/>
