@@ -54,31 +54,3 @@ This implementation guide defines additional constraints and usage expectations 
 This implementation guide and the underlying FHIR specification are licensed as public domain under the [FHIR license](http://hl7.org/fhir/R4/license.html#license). The license page also describes rules for the use of the FHIR name and logo.
 
 {% include ip-statements.xhtml %}
-
-
-
-### Credits
-
-This IG was developed under the auspices of the [Clinical Interoperability Council (CIC)](http://www.hl7.org/Special/committees/cic) work group.  Current work group co-chairs are:
-
-* **Laura Heermann Langford** - Intermountain Healthcare
-* **Russell Leftwich** - InterSystems
-* **Lindsey Hoggle** - IRIS Health Solutions, LLC
-
-Da Vinci project coordination is managed by:
-
-* **Robert Dieterle** - Enablecare
-* **Viet Nguyen** - Stratametrics
-* **Jocelyn Keegan** - Point of Care Partners
-* **Dana Marcelonis** - Point of Care Partners
-* **Pooja Babbrah** - Point of Care Partners
-
-Initial development of this IG was performed by **Lisa Nelson** - Max MD, with assistance from **Rick Geimer** - Lantana Consulting
-
-IG refactoring and updates for the current release was performed by **Lloyd McKenzie** - Gevity Consulting, with assistance from **Russ Buchanan**, **Theresia Edgar** and **Malia Moore**, also of Gevity.
-
-**Mark Scrimshire** - Newwave and the **MITRE** team provided invaluable assistance with connectathons and reference implementations.
-
-Special thanks go to the numerous Da Vinci members who have participated on conference calls and reviews over the last two years and those who participated in the previous ballot of this IG, as well as those who are participating in this one!
-
-If you are interested in participating in the HRex project: information about our calls, minutes of past discussions, and other information can be found [here](https://confluence.hl7.org/pages/viewpage.action?pageId=40741996) on our HL7 Confluence page.

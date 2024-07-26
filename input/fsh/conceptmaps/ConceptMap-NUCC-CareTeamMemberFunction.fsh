@@ -476,7 +476,7 @@ Usage: #definition
   * insert mapeq(#224936003, [[General practitioner locum (occupation)]], #208D00000X, [[General Practice]])
   * insert nomap(#22515006, [[Medical assistant (occupation)]])
   * insert mapnarrow(#225725005, [[Chaplain (occupation)]], #374K00000X, [[Religious Nonmedical Practitioner]], [[Not all religious nonmedical practitioners are chaplains]])
-  * insert mapwide(#225726006, [[Lactation consultant (occupation)]], #174N00000X, [[	Lactation Consultant, Non-RN]])
+  * insert mapwide(#225726006, [[Lactation consultant (occupation)]], #174N00000X, [[Lactation Consultant, Non-RN]])
   * insert mapnarrow(#225727002, [[Midwife counselor (occupation)]], #176B00000X, [[Midwife]], [[Not all midwives become counselors]])
   * insert mapeq(#22731001, [[Orthopedic surgeon (occupation)]], #207X00000X, [[Orthopaedic Surgery]])
   * insert nomap(#229774002, [[Caregiver (occupation)]])

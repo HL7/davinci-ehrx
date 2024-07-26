@@ -5,7 +5,7 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: davinci-hrex
 canonical: http://hl7.org/fhir/us/davinci-hrex
-version: 1.1.0-preview
+version: 1.1.0-ballot
 name: DaVinciHealthRecordExchangeHRex
 title: Da Vinci Health Record Exchange (HRex)
 status: active
@@ -39,7 +39,7 @@ extension:
   - url: http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-uri
     extension:
       - url: uri
-        valueUrl: http://hl7.org/fhir/us/davinci-hrex/StructureDefinition-hrex-consent.html#regular
+        valueUri: http://hl7.org/fhir/us/davinci-hrex/StructureDefinition-hrex-consent.html#regular
       - url: target
         valueUrl: StructureDefinition-hrex-consent.html#regular
       - url: use
@@ -47,7 +47,7 @@ extension:
   - url: http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-uri
     extension:
       - url: uri
-        valueUrl: http://hl7.org/fhir/us/davinci-hrex/StructureDefinition-hrex-consent.html#sensitive
+        valueUri: http://hl7.org/fhir/us/davinci-hrex/StructureDefinition-hrex-consent.html#sensitive
       - url: target
         valueUrl: StructureDefinition-hrex-consent.html#sensitive
       - url: use
@@ -102,8 +102,19 @@ pages:
     title: Home
   fhir.md:
     title: FHIR Introduction
+    extension:
+      - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+        valueCode: "informative"
   exchanging.html:
     title: Approaches to Exchanging FHIR Data
+    extension:
+      - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+        valueCode: "informative"
+  validation.md:
+    title: Managing Instance Validation
+    extension:
+      - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+        valueCode: "informative"
 #    exchanging-search.html:
 #      title: Exchanging with FHIR search
 #    exchanging-rest.html:
@@ -145,6 +156,16 @@ pages:
         valueCode: "informative"
   tools.md:
     title: Tooling and Support
+    extension:
+      - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+        valueCode: "informative"
+  credits.md:
+    title: Participants and Credits
+    extension:
+      - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+        valueCode: "informative"
+  history.md:
+    title: Version history
     extension:
       - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
         valueCode: "informative"

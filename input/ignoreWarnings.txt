@@ -1,23 +1,5 @@
 == Suppressed Messages ==
 
-# This appears to be a narrative generation error
-ERROR: D:\Git\_IGs\davinci-ehrx\output\Parameters-member-match-in-provider.html#/html/body/div/div/div/div/div/div/table/tr/td/p/a at Line 269, column 1052: The link '#hcPatient_1' for "See on this page: Patient/1" cannot be resolved (valid targets: [Coverage_9876B1, project-nav, publish-box, policies, segment-post-footer, hl7-search, hl7-search-lnk, family-logo, top, example-parameters-member-match-provider-example-request, root, hc1, stripe, segment-footer, segment-content, 9876B1, hc9876B1, Patient_1, project-logo, segment-header, bottom, hl7-logo, family-nav, ig-status, 1, Consent_null, hl7-nav, segment-navbar, segment-breadcrumb, parameters])
-ERROR: D:\Git\_IGs\davinci-ehrx\output\Parameters-member-match-in.html#/html/body/div/div/div/div/div/div/table/tr/td/p/a at Line 279, column 1052: The link '#hcPatient_1' for "See on this page: Patient/1" cannot be resolved (valid targets: [Coverage_9876B1, project-nav, publish-box, policies, segment-post-footer, hl7-search, hl7-search-lnk, hcAA87654, family-logo, top, example-parameters-member-match-payer-example-request, root, hc1, stripe, segment-footer, AA87654, segment-content, 9876B1, hc9876B1, Patient_1, project-logo, segment-header, bottom, hl7-logo, family-nav, ig-status, 1, Consent_null, Coverage_AA87654, hl7-nav, segment-navbar, segment-breadcrumb, parameters])
-
-# These errors should go away once the publisher properly supports implementationguide-resource-uri
-ERROR: D:\Git\_IGs\davinci-ehrx\output\Parameters-member-match-in-provider.html#/html/body/div/div/div/div/div/div/table/tr/td/table/tr/td/a at Line 269, column 3823: The link 'http://hl7.org/fhir/us/davinci-hrex/StructureDefinition-hrex-consent.html#regular' for "http://hl7.org/fhir/us/davinci-hrex/StructureDefinition-hrex-consent.html#regular" cannot be resolved
-ERROR: D:\Git\_IGs\davinci-ehrx\output\Parameters-member-match-in.html#/html/body/div/div/div/div/div/div/table/tr/td/table/tr/td/a at Line 279, column 4195: The link 'http://hl7.org/fhir/us/davinci-hrex/StructureDefinition-hrex-consent.html#regular' for "http://hl7.org/fhir/us/davinci-hrex/StructureDefinition-hrex-consent.html#regular" cannot be resolved
-ERROR: ImplementationGuide/hl7.fhir.us.davinci-hrex: ImplementationGuide.extension[3].extension[0].value.ofType(url): URL value 'http://hl7.org/fhir/us/davinci-hrex/StructureDefinition-hrex-consent.html#regular' does not resolve
-ERROR: ImplementationGuide/hl7.fhir.us.davinci-hrex: ImplementationGuide.extension[4].extension[0].value.ofType(url): URL value 'http://hl7.org/fhir/us/davinci-hrex/StructureDefinition-hrex-consent.html#sensitive' does not resolve
-ERROR: Parameters/member-match-in: Parameters.parameter[2].resource/*Consent/null*/.policy[0].uri: URL value 'http://hl7.org/fhir/us/davinci-hrex/StructureDefinition-hrex-consent.html#regular' does not resolve
-ERROR: Parameters/member-match-in-provider: Parameters.parameter[2].resource/*Consent/null*/.policy[0].uri: URL value 'http://hl7.org/fhir/us/davinci-hrex/StructureDefinition-hrex-consent.html#regular' does not resolve
-
-# These require a new release of the 'tools' IG
-ERROR: ImplementationGuide/hl7.fhir.us.davinci-hrex: ImplementationGuide.extension[3].url: URL value 'http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-uri' does not resolve
-ERROR: ImplementationGuide/hl7.fhir.us.davinci-hrex: ImplementationGuide.extension[4].url: URL value 'http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-uri' does not resolve
-ERROR: ImplementationGuide/hl7.fhir.us.davinci-hrex: ImplementationGuide.definition.extension[6].extension[0].value.ofType(string): The value provided ('auto-oid-root') was not found in the value set 'ig-parameters Codes ValueSet' (http://hl7.org/fhir/tools/ValueSet/ig-parameters|0.1.0), and a code is required from this value set  (error message = The System URI could not be determined for the code 'auto-oid-root' in the ValueSet 'http://hl7.org/fhir/tools/ValueSet/ig-parameters|0.1.0'; The provided code '#auto-oid-root' was not found in the value set 'http://hl7.org/fhir/tools/ValueSet/ig-parameters|0.1.0')
-ERROR: ImplementationGuide/hl7.fhir.us.davinci-hrex: ImplementationGuide.definition.extension[35].extension[0].value.ofType(code): The value provided ('auto-oid-root') was not found in the value set 'ig-parameters Codes ValueSet' (http://hl7.org/fhir/tools/ValueSet/ig-parameters|0.1.0), and a code is required from this value set  (error message = The System URI could not be determined for the code 'auto-oid-root' in the ValueSet 'http://hl7.org/fhir/tools/ValueSet/ig-parameters|0.1.0'; The provided code '#auto-oid-root' was not found in the value set 'http://hl7.org/fhir/tools/ValueSet/ig-parameters|0.1.0')
-
 # These do resolve.  Not sure why they're erroring.
 ERROR: Parameters/member-match-in: Parameters.parameter[2].resource/*Coverage/AA87654*/.beneficiary: Unable to resolve resource with reference 'https://hl7.org/fhir/us/core/STU6.1/Patient/example'
 ERROR: Parameters/member-match-in: Parameters.parameter[3].resource/*Consent/null*/.patient: Unable to resolve resource with reference 'http://hl7.org/fhir/us/core/STU6.1/Patient/example'
@@ -25,18 +7,18 @@ ERROR: Parameters/member-match-in: Parameters.parameter[3].resource/*Consent/nul
 ERROR: Parameters/member-match-in-provider: Parameters.parameter[2].resource/*Consent/null*/.patient: Unable to resolve resource with reference 'http://hl7.org/fhir/us/core/STU6.1/Patient/example'
 ERROR: Parameters/member-match-in-provider: Parameters.parameter[2].resource/*Consent/null*/.performer[0]: Unable to resolve resource with reference 'http://hl7.org/fhir/us/core/STU6.1/Patient/example'
 
+# This is a valid hyperlink and target and resolves fine.  Don't know why the publisher thinks it's invalid
+ERROR: D:\Git\_IGs\davinci-ehrx\output\validation.html#/html/body/div/div/div/div/div/p/a at Line 301, column 217: The link 'canonical' for "http://hl7.org/fhir/R4/references.html#canonical" cannot be resolved
+
+# Not much we can do about the number of codes
+The concept map has too many codes to validate (1,028)
 
 # There is no location in the IG where it makes sense to use this profile.  It's created for downstream IGs.  The definition is sufficiently simple that there's no possibility of errors in the construction.
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-reference-id'): The Implementation Guide contains no examples for this data type profile
 
-# This URL *does* exist, so not sure why this error is happening
-URL value 'http://hl7.org/fhir/us/davinci-hrex/StructureDefinition-hrex-consent.html#regular' does not resolve
-
-# This is an error in the core resource that we inherit
-ERROR: StructureDefinition/hrex-consent: StructureDefinition.snapshot.element[9].example[0].value.ofType(Identifier): if identifier.system is ''urn:ietf:rfc:3986'', then the identifier.value must be a full URI (e.g. start with a scheme)
-
-# This invalid constraint is inherited from US Core
-Error in constraint 'provenance-1' with expression '(($this.agent.who.resolve() is Practitioner) or ($this.agent.who.resolve() is Device)) implies exists()': Error evaluating FHIRPath expression: The name 'agent' is not valid for any of the possible types: [http://hl7.org/fhir/StructureDefinition/Reference] (@char 9)
+# The terminology validation here is messed up in R4, but these codes are both valid
+INFORMATION: Bundle/subscription-notification-with-document: Bundle.entry[2].resource/*DocumentReference/287Q73J237*/.content[0].format: The code provided (urn:oid:1.3.6.1.4.1.19376.1.2.3#urn:ihe:pcc:apr:handp:2008) is not in the value set 'DocumentReference Format Code Set' (http://hl7.org/fhir/ValueSet/formatcodes|4.0.1), and a code is recommended to come from this value set
+INFORMATION: Bundle/task-poll-response: Bundle.entry[1].resource/*DocumentReference/c94fb961-310c-41f1-a54f-gd5325dgds7*/.content[0].format: The code provided (urn:oid:1.3.6.1.4.1.19376.1.2.3#urn:ihe:pcc:apr:handp:2008) is not in the value set 'DocumentReference Format Code Set' (http://hl7.org/fhir/ValueSet/formatcodes|4.0.1), and a code is recommended to come from this value set
 
 # Nothing that can be done about this
 Target Code System http://snomed.info/sct is only supported on the terminology server, so the target codes are not validated for performance reasons
@@ -57,21 +39,17 @@ INFORMATION: StructureDefinition/hrex-organization: StructureDefinition.snapshot
 INFORMATION: StructureDefinition/hrex-practitioner: StructureDefinition.snapshot.element[10].pattern.ofType(Identifier): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 
 # These identifiers are 'extra' and aren't expected to match any slice
-INFORMATION: Organization/full: Organization.identifier[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-organization|1.1.0-preview (this may not be a problem, but you should check that it's not intended to match a slice)
-INFORMATION: Organization/full: Organization.identifier[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-organization|1.1.0-preview (this may not be a problem, but you should check that it's not intended to match a slice)
-INFORMATION: Practitioner/full: Practitioner.identifier[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-practitioner|1.1.0-preview (this may not be a problem, but you should check that it's not intended to match a slice)
-INFORMATION: Practitioner/full: Practitioner.identifier[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-practitioner|1.1.0-preview (this may not be a problem, but you should check that it's not intended to match a slice)
-INFORMATION: Practitioner/min: Practitioner.identifier[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-practitioner|1.1.0-preview (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Organization/full: Organization.identifier[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-organization|1.1.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Organization/full: Organization.identifier[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-organization|1.1.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Practitioner/full: Practitioner.identifier[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-practitioner|1.1.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Practitioner/full: Practitioner.identifier[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-practitioner|1.1.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Practitioner/min: Practitioner.identifier[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-practitioner|1.1.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
 
 # These additional coverage classes are not (currently) part of the profile and are not expected to match slices
-INFORMATION: Parameters/member-match-in: Parameters.parameter[1].resource/*Coverage/9876B1*/.class[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-coverage|1.1.0-preview (this may not be a problem, but you should check that it's not intended to match a slice)
-INFORMATION: Parameters/member-match-in: Parameters.parameter[1].resource/*Coverage/9876B1*/.class[3]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-coverage|1.1.0-preview (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Parameters/member-match-in: Parameters.parameter[1].resource/*Coverage/9876B1*/.class[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-coverage|1.1.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Parameters/member-match-in: Parameters.parameter[1].resource/*Coverage/9876B1*/.class[3]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-coverage|1.1.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
 
 # These code systems should not be draft in THO.  The terminology work group is trying to fix these
-Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/consentaction|0.1.0
-Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/consentscope|1.0.0
-Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/coverage-class|0.1.0
-Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/provenance-participant-type|0.1.0
 Reference to draft CodeSystem http://hl7.org/fhir/task-status|4.0.1
 
 # Narrative doesn't make sense in resources passed to a real-time operation
@@ -87,8 +65,11 @@ WARNING: Parameters/member-match-in-provider: Parameters.parameter[2].resource/*
 INFORMATION: StructureDefinition.where(url = 'http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-consent'): The Implementation Guide contains no explicitly linked examples for this profile
 INFORMATION: StructureDefinition.where(url = 'http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-patient-demographics'): The Implementation Guide contains no explicitly linked examples for this profile
 
-# HRex needs an anonymous patient - US Realm approved: https://jira.hl7.org/browse/FHIR-33538
+# HRex needs a patient with no identifier - US Realm approved: https://jira.hl7.org/browse/FHIR-33538, new proposal https://jira.hl7.org/browse/FHIR-46468
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-patient-demographics').baseDefinition: US FHIR Usage rules require that all profiles on Patient derive from the core US profile. See https://confluence.hl7.org/display/CGP/US+Core+Variance+Request+Process
+
+# HRex needs Coverage pointing to a patient with no identifier - submitted to US Core https://jira.hl7.org/browse/FHIR-46468
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-coverage').baseDefinition: US FHIR Usage rules require that all profiles on Coverage derive from the core US profile. See https://confluence.hl7.org/display/CGP/US+Core+Variance+Request+Process
 
 # These code systems are not currently supported by the Tx server - and the X12 ones likely won't ever be
 A definition for CodeSystem 'https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set' could not be found, so the code cannot be validated

@@ -19,6 +19,15 @@
       <li>
         <a href="exchanging.html">Approaches to Exchanging FHIR Data</a>
       </li>
+      <li>
+        <a href="validation.html">Managing Instance Validation</a>
+      </li>
+      <li>
+        <a href="credits.html">Participants and Credits</a>
+      </li>
+      <li>
+        <a href="history.html">Change History</a>
+      </li>
     </ul>
   </li>
   <li class="dropdown">
@@ -54,7 +63,7 @@
         <a href="OperationDefinition-member-match.html">Member resolution</a>
       </li>
       <li>
-        <a href="endpoint-discovery.html">HRex Payer Endpoint Discovery Strategy</a>
+        <a href="endpoint-discovery.html">Payer Endpoint Discovery Strategy</a>
       </li>
     </ul>
   </li>
@@ -75,21 +84,43 @@
     </ul>
   </li>
   <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Base Specs<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a target="_blank" href="{{site.data.fhir.path}}index.html">FHIR R4 Spec</a>
+      </li>
+      <li>
+        <a target="_blank" href="{{site.data.fhir.ver.uscore3}}">US Core 3.1.1</a>
+      </li>
+      <li>
+        <a target="_blank" href="{{site.data.fhir.ver.uscore6}}">US Core 6.1.0</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support<b class="caret">
       </b>
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="{{site.data.fhir.path}}">FHIR R4 specification</a>
+        <a href="https://chat.fhir.org/#narrow/stream/433432-Da-Vinci-HRex">HRex discussion &amp; support</a>
+      </li>
+      <li>
+        <a href="https://confluence.hl7.org/pages/viewpage.action?pageId=40741996">HRex Project Home</a>
+      </li>
+      <li>
+        <a href="https://jira.hl7.org/secure/Dashboard.jspa?selectPageId=17208">Issue Dashboard</a>
+      </li>
+      <li>
+        <a href="http://hl7.org/fhir-issues">Propose a change</a>
       </li>
       <li>
         <a href="downloads.html">Downloads</a>
       </li>
       <li>
         <a href="tools.html">Tooling and Support</a>
-      </li>
-	  <li>
-        <a href="https://chat.fhir.org/#narrow/stream/433432-Da-Vinci-HRex">HRex discussion stream</a>
       </li>
     </ul>
   </li>
