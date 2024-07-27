@@ -32,25 +32,30 @@ normal hours of operation.  Systems SHOULD NOT query more often than every 15 mi
 The response would look like [this](Bundle-task-poll-response.html).
 
 #### Subscription
+
 <div class="modified-content" markdown="1">
 In the subscription mechanism, instead of the data source system regularly querying the server to see if there are changes to existing Tasks, the client creates a
 Subscription instance on the server that indicates that it wants to be notified about changes to Tasks and, in the Subscription, provides filters that describe what
 subset of Tasks it is interested in.  The server will then push notifications when there are new or updated Tasks and the data source can then query for the specific Tasks that have changed.
 
-This functionality is based on the [R4 Subscription backport](http://hl7.org/fhir/uv/subscriptions-backport) implementation guide.  This implementation guide 
+This functionality is based on the [Subscription R5 Backport](http://hl7.org/fhir/uv/subscriptions-backport) implementation guide.  This implementation guide 
 allows pre-adoption of the FHIR R5 topic-based subscription approach in R4 implementations and is the subscription approach that most U.S. EHR vendors have agreed to 
 support.  Implementers of this Da Vinci IG who choose to support Subscription **SHALL** comply with the Subscription Backport IG for the purpose of monitoring Tasks.
 
-For the purposes of this IG, there will be no need for 'topic discovery' as there is only one topic of interest - [Task Subscription Topic](SubscriptionTopic-Task.html), 
-though ownstream IGs may refine or provide additional guidance around the use of this topic.
+This guide formally defines the [HRex Task Subscription Topic](SubscriptionTopic-Task.html) Subscription Topic as a [SubscriptionTopic](https://hl7.org/fhir/R5/subscriptiontopic.html), a resource defined in FHIR 4B and later versions.
+
+Note that supporting SubscriptionTopic nor the equivalent Basic resource versions described in the R5 Backport Implementation Guides is NOT required by this guide to support subscriptions.
+{:.bg-warning}
+
+Downstream IGs may refine or provide additional guidance around the use of this topic.
 While this topic is not unique to Da Vinci, because no standard topics have yet been defined for US Core, this IG will define the needed
 topic here.  In the future, these topics may be subsumed into general-purpose topics defined by US Core and/or the FHIR core specification.
-</div>
 
-Systems supporting subscription SHALL support the rest-hook channel mechanism, though they may choose to support other channel approaches.  Servers SHALL support both
-JSON and XML and clients SHALL support at least one of these.  Client and server SHALL support id-only, though they may  also support other content approaches.  The
+Systems supporting subscription SHALL support the "rest-hook" channel mechanism, though they may choose to support other channel approaches.  Client and server SHALL support "id-only" payload type, though they may  also support other payload types.  The
 id-only approach means that the id of the Task that was updated will be provided.  The client will then perform a read or a query to
 retrieve the specified record(s) specified in the subscription notification. E.g.
+
+</div>
 
 ```[base]/Task?_id=1234,5678```
 
