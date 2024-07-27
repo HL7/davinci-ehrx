@@ -52,6 +52,7 @@
 <artifact id="ValueSet/hrex-task-status" key="ValueSet-hrex-task-status" name="HRex Task Status ValueSet"/>
 <artifact id="Bundle/subscription-notification-with-document" key="Bundle-subscription-notification-with-document" name="HRex Task Subscription Notification - completed document example"/>
 <artifact id="Bundle/subscription-notification-with-data" key="Bundle-subscription-notification-with-data" name="HRex Task Subscription Notification - completed query example"/>
+<artifact id="SubscriptionTopic/Task" key="SubscriptionTopic-Task" name="HRex Task Subscription Topic"/>
 <artifact id="Task/min" key="Task-min" name="HRex Task minimal example"/>
 <artifact id="Bundle/task-poll-response" key="Bundle-task-poll-response" name="HRex Task polling response"/>
 <artifact id="CodeSystem/hrex-temp" key="CodeSystem-hrex-temp" name="HRex Temporary Code System"/>

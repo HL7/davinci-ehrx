@@ -8,7 +8,7 @@ ERROR: Parameters/member-match-in-provider: Parameters.parameter[2].resource/*Co
 ERROR: Parameters/member-match-in-provider: Parameters.parameter[2].resource/*Consent/null*/.performer[0]: Unable to resolve resource with reference 'http://hl7.org/fhir/us/core/STU6.1/Patient/example'
 
 # This is a valid hyperlink and target and resolves fine.  Don't know why the publisher thinks it's invalid
-ERROR: D:\Git\_IGs\davinci-ehrx\output\validation.html#/html/body/div/div/div/div/div/p/a at Line 301, column 217: The link 'canonical' for "http://hl7.org/fhir/R4/references.html#canonical" cannot be resolved
+ERROR: D:\Git\_IGs\davinci-ehrx\output\validation.html#/html/body/div/div/div/div/div/div/p/a at Line 303, column 219: The link 'canonical' for "http://hl7.org/fhir/R4/references.html#canonical" cannot be resolved
 
 # Not much we can do about the number of codes
 The concept map has too many codes to validate (1,028)

@@ -1,4 +1,6 @@
-### Instance Validation Considerations
+<div class="new-content" markdown="1">
+
+## Instance Validation Considerations
 
 FHIR's APIs are designed in a manner somewhat different from the manner payers are typically used to having APIs function.  Specifically, the default behavior in FHIR is to NOT declare in instances either the version of FHIR in use, nor the profiles (or profile versions) with which the instance is asserting conformance.  This section explains the rationale for this design approach and provides guidance on how implementers should function in an environment where instances don't typically declare what they conform with.
 
@@ -33,3 +35,4 @@ Full profile validation can be expensive, so often it can be more efficient to j
 ##### Business-rule validation
 In this approach, the system doesn't worry about the FHIR profiles and instead simply checks whether the data elements it needs for its business purpose are present and have values it considers valid.  (It must always check for unrecognized modifier elements.)  Provided the needed data is present, it processes the instance irrespective of validity against any specific profile version.
 
+</div>

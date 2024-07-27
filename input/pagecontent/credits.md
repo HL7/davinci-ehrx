@@ -1,5 +1,5 @@
 ### Credits
-
+<div class="modified-content" markdown="1">
 This IG was developed under the auspices of the [Clinical Interoperability Council (CIC)](http://www.hl7.org/Special/committees/cic) work group.  Current work group co-chairs are:
 
 * **Bruce Bray** - University of Utah Health Care
@@ -20,6 +20,7 @@ The lead developer for this IG is **Lloyd McKenzie** - Dogwood Health, with assi
 Initial development of this IG was performed by **Lisa Nelson** - Max MD, with assistance from **Rick Geimer** - Lantana Consulting
 
 The **MITRE** and **Lantana** teams have provided invaluable assistance with connectathons and reference implementations.
+</div>
 
 Special thanks go to the numerous Da Vinci members who have participated on conference calls and reviews over the last four years and those who participated in the previous ballot of this IG, as well as those who are participating in this one!
 

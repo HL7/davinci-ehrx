@@ -1,6 +1,8 @@
 ### Links
 
-This implementation guide is web-based and is intended to be browsed online.  However, for the convenience of implementers, both this implementation guide, various sub-packages of it and some of the source specifications are available for download.  The following links allow you to download various parts of this implementation guide and other referenced implementation guides for local use.
+This implementation guide is web-based and is intended to be browsed online.  However, for the convenience of implementers, both this implementation guide, various sub-packages 
+of it and some of the source specifications are available for download.  The following links allow you to download various parts of this implementation guide and other referenced 
+implementation guides for local use.
 
 Content from this IG:
 * This [full IG](full-ig.zip)
@@ -13,8 +15,10 @@ Key content from the FHIR core specification:
 * [JSON]({{site.data.fhir.path}}fhir.schema.json.zip) and [XML]({{site.data.fhir.path}}fhir-all-xsd.zip) schemas for validation
 
 Content from US Core:
+<div class="modified-content" markdown="1">
+
 * The [3.1.1 validator package]({{site.data.fhir.ver.uscore3}}/package.tgz) for use with the [FHIR validator](tools.html)
 * The [6.1.0 validator package]({{site.data.fhir.ver.uscore6}}/package.tgz) for use with the [FHIR validator](tools.html)
 
-
 {% include cross-version-analysis-inline.xhtml %}
+</div>

@@ -1,4 +1,11 @@
-### Description
+  <blockquote class="note-to-balloters">
+    <p>
+      This IG has undergone a number of changes to support the needs of the different Da Vinci IGs that use it.  The most significant is support for USCDI v3, though there are a number
+      of other significant changes as well.  Please refer to the <a href="history.html">History</a> page for a detailed list of substantive changes.
+    </p>
+  </blockquote>
+  
+  ### Description
 
 The [Da Vinci](https://confluence.hl7.org/display/DVP) Health Record Exchange (HRex) implementation guide (IG) is a foundational guide for all other Da Vinci guides.  It defines FHIR profiles, operations and guidance that are relevant to more than one, and sometimes all, Da Vinci use-case IGs.  In the future, it may define additional types of artifacts such as extensions or value sets.  All HRex artifacts are intended to be use-case independent, though they are specifically tied to the HRex scope.  They may be referenced in RESTful exchanges, passed in CDS Hooks, or manipulated by SMART apps.  Because the artifacts defiend here are use-case independent, this IG does not include a use-case or patient stories section.  Use-cases may instead be found in the various Da Vinci guides that leverage the artifacts defined here for specific business purposes.
 
@@ -9,9 +16,13 @@ The scope of Da Vinci is US payer and provider data exchange with each other and
 
 ### Dependencies
 
+<div class="modified-content" markdown="1">
+
 At present, HRex is based on [FHIR R4]({{site.data.fhir.path}}).  In addition, HRex is dependent on the [US Core 3.1 (FHIR R4)]({{site.data.fhir.ver.uscore3}}) and [US Core 6.1 (FHIR R4)]({{site.data.fhir.ver.uscore6}}) implementation guides.  The former is supported for those systems limited to USCDI 1 capabilities and the latter is supported to meet regulatory requirements mandating support for USCDI 3.  Wherever possible, Da Vinci profiles strive to comply with both releases.
 
 In some situations, the payer community requires additional constraints or needs to profile resources that are not yet supported by US Core.  In these cases, this IG does not derive from the US Core profiles, though it does align with them as much as possible.  It is possible that certain HRex profiles and/or descriptive content may migrate to a future release of US Core, and in some cases, to the base FHIR standard.  In certain instances, Da Vinci IGs will also declare conformance with the [QI Core](http://hl7.org/fhir/us/qicore), which supplements US Core with additional profiles and constraints for use in quality measurements.  This IG is not derived from QI core, but HRex profiles should be generally compliant with the QI Core specification.
+
+</div>
 
 In addition, some Da Vinci specifications will make use of content from the following FHIR-related specifications and implementation guides:
 * [Bulk Data](https://hl7.org/fhir/uv/bulkdata)
@@ -37,11 +48,19 @@ The main menu in this IG is categorized into several primary topics with several
   * [Profile Overview](profiles.html) gives an overview of the profiles defined in this IG and, where relevant, guidance on the use of US Core profiles
   * [Search Parameter Overview](profiles.html) gives an overview of the search parameters defined in this IG and a discussion of how those, along with US Core search parameters should be used
   * [Member Match](OperationDefinition-member-match.html) describes the process to resolve a member as known by a different payer
+
+<div class="new-content" markdown="1">
+  
   * [IG Practices](goodpractice.html) describes best practices for Da Vinci IGs to adhere to.  While primarily of interest to IG authors, reviewers may find reading this page helpful when reviewing IGs or understanding the design choices made.
+  
+<div class="new-content" markdown="1">
+  
 * **Artifacts** includes links to artifacts (profiles, operations, etc.) defined both in this specification as well as in the imported US Core implementation guide.  This index also includes a list of all of the examples - there are at least two examples for every profile, sometimes more to demonstrate the range of possible content supported.  (Examples relevant to a given profile are also linked to from the profile page.)
 * **Support** includes links to the FHIR core specification and the US Core spec, as well as download links for this IG and guidance on tools and support for Da Vinci implementers.
 
 The main menu at the top of all IG pages will allow you to jump to any of the main pages in the IG.  The breadcrumbs bar (right below the menu bar) will let you navigate 'up' to ancestor pages of whatever page you are looking at.  The [Table of Contents (TOC)](toc.html) will show you all pages in the IG and the [Artifacts list](artifacts.html) will list all of the artifacts (profiles, extensions, operations, value sets, etc.) defined in this specification.  As well, this IG makes heavy use of hyperlinks which will allow navigation to relevant sections of this specification and parent specifications.  
+
+<div class="new-content" markdown="1">
 
 ### Dependencies
 This guide is based on the [FHIR R4]({{site.data.fhir.path}}) specification.  In addition, this guide also relies on a number of parent implementation guides:
@@ -54,3 +73,5 @@ This implementation guide defines additional constraints and usage expectations 
 This implementation guide and the underlying FHIR specification are licensed as public domain under the [FHIR license](http://hl7.org/fhir/R4/license.html#license). The license page also describes rules for the use of the FHIR name and logo.
 
 {% include ip-statements.xhtml %}
+
+</div>

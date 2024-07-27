@@ -1,3 +1,5 @@
+<div class="new-content" markdown="1">
+
 There are a significant number of endpoints that EHRs (and other payers) need to know in order to support the various Da Vinci interoperability specifications.  For example, the location for CDS Hooks services for CRD, the location to call the $questionnaire-package operation for DTR, the location of repositories to query for PDex, etc.
 
 Each of these locations may vary depending on the specific insurance product relevant to the access.  Some endpoints might be managed by the insurer directly, while others may be outsourced.  Different divisions within the same insurer may have responsibility for different products or functions.  Also, who is responsible for a given endpoint may change from time-to-time as functions are outsourced, insourced, or otherwise adjusted.
@@ -38,9 +40,4 @@ The bulk of the possible configuration settings are listed below.  In some cases
 
 In addition, there is a standard extension on Coverage where EHRs can store the .well-known endpoint and expose it to downstream systems (SMART apps, etc.)
 
-
-
-
-
-
-
+</div>
