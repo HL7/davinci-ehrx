@@ -61,13 +61,13 @@ dependencies:
     uri: http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core
     id: uscore3
     reason: |
-      Needed for systems supporting USCDI 1
+      Needed for systems supporting USCDI v1
   hl7.fhir.us.core:
     version: 6.1.0
     uri: http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core
     id: uscore6
     reason: |
-      Needed for systems supporting USCDI 3
+      Needed for systems supporting USCDI v3
 #  hl7.fhir.uv.tools:
 #    version: 0.2.0-snapshot
 #    uri: http://hl7.org/fhir/tools/ImplementationGuide/hl7.fhir.uv.tools
@@ -131,24 +131,54 @@ pages:
 #      title: Exchanges allowing human intervention
   conformance.html:
     title: Conformance Expectations
+    extension:
+      - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+        valueCode: "trial-use"
   davinci-guiding-principles.html:
     title: Da Vinci Guiding Principles
+    extension:
+      - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+        valueCode: "informative"
   security.html:
     title: Security and Privacy
+    extension:
+      - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+        valueCode: "trial-use"
   task.md:
     title: Task-based queries
+    extension:
+      - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+        valueCode: "trial-use"
   smart-app-reg.md:
     title: Dynamic Registration for SMART Apps
+    extension:
+      - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+        valueCode: "trial-use"
   goodpractice.md:
     title: IG Practices
+    extension:
+      - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+        valueCode: "informative"
   profiles.html:
     title: Profile overview
+    extension:
+      - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+        valueCode: "informative"
   searchparameters.md:
     title: Search Parameters overview
+    extension:
+      - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+        valueCode: "informative"
   endpoint-discovery.md:
     title: Endpoint Discovery Strategy
+    extension:
+      - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+        valueCode: "trial-use"
   artifacts.html:
     title: Artifact List
+    extension:
+      - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+        valueCode: "informative"
   downloads.md:
     title: Downloads
     extension:
