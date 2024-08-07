@@ -28,7 +28,7 @@ parameters:
   globals-in-artifacts: true
   auto-oid-root: 2.16.840.1.113883.4.642.40.19
 copyrightYear: 2019+
-releaseLabel: STU R1
+releaseLabel: STU 1.1 Ballot
 extension:
   - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
     valueCode: "trial-use"
