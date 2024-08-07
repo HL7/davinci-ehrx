@@ -51,6 +51,7 @@ INFORMATION: Parameters/member-match-in: Parameters.parameter[1].resource/*Cover
 
 # These code systems should not be draft in THO.  The terminology work group is trying to fix these
 Reference to draft CodeSystem http://hl7.org/fhir/task-status|4.0.1
+Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/adjudication|1.0.0
 Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/consentaction|1.0.0
 Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/consentscope|2.0.0
 Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/coverage-class|1.0.0
