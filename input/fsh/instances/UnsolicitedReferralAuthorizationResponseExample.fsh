@@ -32,13 +32,3 @@ Usage: #example
   * itemSequence = 1
   * productOrService = $1365#3 "Consultation"
   * locationCodeableConcept = $Place_of_Service_Code_Set#11
-  * adjudication
-    * extension
-      * extension[0]
-        * url = "number"
-        * valueString = "AUTH0001"
-      * extension[+]
-        * url = "http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/extension-reviewActionCode"
-        * valueCodeableConcept = $306#A1 "Certified in total"
-      * url = "http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/extension-reviewAction"
-    * category = $adjudication#submitted
