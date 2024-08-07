@@ -1,9 +1,6 @@
 {
   "resourceType": "SubscriptionTopic",
   "id": "Task",
-  "meta": {
-    "versionId": "1"
-  },
   "url": "http://hl7.org/fhir/us/davinci-hrex/SubscriptionTopic/Task",
   "name": "HRexTaskTopic",
   "title": "HRex Task Subscription Topic",
