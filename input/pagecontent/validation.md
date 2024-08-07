@@ -14,7 +14,7 @@ Notwithstanding these considerations, most of the resources in use by Da Vinci a
 While Da Vinci interactions cannot yet be in a FHIR version-agnostic space, when using normative resources such as Patient and Observation, implementers **SHOULD** begin implementing (and testing) approaches that allow them to safely tolerate and ignore new elements that may appear in future versions to ensure optimal interoperability.
 
 #### Profile Version
-FHIR allows all resources to declare the profile(s) they comply with by populating the [meta.profile]({{site.data.fhir.path}}resource.html#Meta) element on the resource.  Because this element uses the [{{site.data.fhir.path}}references.html#canonical](canonical) data type, it is also possible to refer to specific versions of profiles and thus be very precise about exactly what a particular instance is believed to comply with.
+FHIR allows all resources to declare the profile(s) they comply with by populating the [meta.profile]({{site.data.fhir.path}}resource.html#Meta) element on the resource.  Because this element uses the [canonical]({{site.data.fhir.path}}references.html#canonical) data type, it is also possible to refer to specific versions of profiles and thus be very precise about exactly what a particular instance is believed to comply with.
 
 However, guidance from the HL7 FHIR Management Group (FMG) is that implementation guide should typically NOT require that instances explicitly declare their profiles or their versions.  That doesn't mean that profile declarations won't necessarily appear on instances, only that implementers shouldn't expect to necessarily see the ones they care about.
 
