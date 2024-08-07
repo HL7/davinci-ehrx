@@ -32,3 +32,5 @@ Usage: #example
   * itemSequence = 1
   * productOrService = $1365#3 "Consultation"
   * locationCodeableConcept = $Place_of_Service_Code_Set#11
+  * adjudication
+    * category = $adjudication#submitted
