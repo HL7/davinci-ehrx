@@ -53,10 +53,11 @@ The main menu in this IG is categorized into several primary topics with several
   
   * [IG Practices](goodpractice.html) describes best practices for Da Vinci IGs to adhere to.  While primarily of interest to IG authors, reviewers may find reading this page helpful when reviewing IGs or understanding the design choices made.
   
-<div class="new-content" markdown="1">
+</div>
   
 * **Artifacts** includes links to artifacts (profiles, operations, etc.) defined both in this specification as well as in the imported US Core implementation guide.  This index also includes a list of all of the examples - there are at least two examples for every profile, sometimes more to demonstrate the range of possible content supported.  (Examples relevant to a given profile are also linked to from the profile page.)
-* **Support** includes links to the FHIR core specification and the US Core spec, as well as download links for this IG and guidance on tools and support for Da Vinci implementers.
+* **Base Specs** includes links to the FHIR core specification as well as the US Core specs that underlie this IG.
+* **Support** includes various links for support and guidance, as well as download links for this IG and guidance on tools and support for Da Vinci implementers.
 
 The main menu at the top of all IG pages will allow you to jump to any of the main pages in the IG.  The breadcrumbs bar (right below the menu bar) will let you navigate 'up' to ancestor pages of whatever page you are looking at.  The [Table of Contents (TOC)](toc.html) will show you all pages in the IG and the [Artifacts list](artifacts.html) will list all of the artifacts (profiles, extensions, operations, value sets, etc.) defined in this specification.  As well, this IG makes heavy use of hyperlinks which will allow navigation to relevant sections of this specification and parent specifications.  
 

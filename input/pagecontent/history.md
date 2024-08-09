@@ -35,6 +35,8 @@ Other resources:
 
 A variety of minor wording clarifications, correction of typos and other non-substantive changes
 
+Also, see the [comparison](comparison-v1.0.0/index.html) between this release and release 1.0.0
+
 ### STU 1.0
 
 Initial 'official' release
