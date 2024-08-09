@@ -5,7 +5,7 @@
     </p>
   </blockquote>
   
-### Overview
+### Introduction
 
 The [Da Vinci](https://confluence.hl7.org/display/DVP) Health Record Exchange (HRex) implementation guide (IG) is a foundational guide for all other Da Vinci guides.  It defines FHIR profiles, operations and guidance that are relevant to more than one, and sometimes all, Da Vinci use-case IGs.  In the future, it may define additional types of artifacts such as extensions or value sets.  All HRex artifacts are intended to be use-case independent, though they are specifically tied to the HRex scope.  They may be referenced in RESTful exchanges, passed in CDS Hooks, or manipulated by SMART apps.  Because the artifacts defiend here are use-case independent, this IG does not include a use-case or patient stories section.  Use-cases may instead be found in the various Da Vinci guides that leverage the artifacts defined here for specific business purposes.
 

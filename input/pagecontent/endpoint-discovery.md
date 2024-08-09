@@ -30,7 +30,6 @@ The bulk of the possible configuration settings are listed below.  In some cases
 | davinci_crd_hook_endpoint          | url      | Endpoint to invoke hook services for any decision support services covered by CRD                                         |
 | davinci_dtr_qpackage_endpoint      | url      | The ‘base’ for the endpoint to invoke the $questionnaire-package operation for the coverages relevant for this Patient    |
 | davinci_pas_submission_endpoint    | url      | The ‘base’ for the endpoints used to invoke the $submit or $inquire operations for the coverages relevant to this Patient |
-| davinci_cdex_attachsubmit_endpoint | url      | The ‘base’ for the endpoint used to invoke the $submit-attachment operation                                               |
 | davinci_pdex_patient_endpoint      | url      | The ‘base’ for the endpoints used to query for data for patient access                                                    |
 | davinci_pdex_provider_endpoint     | url      | The ‘base’ for the endpoints used to query for data for healthcare provider access                                        |
 | davinci_pdex_payer_endpoint        | url      | The ‘base’ for the endpoints used to query for data for healthcare payer access                                           |
