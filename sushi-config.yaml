@@ -74,7 +74,7 @@ dependencies:
     uri: http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core
     id: uscore7
     reason: |
-      Needed for systems supporting USCDI v1
+      Needed for systems supporting USCDI v4
 #  hl7.fhir.uv.tools:
 #    version: 0.2.0-snapshot
 #    uri: http://hl7.org/fhir/tools/ImplementationGuide/hl7.fhir.uv.tools
