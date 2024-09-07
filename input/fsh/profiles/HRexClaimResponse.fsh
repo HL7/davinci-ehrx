@@ -3,6 +3,7 @@ Parent: ClaimResponse
 Id: hrex-claimresponse
 Title: "HRex Prior authorization"
 Description: "This profile specifies constraints on ClaimResponse resource to reflect the contents of a pro-active prior authorization returned via a card"
+* ^extension[$compliesWithProfile].valueCanonical = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-coverage|6.1.0"
 * ^extension[$standard-status].valueCode = #draft
 * ^extension[$fmm].valueInteger = 0
 * ^status = #draft
@@ -14,7 +15,7 @@ Description: "This profile specifies constraints on ClaimResponse resource to re
 * type MS
 * use only code
 * use MS
-* patient only Reference(USCorePatientProfile|6.1.0)
+* patient only Reference(USCorePatientProfile|7.0.0)
 * patient MS
 * created MS
 * insurer only Reference(HRexOrganization)

@@ -49,8 +49,8 @@ Usage: #example
   * status = #active
   * scope = $consentscope#patient-privacy
 //  * category = $v3-ActCode#IDSCL
-  * patient.reference = "http://hl7.org/fhir/us/core/STU6.1/Patient/example"
-  * performer.reference = "http://hl7.org/fhir/us/core/STU6.1/Patient/example"
+  * patient.reference = "http://example.org/example"
+  * performer.reference = "http://example.org/example"
   * sourceReference.reference = "http://example.org/DocumentReference/someconsent"
   * policy.uri = "http://hl7.org/fhir/us/davinci-hrex/StructureDefinition-hrex-consent.html#regular"
   * provision

@@ -5,7 +5,7 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: davinci-hrex
 canonical: http://hl7.org/fhir/us/davinci-hrex
-version: 1.1.0-ballot
+version: 1.1.0-cibuild
 name: DaVinciHealthRecordExchangeHRex
 title: Da Vinci Health Record Exchange (HRex)
 status: active
@@ -29,7 +29,7 @@ parameters:
   auto-oid-root: 2.16.840.1.113883.4.642.40.19
   version-comparison: 1.0.0
 copyrightYear: 2019+
-releaseLabel: STU 1.1 Ballot
+releaseLabel: STU 1.1 post-ballot build
 extension:
   - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
     valueCode: "trial-use"
@@ -57,7 +57,7 @@ extension:
 # │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 dependencies:
-  hl7.fhir.us.core.3.1.1:
+  hl7.fhir.us.core.v311:
     version: 3.1.1
     uri: http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core
     id: uscore3
@@ -69,6 +69,12 @@ dependencies:
     id: uscore6
     reason: |
       Needed for systems supporting USCDI v3
+  hl7.fhir.us.core.v700:
+    version: 7.0.0
+    uri: http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core
+    id: uscore7
+    reason: |
+      Needed for systems supporting USCDI v1
 #  hl7.fhir.uv.tools:
 #    version: 0.2.0-snapshot
 #    uri: http://hl7.org/fhir/tools/ImplementationGuide/hl7.fhir.uv.tools

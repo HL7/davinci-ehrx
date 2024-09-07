@@ -23,8 +23,9 @@
   </p>
   <ul>
     <li>HRex - <a href="index.html">Da Vinci Health Record Exchange</a></li>
-    <li>USCORE 3 - <a href="{{site.data.fhir.ver.uscore3}}">US Core 3.1 (FHIR R4)</a></li>
-    <li>USCORE 6 - <a href="{{site.data.fhir.ver.uscore3}}">US Core 6.1 (FHIR R4)</a></li>
+    <li>USCORE v3 - <a href="{{site.data.fhir.ver.uscore3}}">US Core 3.1 (FHIR R4)</a></li>
+    <li>USCORE v6 - <a href="{{site.data.fhir.ver.uscore6}}">US Core 6.1 (FHIR R4)</a></li>
+    <li>USCORE v7 - <a href="{{site.data.fhir.ver.uscore7}}">US Core 7.0 (FHIR R4)</a></li>
   </ul>
 
   <a name="profiles"> </a>

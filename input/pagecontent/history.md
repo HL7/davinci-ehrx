@@ -1,5 +1,11 @@
 <div class="new-content" markdown="1">
 
+### STU 1.1
+
+* FHIR-???? - Added support for US-Core 7.0.0
+
+
+
 ### STU 1.1 - ballot
 
 The following is a list of the substantive changes since the last official release

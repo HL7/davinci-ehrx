@@ -19,6 +19,7 @@ Content from US Core:
 
 * The [3.1.1 validator package]({{site.data.fhir.ver.uscore3}}/package.tgz) for use with the [FHIR validator](tools.html)
 * The [6.1.0 validator package]({{site.data.fhir.ver.uscore6}}/package.tgz) for use with the [FHIR validator](tools.html)
+* The [7.0.0 validator package]({{site.data.fhir.ver.uscore7}}/package.tgz) for use with the [FHIR validator](tools.html)
 
 {% include cross-version-analysis-inline.xhtml %}
 </div>
