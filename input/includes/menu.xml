@@ -81,6 +81,9 @@
       <li>
         <a href="{{site.data.fhir.ver.uscore6}}/artifacts.html">US Core 6.1 (FHIR R4) Artifacts</a>
       </li>
+      <li>
+        <a href="{{site.data.fhir.ver.uscore7}}/artifacts.html">US Core 7.0 (FHIR R4) Artifacts</a>
+      </li>
     </ul>
   </li>
   <li class="dropdown">
@@ -96,6 +99,9 @@
       </li>
       <li>
         <a target="_blank" href="{{site.data.fhir.ver.uscore6}}">US Core 6.1.0</a>
+      </li>
+      <li>
+        <a target="_blank" href="{{site.data.fhir.ver.uscore7}}">US Core 7.0.0</a>
       </li>
     </ul>
   </li>
