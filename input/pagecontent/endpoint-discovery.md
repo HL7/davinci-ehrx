@@ -14,11 +14,9 @@ The 271 response allows the PER segment in several places.  The occurrence in th
 
     * [base]/.well-known/davinci-configuration
 
-The [base] is a server-defined endpoint determined by the payer that is the correct endpoint for the coverage communicated in the EB and REF segments.
+The [base] is a server-defined endpoint determined by the payer.
 * If there are multiple loop repetitions, the davinci-configuration endpoint might be the same or different for different loops.
 * If a payer wishes, they may generate time-point-specific configuration endpoints by including a random UUID as part of the base URL.  Such time-limited endpoints must remain available for at least one hour after generation.
-
-NOTE: The 2100A allows multiple members to be conveyed in a single repetition.  However, for this purpose, it is important that each member have a separate 2100A repetition, which means the request must be organized such that each member is in a separate loop.  If a request contains multiple members in a 2100A, the payer SHALL only provide a davinci-configuration .well-known if they have the same endpoint.  If the endpoints differ, then no endpoints can be provided.
 
 Regardless of how it is retrieved, the .well-known endpoint SHALL be accessible with a simple TLS (not mutual TLS) connection and resolve to a JSON document.  The JSON document will include entries for varying configuration settings.  It may include various information, but is expected to expose entries for the Da Vinci and Carin-related endpoint types that are supported for any of the patient’s coverages
 
