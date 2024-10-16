@@ -33,4 +33,4 @@ Usage: #definition
 * parameter[+]
   * insert parameter(#MemberIdentifier, #out, 1, "1", #Identifier, "This is the member identifier information for the patient as known by the server that is the target of the operation.")
 * parameter[+]
-  * insert parameter(#MemberIdentifier, #out, 0, "1", #Reference, "This is the RESTful identity for the patient as known by the server that is the target of the operation.")
+  * insert parameter(#MemberId, #out, 0, "1", #Reference, "This is the RESTful identity for the patient as known by the server that is the target of the operation.")

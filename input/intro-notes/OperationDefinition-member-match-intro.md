@@ -17,5 +17,6 @@ The operation works by passing in up to four parameters:
 
 The response returns:
 * The target payer's identifier information on the member - their unique member identifier (UMB) sent as an Identifer within a Parameters instance.
+* Optionally, a RESTful reference to the Patient that corresponds to the member on the payer's FHIR API
 
-An identifier is used rather than a member id as most payers do not (yet) expose RESTful ids for their member or coverage records.  This identifier can be used in subsequent interactions with the target payer system.
+An identifier is required, while the RESTful id is optional as most payers do not (yet) expose RESTful ids for their member or coverage records.  This identifier can be used in subsequent interactions with the target payer system.
