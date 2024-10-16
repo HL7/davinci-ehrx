@@ -52,13 +52,6 @@ The main menu in this IG is categorized into several primary topics with several
   * [Security and Privacy](security.html) provides general expectations to ensure security and privacy of Da Vinci exchanges
   * [Task-based Queries](task.html) describes the mechanisms for using Task to ask for information
   * [Dynamic Registration for SMART Apps](smart-app-reg.html) documents requirements for cross-registration of SMART on FHIR apps
-
-<div class="new-content" markdown="1">
-  
-  * [IG Practices](goodpractice.html) describes best practices for Da Vinci IGs to adhere to.  While primarily of interest to IG authors, reviewers may find reading this page helpful when reviewing IGs or understanding the design choices made.
-  
-</div>
-
   * [Profile Overview](profiles.html) gives an overview of the profiles defined in this IG and, where relevant, guidance on the use of US Core profiles
   * [Search Parameter Overview](profiles.html) gives an overview of the search parameters defined in this IG and a discussion of how those, along with US Core search parameters should be used
   * [Member Match](OperationDefinition-member-match.html) describes the process to resolve a member as known by the target payer system
