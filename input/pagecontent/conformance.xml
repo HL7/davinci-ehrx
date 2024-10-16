@@ -22,4 +22,7 @@
   <h3>Referencing US Core Profiles</h3>
   <p>
     Many of the profiles in this guide reference other FHIR resources that are US Core profiles. This is defined in the formal profile definitions. For example, US Core Patient. For any other references not formally defined in a US Core profiles, the referenced resource <b>SHOULD</b> be a US Core profile if a US Core profile exists for the resource type. </p>
+  <p>
+    Many of the profiles are based on US Core 7.0.0 while also declaring conformance with US Core 6.1.0 and 3.1.1.  In some cases, the 7.0.0 and/or 6.1.0 releases introduce new "mustSupport" elements that are not mustSupport in 3.1.1.  The intention of this implementation guide is NOT to move forward the timelines by which EHRs and/or payers must support USCDI 3 and 4 content.  Rather, it is to allow seamless transition as systems start to support the newer US Core releases as systems start to bring them on stream.  As such, clients and servers have no obligations with respect to elements that are newly mustSupport in 6.1.0 or 7.0.0 beyond "don't error if these elements are present" until such time as those systems claim conformance with the US Core release which introduces those elements as mustSupport.  Once a system claims conformance to US Core 6.1.0 or 7.0.0, then the conformance expectations of those release of the US Core guide come into play.
+  </p>
 </div>
