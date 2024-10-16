@@ -2,7 +2,7 @@ Profile: HRexConsent
 Parent: Consent
 Id: hrex-consent
 Title: "HRex Consent Profile"
-Description: "The HRex Consent Profile defines the constraints for representing a member's to the sharing of their healthcare information to other organizations."
+Description: "The HRex Consent Profile defines the constraints for representing a member's consent to the sharing of their healthcare information to other organizations."
 * ^extension[$standard-status].valueCode = #draft
 * ^extension[$fmm].valueInteger = 0
 * ^status = #draft
