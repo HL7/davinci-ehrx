@@ -11,6 +11,7 @@ Alias: $condition-category = http://terminology.hl7.org/CodeSystem/condition-cat
 Alias: $dar = http://terminology.hl7.org/CodeSystem/data-absent-reason
 Alias: $sct = http://snomed.info/sct
 Alias: $hrex-temp = http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp
+Alias: $fhir-types = http://hl7.org/fhir/fhir-types
 Alias: $loinc = http://loinc.org
 Alias: $formatcode = urn:oid:1.3.6.1.4.1.19376.1.2.3
 //Alias: $formatcode = http://ihe.net/fhir/ihe.formatcode.fhir/ValueSet/formatcode

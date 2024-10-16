@@ -206,4 +206,13 @@ pages:
     extension:
       - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
         valueCode: "informative"
+resources:
+  Binary/Wellknown:
+    name: "Example Wellknown endpoint"
+    description: "An example of the sort of content that would be found at [base]/.well-known/davinci-configuration"
+    extension:
+      - url: http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format
+        valueCode: application/json
+      - url: http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-logical
+        valueCanonical: http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/HRexWellknownDefinition
 

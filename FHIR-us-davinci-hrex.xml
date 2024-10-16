@@ -14,19 +14,24 @@
 <artifact id="Parameters/member-match-in-provider" key="Parameters-member-match-in-provider" name="$member-match provider example request"/>
 <artifact id="StructureDefinition/extension-itemAuthorizedDate" key="StructureDefinition-extension-itemAuthorizedDate" name="Authorized Date"/>
 <artifact id="StructureDefinition/extension-itemAuthorizedProvider" key="StructureDefinition-extension-itemAuthorizedProvider" name="Authorized Provider"/>
+<artifact id="StructureDefinition/extension-CoverageDavinciWellknownLocation" key="StructureDefinition-extension-CoverageDavinciWellknownLocation" name="Coverage Da Vinci Wellknown Endpoint"/>
 <artifact id="SearchParameter/hrex-coverage-identifier" key="SearchParameter-hrex-coverage-identifier" name="Coverage identifier Search Parameter"/>
 <artifact id="SearchParameter/hrex-coverage-patient" key="SearchParameter-hrex-coverage-patient" name="Coverage patient Search Parameter"/>
 <artifact id="SearchParameter/hrex-coverage-payor" key="SearchParameter-hrex-coverage-payor" name="Coverage payer Search Parameter"/>
 <artifact id="SearchParameter/hrex-coverage-subscriber" key="SearchParameter-hrex-coverage-subscriber" name="Coverage subscriber Search Parameter"/>
 <artifact id="SearchParameter/hrex-coverage-subscriberId" key="SearchParameter-hrex-coverage-subscriberId" name="Coverage subscriberId Search Parameter"/>
+<artifact id="StructureDefinition/HRexWellknownDefinition" key="StructureDefinition-HRexWellknownDefinition" name="Da Vinci .well-known File Definition"/>
+<artifact id="Binary/Wellknown" key="Binary-Wellknown" name="Example Wellknown endpoint"/>
 <artifact id="ValueSet/hrex-consent-policy" key="ValueSet-hrex-consent-policy" name="HRex Consent Policy ValueSet"/>
 <artifact id="StructureDefinition/hrex-consent" key="StructureDefinition-hrex-consent" name="HRex Consent Profile"/>
 <artifact id="StructureDefinition/hrex-coverage" key="StructureDefinition-hrex-coverage" name="HRex Coverage Profile"/>
 <artifact id="ValueSet/hrex-coverage-relationship" key="ValueSet-hrex-coverage-relationship" name="HRex Coverage Relationship ValueSet"/>
 <artifact id="Coverage/full" key="Coverage-full" name="HRex Coverage full example"/>
 <artifact id="Coverage/min" key="Coverage-min" name="HRex Coverage minimal example"/>
+<artifact id="ValueSet/hrex-endpoint-name" key="ValueSet-hrex-endpoint-name" name="HRex Endpoint Name"/>
 <artifact id="StructureDefinition/hrex-reference-id" key="StructureDefinition-hrex-reference-id" name="HRex Identifier Reference Profile"/>
 <artifact id="OperationDefinition/member-match" key="OperationDefinition-member-match" name="HRex Member Match Operation"/>
+<artifact id="StructureDefinition/hrex-identifier-namespaced" key="StructureDefinition-hrex-identifier-namespaced" name="HRex Namespaced Identifier"/>
 <artifact id="StructureDefinition/hrex-organization" key="StructureDefinition-hrex-organization" name="HRex Organization Profile"/>
 <artifact id="Organization/full" key="Organization-full" name="HRex Organization full example"/>
 <artifact id="Organization/min" key="Organization-min" name="HRex Organization minimal example"/>

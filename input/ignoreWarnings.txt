@@ -7,6 +7,16 @@ ERROR: Parameters/member-match-in: Parameters.parameter[3].resource/*Consent/nul
 ERROR: Parameters/member-match-in-provider: Parameters.parameter[2].resource/*Consent/null*/.patient: Unable to resolve resource with reference 'http://hl7.org/fhir/us/core/STU6.1/Patient/example'
 ERROR: Parameters/member-match-in-provider: Parameters.parameter[2].resource/*Consent/null*/.performer[0]: Unable to resolve resource with reference 'http://hl7.org/fhir/us/core/STU6.1/Patient/example'
 
+# This is an issue in the core spec, which we can't do much about
+%binds to the value set 'http://hl7.org/fhir/ValueSet/payeetype' which is experimental, but this structure is not labeled as experimental
+%binds to the value set 'http://hl7.org/fhir/ValueSet/fundsreserve' which is experimental, but this structure is not labeled as experimental
+%binds to the value set 'http://hl7.org/fhir/ValueSet/forms' which is experimental, but this structure is not labeled as experimental
+%binds to the value set 'http://hl7.org/fhir/ValueSet/adjudication-error' which is experimental, but this structure is not labeled as experimental
+%binds to the value set 'http://hl7.org/fhir/ValueSet/consent-content-code' which is experimental, but this structure is not labeled as experimental
+
+# This is not a standard property type, so no terminology meaning is expected
+INFORMATION: CodeSystem/hrex-temp: CodeSystem.property[1]: This property has only a code ('type') and not a URI, so it has no clearly defined meaning in the terminology ecosystem
+
 # Not much we can do about the number of codes
 The concept map has too many codes to validate (1,028)
 
