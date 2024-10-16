@@ -61,7 +61,7 @@ The main menu in this IG is categorized into several primary topics with several
 
   * [Profile Overview](profiles.html) gives an overview of the profiles defined in this IG and, where relevant, guidance on the use of US Core profiles
   * [Search Parameter Overview](profiles.html) gives an overview of the search parameters defined in this IG and a discussion of how those, along with US Core search parameters should be used
-  * [Member Match](OperationDefinition-member-match.html) describes the process to resolve a member as known by a different payer
+  * [Member Match](OperationDefinition-member-match.html) describes the process to resolve a member as known by the target payer system
 
   
 * **Artifacts** includes links to artifacts (profiles, operations, etc.) defined both in this specification as well as in the imported US Core implementation guides.  This index also includes a list of all of the examples - there are at least two examples for every profile, sometimes more to demonstrate the range of possible content supported.  (Examples relevant to a given profile are also linked to from the profile page.)
