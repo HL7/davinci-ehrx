@@ -1,8 +1,8 @@
 Profile: HRexPatientDemographics
 Parent: Patient
 Id: hrex-patient-demographics
-Title: "HRex Patient Demographics"
-Description: "Defines constraints on the patient resource for the minimal set of data to query and retrieve patient demographic information."
+Title: "HRex Member Match Patient"
+Description: "Defines constraints on the patient resource for transmission of minimal demographic information needed for $member-match."
 * ^extension[$standard-status].valueCode = #draft
 * ^extension[$fmm].valueInteger = 0
 * ^experimental = false

@@ -1,2 +1,3 @@
-Coverage is central to most Da Vinci use-cases.  The resource provides the information that identifies the type of insurance, the payer who provides it and the member who is covered.  As such, it forms the justification or focus for almost all data exchanges in the payer space.  While the resource is complex, the Da Vinci profile focuses on capturing only the minimum data necessary to identify both payer and member.
+In most cases, Da Vinci will use the [US Core Coverage profile]({{site.data.fhir.ver.uscore7}}/StructureDefinition-us-core-coverage.html) when communicating Coverage.
 
+This profile is intended for use ONLY during the [$member-match](OperationDefinition-member-match.html) operation.  It differs from the US Core profile in that the referenced 'Patient' resource does not need to have an identifier (as when calling $member-match, no identifier will be known).

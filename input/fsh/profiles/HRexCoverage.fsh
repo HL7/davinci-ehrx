@@ -1,8 +1,8 @@
 Profile: HRexCoverage
 Parent: Coverage
 Id: hrex-coverage
-Title: "HRex Coverage Profile"
-Description: "The HRex Coverage Profile defines the constraints for representing a member's healthcare insurance information to the Payer. Coverage instances complying with this profile, sometimes together with the Patient which this profile references via `beneficiary`, allows a payer to identify a member in their system.  It aligns with the equivalent US Core profile, but diverges in that it does not require Patient.identifier for the beneficiary"
+Title: "HRex Member Match Coverage Profile"
+Description: "The HRex Coverage Profile defines the constraints for representing a member's healthcare insurance information to the Payer for member match purposes. Coverage instances complying with this profile, sometimes together with the Patient which this profile references via `beneficiary`, allows a payer to identify a member in their system.  It aligns with the equivalent US Core profile, but diverges in that it does not require Patient.identifier for the beneficiary."
 * ^status = #active
 * ^experimental = false
 * obeys us-core-15
