@@ -39,23 +39,32 @@ The main menu in this IG is categorized into several primary topics with several
 
 * **Background** provides supporting information relevant for implementers of this IG or Da Vinci guides in general.  These sections may be referenced from other Da Vinci IGs, but do not contain any rules that impact IG conformance.  (Nothing in these sections will ever become 'normative' or define functionality that implementer systems must or must not do.)  These sections *will* provide context to implementers to help them understand other parts of the IG and make better and more efficient decisions with respect to FHIR implementation.
   * [Da Vinci Overview](http://hl7.org/about/davinci) provides an overview of the Da Vinci project and provides guidance on how to get involved in the project and where to find the use-case specific IGs.
+  * [Guiding Principles](davinci-guiding-principles.html) describes key principles that underly all Da Vinci interoperability.
   * [FHIR Introduction](fhir.html) highlights the key sections of the FHIR core specification that Da Vinci implementers should be familiar with.
   * [Approaches to Exchanging FHIR Data](exchanging.html) provides a detailed overview of all the mechanisms that FHIR supports for exchanging information.  Implementers do not need to read this, but Da Vinci use case IGs may refer to this information.
+<div class="new-content" markdown="1">
+  * [Managing Instance Validation](validation.html) gives general guidance about managing validation of Da Vinci instances across different IGs and different versions of an IG.
+</div>
+  * [Participants and Credits](credits.html) provides thanks to key contributors to the creation of this guide.
+
 * **Specification** content includes pages that define artifacts or include formal conformance rules that apply to this IG and that may be included by reference in other Da Vinci IGs.
   * [Conformance Expectations](conformance.html) describes conformance language used within the spec and expectations around mustSupport and missing data
   * [Security and Privacy](security.html) provides general expectations to ensure security and privacy of Da Vinci exchanges
+  * [Task-based Queries](task.html) describes the mechanisms for using Task to ask for information
   * [Dynamic Registration for SMART Apps](smart-app-reg.html) documents requirements for cross-registration of SMART on FHIR apps
-  * [Profile Overview](profiles.html) gives an overview of the profiles defined in this IG and, where relevant, guidance on the use of US Core profiles
-  * [Search Parameter Overview](profiles.html) gives an overview of the search parameters defined in this IG and a discussion of how those, along with US Core search parameters should be used
-  * [Member Match](OperationDefinition-member-match.html) describes the process to resolve a member as known by a different payer
 
 <div class="new-content" markdown="1">
   
   * [IG Practices](goodpractice.html) describes best practices for Da Vinci IGs to adhere to.  While primarily of interest to IG authors, reviewers may find reading this page helpful when reviewing IGs or understanding the design choices made.
   
 </div>
+
+  * [Profile Overview](profiles.html) gives an overview of the profiles defined in this IG and, where relevant, guidance on the use of US Core profiles
+  * [Search Parameter Overview](profiles.html) gives an overview of the search parameters defined in this IG and a discussion of how those, along with US Core search parameters should be used
+  * [Member Match](OperationDefinition-member-match.html) describes the process to resolve a member as known by a different payer
+
   
-* **Artifacts** includes links to artifacts (profiles, operations, etc.) defined both in this specification as well as in the imported US Core implementation guide.  This index also includes a list of all of the examples - there are at least two examples for every profile, sometimes more to demonstrate the range of possible content supported.  (Examples relevant to a given profile are also linked to from the profile page.)
+* **Artifacts** includes links to artifacts (profiles, operations, etc.) defined both in this specification as well as in the imported US Core implementation guides.  This index also includes a list of all of the examples - there are at least two examples for every profile, sometimes more to demonstrate the range of possible content supported.  (Examples relevant to a given profile are also linked to from the profile page.)
 * **Base Specs** includes links to the FHIR core specification as well as the US Core specs that underlie this IG.
 * **Support** includes various links for support and guidance, as well as download links for this IG and guidance on tools and support for Da Vinci implementers.
 

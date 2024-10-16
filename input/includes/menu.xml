@@ -14,6 +14,9 @@
         <a href="http://hl7.org/about/davinci">Da Vinci Overview</a>
       </li>
       <li>
+        <a href="davinci-guiding-principles.html">Guiding Principles</a>
+      </li>
+      <li>
         <a href="fhir.html">FHIR Introduction</a>
       </li>
       <li>
@@ -25,9 +28,6 @@
       <li>
         <a href="credits.html">Participants and Credits</a>
       </li>
-      <li>
-        <a href="history.html">Change History</a>
-      </li>
     </ul>
   </li>
   <li class="dropdown">
@@ -35,9 +35,6 @@
       </b>
     </a>
     <ul class="dropdown-menu">
-      <li>
-        <a href="davinci-guiding-principles.html">Guiding Principles</a>
-      </li>
       <li>
         <a href="conformance.html">Conformance Expectations</a>
       </li>
@@ -129,5 +126,8 @@
         <a href="tools.html">Tooling and Support</a>
       </li>
     </ul>
+  </li>
+  <li>
+    <a href="history.html">Change History</a>
   </li>
 </ul>
