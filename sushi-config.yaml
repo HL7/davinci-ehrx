@@ -161,11 +161,6 @@ pages:
     extension:
       - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
         valueCode: "trial-use"
-  goodpractice.md:
-    title: IG Practices
-    extension:
-      - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
-        valueCode: "informative"
   profiles.html:
     title: Profile overview
     extension:
