@@ -1,0 +1,1 @@
+This logical model defines the allowed content of a JSON file that adheres to the expectations for a .well-known file as defined in the [Endpoint Discovery](endpoint-discovery.html) part of this IG.

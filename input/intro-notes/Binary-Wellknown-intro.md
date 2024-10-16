@@ -1,0 +1,1 @@
+This is an example showing what the contents of a .well-known file might look like when following the guidance provided in the [Endpoint Discovery](endpoint-discovery.html) part of this IG.
