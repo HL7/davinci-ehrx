@@ -28,6 +28,7 @@ parameters:
   globals-in-artifacts: true
   auto-oid-root: 2.16.840.1.113883.4.642.40.19
   version-comparison: 1.0.0
+  shownav: true
 copyrightYear: 2019+
 releaseLabel: STU 1.1 post-ballot build
 extension:
