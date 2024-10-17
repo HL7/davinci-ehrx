@@ -1,7 +1,7 @@
 ValueSet: HRexConsentPolicy
 Id: hrex-consent-policy
 Title: "HRex Consent Policy ValueSet"
-Description: "The set of policy URIs for use in HRex data disclosureconsent assertions"
+Description: "The set of policy URIs for use in HRex data disclosure consent assertions"
 * ^extension[$standard-status].valueCode = #draft
 * ^extension[$fmm].valueInteger = 0
 * ^status = #draft

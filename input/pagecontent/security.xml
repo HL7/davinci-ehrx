@@ -20,7 +20,7 @@
     All FHIR Implementation Guides <b>SHOULD</b> follow the FHIR Security guidance and FHIR Implementer’s Safety guidance as defined in the  relevant FHIR  specification (e.g. Release 4.1.0) where applicable and not superseded by this Section or specific IG requirements.</p>
   <ol>
     <li>The FHIR Security specification provides guidance related to communication security, authentication, authorization/access control, audit, digital signatures, attachments, labels, narrative, and input validation. The FHIR security specification is available <a href="{{site.data.fhir.path}}security.html">here</a>.</li>
-    <li>The FHIR Implementer’s Safety specification is a check list to help implementers be sure that they have considered all the parts of FHIR that impact their system design regarding safety. The FHIR safety check list is available <a href="{{site.data.fhir.path}}safety.html">here</a>.</li>
+    <li>The FHIR Implementer’s Safety specification is a check-list to help implementers be sure that they have considered all the parts of FHIR that impact their system design regarding safety. The FHIR safety check list is available <a href="{{site.data.fhir.path}}safety.html">here</a>.</li>
   </ol>
 
   <a name="labels"> </a>
@@ -64,7 +64,7 @@
   <p>Additionally protected information may include items defined by Federal (e.g. 42 CFR Part 2), State (e.g. many states protect substance abuse disorder, HIV diagnosis/treatment records, release of information on minors – note this is not an exhaustive list) statutes and regulations.  Organizations may also provide additional protection for specific types of information that are deemed sensitive.  The following guidelines apply unless otherwise dictated by statute or regulation:</p>
   <ol>
     <li>Where permitted by law and in accordance with legal requirements, systems <b>SHALL</b> always support release of additionally protected information.</li>
-    <li>Implementations <b>SHALL</b> ensure that release of the information without explicit request of the patient/member is based on organization policy consistent with Federal and State regulations. Examples are legal request for information and “break glass” to treat a patient that is unable to provide consent.</li>
+    <li>Implementations <b>SHALL</b> ensure that release of the information without explicit request of the patient/member is based on organization policy consistent with Federal and State regulations. Examples are legal requests for information and "break glass" to treat a patient that is unable to provide consent.</li>
   </ol>
 
   <a name="contexts"> </a>
