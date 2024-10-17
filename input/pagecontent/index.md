@@ -14,25 +14,6 @@ As a supporting IG, HRex is expected to continue to evolve as additional shared 
 The scope of Da Vinci is US payer and provider data exchange with each other and other covered entities under HIPAA (including their business associates).  It includes data exchange with the patient/member.  The exchanges are typically ones that are 'of interest' in value-based care.  Some of the Da Vinci content may be relevant outside this defined scope (e.g. non-US implementations). However, [requests for change](http://hl7.org/fhir-issues) should be focused on HRex’s official scope.
 
 
-### Dependencies
-
-<div class="modified-content" markdown="1">
-
-At present, HRex is based on [FHIR R4]({{site.data.fhir.path}}).  In addition, HRex is dependent on the [US Core 3.1 (FHIR R4)]({{site.data.fhir.ver.uscore3}}), [US Core 6.1 (FHIR R4)]({{site.data.fhir.ver.uscore6}}) and [US Core 7.0 (FHIR R4)]({{site.data.fhir.ver.uscore7}})  implementation guides.  The first is supported for those systems limited to [United States Core Data for Interoperability (USCDI) v1](https://www.healthit.gov/isp/united-states-core-data-interoperability-uscdi) capabilities, the second is for upcoming regulatory requirements mandating support for [USCDI v3](https://www.healthit.gov/isp/united-states-core-data-interoperability-uscdi#uscdi-v3), and the last is to enable support for proposed regulations mandating support for [USCDI v4](https://www.healthit.gov/isp/united-states-core-data-interoperability-uscdi#uscdi-v4).  Wherever possible, Da Vinci profiles strive to comply with all three releases, simplifying implementation for those who will need to support varying regulatory expectations over time.
-
-In some situations, the payer community requires additional constraints or needs to profile resources that are not yet supported by US Core.  In these cases, this IG does not derive from the US Core profiles, though it does align with them as much as possible.  It is possible that certain HRex profiles and/or descriptive content may migrate to a future release of US Core, and in some cases, to the base FHIR standard.  In certain instances, Da Vinci IGs will also declare conformance with the [QI Core](http://hl7.org/fhir/us/qicore), which supplements US Core with additional profiles and constraints for use in quality measurements.  This IG is not derived from QI core, but HRex profiles should be generally compliant with the QI Core specification.
-
-</div>
-
-In addition, some Da Vinci specifications will make use of content from the following FHIR-related specifications and implementation guides:
-* [Bulk Data](https://hl7.org/fhir/uv/bulkdata)
-* [C-CDA on FHIR](http://www.hl7.org/fhir/us/ccda)
-* [CDS Hooks](https://cds-hooks.org)
-* [CQL](https://cql.hl7.org)
-* [FHIRPath](http://hl7.org/fhirpath)
-* [SMART on FHIR](http://www.hl7.org/fhir/smart-app-launch)
-
-
 ### Navigation
 
 The main menu in this IG is categorized into several primary topics with several sub-topics:
@@ -67,11 +48,29 @@ NOTE: Past versions of this IG included a cross-reference of what HRex and US Co
 
 
 ### Dependencies
-This guide is based on the [FHIR R4]({{site.data.fhir.path}}) specification.  In addition, this guide also relies on a number of parent implementation guides:
+
+<div class="modified-content" markdown="1">
+
+At present, HRex is based on [FHIR R4]({{site.data.fhir.path}}).  In addition, this guide also relies on a number of parent implementation guides:
 
 {% include dependency-table-short.xhtml %}
 
 This implementation guide defines additional constraints and usage expectations above and beyond the information found in these base specifications.
+
+As seen in the above table, HRex is dependent on the [US Core 3.1 (FHIR R4)]({{site.data.fhir.ver.uscore3}}), [US Core 6.1 (FHIR R4)]({{site.data.fhir.ver.uscore6}}) and [US Core 7.0 (FHIR R4)]({{site.data.fhir.ver.uscore7}}) implementation guides.  The first is supported for those systems limited to [United States Core Data for Interoperability (USCDI) v1](https://www.healthit.gov/isp/united-states-core-data-interoperability-uscdi) capabilities, the second is for upcoming regulatory requirements mandating support for [USCDI v3](https://www.healthit.gov/isp/united-states-core-data-interoperability-uscdi#uscdi-v3), and the last is to enable support for proposed regulations mandating support for [USCDI v4](https://www.healthit.gov/isp/united-states-core-data-interoperability-uscdi#uscdi-v4).  Wherever possible, Da Vinci profiles strive to comply with all three releases, simplifying implementation for those who will need to support varying regulatory expectations over time.
+
+In some situations, the payer community requires additional constraints or needs to profile resources that are not yet supported by US Core.  In these cases, this IG does not derive from the US Core profiles, though it does align with them as much as possible.  It is possible that certain HRex profiles and/or descriptive content may migrate to a future release of US Core, and in some cases, to the base FHIR standard.  In certain instances, Da Vinci IGs will also declare conformance with the [QI Core](http://hl7.org/fhir/us/qicore), which supplements US Core with additional profiles and constraints for use in quality measurements.  This IG is not derived from QI core, but HRex profiles should be generally compliant with the QI Core specification.
+
+</div>
+
+In addition to the direct dependencies listed above, some Da Vinci specifications will make use of content from the following FHIR-related specifications and implementation guides:
+* [Bulk Data](https://hl7.org/fhir/uv/bulkdata)
+* [C-CDA on FHIR](http://www.hl7.org/fhir/us/ccda)
+* [CDS Hooks](https://cds-hooks.org)
+* [CQL](https://cql.hl7.org)
+* [FHIRPath](http://hl7.org/fhirpath)
+* [SMART on FHIR](http://www.hl7.org/fhir/smart-app-launch)
+
 
 ### Intellectual Property Considerations
 This implementation guide and the underlying FHIR specification are licensed as public domain under the [FHIR license](http://hl7.org/fhir/R4/license.html#license). The license page also describes rules for the use of the FHIR name and logo.
