@@ -52,8 +52,6 @@ The main menu in this IG is categorized into several primary topics with several
   * [Security and Privacy](security.html) provides general expectations to ensure security and privacy of Da Vinci exchanges
   * [Task-based Queries](task.html) describes the mechanisms for using Task to ask for information
   * [Dynamic Registration for SMART Apps](smart-app-reg.html) documents requirements for cross-registration of SMART on FHIR apps
-  * [Profile Overview](profiles.html) gives an overview of the profiles defined in this IG and, where relevant, guidance on the use of US Core profiles
-  * [Search Parameter Overview](profiles.html) gives an overview of the search parameters defined in this IG and a discussion of how those, along with US Core search parameters should be used
   * [Member Match](OperationDefinition-member-match.html) describes the process to resolve a member as known by the target payer system
 
   
@@ -61,9 +59,12 @@ The main menu in this IG is categorized into several primary topics with several
 * **Base Specs** includes links to the FHIR core specification as well as the US Core specs that underlie this IG.
 * **Support** includes various links for support and guidance, as well as download links for this IG and guidance on tools and support for Da Vinci implementers.
 
-The main menu at the top of all IG pages will allow you to jump to any of the main pages in the IG.  The breadcrumbs bar (right below the menu bar) will let you navigate 'up' to ancestor pages of whatever page you are looking at.  The [Table of Contents (TOC)](toc.html) will show you all pages in the IG and the [Artifacts list](artifacts.html) will list all of the artifacts (profiles, extensions, operations, value sets, etc.) defined in this specification.  As well, this IG makes heavy use of hyperlinks which will allow navigation to relevant sections of this specification and parent specifications.  
+The main menu at the top of all IG pages will allow you to jump to any of the main pages in the IG.  The breadcrumbs bar (right below the menu bar) will let you navigate 'up' to ancestor pages of whatever page you are looking at.  The [Table of Contents (TOC)](toc.html) will show you all pages in the IG and the [Artifacts list](artifacts.html) will list all of the artifacts (profiles, extensions, operations, value sets, etc.) defined in this specification.  As well, this IG makes heavy use of hyperlinks which will allow navigation to relevant sections of this specification and parent specifications.
 
 <div class="new-content" markdown="1">
+
+NOTE: Past versions of this IG included a cross-reference of what HRex and US Core profiles were used in which Da Vinci IGs.  Experience has proven that this list is very difficult to keep current given the release frequency of HRex as compared to other Da Vinci IGs.  We have removed this summary and instead encourage readers to leverage the [FHIR Statistics](https://www.fhir.org/guides/stats2/hl7-profiles-usages-other.html) page.  Search for the canonical of the profile you're interested in seeing the use of, and this index will indicate which artifacts leverage that profile (either pointing to it or deriving from it).
+
 
 ### Dependencies
 This guide is based on the [FHIR R4]({{site.data.fhir.path}}) specification.  In addition, this guide also relies on a number of parent implementation guides:
