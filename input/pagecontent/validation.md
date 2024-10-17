@@ -22,7 +22,7 @@ The reason for this is that FHIR interfaces - particularly RESTful interfaces - 
 
 This also means that exposed instances will typically strive to meet the requirements for all potential consumers and will frequently contain elements, repetitions, and extensions that may not be of interest to all consumers.  Again, the expectation is for clients to extract the data they care about from the instance and ignore the rest.
 
-This also means that there will be manyu profiles (and many versions of those profiles) the instance will comply with - quite possibly including profiles the author of the system had no awareness of at the time the interface was built.  Requiring declaration of all such profiles would be a maintenance nightmare and would impose significant costs on the server.
+This also means that there will be many profiles (and many versions of those profiles) the instance will comply with - quite possibly including profiles the author of the system had no awareness of at the time the interface was built.  Requiring declaration of all such profiles would be a maintenance nightmare and would impose significant costs on the server.
 
 #### Validation strategy
 Because Da Vinci instances will not declare outright what profiles and versions they are believed to be conformant against, it is up to consuming systems to determine for themselves whether the data meets their requirements.  There are two approaches to doing this:
