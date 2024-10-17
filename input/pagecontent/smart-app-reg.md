@@ -34,7 +34,7 @@ Content-Type: application/json
 }
 </pre>
 
-If the Authorization Server returns an error code, then the Authorization Server does not support UDAP Dynamic Client Registration and the Client App **SHOULD** abort this workflow.
+If the Authorization Server returns an error code, then the Authorization Server does not support UDAP Dynamic Client Registration and the Client App **SHALL** abort this workflow.
 
 2\. The Client App prepares a software statement for submission. The software statement serves three purposes: it provides the necessary metadata for registration, it establishes the Client Apps control of a private key, and it provides the digital certificate needed to validate the signature and establish trust.
 
