@@ -1,4 +1,4 @@
-Several Da Vinci guides have a requirement to asynchronously request data that may involve a human collecting, organizing, and/or reviewing data, as described in [Requesting exchange using Task](http://build.fhir.org/exchanging-request.html#task).  This profile shows how Da Vinci uses Task to perform that process, including defining 'standard' codes for the Task and its associated inputs and outputs.
+Several Da Vinci guides have a requirement to asynchronously request data that could involve a human collecting, organizing, and/or reviewing data, as described in [Requesting exchange using Task](http://build.fhir.org/exchanging-request.html#task).  This profile shows how Da Vinci uses Task to perform that process, including defining 'standard' codes for the Task and its associated inputs and outputs.
 
 The Task supports two approaches to data sharing:
 
@@ -9,5 +9,5 @@ The content resulting from the request might be conveyed by reference or contain
 
 When a task is complete but yields no information (empty search results), an empty search-set Bundle will be returned. However, if searching is performed by document code, the result will be a 'failed' status with a statusReason.text indicating that no matching documents existed.
 
-Other Da Vinci IGs may further refine this profile to further refine the request mechanism and/or to constrain the location or permitted content of the returned data.
+Other Da Vinci IGs can further derive from this profile to further refine the request mechanism and/or to constrain the location or permitted content of the returned data.
 

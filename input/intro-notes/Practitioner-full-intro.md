@@ -4,5 +4,5 @@ Notes:
 
 * It would be unusual for *all* the mustSupport identifier types to be present, but it is possible.  And other identifiers might be present as well.
 * Only the provider's family name must be supported - though other parts can certainly be present.
-* Only text is shown for qualifications because that is all that must be supported.  However, if codes are known, they should be sent.
+* Only text is shown for qualifications because that is all that must be supported.  However, if codes are known, they **SHOULD** be sent.
 

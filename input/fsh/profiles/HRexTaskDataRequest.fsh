@@ -54,7 +54,7 @@ Description: "This Task profile is used to solicit information from a system whe
     code 0..1 MS
 * input[query] ^short = "Requested query"
   * ^definition = "Indicates the specific FHIR RESTful query to be executed"
-  * ^comment = "This will contain the text that should go after the '?' when executing the query."
+  * ^comment = "This will contain the text that goes after the '?' when executing the query."
   * type = $hrex-temp#data-query
   * type MS
   * value[x] only string
@@ -62,7 +62,7 @@ Description: "This Task profile is used to solicit information from a system whe
     * ^short = "query value"
 * input[code] ^short = "Requested data code"
   * ^definition = "A code indicating the type of data/document to be returned"
-  * ^comment = "This might be a document code or other code describing the requested information.  If no appropriate standard code exists, local codes may be used between partners, or a human-readable textual description of the desired data can be provided.  Downstream profiles may tighten expectations for this element."
+  * ^comment = "This might be a document code or other code describing the requested information.  If no appropriate standard code exists, local codes can be used between partners, or a human-readable textual description of the desired data can be provided.  Downstream profiles may tighten expectations for this element."
   * type = $hrex-temp#data-code
   * type MS
   * value[x] only CodeableConcept
@@ -80,7 +80,7 @@ Description: "This Task profile is used to solicit information from a system whe
   * value[x] only Reference
   * value[x] MS
     * ^short = "data reference"
-    * ^comment = "The referenced data might be contained within the Task (if it doesn't have/shouldn't have independent persistence), but can also refer to data stored elsewhere - either on the owner's system or some other system.  Note that all returned data SHOULD comply with appropriate US-Core and/or Da Vinci profiles."
+    * ^comment = "The referenced data might be contained within the Task (if it doesn't have/shouldn't have independent persistence), but can also refer to data stored elsewhere - either on the owner's system or some other system.  Note that all returned data **SHOULD** comply with appropriate US-Core and/or Da Vinci profiles."
 
 Invariant: tdr-1
 Description: "Must have exactly one input that is data-query or data-code"

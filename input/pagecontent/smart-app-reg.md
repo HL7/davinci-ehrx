@@ -2,7 +2,7 @@ Member-authorized access to Payer FHIR APIs for other Payers and Third-Party App
 
 The FHIR community has recognized the need to solve the challenge of a more streamlined dynamic registration process. A specification has been developed: [Unified Data Access Profiles - Dynamic Client Registration](http://www.udap.org/udap-dynamic-client-registration.html).
 
-The UDAP Dynamic Client Registration specification **MAY** be followed by Payers wanting to streamline their application registration process. The specification is still in development and testing. It is included here but may be superseded by developments to the specification because of continued testing and pilot implementations.
+The UDAP Dynamic Client Registration specification **MAY** be followed by Payers wanting to streamline their application registration process. The specification is still in development and testing. It is included here but could be superseded by developments to the specification because of continued testing and pilot implementations.
 
 ### UDAP Dynamic Client Registration
 

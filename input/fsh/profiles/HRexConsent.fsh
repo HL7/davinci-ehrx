@@ -43,14 +43,14 @@ Description: "The HRex Consent Profile defines the constraints for representingÂ
       source 1..* MS and
       recipient 1..* MS
   * actor[source] ^short = "Authorized to disclose"
-    * ^comment = "Multiple repetitions are allowed.  At least one repetition SHALL refer to the target payer's organization.  If the consent is bidirectional, then the source system's organization would also be listed."
+    * ^comment = "Multiple repetitions are allowed.  At least one repetition **SHALL** refer to the target payer's organization.  If the consent is bidirectional, then the source system's organization would also be listed."
     * role = $provenance-participant-type#performer
     * role MS
       * ^comment = "This code isn't in the value set, but there's no code that represents the function of 'discloser' or 'performer', so need to go outside the value set.  Multiple "
     * reference only Reference(HRexOrganization)
     * reference MS
   * actor[recipient] ^short = "Authorized to receive information"
-    * ^comment = "Multiple repetitions are allowed.  At least one repetition SHALL refer to the requesting system's organization.  If the consent is bidirectional, then the target payer's organization would also be listed."
+    * ^comment = "Multiple repetitions are allowed.  At least one repetition **SHALL** refer to the requesting system's organization.  If the consent is bidirectional, then the target payer's organization would also be listed."
     * role = $v3-ParticipationType#IRCP
     * role MS
       * ^comment = "...The code chosen doesn't strictly have the desired semantics, but of the ones in the value set it is closest and has the needed level of generality."

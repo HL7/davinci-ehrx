@@ -81,12 +81,12 @@ Usage: #inline
       * lastUpdated = "2018-11-12T03:34:46.552Z"
     * text
       * status = #generated
-      * div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Severe burn of left ear (Date: 24-May 2012)</div>"
+      * div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Severe burn of left ear (Date: 24-June 2012)</div>"
     * clinicalStatus = $condition-clinical#active
     * verificationStatus = $condition-ver-status#confirmed
     * category
       * coding[0] = $condition-category#encounter-diagnosis "Encounter Diagnosis"
       * coding[+] = $sct#359642000 "Type 2 diabetes mellitus in nonobese"
     * subject.reference = "http://example.org/new-payer/fhir/Patient/pat1"
-    * onsetDateTime = "2012-05-24"
+    * onsetDateTime = "2012-06-24"
   * search.mode = #match

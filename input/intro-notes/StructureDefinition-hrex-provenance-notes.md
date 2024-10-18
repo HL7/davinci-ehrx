@@ -1,4 +1,4 @@
-The following guidance applies to the use of Providence across Da Vinci IGs.  IGs may impose additional expectations with respect to the use of Provenance either across their whole use-case or in the context of specific events.
+The following guidance applies to the use of Providence across Da Vinci IGs.  IGs can impose additional expectations with respect to the use of Provenance either across their whole use-case or in the context of specific events.
 
 ### Searching
 
@@ -26,7 +26,7 @@ The following table lists the various agent codes and what resource types are ap
 
 ### Handling agents with multiple roles
 
-In general, the most important role to capture is "author".  If they are the only role present, the presumption is that they are also the enterer, performer, verifier, legal, attester, informant, etc.  Specifying other roles is only necessary if they *differ* from the author.  Not all systems will necessarily track all participants.  Roles other than author only need to be shared if the system captures them and feels they may be relevant to downstream use of the information.
+In general, the most important role to capture is "author".  If they are the only role present, the presumption is that they are also the enterer, performer, verifier, legal, attester, informant, etc.  Specifying other roles is only necessary if they *differ* from the author.  Not all systems will necessarily track all participants.  Roles other than author only need to be shared if the system captures them and feels they might be relevant to downstream use of the information.
 
 ### Populating `onBehalfOf`
 

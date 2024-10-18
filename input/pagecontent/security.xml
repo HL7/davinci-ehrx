@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R4/fhir-single.xsd">
   <p>
-    The following content is intended to apply to all Da Vinci IGs.  IGs derived from HRex <b>SHOULD</b> all reference this section, though they may qualify and supplement the content here as appropriate for the specific technologies they are using, and the threat environment and privacy considerations involved in their specific use case.
+    The following content is intended to apply to all Da Vinci IGs.  IGs derived from HRex <b>SHOULD</b> all reference this section, though they can qualify and supplement the content here as appropriate for the specific technologies they are using, and the threat environment and privacy considerations involved in their specific use case.
   </p>
 
   <a name="principles"> </a>
@@ -52,16 +52,16 @@
   </p>
 </div>
   <ul>
-    <li>The authorization mechanism SHALL be PKI-Mutual TLS (i.e. not self-signed certificates)</li>
+    <li>The authorization mechanism <b>SHALL</b> be PKI-Mutual TLS (i.e. not self-signed certificates)</li>
     <li>Signing options will use URIs, not DNS, IP, email, etc.</li>
-    <li>If mutual TLS is used with OAuth, the OAuth tokens SHALL be bound to the client system's certificate (and are therefore not shareable)</li>
+    <li>If mutual TLS is used with OAuth, the OAuth tokens <b>SHALL</b> be bound to the client system's certificate (and are therefore not shareable)</li>
   </ul>
 	
   <p>Note: There is ongoing work to enhance the capabilities of the above specifications to ensure a more secure exchange that recognizes issues related to fine grain scopes.</p>
 
   <a name="protected"> </a>
 	<h3>Additionally Protected Information</h3>
-  <p>Additionally protected information may include items defined by Federal (e.g. 42 CFR Part 2), State (e.g. many states protect substance abuse disorder, HIV diagnosis/treatment records, release of information on minors – note this is not an exhaustive list) statutes and regulations.  Organizations may also provide additional protection for specific types of information that are deemed sensitive.  The following guidelines apply unless otherwise dictated by statute or regulation:</p>
+  <p>Additionally protected information can include items defined by Federal (e.g. 42 CFR Part 2), State (e.g. many states protect substance abuse disorder, HIV diagnosis/treatment records, release of information on minors – note this is not an exhaustive list) statutes and regulations.  Organizations can also provide additional protection for specific types of information that are deemed sensitive.  The following guidelines apply unless otherwise dictated by statute or regulation:</p>
   <ol>
     <li>Where permitted by law and in accordance with legal requirements, systems <b>SHALL</b> always support release of additionally protected information.</li>
     <li>Implementations <b>SHALL</b> ensure that release of the information without explicit request of the patient/member is based on organization policy consistent with Federal and State regulations. Examples are legal requests for information and "break glass" to treat a patient that is unable to provide consent.</li>
@@ -108,8 +108,8 @@
   <br/>
   <p>In all cases, the Information Supplier systems (in accordance with HIPAA security and privacy rules):</p>
   <ol>
-    <li>SHALL log all IDs, access rights, requests, and exchanges.</li>
-    <li>SHALL verify rights of the requestor to have access to the member’s/patient’s record.</li>
+    <li><b>SHALL</b> log all IDs, access rights, requests, and exchanges.</li>
+    <li><b>SHALL</b> verify rights of the requestor to have access to the member’s/patient’s record.</li>
   </ol>
   <table border="1" width="80%" style="margin-left:auto; margin-right:auto">
     <thead>
