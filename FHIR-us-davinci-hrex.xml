@@ -88,7 +88,7 @@
 <page deprecated="true" key="goodpractice" name="IG Practices"/>
 <page key="validation" name="Managing Instance Validation"/>
 <page key="credits" name="Participants and Credits"/>
-<page key="profiles" name="Profile overview"/>
+<page deprecated="true" key="profiles" name="Profile overview"/>
 <page key="searchparameters" name="Search Parameters overview"/>
 <page key="security" name="Security and Privacy"/>
 <page key="toc" name="Table of Contents"/>

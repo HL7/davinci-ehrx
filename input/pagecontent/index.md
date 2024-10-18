@@ -1,9 +1,3 @@
-  <blockquote class="note-to-balloters">
-    <p>
-      This IG has undergone a number of changes to support the needs of the different Da Vinci IGs that use it.  The most significant is support for USCDI v3, though there are a number
-      of other significant changes as well.  Please refer to the <a href="history.html">History</a> page for a detailed list of substantive changes.
-    </p>
-  </blockquote>
   
 ### Introduction
 

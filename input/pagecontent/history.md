@@ -2,8 +2,13 @@
 
 ### STU 1.1
 
-* FHIR-???? - Added support for US-Core 7.0.0
+* [FHIR-48672](https://jira.hl7.org/browse/FHIR-48672) - Added support for US Core 7.0 as well as 6.1
+* [FHIR-48414](https://jira.hl7.org/browse/FHIR-48414) - Clarified that EHRs weren't required to move forward US Core 6.1/7.0 adoption to comply with the guide
+* [FHIR-48440](https://jira.hl7.org/browse/FHIR-48440) - Added extension to allow conveying davinci wellknown file in Coverage, and added support for payer identifier in file
+* [FHIR-46678](https://jira.hl7.org/browse/FHIR-46678) - Added a CDex endpoint to the endpoint discovery list
+* [FHIR-47996](https://jira.hl7.org/browse/FHIR-47996) - Removed the details of the SMART app dynamic registration section and pointed to the FAST security guide instead
 
+A variety of technical correction and non-substantive improvements to wording and artifacts.
 
 
 ### STU 1.1 - ballot

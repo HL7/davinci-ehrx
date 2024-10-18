@@ -6,6 +6,6 @@
   "status" : "ballot",
   "mode" : "working",
   "sequence" : "STU 1.1",
-  "desc" : "STU 1.1.0 Ballot version",
-  "descmd" : "STU 1.1.0 STU ballot with US Core 6.1.  See [list of changes](http://hl7.org/fhir/us/davinci-hrex/2024Sep/history.html#1.1.0)"
+  "desc" : "STU 1.1.0 Release",
+  "descmd" : "STU 1.1.0 STU release with US Core 3.1, 6.1, and 7.0.  See [list of changes](http://hl7.org/fhir/us/davinci-hrex/2024Sep/history.html#1.1.0)"
 }

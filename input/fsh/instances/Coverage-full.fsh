@@ -4,6 +4,7 @@ Title: "HRex Coverage full example"
 Description: "An example showing a fully populated HRex Coverage instance"
 Usage: #example
 * id = "full"
+* extension[CoverageDavinciWellknownLocation].valueUri = "http://somepayer.org/.well-known/davinci-configuration"
 * identifier
   * type = $v2-0203#MB
   * system = "http://example.org/new-payer/identifiers/coverage"

@@ -5,7 +5,7 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: davinci-hrex
 canonical: http://hl7.org/fhir/us/davinci-hrex
-version: 1.1.0-cibuild
+version: 1.1.0
 name: DaVinciHealthRecordExchangeHRex
 title: Da Vinci Health Record Exchange (HRex)
 status: active
@@ -27,10 +27,12 @@ parameters:
   apply-contact: true
   globals-in-artifacts: true
   auto-oid-root: 2.16.840.1.113883.4.642.40.19
-  version-comparison: 1.0.0
+  version-comparison: 
+    - 1.0.0
+    - 1.1.0-ballot
   shownav: true
 copyrightYear: 2019+
-releaseLabel: STU 1.1 post-ballot build
+releaseLabel: STU 1.1
 extension:
   - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
     valueCode: "trial-use"
@@ -162,11 +164,6 @@ pages:
     extension:
       - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
         valueCode: "trial-use"
-  profiles.html:
-    title: Profile overview
-    extension:
-      - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
-        valueCode: "informative"
   searchparameters.md:
     title: Search Parameters overview
     extension:
