@@ -13,7 +13,7 @@ Usage: #example
   * who = Reference(Organization/full)
 * agent[+]
   * type = $provenance-participant-type#author
-  * who = Reference(Practitioner/full)
+  * who = Reference(http://example.org/new-payer/fhir/Practitioner/pract1)
   * onBehalfOf = Reference(Organization/full)
 * signature[0]
   * type = urn:iso-astm:E1762-95:2013#1.2.840.10065.1.12.1.1

@@ -32,10 +32,10 @@ Description: "This Task profile is used to solicit information from a system whe
   * ^comment = "Queries must always be in the scope of a single member"
 * authoredOn 1.. MS
 * requester 1.. MS
-* requester only Reference(HRexOrganization or HRexPractitioner)
+* requester only Reference(HRexOrganization or USCorePractitionerProfile)
   * ^short = "Who is asking for data"
 * owner 1.. MS
-* owner only Reference(HRexOrganization or HRexPractitioner)
+* owner only Reference(HRexOrganization or USCorePractitionerProfile)
   * ^short = "Who is being asked for data"
 * reasonCode MS
   * ^comment = "Only text is expected, though codes can be used for partners with agreed value sets"

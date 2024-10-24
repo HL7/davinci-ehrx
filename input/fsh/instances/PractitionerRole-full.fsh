@@ -4,7 +4,7 @@ Title: "HRex PractitionerRole full example"
 Description: "An example showing a fully populated HRex PractitionerRole instance"
 Usage: #example
 * id = "full"
-* practitioner = Reference(Practitioner/full)
+* practitioner = Reference(http://example.org/new-payer/fhir/Practitioner/pract1)
 * organization = Reference(Organization/full)
 * code[0]
   * coding[0] = $provider-taxonomy#111N00000X

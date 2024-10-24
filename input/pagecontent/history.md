@@ -7,6 +7,7 @@
 * [FHIR-48440](https://jira.hl7.org/browse/FHIR-48440) - Added extension to allow conveying davinci wellknown file in Coverage, and added support for payer identifier in file
 * [FHIR-46678](https://jira.hl7.org/browse/FHIR-46678) - Added a CDex endpoint to the endpoint discovery list
 * [FHIR-47996](https://jira.hl7.org/browse/FHIR-47996) - Removed the details of the SMART app dynamic registration section and pointed to the FAST security guide instead
+* [FHIR-48302](https://jira.hl7.org/browse/FHIR-48302) - Dropped the Practitioner profile
 
 A variety of technical correction and non-substantive improvements to wording and artifacts.
 

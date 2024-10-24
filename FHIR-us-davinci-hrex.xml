@@ -38,9 +38,9 @@
 <artifact id="Organization/min" key="Organization-min" name="HRex Organization minimal example"/>
 <artifact id="StructureDefinition/hrex-parameters-member-match-in" key="StructureDefinition-hrex-parameters-member-match-in" name="HRex Parameters - Member Match Request Profile"/>
 <artifact id="StructureDefinition/hrex-parameters-member-match-out" key="StructureDefinition-hrex-parameters-member-match-out" name="HRex Parameters - Member Match Response Profile"/>
-<artifact id="StructureDefinition/hrex-practitioner" key="StructureDefinition-hrex-practitioner" name="HRex Practitioner Profile"/>
-<artifact id="Practitioner/full" key="Practitioner-full" name="HRex Practitioner full example"/>
-<artifact id="Practitioner/min" key="Practitioner-min" name="HRex Practitioner minimal example"/>
+<artifact deprecated="true" id="StructureDefinition/hrex-practitioner" key="StructureDefinition-hrex-practitioner" name="HRex Practitioner Profile"/>
+<artifact deprecated="true" id="Practitioner/full" key="Practitioner-full" name="HRex Practitioner full example"/>
+<artifact deprecated="true" id="Practitioner/min" key="Practitioner-min" name="HRex Practitioner minimal example"/>
 <artifact id="StructureDefinition/hrex-practitionerrole" key="StructureDefinition-hrex-practitionerrole" name="HRex PractitionerRole Profile"/>
 <artifact id="PractitionerRole/full" key="PractitionerRole-full" name="HRex PractitionerRole full example"/>
 <artifact id="PractitionerRole/min" key="PractitionerRole-min" name="HRex PractitionerRole min example"/>

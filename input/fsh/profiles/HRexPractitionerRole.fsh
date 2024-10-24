@@ -16,7 +16,7 @@ Description: "Constraints on the US Core PractitionerRole requiring the use of D
   * ^binding.extension.extension[+].url = "valueSet"
   * ^binding.extension.extension[=].valueCanonical = "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role|3.1.0"
 * practitioner 1..
-* practitioner only Reference(HRexPractitioner)
+* practitioner only Reference(USCorePractitionerProfile)
 * organization 1..
 * organization only Reference(HRexOrganization)
 

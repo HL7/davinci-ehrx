@@ -24,7 +24,7 @@ Usage: #example
       * start = "2005-05-02"
       * end = "2005-06-02"
   * extension[PreAuthIssueDate].valueDate = "2005-05-02"
-  * extension[AuthorizedProvider].valueReference = Reference(Practitioner/full)
+  * extension[AuthorizedProvider].valueReference = Reference(http://example.org/ehr/fhir/Practitioner/pract1)
   * extension[ItemTraceNumber]
     * valueIdentifier
       * system = "http://example.org/new-payer/fhir/NamingSystem/auth-numbers"

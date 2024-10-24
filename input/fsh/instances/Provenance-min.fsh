@@ -8,5 +8,5 @@ Usage: #example
 * recorded = "2020-07-30T20:07:15-06:00"
 * agent
   * type = $provenance-participant-type#author
-  * who = Reference(Practitioner/min)
+  * who = Reference(http://example.org/new-payer/fhir/Practitioner/pract1)
   * onBehalfOf = Reference(Organization/full)
