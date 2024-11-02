@@ -8,7 +8,7 @@
 %binds to the value set 'http://hl7.org/fhir/ValueSet/consent-content-code' which is experimental, but this structure is not labeled as experimental
 
 # Not much we can do about the number of codes
-The concept map has too many codes to validate (1,028)
+The concept map has too many codes to validate (1,123)
 
 # There is no location in the IG where it makes sense to use this profile.  It's created for downstream IGs.  The definition is sufficiently simple that there's no possibility of errors in the construction.
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-reference-id'): The Implementation Guide contains no examples for this data type profile

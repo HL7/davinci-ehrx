@@ -29,6 +29,10 @@ RuleSet: mapnarrow(sourceCode, sourceDisplay, targetCode, targetDisplay, comment
 * insert map({sourceCode}, [[{sourceDisplay}]], #narrower, {targetCode}, [[{targetDisplay}]])
 * element[=].target.comment = "{comment}"
 
+RuleSet: maprelated(sourceCode, sourceDisplay, targetCode, targetDisplay, comment)
+* insert map({sourceCode}, [[{sourceDisplay}]], #relatedto, {targetCode}, [[{targetDisplay}]])
+* element[=].target.comment = "{comment}"
+
 RuleSet: mapwide(sourceCode, sourceDisplay, targetCode, targetDisplay)
 * insert map({sourceCode}, [[{sourceDisplay}]], #wider, {targetCode}, [[{targetDisplay}]])
 
