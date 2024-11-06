@@ -1,5 +1,3 @@
-<div class="new-content" markdown="1">
-
 This portion of the specification addresses two issues:
 
 1. There are many endpoints that EHRs (and other payers) need to know in order to support the various Da Vinci interoperability specifications.  For example, the location for CDS Hooks services for CRD, the location to call the $questionnaire-package operation for DTR, the location of repositories to query for PDex, etc.
@@ -31,5 +29,3 @@ The bulk of the possible endpoints whose locations can be defined are shown in [
 Because not all systems who might be interested in the .well-known endpoints will typically perform (or be able to perform) eligibility checks, the .well-known file location can be stored in the Coverage resource using the [Wellknown Location extension](StructureDefinition-extension-CoverageDavinciWellknownLocation.html).  From there, it can be exposed to downstream systems (SMART apps, etc.)
 
 Endpoints will generally be stable, but it is at least theoretically possible for an endpoint to change between when a provider performs the initial eligibility check and when they hit that endpoint.  In situations where an endpoint turns out to not be functional, client systems **MAY** choose to re-query the .well-known endpoint and/or to re-run the eligibility check to see if the end point has changed.
-
-</div>

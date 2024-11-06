@@ -34,7 +34,6 @@
 	
   <a name="exchange"> </a>
 	<h3>Exchange Security</h3>
-<div class="modified-content" markdown="1">
 	<ol>
 		<li>When exchanging Protected Health Information (PHI) between entities, the exchange <b>SHOULD</b>  use the current version and <b>SHALL</b> use either current or the immediately prior release of <a href="https://tools.ietf.org/html/rfc8446">Transport Level Security (TLS)</a> as specified by the current release of <a href="https://csrc.nist.gov/publications/detail/sp/800-52/rev-2/final">National Institute of Standards and Technology (NIST) guidelines (SP 800-52)</a>.  TLS is to be implemented as per <a href="https://datatracker.ietf.org/doc/html/rfc8705">RFC8705</a>.</li>
 		<li>When the identity of the requesting or receiving party is important, implementations <b>SHOULD</b> use one or more of the following as defined in the specific Da Vinci IG:
@@ -50,7 +49,6 @@
   <p>
     When mutual TLS is used, it <b>SHALL</b> be done in accordance with <a href="https://datatracker.ietf.org/doc/html/rfc8705">RFC8705</a>.  There are certain constraints on this RFC that apply across all Da Vinci IGs: 
   </p>
-</div>
   <ul>
     <li>The authorization mechanism <b>SHALL</b> be PKI-Mutual TLS (i.e. not self-signed certificates)</li>
     <li>Signing options will use URIs, not DNS, IP, email, etc.</li>

@@ -1,5 +1,3 @@
-<div class="new-content" markdown="1">
-
 ### STU 1.1
 
 * [FHIR-48672](https://jira.hl7.org/browse/FHIR-48672) - Added support for US Core 7.0 as well as 6.1
@@ -52,4 +50,3 @@ Also, see the [comparison](comparison-v1.0.0/index.html) between this release an
 ### STU 1.0
 
 Initial 'official' release
-</div>

@@ -47,7 +47,7 @@
   POSSIBILITY OF SUCH DAMAGE.
   
 
-  Generated on Sat, Nov 2, 2024 06:09+0000 for FHIR v6.0.0-ballot2 
+  Generated on Wed, Nov 6, 2024 17:27+0000 for FHIR v6.0.0-ballot2 
 -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" targetNamespace="http://hl7.org/fhir" elementFormDefault="qualified" version="6.0.0-ballot2">
   <!-- Note: When using this schema with some tools, it may also be necessary to declare xmlns:xml="http://www.w3.org/XML/1998/namespace", however this causes performance issues with other tools and thus is not in the base schemas. -->
@@ -31999,9 +31999,9 @@ RegisteredName | UserFriendlyName | PatientReportedName.</xs:documentation>
               <xs:documentation xml:lang="en">Concise and clinically contextualized summary conclusion (interpretation/impression) of the diagnostic report.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="conclusionCode" minOccurs="0" maxOccurs="unbounded" type="CodeableConcept">
+          <xs:element name="conclusionCode" minOccurs="0" maxOccurs="unbounded" type="CodeableReference">
             <xs:annotation>
-              <xs:documentation xml:lang="en">One or more codes that represent the summary conclusion (interpretation/impression) of the diagnostic report.</xs:documentation>
+              <xs:documentation xml:lang="en">One or more codes and/or references that represent the summary conclusion (interpretation/impression) of the diagnostic report.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="recomendation" minOccurs="0" maxOccurs="unbounded" type="CodeableReference">
@@ -51215,6 +51215,11 @@ Reflex | Repeat | Re-run.</xs:documentation>
           <xs:documentation xml:lang="en">Unknown</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
+      <xs:enumeration value="cannot-be-obtained">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Cannot be obtained</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
     </xs:restriction>
   </xs:simpleType>
   <xs:complexType name="ObservationStatus">
@@ -62894,12 +62899,12 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
   </xs:complexType>
   <xs:element name="Task" type="Task">
     <xs:annotation>
-      <xs:documentation xml:lang="en">A task to be performed as a part of a workflow and the related informations like inputs, outputs and execution progress. While very simple workflows can be implemented with Request alone, most workflows would require a Task (explicit or contained) as a means to track the execution data (i.e. inputs, outputs, status). Please refer to the workflow page for more details.</xs:documentation>
+      <xs:documentation xml:lang="en">A task to be performed as a part of a workflow and the related informations like inputs, outputs and execution progress. While very simple workflows can be implemented with [[[Request]]] alone, most workflows would require a Task (explicit or contained) as a means to track the execution progress (i.e. inputs, outputs, status). Please refer to [Fulfillment/Execution](request.html#fulfillment).</xs:documentation>
     </xs:annotation>
   </xs:element>
   <xs:complexType name="Task">
     <xs:annotation>
-      <xs:documentation xml:lang="en">A task to be performed as a part of a workflow and the related informations like inputs, outputs and execution progress. While very simple workflows can be implemented with Request alone, most workflows would require a Task (explicit or contained) as a means to track the execution data (i.e. inputs, outputs, status). Please refer to the workflow page for more details.</xs:documentation>
+      <xs:documentation xml:lang="en">A task to be performed as a part of a workflow and the related informations like inputs, outputs and execution progress. While very simple workflows can be implemented with [[[Request]]] alone, most workflows would require a Task (explicit or contained) as a means to track the execution progress (i.e. inputs, outputs, status). Please refer to [Fulfillment/Execution](request.html#fulfillment).</xs:documentation>
       <xs:documentation xml:lang="en">If the element is present, it must have either a @value, an @id, or extensions</xs:documentation>
     </xs:annotation>
     <xs:complexContent>
@@ -63047,7 +63052,7 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
           </xs:element>
           <xs:element name="note" minOccurs="0" maxOccurs="unbounded" type="Annotation">
             <xs:annotation>
-              <xs:documentation xml:lang="en">Free-text information captured about the task as it progresses.</xs:documentation>
+              <xs:documentation xml:lang="en">Free-text information about the task during its lifecycle.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="relevantHistory" minOccurs="0" maxOccurs="unbounded" type="Reference">
@@ -63076,7 +63081,7 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
   </xs:complexType>
   <xs:complexType name="Task.Performer">
     <xs:annotation>
-      <xs:documentation xml:lang="en">A task to be performed as a part of a workflow and the related informations like inputs, outputs and execution progress. While very simple workflows can be implemented with Request alone, most workflows would require a Task (explicit or contained) as a means to track the execution data (i.e. inputs, outputs, status). Please refer to the workflow page for more details.</xs:documentation>
+      <xs:documentation xml:lang="en">A task to be performed as a part of a workflow and the related informations like inputs, outputs and execution progress. While very simple workflows can be implemented with [[[Request]]] alone, most workflows would require a Task (explicit or contained) as a means to track the execution progress (i.e. inputs, outputs, status). Please refer to [Fulfillment/Execution](request.html#fulfillment).</xs:documentation>
     </xs:annotation>
     <xs:complexContent>
       <xs:extension base="BackboneElement">
@@ -63097,7 +63102,7 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
   </xs:complexType>
   <xs:complexType name="Task.Restriction">
     <xs:annotation>
-      <xs:documentation xml:lang="en">A task to be performed as a part of a workflow and the related informations like inputs, outputs and execution progress. While very simple workflows can be implemented with Request alone, most workflows would require a Task (explicit or contained) as a means to track the execution data (i.e. inputs, outputs, status). Please refer to the workflow page for more details.</xs:documentation>
+      <xs:documentation xml:lang="en">A task to be performed as a part of a workflow and the related informations like inputs, outputs and execution progress. While very simple workflows can be implemented with [[[Request]]] alone, most workflows would require a Task (explicit or contained) as a means to track the execution progress (i.e. inputs, outputs, status). Please refer to [Fulfillment/Execution](request.html#fulfillment).</xs:documentation>
     </xs:annotation>
     <xs:complexContent>
       <xs:extension base="BackboneElement">
@@ -63123,14 +63128,14 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
   </xs:complexType>
   <xs:complexType name="Task.Input">
     <xs:annotation>
-      <xs:documentation xml:lang="en">A task to be performed as a part of a workflow and the related informations like inputs, outputs and execution progress. While very simple workflows can be implemented with Request alone, most workflows would require a Task (explicit or contained) as a means to track the execution data (i.e. inputs, outputs, status). Please refer to the workflow page for more details.</xs:documentation>
+      <xs:documentation xml:lang="en">A task to be performed as a part of a workflow and the related informations like inputs, outputs and execution progress. While very simple workflows can be implemented with [[[Request]]] alone, most workflows would require a Task (explicit or contained) as a means to track the execution progress (i.e. inputs, outputs, status). Please refer to [Fulfillment/Execution](request.html#fulfillment).</xs:documentation>
     </xs:annotation>
     <xs:complexContent>
       <xs:extension base="BackboneElement">
         <xs:sequence>
           <xs:element name="type" minOccurs="1" maxOccurs="1" type="CodeableConcept">
             <xs:annotation>
-              <xs:documentation xml:lang="en">A code or description indicating how the input is intended to be used as part of the task execution.</xs:documentation>
+              <xs:documentation xml:lang="en">A code or description to distinguish between inputs.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:choice minOccurs="1" maxOccurs="1" >
@@ -63198,14 +63203,14 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
   </xs:complexType>
   <xs:complexType name="Task.Output">
     <xs:annotation>
-      <xs:documentation xml:lang="en">A task to be performed as a part of a workflow and the related informations like inputs, outputs and execution progress. While very simple workflows can be implemented with Request alone, most workflows would require a Task (explicit or contained) as a means to track the execution data (i.e. inputs, outputs, status). Please refer to the workflow page for more details.</xs:documentation>
+      <xs:documentation xml:lang="en">A task to be performed as a part of a workflow and the related informations like inputs, outputs and execution progress. While very simple workflows can be implemented with [[[Request]]] alone, most workflows would require a Task (explicit or contained) as a means to track the execution progress (i.e. inputs, outputs, status). Please refer to [Fulfillment/Execution](request.html#fulfillment).</xs:documentation>
     </xs:annotation>
     <xs:complexContent>
       <xs:extension base="BackboneElement">
         <xs:sequence>
           <xs:element name="type" minOccurs="1" maxOccurs="1" type="CodeableConcept">
             <xs:annotation>
-              <xs:documentation xml:lang="en">The name of the Output parameter.</xs:documentation>
+              <xs:documentation xml:lang="en">A code or description to distinguish between outputs.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:choice minOccurs="1" maxOccurs="1" >

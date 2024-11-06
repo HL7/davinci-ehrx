@@ -15,11 +15,9 @@ Key content from the FHIR core specification:
 * [JSON]({{site.data.fhir.path}}fhir.schema.json.zip) and [XML]({{site.data.fhir.path}}fhir-all-xsd.zip) schemas for validation
 
 Content from US Core:
-<div class="modified-content" markdown="1">
 
 * The [3.1.1 validator package]({{site.data.fhir.ver.uscore3}}/package.tgz) for use with the [FHIR validator](tools.html)
 * The [6.1.0 validator package]({{site.data.fhir.ver.uscore6}}/package.tgz) for use with the [FHIR validator](tools.html)
 * The [7.0.0 validator package]({{site.data.fhir.ver.uscore7}}/package.tgz) for use with the [FHIR validator](tools.html)
 
 {% include cross-version-analysis-inline.xhtml %}
-</div>

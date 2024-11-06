@@ -17,14 +17,9 @@ Matching behavior is:
 * A maximum of a SINGLE unique match **SHALL** be returned.
 * No match **SHALL** return a 422 status code.
 * Multiple matches **SHALL** return a 422 status code.
-
-<div class="new-content" markdown="1">
-
 * If consent is provided, inability to comply with consent requirements **SHALL** return a 422 status code
 
 Any 422 response codes **SHOULD** be accompanied by an [OperationOutcome]({{site.data.fhir.path}}operationoutcome.html) that indicates the specific nature of the failure.
-
-</div>
 
 An important objective of this specification is to ensure that a health plan operating a $member-match operation has sufficient data provided to enable a match operation to be performed.  Therefore, the specification requires a health plan to provide demographic information (name, date of birth, gender) and identification details that would be present on a member's health plan insurance card with a request.
 
