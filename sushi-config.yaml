@@ -78,29 +78,6 @@ dependencies:
     id: uscore3
     reason: |
       Needed for systems supporting USCDI v1
-#  hl7.fhir.uv.tools:
-#    version: 0.2.0-snapshot
-#    uri: http://hl7.org/fhir/tools/ImplementationGuide/hl7.fhir.uv.tools
-#    id: tools
-#    reason: |
-#      Allows use of additional binding capabilities
-  hl7.fhir.extensions.r5:
-    version: 4.0.1
-    id: r4ext
-    reason: |
-      Allows interversion extensions from R5 for profiling
-#  hl7.fhir.us.udap-security:
-#    version: 0.1.0
-#    uri: http://hl7.org/fhir/us/udap-security/ImplementationGuide/hl7.fhir.us.udap-security
-#    id: udap
-#  hl7.terminology.r4:
-#    version: 5.0.0
-#    uri: http://terminology.hl7.org/ImplementationGuide/hl7.terminology
-#    id: hl7tx
-  hl7.fhir.uv.extensions:
-    version: 5.1.0
-    uri: http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions
-    id: ext
   us.nlm.vsac:
     id: vsac
     uri: 'http://fhir.org/packages/us.nlm.vsac/ImplementationGuide/us.nlm.vsac'
