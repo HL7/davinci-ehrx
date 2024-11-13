@@ -1,5 +1,9 @@
 == Suppressed Messages ==
 
+# These are inherited from US Core
+WARNING: StructureDefinition/hrex-organization: StructureDefinition.snapshot.element[9].slicing.discriminator[0]: The discriminator type 'pattern' has been deprecated. Use type=fixed with a pattern[x] instead
+WARNING: StructureDefinition/hrex-provenance: StructureDefinition.snapshot.element[22].slicing.discriminator[0]: The discriminator type 'pattern' has been deprecated. Use type=fixed with a pattern[x] instead
+
 # This is an issue with the underlying R5 terminology and should be addressed via a system-wide update
 Reference to deprecated ValueSet http://hl7.org/fhir/5.0/ValueSet/jurisdiction|5.0.0
 
