@@ -18,7 +18,6 @@ v: {
   "system" : "urn:iso:std:iso:3166",
   "version" : "2018",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -42,7 +41,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -66,7 +64,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -90,7 +87,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -114,7 +110,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -138,7 +133,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -162,7 +156,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -186,7 +179,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -210,7 +202,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -234,7 +225,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -258,7 +248,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -282,7 +271,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -306,7 +294,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -330,7 +317,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -354,7 +340,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -378,7 +363,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -402,7 +386,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -426,7 +409,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -450,7 +432,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -474,7 +455,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -498,7 +478,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -522,7 +501,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -546,7 +524,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -570,7 +547,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -594,7 +570,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -618,7 +593,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -642,7 +616,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -666,7 +639,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -690,7 +662,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -714,7 +685,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -738,7 +708,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -762,7 +731,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -786,7 +754,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -810,7 +777,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -834,7 +800,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -858,7 +823,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -882,7 +846,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -906,7 +869,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -930,7 +892,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -954,7 +915,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -978,7 +938,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1002,7 +961,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1026,7 +984,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1050,7 +1007,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1074,7 +1030,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1098,7 +1053,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1122,7 +1076,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1146,7 +1099,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1170,7 +1122,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1194,7 +1145,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1218,7 +1168,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1242,7 +1191,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1266,7 +1214,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1290,7 +1237,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1314,7 +1260,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1338,7 +1283,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1362,7 +1306,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1386,7 +1329,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1410,7 +1352,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1434,7 +1375,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1458,7 +1398,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1482,7 +1421,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1506,7 +1444,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1530,7 +1467,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1554,7 +1490,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1578,7 +1513,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1602,7 +1536,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1626,7 +1559,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1650,7 +1582,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1674,7 +1605,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1698,7 +1628,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1722,7 +1651,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1746,7 +1674,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1770,7 +1697,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1794,7 +1720,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1818,7 +1743,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1842,7 +1766,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1866,7 +1789,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1890,7 +1812,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1914,7 +1835,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1938,7 +1858,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1962,7 +1881,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1986,7 +1904,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2010,7 +1927,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2034,7 +1950,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2058,7 +1973,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2082,7 +1996,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2106,7 +2019,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2130,7 +2042,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2154,7 +2065,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2178,7 +2088,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2202,7 +2111,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2226,7 +2134,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2250,7 +2157,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2274,7 +2180,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2298,7 +2203,6 @@ v: {
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/731000124108/version/20240901",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2327,7 +2231,6 @@ v: {
   "code" : "text/plain",
   "system" : "urn:ietf:bcp:13",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2349,7 +2252,6 @@ v: {
   "code" : "text/plain",
   "system" : "urn:ietf:bcp:13",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2371,7 +2273,6 @@ v: {
   "code" : "en-US",
   "system" : "urn:ietf:bcp:47",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2400,7 +2301,6 @@ v: {
   "code" : "MA",
   "system" : "https://www.usps.com/",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2422,7 +2322,6 @@ v: {
   "code" : "MA",
   "system" : "https://www.usps.com/",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2454,7 +2353,6 @@ v: {
   "severity" : "warning",
   "error" : "The provided code 'http://nucc.org/provider-taxonomy#111N00000X' was not found in the value set 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1099.30|20240605'",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome",
   "issue" : [{
@@ -2503,7 +2401,6 @@ v: {
   "severity" : "warning",
   "error" : "The provided code 'http://nucc.org/provider-taxonomy#122300000X' was not found in the value set 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1099.30|20240605'",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome",
   "issue" : [{
@@ -2546,9 +2443,53 @@ v: {
   "system" : "urn:iso:std:iso:3166",
   "version" : "2018",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "urn:iso:std:iso:3166",
+    "code" : "US"
+  }]
+}, "url": "http://hl7.org/fhir/5.0/ValueSet/jurisdiction", "version": "5.0.0", "langs":"en-CA", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "id" : "terminology-settings",
+  "parameter" : [{
+    "name" : "system-version",
+    "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/731000124108"
+  }]
+}}####
+v: {
+  "display" : "United States of America",
+  "code" : "US",
+  "system" : "urn:iso:std:iso:3166",
+  "version" : "2018",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome",
+  "issue" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+      "valueString" : "MSG_DEPRECATED"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "http://tx.fhir.org/r4"
+    }],
+    "severity" : "information",
+    "code" : "business-rule",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "status-check"
+      }],
+      "text" : "Reference to deprecated ValueSet http://hl7.org/fhir/5.0/ValueSet/jurisdiction|5.0.0"
+    }
+  }]
 }
 
 }

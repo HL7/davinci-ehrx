@@ -1,5 +1,11 @@
 == Suppressed Messages ==
 
+# This will require a change to SUSHI to address
+The discriminator type 'pattern' has been deprecated. Use type=fixed with a pattern[x] instead
+
+# This is an issue with the underlying R5 terminology and should be addressed via a system-wide update
+Reference to deprecated ValueSet http://hl7.org/fhir/5.0/ValueSet/jurisdiction|5.0.0
+
 # This is an issue in the core spec
 %binds to the value set 'http://hl7.org/fhir/ValueSet/payeetype' which is experimental, but this structure is not labeled as experimental
 %binds to the value set 'http://hl7.org/fhir/ValueSet/fundsreserve' which is experimental, but this structure is not labeled as experimental
