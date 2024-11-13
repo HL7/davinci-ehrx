@@ -46,7 +46,7 @@ Description: "This Task profile is used to solicit information from a system whe
   * ^comment = "Likely targets would be HRex Coverage, PCDE Claim (for prior authorization) or a bare Claim resource for referencing an actual Claim."
   * ^requirements = "Indicates why the information request is occurring"
 * input 1.. MS
-  * ^slicing.discriminator.type = #pattern
+  * ^slicing.discriminator.type = #value
   * ^slicing.discriminator.path = "type"
   * ^slicing.rules = #open
 * input contains
@@ -69,7 +69,7 @@ Description: "This Task profile is used to solicit information from a system whe
   * value[x] MS
     * ^short = "query value"
 * output MS
-  * ^slicing.discriminator.type = #pattern
+  * ^slicing.discriminator.type = #value
   * ^slicing.discriminator.path = "type"
   * ^slicing.rules = #open
 * output contains data 0..* MS

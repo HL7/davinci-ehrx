@@ -12,7 +12,7 @@ Description: "The HRex Consent Profile defines the constraints for representingÂ
 * status MS
 * scope = $consentscope#patient-privacy
 * scope MS
-* category ^slicing.discriminator.type = #pattern
+* category ^slicing.discriminator.type = #value
   * ^slicing.discriminator.path = "$this"
   * ^slicing.rules = #open
 * category contains disclosure 1..1 MS
@@ -36,7 +36,7 @@ Description: "The HRex Consent Profile defines the constraints for representingÂ
   * period 1.. MS
     * start 1.. MS
     * end 1.. MS
-  * actor ^slicing.discriminator.type = #pattern
+  * actor ^slicing.discriminator.type = #value
     * ^slicing.discriminator.path = "role"
     * ^slicing.rules = #open
   * actor contains

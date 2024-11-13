@@ -11,7 +11,7 @@ Description: "Defines constraints on the patient resource for transmission of mi
 * . ^definition = "HRex Patient Demographics Profile is tailored to support the majority of use cases requiring either gender or birthSex extension. For particular use cases that does not require either elements, creating a new profile derived from the base Patient resource is recommended (ensuring it’s adjusted to specific needs and constraints)."
   * ^mustSupport = false
 * extension contains $us-core-birthsex named us-core-birthSex 0..1 MS
-* identifier ^slicing.discriminator.type = #pattern
+* identifier ^slicing.discriminator.type = #value
   * ^slicing.discriminator.path = "$this"
   * ^slicing.rules = #open
 * identifier contains umb 0..1 MS

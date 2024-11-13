@@ -50,7 +50,7 @@ Description: "The HRex Coverage Profile defines the constraints for representing
 * payor only Reference(HRexOrganization)
   * ^comment = "... When sending payer, it might either be a reference to a record stored on a mutually accessible registry, or the Reference.display and Reference.identifier elements can be used to convey the payer's name and identifer."
   * ^requirements = "... In Da Vinci, we're only concerned with insurance coverage.  Because self-pay is not relevant, this is limited to organizations only"
-* class ^slicing.discriminator.type = #pattern
+* class ^slicing.discriminator.type = #value
   * ^slicing.discriminator.path = "type"
   * ^slicing.rules = #open
 // Class overall isn't MS
