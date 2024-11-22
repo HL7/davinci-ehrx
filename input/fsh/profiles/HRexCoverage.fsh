@@ -28,7 +28,7 @@ Description: "The HRex Coverage Profile defines the constraints for representing
   * ^binding.description = "US Public Health Data Consortium Source of Payment Codes"
 // Todo: constrain & extend type
 * policyHolder MS
-* policyHolder only Reference(USCorePatientProfile|6.1.0 or HRexOrganization or USCoreRelatedPersonProfile|6.1.0)
+* policyHolder only Reference(USCorePatientProfile|7.0.0 or HRexOrganization or USCoreRelatedPersonProfile|7.0.0)
   * ^comment = "When the Coverage pertains to organizations such as Children and Family Services, `policyHolder` should reference Organization (or another suitable entity) representing them. It acts as the holder of the policy and is responsible for the management and oversight of the coverage."
 // Added policyholder
 * subscriberId MS

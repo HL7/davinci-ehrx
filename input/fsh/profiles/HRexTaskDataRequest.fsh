@@ -27,7 +27,7 @@ Description: "This Task profile is used to solicit information from a system whe
 * focus 0..0
   * ^short = "What task is acting on"
 * for 1.. MS
-* for only Reference(USCorePatientProfile|6.1.0)
+* for only Reference(USCorePatientProfile|7.0.0)
   * ^short = "Member being queried"
   * ^comment = "Queries must always be in the scope of a single member"
 * authoredOn 1.. MS

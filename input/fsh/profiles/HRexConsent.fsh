@@ -18,9 +18,9 @@ Description: "The HRex Consent Profile defines the constraints for representingÂ
 * category contains disclosure 1..1 MS
 * category[disclosure] = $v3-ActCode#IDSCL
 * patient 1.. MS
-* patient only Reference(USCorePatientProfile|6.1.0)
+* patient only Reference(USCorePatientProfile|7.0.0)
 * performer 1..1 MS
-* performer only Reference(USCorePatientProfile|6.1.0 or RelatedPerson or USCorePractitionerProfile|6.1.0 or HRexPractitionerRole or HRexOrganization)
+* performer only Reference(USCorePatientProfile|7.0.0 or RelatedPerson or USCorePractitionerProfile|7.0.0 or HRexPractitionerRole or HRexOrganization)
 * source[x] 1.. MS
 * source[x] only Reference(DocumentReference)
   * ^comment = "...Allows referencing the 'source of truth' for the Consent. This might be a detailed electronic consent, an audio recording of a verbal consent, or an identifier that can be used to follow up for audit."

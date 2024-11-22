@@ -60,13 +60,13 @@ extension:
 # │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 dependencies:
-  hl7.fhir.us.core.v700:
+  hl7.fhir.us.core:
     version: 7.0.0
     uri: http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core
     id: uscore7
     reason: |
       Needed for systems supporting USCDI v4
-  hl7.fhir.us.core:
+  hl7.fhir.us.core.v610:
     version: 6.1.0
     uri: http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core
     id: uscore6
