@@ -13,6 +13,8 @@ Content from this IG:
 Key content from the FHIR core specification:
 * The full [FHIR R4 core]({{site.data.fhir.path}}fhir-spec.zip) specifications
 * [JSON]({{site.data.fhir.path}}fhir.schema.json.zip) and [XML]({{site.data.fhir.path}}fhir-all-xsd.zip) schemas for validation
+* [The FHIR validator](https://fhir.github.io/latest-ig-validator/org.hl7.fhir.validator.jar) and [instructions](https://confluence.hl7.org/display/FHIR/Using+the+FHIR+Validator)
+* [Other downloads]({{site.data.fhir.path}}downloads.html)
 
 Content from US Core:
 

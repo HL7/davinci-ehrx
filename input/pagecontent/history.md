@@ -1,4 +1,4 @@
-### STU 1.1
+### STU 1.1.0
 
 * [FHIR-48672](https://jira.hl7.org/browse/FHIR-48672) - Added support for US Core 7.0 as well as 6.1
 * [FHIR-48414](https://jira.hl7.org/browse/FHIR-48414) - Clarified that EHRs weren't required to move forward US Core 6.1/7.0 adoption to comply with the guide
@@ -10,7 +10,7 @@
 A variety of technical correction and non-substantive improvements to wording and artifacts.
 
 
-### STU 1.1 - ballot
+### STU 1.1.0-ballot
 
 The following is a list of the substantive changes since the last official release
 
@@ -47,6 +47,6 @@ A variety of minor wording clarifications, correction of typos and other non-sub
 
 Also, see the [comparison](comparison-v1.0.0/index.html) between this release and release 1.0.0
 
-### STU 1.0
+### STU 1.0.0
 
 Initial 'official' release

@@ -1,5 +1,4 @@
 ### Da Vinci
-{% include davinci.md %}
 
 ### The Da Vinci HRex project
 HRex is a foundational project intended to support shared artifacts and content that are relevant to multiple other Da Vinci IGs.  Work began on the project in 2021 and the initial release of the guide was published in 2022.  Project participants have included major EHR vendors, payers, and provider organizations.  Because HRex is a collection of reuseable artifacts, it is not implemented or tested directly.  Instead, it is tested as part of the other IGs that leverage its content.
