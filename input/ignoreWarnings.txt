@@ -4,9 +4,9 @@
 WARNING: DA VINCI: The second menu item under Background should have the label Use Cases.
 
 # Detailed changes weren't tracked until after 1.0.0 was released
-WARNING: DA VINCI: The Change Log page does not include any Jira tracker items links for the section with title STU 1.0.0
-WARNING: DA VINCI: The Change Log does not include an h3 section for the version 0.2.0
-WARNING: DA VINCI: The Change Log does not include an h3 section for the version 0.1.0
+WARNING: DA VINCI: The Change Log page (history.html) does not include any Jira tracker items links for the section with title STU 1.0.0
+WARNING: DA VINCI: The Change Log page (history.html) does not include an h3 section for the version 0.2.0
+WARNING: DA VINCI: The Change Log page (history.html) does not include an h3 section for the version 0.1.0
 
 # Da Vinci doesn't have any conformance expectations itself - conformance expectations are determined by IGs that derive from HRex
 WARNING: DA VINCI: Da Vinci IGs SHOULD define CapabilityStatements.  Without CapabilityStatements, there is no technical way to declare conformance to the IG.
@@ -16,7 +16,7 @@ WARNING: DA VINCI: This IG does not depend on HRex.  Either add a formal depende
 WARNING: DA VINCI: The Base Specs menu item must have a child called HRex 1.1.0.
 
 # This isn't actually a resource in R4, so can't point to it
-WARNING: DA VINCI: This IG makes use of the subscriptiontopic resource.  The How to Read page should include a reference to the http://hl7.org/fhir/R4/subscriptiontopic.html page.
+WARNING: DA VINCI: The How to Read page (fhir.html) needs to include a reference to the http://hl7.org/fhir/R4/subscriptiontopic.html because this IG uses the subscriptiontopic resource.
 
 # These are inherited from US Core
 INFORMATION: StructureDefinition/hrex-organization: StructureDefinition.snapshot.element[9].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
