@@ -1,4 +1,5 @@
 ### Da Vinci
+{% include davinci.md %}
 
 ### The Da Vinci HRex project
 HRex is a foundational project intended to support shared artifacts and content that are relevant to multiple other Da Vinci IGs.  Work began on the project in 2021 and the initial release of the guide was published in 2022.  Project participants have included major EHR vendors, payers, and provider organizations.  Because HRex is a collection of reuseable artifacts, it is not implemented or tested directly.  Instead, it is tested as part of the other IGs that leverage its content.
@@ -6,7 +7,7 @@ HRex is a foundational project intended to support shared artifacts and content 
 Further details about the project, including minutes of meetings can be found on the [project Confluence page](https://confluence.hl7.org/pages/viewpage.action?pageId=40741996).  Meetings to develop the specification content have typically been held in conjunction with the Clinical Data Exchange (CDex) project and HRex minutes can be found on the [CDex Confluence page](https://confluence.hl7.org/pages/viewpage.action?pageId=40738757).
 
 
-## Credits
+### Credits
 This IG was developed under the auspices of the [Clinical Interoperability Council (CIC)](http://www.hl7.org/Special/committees/cic) work group.  Current work group co-chairs are:
 
 * **Bruce Bray** - University of Utah Health Care

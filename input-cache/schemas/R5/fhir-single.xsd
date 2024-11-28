@@ -47,7 +47,7 @@
   POSSIBILITY OF SUCH DAMAGE.
   
 
-  Generated on Mon, Nov 25, 2024 15:43+0000 for FHIR v6.0.0-ballot2 
+  Generated on Wed, Nov 27, 2024 19:21+0000 for FHIR v6.0.0-ballot2 
 -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" targetNamespace="http://hl7.org/fhir" elementFormDefault="qualified" version="6.0.0-ballot2">
   <!-- Note: When using this schema with some tools, it may also be necessary to declare xmlns:xml="http://www.w3.org/XML/1998/namespace", however this causes performance issues with other tools and thus is not in the base schemas. -->
@@ -21958,7 +21958,7 @@ of the resource representation.</xs:documentation>
               <xs:documentation xml:lang="en">Used to express the reason for or classification of the title.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="language" minOccurs="0" maxOccurs="1" type="CodeableConcept">
+          <xs:element name="language" minOccurs="0" maxOccurs="1" type="code">
             <xs:annotation>
               <xs:documentation xml:lang="en">Used to express the specific language of the title.</xs:documentation>
            </xs:annotation>
@@ -21984,7 +21984,7 @@ of the resource representation.</xs:documentation>
               <xs:documentation xml:lang="en">Used to express the reason for or classification of the abstract.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="language" minOccurs="0" maxOccurs="1" type="CodeableConcept">
+          <xs:element name="language" minOccurs="0" maxOccurs="1" type="code">
             <xs:annotation>
               <xs:documentation xml:lang="en">Used to express the specific language of the abstract.</xs:documentation>
            </xs:annotation>
@@ -22127,7 +22127,7 @@ of the resource representation.</xs:documentation>
               <xs:documentation xml:lang="en">The date the article was last revised or updated in the database.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="language" minOccurs="0" maxOccurs="unbounded" type="CodeableConcept">
+          <xs:element name="language" minOccurs="0" maxOccurs="unbounded" type="code">
             <xs:annotation>
               <xs:documentation xml:lang="en">The language or languages in which this form of the article is published.</xs:documentation>
            </xs:annotation>
@@ -34703,6 +34703,11 @@ See guidance around (not) making local changes to elements [here](canonicalresou
           <xs:element name="datatype" minOccurs="0" maxOccurs="1" type="CodeableConcept">
             <xs:annotation>
               <xs:documentation xml:lang="en">The type of data used to express values of the variable.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="path" minOccurs="0" maxOccurs="1" type="string">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">The mapping (order of elements) to reach the element containing the  data element in the dataset.</xs:documentation>
            </xs:annotation>
           </xs:element>
         </xs:sequence>
