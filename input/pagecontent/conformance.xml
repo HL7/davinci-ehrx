@@ -20,7 +20,10 @@
     <li>Data Consumers <b>SHALL</b> be able to process resource instances containing data elements that have extensions in place of a value where such extensions are declared as part of the profile.</li>
   </ul>
   <p>NOTE: <i>mustSupport</i> indicates what Da Vinci conformant systems are expected to be able to handle.  Systems are free to include additional data - and receivers <b>SHOULD NOT</b> reject instances that contain unexpected data elements if those elements are not <a href="{{site.data.fhir.path}}conformance-rules.html#isModifier">modifier elements</a>.  However, sending systems should be aware that they can't count on receivers storing, processing or doing anything other than ignoring data that is not marked as <i>mustSupport</i>.</p>
-		
+
+  <p>Also see the mustSupport rules for the [US Core]({{site.data.fhir.ver.uscore7}}must-support.html) implementation guides, which apply to content adhering to data elements profiled in those guides.
+</p>
+
   <a name="uscore"> </a>
   <h3>Referencing US Core Profiles</h3>
   <p>
