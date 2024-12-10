@@ -185,3 +185,4 @@ resources:
         valueCode: application/json
       - url: http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-logical
         valueCanonical: http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/HRexWellknownDefinition
+
