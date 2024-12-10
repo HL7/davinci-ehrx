@@ -1,0 +1,10 @@
+{
+  "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.1.11.10267" : {
+    "server" : "http://tx.fhir.org/r4",
+    "filename" : "vs-3bec4531-f3b6-49f7-ac8a-95f5886989fd.json"
+  },
+  "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1099.27" : {
+    "server" : "http://tx.fhir.org/r4",
+    "filename" : "vs-c45676d9-7184-4ca8-8638-ed2e109a8381.json"
+  }
+}
