@@ -61,7 +61,7 @@ Usage: #inline
   * valueUnsignedInt = 1
 * parameter[+]
   * name = "subscription-topic-url"
-  * valueUri = "http://hl7.org/SubscriptionTopic/task"
+  * valueUri = "http://hl7.org/fhir/us/davinci-hrex/SubscriptionTopic/Task"
 
 Instance: results
 InstanceOf: Bundle

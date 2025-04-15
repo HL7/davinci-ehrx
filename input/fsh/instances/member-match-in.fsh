@@ -27,7 +27,7 @@ Usage: #example
     * value = "DH10001235"
   * status = #draft
   * relationship = $dar#unknown
-  * beneficiary.reference = "Patient/1"
+  * beneficiary.reference = "http://example.org/old-payer/Patient/1"
   * period
     * start = "2011-05-23"
     * end = "2012-05-23"

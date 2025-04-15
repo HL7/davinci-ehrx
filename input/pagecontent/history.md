@@ -1,3 +1,7 @@
+### STU 1.2.0
+* 
+
+
 ### STU 1.1.0
 
 * [FHIR-48672](https://jira.hl7.org/browse/FHIR-48672) - Added support for US Core 7.0 as well as 6.1

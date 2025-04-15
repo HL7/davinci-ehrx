@@ -1,11 +1,11 @@
 {
   "package-id" : "hl7.fhir.us.davinci-hrex",
-  "version" : "1.1.0",
+  "version" : "1.2.0",
   "milestone" : true,
-	"path": "http://hl7.org/fhir/us/davinci-hrex/STU1.1",
+	"path": "http://hl7.org/fhir/us/davinci-hrex/STU1.2",
   "status" : "trial-use",
   "mode" : "milestone",
-  "sequence" : "STU 1.1",
-  "desc" : "STU 1.1.0 Release",
-  "descmd" : "STU 1.1.0 release with US Core 3.1, 6.1, and 7.0.  See [list of changes](http://hl7.org/fhir/us/davinci-hrex/STU1.1/history.html#1.1.0)"
+  "sequence" : "STU 1.2",
+  "desc" : "STU 1.2.0 Release",
+  "descmd" : "STU 1.2.0 release bringing maturity to FMM3.  See [list of changes](http://hl7.org/fhir/us/davinci-hrex/STU1.2/history.html#1.2.0)"
 }

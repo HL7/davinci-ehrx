@@ -11,7 +11,9 @@ Description: "Constraints on the US Core PractitionerRole requiring the use of D
   * insert AdditionalBinding(#extensible, "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role|3.1")
 //* obeys hrex-pr-1
   * ^binding.extension.url = $additional-binding
-  * ^binding.extension.extension[0].url = "purpose"
+  * ^binding.extension.extension[0].url = "key"
+  * ^binding.extension.extension[=].valueId = "pr-code"
+  * ^binding.extension.extension[+].url = "purpose"
   * ^binding.extension.extension[=].valueCode = #extensible
   * ^binding.extension.extension[+].url = "valueSet"
   * ^binding.extension.extension[=].valueCanonical = "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role|3.1.0"

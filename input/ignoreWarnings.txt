@@ -59,12 +59,12 @@ INFORMATION: StructureDefinition/hrex-organization: StructureDefinition.snapshot
 INFORMATION: StructureDefinition/hrex-organization: StructureDefinition.snapshot.element[12].pattern.ofType(Identifier): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 
 # These identifiers are 'extra' and aren't expected to match any slice
-INFORMATION: Organization/full: Organization.identifier[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-organization|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
-INFORMATION: Organization/full: Organization.identifier[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-organization|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Organization/full: Organization.identifier[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-organization|1.2.0-cibuild (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Organization/full: Organization.identifier[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-organization|1.2.0-cibuild (this may not be a problem, but you should check that it's not intended to match a slice)
 
 # These additional coverage classes are not (currently) part of the profile and are not expected to match slices
-INFORMATION: Parameters/member-match-in: Parameters.parameter[1].resource/*Coverage/9876B1*/.class[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-coverage|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
-INFORMATION: Parameters/member-match-in: Parameters.parameter[1].resource/*Coverage/9876B1*/.class[3]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-coverage|1.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Parameters/member-match-in: Parameters.parameter[1].resource/*Coverage/9876B1*/.class[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-coverage|1.2.0-cibuild (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Parameters/member-match-in: Parameters.parameter[1].resource/*Coverage/9876B1*/.class[3]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-coverage|1.2.0-cibuild (this may not be a problem, but you should check that it's not intended to match a slice)
 
 # These code systems should not be draft in THO.  The terminology work group is trying to fix these
 Reference to draft CodeSystem http://hl7.org/fhir/task-status|4.0.1
@@ -95,3 +95,6 @@ WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/davinci-hrex/St
 # These code systems are not currently supported by the Tx server - and the X12 ones likely won't ever be
 A definition for CodeSystem 'https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set' could not be found, so the code cannot be validated
 A definition for CodeSystem 'http://codesystem.x12.org/005010/1365' could not be found, so the code cannot be validated
+
+# These vocabulary pins are selecting the desired versions
+%to 20240605 from choices of 20190418 (us.nlm.vsac#0.11.0), 20240605 (us.nlm.vsac#0.19.0)

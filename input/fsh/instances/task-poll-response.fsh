@@ -31,7 +31,7 @@ Usage: #inline
   * attachment
     * contentType = #text/plain
     * language = #en-US
-    * url = "http://localhost:9556/svc/fhir/Binary/1e404af3-077f-4bee-b7a6-a9be97e1ce32"
+    * url = "http://example.org/ehr/fhir/Binary/1e404af3-077f-4bee-b7a6-a9be97e1ce32"
     * title = "Physical"
     * creation = "2005-12-24"
   * format = $formatcode#urn:ihe:pcc:apr:handp:2008
