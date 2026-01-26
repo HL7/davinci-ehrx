@@ -7,6 +7,7 @@
 
 **Non-substantive changes**:
 * [FHIR-53098](https://jira.hl7.org/browse/FHIR-53098) - Fixed typo in endpoint discovery example *(correction)* [link](Binary-Wellknown.html)
+* [FHIR-53654](https://jira.hl7.org/browse/FHIR-53654) - Corrected justification for HRex PractitionerRole profile *(correction)* [link](StructureDefinition-hrex-practitionerrole.html#FHIR-53654)
 
 
 ### STU 1.1.0
