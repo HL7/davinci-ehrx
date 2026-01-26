@@ -1,5 +1,12 @@
 ### STU 1.2.0
+**Breaking changes**:
+* None
+
+**Substantive changes**:
 * 
+
+**Non-substantive changes**:
+* [FHIR-53098](https://jira.hl7.org/browse/FHIR-53098) - Fixed typo in endpoint discovery example *(correction)* [link](Binary-Wellknown.html)
 
 
 ### STU 1.1.0
