@@ -1,5 +1,5 @@
 -------------------------------------------------------------------------------------
-{"hierarchical" : false, "valueSet" :{
+{"hierarchical" : true, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
     "inactive" : false,
@@ -15,17 +15,18 @@
   }
 }}####
 e: {
+  "source" : tx.fhir.org,
   "valueSet" : {
   "resourceType" : "ValueSet",
   "status" : "active",
   "expansion" : {
-    "identifier" : "urn:uuid:0d472f82-b3af-429f-887d-f995381c51dc",
-    "timestamp" : "2024-11-07T05:23:09.738Z",
+    "identifier" : "urn:uuid:2b3792d6-d6c0-4391-a34b-02d448b56a36",
+    "timestamp" : "2026-01-27T05:37:34.162Z",
     "total" : 2,
     "offset" : 0,
     "parameter" : [{
       "name" : "excludeNested",
-      "valueBoolean" : true
+      "valueBoolean" : false
     },
     {
       "name" : "offset",
@@ -37,10 +38,6 @@ e: {
     },
     {
       "name" : "used-codesystem",
-      "valueUri" : "urn:ietf:rfc:3986|n/a"
-    },
-    {
-      "name" : "version",
       "valueUri" : "urn:ietf:rfc:3986|n/a"
     }],
     "contains" : [{
@@ -72,12 +69,13 @@ e: {
   }
 }}####
 e: {
+  "source" : tx.fhir.org,
   "valueSet" : {
   "resourceType" : "ValueSet",
   "status" : "active",
   "expansion" : {
-    "identifier" : "urn:uuid:8e0b8dd6-e08c-4d42-a31c-2fc6d48a220a",
-    "timestamp" : "2024-11-07T05:26:27.019Z",
+    "identifier" : "urn:uuid:74375591-b3ba-43c1-9722-c0cd323b4057",
+    "timestamp" : "2026-01-27T05:39:18.224Z",
     "total" : 2,
     "offset" : 0,
     "parameter" : [{
@@ -94,10 +92,6 @@ e: {
     },
     {
       "name" : "used-codesystem",
-      "valueUri" : "urn:ietf:rfc:3986|n/a"
-    },
-    {
-      "name" : "version",
       "valueUri" : "urn:ietf:rfc:3986|n/a"
     }],
     "contains" : [{

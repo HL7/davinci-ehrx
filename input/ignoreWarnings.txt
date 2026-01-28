@@ -1,100 +1,119 @@
 == Suppressed Messages ==
 
-# Consider adding this in the future.  To this point, we havn't said that HRex actually has use-cases - FHIR-48917
+# 0.a This will go away when the next tools IG release is published
+WARNING: D:\Git\_IGs\davinci-ehrx\fsh-generated\resources\ImplementationGuide-davinci-hrex: Unknown Parameters: [term-params-in-artifacts=true]
+ERROR: ImplementationGuide/hl7.fhir.us.davinci-hrex: ImplementationGuide.definition.extension[6].extension[0].value.ofType(string): The System URI could not be determined for the code 'term-params-in-artifacts' in the ValueSet 'http://hl7.org/fhir/tools/ValueSet/ig-parameters|0.9.0'
+ERROR: ImplementationGuide/hl7.fhir.us.davinci-hrex: ImplementationGuide.definition.extension[6].extension[0].value.ofType(string): The value provided ('term-params-in-artifacts') was not found in the value set 'ig-parameters Codes ValueSet' (http://hl7.org/fhir/tools/ValueSet/ig-parameters|0.9.0), and a code is required from this value set  (error message = The System URI could not be determined for the code 'term-params-in-artifacts' in the ValueSet 'http://hl7.org/fhir/tools/ValueSet/ig-parameters|0.9.0'; The provided code '#term-params-in-artifacts' was not found in the value set 'http://hl7.org/fhir/tools/ValueSet/ig-parameters|0.9.0')
+ERROR: ImplementationGuide/hl7.fhir.us.davinci-hrex: ImplementationGuide.definition.extension[33].url: No definition could be found for URL value 'http://hl7.org/fhir/tools/StructureDefinition/expansion-parameters'
+ERROR: ImplementationGuide/hl7.fhir.us.davinci-hrex: ImplementationGuide.definition.extension[41].extension[0].value.ofType(code): The System URI could not be determined for the code 'term-params-in-artifacts' in the ValueSet 'http://hl7.org/fhir/tools/ValueSet/ig-parameters|0.9.0'
+ERROR: ImplementationGuide/hl7.fhir.us.davinci-hrex: ImplementationGuide.definition.extension[41].extension[0].value.ofType(code): The value provided ('term-params-in-artifacts') was not found in the value set 'ig-parameters Codes ValueSet' (http://hl7.org/fhir/tools/ValueSet/ig-parameters|0.9.0), and a code is required from this value set  (error message = The System URI could not be determined for the code 'term-params-in-artifacts' in the ValueSet 'http://hl7.org/fhir/tools/ValueSet/ig-parameters|0.9.0'; The provided code '#term-params-in-artifacts' was not found in the value set 'http://hl7.org/fhir/tools/ValueSet/ig-parameters|0.9.0')
+
+# 0.b This is a known issue on terminology.hl7.org and is being worked on by Terminology Infrastructure
+Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/provenance-participant-type|4.0.1
+
+# 1. Consider adding this in the future.  To this point, we havn't said that HRex actually has use-cases - FHIR-48917
 WARNING: DA VINCI: The second menu item under Background should have the label Use Cases.
 
-# Detailed changes weren't tracked until after 1.0.0 was released
+# 2. Detailed changes weren't tracked until after 1.0.0 was released
 WARNING: DA VINCI: The Change Log page (history.html) does not include any Jira tracker items links for the section with title STU 1.0.0
 WARNING: DA VINCI: The Change Log page (history.html) does not include an h3 section for the version 0.2.0
 WARNING: DA VINCI: The Change Log page (history.html) does not include an h3 section for the version 0.1.0
 
-# Da Vinci doesn't have any conformance expectations itself - conformance expectations are determined by IGs that derive from HRex
+# 3. Da Vinci doesn't have any conformance expectations itself - conformance expectations are determined by IGs that derive from HRex
 WARNING: DA VINCI: Da Vinci IGs SHOULD define CapabilityStatements.  Without CapabilityStatements, there is no technical way to declare conformance to the IG.
 
-# HRex can't depend on itself
+# 4. HRex can't depend on itself
 WARNING: DA VINCI: This IG does not depend on HRex.  Either add a formal dependency or confirm that a textual dependency has been declared.
 WARNING: DA VINCI: The Base Specs menu item must have a child called HRex 1.1.0.
 WARNING: DA VINCI: The Conformance page (conformance.html) needs to include a link to the HRex conformance.html page.
 WARNING: DA VINCI: The Conformance page (conformance.html) Must Support section needs to include a link to the HRex conformance.html#mustsupport section.
 WARNING: DA VINCI: The Security page (security.html) must include a reference to the HRex security.html page (with a SHALL comply).
 
-
-# This isn't actually a resource in R4, so can't point to it
+# 5. This isn't actually a resource in R4, so can't point to it
 WARNING: DA VINCI: The How to Read page (fhir.html) needs to include a reference to the http://hl7.org/fhir/R4/subscriptiontopic.html because this IG uses the subscriptiontopic resource.
 
-# These are inherited from US Core
+# 6. These are inherited from US Core
 INFORMATION: StructureDefinition/hrex-organization: StructureDefinition.snapshot.element[9].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 INFORMATION: StructureDefinition/hrex-provenance: StructureDefinition.snapshot.element[22].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 
-# This is an issue with the underlying R5 terminology and should be addressed via a system-wide update
+# 7. This is an issue with the underlying R5 terminology and should be addressed via a system-wide update
 Reference to deprecated ValueSet http://hl7.org/fhir/5.0/ValueSet/jurisdiction|5.0.0
 
-# This is an issue in the core spec
-%binds to the value set 'http://hl7.org/fhir/ValueSet/payeetype' which is experimental, but this structure is not labeled as experimental
-%binds to the value set 'http://hl7.org/fhir/ValueSet/fundsreserve' which is experimental, but this structure is not labeled as experimental
-%binds to the value set 'http://hl7.org/fhir/ValueSet/forms' which is experimental, but this structure is not labeled as experimental
-%binds to the value set 'http://hl7.org/fhir/ValueSet/adjudication-error' which is experimental, but this structure is not labeled as experimental
-%binds to the value set 'http://hl7.org/fhir/ValueSet/consent-content-code' which is experimental, but this structure is not labeled as experimental
+# 8. These pinnings are correct
+Pinned the version of http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1066 to 20240606 from choices of 20190521 (us.nlm.vsac#0.11.0), 20240606 (us.nlm.vsac#0.19.0)
+Pinned the version of http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex to 7.0.0 from choices of 3.1.1 (hl7.fhir.us.core#3.1.1), 6.1.0 (hl7.fhir.us.core#6.1.0), 7.0.0 (hl7.fhir.us.core#7.0.0)
+Pinned the version of http://hl7.org/fhir/us/core/StructureDefinition/us-core-location to 7.0.0 from choices of 3.1.1 (hl7.fhir.us.core#3.1.1), 6.1.0 (hl7.fhir.us.core#6.1.0), 7.0.0 (hl7.fhir.us.core#7.0.0)
+Pinned the version of http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization to 7.0.0 from choices of 3.1.1 (hl7.fhir.us.core#3.1.1), 6.1.0 (hl7.fhir.us.core#6.1.0), 7.0.0 (hl7.fhir.us.core#7.0.0)
+Pinned the version of http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient to 7.0.0 from choices of 3.1.1 (hl7.fhir.us.core#3.1.1), 6.1.0 (hl7.fhir.us.core#6.1.0), 7.0.0 (hl7.fhir.us.core#7.0.0)
+Pinned the version of http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner to 7.0.0 from choices of 3.1.1 (hl7.fhir.us.core#3.1.1), 6.1.0 (hl7.fhir.us.core#6.1.0), 7.0.0 (hl7.fhir.us.core#7.0.0)
+Pinned the version of http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole to 7.0.0 from choices of 3.1.1 (hl7.fhir.us.core#3.1.1), 6.1.0 (hl7.fhir.us.core#6.1.0), 7.0.0 (hl7.fhir.us.core#7.0.0)
+Pinned the version of http://hl7.org/fhir/us/core/StructureDefinition/us-core-relatedperson to 7.0.0 from choices of 6.1.0 (hl7.fhir.us.core#6.1.0), 7.0.0 (hl7.fhir.us.core#7.0.0)
+Pinned the version of http://hl7.org/fhir/us/core/ValueSet/us-core-provenance-participant-type to 7.0.0 from choices of 3.1.1 (hl7.fhir.us.core#3.1.1), 6.1.0 (hl7.fhir.us.core#6.1.0), 7.0.0 (hl7.fhir.us.core#7.0.0)
+Pinned the version of http://hl7.org/fhir/us/core/ValueSet/us-core-usps-state to 7.0.0 from choices of 3.1.1 (hl7.fhir.us.core#3.1.1), 6.1.0 (hl7.fhir.us.core#6.1.0), 7.0.0 (hl7.fhir.us.core#7.0.0)
+Pinned the version of http://terminology.hl7.org/ValueSet/v3-PurposeOfUse to 3.1.0 from choices of 2.0.0 (hl7.terminology.r4#5.0.0), 3.0.0 (hl7.terminology.r4#5.5.0), 3.1.0 (hl7.terminology.r4#7.0.1)
 
-# These are termerminology server limitations
-The concept map has too many codes to validate (1,123)
+# 9. These are termerminology server limitations
+The concept map has too many codes to validate (662)
 Target Code System http://snomed.info/sct is only supported on the terminology server, so the target codes are not validated for performance reasons
 
-# There is no location in the IG where it makes sense to use this profile.  It's created for downstream IGs.  The definition is sufficiently simple that there's no possibility of errors in the construction.
+# 10. There is no location in the IG where it makes sense to use this profile.  It's created for downstream IGs.  The definition is sufficiently simple that there's no possibility of errors in the construction.
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-reference-id'): The Implementation Guide contains no examples for this data type profile
 
-# The terminology validation here is incorrect in R4, but these codes are both valid
+# 11. The terminology validation here is incorrect in R4, but these codes are both valid
 INFORMATION: Bundle/subscription-notification-with-document: Bundle.entry[2].resource/*DocumentReference/287Q73J237*/.content[0].format: The code provided (urn:oid:1.3.6.1.4.1.19376.1.2.3#urn:ihe:pcc:apr:handp:2008) is not in the value set 'DocumentReference Format Code Set' (http://hl7.org/fhir/ValueSet/formatcodes|4.0.1), and a code is recommended to come from this value set
 INFORMATION: Bundle/task-poll-response: Bundle.entry[1].resource/*DocumentReference/c94fb961-310c-41f1-a54f-gd5325dgds7*/.content[0].format: The code provided (urn:oid:1.3.6.1.4.1.19376.1.2.3#urn:ihe:pcc:apr:handp:2008) is not in the value set 'DocumentReference Format Code Set' (http://hl7.org/fhir/ValueSet/formatcodes|4.0.1), and a code is recommended to come from this value set
 
-# This will be done in a future release
+# 12. This will be done in a future release
 %Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now%
 
-# The NUCC codes are all valid (according to tx.fhir.org), but the validator is colliding with UTG content as discussed here: 
-#   https://chat.fhir.org/#narrow/stream/179252-IG-creation/topic/http.3A.2F.2Fnucc.2Eorg.2Fprovider-taxonomy
-
-# The patterns are only locking down the system, which is the discriminator for the slices, so this is fine.
+# 14. The patterns are only locking down the system, which is the discriminator for the slices, so this is fine.
 INFORMATION: StructureDefinition/hrex-organization: StructureDefinition.snapshot.element[10].pattern.ofType(Identifier): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 INFORMATION: StructureDefinition/hrex-organization: StructureDefinition.snapshot.element[11].pattern.ofType(Identifier): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 INFORMATION: StructureDefinition/hrex-organization: StructureDefinition.snapshot.element[12].pattern.ofType(Identifier): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 
-# These identifiers are 'extra' and aren't expected to match any slice
-INFORMATION: Organization/full: Organization.identifier[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-organization|1.2.0-cibuild (this may not be a problem, but you should check that it's not intended to match a slice)
-INFORMATION: Organization/full: Organization.identifier[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-organization|1.2.0-cibuild (this may not be a problem, but you should check that it's not intended to match a slice)
+# 15. These identifiers are 'extra' and aren't expected to match any slice
+INFORMATION: Organization/full: Organization.identifier[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-organization|1.2.0-snapshot (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Organization/full: Organization.identifier[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-organization|1.2.0-snapshot (this may not be a problem, but you should check that it's not intended to match a slice)
 
-# These additional coverage classes are not (currently) part of the profile and are not expected to match slices
-INFORMATION: Parameters/member-match-in: Parameters.parameter[1].resource/*Coverage/9876B1*/.class[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-coverage|1.2.0-cibuild (this may not be a problem, but you should check that it's not intended to match a slice)
-INFORMATION: Parameters/member-match-in: Parameters.parameter[1].resource/*Coverage/9876B1*/.class[3]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-coverage|1.2.0-cibuild (this may not be a problem, but you should check that it's not intended to match a slice)
 
-# These code systems should not be draft in THO.  The terminology work group is trying to fix these
+# 16. These additional coverage classes are not (currently) part of the profile and are not expected to match slices
+INFORMATION: Parameters/member-match-in: Parameters.parameter[1].resource/*Coverage/9876B1*/.class[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-coverage|1.2.0-snapshot (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Parameters/member-match-in: Parameters.parameter[1].resource/*Coverage/9876B1*/.class[3]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-coverage|1.2.0-snapshot (this may not be a problem, but you should check that it's not intended to match a slice)
+
+# 17. These code systems should not be draft in THO.  The terminology work group is trying to fix these
 Reference to draft CodeSystem http://hl7.org/fhir/task-status|4.0.1
-Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/adjudication|1.0.0
-Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/consentaction|1.0.0
-Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/consentscope|2.0.0
-Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/coverage-class|1.0.0
 
-# Narrative doesn't make sense in resources passed to a real-time operation
-WARNING: Parameters/member-match-in: Parameters.parameter[0].resource/*Patient/1*/: Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
-WARNING: Parameters/member-match-in: Parameters.parameter[1].resource/*Coverage/9876B1*/: Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
-WARNING: Parameters/member-match-in: Parameters.parameter[2].resource/*Coverage/AA87654*/: Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
-WARNING: Parameters/member-match-in: Parameters.parameter[3].resource/*Consent/null*/: Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
-WARNING: Parameters/member-match-in-provider: Parameters.parameter[0].resource/*Patient/1*/: Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
-WARNING: Parameters/member-match-in-provider: Parameters.parameter[1].resource/*Coverage/9876B1*/: Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
-WARNING: Parameters/member-match-in-provider: Parameters.parameter[2].resource/*Consent/null*/: Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+# 18. Narrative doesn't make sense in resources passed to a real-time operation
+WARNING: Parameters/member-match-in: Parameters.parameter[0].resource/*Patient/1*/: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+WARNING: Parameters/member-match-in: Parameters.parameter[1].resource/*Coverage/9876B1*/: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+WARNING: Parameters/member-match-in: Parameters.parameter[2].resource/*Coverage/AA87654*/: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+WARNING: Parameters/member-match-in: Parameters.parameter[3].resource/*Consent/null*/: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+WARNING: Parameters/member-match-in-provider: Parameters.parameter[0].resource/*Patient/1*/: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+WARNING: Parameters/member-match-in-provider: Parameters.parameter[1].resource/*Coverage/9876B1*/: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+WARNING: Parameters/member-match-in-provider: Parameters.parameter[2].resource/*Consent/null*/: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
 
-# These are tested by the parameters input examples
+# 19. These are tested by the parameters input examples
 INFORMATION: StructureDefinition.where(url = 'http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-consent'): The Implementation Guide contains no explicitly linked examples for this profile
 INFORMATION: StructureDefinition.where(url = 'http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-patient-demographics'): The Implementation Guide contains no explicitly linked examples for this profile
 
-# HRex needs a patient with no identifier - US Realm approved: https://jira.hl7.org/browse/FHIR-33538, new proposal https://jira.hl7.org/browse/FHIR-46468
+# 20. HRex needs a patient with no identifier - US Realm approved: https://jira.hl7.org/browse/FHIR-33538, new proposal https://jira.hl7.org/browse/FHIR-46468
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-patient-demographics').baseDefinition: US FHIR Usage rules require that all profiles on Patient derive from the core US profile. See https://confluence.hl7.org/display/CGP/US+Core+Variance+Request+Process
 
-# HRex needs Coverage pointing to a patient with no identifier - submitted to US Core https://jira.hl7.org/browse/FHIR-46468
+# 21. HRex needs Coverage pointing to a patient with no identifier - submitted to US Core https://jira.hl7.org/browse/FHIR-46468
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-coverage').baseDefinition: US FHIR Usage rules require that all profiles on Coverage derive from the core US profile. See https://confluence.hl7.org/display/CGP/US+Core+Variance+Request+Process
 
-# These code systems are not currently supported by the Tx server - and the X12 ones likely won't ever be
-A definition for CodeSystem 'https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set' could not be found, so the code cannot be validated
-A definition for CodeSystem 'http://codesystem.x12.org/005010/1365' could not be found, so the code cannot be validated
+# 22. The IG description is talking about the potential for certain resources to be deprecated in the future.  The IG itself is definitely not deprecated
+INFORMATION: ImplementationGuide/hl7.fhir.us.davinci-hrex: ImplementationGuide: Resource is not deprecated, but the description mentions deprecated - check whether it should be deprecated
 
-# These vocabulary pins are selecting the desired versions
+# 23. These vocabulary pins are selecting the desired versions
 %to 20240605 from choices of 20190418 (us.nlm.vsac#0.11.0), 20240605 (us.nlm.vsac#0.19.0)
+
+# 24. This link exists, but because we're inheriting this fragment from a shared template, the link looks different and the template doesn't recognize it
+The link 'http://hl7.org/fhir/us/davinci-hrex/davinci-guiding-principles.html' for "guiding principles" cannot be resolved
+
+# 25. The version used is based on regulation
+The ImplementationGuide uses package hl7.fhir.us.core#7.0.0 released on 2024-05-08, but the most recent appropriate version is 8.0.1. This reference is getting old and the more recent version should be considered
+
+# 26. This references is inherited from the FHIR core spec, which used it before the extension was deprecated
+INFORMATION: StructureDefinition/hrex-consent: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
+

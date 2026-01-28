@@ -5,7 +5,7 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: davinci-hrex
 canonical: http://hl7.org/fhir/us/davinci-hrex
-version: 1.2.0-cibuild
+version: 1.2.0-snapshot
 name: DaVinciHealthRecordExchangeHRex
 title: Da Vinci Health Record Exchange (HRex)
 status: active
@@ -26,9 +26,10 @@ parameters:
   apply-publisher: true
   apply-contact: true
   globals-in-artifacts: true
+  term-params-in-artifacts: true
   auto-oid-root: 2.16.840.1.113883.4.642.40.19
   version-comparison: 
-    - 1.2.0
+    - 1.1.0
   shownav: true
   pin-canonicals: pin-multiples
 copyrightYear: 2019+
@@ -45,7 +46,7 @@ extension:
       - url: uri
         valueUri: http://hl7.org/fhir/us/davinci-hrex/StructureDefinition-hrex-consent.html#regular
       - url: target
-        valueUrl: StructureDefinition-hrex-consent.html#regular
+        valueUrl: en/StructureDefinition-hrex-consent.html#regular
       - url: use
         valueString: "Defines a standard URI for a consent policy"
   - url: http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-uri
@@ -53,7 +54,7 @@ extension:
       - url: uri
         valueUri: http://hl7.org/fhir/us/davinci-hrex/StructureDefinition-hrex-consent.html#sensitive
       - url: target
-        valueUrl: StructureDefinition-hrex-consent.html#sensitive
+        valueUrl: en/StructureDefinition-hrex-consent.html#sensitive
       - url: use
         valueString: "Defines a standard URI for a consent policy"
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
@@ -68,13 +69,13 @@ dependencies:
       Needed for systems supporting USCDI v4
   hl7.fhir.us.core.v610:
     version: 6.1.0
-    uri: http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core
+    uri: http://hl7.org/fhir/us/core/v610/ImplementationGuide/hl7.fhir.us.core.v610
     id: uscore6
     reason: |
       Needed for systems supporting USCDI v3
   hl7.fhir.us.core.v311:
     version: 3.1.1
-    uri: http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core
+    uri: http://hl7.org/fhir/us/core/v311/ImplementationGuide/hl7.fhir.us.core.v311
     id: uscore3
     reason: |
       Needed for systems supporting USCDI v1

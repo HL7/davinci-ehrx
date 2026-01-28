@@ -8,15 +8,8 @@ Description: "Constraints on the US Core PractitionerRole requiring the use of D
 * ^status = #active
 * code
   * ^comment = "...  A concept map for converting between the US Core 3.1.1 and 6.1.0 value sets can be found [here](ConceptMap-NUCC-CareTeamMemberFunction.html)"
-  * insert AdditionalBinding(#extensible, "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role|3.1")
+  * insert AdditionalBinding("pr-code", #extensible, "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role|3.1.0")
 //* obeys hrex-pr-1
-  * ^binding.extension.url = $additional-binding
-  * ^binding.extension.extension[0].url = "key"
-  * ^binding.extension.extension[=].valueId = "pr-code"
-  * ^binding.extension.extension[+].url = "purpose"
-  * ^binding.extension.extension[=].valueCode = #extensible
-  * ^binding.extension.extension[+].url = "valueSet"
-  * ^binding.extension.extension[=].valueCanonical = "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-role|3.1.0"
 * practitioner 1..
 * practitioner only Reference(USCorePractitionerProfile)
 * organization 1..

@@ -6,7 +6,7 @@ Description: """The Parameters profile for Da Vinci Find Member using Patient an
   * MemberPatient - HRex Patient containing member demographics 
   * CoverageToMatch - details of prior health plan coverage provided by the member, typically from their health plan coverage card 
   * CoverageToLink - details of new or prospective health plan coverage, provided by the health plan based upon the member's enrollment"""
-* parameter ..4 MS
+* parameter ..4
   * ^slicing.discriminator.type = #value
   * ^slicing.discriminator.path = "name"
   * ^slicing.rules = #closed

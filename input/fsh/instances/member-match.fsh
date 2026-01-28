@@ -17,7 +17,7 @@ Usage: #definition
 * inputProfile = "http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-parameters-member-match-in"
 * outputProfile = "http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-parameters-member-match-out"
 * parameter[0]
-  * insert parameter(#MemberPatient, #in, 1, "1", #Resource, "Parameter submitted by the new plan **SHALL** contain US Core Patient containing member demographics.")
+  * insert parameter(#MemberPatient, #in, 1, "1", #Patient, "Parameter submitted by the new plan **SHALL** contain US Core Patient containing member demographics.")
   * referencedFrom[0]
     * source = "CoverageToMatch"
     * sourceId = "beneficiary"
@@ -25,11 +25,11 @@ Usage: #definition
     * source = "CoverageToLink"
     * sourceId = "beneficiary"
 * parameter[+]
-  * insert parameter(#Consent, #in, 0, "1", #Resource, "Consent held by the system seeking the match that grants permission to access the patient information information on the system for whom a patient is sought.  Downstream IGs could tighten this to 'required' if necessary.")
+  * insert parameter(#Consent, #in, 0, "1", #Consent, "Consent held by the system seeking the match that grants permission to access the patient information information on the system for whom a patient is sought.  Downstream IGs could tighten this to 'required' if necessary.")
 * parameter[+]
-  * insert parameter(#CoverageToMatch, #in, 1, "1", #Resource, "Parameter that identifies the coverage to be matched by the receiving payer.  It contains the coverage details of health plan coverage provided by the member\, typically from their health plan coverage card.")
+  * insert parameter(#CoverageToMatch, #in, 1, "1", #Coverage, "Parameter that identifies the coverage to be matched by the receiving payer.  It contains the coverage details of health plan coverage provided by the member\, typically from their health plan coverage card.")
 * parameter[+]
-  * insert parameter(#CoverageToLink, #in, 0, "1", #Resource, "Parameter that identifies the coverage information of the member as they are known by the requesting payer.  This information allows the matching payer to link their member coverage information to that of the requesting payer to ease subsequent exchanges\, including evaluating authorization to share information in subsequent queries.  This parameter is optional as this operation might be invoked by non-payer systems.  However\, it is considered 'mustSupport'.  If the client invoking the operation is a payer\, they **SHALL** include their coverage information for the member when invoking the operation.")
+  * insert parameter(#CoverageToLink, #in, 0, "1", #Coverage, "Parameter that identifies the coverage information of the member as they are known by the requesting payer.  This information allows the matching payer to link their member coverage information to that of the requesting payer to ease subsequent exchanges\, including evaluating authorization to share information in subsequent queries.  This parameter is optional as this operation might be invoked by non-payer systems.  However\, it is considered 'mustSupport'.  If the client invoking the operation is a payer\, they **SHALL** include their coverage information for the member when invoking the operation.")
 * parameter[+]
   * insert parameter(#MemberIdentifier, #out, 1, "1", #Identifier, "This is the member identifier information for the patient as known by the server that is the target of the operation.")
 * parameter[+]

@@ -42,6 +42,7 @@ RuleSet: nomap(sourceCode, sourceDisplay)
   * display = "{sourceDisplay}"
   * target.equivalence = #unmatched
 
-RuleSet: AdditionalBinding(purpose, canonical)
-* ^binding.extension[$additional-binding][+].extension[purpose].valueCode = {purpose}
+RuleSet: AdditionalBinding(key, purpose, canonical)
+* ^binding.extension[$additional-binding][+].extension[key].valueId = {key}
+* ^binding.extension[$additional-binding][=].extension[purpose].valueCode = {purpose}
 * ^binding.extension[$additional-binding][=].extension[valueSet].valueCanonical = {canonical}

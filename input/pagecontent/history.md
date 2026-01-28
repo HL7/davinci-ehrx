@@ -1,9 +1,9 @@
-### STU 1.2.0
+### STU 1.2.0-snapshot
 **Breaking changes**:
 * None
 
 **Substantive changes**:
-* 
+* [FHIR-53221](https://jira.hl7.org/browse/FHIR-53221) - Revised endpoint discovery codes to add support for version-specific endpoints and deprecate versionless ones *(enhancement)* [link](endpoint-discovery.html#FHIR-53221), [link](CodeSystem-hrex-endpoint-discovery.html)
 
 **Non-substantive changes**:
 * [FHIR-53098](https://jira.hl7.org/browse/FHIR-53098) - Fixed typo in endpoint discovery example *(correction)* [link](Binary-Wellknown.html)
@@ -57,7 +57,7 @@ Other resources:
 
 A variety of minor wording clarifications, correction of typos and other non-substantive changes
 
-Also, see the [comparison](comparison-v1.0.0/index.html) between this release and release 1.0.0
+Also, see the [comparison](../comparison-v1.1.0/index.html) between this release and release 1.1.0
 
 ### STU 1.0.0
 

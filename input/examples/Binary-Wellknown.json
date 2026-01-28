@@ -4,9 +4,10 @@
     "value" : "12345"
   },
   "endpoints": {
-    "davinci_crd_hook_endpoint" : "http://example.org/foo/bar/crd",
-    "davinci_dtr_qpackage_endpoint" : "http://example.org/foo/bar/dtr",
-    "davinci_pas_submission_endpoint" : "http://example.org/foo/bar/pas2",
+    "davinci_crd_hook_endpoint#1.1" : "http://example.org/foo/bar/crd",
+    "davinci_crd_hook_endpoint#1.2" : "http://example.org/foo/bar/crdnew",
+    "davinci_dtr_qpackage_endpoint#1.2" : "http://example.org/foo/bar/dtr",
+    "davinci_pas_submission_endpoint#1.2" : "http://example.org/foo/bar/pas2",
     "something_else" : "http://example.org/anotheruri"
   }
 }
