@@ -2,8 +2,8 @@ Instance: hrex-implementer-actor
 InstanceOf: ActorDefinition
 Title: "HRex Implementer"
 Usage: #definition
-* id = "hrex-implementer"
-* url = "http://hl7.org/fhir/us/davinci-hrex/ActorDefinition/hrex-implementer"
+* id = "implementer"
+* url = "http://hl7.org/fhir/us/davinci-hrex/ActorDefinition/implementer"
 * name = "HRexImplementerActor"
 * description = "Any system (or collection of systems) that implements Da Vinci functionality."
 * type = #system
@@ -68,8 +68,8 @@ Instance: hrex-mm-client-actor
 InstanceOf: ActorDefinition
 Title: "Member Match Client"
 Usage: #definition
-* id = "mm-client"
-* url = "http://hl7.org/fhir/us/davinci-hrex/ActorDefinition/mm-client"
+* id = "mmclient"
+* url = "http://hl7.org/fhir/us/davinci-hrex/ActorDefinition/mmclient"
 * name = "HRexMemberMatchClientActor"
 * description = "A Da Vinci system that invokes the member match operation."
 * type = #system
@@ -79,8 +79,8 @@ Instance: hrex-mm-server-actor
 InstanceOf: ActorDefinition
 Title: "Member Match Server"
 Usage: #definition
-* id = "mm-server"
-* url = "http://hl7.org/fhir/us/davinci-hrex/ActorDefinition/mm-server"
+* id = "mmserver"
+* url = "http://hl7.org/fhir/us/davinci-hrex/ActorDefinition/mmserver"
 * name = "HRexMemberMatchServerActor"
 * description = "A Da Vinci system that responds to the member match operation."
 * type = #system
