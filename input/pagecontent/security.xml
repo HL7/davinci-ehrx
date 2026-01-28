@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R4/fhir-single.xsd">
   <p>
-    The following content is intended to apply to all Da Vinci IGs.  IGs derived from HRex <b>SHOULD</b> all reference this section, though they can qualify and supplement the content here as appropriate for the specific technologies they are using, and the threat environment and privacy considerations involved in their specific use case.
+    The following content is intended to apply to all Da Vinci IGs.  <span class="fhir-conformance" id="sec-1^igauthor^business">IGs derived from HRex <b>SHOULD</b> all reference this section, though they can qualify and supplement the content here as appropriate for the specific technologies they are using, and the threat environment and privacy considerations involved in their specific use case.</span>
   </p>
 
   <a name="principles"> </a>
 	<h3>Statutes, Regulations, and Guiding Principles</h3>
   <ol>
-    <li>All implementations of any Da Vinci FHIR Implementation Guides (IG) <b>SHALL</b> meet all current relevant Federal and State statutes and regulations regarding security and privacy.</li>
-    <li>All IGs <b>SHALL</b> use applicable technical standards required by current regulations published by the Centers for Medicare and Medicaid Services (CMS) and the Assistant Secretary for Technology Policy and Office of the National Coordinator for Health Information Technology (ASTP/ONC) (allowing for voluntary use through the <a href="https://www.healthit.gov/isa/standards-version-advancement-process#:~:text=ONC%20has%20established%20the%20voluntary,of%20Certification%20requirement%20(%C2%A7%20170.405)">SVAP</a>) unless an exception has been granted.</li>
-    <li>All IGs and implementations <b>SHOULD</b> follow the current <a href="davinci-guiding-principles.html">Da Vinci Guiding Principles</a>.</li>
-    <li>All IGs and implementations <b>SHALL</b> support patient/member consent and/or treatment of sensitive information consistent with Federal and State statutes and regulations.</li>
-    <li>All IGs and implementations <b>SHOULD</b> support the consent and data sharing policies of trading partners involved in the exchange that are more protective so long as policies are consistent with or more restrictive than Federal and State statutes and regulations.</li>
+    <li><span class="fhir-conformance" id="sec-2^implementer^exchange,processing">All implementations of any Da Vinci FHIR Implementation Guides (IG) <b>SHALL</b> meet all current relevant Federal and State statutes and regulations regarding security and privacy.</span></li>
+    <li><span class="fhir-conformance" id="sec-3^igauthor^business">All IGs <b>SHALL</b> use applicable technical standards required by current regulations published by the Centers for Medicare and Medicaid Services (CMS) and the Assistant Secretary for Technology Policy and Office of the National Coordinator for Health Information Technology (ASTP/ONC) (allowing for voluntary use through the <a href="https://www.healthit.gov/isa/standards-version-advancement-process#:~:text=ONC%20has%20established%20the%20voluntary,of%20Certification%20requirement%20(%C2%A7%20170.405)">SVAP</a>) unless an exception has been granted.</span></li>
+    <li><span class="fhir-conformance" id="sec-4^implementer,igauthor^business,exchange,processing">All IGs and implementations <b>SHOULD</b> follow the current <a href="davinci-guiding-principles.html">Da Vinci Guiding Principles</a>.</span></li>
+    <li><span class="fhir-conformance" id="sec-5^implementer^exchange,processing">All IGs and implementations <b>SHALL</b> support patient/member consent and/or treatment of sensitive information consistent with Federal and State statutes and regulations.</span></li>
+    <li><span class="fhir-conformance" id="sec-6^implementer^exchange,processing">All IGs and implementations <b>SHOULD</b> support the consent and data sharing policies of trading partners involved in the exchange that are more protective so long as policies are consistent with or more restrictive than Federal and State statutes and regulations.</span></li>
   </ol>
 
   <a name="guidance"> </a>
 	<h3>FHIR Clinical Safety, Security and Implementation Guidance</h3>
   <p>
-    All FHIR Implementation Guides <b>SHOULD</b> follow the FHIR Security guidance and FHIR Implementer’s Safety guidance as defined in the  relevant FHIR  specification (e.g. Release 4.1.0) where applicable and not superseded by this Section or specific IG requirements.</p>
+    <span class="fhir-conformance" id="sec-7^implementer^exchange,processing">All FHIR Implementation Guides <b>SHOULD</b> follow the FHIR Security guidance and FHIR Implementer’s Safety guidance as defined in the  relevant FHIR  specification (e.g. Release 4.1.0) where applicable and not superseded by this Section or specific IG requirements.</span></p>
   <ol>
     <li>The FHIR Security specification provides guidance related to communication security, authentication, authorization/access control, audit, digital signatures, attachments, labels, narrative, and input validation. The FHIR security specification is available <a href="{{site.data.fhir.path}}security.html">here</a>.</li>
     <li>The FHIR Implementer’s Safety specification is a check-list to help implementers be sure that they have considered all the parts of FHIR that impact their system design regarding safety. The FHIR safety check list is available <a href="{{site.data.fhir.path}}safety.html">here</a>.</li>
@@ -34,25 +34,31 @@
 	
   <a name="exchange"> </a>
 	<h3>Exchange Security</h3>
-	<ol>
-		<li>When exchanging Protected Health Information (PHI) between entities, the exchange <b>SHOULD</b>  use the current version and <b>SHALL</b> use either current or the immediately prior release of <a href="https://tools.ietf.org/html/rfc8446">Transport Level Security (TLS)</a> as specified by the current release of <a href="https://csrc.nist.gov/publications/detail/sp/800-52/rev-2/final">National Institute of Standards and Technology (NIST) guidelines (SP 800-52)</a>.  TLS is to be implemented as per <a href="https://datatracker.ietf.org/doc/html/rfc8705">RFC8705</a>.</li>
-		<li>When the identity of the requesting or receiving party is important, implementations <b>SHOULD</b> use one or more of the following as defined in the specific Da Vinci IG:
-		<ol style="list-style-type: lower-alpha;">
-			<li>the <a href="https://hl7.org/fhir/smart-app-launch/index.html">SMART App Launch Authorization</a>,</li>
-			<li>mutually authenticated TLS,</li>
-			<li>the <a href="https://hl7.org/fhir/us/udap-security">FAST HL7 UDAP Security for Scalable Registration, Authentication, and Authorization IG</a>, or </li>
-			<li>the OAuth Server to Server Authentication as defined in <a href="https://hl7.org/fhir/smart-app-launch/backend-services.html">SMART Back-end Services</a>.</li>
-		</ol></li>
-		<li>When using OAuth (either through SMART or UDAP), OAuth tokens issued <b>SHALL</b> be tied to the client system's certificate.</li>
-	</ol>
+	<ul>
+		<li><span class="fhir-conformance" id="sec-8^implementer^exchange">When exchanging Protected Health Information (PHI) between entities, the exchange <b>SHOULD</b>  use the current version and <b>SHALL</b> use either current or the immediately prior release of <a href="https://tools.ietf.org/html/rfc8446">Transport Level Security (TLS)</a> as specified by the current release of <a href="https://csrc.nist.gov/publications/detail/sp/800-52/rev-2/final">National Institute of Standards and Technology (NIST) guidelines (SP 800-52)</a>.</span>  <span class="fhir-conformance" id="sec-9^implementer^exchange">TLS <b>SHALL</b> be implemented as per <a href="https://datatracker.ietf.org/doc/html/rfc8705">RFC8705</a>.</span></li>
+  </ul>
+  <div class="fhir-conformance" id="sec-10^implementer^exchange">
+    <ul>
+      <li>When the identity of the requesting or receiving party is important, implementations <b>SHOULD</b> use one or more of the following as defined in the specific Da Vinci IG:
+      <ol style="list-style-type: lower-alpha;">
+        <li>the <a href="https://hl7.org/fhir/smart-app-launch/index.html">SMART App Launch Authorization</a>,</li>
+        <li>mutually authenticated TLS,</li>
+        <li>the <a href="https://hl7.org/fhir/us/udap-security">FAST HL7 UDAP Security for Scalable Registration, Authentication, and Authorization IG</a>, or </li>
+        <li>the OAuth Server to Server Authentication as defined in <a href="https://hl7.org/fhir/smart-app-launch/backend-services.html">SMART Back-end Services</a>.</li>
+      </ol></li>
+    </ul>
+  </div>
+  <ul>
+		<li><span class="fhir-conformance" id="sec-11^implementer^exchange">When using OAuth (either through SMART or UDAP), OAuth tokens issued <b>SHALL</b> be tied to the client system's certificate.</span></li>
+	</ul>
 
   <p>
-    When mutual TLS is used, it <b>SHALL</b> be done in accordance with <a href="https://datatracker.ietf.org/doc/html/rfc8705">RFC8705</a>.  There are certain constraints on this RFC that apply across all Da Vinci IGs: 
+    <span class="fhir-conformance" id="sec-12^implementer^exchange">When mutual TLS is used, it <b>SHALL</b> be done in accordance with <a href="https://datatracker.ietf.org/doc/html/rfc8705">RFC8705</a></span>  There are certain constraints on this RFC that apply across all Da Vinci IGs: 
   </p>
   <ul>
-    <li>The authorization mechanism <b>SHALL</b> be PKI-Mutual TLS (i.e. not self-signed certificates)</li>
-    <li>Signing options will use URIs, not DNS, IP, email, etc.</li>
-    <li>If mutual TLS is used with OAuth, the OAuth tokens <b>SHALL</b> be bound to the client system's certificate (and are therefore not shareable)</li>
+    <li><span class="fhir-conformance" id="sec-13^implementer^exchange">The TLS authorization mechanism <b>SHALL</b> be PKI-Mutual TLS (i.e. not self-signed certificates)</span></li>
+    <li><span class="fhir-conformance" id="sec-14^implementer^exchange">Signing options <b>SHALL</b> use URIs, not DNS, IP, email, etc.</span></li>
+    <li><span class="fhir-conformance" id="sec-15^implementer^exchange">If mutual TLS is used with OAuth, the OAuth tokens <b>SHALL</b> be bound to the client system's certificate (and are therefore not shareable)</span></li>
   </ul>
 	
   <p>Note: There is ongoing work to enhance the capabilities of the above specifications to ensure a more secure exchange that recognizes issues related to fine grain scopes.</p>
@@ -61,8 +67,8 @@
 	<h3>Additionally Protected Information</h3>
   <p>Additionally protected information can include items defined by Federal (e.g. 42 CFR Part 2), State (e.g. many states protect substance abuse disorder, HIV diagnosis/treatment records, release of information on minors – note this is not an exhaustive list) statutes and regulations.  Organizations can also provide additional protection for specific types of information that are deemed sensitive.  The following guidelines apply unless otherwise dictated by statute or regulation:</p>
   <ol>
-    <li>Where permitted by law and in accordance with legal requirements, systems <b>SHALL</b> always support release of additionally protected information.</li>
-    <li>Implementations <b>SHALL</b> ensure that release of the information without explicit request of the patient/member is based on organization policy consistent with Federal and State regulations. Examples are legal requests for information and "break glass" to treat a patient that is unable to provide consent.</li>
+    <li><span class="fhir-conformance" id="sec-16^source^exchange">Where permitted by law and in accordance with legal requirements, systems <b>SHALL</b> always support release of additionally protected information.</span></li>
+    <li><span class="fhir-conformance" id="sec-17^source^exchange">Implementations <b>SHALL</b> ensure that release of the information without explicit request of the patient/member is based on organization policy consistent with Federal and State regulations.</span> Examples are legal requests for information and "break glass" to treat a patient that is unable to provide consent.</li>
   </ol>
 
   <a name="contexts"> </a>
@@ -104,10 +110,10 @@
     <li>a covered entity and the member/patient.</li>
   </ul>
   <br/>
-  <p>In all cases, the Information Supplier systems (in accordance with HIPAA security and privacy rules):</p>
+  <p>In all cases, (in accordance with HIPAA security and privacy rules):</p>
   <ol>
-    <li><b>SHALL</b> log all IDs, access rights, requests, and exchanges.</li>
-    <li><b>SHALL</b> verify rights of the requestor to have access to the member’s/patient’s record.</li>
+    <li><span class="fhir-conformance" id="sec-18^source^storage">Information Source systems <b>SHALL</b> log all IDs, access rights, requests, and exchanges.</span></li>
+    <li><span class="fhir-conformance" id="sec-19^source^processing">Information Source systems<b>SHALL</b> verify rights of the requestor to have access to the member’s/patient’s record.</li>
   </ol>
   <table border="1" width="80%" style="margin-left:auto; margin-right:auto">
     <thead>

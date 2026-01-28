@@ -17,7 +17,7 @@ Alias: $v3-ActCode                  = http://terminology.hl7.org/CodeSystem/v3-A
 Alias: $v3-ParticipationType        = http://terminology.hl7.org/CodeSystem/v3-ParticipationType
 // - External
 //Alias: $formatcode = http://ihe.net/fhir/ihe.formatcode.fhir/ValueSet/formatcode
-Alias: $formatcode = urn:oid:1.3.6.1.4.1.19376.1.2.3
+Alias: $formatcode                = http://ihe.net/fhir/ihe.formatcode.fhir/CodeSystem/formatcode
 Alias: $loinc                     = http://loinc.org
 Alias: $Place_of_Service_Code_Set = https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set
 Alias: $provider-taxonomy         = http://nucc.org/provider-taxonomy

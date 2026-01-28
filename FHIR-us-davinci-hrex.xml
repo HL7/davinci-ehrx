@@ -24,14 +24,20 @@
 <artifact id="SearchParameter/hrex-coverage-subscriberId" key="SearchParameter-hrex-coverage-subscriberId" name="Coverage subscriberId Search Parameter"/>
 <artifact id="StructureDefinition/HRexWellknownDefinition" key="StructureDefinition-HRexWellknownDefinition" name="Da Vinci .well-known File Definition"/>
 <artifact id="Binary/Wellknown" key="Binary-Wellknown" name="Example Wellknown endpoint"/>
+<artifact id="ValueSet/cs-categories" key="ValueSet-cs-categories" name="HRex Conformance Statement Categories"/>
 <artifact id="ValueSet/hrex-consent-policy" key="ValueSet-hrex-consent-policy" name="HRex Consent Policy ValueSet"/>
 <artifact id="StructureDefinition/hrex-consent" key="StructureDefinition-hrex-consent" name="HRex Consent Profile"/>
+<artifact id="ActorDefinition/consumer" key="ActorDefinition-consumer" name="HRex Consumer"/>
 <artifact id="ValueSet/hrex-coverage-relationship" key="ValueSet-hrex-coverage-relationship" name="HRex Coverage Relationship ValueSet"/>
 <artifact id="Coverage/full" key="Coverage-full" name="HRex Coverage full example"/>
 <artifact id="Coverage/min" key="Coverage-min" name="HRex Coverage minimal example"/>
+<artifact id="ActorDefinition/disc-client" key="ActorDefinition-disc-client" name="HRex Discovery Client"/>
+<artifact id="ActorDefinition/disc-server" key="ActorDefinition-disc-server" name="HRex Discovery Server"/>
 <artifact id="CodeSystem/hrex-endpoint-discovery" key="CodeSystem-hrex-endpoint-discovery" name="HRex Endpoint Discovery Code System"/>
 <artifact id="ValueSet/hrex-endpoint-name" key="ValueSet-hrex-endpoint-name" name="HRex Endpoint Name"/>
+<artifact id="ActorDefinition/igauthor" key="ActorDefinition-igauthor" name="HRex IG Author"/>
 <artifact id="StructureDefinition/hrex-reference-id" key="StructureDefinition-hrex-reference-id" name="HRex Identifier Reference Profile"/>
+<artifact id="ActorDefinition/hrex-implementer" key="ActorDefinition-hrex-implementer" name="HRex Implementer"/>
 <artifact id="StructureDefinition/hrex-coverage" key="StructureDefinition-hrex-coverage" name="HRex Member Match Coverage Profile"/>
 <artifact id="OperationDefinition/member-match" key="OperationDefinition-member-match" name="HRex Member Match Operation"/>
 <artifact id="StructureDefinition/hrex-patient-demographics" key="StructureDefinition-hrex-patient-demographics" name="HRex Member Match Patient"/>
@@ -52,6 +58,7 @@
 <artifact id="Provenance/full" key="Provenance-full" name="HRex Provenance full example"/>
 <artifact id="Provenance/min" key="Provenance-min" name="HRex Provenance min example"/>
 <artifact id="StructureDefinition/hrex-reference-rest" key="StructureDefinition-hrex-reference-rest" name="HRex REST Reference Profile"/>
+<artifact id="ActorDefinition/source" key="ActorDefinition-source" name="HRex Source"/>
 <artifact id="Task/document-complete" key="Task-document-complete" name="HRex Task Data Request - completed document example"/>
 <artifact id="Task/query-complete" key="Task-query-complete" name="HRex Task Data Request - completed query example"/>
 <artifact id="Task/query-initial" key="Task-query-initial" name="HRex Task Data Request - initial query example"/>

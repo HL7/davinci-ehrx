@@ -24,8 +24,8 @@ E.g.
 The time-stamp specified would be the search result returned from the last search.  
 
 The frequency of polling needs to be often enough to allow for timely response to changes, while not imposing too high a requirement on system performance.
-For Da Vinci, systems that use polling **SHALL** check for new/updated information at least once per business day and **SHOULD** check for information at least once per hour during
-normal hours of operation.  Systems **SHOULD NOT** query more often than every 15 minutes unless there is an urgent change they are monitoring for.
+§task-1?^implementer^exchange:For Da Vinci, systems that use polling **SHALL** check for new/updated information at least once per business day and **SHOULD** check for information at least once per hour during
+§normal hours of operation.  §task-2?^implementer^exchange:Polling systems **SHOULD NOT** query more often than every 15 minutes unless there is an urgent change they are monitoring for.§
 
 The response would look like [this](Bundle-task-poll-response.html).
 
@@ -36,21 +36,20 @@ subset of Tasks it is interested in.  The server will then push notifications wh
 
 This functionality is based on the [R4 Subscription backport](http://hl7.org/fhir/uv/subscriptions-backport) implementation guide.  This implementation guide 
 allows pre-adoption of the FHIR R5 topic-based subscription approach in R4 implementations and is the subscription approach that most U.S. EHR vendors have agreed to 
-support.  Implementers of this Da Vinci IG who choose to support Subscription **SHALL** comply with the Subscription Backport IG for the purpose of monitoring Tasks.
+support.  §task-3?^implementer^exchange:Implementers of this Da Vinci IG who choose to support Subscription **SHALL** comply with the Subscription Backport IG for the purpose of monitoring Tasks.§
 
 For the purposes of this IG, there will be no need for 'topic discovery' as there is only one topic of interest - [Task Subscription Topic](SubscriptionTopic-Task.html), 
 though downstream IGs can refine or provide additional guidance around the use of this topic.
 While this topic is not unique to Da Vinci, because no standard topics have yet been defined for US Core, this IG will define the needed
 topic here.  In the future, these topics could be subsumed into general-purpose topics defined by US Core and/or the FHIR core specification.
 
-Systems supporting subscription **SHALL** support the rest-hook channel mechanism, though they might choose to support other channel approaches.  Servers **SHALL** support both
-JSON and XML and clients **SHALL** support at least one of these.  Client and server **SHALL** support id-only, though they can  also support other content approaches.  The
+§task-4?^implementer^exchange:Systems supporting subscription **SHALL** support the rest-hook channel mechanism, though they might choose to support other channel approaches.§  §task-5?^implementer^exchange:Systems using subcription **SHALL** support id-only, though they can  also support other content approaches.§  The
 id-only approach means that the id of the Task that was updated will be provided.  The client will then perform a read or a query to
 retrieve the specified record(s) specified in the subscription notification. E.g.
 
 ```[base]/Task?_id=1234,5678```
 
-If search is used, the client **MAY** use _include=Task:output to retrieve the referenced results as well.  E.g.
+§task-6^client^exchange:If search is used, the client **MAY** use _include=Task:output to retrieve the referenced results as well.§  E.g.
 ```[base]/Task?_id=1234m5678&_include=Task:output```
 
 

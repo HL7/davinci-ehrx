@@ -22,6 +22,10 @@ The resources profiled or otherwise used in this specification include:
   </thead>
   <tbody>
     <tr>
+      <td><a href="http://hl7.org/fhir/r5/actordefinition.html">ActorDefinition</a></td>
+      <td>Used to help define conformance expectations for this guide</td>
+    </tr>
+    <tr>
       <td><a href="{{site.data.fhir.path}}binary.html">Binary</a></td>
       <td>Used when exposing examples of the .well-known file for <a href="endpoint-discovery.html">payer endpoint discovery</a></td>
     </tr>
@@ -64,6 +68,10 @@ The resources profiled or otherwise used in this specification include:
     <tr>
       <td><a href="{{site.data.fhir.path}}provenance.html">Provenance</a></td>
       <td>Used in examples of the US-core version-independent and Da Vinci-specific <a href="StructureDefinition-hrex-provenance.html">Provenance profile</a></td>
+    </tr>
+    <tr>
+      <td><a href="http://hl7.org/fhir/r5/requirements.html">Requirements</a></td>
+      <td>Used to computably represent the conformance expectations for this guide</td>
     </tr>
     <tr>
       <td><a href="{{site.data.fhir.path}}searchparameter.html">SearchParameter</a></td>
