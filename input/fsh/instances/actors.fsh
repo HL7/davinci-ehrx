@@ -9,6 +9,30 @@ Usage: #definition
 * type = #system
 * insert CommonActor
 
+Instance: hrex-poll-implementer-actor
+InstanceOf: ActorDefinition
+Title: "Polling Implementer"
+Usage: #definition
+* id = "poll-imp"
+* url = "http://hl7.org/fhir/us/davinci-hrex/ActorDefinition/poll-imp"
+* name = "HRexPollingImplementerActor"
+* description = "Any system (or collection of systems) that implements Da Vinci polling functionality."
+* type = #system
+* derivedFrom[+] = Canonical(hrex-implementer-actor)
+* insert CommonActor
+
+Instance: hrex-subscription-implementer-actor
+InstanceOf: ActorDefinition
+Title: "Subscription Implementer"
+Usage: #definition
+* id = "subscribe-imp"
+* url = "http://hl7.org/fhir/us/davinci-hrex/ActorDefinition/subscribe-imp"
+* name = "HRexSubscriptionImplementerActor"
+* description = "Any system (or collection of systems) that implements Da Vinci subscription functionality."
+* type = #system
+* derivedFrom[+] = Canonical(hrex-implementer-actor)
+* insert CommonActor
+
 Instance: hrex-igauthor-actor
 InstanceOf: ActorDefinition
 Title: "HRex IG Author"
@@ -29,6 +53,7 @@ Usage: #definition
 * name = "HRexSourceActor"
 * description = "A Da Vinci system that shares data with another system."
 * type = #system
+* derivedFrom[+] = Canonical(hrex-implementer-actor)
 * insert CommonActor
 
 Instance: hrex-consumer-actor
@@ -40,6 +65,7 @@ Usage: #definition
 * name = "HRexConsumerActor"
 * description = "A Da Vinci system that accepts data from another system."
 * type = #system
+* derivedFrom[+] = Canonical(hrex-implementer-actor)
 * insert CommonActor
 
 Instance: hrex-disc-server-actor
@@ -51,6 +77,7 @@ Usage: #definition
 * name = "HRexDiscoveryServerActor"
 * description = "A Da Vinci payer system that surfaces an endpoint discovery .wellknown file."
 * type = #system
+* derivedFrom[+] = Canonical(hrex-implementer-actor)
 * insert CommonActor
 
 Instance: hrex-disc-client-actor
@@ -62,6 +89,7 @@ Usage: #definition
 * name = "HRexDiscoveryClientActor"
 * description = "A Da Vinci client that accesses an endpoint discovery .wellknown file."
 * type = #system
+* derivedFrom[+] = Canonical(hrex-implementer-actor)
 * insert CommonActor
 
 Instance: hrex-mm-client-actor
@@ -73,6 +101,7 @@ Usage: #definition
 * name = "HRexMemberMatchClientActor"
 * description = "A Da Vinci system that invokes the member match operation."
 * type = #system
+* derivedFrom[+] = Canonical(hrex-implementer-actor)
 * insert CommonActor
 
 Instance: hrex-mm-server-actor
@@ -84,6 +113,7 @@ Usage: #definition
 * name = "HRexMemberMatchServerActor"
 * description = "A Da Vinci system that responds to the member match operation."
 * type = #system
+* derivedFrom[+] = Canonical(hrex-implementer-actor)
 * insert CommonActor
 
 RuleSet: CommonActor

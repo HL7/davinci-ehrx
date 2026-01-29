@@ -34,7 +34,7 @@ parameters:
   shownav: true
   pin-canonicals: pin-multiples
 copyrightYear: 2019+
-releaseLabel: STU 1.1
+releaseLabel: STU 1.2
 extension:
   - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
     valueCode: "trial-use"
@@ -94,7 +94,7 @@ pages:
     extension:
       - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
         valueCode: "informative"
-  exchanging.html:
+  exchanging.md:
     title: Approaches to Exchanging FHIR Data
     extension:
       - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
@@ -104,31 +104,22 @@ pages:
     extension:
       - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
         valueCode: "informative"
-#    exchanging-search.html:
-#      title: Exchanging with FHIR search
-#    exchanging-rest.html:
-#      title: Exchanging with FHIR REST
-#    exchanging-subscription.html:
-#      title: Exchanging with FHIR subscription
-#    exchanging-polling.html:
-#      title: Exchanging with polling
-#    exchanging-operation.html:
-#      title: Exchanging with FHIR operations
-#    exchanging-messaging.html:
-#      title: Exchanging with messaging
-#    exchanging-request.html:
-#      title: Exchanges allowing human intervention
-  conformance.html:
+  conformance.md:
     title: Conformance Expectations
     extension:
       - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
         valueCode: "trial-use"
+    conformancedetails.md:
+      title: Conformance Details
+      extension:
+        - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+          valueCode: "trial-use"
   davinci-guiding-principles.html:
     title: Da Vinci Guiding Principles
     extension:
       - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
         valueCode: "informative"
-  security.html:
+  security.md:
     title: Security and Privacy
     extension:
       - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status

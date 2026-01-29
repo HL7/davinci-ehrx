@@ -10,7 +10,11 @@ Provenance should align with information present in the record.  Where a Provena
 
 ### Populating `Provenance.agent`
 
+§§prov-1?^implementer^exchange:Implementations **SHOULD** follow the recommendations on which resources should be referenced from which data element.^
+
 The following table lists the various agent codes and what resource types are appropriate.  These recommendations **SHOULD** be followed
+
+| element     | Allowed target resources |
 ------------------------
 | transmitter | This could be Patient, RelatedPerson, Practitioner or PractitionerRole or Organization.  A second transmitter could capture the specific Device used |
 | enterer     | Patient, RelatedPerson, Practitioner or PractitionerRole |
@@ -24,11 +28,15 @@ The following table lists the various agent codes and what resource types are ap
 | assembler   | usually a Device, could be Practitioner or PractitionerRole |
 ------------------------------------------
 
+§§
+
 ### Handling agents with multiple roles
 
 In general, the most important role to capture is "author".  If they are the only role present, the presumption is that they are also the enterer, performer, verifier, legal, attester, informant, etc.  Specifying other roles is only necessary if they *differ* from the author.  Not all systems will necessarily track all participants.  Roles other than author only need to be shared if the system captures them and feels they might be relevant to downstream use of the information.
 
 ### Populating `onBehalfOf`
+
+§§prov-2?^implementer^exchange:`Provenance.agent.onBehalfOf` **SHOULD NOT** be used in certain circumstances.^
 
 `Provenance.agent.onBehalfOf` is only relevant in certain circumstances:
 
@@ -38,3 +46,4 @@ In general, the most important role to capture is "author".  If they are the onl
 * It is unusual for `onBehalfOf` to be populated if the agent is Patient or RelatedPerson
 * `onBehalfOf` **SHOULD NOT** be populated with an Organization if it is the same as `Device.owner`
 
+§§

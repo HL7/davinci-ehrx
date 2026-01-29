@@ -1,0 +1,1138 @@
+{
+  "resourceType" : "Requirements",
+  "id" : "fromNarrative",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "cic"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 3,
+    "_valueInteger" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "http://hl7.org/fhir/us/davinci-hrex/ImplementationGuide/davinci-hrex"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "http://hl7.org/fhir/us/davinci-hrex/ImplementationGuide/davinci-hrex"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "http://hl7.org/fhir/us/davinci-hrex/ImplementationGuide/davinci-hrex"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "trial-use",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "http://hl7.org/fhir/us/davinci-hrex/ImplementationGuide/davinci-hrex"
+      }]
+    }
+  }],
+  "url" : "http://hl7.org/fhir/us/davinci-hrex/Requirements/fromNarrative",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113883.4.642.40.19.36.1"
+  }],
+  "version" : "1.2.0-snapshot",
+  "name" : "FromNarrative",
+  "title" : "Narrative Conformance Statements",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-01-28T23:06:20-07:00",
+  "publisher" : "HL7 International / Clinical Interoperability Council",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/cic"
+    }]
+  }],
+  "description" : "Conformance statements found throughout the narrative of the IG consolidated into this computable resource for traceability purposes",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US"
+    }]
+  }],
+  "actor" : ["http://hl7.org/fhir/us/davinci-hrex/ActorDefinition/consumer",
+  "http://hl7.org/fhir/us/davinci-hrex/ActorDefinition/mmclient",
+  "http://hl7.org/fhir/us/davinci-hrex/ActorDefinition/disc-server",
+  "http://hl7.org/fhir/us/davinci-hrex/ActorDefinition/igauthor",
+  "http://hl7.org/fhir/us/davinci-hrex/ActorDefinition/implementer",
+  "http://hl7.org/fhir/us/davinci-hrex/ActorDefinition/subscribe-imp",
+  "http://hl7.org/fhir/us/davinci-hrex/ActorDefinition/poll-imp",
+  "http://hl7.org/fhir/us/davinci-hrex/ActorDefinition/disc-client",
+  "http://hl7.org/fhir/us/davinci-hrex/ActorDefinition/source",
+  "http://hl7.org/fhir/us/davinci-hrex/ActorDefinition/mmserver"],
+  "_actor" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-actorkey",
+      "valueString" : "consumer"
+    }]
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-actorkey",
+      "valueString" : "mmclient"
+    }]
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-actorkey",
+      "valueString" : "disc-server"
+    }]
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-actorkey",
+      "valueString" : "igauthor"
+    }]
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-actorkey",
+      "valueString" : "implementer"
+    }]
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-actorkey",
+      "valueString" : "subscribe-imp"
+    }]
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-actorkey",
+      "valueString" : "poll-imp"
+    }]
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-actorkey",
+      "valueString" : "disc-client"
+    }]
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-actorkey",
+      "valueString" : "source"
+    }]
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-actorkey",
+      "valueString" : "mmserver"
+    }]
+  }],
+  "statement" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
+      "valueCoding" : {
+        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+        "code" : "exchange",
+        "display" : "exchange"
+      }
+    },
+    {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
+      "valueString" : "source"
+    }],
+    "key" : "conf-1",
+    "conformance" : ["SHALL"],
+    "requirement" : "Data Sources **SHALL** be capable of populating the data element when sharing resources compliant with the profile."
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
+      "valueCoding" : {
+        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+        "code" : "exchange",
+        "display" : "exchange"
+      }
+    },
+    {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
+      "valueString" : "consumer"
+    }],
+    "key" : "conf-2",
+    "conformance" : ["SHALL"],
+    "requirement" : "Data Consumers **SHALL** be capable of processing resource instances containing the data elements without generating an error or causing the application to fail."
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
+      "valueCoding" : {
+        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+        "code" : "exchange",
+        "display" : "exchange"
+      }
+    },
+    {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
+      "valueString" : "source"
+    }],
+    "key" : "conf-3",
+    "label" : "If the minimum cardinality of an element is greater than 0 – i.e. the element is ‘required’, then the element SHALL be present in the instance and SHALL have a value unless a listed exception applies.",
+    "conformance" : ["SHALL"],
+    "conditionality" : true,
+    "requirement" : "* If the minimum cardinality of an element is greater than 0 – i.e. the element is 'required', then the element **SHALL** be present in the instance and **SHALL** have a value unless: \r\n* The profile explicitly declares the dataAbsentReason extension or other extension for the element, in which case an extension can be present in place of the value.\r\n* The profile is inherited from U.S. Core, in which case a dataAbsentReason extension can be sent in place of the value even where dataAbsentReason is not explicitly declared in the profile."
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
+      "valueCoding" : {
+        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+        "code" : "exchange",
+        "display" : "exchange"
+      }
+    },
+    {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
+      "valueString" : "consumer"
+    }],
+    "key" : "conf-4",
+    "conformance" : ["SHALL"],
+    "requirement" : "Data Consumers **SHALL** interpret missing data elements within resource instances as data not being present in the Data Source's systems or was not deemed to be shareable with the Data Consumer for privacy or other business reasons."
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
+      "valueCoding" : {
+        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+        "code" : "exchange",
+        "display" : "exchange"
+      }
+    },
+    {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
+      "valueString" : "source"
+    }],
+    "key" : "conf-5",
+    "conformance" : ["SHALL"],
+    "conditionality" : true,
+    "requirement" : "Where the value set for an element includes concepts such as \"unknown\", \"refused to answer\", \"not available\" or where dataAbsentReason is explicitly referenced in a profile, then Data Sources **SHALL** use these values/that extension to communicate the reason for missing data."
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
+      "valueCoding" : {
+        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+        "code" : "exchange",
+        "display" : "exchange"
+      }
+    },
+    {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
+      "valueString" : "consumer"
+    }],
+    "key" : "conf-6",
+    "conformance" : ["SHALL"],
+    "requirement" : "Data Consumers **SHALL** be able to process resource instances containing data elements that have extensions in place of a value where such extensions are declared as part of the profile."
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
+      "valueCoding" : {
+        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+        "code" : "exchange",
+        "display" : "exchange"
+      }
+    },
+    {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
+      "valueString" : "consumer"
+    }],
+    "key" : "conf-7",
+    "conformance" : ["SHOULD-NOT"],
+    "requirement" : "Systems are free to include additional data - and Data Consumers **SHOULD NOT** reject instances that contain unexpected data elements if those elements are not [modifier elements](http://hl7.org/fhir/R4/conformance-rules.html#isModifier)."
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
+      "valueCoding" : {
+        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+        "code" : "exchange",
+        "display" : "exchange"
+      }
+    },
+    {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
+      "valueString" : "source"
+    }],
+    "key" : "conf-8",
+    "conformance" : ["SHOULD"],
+    "conditionality" : true,
+    "requirement" : "For any other references not formally defined in a US Core profile, the referenced resource **SHOULD** be a US Core profile if a US Core profile exists for the resource type."
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
+      "valueCoding" : {
+        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+        "code" : "exchange",
+        "display" : "exchange"
+      }
+    },
+    {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
+      "valueString" : "disc-server"
+    }],
+    "key" : "ep-1",
+    "label" : "When the payer responds to an Eligibility Inquiry indicating that the patient has coverage, the payer SHALL include exactly one 2000A loop repetition meeting specified requirements.",
+    "conformance" : ["SHALL"],
+    "conditionality" : true,
+    "requirement" : "When the payer responds to an Eligibility Inquiry indicating that the patient has coverage, the payer **SHALL** include exactly one 2000A loop repetition such that:\r\n\r\n* The NM1-01 is populated with PR.\r\n* There is exactly one PER repetition that has a URL communication number that fits the pattern below. (i.e. in exactly one of the PER04, PER06, or PER08 where the preceding Communication Qualifier Number is set to 'UR'):"
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
+      "valueCoding" : {
+        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+        "code" : "exchange",
+        "display" : "exchange"
+      }
+    },
+    {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
+      "valueString" : "disc-server"
+    }],
+    "key" : "ep-2",
+    "conformance" : ["SHALL"],
+    "requirement" : "Regardless of how it is retrieved, the .well-known endpoint **SHALL** be accessible with a simple TLS (not mutual TLS) connection and resolve to a JSON document."
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
+      "valueCoding" : {
+        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+        "code" : "processing",
+        "display" : "processing"
+      }
+    },
+    {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
+      "valueString" : "disc-client"
+    }],
+    "key" : "ep-3",
+    "conformance" : ["SHALL"],
+    "requirement" : "As well, codes for new 'final publication' versions of specifications that already have defined base codes (following the convention of appending '#' and then the first two nodes of the version number) **SHALL** be treated as valid, even if not yet listed in this specification."
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
+      "valueCoding" : {
+        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+        "code" : "exchange",
+        "display" : "exchange"
+      }
+    },
+    {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
+      "valueString" : "disc-client"
+    }],
+    "key" : "ep-4",
+    "conformance" : ["MAY"],
+    "requirement" : "In situations where an endpoint turns out to not be functional, client systems **MAY** choose to re-query the .well-known endpoint and/or to re-run the eligibility check to see if the end point has changed."
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
+      "valueCoding" : {
+        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+        "code" : "business",
+        "display" : "business"
+      }
+    },
+    {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
+      "valueString" : "igauthor"
+    }],
+    "key" : "ex-1",
+    "conformance" : ["SHALL"],
+    "requirement" : "All Da Vinci IGs that define [CapababilityStatements](http://hl7.org/fhir/R4/capabilitystatement.html) setting expectations for support for certain FHIR interactions, operations, or other exchange mechanisms **SHALL** include a 'design' section that explains the IG's choice of exchange architecture in terms of the decision tree found in the FHIR core specification."
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
+      "valueCoding" : {
+        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+        "code" : "exchange",
+        "display" : "exchange"
+      }
+    },
+    {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
+      "valueString" : "mmclient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
+      "valueString" : "mmserver"
+    }],
+    "key" : "mm-1",
+    "conformance" : ["SHALL"],
+    "conditionality" : true,
+    "requirement" : "The performer **SHALL** include the target payer for the [$member-match](OperationDefinition-member-match.html) and the recipient **SHALL** include the initiator of the $member-match."
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
+      "valueCoding" : {
+        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+        "code" : "exchange",
+        "display" : "exchange"
+      }
+    },
+    {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
+      "valueString" : "mmclient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
+      "valueString" : "mmserver"
+    }],
+    "key" : "mm-2",
+    "conformance" : ["SHOULD"],
+    "conditionality" : true,
+    "requirement" : "As a rule, all Coverage elements available **SHOULD** be populated, even if not all might be strictly necessary to identify the member because rules can vary from insurer to insurer about which pieces of information are necessary to uniquely identify a member."
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
+      "valueCoding" : {
+        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+        "code" : "exchange",
+        "display" : "exchange"
+      }
+    },
+    {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
+      "valueString" : "mmclient"
+    }],
+    "key" : "mm-3",
+    "conformance" : ["SHALL"],
+    "conditionality" : true,
+    "requirement" : "After a successful $member-match the requesting system **SHALL** then use the UMB provided by the target payer in the `Patient.identifier` field in any subsequent transactions with the same system."
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
+      "valueCoding" : {
+        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+        "code" : "exchange",
+        "display" : "exchange"
+      }
+    },
+    {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
+      "valueString" : "mmserver"
+    }],
+    "key" : "mm-4",
+    "conformance" : ["SHOULD"],
+    "conditionality" : true,
+    "requirement" : "If the requesting system was a payer with coverage for the member, the receiving system **SHOULD** create a linkage between their own member information and the Coverage provided by the requesting system."
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
+      "valueCoding" : {
+        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+        "code" : "exchange",
+        "display" : "exchange"
+      }
+    },
+    {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
+      "valueString" : "mmclient"
+    }],
+    "key" : "mm-5",
+    "conformance" : ["SHOULD-NOT"],
+    "conditionality" : true,
+    "requirement" : "For privacy reasons, the 'CoverageToLink' **SHOULD NOT** include any data elements not marked as mustSupport in the Coverage profile."
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
+      "valueCoding" : {
+        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+        "code" : "exchange",
+        "display" : "exchange"
+      }
+    },
+    {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
+      "valueString" : "mmclient"
+    }],
+    "key" : "mm-6",
+    "conformance" : ["SHALL"],
+    "conditionality" : true,
+    "requirement" : "The Coverage and Consent references **SHALL** be 'local' references (i.e. starting with \"Patient/\" rather than \"http\"), **SHALL** be resolved to the parameter with the name \"MemberPatient\", and **SHALL** refer to the same id."
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
+      "valueCoding" : {
+        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+        "code" : "exchange",
+        "display" : "exchange"
+      }
+    },
+    {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
+      "valueString" : "mmserver"
+    }],
+    "key" : "mm-7",
+    "conformance" : ["SHALL"],
+    "conditionality" : true,
+    "requirement" : "Servers **SHALL** monitor for and take measures to prevent brute force attacks where the same or similar set of demographics are repeatedly searched with differing card information in an attempt to achieve a match when the card information is unknown."
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
+      "valueCoding" : {
+        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+        "code" : "exchange",
+        "display" : "exchange"
+      }
+    },
+    {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
+      "valueString" : "mmserver"
+    }],
+    "key" : "mm-8",
+    "conformance" : ["SHALL"],
+    "requirement" : "A maximum of a SINGLE unique match **SHALL** be returned."
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
+      "valueCoding" : {
+        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+        "code" : "exchange",
+        "display" : "exchange"
+      }
+    },
+    {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
+      "valueString" : "mmserver"
+    }],
+    "key" : "mm-9",
+    "conformance" : ["SHALL"],
+    "requirement" : "No match **SHALL** return a 422 status code."
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
+      "valueCoding" : {
+        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+        "code" : "exchange",
+        "display" : "exchange"
+      }
+    },
+    {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
+      "valueString" : "mmserver"
+    }],
+    "key" : "mm-10",
+    "conformance" : ["SHALL"],
+    "requirement" : "Multiple matches **SHALL** return a 422 status code."
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
+      "valueCoding" : {
+        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+        "code" : "exchange",
+        "display" : "exchange"
+      }
+    },
+    {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
+      "valueString" : "mmserver"
+    }],
+    "key" : "mm-11",
+    "conformance" : ["SHALL"],
+    "conditionality" : true,
+    "requirement" : "If consent is provided, inability to comply with consent requirements **SHALL** return a 422 status code"
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
+      "valueCoding" : {
+        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+        "code" : "exchange",
+        "display" : "exchange"
+      }
+    },
+    {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
+      "valueString" : "mmserver"
+    }],
+    "key" : "mm-12",
+    "conformance" : ["SHOULD"],
+    "conditionality" : true,
+    "requirement" : "Any 422 response codes **SHOULD** be accompanied by an [OperationOutcome](http://hl7.org/fhir/R4/operationoutcome.html) that indicates the specific nature of the failure."
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
+      "valueCoding" : {
+        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+        "code" : "exchange",
+        "display" : "exchange"
+      }
+    },
+    {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
+      "valueString" : "mmserver"
+    }],
+    "key" : "mm-13",
+    "conformance" : ["SHOULD"],
+    "conditionality" : true,
+    "requirement" : "The recipient of a member match **SHOULD** store the parameters of the consent (Validity Period, Scope etc.) to enable the authorization server to evaluate the consent before issuing a token for data access during subsequent requests."
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
+      "valueCoding" : {
+        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+        "code" : "exchange",
+        "display" : "exchange"
+      }
+    },
+    {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
+      "valueString" : "implementer"
+    }],
+    "key" : "prov-1",
+    "label" : "Implementations SHOULD follow the recommendations on which resources should be referenced from which data element.",
+    "conformance" : ["SHOULD"],
+    "conditionality" : true,
+    "requirement" : "The following table lists the various agent codes and what resource types are appropriate. These recommendations **SHOULD** be followed\r\n\r\n## | element | Allowed target resources |\r\n\r\n| transmitter | This could be Patient, RelatedPerson, Practitioner or PractitionerRole or Organization. A second transmitter could capture the specific Device used | | enterer | Patient, RelatedPerson, Practitioner or PractitionerRole | | performer | could be anything | | author | could be anything | | verifier | generally only Practitioner or PractitionerRole | | legal | Only Practitioner or PractitionerRole | | attester | Patient, RelatedPerson, Practitioner or PractitionerRole | | informant | Patient, RelatedPerson, Practitioner or PractitionerRole | | custodian | usually Organization, could also be Device, Practitioner or PractitionerRole | | assembler | usually a Device, could be Practitioner or PractitionerRole | ——————————————"
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
+      "valueCoding" : {
+        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+        "code" : "exchange",
+        "display" : "exchange"
+      }
+    },
+    {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
+      "valueString" : "implementer"
+    }],
+    "key" : "prov-2",
+    "label" : "Provenance.agent.onBehalfOf SHOULD NOT be used in certain circumstances.",
+    "conformance" : ["SHOULD-NOT"],
+    "conditionality" : true,
+    "requirement" : "`Provenance.agent.onBehalfOf` is only relevant in certain circumstances:\r\n\r\n* `onBehalfOf` **SHOULD NOT** be populated if RelatedPerson is acting on behalf of the Patient. (Because that is the assumption and there is already a link to the Patient on that resource)\r\n* `onBehalfOf` **SHOULD NOT** be populated with an Organization if the agent is Practitioner - use PractitionerRole instead (even if it is a contained PractitionerRole)\r\n* `onBehalfOf` **SHOULD NOT** be populated with an Organization if the agent is PractitionerRole unless PractitionerRole is pointing to an organization and the `onBehalfOf` is different (i.e. Dr. Smith for Clinic A did something on behalf of clinic B)\r\n* It is unusual for `onBehalfOf` to be populated if the agent is Patient or RelatedPerson\r\n* `onBehalfOf` **SHOULD NOT** be populated with an Organization if it is the same as `Device.owner`"
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
+      "valueCoding" : {
+        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+        "code" : "business",
+        "display" : "business"
+      }
+    },
+    {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
+      "valueString" : "igauthor"
+    }],
+    "key" : "sec-1",
+    "conformance" : ["SHOULD"],
+    "requirement" : "IGs derived from HRex **SHOULD** all reference this section, though they can qualify and supplement the content here as appropriate for the specific technologies they are using, and the threat environment and privacy considerations involved in their specific use case."
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
+      "valueCoding" : {
+        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+        "code" : "exchange",
+        "display" : "exchange"
+      }
+    },
+    {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
+      "valueCoding" : {
+        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+        "code" : "processing",
+        "display" : "processing"
+      }
+    },
+    {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
+      "valueString" : "implementer"
+    }],
+    "key" : "sec-2",
+    "conformance" : ["SHALL"],
+    "requirement" : "All implementations of any Da Vinci FHIR Implementation Guides (IG) **SHALL** meet all current relevant Federal and State statutes and regulations regarding security and privacy."
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
+      "valueCoding" : {
+        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+        "code" : "business",
+        "display" : "business"
+      }
+    },
+    {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
+      "valueString" : "igauthor"
+    }],
+    "key" : "sec-3",
+    "conformance" : ["SHALL"],
+    "requirement" : "All IGs **SHALL** use applicable technical standards required by current regulations published by the Centers for Medicare and Medicaid Services (CMS) and the Assistant Secretary for Technology Policy and Office of the National Coordinator for Health Information Technology (ASTP/ONC) (allowing for voluntary use through the [SVAP](https://www.healthit.gov/isa/standards-version-advancement-process#:~:text=ONC%20has%20established%20the%20voluntary,of%20Certification%20requirement%20(%C2%A7%20170.405))) unless an exception has been granted."
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
+      "valueCoding" : {
+        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+        "code" : "business",
+        "display" : "business"
+      }
+    },
+    {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
+      "valueCoding" : {
+        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+        "code" : "exchange",
+        "display" : "exchange"
+      }
+    },
+    {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
+      "valueCoding" : {
+        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+        "code" : "processing",
+        "display" : "processing"
+      }
+    },
+    {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
+      "valueString" : "implementer"
+    },
+    {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
+      "valueString" : "igauthor"
+    }],
+    "key" : "sec-4",
+    "conformance" : ["SHOULD"],
+    "requirement" : "All IGs and implementations **SHOULD** follow the current [Da Vinci Guiding Principles](davinci-guiding-principles.html)."
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
+      "valueCoding" : {
+        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+        "code" : "exchange",
+        "display" : "exchange"
+      }
+    },
+    {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
+      "valueCoding" : {
+        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+        "code" : "processing",
+        "display" : "processing"
+      }
+    },
+    {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
+      "valueString" : "implementer"
+    }],
+    "key" : "sec-5",
+    "conformance" : ["SHALL"],
+    "requirement" : "All IGs and implementations **SHALL** support patient/member consent and/or treatment of sensitive information consistent with Federal and State statutes and regulations."
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
+      "valueCoding" : {
+        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+        "code" : "exchange",
+        "display" : "exchange"
+      }
+    },
+    {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
+      "valueCoding" : {
+        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+        "code" : "processing",
+        "display" : "processing"
+      }
+    },
+    {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
+      "valueString" : "implementer"
+    }],
+    "key" : "sec-6",
+    "conformance" : ["SHOULD"],
+    "requirement" : "All IGs and implementations **SHOULD** support the consent and data sharing policies of trading partners involved in the exchange that are more protective so long as policies are consistent with or more restrictive than Federal and State statutes and regulations."
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
+      "valueCoding" : {
+        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+        "code" : "exchange",
+        "display" : "exchange"
+      }
+    },
+    {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
+      "valueCoding" : {
+        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+        "code" : "processing",
+        "display" : "processing"
+      }
+    },
+    {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
+      "valueString" : "implementer"
+    }],
+    "key" : "sec-7",
+    "conformance" : ["SHOULD"],
+    "requirement" : "All FHIR Implementation Guides **SHOULD** follow the FHIR Security guidance and FHIR Implementer's Safety guidance as defined in the relevant FHIR specification (e.g. Release 4.1.0) where applicable and not superseded by this Section or specific IG requirements."
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
+      "valueCoding" : {
+        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+        "code" : "exchange",
+        "display" : "exchange"
+      }
+    },
+    {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
+      "valueString" : "implementer"
+    }],
+    "key" : "sec-8",
+    "conformance" : ["MAY"],
+    "requirement" : "to meet the statutes, regulations, and guiding principles above, consent directives and security labels **MAY** be considered and used."
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
+      "valueCoding" : {
+        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+        "code" : "exchange",
+        "display" : "exchange"
+      }
+    },
+    {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
+      "valueString" : "implementer"
+    }],
+    "key" : "sec-9",
+    "conformance" : ["SHALL",
+    "SHOULD"],
+    "requirement" : "When exchanging Protected Health Information (PHI) between entities, the exchange **SHOULD** use the current version and **SHALL** use either current or the immediately prior release of [Transport Level Security (TLS)](https://tools.ietf.org/html/rfc8446) as specified by the current release of [National Institute of Standards and Technology (NIST) guidelines (SP 800-52)](https://csrc.nist.gov/publications/detail/sp/800-52/rev-2/final)."
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
+      "valueCoding" : {
+        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+        "code" : "exchange",
+        "display" : "exchange"
+      }
+    },
+    {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
+      "valueString" : "implementer"
+    }],
+    "key" : "sec-10",
+    "conformance" : ["SHALL"],
+    "requirement" : "TLS **SHALL** be implemented as per [RFC8705](https://datatracker.ietf.org/doc/html/rfc8705)."
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
+      "valueCoding" : {
+        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+        "code" : "exchange",
+        "display" : "exchange"
+      }
+    },
+    {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
+      "valueString" : "implementer"
+    }],
+    "key" : "sec-11",
+    "label" : "When the identity of the requesting or receiving party is important, implementations SHOULD use one or more of the preferred authorization mechanisms.",
+    "conformance" : ["SHOULD"],
+    "conditionality" : true,
+    "requirement" : "* When the identity of the requesting or receiving party is important, implementations **SHOULD** use one or more of the following as defined in the specific Da Vinci IG: \r\n1. the[SMART App Launch Authorization](https://hl7.org/fhir/smart-app-launch/index.html),\r\n1. mutually authenticated TLS,\r\n1. the[FAST HL7 UDAP Security for Scalable Registration, Authentication, and Authorization IG](https://hl7.org/fhir/us/udap-security), or\r\n1. the OAuth Server to Server Authentication as defined in[SMART Back-end Services](https://hl7.org/fhir/smart-app-launch/backend-services.html).§"
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
+      "valueCoding" : {
+        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+        "code" : "exchange",
+        "display" : "exchange"
+      }
+    },
+    {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
+      "valueString" : "implementer"
+    }],
+    "key" : "sec-12",
+    "conformance" : ["SHALL"],
+    "requirement" : "When using OAuth (either through SMART or UDAP), OAuth tokens issued **SHALL** be tied to the client system's certificate."
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
+      "valueCoding" : {
+        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+        "code" : "exchange",
+        "display" : "exchange"
+      }
+    },
+    {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
+      "valueString" : "implementer"
+    }],
+    "key" : "sec-13",
+    "conformance" : ["SHALL"],
+    "requirement" : "When mutual TLS is used, it **SHALL** be done in accordance with [RFC8705](https://datatracker.ietf.org/doc/html/rfc8705)"
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
+      "valueCoding" : {
+        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+        "code" : "exchange",
+        "display" : "exchange"
+      }
+    },
+    {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
+      "valueString" : "implementer"
+    }],
+    "key" : "sec-14",
+    "conformance" : ["SHALL"],
+    "requirement" : "The TLS authorization mechanism **SHALL** be PKI-Mutual TLS (i.e. not self-signed certificates)"
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
+      "valueCoding" : {
+        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+        "code" : "exchange",
+        "display" : "exchange"
+      }
+    },
+    {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
+      "valueString" : "implementer"
+    }],
+    "key" : "sec-15",
+    "conformance" : ["SHALL"],
+    "requirement" : "Signing options **SHALL** use URIs, not DNS, IP, email, etc."
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
+      "valueCoding" : {
+        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+        "code" : "exchange",
+        "display" : "exchange"
+      }
+    },
+    {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
+      "valueString" : "implementer"
+    }],
+    "key" : "sec-16",
+    "conformance" : ["SHALL"],
+    "requirement" : "If mutual TLS is used with OAuth, the OAuth tokens **SHALL** be bound to the client system's certificate (and are therefore not shareable)"
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
+      "valueCoding" : {
+        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+        "code" : "exchange",
+        "display" : "exchange"
+      }
+    },
+    {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
+      "valueString" : "source"
+    }],
+    "key" : "sec-17",
+    "conformance" : ["SHALL"],
+    "requirement" : "Where permitted by law and in accordance with legal requirements, systems **SHALL** always support release of additionally protected information."
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
+      "valueCoding" : {
+        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+        "code" : "exchange",
+        "display" : "exchange"
+      }
+    },
+    {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
+      "valueString" : "source"
+    }],
+    "key" : "sec-18",
+    "conformance" : ["SHALL"],
+    "requirement" : "Implementations **SHALL** ensure that release of the information without explicit request of the patient/member is based on organization policy consistent with Federal and State regulations."
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
+      "valueCoding" : {
+        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+        "code" : "storage",
+        "display" : "storage"
+      }
+    },
+    {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
+      "valueString" : "source"
+    }],
+    "key" : "sec-19",
+    "conformance" : ["SHALL"],
+    "requirement" : "Information Source systems **SHALL** log all IDs, access rights, requests, and exchanges."
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
+      "valueCoding" : {
+        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+        "code" : "processing",
+        "display" : "processing"
+      }
+    },
+    {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
+      "valueString" : "source"
+    }],
+    "key" : "sec-20",
+    "conformance" : ["SHALL"],
+    "requirement" : "Information Source systems **SHALL** verify rights of the requestor to have access to the member's/patient's record."
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
+      "valueCoding" : {
+        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+        "code" : "exchange",
+        "display" : "exchange"
+      }
+    },
+    {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
+      "valueString" : "poll-imp"
+    }],
+    "key" : "task-1",
+    "conformance" : ["SHALL",
+    "SHOULD"],
+    "conditionality" : true,
+    "requirement" : "For Da Vinci, systems that use polling **SHALL** check for new/updated information at least once per business day and **SHOULD** check for information at least once per hour during"
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
+      "valueCoding" : {
+        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+        "code" : "exchange",
+        "display" : "exchange"
+      }
+    },
+    {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
+      "valueString" : "poll-imp"
+    }],
+    "key" : "task-2",
+    "conformance" : ["SHOULD-NOT"],
+    "conditionality" : true,
+    "requirement" : "Polling systems **SHOULD NOT** query more often than every 15 minutes unless there is an urgent change they are monitoring for."
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
+      "valueCoding" : {
+        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+        "code" : "exchange",
+        "display" : "exchange"
+      }
+    },
+    {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
+      "valueString" : "subscribe-imp"
+    }],
+    "key" : "task-3",
+    "conformance" : ["SHALL"],
+    "conditionality" : true,
+    "requirement" : "Implementers of this Da Vinci IG who choose to support Subscription **SHALL** comply with the Subscription Backport IG for the purpose of monitoring Tasks."
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
+      "valueCoding" : {
+        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+        "code" : "exchange",
+        "display" : "exchange"
+      }
+    },
+    {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
+      "valueString" : "subscribe-imp"
+    }],
+    "key" : "task-4",
+    "conformance" : ["SHALL"],
+    "conditionality" : true,
+    "requirement" : "Systems supporting subscription **SHALL** support the rest-hook channel mechanism, though they might choose to support other channel approaches."
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
+      "valueCoding" : {
+        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+        "code" : "exchange",
+        "display" : "exchange"
+      }
+    },
+    {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
+      "valueString" : "subscribe-imp"
+    }],
+    "key" : "task-5",
+    "conformance" : ["SHALL"],
+    "conditionality" : true,
+    "requirement" : "Systems using subcription **SHALL** support id-only, though they can also support other content approaches."
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
+      "valueCoding" : {
+        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+        "code" : "exchange",
+        "display" : "exchange"
+      }
+    },
+    {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
+      "valueString" : "subscribe-imp"
+    }],
+    "key" : "task-6",
+    "conformance" : ["MAY"],
+    "requirement" : "If search is used, systems **MAY** use _include=Task:output to retrieve the referenced results as well."
+  }]
+}

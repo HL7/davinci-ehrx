@@ -2,8 +2,7 @@ Profile: HRexMemberMatchResponseParameters
 Parent: Parameters
 Id: hrex-parameters-member-match-out
 Title: "HRex Parameters - Member Match Response Profile"
-Description: """The Parameters profile for Da Vinci Find Member using Identifier datatype Response.  The old health plan **SHALL** return the following data if records for member are found: 
- * The unique member identifier (denoted through identifier parameter) submitted by the new health plan."""
+Description: """The Parameters profile for Da Vinci Find Member using Identifier datatype Response."""
 * parameter ..3
   * ^slicing.discriminator.type = #value
   * ^slicing.discriminator.path = "name"

@@ -38,7 +38,7 @@
 <artifact id="ValueSet/hrex-endpoint-name" key="ValueSet-hrex-endpoint-name" name="HRex Endpoint Name"/>
 <artifact id="ActorDefinition/igauthor" key="ActorDefinition-igauthor" name="HRex IG Author"/>
 <artifact id="StructureDefinition/hrex-reference-id" key="StructureDefinition-hrex-reference-id" name="HRex Identifier Reference Profile"/>
-<artifact id="ActorDefinition/hrex-implementer" key="ActorDefinition-hrex-implementer" name="HRex Implementer"/>
+<artifact id="ActorDefinition/implementer" key="ActorDefinition-implementer" name="HRex Implementer"/>
 <artifact id="StructureDefinition/hrex-coverage" key="StructureDefinition-hrex-coverage" name="HRex Member Match Coverage Profile"/>
 <artifact id="OperationDefinition/member-match" key="OperationDefinition-member-match" name="HRex Member Match Operation"/>
 <artifact id="StructureDefinition/hrex-patient-demographics" key="StructureDefinition-hrex-patient-demographics" name="HRex Member Match Patient"/>
@@ -72,17 +72,21 @@
 <artifact id="Bundle/task-poll-response" key="Bundle-task-poll-response" name="HRex Task polling response"/>
 <artifact id="CodeSystem/hrex-temp" key="CodeSystem-hrex-temp" name="HRex Temporary Code System"/>
 <artifact deprecated="true" id="StructureDefinition/extension-itemTraceNumber" key="StructureDefinition-extension-itemTraceNumber" name="Item Trace Number"/>
-<artifact id="ActorDefinition/mm-client" key="ActorDefinition-mm-client" name="Member Match Client"/>
-<artifact id="ActorDefinition/mm-server" key="ActorDefinition-mm-server" name="Member Match Server"/>
+<artifact id="ActorDefinition/mmclient" key="ActorDefinition-mmclient" name="Member Match Client"/>
+<artifact id="ActorDefinition/mmserver" key="ActorDefinition-mmserver" name="Member Match Server"/>
 <artifact id="ConceptMap/NUCC-CareTeamMemberFunction" key="ConceptMap-NUCC-CareTeamMemberFunction" name="NUCC to SNOMED Care Team Member Function Map"/>
+<artifact id="Requirements/fromNarrative" key="Requirements-fromNarrative" name="Narrative Conformance Statements"/>
+<artifact id="ActorDefinition/poll-imp" key="ActorDefinition-poll-imp" name="Polling Implementer"/>
 <artifact deprecated="true" id="StructureDefinition/extension-itemPreAuthIssueDate" key="StructureDefinition-extension-itemPreAuthIssueDate" name="Pre Authorized Issue Date"/>
 <artifact id="SearchParameter/hrex-provenance-target" key="SearchParameter-hrex-provenance-target" name="Provenance target Search Parameter"/>
 <artifact id="ConceptMap/CareTeamMember-NUCCFunction" key="ConceptMap-CareTeamMember-NUCCFunction" name="SNOMED Care Team Member Function to NUCC Map"/>
+<artifact id="ActorDefinition/subscribe-imp" key="ActorDefinition-subscribe-imp" name="Subscription Implementer"/>
 <artifact deprecated="true" id="ClaimResponse/UnsolicitedReferralAuthorizationResponseExample" key="ClaimResponse-UnsolicitedReferralAuthorizationResponseExample" name="Unsolicited Prior Authorization example"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="exchanging" name="Approaches to Exchanging FHIR Data"/>
 <page key="artifacts" name="Artifact List"/>
+<page key="conformancedetails" name="Conformance Details"/>
 <page key="conformance" name="Conformance Expectations"/>
 <page key="davinci-guiding-principles" name="Da Vinci Guiding Principles"/>
 <page key="downloads" name="Downloads"/>
