@@ -20,6 +20,10 @@
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
         "valueCanonical" : "http://hl7.org/fhir/us/davinci-hrex/ImplementationGuide/davinci-hrex"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "http://hl7.org/fhir/us/davinci-hrex/ImplementationGuide/davinci-hrex"
       }]
     }
   },
@@ -183,16 +187,16 @@
   },
   {
     "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
+      "valueString" : "consumer"
+    },
+    {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
       "valueCoding" : {
         "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
-        "code" : "exchange",
-        "display" : "exchange"
+        "code" : "processing",
+        "display" : "processing"
       }
-    },
-    {
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueString" : "consumer"
     }],
     "key" : "conf-4",
     "conformance" : ["SHALL"],
@@ -336,6 +340,7 @@
     }],
     "key" : "ep-4",
     "conformance" : ["MAY"],
+    "conditionality" : true,
     "requirement" : "In situations where an endpoint turns out to not be functional, client systems **MAY** choose to re-query the .well-known endpoint and/or to re-run the eligibility check to see if the end point has changed."
   },
   {
@@ -450,7 +455,7 @@
     }],
     "key" : "mm-5",
     "conformance" : ["SHOULD-NOT"],
-    "conditionality" : true,
+    "conditionality" : false,
     "requirement" : "For privacy reasons, the 'CoverageToLink' **SHOULD NOT** include any data elements not marked as mustSupport in the Coverage profile."
   },
   {
@@ -468,7 +473,7 @@
     }],
     "key" : "mm-6",
     "conformance" : ["SHALL"],
-    "conditionality" : true,
+    "conditionality" : false,
     "requirement" : "The Coverage and Consent references **SHALL** be 'local' references (i.e. starting with \"Patient/\" rather than \"http\"), **SHALL** be resolved to the parameter with the name \"MemberPatient\", and **SHALL** refer to the same id."
   },
   {
@@ -486,7 +491,7 @@
     }],
     "key" : "mm-7",
     "conformance" : ["SHALL"],
-    "conditionality" : true,
+    "conditionality" : false,
     "requirement" : "Servers **SHALL** monitor for and take measures to prevent brute force attacks where the same or similar set of demographics are repeatedly searched with differing card information in an attempt to achieve a match when the card information is unknown."
   },
   {
@@ -573,7 +578,7 @@
     }],
     "key" : "mm-12",
     "conformance" : ["SHOULD"],
-    "conditionality" : true,
+    "conditionality" : false,
     "requirement" : "Any 422 response codes **SHOULD** be accompanied by an [OperationOutcome](http://hl7.org/fhir/R4/operationoutcome.html) that indicates the specific nature of the failure."
   },
   {
@@ -591,7 +596,7 @@
     }],
     "key" : "mm-13",
     "conformance" : ["SHOULD"],
-    "conditionality" : true,
+    "conditionality" : false,
     "requirement" : "The recipient of a member match **SHOULD** store the parameters of the consent (Validity Period, Scope etc.) to enable the authorization server to evaluate the consent before issuing a token for data access during subsequent requests."
   },
   {
@@ -610,7 +615,7 @@
     "key" : "prov-1",
     "label" : "Implementations SHOULD follow the recommendations on which resources should be referenced from which data element.",
     "conformance" : ["SHOULD"],
-    "conditionality" : true,
+    "conditionality" : false,
     "requirement" : "The following table lists the various agent codes and what resource types are appropriate. These recommendations **SHOULD** be followed\r\n\r\n## | element | Allowed target resources |\r\n\r\n| transmitter | This could be Patient, RelatedPerson, Practitioner or PractitionerRole or Organization. A second transmitter could capture the specific Device used | | enterer | Patient, RelatedPerson, Practitioner or PractitionerRole | | performer | could be anything | | author | could be anything | | verifier | generally only Practitioner or PractitionerRole | | legal | Only Practitioner or PractitionerRole | | attester | Patient, RelatedPerson, Practitioner or PractitionerRole | | informant | Patient, RelatedPerson, Practitioner or PractitionerRole | | custodian | usually Organization, could also be Device, Practitioner or PractitionerRole | | assembler | usually a Device, could be Practitioner or PractitionerRole | ——————————————"
   },
   {
@@ -689,6 +694,7 @@
     }],
     "key" : "sec-3",
     "conformance" : ["SHALL"],
+    "conditionality" : true,
     "requirement" : "All IGs **SHALL** use applicable technical standards required by current regulations published by the Centers for Medicare and Medicaid Services (CMS) and the Assistant Secretary for Technology Policy and Office of the National Coordinator for Health Information Technology (ASTP/ONC) (allowing for voluntary use through the [SVAP](https://www.healthit.gov/isa/standards-version-advancement-process#:~:text=ONC%20has%20established%20the%20voluntary,of%20Certification%20requirement%20(%C2%A7%20170.405))) unless an exception has been granted."
   },
   {
@@ -776,6 +782,7 @@
     }],
     "key" : "sec-6",
     "conformance" : ["SHOULD"],
+    "conditionality" : true,
     "requirement" : "All IGs and implementations **SHOULD** support the consent and data sharing policies of trading partners involved in the exchange that are more protective so long as policies are consistent with or more restrictive than Federal and State statutes and regulations."
   },
   {
@@ -801,6 +808,7 @@
     }],
     "key" : "sec-7",
     "conformance" : ["SHOULD"],
+    "conditionality" : true,
     "requirement" : "All FHIR Implementation Guides **SHOULD** follow the FHIR Security guidance and FHIR Implementer's Safety guidance as defined in the relevant FHIR specification (e.g. Release 4.1.0) where applicable and not superseded by this Section or specific IG requirements."
   },
   {
@@ -889,6 +897,7 @@
     }],
     "key" : "sec-12",
     "conformance" : ["SHALL"],
+    "conditionality" : true,
     "requirement" : "When using OAuth (either through SMART or UDAP), OAuth tokens issued **SHALL** be tied to the client system's certificate."
   },
   {
@@ -974,6 +983,7 @@
     }],
     "key" : "sec-17",
     "conformance" : ["SHALL"],
+    "conditionality" : true,
     "requirement" : "Where permitted by law and in accordance with legal requirements, systems **SHALL** always support release of additionally protected information."
   },
   {
@@ -1133,6 +1143,7 @@
     }],
     "key" : "task-6",
     "conformance" : ["MAY"],
+    "conditionality" : true,
     "requirement" : "If search is used, systems **MAY** use _include=Task:output to retrieve the referenced results as well."
   }]
 }

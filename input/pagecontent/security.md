@@ -4,17 +4,17 @@ The following content is intended to apply to all Da Vinci IGs. §sec-1^igauthor
 
 1. §sec-2^implementer^exchange,processing:All implementations of any Da Vinci FHIR Implementation Guides (IG) **SHALL** meet all current relevant Federal and State statutes and regulations regarding security and privacy.§
 
-2. §sec-3^igauthor^business:All IGs **SHALL** use applicable technical standards required by current regulations published by the Centers for Medicare and Medicaid Services (CMS) and the Assistant Secretary for Technology Policy and Office of the National Coordinator for Health Information Technology (ASTP/ONC) (allowing for voluntary use through the [SVAP](https://www.healthit.gov/isa/standards-version-advancement-process#:~:text=ONC%20has%20established%20the%20voluntary,of%20Certification%20requirement%20(%C2%A7%20170.405))) unless an exception has been granted.§
+2. §sec-3?^igauthor^business:All IGs **SHALL** use applicable technical standards required by current regulations published by the Centers for Medicare and Medicaid Services (CMS) and the Assistant Secretary for Technology Policy and Office of the National Coordinator for Health Information Technology (ASTP/ONC) (allowing for voluntary use through the [SVAP](https://www.healthit.gov/isa/standards-version-advancement-process#:~:text=ONC%20has%20established%20the%20voluntary,of%20Certification%20requirement%20(%C2%A7%20170.405))) unless an exception has been granted.§
 
 3. §sec-4^implementer,igauthor^business,exchange,processing:All IGs and implementations **SHOULD** follow the current [Da Vinci Guiding Principles](davinci-guiding-principles.html).§
 
 4. §sec-5^implementer^exchange,processing:All IGs and implementations **SHALL** support patient/member consent and/or treatment of sensitive information consistent with Federal and State statutes and regulations.§
 
-5. §sec-6^implementer^exchange,processing:All IGs and implementations **SHOULD** support the consent and data sharing policies of trading partners involved in the exchange that are more protective so long as policies are consistent with or more restrictive than Federal and State statutes and regulations.§
+5. §sec-6?^implementer^exchange,processing:All IGs and implementations **SHOULD** support the consent and data sharing policies of trading partners involved in the exchange that are more protective so long as policies are consistent with or more restrictive than Federal and State statutes and regulations.§
 
 ### FHIR Clinical Safety, Security and Implementation Guidance
 
-§sec-7^implementer^exchange,processing:All FHIR Implementation Guides **SHOULD** follow the FHIR Security guidance and FHIR Implementer's Safety guidance as defined in the relevant FHIR specification (e.g. Release 4.1.0) where applicable and not superseded by this Section or specific IG requirements.§
+§sec-7?^implementer^exchange,processing:All FHIR Implementation Guides **SHOULD** follow the FHIR Security guidance and FHIR Implementer's Safety guidance as defined in the relevant FHIR specification (e.g. Release 4.1.0) where applicable and not superseded by this Section or specific IG requirements.§
 
 1. The FHIR Security specification provides guidance related to communication security, authentication, authorization/access control, audit, digital signatures, attachments, labels, narrative, and input validation. The FHIR security specification is available [here]({{site.data.fhir.path}}security.html).
 
@@ -44,7 +44,7 @@ The following content is intended to apply to all Da Vinci IGs. §sec-1^igauthor
 
 §§
 
-- §sec-12^implementer^exchange:When using OAuth (either through SMART or UDAP), OAuth tokens issued **SHALL** be tied to the client system's certificate.§
+- §sec-12?^implementer^exchange:When using OAuth (either through SMART or UDAP), OAuth tokens issued **SHALL** be tied to the client system's certificate.§
 
 §sec-13^implementer^exchange:When mutual TLS is used, it **SHALL** be done in accordance with [RFC8705](https://datatracker.ietf.org/doc/html/rfc8705)§ There are certain constraints on this RFC that apply across all Da Vinci IGs:
 
@@ -60,7 +60,7 @@ Note: There is ongoing work to enhance the capabilities of the above specificati
 
 Additionally protected information can include items defined by Federal (e.g. 42 CFR Part 2), State (e.g. many states protect substance abuse disorder, HIV diagnosis/treatment records, release of information on minors – note this is not an exhaustive list) statutes and regulations. Organizations can also provide additional protection for specific types of information that are deemed sensitive. The following guidelines apply unless otherwise dictated by statute or regulation:
 
-1. §sec-17^source^exchange:Where permitted by law and in accordance with legal requirements, systems **SHALL** always support release of additionally protected information.§
+1. §sec-17?^source^exchange:Where permitted by law and in accordance with legal requirements, systems **SHALL** always support release of additionally protected information.§
 
 2. §sec-18^source^exchange:Implementations **SHALL** ensure that release of the information without explicit request of the patient/member is based on organization policy consistent with Federal and State regulations.§ Examples are legal requests for information and "break glass" to treat a patient that is unable to provide consent.
 

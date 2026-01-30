@@ -49,7 +49,7 @@ retrieve the specified record(s) specified in the subscription notification. E.g
 
 ```[base]/Task?_id=1234,5678```
 
-§task-6^subscribe-imp^exchange:If search is used, systems **MAY** use _include=Task:output to retrieve the referenced results as well.§  E.g.
+§task-6?^subscribe-imp^exchange:If search is used, systems **MAY** use _include=Task:output to retrieve the referenced results as well.§  E.g.
 ```[base]/Task?_id=1234m5678&_include=Task:output```
 
 

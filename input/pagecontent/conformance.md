@@ -18,7 +18,7 @@ In the context of an HRex compliant IG, mustSupport on any data element are inte
 
 §§
 
-- §conf-4^consumer^exchange:Data Consumers **SHALL** interpret missing data elements within resource instances as data not being present in the Data Source's systems or was not deemed to be shareable with the Data Consumer for privacy or other business reasons.§
+- §conf-4^consumer^processing:Data Consumers **SHALL** interpret missing data elements within resource instances as data not being present in the Data Source's systems or was not deemed to be shareable with the Data Consumer for privacy or other business reasons.§
 
 - §conf-5?^source^exchange:Where the value set for an element includes concepts such as "unknown", "refused to answer", "not available" or where dataAbsentReason is explicitly referenced in a profile, then Data Sources **SHALL** use these values/that extension to communicate the reason for missing data.§
 

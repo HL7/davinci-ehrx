@@ -10,7 +10,7 @@ Provenance should align with information present in the record.  Where a Provena
 
 ### Populating `Provenance.agent`
 
-§§prov-1?^implementer^exchange:Implementations **SHOULD** follow the recommendations on which resources should be referenced from which data element.^
+§§prov-1^implementer^exchange:Implementations **SHOULD** follow the recommendations on which resources should be referenced from which data element.^
 
 The following table lists the various agent codes and what resource types are appropriate.  These recommendations **SHOULD** be followed
 
