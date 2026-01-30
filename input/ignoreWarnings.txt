@@ -16,7 +16,7 @@ Unknown Parameters: [term-params-in-artifacts=true]
 Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/provenance-participant-type|4.0.1
 
 # 0.c This link is valid - this is a link-checking issue with the new language-supporting template.  https://chat.fhir.org/#narrow/channel/179252-IG-creation/topic/Erroneous.20version-compare.20hyperlink.20validation.20errors/with/570470919
-ERROR: en\history.html#/html/body/div/div/div/div/div/p/a at Line 386, column 19: The link '../comparison-v1.1.0/index.html' for "comparison" cannot be resolved
+The link '../comparison-v1.1.0/index.html' for "comparison" cannot be resolved
 
 # 0.d The profile does enforce the same rules as 3.1.1.  The invariant remains, it's just that the FHIRPath has been corrected. https://chat.fhir.org/#narrow/channel/179252-IG-creation/topic/Incorrect.20profile.20derivation.20error/with/570474355
 ERROR: StructureDefinition/hrex-organization: StructureDefinition: This profile does not comply with claimed profile 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization|3.1.1'

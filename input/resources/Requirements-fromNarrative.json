@@ -24,6 +24,10 @@
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
         "valueCanonical" : "http://hl7.org/fhir/us/davinci-hrex/ImplementationGuide/davinci-hrex"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "http://hl7.org/fhir/us/davinci-hrex/ImplementationGuide/davinci-hrex"
       }]
     }
   },
@@ -323,6 +327,7 @@
     }],
     "key" : "ep-3",
     "conformance" : ["SHALL"],
+    "conditionality" : true,
     "requirement" : "As well, codes for new 'final publication' versions of specifications that already have defined base codes (following the convention of appending '#' and then the first two nodes of the version number) **SHALL** be treated as valid, even if not yet listed in this specification."
   },
   {
