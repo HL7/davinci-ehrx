@@ -24,6 +24,7 @@ fhirVersion: 4.0.1
 parameters:
   path-expansion-params: "../../input/terminology-settings.json"
   requirements-category-vs: "http://hl7.org/fhir/us/davinci-hrex/ValueSet/cs-categories"
+  toggle-changes: true
   apply-publisher: true
   apply-contact: true
   globals-in-artifacts: true
