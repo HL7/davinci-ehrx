@@ -2,10 +2,10 @@
   "package-id" : "hl7.fhir.us.davinci-hrex",
   "version" : "1.2.0-snapshot",
   "milestone" : false,
-	"path": "http://hl7.org/fhir/us/davinci-hrex/STU1.2.0-snapshot",
+	"path": "http://hl7.org/fhir/us/davinci-hrex/1.2.0-snapshot",
   "status" : "preview",
   "mode" : "working",
   "sequence" : "STU 1.2",
   "desc" : "STU 1.2.0 Review Snapshot",
-  "descmd" : "STU 1.2.0 Review snapshot.  See [list of changes](http://hl7.org/fhir/us/davinci-hrex/STU1.2.0-snapshot/history.html#stu-120-snapshot)"
+  "descmd" : "STU 1.2.0 Review snapshot.  See [list of changes](http://hl7.org/fhir/us/davinci-hrex/1.2.0-snapshot/history.html#stu-120-snapshot)"
 }
