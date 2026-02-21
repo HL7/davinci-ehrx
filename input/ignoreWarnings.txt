@@ -2,30 +2,14 @@
 
 # 0.a This will go away when the next tools IG release is published
 No definition could be found for URL value 'http://hl7.org/fhir/tools/StructureDefinition/expansion-parameters'
-No definition could be found for URL value 'http://hl7.org/fhir/tools/StructureDefinition/requirements-actorkey'
-No definition could be found for URL value 'http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor'
-No definition could be found for URL value 'http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory'
-The System URI could not be determined for the code 'requirements-category-vs' in the ValueSet 'http://hl7.org/fhir/tools/ValueSet/ig-parameters|0.9.0'
-The System URI could not be determined for the code 'term-params-in-artifacts' in the ValueSet 'http://hl7.org/fhir/tools/ValueSet/ig-parameters|0.9.0'
-The value provided ('requirements-category-vs') was not found in the value set 'ig-parameters Codes ValueSet' (http://hl7.org/fhir/tools/ValueSet/ig-parameters|0.9.0), and a code is required from this value set  (error message = The System URI could not be determined for the code 'requirements-category-vs' in the ValueSet 'http://hl7.org/fhir/tools/ValueSet/ig-parameters|0.9.0'; The provided code '#requirements-category-vs' was not found in the value set 'http://hl7.org/fhir/tools/ValueSet/ig-parameters|0.9.0')
-The value provided ('term-params-in-artifacts') was not found in the value set 'ig-parameters Codes ValueSet' (http://hl7.org/fhir/tools/ValueSet/ig-parameters|0.9.0), and a code is required from this value set  (error message = The System URI could not be determined for the code 'term-params-in-artifacts' in the ValueSet 'http://hl7.org/fhir/tools/ValueSet/ig-parameters|0.9.0'; The provided code '#term-params-in-artifacts' was not found in the value set 'http://hl7.org/fhir/tools/ValueSet/ig-parameters|0.9.0')
-Unknown Parameters: [requirements-category-vs=http://hl7.org/fhir/us/davinci-hrex/ValueSet/cs-categories, term-params-in-artifacts=true]
-Unknown Parameters: [term-params-in-artifacts=true]
 
 # 0.b This is a known issue on terminology.hl7.org and is being worked on by Terminology Infrastructure
 Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/provenance-participant-type|4.0.1
 
-# 0.c This link is valid - this is a link-checking issue with the new language-supporting template.  https://chat.fhir.org/#narrow/channel/179252-IG-creation/topic/Erroneous.20version-compare.20hyperlink.20validation.20errors/with/570470919
-The link '../comparison-v1.1.0/index.html' for "comparison" cannot be resolved
-
-# 0.d The profile does enforce the same rules as 3.1.1.  The invariant remains, it's just that the FHIRPath has been corrected. https://chat.fhir.org/#narrow/channel/179252-IG-creation/topic/Incorrect.20profile.20derivation.20error/with/570474355
+# 0.c The profile does enforce the same rules as 3.1.1.  The invariant remains, it's just that the FHIRPath has been corrected. https://chat.fhir.org/#narrow/channel/179252-IG-creation/topic/Incorrect.20profile.20derivation.20error/with/570474355
 ERROR: StructureDefinition/hrex-organization: StructureDefinition: This profile does not comply with claimed profile 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization|3.1.1'
 ERROR: StructureDefinition/hrex-practitionerrole: StructureDefinition: This profile does not comply with claimed profile 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole|6.1.0'
 ERROR: StructureDefinition/hrex-practitionerrole: StructureDefinition: This profile does not comply with claimed profile 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole|3.1.1'
-
-# 0.e This used to work but has broken with the new template. https://chat.fhir.org/#narrow/channel/179252-IG-creation/topic/Issue.20with.20URL.20declaration.20in.20language-aware.20IG/with/570477209
-No definition could be found for URL value 'en/StructureDefinition-hrex-consent.html#regular'
-No definition could be found for URL value 'en/StructureDefinition-hrex-consent.html#sensitive'
 
 # 1. Consider adding this in the future.  To this point, we havn't said that HRex actually has use-cases - FHIR-48917
 WARNING: DA VINCI: The second menu item under Background should have the label Use Cases.
@@ -35,7 +19,7 @@ WARNING: DA VINCI: The Change Log page (history.html) does not include any Jira 
 WARNING: DA VINCI: The Change Log page (history.html) does not include an h3 section for the version 0.2.0
 WARNING: DA VINCI: The Change Log page (history.html) does not include an h3 section for the version 0.1.0
 
-# 3. Da Vinci doesn't have any conformance expectations itself - conformance expectations are determined by IGs that derive from HRex
+# 3. Da Vinci doesn't have any conformance expectations itself - conformance expectations are determined by IGs that derive from HRex.  Therefore, CapabilityStatements aren't appropriate
 WARNING: DA VINCI: Da Vinci IGs SHOULD define CapabilityStatements.  Without CapabilityStatements, there is no technical way to declare conformance to the IG.
 
 # 4. HRex can't depend on itself
@@ -45,14 +29,14 @@ WARNING: DA VINCI: The Conformance page (conformance.html) needs to include a li
 WARNING: DA VINCI: The Conformance page (conformance.html) Must Support section needs to include a link to the HRex conformance.html#mustsupport section.
 WARNING: DA VINCI: The Security page (security.html) must include a reference to the HRex security.html page (with a SHALL comply).
 
-# 5. This isn't actually a resource in R4, so can't point to it
+# 5. This isn't actually a resource in R4, so we point to the R5 version, which this check doesn't detect.
 WARNING: DA VINCI: The How to Read page (fhir.html) needs to include a reference to the http://hl7.org/fhir/R4/subscriptiontopic.html because this IG uses the subscriptiontopic resource.
 
 # 6. These are inherited from US Core
 INFORMATION: StructureDefinition/hrex-organization: StructureDefinition.snapshot.element[9].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 INFORMATION: StructureDefinition/hrex-provenance: StructureDefinition.snapshot.element[22].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 
-# 7. This is an issue with the underlying R5 terminology and should be addressed via a system-wide update
+# 7. While deprecated in R5, this is undeprecated in R6
 Reference to deprecated ValueSet http://hl7.org/fhir/5.0/ValueSet/jurisdiction|5.0.0
 
 # 8. These pinnings are correct

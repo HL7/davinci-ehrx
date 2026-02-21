@@ -63,6 +63,12 @@ extension:
 # │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 dependencies:
+  hl7.fhir.uv.tools.r4:
+    id: tools
+    uri: http://hl7.org/fhir/tools/ImplementationGuide/hl7.fhir.uv.tools
+    version: current
+    reason: |
+      Tooling artifacts used by all IGs
   hl7.fhir.us.core:
     version: 7.0.0
     uri: http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core

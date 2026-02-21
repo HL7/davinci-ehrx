@@ -1,71 +1,12 @@
 {
   "resourceType" : "Requirements",
   "id" : "fromNarrative",
-  "extension" : [{
-    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
-    "valueCode" : "cic"
-  },
-  {
-    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
-    "valueInteger" : 3,
-    "_valueInteger" : {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
-        "valueCanonical" : "http://hl7.org/fhir/us/davinci-hrex/ImplementationGuide/davinci-hrex"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
-        "valueCanonical" : "http://hl7.org/fhir/us/davinci-hrex/ImplementationGuide/davinci-hrex"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
-        "valueCanonical" : "http://hl7.org/fhir/us/davinci-hrex/ImplementationGuide/davinci-hrex"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
-        "valueCanonical" : "http://hl7.org/fhir/us/davinci-hrex/ImplementationGuide/davinci-hrex"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
-        "valueCanonical" : "http://hl7.org/fhir/us/davinci-hrex/ImplementationGuide/davinci-hrex"
-      }]
-    }
-  },
-  {
-    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-    "valueCode" : "trial-use",
-    "_valueCode" : {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
-        "valueCanonical" : "http://hl7.org/fhir/us/davinci-hrex/ImplementationGuide/davinci-hrex"
-      }]
-    }
-  }],
   "url" : "http://hl7.org/fhir/us/davinci-hrex/Requirements/fromNarrative",
-  "identifier" : [{
-    "system" : "urn:ietf:rfc:3986",
-    "value" : "urn:oid:2.16.840.1.113883.4.642.40.19.36.1"
-  }],
-  "version" : "1.2.0-snapshot",
   "name" : "FromNarrative",
   "title" : "Narrative Conformance Statements",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-01-28T23:06:20-07:00",
-  "publisher" : "HL7 International / Clinical Interoperability Council",
-  "contact" : [{
-    "telecom" : [{
-      "system" : "url",
-      "value" : "http://www.hl7.org/Special/committees/cic"
-    }]
-  }],
   "description" : "Conformance statements found throughout the narrative of the IG consolidated into this computable resource for traceability purposes",
-  "jurisdiction" : [{
-    "coding" : [{
-      "system" : "urn:iso:std:iso:3166",
-      "code" : "US"
-    }]
-  }],
   "actor" : ["http://hl7.org/fhir/us/davinci-hrex/ActorDefinition/consumer",
   "http://hl7.org/fhir/us/davinci-hrex/ActorDefinition/mmclient",
   "http://hl7.org/fhir/us/davinci-hrex/ActorDefinition/disc-server",
@@ -79,75 +20,77 @@
   "_actor" : [{
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-actorkey",
-      "valueString" : "consumer"
+      "valueId" : "consumer"
     }]
   },
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-actorkey",
-      "valueString" : "mmclient"
+      "valueId" : "mmclient"
     }]
   },
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-actorkey",
-      "valueString" : "disc-server"
+      "valueId" : "disc-server"
     }]
   },
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-actorkey",
-      "valueString" : "igauthor"
+      "valueId" : "igauthor"
     }]
   },
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-actorkey",
-      "valueString" : "implementer"
+      "valueId" : "implementer"
     }]
   },
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-actorkey",
-      "valueString" : "subscribe-imp"
+      "valueId" : "subscribe-imp"
     }]
   },
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-actorkey",
-      "valueString" : "poll-imp"
+      "valueId" : "poll-imp"
     }]
   },
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-actorkey",
-      "valueString" : "disc-client"
+      "valueId" : "disc-client"
     }]
   },
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-actorkey",
-      "valueString" : "source"
+      "valueId" : "source"
     }]
   },
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-actorkey",
-      "valueString" : "mmserver"
+      "valueId" : "mmserver"
     }]
   }],
   "statement" : [{
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
-      "valueCoding" : {
-        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
-        "code" : "exchange",
-        "display" : "exchange"
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+          "code" : "exchange",
+          "display" : "exchange"
+        }]
       }
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueString" : "source"
+      "valueId" : "source"
     }],
     "key" : "conf-1",
     "conformance" : ["SHALL"],
@@ -156,15 +99,17 @@
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
-      "valueCoding" : {
-        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
-        "code" : "exchange",
-        "display" : "exchange"
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+          "code" : "exchange",
+          "display" : "exchange"
+        }]
       }
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueString" : "consumer"
+      "valueId" : "consumer"
     }],
     "key" : "conf-2",
     "conformance" : ["SHALL"],
@@ -173,15 +118,17 @@
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
-      "valueCoding" : {
-        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
-        "code" : "exchange",
-        "display" : "exchange"
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+          "code" : "exchange",
+          "display" : "exchange"
+        }]
       }
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueString" : "source"
+      "valueId" : "source"
     }],
     "key" : "conf-3",
     "label" : "If the minimum cardinality of an element is greater than 0 – i.e. the element is ‘required’, then the element SHALL be present in the instance and SHALL have a value unless a listed exception applies.",
@@ -191,16 +138,18 @@
   },
   {
     "extension" : [{
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueString" : "consumer"
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+          "code" : "processing",
+          "display" : "processing"
+        }]
+      }
     },
     {
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
-      "valueCoding" : {
-        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
-        "code" : "processing",
-        "display" : "processing"
-      }
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
+      "valueId" : "consumer"
     }],
     "key" : "conf-4",
     "conformance" : ["SHALL"],
@@ -209,15 +158,17 @@
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
-      "valueCoding" : {
-        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
-        "code" : "exchange",
-        "display" : "exchange"
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+          "code" : "exchange",
+          "display" : "exchange"
+        }]
       }
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueString" : "source"
+      "valueId" : "source"
     }],
     "key" : "conf-5",
     "conformance" : ["SHALL"],
@@ -227,15 +178,17 @@
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
-      "valueCoding" : {
-        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
-        "code" : "exchange",
-        "display" : "exchange"
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+          "code" : "exchange",
+          "display" : "exchange"
+        }]
       }
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueString" : "consumer"
+      "valueId" : "consumer"
     }],
     "key" : "conf-6",
     "conformance" : ["SHALL"],
@@ -244,15 +197,17 @@
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
-      "valueCoding" : {
-        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
-        "code" : "exchange",
-        "display" : "exchange"
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+          "code" : "exchange",
+          "display" : "exchange"
+        }]
       }
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueString" : "consumer"
+      "valueId" : "consumer"
     }],
     "key" : "conf-7",
     "conformance" : ["SHOULD-NOT"],
@@ -261,15 +216,17 @@
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
-      "valueCoding" : {
-        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
-        "code" : "exchange",
-        "display" : "exchange"
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+          "code" : "exchange",
+          "display" : "exchange"
+        }]
       }
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueString" : "source"
+      "valueId" : "source"
     }],
     "key" : "conf-8",
     "conformance" : ["SHOULD"],
@@ -279,15 +236,17 @@
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
-      "valueCoding" : {
-        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
-        "code" : "exchange",
-        "display" : "exchange"
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+          "code" : "exchange",
+          "display" : "exchange"
+        }]
       }
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueString" : "disc-server"
+      "valueId" : "disc-server"
     }],
     "key" : "ep-1",
     "label" : "When the payer responds to an Eligibility Inquiry indicating that the patient has coverage, the payer SHALL include exactly one 2000A loop repetition meeting specified requirements.",
@@ -298,15 +257,17 @@
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
-      "valueCoding" : {
-        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
-        "code" : "exchange",
-        "display" : "exchange"
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+          "code" : "exchange",
+          "display" : "exchange"
+        }]
       }
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueString" : "disc-server"
+      "valueId" : "disc-server"
     }],
     "key" : "ep-2",
     "conformance" : ["SHALL"],
@@ -315,15 +276,17 @@
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
-      "valueCoding" : {
-        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
-        "code" : "processing",
-        "display" : "processing"
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+          "code" : "processing",
+          "display" : "processing"
+        }]
       }
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueString" : "disc-client"
+      "valueId" : "disc-client"
     }],
     "key" : "ep-3",
     "conformance" : ["SHALL"],
@@ -333,15 +296,17 @@
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
-      "valueCoding" : {
-        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
-        "code" : "exchange",
-        "display" : "exchange"
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+          "code" : "exchange",
+          "display" : "exchange"
+        }]
       }
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueString" : "disc-client"
+      "valueId" : "disc-client"
     }],
     "key" : "ep-4",
     "conformance" : ["MAY"],
@@ -351,15 +316,17 @@
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
-      "valueCoding" : {
-        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
-        "code" : "business",
-        "display" : "business"
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+          "code" : "business",
+          "display" : "business"
+        }]
       }
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueString" : "igauthor"
+      "valueId" : "igauthor"
     }],
     "key" : "ex-1",
     "conformance" : ["SHALL"],
@@ -368,19 +335,21 @@
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
-      "valueCoding" : {
-        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
-        "code" : "exchange",
-        "display" : "exchange"
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+          "code" : "exchange",
+          "display" : "exchange"
+        }]
       }
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueString" : "mmclient"
+      "valueId" : "mmclient"
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueString" : "mmserver"
+      "valueId" : "mmserver"
     }],
     "key" : "mm-1",
     "conformance" : ["SHALL"],
@@ -390,19 +359,21 @@
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
-      "valueCoding" : {
-        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
-        "code" : "exchange",
-        "display" : "exchange"
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+          "code" : "exchange",
+          "display" : "exchange"
+        }]
       }
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueString" : "mmclient"
+      "valueId" : "mmclient"
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueString" : "mmserver"
+      "valueId" : "mmserver"
     }],
     "key" : "mm-2",
     "conformance" : ["SHOULD"],
@@ -412,15 +383,17 @@
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
-      "valueCoding" : {
-        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
-        "code" : "exchange",
-        "display" : "exchange"
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+          "code" : "exchange",
+          "display" : "exchange"
+        }]
       }
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueString" : "mmclient"
+      "valueId" : "mmclient"
     }],
     "key" : "mm-3",
     "conformance" : ["SHALL"],
@@ -430,15 +403,17 @@
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
-      "valueCoding" : {
-        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
-        "code" : "exchange",
-        "display" : "exchange"
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+          "code" : "exchange",
+          "display" : "exchange"
+        }]
       }
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueString" : "mmserver"
+      "valueId" : "mmserver"
     }],
     "key" : "mm-4",
     "conformance" : ["SHOULD"],
@@ -448,69 +423,74 @@
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
-      "valueCoding" : {
-        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
-        "code" : "exchange",
-        "display" : "exchange"
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+          "code" : "exchange",
+          "display" : "exchange"
+        }]
       }
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueString" : "mmclient"
+      "valueId" : "mmclient"
     }],
     "key" : "mm-5",
     "conformance" : ["SHOULD-NOT"],
-    "conditionality" : false,
     "requirement" : "For privacy reasons, the 'CoverageToLink' **SHOULD NOT** include any data elements not marked as mustSupport in the Coverage profile."
   },
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
-      "valueCoding" : {
-        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
-        "code" : "exchange",
-        "display" : "exchange"
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+          "code" : "exchange",
+          "display" : "exchange"
+        }]
       }
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueString" : "mmclient"
+      "valueId" : "mmclient"
     }],
     "key" : "mm-6",
     "conformance" : ["SHALL"],
-    "conditionality" : false,
     "requirement" : "The Coverage and Consent references **SHALL** be 'local' references (i.e. starting with \"Patient/\" rather than \"http\"), **SHALL** be resolved to the parameter with the name \"MemberPatient\", and **SHALL** refer to the same id."
   },
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
-      "valueCoding" : {
-        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
-        "code" : "exchange",
-        "display" : "exchange"
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+          "code" : "exchange",
+          "display" : "exchange"
+        }]
       }
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueString" : "mmserver"
+      "valueId" : "mmserver"
     }],
     "key" : "mm-7",
     "conformance" : ["SHALL"],
-    "conditionality" : false,
     "requirement" : "Servers **SHALL** monitor for and take measures to prevent brute force attacks where the same or similar set of demographics are repeatedly searched with differing card information in an attempt to achieve a match when the card information is unknown."
   },
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
-      "valueCoding" : {
-        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
-        "code" : "exchange",
-        "display" : "exchange"
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+          "code" : "exchange",
+          "display" : "exchange"
+        }]
       }
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueString" : "mmserver"
+      "valueId" : "mmserver"
     }],
     "key" : "mm-8",
     "conformance" : ["SHALL"],
@@ -519,15 +499,17 @@
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
-      "valueCoding" : {
-        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
-        "code" : "exchange",
-        "display" : "exchange"
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+          "code" : "exchange",
+          "display" : "exchange"
+        }]
       }
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueString" : "mmserver"
+      "valueId" : "mmserver"
     }],
     "key" : "mm-9",
     "conformance" : ["SHALL"],
@@ -536,15 +518,17 @@
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
-      "valueCoding" : {
-        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
-        "code" : "exchange",
-        "display" : "exchange"
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+          "code" : "exchange",
+          "display" : "exchange"
+        }]
       }
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueString" : "mmserver"
+      "valueId" : "mmserver"
     }],
     "key" : "mm-10",
     "conformance" : ["SHALL"],
@@ -553,15 +537,17 @@
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
-      "valueCoding" : {
-        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
-        "code" : "exchange",
-        "display" : "exchange"
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+          "code" : "exchange",
+          "display" : "exchange"
+        }]
       }
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueString" : "mmserver"
+      "valueId" : "mmserver"
     }],
     "key" : "mm-11",
     "conformance" : ["SHALL"],
@@ -571,70 +557,75 @@
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
-      "valueCoding" : {
-        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
-        "code" : "exchange",
-        "display" : "exchange"
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+          "code" : "exchange",
+          "display" : "exchange"
+        }]
       }
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueString" : "mmserver"
+      "valueId" : "mmserver"
     }],
     "key" : "mm-12",
     "conformance" : ["SHOULD"],
-    "conditionality" : false,
     "requirement" : "Any 422 response codes **SHOULD** be accompanied by an [OperationOutcome](http://hl7.org/fhir/R4/operationoutcome.html) that indicates the specific nature of the failure."
   },
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
-      "valueCoding" : {
-        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
-        "code" : "exchange",
-        "display" : "exchange"
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+          "code" : "exchange",
+          "display" : "exchange"
+        }]
       }
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueString" : "mmserver"
+      "valueId" : "mmserver"
     }],
     "key" : "mm-13",
     "conformance" : ["SHOULD"],
-    "conditionality" : false,
     "requirement" : "The recipient of a member match **SHOULD** store the parameters of the consent (Validity Period, Scope etc.) to enable the authorization server to evaluate the consent before issuing a token for data access during subsequent requests."
   },
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
-      "valueCoding" : {
-        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
-        "code" : "exchange",
-        "display" : "exchange"
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+          "code" : "exchange",
+          "display" : "exchange"
+        }]
       }
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueString" : "implementer"
+      "valueId" : "implementer"
     }],
     "key" : "prov-1",
     "label" : "Implementations SHOULD follow the recommendations on which resources should be referenced from which data element.",
     "conformance" : ["SHOULD"],
-    "conditionality" : false,
     "requirement" : "The following table lists the various agent codes and what resource types are appropriate. These recommendations **SHOULD** be followed\r\n\r\n## | element | Allowed target resources |\r\n\r\n| transmitter | This could be Patient, RelatedPerson, Practitioner or PractitionerRole or Organization. A second transmitter could capture the specific Device used | | enterer | Patient, RelatedPerson, Practitioner or PractitionerRole | | performer | could be anything | | author | could be anything | | verifier | generally only Practitioner or PractitionerRole | | legal | Only Practitioner or PractitionerRole | | attester | Patient, RelatedPerson, Practitioner or PractitionerRole | | informant | Patient, RelatedPerson, Practitioner or PractitionerRole | | custodian | usually Organization, could also be Device, Practitioner or PractitionerRole | | assembler | usually a Device, could be Practitioner or PractitionerRole | ——————————————"
   },
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
-      "valueCoding" : {
-        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
-        "code" : "exchange",
-        "display" : "exchange"
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+          "code" : "exchange",
+          "display" : "exchange"
+        }]
       }
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueString" : "implementer"
+      "valueId" : "implementer"
     }],
     "key" : "prov-2",
     "label" : "Provenance.agent.onBehalfOf SHOULD NOT be used in certain circumstances.",
@@ -645,15 +636,17 @@
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
-      "valueCoding" : {
-        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
-        "code" : "business",
-        "display" : "business"
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+          "code" : "business",
+          "display" : "business"
+        }]
       }
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueString" : "igauthor"
+      "valueId" : "igauthor"
     }],
     "key" : "sec-1",
     "conformance" : ["SHOULD"],
@@ -662,23 +655,27 @@
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
-      "valueCoding" : {
-        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
-        "code" : "exchange",
-        "display" : "exchange"
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+          "code" : "exchange",
+          "display" : "exchange"
+        }]
       }
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
-      "valueCoding" : {
-        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
-        "code" : "processing",
-        "display" : "processing"
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+          "code" : "processing",
+          "display" : "processing"
+        }]
       }
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueString" : "implementer"
+      "valueId" : "implementer"
     }],
     "key" : "sec-2",
     "conformance" : ["SHALL"],
@@ -687,15 +684,17 @@
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
-      "valueCoding" : {
-        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
-        "code" : "business",
-        "display" : "business"
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+          "code" : "business",
+          "display" : "business"
+        }]
       }
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueString" : "igauthor"
+      "valueId" : "igauthor"
     }],
     "key" : "sec-3",
     "conformance" : ["SHALL"],
@@ -705,35 +704,41 @@
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
-      "valueCoding" : {
-        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
-        "code" : "business",
-        "display" : "business"
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+          "code" : "business",
+          "display" : "business"
+        }]
       }
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
-      "valueCoding" : {
-        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
-        "code" : "exchange",
-        "display" : "exchange"
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+          "code" : "exchange",
+          "display" : "exchange"
+        }]
       }
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
-      "valueCoding" : {
-        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
-        "code" : "processing",
-        "display" : "processing"
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+          "code" : "processing",
+          "display" : "processing"
+        }]
       }
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueString" : "implementer"
+      "valueId" : "implementer"
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueString" : "igauthor"
+      "valueId" : "igauthor"
     }],
     "key" : "sec-4",
     "conformance" : ["SHOULD"],
@@ -742,23 +747,27 @@
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
-      "valueCoding" : {
-        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
-        "code" : "exchange",
-        "display" : "exchange"
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+          "code" : "exchange",
+          "display" : "exchange"
+        }]
       }
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
-      "valueCoding" : {
-        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
-        "code" : "processing",
-        "display" : "processing"
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+          "code" : "processing",
+          "display" : "processing"
+        }]
       }
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueString" : "implementer"
+      "valueId" : "implementer"
     }],
     "key" : "sec-5",
     "conformance" : ["SHALL"],
@@ -767,23 +776,27 @@
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
-      "valueCoding" : {
-        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
-        "code" : "exchange",
-        "display" : "exchange"
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+          "code" : "exchange",
+          "display" : "exchange"
+        }]
       }
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
-      "valueCoding" : {
-        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
-        "code" : "processing",
-        "display" : "processing"
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+          "code" : "processing",
+          "display" : "processing"
+        }]
       }
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueString" : "implementer"
+      "valueId" : "implementer"
     }],
     "key" : "sec-6",
     "conformance" : ["SHOULD"],
@@ -793,23 +806,27 @@
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
-      "valueCoding" : {
-        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
-        "code" : "exchange",
-        "display" : "exchange"
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+          "code" : "exchange",
+          "display" : "exchange"
+        }]
       }
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
-      "valueCoding" : {
-        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
-        "code" : "processing",
-        "display" : "processing"
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+          "code" : "processing",
+          "display" : "processing"
+        }]
       }
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueString" : "implementer"
+      "valueId" : "implementer"
     }],
     "key" : "sec-7",
     "conformance" : ["SHOULD"],
@@ -819,15 +836,17 @@
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
-      "valueCoding" : {
-        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
-        "code" : "exchange",
-        "display" : "exchange"
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+          "code" : "exchange",
+          "display" : "exchange"
+        }]
       }
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueString" : "implementer"
+      "valueId" : "implementer"
     }],
     "key" : "sec-8",
     "conformance" : ["MAY"],
@@ -836,15 +855,17 @@
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
-      "valueCoding" : {
-        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
-        "code" : "exchange",
-        "display" : "exchange"
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+          "code" : "exchange",
+          "display" : "exchange"
+        }]
       }
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueString" : "implementer"
+      "valueId" : "implementer"
     }],
     "key" : "sec-9",
     "conformance" : ["SHALL",
@@ -854,15 +875,17 @@
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
-      "valueCoding" : {
-        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
-        "code" : "exchange",
-        "display" : "exchange"
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+          "code" : "exchange",
+          "display" : "exchange"
+        }]
       }
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueString" : "implementer"
+      "valueId" : "implementer"
     }],
     "key" : "sec-10",
     "conformance" : ["SHALL"],
@@ -871,15 +894,17 @@
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
-      "valueCoding" : {
-        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
-        "code" : "exchange",
-        "display" : "exchange"
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+          "code" : "exchange",
+          "display" : "exchange"
+        }]
       }
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueString" : "implementer"
+      "valueId" : "implementer"
     }],
     "key" : "sec-11",
     "label" : "When the identity of the requesting or receiving party is important, implementations SHOULD use one or more of the preferred authorization mechanisms.",
@@ -890,15 +915,17 @@
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
-      "valueCoding" : {
-        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
-        "code" : "exchange",
-        "display" : "exchange"
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+          "code" : "exchange",
+          "display" : "exchange"
+        }]
       }
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueString" : "implementer"
+      "valueId" : "implementer"
     }],
     "key" : "sec-12",
     "conformance" : ["SHALL"],
@@ -908,15 +935,17 @@
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
-      "valueCoding" : {
-        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
-        "code" : "exchange",
-        "display" : "exchange"
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+          "code" : "exchange",
+          "display" : "exchange"
+        }]
       }
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueString" : "implementer"
+      "valueId" : "implementer"
     }],
     "key" : "sec-13",
     "conformance" : ["SHALL"],
@@ -925,15 +954,17 @@
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
-      "valueCoding" : {
-        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
-        "code" : "exchange",
-        "display" : "exchange"
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+          "code" : "exchange",
+          "display" : "exchange"
+        }]
       }
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueString" : "implementer"
+      "valueId" : "implementer"
     }],
     "key" : "sec-14",
     "conformance" : ["SHALL"],
@@ -942,15 +973,17 @@
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
-      "valueCoding" : {
-        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
-        "code" : "exchange",
-        "display" : "exchange"
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+          "code" : "exchange",
+          "display" : "exchange"
+        }]
       }
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueString" : "implementer"
+      "valueId" : "implementer"
     }],
     "key" : "sec-15",
     "conformance" : ["SHALL"],
@@ -959,15 +992,17 @@
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
-      "valueCoding" : {
-        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
-        "code" : "exchange",
-        "display" : "exchange"
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+          "code" : "exchange",
+          "display" : "exchange"
+        }]
       }
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueString" : "implementer"
+      "valueId" : "implementer"
     }],
     "key" : "sec-16",
     "conformance" : ["SHALL"],
@@ -976,15 +1011,17 @@
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
-      "valueCoding" : {
-        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
-        "code" : "exchange",
-        "display" : "exchange"
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+          "code" : "exchange",
+          "display" : "exchange"
+        }]
       }
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueString" : "source"
+      "valueId" : "source"
     }],
     "key" : "sec-17",
     "conformance" : ["SHALL"],
@@ -994,15 +1031,17 @@
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
-      "valueCoding" : {
-        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
-        "code" : "exchange",
-        "display" : "exchange"
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+          "code" : "exchange",
+          "display" : "exchange"
+        }]
       }
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueString" : "source"
+      "valueId" : "source"
     }],
     "key" : "sec-18",
     "conformance" : ["SHALL"],
@@ -1011,15 +1050,17 @@
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
-      "valueCoding" : {
-        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
-        "code" : "storage",
-        "display" : "storage"
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+          "code" : "storage",
+          "display" : "storage"
+        }]
       }
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueString" : "source"
+      "valueId" : "source"
     }],
     "key" : "sec-19",
     "conformance" : ["SHALL"],
@@ -1028,15 +1069,17 @@
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
-      "valueCoding" : {
-        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
-        "code" : "processing",
-        "display" : "processing"
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+          "code" : "processing",
+          "display" : "processing"
+        }]
       }
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueString" : "source"
+      "valueId" : "source"
     }],
     "key" : "sec-20",
     "conformance" : ["SHALL"],
@@ -1045,15 +1088,17 @@
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
-      "valueCoding" : {
-        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
-        "code" : "exchange",
-        "display" : "exchange"
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+          "code" : "exchange",
+          "display" : "exchange"
+        }]
       }
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueString" : "poll-imp"
+      "valueId" : "poll-imp"
     }],
     "key" : "task-1",
     "conformance" : ["SHALL",
@@ -1064,15 +1109,17 @@
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
-      "valueCoding" : {
-        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
-        "code" : "exchange",
-        "display" : "exchange"
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+          "code" : "exchange",
+          "display" : "exchange"
+        }]
       }
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueString" : "poll-imp"
+      "valueId" : "poll-imp"
     }],
     "key" : "task-2",
     "conformance" : ["SHOULD-NOT"],
@@ -1082,15 +1129,17 @@
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
-      "valueCoding" : {
-        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
-        "code" : "exchange",
-        "display" : "exchange"
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+          "code" : "exchange",
+          "display" : "exchange"
+        }]
       }
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueString" : "subscribe-imp"
+      "valueId" : "subscribe-imp"
     }],
     "key" : "task-3",
     "conformance" : ["SHALL"],
@@ -1100,15 +1149,17 @@
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
-      "valueCoding" : {
-        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
-        "code" : "exchange",
-        "display" : "exchange"
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+          "code" : "exchange",
+          "display" : "exchange"
+        }]
       }
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueString" : "subscribe-imp"
+      "valueId" : "subscribe-imp"
     }],
     "key" : "task-4",
     "conformance" : ["SHALL"],
@@ -1118,15 +1169,17 @@
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
-      "valueCoding" : {
-        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
-        "code" : "exchange",
-        "display" : "exchange"
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+          "code" : "exchange",
+          "display" : "exchange"
+        }]
       }
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueString" : "subscribe-imp"
+      "valueId" : "subscribe-imp"
     }],
     "key" : "task-5",
     "conformance" : ["SHALL"],
@@ -1136,15 +1189,17 @@
   {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementcategory",
-      "valueCoding" : {
-        "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
-        "code" : "exchange",
-        "display" : "exchange"
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/us/davinci-hrex/CodeSystem/hrex-temp",
+          "code" : "exchange",
+          "display" : "exchange"
+        }]
       }
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
-      "valueString" : "subscribe-imp"
+      "valueId" : "subscribe-imp"
     }],
     "key" : "task-6",
     "conformance" : ["MAY"],
