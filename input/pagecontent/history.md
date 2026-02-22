@@ -1,3 +1,6 @@
+### STU 1.2.0
+No further changes were introduced
+
 ### STU 1.2.0-snapshot
 **Breaking changes**:
 * None
