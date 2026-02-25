@@ -23,7 +23,7 @@ WARNING: DA VINCI: Da Vinci IGs SHOULD define CapabilityStatements.  Without Cap
 
 # 04. HRex can't depend on itself
 WARNING: DA VINCI: This IG does not depend on HRex.  Either add a formal dependency or confirm that a textual dependency has been declared.
-WARNING: DA VINCI: The Base Specs menu item must have a child called HRex 1.1.0.
+WARNING: DA VINCI: The Base Specs menu item must have a child called HRex 1.2.0.
 WARNING: DA VINCI: The Conformance page (conformance.html) needs to include a link to the HRex conformance.html page.
 WARNING: DA VINCI: The Conformance page (conformance.html) Must Support section needs to include a link to the HRex conformance.html#mustsupport section.
 WARNING: DA VINCI: The Security page (security.html) must include a reference to the HRex security.html page (with a SHALL comply).

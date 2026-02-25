@@ -1,6 +1,6 @@
 -------------------------------------------------------------------------------------
 {"hierarchical" : false, "url": "http://hl7.org/fhir/us/core/ValueSet/us-core-provider-specialty", "version": "3.1.1"}####
 e: {
-  "error" : "ValueSet 'true' Filter by property 'http://hl7.org/fhir/us/core/ValueSet/us-core-provider-specialty|3.1.1' and op 'abstract' is not supported yet (and Error from https://tx.fhir.org/r4: The filter \"abstract = false\" from the value set http://hl7.org/fhir/us/core/ValueSet/us-core-provider-specialty was not understood in the context of http://nucc.org/provider-taxonomy (3))"
+  "error" : "ValueSet 'http://hl7.org/fhir/us/core/ValueSet/us-core-provider-specialty|3.1.1' Filter by property 'abstract' and op 'EQUAL' is not supported yet (and Error from https://tx.fhir.org/r4: Error: The filter abstract = false was not understood)"
 }
 -------------------------------------------------------------------------------------
