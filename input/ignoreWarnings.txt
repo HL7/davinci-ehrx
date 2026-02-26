@@ -3,10 +3,7 @@
 # 00.a This will go away when the next tools IG release is published
 ERROR: ImplementationGuide/hl7.fhir.us.davinci-hrex: ImplementationGuide.definition.extension[35].url: No definition could be found for URL value 'http://hl7.org/fhir/tools/StructureDefinition/expansion-parameters'
 
-# 00.b This is a known issue on terminology.hl7.org and is being worked on by Terminology Infrastructure
-Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/provenance-participant-type|4.0.1
-
-# 00.c The profile does enforce the same rules as 3.1.1.  The invariant remains, it's just that the FHIRPath has been corrected. https://chat.fhir.org/#narrow/channel/179252-IG-creation/topic/Incorrect.20profile.20derivation.20error/with/570474355
+# 00.b The profile does enforce the same rules as 3.1.1.  The invariant remains, it's just that the FHIRPath has been corrected. https://chat.fhir.org/#narrow/channel/179252-IG-creation/topic/Incorrect.20profile.20derivation.20error/with/570474355
 ERROR: StructureDefinition/hrex-practitionerrole: StructureDefinition: This profile does not comply with claimed profile 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole|6.1.0'
 ERROR: StructureDefinition/hrex-practitionerrole: StructureDefinition: This profile does not comply with claimed profile 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole|3.1.1'
 
@@ -60,33 +57,29 @@ Target Code System http://snomed.info/sct is only supported on the terminology s
 # 10. **[Clarified reason] This is a data type profile, and this IG defines no profiles that use it.  It's created for downstream IGs.  That makes it impossible to create an example that tests the profile.  The definition is sufficiently simple that there's no possibility of errors in the construction.
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-reference-id'): The Implementation Guide contains no examples for this data type profile
 
-# 11. **[Clarified reason] The terminology validation here is incorrect in R4, but these codes have been confirmed to be valid
-INFORMATION: Bundle/subscription-notification-with-document: Bundle.entry[2].resource/*DocumentReference/287Q73J237*/.content[0].format: The code provided (urn:oid:1.3.6.1.4.1.19376.1.2.3#urn:ihe:pcc:apr:handp:2008) is not in the value set 'DocumentReference Format Code Set' (http://hl7.org/fhir/ValueSet/formatcodes|4.0.1), and a code is recommended to come from this value set
-INFORMATION: Bundle/task-poll-response: Bundle.entry[1].resource/*DocumentReference/c94fb961-310c-41f1-a54f-gd5325dgds7*/.content[0].format: The code provided (urn:oid:1.3.6.1.4.1.19376.1.2.3#urn:ihe:pcc:apr:handp:2008) is not in the value set 'DocumentReference Format Code Set' (http://hl7.org/fhir/ValueSet/formatcodes|4.0.1), and a code is recommended to come from this value set
-
-# 12. **[Updated reason] The contents of this code system have been migrated to THO, however, as a minor unballoted release, this is not the correct time to transition to the THO codes.
+# 11. **[Updated reason] The contents of this code system have been migrated to THO, however, as a minor unballoted release, this is not the correct time to transition to the THO codes.
 INFORMATION: CodeSystem/hrex-temp: CodeSystem: Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
 
-# 13. **[New] This code system is a 'code' binding in an IG-specific logical model, and as such, does not need to migrate to THO
+# 12. **[New] This code system is a 'code' binding in an IG-specific logical model, and as such, does not need to migrate to THO
 INFORMATION: CodeSystem/hrex-endpoint-discovery: CodeSystem: Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
 
-# 14. The patterns are only locking down the system, which is the discriminator for the slices, so this is fine.
+# 13. The patterns are only locking down the system, which is the discriminator for the slices, so this is fine.
 INFORMATION: StructureDefinition/hrex-organization: StructureDefinition.snapshot.element[10].pattern.ofType(Identifier): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 INFORMATION: StructureDefinition/hrex-organization: StructureDefinition.snapshot.element[11].pattern.ofType(Identifier): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 INFORMATION: StructureDefinition/hrex-organization: StructureDefinition.snapshot.element[12].pattern.ofType(Identifier): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 
-# 15. These identifiers are 'extra' and aren't expected to match any slice
+# 14. These identifiers are 'extra' and aren't expected to match any slice
 INFORMATION: Organization/full: Organization.identifier[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-organization|1.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: Organization/full: Organization.identifier[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-organization|1.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 
-# 16. These additional coverage classes are not (currently) part of the profile and are not expected to match slices
+# 15. These additional coverage classes are not (currently) part of the profile and are not expected to match slices
 INFORMATION: Parameters/member-match-in: Parameters.parameter[1].resource/*Coverage/9876B1*/.class[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-coverage|1.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: Parameters/member-match-in: Parameters.parameter[1].resource/*Coverage/9876B1*/.class[3]: This element does not match any known slice defined in the profile http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-coverage|1.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 
-# 17. These code systems should not be draft in THO.  The terminology work group is trying to fix these
+# 16. These code systems should not be draft in THO.  The terminology work group is trying to fix these
 Reference to draft CodeSystem http://hl7.org/fhir/task-status|4.0.1
 
-# 18. Narrative doesn't make sense in resources passed to a real-time operation
+# 17. Narrative doesn't make sense in resources passed to a real-time operation
 WARNING: Parameters/member-match-in: Parameters.parameter[0].resource/*Patient/1*/: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
 WARNING: Parameters/member-match-in: Parameters.parameter[1].resource/*Coverage/9876B1*/: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
 WARNING: Parameters/member-match-in: Parameters.parameter[2].resource/*Coverage/AA87654*/: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
@@ -95,54 +88,50 @@ WARNING: Parameters/member-match-in-provider: Parameters.parameter[0].resource/*
 WARNING: Parameters/member-match-in-provider: Parameters.parameter[1].resource/*Coverage/9876B1*/: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
 WARNING: Parameters/member-match-in-provider: Parameters.parameter[2].resource/*Consent/null*/: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
 
-# 19. These are tested by the parameters input examples
+# 18. These are tested by the parameters input examples
 INFORMATION: StructureDefinition.where(url = 'http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-consent'): The Implementation Guide contains no explicitly linked examples for this profile
 INFORMATION: StructureDefinition.where(url = 'http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-patient-demographics'): The Implementation Guide contains no explicitly linked examples for this profile
 
-# 20. **[Updated approval] HRex needs a patient with no identifier - US Realm approved: https://jira.hl7.org/browse/FHIR-46468
+# 19. **[Updated approval] HRex needs a patient with no identifier - US Realm approved: https://jira.hl7.org/browse/FHIR-46468
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-patient-demographics').baseDefinition: US FHIR Usage rules require that all profiles on Patient derive from the core US profile. See https://confluence.hl7.org/display/CGP/US+Core+Variance+Request+Process
 
-# 21. **[Updated approval] HRex needs Coverage pointing to a patient with no identifier - US Realm approved: https://jira.hl7.org/browse/FHIR-46468
+# 20. **[Updated approval] HRex needs Coverage pointing to a patient with no identifier - US Realm approved: https://jira.hl7.org/browse/FHIR-46468
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-coverage').baseDefinition: US FHIR Usage rules require that all profiles on Coverage derive from the core US profile. See https://confluence.hl7.org/display/CGP/US+Core+Variance+Request+Process
 
-# 22. The IG description is talking about the potential for certain resources to be deprecated in the future.  The IG itself is definitely not deprecated
+# 21. The IG description is talking about the potential for certain resources to be deprecated in the future.  The IG itself is definitely not deprecated
 INFORMATION: ImplementationGuide/hl7.fhir.us.davinci-hrex: ImplementationGuide: Resource is not deprecated, but the description mentions deprecated - check whether it should be deprecated
 
-# 24. This link exists, but because we're inheriting this fragment from a shared template, the link looks different and the template doesn't recognize it
+# 22. This link exists, but because we're inheriting this fragment from a shared template, the link looks different and the template doesn't recognize it
 The link 'http://hl7.org/fhir/us/davinci-hrex/davinci-guiding-principles.html' for "guiding principles" cannot be resolved
 
-# 25. The version used is based on regulation
+# 23. The version used is based on regulation
 The ImplementationGuide uses package hl7.fhir.us.core#7.0.0 released on 2024-05-08, but the most recent appropriate version is 8.0.1. This reference is getting old and the more recent version should be considered
 
-# 26. This references is inherited from the FHIR core spec, which used it before the extension was deprecated
+# 24. This references is inherited from the FHIR core spec, which used it before the extension was deprecated
 INFORMATION: StructureDefinition/hrex-consent: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
 
-# 27. While technically correct, US Core has approved a 'patch' that indicates this cardinality relaxation is considered valid in 3.1.1 - https://jira.hl7.org/browse/FHIR-51489
+# 25. While technically correct, US Core has approved a 'patch' that indicates this cardinality relaxation is considered valid in 3.1.1 - https://jira.hl7.org/browse/FHIR-51489
 ERROR: StructureDefinition/hrex-organization: StructureDefinition: This profile does not comply with claimed profile 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization|3.1.1'
 
-# 28. This conformance pattern of MS on identifier as a whole but not on all slices is inherited from US Core.
+# 26. This conformance pattern of MS on identifier as a whole but not on all slices is inherited from US Core.
 WARNING: StructureDefinition/hrex-organization: StructureDefinition.snapshot: The slice 'CLIA' on path 'Organization.identifier' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
 WARNING: StructureDefinition/hrex-organization: StructureDefinition.snapshot: The slice 'NAIC' on path 'Organization.identifier' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
 
-# 30. These multiple relationships are intensional and reflect the real relationship between the codes
+# 27. These multiple relationships are intensional and reflect the real relationship between the codes
 WARNING: ConceptMap/CareTeamMember-NUCCFunction: ConceptMap.group[0].element[146].target[0]: A narrower relationship has already been defined from the code 224534008 to the code 176B00000X, but this defines a new relationship narrower
 WARNING: ConceptMap/CareTeamMember-NUCCFunction: ConceptMap.group[0].element[638].target[0]: A wider relationship has already been defined from the code 79898004 to the code 176B00000X, but this defines a new relationship wider
 
-# 31. **[Clarified reason] This change is intentional and reflects the new recommended codes for this element which have changed since R4 was published.
+# 28. **[Clarified reason] This change is intentional and reflects the new recommended codes for this element which have changed since R4 was published.
 The Coding provided (http://ihe.net/fhir/ihe.formatcode.fhir/CodeSystem/formatcode#urn:ihe:pcc:apr:handp:2008) was not found in the value set 'DocumentReference Format Code Set' (http://hl7.org/fhir/ValueSet/formatcodes|4.0.1), and a code is recommended to come from this value set.  (error message = The provided code 'http://ihe.net/fhir/ihe.formatcode.fhir/CodeSystem/formatcode#urn:ihe:pcc:apr:handp:2008' was not found in the value set 'http://hl7.org/fhir/ValueSet/formatcodes|4.0.1')
 
-# 32. These uses of conformance verbs aren't actually conformance statements and thus aren't appropriate to be marked as conformance statements
+# 29. These uses of conformance verbs aren't actually conformance statements and thus aren't appropriate to be marked as conformance statements
 INFORMATION: en/conformance.html: The html source contains the word 'SHALL' but it is not in a text phrase marked as a conformance clause: 'Da Vinci IGs, including this one, make use of conformance language such as SHALL, SHOULD and MAY to describe the behavior of systems. The meaning of these words shall be interpreted as per the FHIR core spec.'
 INFORMATION: en/conformance.html: The html source contains the word 'SHOULD' but it is not in a text phrase marked as a conformance clause: 'Da Vinci IGs, including this one, make use of conformance language such as SHALL, SHOULD and MAY to describe the behavior of systems. The meaning of these words shall be interpreted as per the FHIR core spec.'
 INFORMATION: en/conformance.html: The html source contains the word 'MAY' but it is not in a text phrase marked as a conformance clause: 'Da Vinci IGs, including this one, make use of conformance language such as SHALL, SHOULD and MAY to describe the behavior of systems. The meaning of these words shall be interpreted as per the FHIR core spec.'
 
-# 32. We have links to the R5 definitions.  These resources did not exist in R4.
+# 30. We have links to the R5 definitions.  These resources did not exist in R4.
 WARNING: DA VINCI: The How to Read page (fhir.html) needs to include a reference to the http://hl7.org/fhir/R4/actordefinition.html because this IG uses the actordefinition resource.
 WARNING: DA VINCI: The How to Read page (fhir.html) needs to include a reference to the http://hl7.org/fhir/R4/requirements.html because this IG uses the requirements resource.
 
-# 33. **[New] The IG doesn't declare this version.  It is being inherited from one of the ancestor U.S. Core IGs. https://chat.fhir.org/#narrow/channel/179252-IG-creation/topic/New.20SNOMED.20version.20issue/with/575122720
-WARNING: PractitionerRole/full: PractitionerRole.code[0].coding[1].system: A definition for CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/731000124108/version/20240301' could not be found, so the code cannot be validated. Valid versions: http://snomed.info/sct/11000146104/version/20240930, http://snomed.info/sct/11000172109/version/20231115, http://snomed.info/sct/2011000195101/version/20230607, http://snomed.info/sct/32506021000036107/version/20230731, http://snomed.info/sct/45991000052106/version/20231130, http://snomed.info/sct/554471000005108/version/20250930, http://snomed.info/sct/731000124108/version/20230301, http://snomed.info/sct/731000124108/version/20250901, http://snomed.info/sct/827022005/version/20241216, http://snomed.info/sct/83821000000107/version/20230412, http://snomed.info/sct/900000000000207008/version/20240201, http://snomed.info/sct/900000000000207008/version/20250201 and http://snomed.info/xsct/900000000000207008/version/20250814
-WARNING: PractitionerRole/full: PractitionerRole.code[1].coding[1].system: A definition for CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/731000124108/version/20240301' could not be found, so the code cannot be validated. Valid versions: http://snomed.info/sct/11000146104/version/20240930, http://snomed.info/sct/11000172109/version/20231115, http://snomed.info/sct/2011000195101/version/20230607, http://snomed.info/sct/32506021000036107/version/20230731, http://snomed.info/sct/45991000052106/version/20231130, http://snomed.info/sct/554471000005108/version/20250930, http://snomed.info/sct/731000124108/version/20230301, http://snomed.info/sct/731000124108/version/20250901, http://snomed.info/sct/827022005/version/20241216, http://snomed.info/sct/83821000000107/version/20230412, http://snomed.info/sct/900000000000207008/version/20240201, http://snomed.info/sct/900000000000207008/version/20250201 and http://snomed.info/xsct/900000000000207008/version/20250814
-
-# 34. **[New] No new trackers are associated with this release
+# 31. **[New] No new trackers are associated with this release
 WARNING: DA VINCI: The Change Log page (history.html) does not include any Jira tracker items links for the section with title STU 1.2.0
