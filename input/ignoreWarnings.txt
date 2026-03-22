@@ -1,9 +1,6 @@
 == Suppressed Messages ==
 
-# 00.a This will go away when the next tools IG release is published
-ERROR: ImplementationGuide/hl7.fhir.us.davinci-hrex: ImplementationGuide.definition.extension[35].url: No definition could be found for URL value 'http://hl7.org/fhir/tools/StructureDefinition/expansion-parameters'
-
-# 00.b The profile does enforce the same rules as 3.1.1.  The invariant remains, it's just that the FHIRPath has been corrected. https://chat.fhir.org/#narrow/channel/179252-IG-creation/topic/Incorrect.20profile.20derivation.20error/with/570474355
+# 00.a The profile does enforce the same rules as 3.1.1.  The invariant remains, it's just that the FHIRPath has been corrected. https://chat.fhir.org/#narrow/channel/179252-IG-creation/topic/Incorrect.20profile.20derivation.20error/with/570474355
 ERROR: StructureDefinition/hrex-practitionerrole: StructureDefinition: This profile does not comply with claimed profile 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole|6.1.0'
 ERROR: StructureDefinition/hrex-practitionerrole: StructureDefinition: This profile does not comply with claimed profile 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole|3.1.1'
 
@@ -46,7 +43,8 @@ Pinned the version of http://hl7.org/fhir/us/core/StructureDefinition/us-core-pr
 Pinned the version of http://hl7.org/fhir/us/core/StructureDefinition/us-core-relatedperson to 7.0.0 from choices of 6.1.0 (hl7.fhir.us.core#6.1.0), 7.0.0 (hl7.fhir.us.core#7.0.0)
 Pinned the version of http://hl7.org/fhir/us/core/ValueSet/us-core-provenance-participant-type to 7.0.0 from choices of 3.1.1 (hl7.fhir.us.core#3.1.1), 6.1.0 (hl7.fhir.us.core#6.1.0), 7.0.0 (hl7.fhir.us.core#7.0.0)
 Pinned the version of http://hl7.org/fhir/us/core/ValueSet/us-core-usps-state to 7.0.0 from choices of 3.1.1 (hl7.fhir.us.core#3.1.1), 6.1.0 (hl7.fhir.us.core#6.1.0), 7.0.0 (hl7.fhir.us.core#7.0.0)
-Pinned the version of http://terminology.hl7.org/ValueSet/v3-PurposeOfUse to 3.1.0 from choices of 2.0.0 (hl7.terminology.r4#5.0.0), 3.0.0 (hl7.terminology.r4#5.5.0), 3.1.0 (hl7.terminology.r4#7.0.1)
+Pinned the version of http://terminology.hl7.org/ValueSet/v3-PurposeOfUse to 3.1.0 from choices of 2.0.0 (hl7.terminology.r4#5.0.0), 3.0.0 (hl7.terminology.r4#5.5.0), 3.1.0 (hl7.terminology.r4#7.1.0)
+
 %to 20240605 from choices of 20190418 (us.nlm.vsac#0.11.0), 20240605 (us.nlm.vsac#0.19.0)
 
 # 09. These are termerminology server and/or validator limitations
@@ -78,6 +76,7 @@ INFORMATION: Parameters/member-match-in: Parameters.parameter[1].resource/*Cover
 
 # 16. These code systems should not be draft in THO.  The terminology work group is trying to fix these
 Reference to draft CodeSystem http://hl7.org/fhir/task-status|4.0.1
+Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/provenance-participant-type|1.0.0
 
 # 17. Narrative doesn't make sense in resources passed to a real-time operation
 WARNING: Parameters/member-match-in: Parameters.parameter[0].resource/*Patient/1*/: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
