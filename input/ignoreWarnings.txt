@@ -8,9 +8,9 @@ ERROR: StructureDefinition/hrex-practitionerrole: StructureDefinition: This prof
 WARNING: DA VINCI: The second menu item under Background should have the label Use Cases.
 
 # 02. Detailed changes weren't tracked until after 1.0.0 was released
-WARNING: DA VINCI: The Change Log page (history.html) does not include any Jira tracker items links for the section with title STU 1.0.0
-WARNING: DA VINCI: The Change Log page (history.html) does not include an h3 section for the version 0.2.0
-WARNING: DA VINCI: The Change Log page (history.html) does not include an h3 section for the version 0.1.0
+WARNING: DA VINCI: The Change Log page (changes.html) does not include any Jira tracker items links for the section with title STU 1.0.0
+WARNING: DA VINCI: The Change Log page (changes.html) does not include an h3 section for the version 0.2.0
+WARNING: DA VINCI: The Change Log page (changes.html) does not include an h3 section for the version 0.1.0
 
 # 03. **[Added second sentence to reason] Da Vinci doesn't have any conformance expectations itself - conformance expectations are determined by IGs that derive from HRex.  Therefore, CapabilityStatements aren't appropriate
 WARNING: DA VINCI: Da Vinci IGs SHOULD define CapabilityStatements.  Without CapabilityStatements, there is no technical way to declare conformance to the IG.
@@ -133,4 +133,4 @@ WARNING: DA VINCI: The How to Read page (fhir.html) needs to include a reference
 WARNING: DA VINCI: The How to Read page (fhir.html) needs to include a reference to the http://hl7.org/fhir/R4/requirements.html because this IG uses the requirements resource.
 
 # 31. **[New] No new trackers are associated with this release
-WARNING: DA VINCI: The Change Log page (history.html) does not include any Jira tracker items links for the section with title STU 1.2.0
+WARNING: DA VINCI: The Change Log page (changes.html) does not include any Jira tracker items links for the section with title STU 1.2.0
