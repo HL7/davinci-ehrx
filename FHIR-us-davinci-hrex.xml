@@ -75,7 +75,7 @@
 <artifact id="ActorDefinition/mmclient" key="ActorDefinition-mmclient" name="Member Match Client"/>
 <artifact id="ActorDefinition/mmserver" key="ActorDefinition-mmserver" name="Member Match Server"/>
 <artifact id="ConceptMap/NUCC-CareTeamMemberFunction" key="ConceptMap-NUCC-CareTeamMemberFunction" name="NUCC to SNOMED Care Team Member Function Map"/>
-<artifact deprecated="true" id="Requirements/fromNarrative" key="Requirements-fromNarrative" name="Narrative Conformance Statements"/>
+<artifact id="Requirements/fromNarrative" key="Requirements-fromNarrative" name="Narrative Conformance Statements"/>
 <artifact id="ActorDefinition/poll-imp" key="ActorDefinition-poll-imp" name="Polling Implementer"/>
 <artifact deprecated="true" id="StructureDefinition/extension-itemPreAuthIssueDate" key="StructureDefinition-extension-itemPreAuthIssueDate" name="Pre Authorized Issue Date"/>
 <artifact id="SearchParameter/hrex-provenance-target" key="SearchParameter-hrex-provenance-target" name="Provenance target Search Parameter"/>

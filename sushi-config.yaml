@@ -66,7 +66,7 @@ dependencies:
   hl7.fhir.uv.tools.r4:
     id: tools
     uri: http://hl7.org/fhir/tools/ImplementationGuide/hl7.fhir.uv.tools
-    version: current
+    version: 1.1.2
     reason: |
       Tooling artifacts used by all IGs
   hl7.fhir.us.core:
